@@ -1,0 +1,56 @@
+{
+  "week": 2, "day": 6, "title": "用事を済ませましょう", "title_cn": "让我们把事情办完吧", "title_en": "Let's Get It Done",
+  "dialog": {"lines": ["通帳、またはカードを入れてください。", "きょうは給料日だ。うれしいな。いくら下ろそうかな。"], "cn": "“请插入存折或者卡。”“今天是发工资的日子。真高兴。取多少呢。”"},
+  "sections": [
+    {"type": "words", "heading": "絵をみておぼえましょう：お金", "items": [
+      {"jp": "通帳", "en": "bankbook", "cn": "存折"},
+      {"jp": "（キャッシュ）カード", "en": "cash/bank card", "cn": "现金卡"},
+      {"jp": "はんこ／印鑑", "en": "one's seal", "cn": "印章"},
+      {"jp": "サイン", "en": "signature", "cn": "签字"},
+      {"jp": "千円札", "en": "thousand yen bill", "cn": "一千日元钞票"},
+      {"jp": "紙幣／（お）札", "en": "bill", "cn": "纸币"},
+      {"jp": "百円玉", "en": "hundred yen coin", "cn": "一百日元硬币"},
+      {"jp": "硬貨", "en": "coin", "cn": "硬币"}
+    ]},
+    {"type": "phrases", "heading": "もっとおぼえましょう", "items": [
+      {"jp": "お金をためる／貯金する", "en": "save", "cn": "储蓄"},
+      {"jp": "預金する", "en": "put money in a bank account", "cn": "存款", "rel": "（=銀行にお金を預ける）"},
+      {"jp": "給料を引き出す／下ろす", "en": "withdraw (some of) one's pay", "cn": "取工资"},
+      {"jp": "通帳記入をする", "en": "update a bankbook", "cn": "打印存折", "rel": "（=通帳に記入する）"},
+      {"jp": "暗証番号", "en": "PIN (personal identification number) number", "cn": "密码"},
+      {"jp": "銀行の本店", "en": "the main branch office of a bank", "cn": "银行的总行", "rel": "→ 銀行の支店（a branch office of a bank 银行的支行）"},
+      {"jp": "口座を開く", "en": "open an account", "cn": "开设账户"},
+      {"jp": "家賃を振り込む", "en": "transfer a monthly rent", "cn": "转账汇缴房租", "rel": "→ 振り込み（N）（bank transfer 转账汇款）"},
+      {"jp": "公共料金を支払う", "en": "pay the utility charges", "cn": "缴公共费", "rel": "→ 支払い（N）（payment 支付）＊公共料金＝電気代、ガス代、水道代、電話代 など（hydro/gas/water/telephone bills 水电煤气电话费等）"},
+      {"jp": "商品の代金を払う", "en": "pay the bill by bank transfer", "cn": "支付商品货款"},
+      {"jp": "窓口で両替をする", "en": "break a bill at the bank counter", "cn": "在窗口兑换"},
+      {"jp": "送金する", "en": "remit", "cn": "汇款"},
+      {"jp": "仕送りする", "en": "monthly allowance", "cn": "寄生活费、学费等"},
+      {"jp": "手数料がかかる", "en": "incur handling charge", "cn": "花手续费"},
+      {"jp": "あて名", "en": "addressee", "cn": "收信人"},
+      {"jp": "差出人名", "en": "sender", "cn": "发信人"},
+      {"jp": "手紙を速達で出す", "en": "send a letter by express mail", "cn": "用快件邮信"},
+      {"jp": "小包", "en": "parcel", "cn": "邮包"},
+      {"jp": "送料がかかる", "en": "incur shipping charge", "cn": "花运费"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.42",
+    "sections": [
+      {"type": "choice", "instruction": "正しいほうに〇をつけなさい。", "items": [
+        {"n": 1, "q": "ここに（a. サイン　b. はんこ）を押してください。"},
+        {"n": 2, "q": "（a. キャッシュカード　b. 通帳）に記入するために、銀行へ行った。"},
+        {"n": 3, "q": "振り込みには（a. 送料　b. 手数料）がかかる。"},
+        {"n": 4, "q": "財布に100円（a. 札　b. 玉）がたくさん入っている。"},
+        {"n": 5, "q": "（a. あて名　b. 差出人名）を書き間違えて、手紙は届かなかった※。（※届く arrive 送到）"},
+        {"n": 6, "q": "手紙を（a. 小包　b. 速達）で出すと、はやく着く。"}
+      ]},
+      {"type": "select", "instruction": "（　）にはどれが入りますか。一つ選びなさい。", "items": [
+        {"n": 7, "q": "相手※の銀行口座にお金を（　　）。（※相手 partner/competitor 对方）", "opts": ["振り込む", "振り払う", "払い出す", "払い入れる"]},
+        {"n": 8, "q": "郵便局で公共（　　）を支払う。", "opts": ["代金", "送料", "料金", "手数料"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②b ③b ④b ⑤a ⑥b　Ⅱ：⑦1 ⑧3"
+  },
+  "hitokoto": "きょうの一言：できるだけ貯金しましょう。"
+}

@@ -1,0 +1,54 @@
+{
+  "week": 4, "day": 3, "title": "学校へ行きましょう③", "title_cn": "到学校去③", "title_en": "Let's Go to School ③",
+  "dialog": {"lines": ["〇月×日", "今日の試験の結果は、きっといいと思う。見直しをする時間はなかったが、試験で問われている意味がわかったし、漢字も間違わずに書いた。先生に教わったところを、じゅうぶん復習しておいてよかった。", "本当は今日レポートを提出しなければいけなかったが、担当の先生が休みだったので、明日でいいということになった。", "今日はすごくついている日だった。"], "cn": "“〇月×日 今天考试的结果，我想一定不错。虽然没有时间检查，但考试问的意思都懂，汉字也没写错。幸好把老师教的地方好好复习了。本来今天该交报告的，可是负责的老师休息了，所以明天交也可以。今天真是运气很好的一天。”"},
+  "sections": [
+    {"type": "phrases", "heading": "□にいれてよみましょう：答えを＿＿。", "items": [
+      {"jp": "記入する", "en": "fill in", "cn": "填写"},
+      {"jp": "見直す", "en": "look over", "cn": "重看", "rel": "→ 見直し（N）"},
+      {"jp": "間違う／間違える", "en": "make a mistake", "cn": "弄错"},
+      {"jp": "書き直す", "en": "rewrite", "cn": "重写"}
+    ]},
+    {"type": "phrases", "heading": "□にいれてよみましょう：レポートを＿＿。", "items": [
+      {"jp": "まとめる", "en": "put together (a report)", "cn": "总结"},
+      {"jp": "仕上げる", "en": "finish (a report)", "cn": "完成"},
+      {"jp": "提出する", "en": "submit (a report)", "cn": "提交"}
+    ]},
+    {"type": "phrases", "heading": "おぼえましょう", "items": [
+      {"jp": "担当の先生", "en": "the teacher in charge", "cn": "班主任老师"},
+      {"jp": "先生に教わる", "en": "be taught by teacher", "cn": "跟老师学"},
+      {"jp": "何度もくり返す", "en": "repeat many times", "cn": "反复多次", "rel": "→ くり返し（N）"},
+      {"jp": "暗記する", "en": "memorize", "cn": "背诵"},
+      {"jp": "試験で問われる", "en": "... are on the examination", "cn": "在考试中被问到", "rel": "→ 問い（N）"},
+      {"jp": "落ち着いて考える", "en": "stop and think", "cn": "冷静思考"},
+      {"jp": "聞き直す", "en": "ask someone to repeat what they said", "cn": "重新问"},
+      {"jp": "言い直す", "en": "correct yourself", "cn": "改口"},
+      {"jp": "聞き取る", "en": "follow what a person is saying", "cn": "听懂", "rel": "→ 聞き取り（N）"},
+      {"jp": "書き取る", "en": "write down", "cn": "抄写、记下", "rel": "→ 書き取り（N）"},
+      {"jp": "ついている", "en": "be lucky", "cn": "走运", "rel": "⇔ ついていない（be unlucky 不走运）"},
+      {"jp": "試験が済む", "en": "finish the exams", "cn": "考试结束"},
+      {"jp": "試験の結果", "en": "the result of an exam", "cn": "考试的结果"},
+      {"jp": "カンニングする", "en": "cheat on an exam", "cn": "作弊"},
+      {"jp": "レポートの下書きをする", "en": "draft a paper", "cn": "写报告书的草稿", "rel": "→ 清書する（write a final draft 誊清）"},
+      {"jp": "提出期限を守る", "en": "submit in time", "cn": "按时提交"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.67",
+    "sections": [
+      {"type": "choice", "instruction": "正しいほうに〇をつけなさい。", "items": [
+        {"n": 1, "q": "テストで答えを（a. 見直す　b. 問われる）時間がなかった。"},
+        {"n": 2, "q": "先生の話をノートに（a. 聞き取った　b. 書き取った）。"},
+        {"n": 3, "q": "混んでいる電車で座ることができて（a. ついている　b. 落ち着いている）。"},
+        {"n": 4, "q": "試験が（a. 仕上げて　b. 済んで）よかった。"},
+        {"n": 5, "q": "今日の授業で敬語を（a. 教わった　b. 予習した）。"},
+        {"n": 6, "q": "先生の言ったことを（a. 書き取った　b. 下書きした）。"}
+      ]},
+      {"type": "select", "instruction": "（　）にはどれが入りますか。一つ選びなさい。", "items": [
+        {"n": 7, "q": "ここに、住所と名前を（　　）ください。", "opts": ["見直して", "書き直して", "記入して", "予習して"]},
+        {"n": 8, "q": "レポートの提出（　　）は9月30日です。", "opts": ["期限", "結果", "担当", "記入"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②b ③a ④b ⑤a ⑥a　Ⅱ：⑦3 ⑧1"
+  },
+  "hitokoto": "きょうの一言：レポートの提出期限を守りましょう。"
+}

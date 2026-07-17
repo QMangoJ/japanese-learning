@@ -1,0 +1,52 @@
+{
+  "week": 6, "day": 4, "title": "組み合わせのことば", "title_cn": "组合词", "title_en": "Combinations of Words",
+  "dialog": {"lines": ["けさ、理想の人に出会ったの。本屋の前を通りかかったとき、突然その人に話しかけられて……。そこで立ち止まって、1時間も話したの。"], "cn": "“今天早上，我遇到了理想的人。经过书店前面时，那人突然跟我搭话……。于是我停下脚步，聊了整整一个小时。”"},
+  "sections": [
+    {"type": "phrases", "heading": "おぼえましょう：複合動詞①", "items": [
+      {"jp": "理想の人に出会う", "en": "meet an ideal person", "cn": "邂逅理想的人", "rel": "→ 出会い（N）（an encounter 邂逅）"},
+      {"jp": "客を出迎える", "en": "meet the guests", "cn": "迎接客人", "rel": "→ 出迎え（N）（meeting someone 迎接）"},
+      {"jp": "見送る", "en": "see off", "cn": "送", "rel": "→ 見送り（N）（send-off 送）"},
+      {"jp": "空を見上げる", "en": "look up at the sky", "cn": "仰望天空"},
+      {"jp": "通りを見下ろす", "en": "look down at the street", "cn": "俯视马路"},
+      {"jp": "急に立ち止まる", "en": "suddenly stop walking", "cn": "突然站住"},
+      {"jp": "ソファーから立ち上がる", "en": "get up off the couch", "cn": "从沙发上站起身"},
+      {"jp": "寺の前を通りかかる", "en": "walk by the temple", "cn": "路过寺庙门前"},
+      {"jp": "郵便局を通り過ぎる", "en": "pass by the post office", "cn": "经过邮局"},
+      {"jp": "隣の人に話しかける", "en": "talk to the person sitting next to me", "cn": "和旁边的人搭话"},
+      {"jp": "田中さんと話し合う", "en": "discuss with Tanaka-san", "cn": "和田中先生谈话", "rel": "→ 話し合い（N）（discussion 谈话）"},
+      {"jp": "中村さんと知り合う", "en": "get to know Nakamura-san", "cn": "认识中村先生", "rel": "→ 知り合い（N）（acquaintance 相识、熟人）"},
+      {"jp": "駅で待ち合わせる", "en": "meet up at the station", "cn": "在车站等候", "rel": "→ 待ち合わせ（N）（appointment 约见）"},
+      {"jp": "電話で問い合わせる", "en": "inquire by phone", "cn": "电话问询", "rel": "→ 問い合わせ（N）（inquiry 问询）"},
+      {"jp": "旅行会社に申し込む", "en": "ask a travel agent to arrange a trip", "cn": "去旅游公司报名", "rel": "→ 申し込み（N）（applications 申请）"},
+      {"jp": "申し込みを締め切る", "en": "no longer accept applications", "cn": "截止申请", "rel": "→ 締め切り（N）（deadline 截止日期）"},
+      {"jp": "申し込みを受け付ける", "en": "accept applications", "cn": "接受申请", "rel": "→ 受付（N）（reception 前台、受理）"},
+      {"jp": "荷物を受け取る", "en": "receive a parcel", "cn": "收取行李", "rel": "→ 受け取り（N）（receipt 收取）"}
+    ]},
+    {"type": "phrases", "heading": "おぼえましょう：複合動詞②", "items": [
+      {"jp": "電池を取り替える", "en": "change the battery", "cn": "换电池"},
+      {"jp": "予約を取り消す", "en": "cancel a reservation", "cn": "取消预约", "rel": "→ 取り消し（N）（cancellation 取消）"},
+      {"jp": "CDを取り出す", "en": "take out the CD", "cn": "取出CD"},
+      {"jp": "子どもが飛び出す", "en": "a kid runs out on the street", "cn": "孩子跑出来"},
+      {"jp": "プールに飛び込む", "en": "jump into the swimming pool", "cn": "跳到游泳池里"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.101",
+    "sections": [
+      {"type": "choice", "instruction": "正しいほうに〇をつけなさい。", "items": [
+        {"n": 1, "q": "「ご主人とどこで（a. 話しかけました　b. 知り合いました）か。」"},
+        {"n": 2, "q": "オークションの出品を（a. 取り消した　b. 取り出した）。"},
+        {"n": 3, "q": "その商品について、電話で（a. 話し合って　b. 問い合わせて）みた。"},
+        {"n": 4, "q": "猫が急に車の前に（a. 飛び出して　b. 取り出して）きた。"},
+        {"n": 5, "q": "「近くを（a. 通り過ぎた　b. 通りかかった）ので、ちょっと寄ってみました。」"},
+        {"n": 6, "q": "友人が国に帰るので、空港まで（a. 出迎え　b. 見送り）に行った。"}
+      ]},
+      {"type": "select", "instruction": "（　）にはどれが入りますか。一つ選びなさい。", "items": [
+        {"n": 7, "q": "汗をかいたから、新しいシャツに（　　）。", "opts": ["取りあげよう", "取りいれよう", "取りだそう", "取りかえよう"]},
+        {"n": 8, "q": "あなたに（　　）うれしい。", "opts": ["出会えて", "話し合えて", "待ち合わせて", "話しかけて"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②a ③b ④a ⑤b ⑥b　Ⅱ：⑦4 ⑧1"
+  },
+  "hitokoto": "きょうの一言：さまざまな国の人と知り合うのは楽しいですね。"
+}

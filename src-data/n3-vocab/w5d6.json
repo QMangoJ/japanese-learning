@@ -1,0 +1,51 @@
+{
+  "week": 5, "day": 6, "title": "どんなようすですか？②", "title_cn": "什么样子？②", "title_en": "How Would You Describe the Following? ②",
+  "dialog": {"lines": ["そのあやしい男は、鋭いナイフを持って、薄暗い部屋に入っていった。その後「ギャー」という声が聞こえて……恐ろしい事件が起きた。", "くだらない小説だなぁ。"], "cn": "“那个可疑的男人拿着锋利的刀，走进昏暗的房间。之后听到‘啊——’的一声……发生了可怕的事件。”“真是无聊的小说啊。”"},
+  "sections": [
+    {"type": "phrases", "heading": "おぼえましょう", "items": [
+      {"jp": "花が咲く", "en": "flowers bloom", "cn": "花开", "rel": "⇔ 花が散る（flowers fall down 花落）"},
+      {"jp": "木が枯れる", "en": "a tree dies", "cn": "树木枯萎"},
+      {"jp": "山がくずれる", "en": "a mountain collapses", "cn": "山体滑坡"},
+      {"jp": "険しい山", "en": "a rugged mountain", "cn": "险峻的山"},
+      {"jp": "なだらかな坂", "en": "a gentle slope", "cn": "平缓的坡"},
+      {"jp": "箱がつぶれる", "en": "a box collapses", "cn": "箱子压坏", "rel": "→ つぶす（crush 压坏）"},
+      {"jp": "浮く", "en": "float", "cn": "浮", "rel": "⇔ 沈む（sink 沉）"},
+      {"jp": "蒸し暑い", "en": "humid", "cn": "闷热"},
+      {"jp": "くさる", "en": "rot", "cn": "腐烂"},
+      {"jp": "かびが生える", "en": "get moldy", "cn": "发霉"},
+      {"jp": "変なにおいがする", "en": "it stinks", "cn": "有怪味儿", "rel": "→ におう（(Something) smells 有味儿）"},
+      {"jp": "気味が悪い／気持ち（が）悪い", "en": "a creepy creature", "cn": "瘆人的生物"},
+      {"jp": "親しい友人", "en": "a close friend", "cn": "亲密的朋友", "rel": "→ 親友（a best friend 挚友）"},
+      {"jp": "あやしい男", "en": "a suspicious guy", "cn": "可疑男子"},
+      {"jp": "恐ろしい事件", "en": "a dreadful incident", "cn": "恐怖事件"},
+      {"jp": "さびた包丁", "en": "a rusty knife", "cn": "生锈的菜刀", "rel": "→ さびる（rust 生锈）"},
+      {"jp": "鋭い", "en": "sharp", "cn": "锋利", "rel": "⇔ 鈍い（dull 钝）"},
+      {"jp": "のろい車", "en": "a slow car", "cn": "缓慢的车"},
+      {"jp": "安全な場所", "en": "a safe place", "cn": "安全的场所"},
+      {"jp": "薄暗い部屋", "en": "a dim room", "cn": "昏暗的房间"},
+      {"jp": "まぶしい明かり", "en": "a glaring light", "cn": "耀眼的光"},
+      {"jp": "くわしい説明書", "en": "detailed manual", "cn": "详细的说明书", "rel": "→ くわしく説明する（explain in details 详细说明）"},
+      {"jp": "くだらない小説", "en": "a worthless novel", "cn": "无聊的小说"},
+      {"jp": "でたらめに答える", "en": "give a haphazard answer", "cn": "胡乱地回答"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.90",
+    "sections": [
+      {"type": "choice", "instruction": "正しいほうに〇をつけなさい。", "items": [
+        {"n": 1, "q": "この季節は、すぐ食べ物にかびが（a. くさる　b. 生える）。"},
+        {"n": 2, "q": "桜の花が（a. かれて　b. 散って）、葉が出てきました。"},
+        {"n": 3, "q": "去年の夏に、この辺で（a. 蒸し暑い　b. 気味が悪い）ことが起こった。"},
+        {"n": 4, "q": "（a. けわしい　b. くわしい）山に登った。"},
+        {"n": 5, "q": "青い空に白い雲が（a. うかんで　b. しずんで）いる。"},
+        {"n": 6, "q": "くさった魚が、ひどく（a. さびている　b. におっている）。"}
+      ]},
+      {"type": "select", "instruction": "（　）にはどれが入りますか。一つ選びなさい。", "items": [
+        {"n": 7, "q": "そんなに（　　）ナイフでは、物は切れません。", "opts": ["するどい", "さびた", "くずれた", "つぶれた"]},
+        {"n": 8, "q": "近くの公園で（　　）事件が起きた。", "opts": ["おそろしい", "でたらめな", "薄暗い", "まぶしい"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②b ③b ④a ⑤a ⑥b　Ⅱ：⑦2 ⑧1"
+  },
+  "hitokoto": "きょうの一言：かびが生えた食べ物は捨てましょう。"
+}

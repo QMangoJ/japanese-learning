@@ -1,0 +1,62 @@
+{
+  "week": 1, "day": 1, "title": "キッチンで／リビングで", "title_cn": "在厨房/在客厅", "title_en": "In the Kitchen / Living Room",
+  "dialog": {"lines": ["おなかがすいた。何かない？", "残り物なら、あるよ。ビール、冷えてるけど、飲む？"], "cn": "“肚子饿了，有什么吃的吗？”“剩饭倒是有。啤酒冰着呢，喝吗？”"},
+  "sections": [
+    {"type": "words", "heading": "絵をみておぼえましょう：キッチン（=台所）", "heading_en": "Kitchen", "heading_cn": "厨房", "items": [
+      {"jp": "電子レンジ", "en": "microwave", "cn": "微波炉"},
+      {"jp": "（お）茶わん", "en": "(rice) bowl", "cn": "饭碗"},
+      {"jp": "ワイングラス", "en": "wine glass", "cn": "葡萄酒杯"},
+      {"jp": "コーヒーカップ", "en": "coffee cup", "cn": "咖啡杯"},
+      {"jp": "湯飲み（茶わん）", "en": "tea cup", "cn": "茶杯"},
+      {"jp": "冷蔵庫", "en": "refrigerator", "cn": "冰箱"},
+      {"jp": "ガスレンジ／ガスコンロ", "en": "gas stove", "cn": "煤气灶"},
+      {"jp": "ガラスのコップ", "en": "glass", "cn": "玻璃杯"},
+      {"jp": "レバー", "en": "lever", "cn": "把手"},
+      {"jp": "流し", "en": "sink", "cn": "水池"}
+    ]},
+    {"type": "words", "heading": "絵をみておぼえましょう：リビング／居間", "heading_en": "Living Room", "heading_cn": "起居室", "items": [
+      {"jp": "窓ガラス", "en": "window glass", "cn": "窗玻璃"},
+      {"jp": "雨戸", "en": "shutter", "cn": "遮雨窗"},
+      {"jp": "網戸", "en": "screen", "cn": "纱窗"},
+      {"jp": "天井", "en": "ceiling", "cn": "天棚"},
+      {"jp": "床", "en": "floor", "cn": "地板"},
+      {"jp": "コンセント", "en": "electrical outlet", "cn": "插座"},
+      {"jp": "コード", "en": "cord", "cn": "电线"},
+      {"jp": "エアコン", "en": "air conditioner", "cn": "空调"},
+      {"jp": "ヒーター", "en": "heater", "cn": "电暖气"},
+      {"jp": "じゅうたん／カーペット", "en": "carpet", "cn": "地毯"}
+    ]},
+    {"type": "phrases", "heading": "もっとおぼえましょう", "items": [
+      {"jp": "水道の蛇口をひねる", "en": "turn on a tap", "cn": "拧开自来水的水龙头"},
+      {"jp": "水が凍る", "en": "water freezes", "cn": "水结冰", "rel": "→ 氷になる（turn into ice 冻成冰）"},
+      {"jp": "冷凍して保存する", "en": "freeze to store", "cn": "冷冻保存"},
+      {"jp": "残り物を温める", "en": "warm up leftover food in a microwave", "cn": "热剩下的食物（用微波炉）"},
+      {"jp": "ビールを冷やす", "en": "chill the beer", "cn": "将啤酒冰镇", "rel": "→ ビールが冷えている（the beer is chilled 啤酒冰好了）"},
+      {"jp": "エアコンのリモコン", "en": "remote control for an air conditioner", "cn": "空调的遥控器", "rel": "→ スイッチ（switch 开关）"},
+      {"jp": "電源を入れる", "en": "plug in", "cn": "接通电源", "rel": "⇔ 切る（unplug 切断）"},
+      {"jp": "じゅうたんを敷く", "en": "carpet the floor", "cn": "铺上地毯"},
+      {"jp": "部屋を暖める", "en": "heat up the room", "cn": "提高室温", "rel": "→ 暖房をつける（turn the heater on 开暖气）"},
+      {"jp": "クーラー／冷房が効いている", "en": "be well air-conditioned", "cn": "冷气很足"},
+      {"jp": "日当たりがいい", "en": "have good exposure to the sun", "cn": "采光好", "rel": "⇔ 日当たりが悪い（have poor exposure to the sun 采光不好）"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.15",
+    "sections": [
+      {"type": "choice", "instruction": "正しいほうに〇をつけなさい。", "items": [
+        {"n": 1, "q": "虫が入ってこないように、（a. 雨戸　b. 網戸）を閉めましょう。"},
+        {"n": 2, "q": "サラダを冷蔵庫で（a. 冷やして　b. 冷凍して）おきましょう。"},
+        {"n": 3, "q": "ヒーターをつけたら、部屋が（a. 暖かくなった　b. 効いてきた）。"},
+        {"n": 4, "q": "「ちょっと、そこのワイン（a. ガラス　b. グラス）を取って。」"},
+        {"n": 5, "q": "「（a. 電子レンジ　b. ガスレンジ）の火を少し小さくして。」"},
+        {"n": 6, "q": "窓（a. ガラス　b. グラス）をふきましょう※。（※ふく +p.18）"}
+      ]},
+      {"type": "select", "instruction": "（　）にはどれが入りますか。一つ選びなさい。", "items": [
+        {"n": 7, "q": "新しいコーヒー（　　）を買いました。", "opts": ["コップ", "グラス", "ガラス", "カップ"]},
+        {"n": 8, "q": "この蛇口を（　　）と、お湯が出ます。", "opts": ["しく", "あたためる", "ひねる", "いれる"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②a ③a ④b ⑤b ⑥a　Ⅱ：⑦4 ⑧3"
+  },
+  "hitokoto": "きょうの一言：流しはいつもきれいにしておきましょう。"
+}

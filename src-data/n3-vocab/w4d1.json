@@ -1,0 +1,64 @@
+{
+  "week": 4, "day": 1, "title": "学校へ行きましょう①", "title_cn": "到学校去①", "title_en": "Let's Go to School ①",
+  "dialog": {"lines": ["明日も算数があるから、定規を持っていかなくちゃ。苦手な体育もある。いやだな。あ、えんぴつもけずらないと。"], "cn": "“明天也有算术课，得带上尺子。还有不擅长的体育课。真讨厌。啊，铅笔也得削一削。”"},
+  "sections": [
+    {"type": "words", "heading": "絵をみておぼえましょう：時間割・教科", "items": [
+      {"jp": "時間割", "en": "school timetable", "cn": "课程表"},
+      {"jp": "国語", "en": "Japanese language arts", "cn": "语文"},
+      {"jp": "算数", "en": "basic math", "cn": "算术（初等的数学）"},
+      {"jp": "理科", "en": "science", "cn": "理科"},
+      {"jp": "社会", "en": "social studies", "cn": "社会学科"},
+      {"jp": "体育", "en": "physical education", "cn": "体育"},
+      {"jp": "音楽", "en": "music", "cn": "音乐"}
+    ]},
+    {"type": "phrases", "heading": "□にいれてよみましょう：科目は、＿＿です。", "items": [
+      {"jp": "得意な", "en": "strong", "cn": "擅长的"},
+      {"jp": "苦手な", "en": "weak", "cn": "不擅长的"}
+    ]},
+    {"type": "phrases", "heading": "□にいれてよみましょう：＿＿に入学する。", "items": [
+      {"jp": "私立高校", "en": "a private school", "cn": "私立高中"},
+      {"jp": "公立高校", "en": "a public school", "cn": "公立高中"},
+      {"jp": "国立大学", "en": "a national university", "cn": "国立大学"}
+    ]},
+    {"type": "phrases", "heading": "□にいれてよみましょう：昼休みに＿＿を食べる。", "items": [
+      {"jp": "（お）弁当", "en": "a box lunch", "cn": "便当"},
+      {"jp": "給食", "en": "a hot school lunch", "cn": "提供的伙食"}
+    ]},
+    {"type": "phrases", "heading": "もっとおぼえましょう", "items": [
+      {"jp": "入学する", "en": "enroll", "cn": "入学"},
+      {"jp": "入学式", "en": "entrance ceremony", "cn": "入学仪式", "rel": "⇔ 卒業式（graduation ceremony 毕业典礼）"},
+      {"jp": "出席する", "en": "attend", "cn": "出席", "rel": "⇔ 欠席する（not to attend 缺席）"},
+      {"jp": "バスで通学する", "en": "commute to school by bus", "cn": "乘公交车上学", "rel": "→ 通勤する（commute 上班）"},
+      {"jp": "1／2／3学期", "en": "first/second/third semester", "cn": "第1/2/3学期", "rel": "→ 今学期（this semester 本学期）"},
+      {"jp": "前期", "en": "the first semester", "cn": "上半学期", "rel": "⇔ 後期（the second semester 下半学期）"},
+      {"jp": "同じ学年", "en": "in the same grade", "cn": "同一学年"},
+      {"jp": "自習する", "en": "study on your own", "cn": "自习"},
+      {"jp": "えんぴつをけずる", "en": "sharpen a pencil", "cn": "削铅笔"},
+      {"jp": "物差し／定規で測る", "en": "measure something with a ruler", "cn": "用尺／尺子测量"},
+      {"jp": "合計を出す", "en": "sum up", "cn": "得出合计数"},
+      {"jp": "足し算", "en": "addition", "cn": "加法", "rel": "2＋3＝5（2足す3は5）"},
+      {"jp": "引き算", "en": "subtraction", "cn": "减法", "rel": "5－3＝2（5引く3は2）"},
+      {"jp": "かけ算", "en": "multiplication", "cn": "乘法", "rel": "4×2＝8（4かける2は8）"},
+      {"jp": "割り算", "en": "division", "cn": "除法", "rel": "8÷4＝2（8割る4は2）"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.63",
+    "sections": [
+      {"type": "choice", "instruction": "正しいほうに〇をつけなさい。", "items": [
+        {"n": 1, "q": "物差しで（a. けずったら　b. はかったら）、30センチありました。"},
+        {"n": 2, "q": "計算が遅いので、算数は（a. 得意な　b. 苦手な）教科です。"},
+        {"n": 3, "q": "大学生の息子は、バスで（a. 通学　b. 通勤）している。"},
+        {"n": 4, "q": "ふつうは（a. 私立　b. 公立）高校のほうが、学費※は安いです。（※学費 +p.62）"},
+        {"n": 5, "q": "5×3は（a. かけ算　b. 足し算）です。"},
+        {"n": 6, "q": "「明日は（a. 給食　b. 自習）がないので、お弁当を持ってきてください。」"}
+      ]},
+      {"type": "select", "instruction": "（　）にはどれが入りますか。一つ選びなさい。", "items": [
+        {"n": 7, "q": "9÷3は（　　）と読みます。", "opts": ["9たす3", "9ひく3", "9かける3", "9わる3"]},
+        {"n": 8, "q": "風邪で（　　）が多い。", "opts": ["出席者", "欠席者", "通学者", "通勤者"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②b ③a ④b ⑤a ⑥a　Ⅱ：⑦4 ⑧2"
+  },
+  "hitokoto": "きょうの一言：計算を間違えないようにしましょう。"
+}

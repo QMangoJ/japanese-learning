@@ -1,0 +1,62 @@
+{
+  "week": 5, "day": 5, "title": "どんなようすですか？①", "title_cn": "什么样子？①", "title_en": "How Would You Describe the Following? ①",
+  "dialog": {"lines": ["あら〜、またしわが増えたわ。白髪もこんなに出てきたし。", "しわだけじゃなくて、体重も増えたと思うけど……。"], "cn": "“哎呀～，皱纹又多了。白头发也长了这么多。”“不光皱纹，我看你体重也增加了吧……”"},
+  "sections": [
+    {"type": "words", "heading": "絵をみておぼえましょう：顔・体", "items": [
+      {"jp": "虫歯", "en": "cavity", "cn": "虫牙"},
+      {"jp": "にきび", "en": "pimple", "cn": "痤疮"},
+      {"jp": "白髪", "en": "gray hair", "cn": "白发"},
+      {"jp": "しわ", "en": "wrinkle", "cn": "皱纹"}
+    ]},
+    {"type": "phrases", "heading": "□にいれてよみましょう：＿＿が出る。", "items": [
+      {"jp": "鼻（水）", "en": "mucus", "cn": "鼻涕"},
+      {"jp": "ため息", "en": "sigh", "cn": "叹息", "rel": "→ ため息をつく（sigh 叹了口气）"},
+      {"jp": "涙", "en": "tear", "cn": "泪", "rel": "→ 涙を流す（weep 流泪）"},
+      {"jp": "汗", "en": "sweat", "cn": "汗", "rel": "→ 汗をかく（sweat 出汗）／汗くさい（sweaty 有汗味儿）"},
+      {"jp": "よだれ", "en": "saliva", "cn": "口水"}
+    ]},
+    {"type": "phrases", "heading": "□にいれてよみましょう：＿＿が出る。／＿＿をする。", "items": [
+      {"jp": "せき", "en": "cough", "cn": "咳嗽"},
+      {"jp": "しゃっくり", "en": "hiccup", "cn": "打嗝"},
+      {"jp": "くしゃみ", "en": "sneeze", "cn": "喷嚏"},
+      {"jp": "あくび", "en": "yawn", "cn": "哈欠"},
+      {"jp": "げっぷ", "en": "burp", "cn": "打嗝儿"},
+      {"jp": "おなら", "en": "gas", "cn": "屁"}
+    ]},
+    {"type": "phrases", "heading": "もっとおぼえましょう", "items": [
+      {"jp": "体重が増える", "en": "get fat", "cn": "体重增加", "rel": "→ 体重を増やす（gain weight 增加体重）（=太る）"},
+      {"jp": "体重が減る", "en": "get thin", "cn": "体重下降", "rel": "→ 体重を減らす／ダイエットをする（lose weight 减肥）（=やせる）"},
+      {"jp": "いびきをかく", "en": "snore", "cn": "打呼噜"},
+      {"jp": "足がしびれる", "en": "one's leg goes to sleep", "cn": "脚腿麻"},
+      {"jp": "体がふるえる", "en": "one's body is trembling", "cn": "身体哆嗦"},
+      {"jp": "肩がこる", "en": "get a stiff shoulder", "cn": "肩膀酸痛"},
+      {"jp": "くせがつく", "en": "fall into the habit of....", "cn": "养成坏习惯", "rel": "→ くせになる（become a habit 养成习惯、成瘾）"},
+      {"jp": "ストレスがたまる", "en": "get stressed out", "cn": "压力积攒"},
+      {"jp": "年を取る", "en": "get old", "cn": "上年纪"},
+      {"jp": "つめが伸びる", "en": "nails grow", "cn": "指甲长了"},
+      {"jp": "ひげが生える", "en": "beard grows", "cn": "长胡子"},
+      {"jp": "歯が生える", "en": "teeth coming in", "cn": "长牙"},
+      {"jp": "髪の毛が抜ける", "en": "lose hair", "cn": "脱发", "rel": "→ はげる（go bald 秃）"},
+      {"jp": "髪をそめる", "en": "dye one's hair", "cn": "染发"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.87",
+    "sections": [
+      {"type": "choice", "instruction": "正しいほうに〇をつけなさい。", "items": [
+        {"n": 1, "q": "運動した後の体は、（a. あせ　b. なみだ）くさい。"},
+        {"n": 2, "q": "眠くて（a. にきび　b. あくび）が出た。"},
+        {"n": 3, "q": "風邪を引いたのか、（a. くしゃみ　b. しゃっくり）が止まらない。"},
+        {"n": 4, "q": "寒さで体が（a. ふえる　b. ふるえる）。"},
+        {"n": 5, "q": "長時間※、畳に座っていて、足が（a. しびれた　b. のびた）。（※長時間＝長い時間）"},
+        {"n": 6, "q": "顔の（a. くせ　b. しわ）を取る手術をした。"}
+      ]},
+      {"type": "select", "instruction": "（　）にはどれが入りますか。一つ選びなさい。", "items": [
+        {"n": 7, "q": "父は寝ると、大きないびきを（　　）。", "opts": ["かく", "出す", "つく", "ふやす"]},
+        {"n": 8, "q": "どうしていいかわからなくて、（　　）が出た。", "opts": ["せき", "よだれ", "ため息", "げっぷ"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②b ③a ④b ⑤a ⑥b　Ⅱ：⑦1 ⑧3"
+  },
+  "hitokoto": "きょうの一言：ダイエットをして体重を減らしましょう。"
+}

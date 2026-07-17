@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>N3 学习助手 · 语法 + 词汇</title>
+<style>
+:root{
+  --bg:#f6f7f9; --card:#ffffff; --ink:#22272e; --sub:#6a737d; --line:#e3e6ea;
+  --accent:#c0392b; --accent-soft:#fdf0ee; --blue:#2b6cb0; --blue-soft:#ebf3fb;
+  --green:#2f855a; --green-soft:#ecf7f0; --amber:#b7791f; --amber-soft:#fdf6e9;
+  --shadow:0 1px 3px rgba(0,0,0,.06),0 4px 14px rgba(0,0,0,.04); --radius:14px;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#14171c; --card:#1e232a; --ink:#e6e9ed; --sub:#98a1ab; --line:#313842;
+    --accent:#e57365; --accent-soft:#33231f; --blue:#6ea8dc; --blue-soft:#1e2a38;
+    --green:#7cc39a; --green-soft:#1d2c24; --amber:#d9a557; --amber-soft:#2e2718;
+    --shadow:0 1px 3px rgba(0,0,0,.4);}
+}
+*{box-sizing:border-box; -webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans","Hiragino Kaku Gothic ProN","Microsoft YaHei","Noto Sans CJK SC",sans-serif;font-size:16px;line-height:1.65;padding-bottom:calc(64px + env(safe-area-inset-bottom))}
+.jp{font-family:-apple-system,"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic","Noto Sans CJK JP","PingFang SC",sans-serif}
+header.top{position:sticky;top:0;z-index:20;background:var(--card);border-bottom:1px solid var(--line);padding:10px 14px;display:flex;align-items:center;gap:10px;box-shadow:var(--shadow)}
+header.top .back{border:none;background:none;color:var(--blue);font-size:15px;padding:4px 6px;cursor:pointer;flex:none}
+header.top h1{font-size:16px;margin:0;font-weight:700;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.modewrap{position:sticky;top:53px;z-index:19;background:var(--card);border-bottom:1px solid var(--line)}
+.levelbar{display:flex;gap:8px;justify-content:center;padding:8px 14px 5px}
+.levelbar button{border:1px solid var(--line);background:var(--bg);color:var(--sub);border-radius:999px;padding:5px 26px;font-size:14px;font-weight:800;letter-spacing:.5px;cursor:pointer;min-width:84px}
+.levelbar button.on{background:var(--blue);border-color:var(--blue);color:#fff}
+.typebar{display:flex;gap:6px;justify-content:center;padding:0 14px 8px}
+.typebar button{flex:1;max-width:170px;border:1px solid var(--line);background:var(--bg);color:var(--sub);border-radius:999px;padding:6px 0;font-size:14px;font-weight:700;cursor:pointer}
+.typebar button.on{background:var(--accent);border-color:var(--accent);color:#fff}
+main{max-width:760px;margin:0 auto;padding:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:14px 16px;margin-bottom:12px}
+.week-card{cursor:pointer}
+.week-card h2{margin:0 0 2px;font-size:18px}
+.week-card .sub{color:var(--sub);font-size:13px}
+.day-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:8px;margin-top:10px}
+.day-item{border:1px solid var(--line);border-radius:10px;padding:8px 10px;cursor:pointer;background:var(--bg)}
+.day-item:active{transform:scale(.98)}
+.day-item .d{font-size:12px;color:var(--accent);font-weight:700}
+.day-item .t{font-size:14px;font-weight:600}
+.day-item .tc{font-size:12px;color:var(--sub)}
+.dialog{background:var(--amber-soft);border-radius:10px;padding:10px 12px;font-size:14.5px}
+.dialog .cn{color:var(--sub);font-size:13px;margin-top:6px}
+.point{margin-top:14px}
+.point h3{margin:0;font-size:17.5px;background:linear-gradient(transparent 62%,var(--accent-soft) 62%);display:inline;padding:0 2px}
+.point .reading{color:var(--sub);font-size:12.5px;margin:2px 0 6px}
+.conn{background:var(--blue-soft);color:var(--blue);border-radius:8px;padding:6px 10px;font-size:13.5px;margin:6px 0;display:inline-block}
+.usage{font-size:14.5px;margin:4px 0}
+.usage .cn{color:var(--accent);font-weight:600}
+.ex{border-left:3px solid var(--line);padding:2px 0 2px 10px;margin:8px 0}
+.ex .jp{font-size:15.5px}
+.ex .eq{color:var(--sub);font-size:13px}
+.ex .cn{color:var(--sub);font-size:13.5px}
+.note{font-size:13.5px;margin:6px 0;padding:6px 10px;border-radius:8px;background:var(--green-soft)}
+.note b.nt{color:var(--green);margin-right:6px}
+.note.dame{background:var(--accent-soft)}
+.note.dame b.nt{color:var(--accent)}
+.sec-title{font-size:15px;font-weight:700;color:var(--accent);margin:18px 0 6px;display:flex;align-items:center;gap:8px}
+.sec-title small{color:var(--sub);font-weight:400;font-size:12px}
+.sec-title::after{content:"";flex:1;height:1px;background:var(--line)}
+.q{margin:10px 0;font-size:15px}
+.q .n{display:inline-block;min-width:22px;height:22px;line-height:22px;text-align:center;background:var(--blue-soft);color:var(--blue);border-radius:6px;font-size:12.5px;font-weight:700;margin-right:6px}
+.opts{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.opts span{border:1px solid var(--line);border-radius:8px;padding:2px 10px;font-size:13.5px;background:var(--bg)}
+.ansbtn{border:1px dashed var(--blue);background:none;color:var(--blue);border-radius:8px;padding:4px 12px;font-size:13.5px;cursor:pointer;margin:8px 0}
+.answer{display:none;background:var(--green-soft);border-radius:8px;padding:8px 12px;font-size:14px;margin-top:6px}
+.answer.show{display:block}
+.answer b{color:var(--green)}
+.passage{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:14.5px;margin:8px 0;white-space:pre-wrap}
+.meta{color:var(--sub);font-size:13px}
+.keigo{background:var(--amber-soft);border-radius:10px;padding:10px 14px;margin-top:16px}
+.keigo h4{margin:0 0 6px;font-size:15px;color:var(--amber)}
+.keigo li{font-size:14px}
+/* vocab rows */
+.vrow{display:flex;gap:10px;padding:8px 0;border-top:1px dashed var(--line);align-items:baseline}
+.vrow:first-child{border-top:0}
+.vjp{flex:0 0 auto;min-width:40%;font-size:16px;font-weight:600}
+.vmn{flex:1;min-width:0}
+.vcn{color:var(--ink)}
+.ven{color:var(--sub);font-size:12.5px;display:block}
+.vrel{color:var(--green);font-size:12.5px;display:block;margin-top:2px}
+nav.bottom{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--card);border-top:1px solid var(--line);display:flex;padding-bottom:env(safe-area-inset-bottom)}
+nav.bottom button{flex:1;border:none;background:none;color:var(--sub);font-size:11.5px;padding:7px 0 6px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:1px}
+nav.bottom button .ic{font-size:19px;line-height:1.2}
+nav.bottom button.on{color:var(--accent);font-weight:700}
+.search-box{display:flex;gap:8px;margin-bottom:12px}
+.search-box input{flex:1;border:1px solid var(--line);border-radius:10px;padding:9px 12px;font-size:16px;background:var(--card);color:var(--ink);outline:none}
+.search-box input:focus{border-color:var(--blue)}
+.result{cursor:pointer}
+.result .where{color:var(--sub);font-size:12.5px}
+.mtag{display:inline-block;font-size:11px;font-weight:700;padding:1px 7px;border-radius:999px;margin-right:6px;vertical-align:middle}
+.mtag.g{background:var(--accent-soft);color:var(--accent)}
+.mtag.g2{background:var(--amber-soft);color:var(--amber)}
+.mtag.v{background:var(--blue-soft);color:var(--blue)}
+.hl{background:var(--amber-soft);color:var(--amber);font-weight:700;padding:0 1px;border-radius:3px}
+.fc-wrap{display:flex;flex-direction:column;align-items:center;gap:14px}
+.fc-filter{display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
+.fc-filter button{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:4px 14px;font-size:13.5px;cursor:pointer}
+.fc-filter button.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.fcard{width:100%;max-width:520px;min-height:280px;background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:22px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;cursor:pointer}
+.fcard .big{font-size:26px;font-weight:700}
+.fcard .hint{color:var(--sub);font-size:12.5px;margin-top:16px}
+.fcard .backside{text-align:left;width:100%}
+.fc-btns{display:flex;gap:10px}
+.fc-btns button{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:10px;padding:8px 22px;font-size:15px;cursor:pointer}
+.fc-btns button.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.fc-prog{color:var(--sub);font-size:13px}
+table.ref{border-collapse:collapse;width:100%;font-size:13px;margin:8px 0}
+table.ref th,table.ref td{border:1px solid var(--line);padding:5px 7px;text-align:left;vertical-align:top}
+table.ref th{background:var(--bg)}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.toggle-all{border:1px solid var(--line);background:var(--card);color:var(--sub);border-radius:8px;padding:4px 12px;font-size:13px;cursor:pointer;margin-left:auto}
+h2.page{font-size:19px;margin:4px 0 12px}
+.empty{color:var(--sub);text-align:center;padding:40px 0}
+.crumb{color:var(--sub);font-size:13px;margin-bottom:8px}
+a.plink{color:var(--blue);text-decoration:none}
+del{text-decoration:line-through;color:var(--sub)}
+ruby rt{font-size:.55em;color:var(--sub);letter-spacing:0;user-select:none}
+body.no-ruby rt{display:none}
+.conn-hint{font-size:11.5px;color:var(--sub);margin-left:6px}
+.hito{font-style:italic;color:var(--green);border-left:3px solid var(--green)}
+.sayb{border:none;background:none;cursor:pointer;font-size:14px;padding:0 3px;color:var(--blue);vertical-align:middle;opacity:.55}
+.sayb:hover,.sayb:active{opacity:1}
+.starb{border:none;background:none;cursor:pointer;font-size:17px;padding:0 3px;color:var(--amber);vertical-align:middle;line-height:1;opacity:.85}
+.point h3 .starb,.point h3 .sayb{font-size:15px}
+.fav-actions{display:flex;gap:8px;margin:4px 0 12px;flex-wrap:wrap}
+.fav-actions button{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:10px;padding:6px 14px;font-size:14px;cursor:pointer}
+.fav-actions button.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.fav-item{display:flex;gap:8px;align-items:baseline;padding:10px 0;border-top:1px dashed var(--line)}
+.fav-item:first-child{border-top:0}
+.fav-item .fj{flex:1;min-width:0;cursor:pointer}
+.fav-item .fj .t{font-weight:600;font-size:15.5px}
+.fav-item .fj .c{color:var(--sub);font-size:13px}
+.fav-item .fw{color:var(--sub);font-size:11.5px;white-space:nowrap}
+</style>
+</head>
+<body>
+<header class="top">
+  <button class="back" id="backBtn" style="visibility:hidden">‹ 返回</button>
+  <h1 id="title">N3 学习助手</h1>
+  <button class="toggle-all" id="topAction" style="display:none"></button>
+</header>
+<div class="modewrap">
+  <div class="levelbar" id="levelbar">
+    <button data-lv="n3">N3</button>
+    <button data-lv="n2">N2</button>
+  </div>
+  <div class="typebar" id="typebar">
+    <button data-ty="grammar">📘 语法</button>
+    <button data-ty="vocab">📗 词汇</button>
+  </div>
+</div>
+<main id="app"></main>
+<nav class="bottom">
+  <button data-nav="home"><span class="ic">📚</span>周目录</button>
+  <button data-nav="search"><span class="ic">🔍</span>搜索</button>
+  <button data-nav="cards"><span class="ic">🗂️</span>记忆卡</button>
+  <button data-nav="favs"><span class="ic">⭐</span>收藏</button>
+  <button data-nav="ref" id="navRef"><span class="ic">📖</span>接续表</button>
+</nav>
+<script>
+const DATA = __DATA__;
+const G = DATA.grammar, V = DATA.vocab, G2 = DATA.n2grammar;
+let MODULE = 'grammar';
+try{ const m=localStorage.getItem('module'); if(m==='vocab'||m==='grammar'||m==='n2grammar') MODULE=m; }catch(e){}
+const CUR = ()=> MODULE==='vocab'?V:(MODULE==='n2grammar'?G2:G);
+const isGram = ()=> MODULE==='grammar'||MODULE==='n2grammar';
+const modLabel = ()=> ({grammar:'N3 语法', n2grammar:'N2 语法', vocab:'N3 词汇'})[MODULE];
+
+const $ = s=>document.querySelector(s);
+const app=$('#app'), titleEl=$('#title'), backBtn=$('#backBtn'), topAction=$('#topAction');
+const esc = s=>String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+const fmt = s=>esc(s).replace(/~([^~]+)~/g,'<del>$1</del>');
+const R = (o,f)=>(o&&o[f+'_r'])||esc(o?o[f]:'');
+try{ if(localStorage.getItem('noruby')==='1') document.body.classList.add('no-ruby'); }catch(e){}
+function rubyBtnText(){ return document.body.classList.contains('no-ruby')?'注音：关':'注音：开'; }
+topAction.onclick = ()=>{
+  document.body.classList.toggle('no-ruby');
+  try{ localStorage.setItem('noruby', document.body.classList.contains('no-ruby')?'1':'0'); }catch(e){}
+  topAction.textContent = rubyBtnText();
+};
+function noteClass(t){ return (t==='ダメ')?'note dame':'note'; }
+function noteLabel(t){ return ({'れい':'れい','ダメ':'ダメ✗','OK':'OK','もっと':'もっと!','tag':'💬','!':'注意','◆':'◆'})[t]||t; }
+
+/* ---- TTS (朗读) ---- */
+const escAttr = s=>esc(s).replace(/"/g,'&quot;');
+let jaVoice=null;
+function pickVoice(){ try{ const vs=speechSynthesis.getVoices()||[]; jaVoice=vs.find(v=>/^ja/i.test(v.lang))||vs.find(v=>/japan/i.test(v.name))||null; }catch(e){} }
+if('speechSynthesis' in window){ pickVoice(); try{ speechSynthesis.onvoiceschanged=pickVoice; }catch(e){} }
+function say(t){ try{ if(!('speechSynthesis' in window)||!t) return; speechSynthesis.cancel(); const u=new SpeechSynthesisUtterance(t); u.lang='ja-JP'; u.rate=.9; if(jaVoice)u.voice=jaVoice; speechSynthesis.speak(u); }catch(e){} }
+function sayBtn(t){ return t?`<button class="sayb" data-say="${escAttr(t)}" aria-label="朗读">🔊</button>`:''; }
+
+/* ---- 收藏 (生词本) ---- */
+let FAV={}; try{ FAV=JSON.parse(localStorage.getItem('favs')||'{}')||{}; }catch(e){ FAV={}; }
+const FAVMETA={};
+function saveFav(){ try{ localStorage.setItem('favs', JSON.stringify(FAV)); }catch(e){} }
+function isFav(id){ return !!FAV[id]; }
+function toggleFav(id){ if(FAV[id]) delete FAV[id]; else if(FAVMETA[id]) FAV[id]=FAVMETA[id]; saveFav(); }
+function star(id, snap){ FAVMETA[id]=snap; return `<button class="starb" data-fav="${escAttr(id)}" aria-label="收藏">${isFav(id)?'★':'☆'}</button>`; }
+
+/* ---------- module switch ---------- */
+let LEVEL='n3', TYPE='grammar';
+function deriveLT(){
+  if(MODULE==='n2grammar'){ LEVEL='n2'; TYPE='grammar'; }
+  else if(MODULE==='vocab'){ LEVEL='n3'; TYPE='vocab'; }
+  else { LEVEL='n3'; TYPE='grammar'; }
+}
+deriveLT();
+function moduleFrom(lv,ty){ return lv==='n2' ? 'n2grammar' : (ty==='vocab'?'vocab':'grammar'); }
+function syncModeBar(){
+  deriveLT();
+  document.querySelectorAll('#levelbar button').forEach(b=>b.classList.toggle('on', b.dataset.lv===LEVEL));
+  document.querySelectorAll('#typebar button').forEach(b=>b.classList.toggle('on', b.dataset.ty===TYPE));
+  const vb=document.querySelector('#typebar button[data-ty="vocab"]');
+  if(vb) vb.style.display = LEVEL==='n2'?'none':'';
+  $('#navRef').style.display = MODULE==='grammar'?'':'none';
+}
+function setModule(m){
+  MODULE=m; try{ localStorage.setItem('module',m); }catch(e){}
+  fc.deck=[]; fc.week=0; syncModeBar();
+}
+document.querySelectorAll('#levelbar button').forEach(b=>{
+  b.onclick=()=>{ const lv=b.dataset.lv; setModule(moduleFrom(lv, lv==='n2'?'grammar':TYPE)); navTo('#/'); };
+});
+document.querySelectorAll('#typebar button').forEach(b=>{
+  b.onclick=()=>{ setModule(moduleFrom(LEVEL, b.dataset.ty)); navTo('#/'); };
+});
+
+/* ---------- routing ---------- */
+function navTo(hash){ if(location.hash===hash) render(); else location.hash=hash; }
+window.addEventListener('hashchange', render);
+backBtn.onclick = ()=>{ history.length>1 ? history.back() : navTo('#/'); };
+document.querySelectorAll('nav.bottom button').forEach(b=>{
+  b.onclick = ()=> navTo({home:'#/',search:'#/search',cards:'#/cards',favs:'#/favs',ref:'#/ref'}[b.dataset.nav]);
+});
+/* delegated clicks (artifact CSP blocks inline onclick=) */
+app.addEventListener('click', e=>{
+  const sb=e.target.closest('[data-say]'); if(sb){ say(sb.dataset.say); return; }
+  const fv=e.target.closest('[data-fav]'); if(fv){ toggleFav(fv.dataset.fav); fv.textContent=isFav(fv.dataset.fav)?'★':'☆'; if((location.hash||'#/')==='#/favs') viewFavs(); return; }
+  if(e.target.closest('[data-favfc]')){ startFavFc(); return; }
+  const fclr=e.target.closest('[data-favclear]'); if(fclr){ if(fclr.dataset.armed){ FAV={}; saveFav(); viewFavs(); } else { fclr.dataset.armed='1'; fclr.textContent='再点一次清空'; } return; }
+  if(e.target.closest('[data-favflip]')){ favFlip=!favFlip; renderFavFc(); return; }
+  if(e.target.closest('[data-favprev]')){ if(favIdx>0){ favIdx--; favFlip=false; renderFavFc(); } return; }
+  if(e.target.closest('[data-favnext]')){ favIdx=(favIdx+1)%favDeck.length; favFlip=false; renderFavFc(); return; }
+  if(e.target.closest('[data-favback]')){ navTo('#/favs'); return; }
+  const go=e.target.closest('[data-go]'); if(go){ if(go.dataset.mod) setModule(go.dataset.mod); navTo(go.dataset.go); return; }
+  const an=e.target.closest('[data-ans]'); if(an){ const a=document.getElementById(an.dataset.ans); if(a){ a.classList.toggle('show'); an.textContent=a.classList.contains('show')?'隐藏答案':'显示答案'; } return; }
+  const hit=e.target.closest('[data-hit]'); if(hit){ openHit(+hit.dataset.hit); return; }
+  const fw=e.target.closest('[data-fcweek]'); if(fw){ fcSetWeek(+fw.dataset.fcweek); return; }
+  const fb=e.target.closest('[data-fc]'); if(fb){ ({prev:fcPrev,next:fcNext,shuffle:fcShuffle})[fb.dataset.fc](); return; }
+  if(e.target.closest('[data-fcflip]')){ fcFlip(); return; }
+});
+function setNav(name){ document.querySelectorAll('nav.bottom button').forEach(b=>b.classList.toggle('on', b.dataset.nav===name)); }
+function setHeader(t, showBack){
+  titleEl.textContent = t;
+  backBtn.style.visibility = showBack?'visible':'hidden';
+  topAction.style.display='inline-block'; topAction.textContent = rubyBtnText();
+}
+function render(){
+  syncModeBar();
+  const h = location.hash || '#/'; window.scrollTo(0,0);
+  if(h==='#/') return viewHome();
+  if(h==='#/search') return viewSearch();
+  if(h==='#/cards') return viewCards();
+  if(h==='#/favs') return viewFavs();
+  if(h==='#/ref'){ if(MODULE!=='grammar') setModule('grammar'); return viewRef(); }
+  let m = h.match(/^#\/day\/(\d)-(\d)(?:\/p(\d+))?$/);
+  if(m) return viewDay(+m[1], +m[2], m[3]?+m[3]:null);
+  viewHome();
+}
+
+/* ---------- home ---------- */
+function viewHome(){
+  setNav('home'); setHeader(modLabel(), false);
+  const book = {grammar:'考前对策 N3语法', n2grammar:'考前对策 N2语法', vocab:'考前对策 N3词汇'}[MODULE];
+  const kind = MODULE==='vocab'?'词汇':'语法';
+  const intro = `《${book}》 · ${CUR().weeks.length} 周 × 7 天 · 点击进入每日${kind}`;
+  let html = `<div class="meta" style="margin-bottom:10px">${intro}</div>`;
+  for(const w of CUR().weeks){
+    const wt = w.title ? ` <span class="jp">${esc(w.title)}</span>` : '';
+    const wsub = w.title_cn ? `<div class="sub">${esc(w.title_cn)}</div>` : '';
+    html += `<div class="card week-card"><h2>第${w.n}週${wt}</h2>${wsub}<div class="day-list">` +
+      w.days.map(d=>{
+        const isExam = d.day===7;
+        return `<div class="day-item" data-go="#/day/${w.n}-${d.day}">
+          <div class="d">${d.day}日目${isExam?' · 实战':''}</div>
+          <div class="t jp">${R(d,'title')}</div>
+          <div class="tc">${esc(d.title_cn||'')}</div></div>`;
+      }).join('') + `</div></div>`;
+  }
+  app.innerHTML = html;
+}
+
+/* ---------- shared helpers ---------- */
+function findDay(w,d){ const wk=CUR().weeks.find(x=>x.n===w); return wk?wk.days.find(x=>x.day===d):null; }
+function ansBlock(id, content){
+  return `<button class="ansbtn" data-ans="${id}">显示答案</button>
+  <div class="answer" id="${id}">${content}</div>`;
+}
+function afterRender(scrollP){
+  if(scrollP!=null){
+    const el=document.querySelector(`[id$="-${scrollP}"].point`);
+    if(el){ el.scrollIntoView({block:'center'}); el.style.background='var(--amber-soft)'; setTimeout(()=>el.style.background='',1600); }
+  }
+}
+function optsRow(it){
+  const opts = it.options_r||it.opts_r||(it.options||it.opts||[]).map(esc);
+  if(!(it.options||it.opts)) return '';
+  const numbered = !!it.opts; // exam-style opts are numbered
+  return `<div class="opts">${opts.map((o,i)=>`<span class="jp">${numbered?(i+1)+' ':''}${o}</span>`).join('')}</div>`;
+}
+
+/* ---------- day view (dispatch) ---------- */
+function viewDay(w,d,scrollP){
+  const day=findDay(w,d);
+  if(!day){ app.innerHTML='<div class="empty">未找到</div>'; return; }
+  setNav('home'); setHeader(`第${w}週 ${d}日目`, true);
+  if(isGram()) viewDayGrammar(day,w,d,scrollP);
+  else viewDayVocab(day,w,d);
+}
+
+/* ---------- grammar day ---------- */
+function pointHTML(p, wid, i){
+  const connHtml = p.connection?fmt(p.connection):'';
+  const pid = MODULE+'#'+wid+'#'+i, pw=wid.split('-')[0], pd=wid.split('-')[1];
+  const psnap = {module:MODULE, hash:'#/day/'+wid+'/p'+i, w:pw, d:pd, jp:p.pattern, cn:p.usage_cn||''};
+  let h = `<div class="point" id="pt-${wid}-${i}">
+    <h3 class="jp">${R(p,'pattern')}</h3>${star(pid,psnap)}${sayBtn(p.pattern)}
+    ${p.reading?`<div class="reading jp">${esc(p.reading)}</div>`:''}
+    ${connHtml?`<div><span class="conn jp">接続：${connHtml}</span>${connHtml.includes('<del>')?`<span class="conn-hint">（划线部分去掉）</span>`:''}</div>`:''}
+    ${p.usage_jp?`<div class="usage jp">${R(p,'usage_jp')}</div>`:''}
+    ${p.usage_cn?`<div class="usage"><span class="cn">${esc(p.usage_cn)}</span></div>`:''}`;
+  for(const ex of (p.examples||[])) h += `<div class="ex"><div class="jp">${R(ex,'jp')}${sayBtn(ex.jp)}</div>${ex.eq?`<div class="eq jp">（${R(ex,'eq')}）</div>`:''}${ex.cn?`<div class="cn">${esc(ex.cn)}</div>`:''}</div>`;
+  for(const nt of (p.notes||[])) h += `<div class="${noteClass(nt.type)}"><b class="nt">${esc(noteLabel(nt.type))}</b><span class="jp">${R(nt,'text')}</span></div>`;
+  return h + `</div>`;
+}
+function viewDayGrammar(day,w,d,scrollP){
+  const wk=CUR().weeks.find(x=>x.n===w);
+  const wt = wk.title?` <span class="jp">${esc(wk.title)}</span>（${esc(wk.title_cn||'')}）`:` · ${MODULE==='n2grammar'?'N2 语法':'语法'}`;
+  let html = `<div class="crumb">第${w}週${wt}</div>`;
+  if(d===7){ app.innerHTML = html + examGrammarHTML(day,w); afterRender(scrollP); return; }
+  html += `<h2 class="page jp">${R(day,'title')} <span class="meta">${esc(day.title_cn||'')}${day.title_en?` · ${esc(day.title_en)}`:''}</span></h2>`;
+  if(day.dialog){
+    const lines = day.dialog.lines_r || (day.dialog.lines||[]).map(esc);
+    html += `<div class="dialog jp">${lines.join('<br>')} ${sayBtn((day.dialog.lines||[]).join('　'))}${day.dialog.cn?`<div class="cn">${esc(day.dialog.cn)}</div>`:''}</div>`;
+  }
+  html += `<div class="card">` + (day.points||[]).map((p,i)=>pointHTML(p,`${w}-${d}`,i)).join('<hr style="border:none;border-top:1px solid var(--line);margin:16px 0">') + `</div>`;
+  if(day.exercises){
+    html += `<div class="sec-title">れんしゅう（练习）</div><div class="card">`;
+    for(const sec of (day.exercises.sections||[])){
+      html += `<div class="meta jp" style="margin:4px 0 8px">${sec.type==='choice'?'Ⅰ':'Ⅱ'}　${R(sec,'instruction')}</div>`;
+      for(const it of (sec.items||[])) html += `<div class="q"><span class="n">${it.n}</span><span class="jp">${R(it,'q')}</span>${optsRow(it)}</div>`;
+    }
+    if(day.exercises.answers) html += ansBlock(`ans-${w}-${d}`, `<b>答案：</b><span class="jp">${esc(day.exercises.answers)}</span>`);
+    else if(day.exercises.answers_note) html += `<div class="meta">${esc(day.exercises.answers_note)}</div>`;
+    html += `</div>`;
+  }
+  app.innerHTML = html; afterRender(scrollP);
+}
+function examGrammarHTML(day,w){
+  const useBesatsu = MODULE==='grammar';
+  const bes = useBesatsu ? (G.besatsu['w'+w]||{}) : {}; const ansMap={};
+  if(useBesatsu) for(const k of ['mondai1','mondai2','mondai3']) for(const a of (bes[k]||[])) ansMap[a.n]=a;
+  let html = `<h2 class="page jp">実戦問題 <span class="meta">实战问题 · ${esc(day.time_limit||'')} · ${esc(day.scoring||'')}</span></h2>`;
+  const renderQ = it=>{
+    const a=ansMap[it.n]; const opts=it.opts_r||(it.opts||[]).map(esc);
+    let h=`<div class="q"><span class="n">${it.n}</span><span class="jp">${R(it,'q')}</span>`;
+    if(it.opts) h+=`<div class="opts">${opts.map((o,i)=>`<span class="jp">${i+1} ${o}</span>`).join('')}</div>`;
+    if(a){
+      let c=`<b>答案：${a.ans}</b>`;
+      if(it.opts && a.ans>=1 && a.ans<=it.opts.length) c+=`　<span class="jp">${opts[a.ans-1]}</span>`;
+      if(a.order) c+=`　<span class="jp">顺序：${esc(a.order)}</span>`;
+      if(a.note) c+=`<div class="jp" style="margin-top:4px">${R(a,'note')}</div>`;
+      h+=ansBlock(`exam-${w}-${it.n}`, c);
+    }
+    return h+`</div>`;
+  };
+  for(const [key,label] of [['mondai1','問題1'],['mondai2','問題2'],['mondai3','問題3']]){
+    const m=day[key]; if(!m) continue;
+    html += `<div class="sec-title">${label}</div><div class="card"><div class="meta jp">${R(m,'instruction')}</div>`;
+    if(m.passage) html += `<div class="passage jp">${R(m,'passage')}</div>`;
+    html += m.items.map(renderQ).join('') + `</div>`;
+  }
+  if(day.keigo){
+    const kc = day.keigo.content_r || (day.keigo.content||[]).map(esc);
+    html += `<div class="keigo"><h4>${R(day.keigo,'title')}</h4><ul>` + kc.map(c=>`<li class="jp">${c}</li>`).join('') + `</ul>`;
+    if(day.keigo.quiz){
+      const kq = day.keigo.quiz.items_r || (day.keigo.quiz.items||[]).map(esc);
+      html += `<div class="meta jp" style="margin-top:6px">${R(day.keigo.quiz,'instruction')}</div>` + kq.map(q=>`<div class="q jp">${q}</div>`).join('');
+      if(day.keigo.quiz.answers) html += ansBlock(`keigo-${w}`, `<b>答案：</b><span class="jp">${R(day.keigo.quiz,'answers')}</span>`);
+    }
+    html += `</div>`;
+  }
+  if(!useBesatsu && day.answers) html += `<div class="card">` + ansBlock(`examn2-${w}`, `<b>答案：</b><span class="jp">${esc(day.answers)}</span>`) + `</div>`;
+  if(day.answers_note) html += `<div class="meta" style="margin-top:8px">${esc(day.answers_note)}${useBesatsu?'（答案已内置，点击各题「显示答案」）':''}</div>`;
+  return html;
+}
+
+/* ---------- vocab day ---------- */
+function viewDayVocab(day,w,d){
+  let html = `<div class="crumb">第${w}週 · 词汇</div>`;
+  if(d===7){ app.innerHTML = html + examVocabHTML(day,w); return; }
+  html += `<h2 class="page jp">${R(day,'title')} <span class="meta">${esc(day.title_cn||'')}${day.title_en?` · ${esc(day.title_en)}`:''}</span></h2>`;
+  if(day.dialog){
+    const lines = day.dialog.lines_r || (day.dialog.lines||[]).map(esc);
+    html += `<div class="dialog jp">${lines.map(l=>'「'+l+'」').join('<br>')} ${sayBtn((day.dialog.lines||[]).join('　'))}${day.dialog.cn?`<div class="cn">${esc(day.dialog.cn)}</div>`:''}</div>`;
+  }
+  (day.sections||[]).forEach((sec,si)=>{
+    const meta=[sec.heading_cn,sec.heading_en].filter(Boolean).join(' / ');
+    html += `<div class="sec-title"><span class="jp">${esc(sec.heading||'')}</span>${meta?`<small>${esc(meta)}</small>`:''}</div><div class="card">`;
+    (sec.items||[]).forEach((it,ii)=>{
+      const vid='vocab#'+w+'-'+d+'#'+si+'#'+ii;
+      const vsnap={module:'vocab', hash:'#/day/'+w+'-'+d, w:w, d:d, jp:it.jp, cn:it.cn||it.en||''};
+      html += `<div class="vrow"><div class="vjp jp">${it.jp_r||esc(it.jp)}${sayBtn(it.jp)}${star(vid,vsnap)}</div><div class="vmn">`;
+      if(it.cn) html += `<span class="vcn">${esc(it.cn)}</span>`;
+      if(it.en) html += `<span class="ven">${esc(it.en)}</span>`;
+      if(it.rel) html += `<span class="vrel jp">${it.rel_r||esc(it.rel)}</span>`;
+      html += `</div></div>`;
+    });
+    html += `</div>`;
+  });
+  if(day.exercises){
+    html += `<div class="sec-title">れんしゅう（练习）</div><div class="card">`;
+    for(const sec of (day.exercises.sections||[])){
+      html += `<div class="meta jp" style="margin:4px 0 8px">${sec.type==='choice'?'Ⅰ':'Ⅱ'}　${R(sec,'instruction')}</div>`;
+      for(const it of (sec.items||[])) html += `<div class="q"><span class="n">${it.n}</span><span class="jp">${R(it,'q')}</span>${optsRow(it)}</div>`;
+    }
+    if(day.exercises.answers) html += ansBlock(`ans-v-${w}-${d}`, `<b>答案：</b><span class="jp">${esc(day.exercises.answers)}</span>`);
+    else if(day.exercises.answers_note) html += `<div class="meta">${esc(day.exercises.answers_note)}</div>`;
+    html += `</div>`;
+  }
+  if(day.hitokoto) html += `<div class="card hito"><div class="jp">${esc(day.hitokoto)}</div></div>`;
+  app.innerHTML = html;
+}
+function examVocabHTML(day,w){
+  let html = `<h2 class="page jp">実戦問題 <span class="meta">实战问题 · ${esc(day.time_limit||'')} · ${esc(day.scoring||'')}</span></h2>`;
+  for(const [key,label] of [['mondai1','問題1'],['mondai2','問題2'],['mondai3','問題3'],['mondai4','問題4']]){
+    const m=day[key]; if(!m) continue;
+    html += `<div class="sec-title">${label}</div><div class="card"><div class="meta jp">${R(m,'instruction')}</div>`;
+    html += m.items.map(it=>`<div class="q"><span class="n">${it.n}</span><span class="jp">${R(it,'q')}</span>${optsRow(it)}</div>`).join('') + `</div>`;
+  }
+  if(day.answers) html += `<div class="card">` + ansBlock(`examv-${w}`, `<b>答案：</b><span class="jp">${esc(day.answers)}</span>`) + `</div>`;
+  return html;
+}
+
+/* ---------- search (cross-module) ---------- */
+let searchIndex=null;
+function buildIndex(){
+  if(searchIndex) return searchIndex;
+  searchIndex=[];
+  const pushG = (mod, weeks)=>{ for(const w of weeks) for(const d of w.days) (d.points||[]).forEach((p,i)=>{
+    searchIndex.push({module:mod, w:w.n,d:d.day,i, key:p.pattern||'', reading:p.reading||'',
+      extra:((p.connection||'').replace(/~/g,''))+' '+(p.usage_jp||'')+' '+(p.usage_cn||'')+' '+(p.examples||[]).map(e=>e.jp+' '+(e.cn||'')).join(' '),
+      sub:p.usage_cn||'', dayTitle:d.title});
+  }); };
+  pushG('grammar', G.weeks);
+  pushG('n2grammar', G2.weeks);
+  for(const w of V.weeks) for(const d of w.days) (d.sections||[]).forEach(sec=>(sec.items||[]).forEach(it=>{
+    searchIndex.push({module:'vocab', w:w.n,d:d.day, key:it.jp||'', reading:'',
+      extra:(it.en||'')+' '+(it.cn||'')+' '+(it.rel||''), sub:[it.cn,it.en].filter(Boolean).join(' · '), dayTitle:d.title});
+  }));
+  return searchIndex;
+}
+function viewSearch(){
+  setNav('search'); setHeader('搜索（语法 + 词汇）', false);
+  const total=buildIndex().length;
+  app.innerHTML = `<div class="search-box"><input id="q" type="search" placeholder="日文 / 假名 / 中文 / 英文，如：ばかり · 冰箱 · fridge" autocomplete="off"></div><div id="results"><div class="empty">共收录 ${total} 条（语法点 + 词汇）<br>结果标注所属模块，点击直达</div></div>`;
+  const q=$('#q'), res=$('#results'); q.focus();
+  q.oninput = ()=>{
+    const kw=q.value.trim();
+    if(!kw){ res.innerHTML=`<div class="empty">共收录 ${total} 条</div>`; return; }
+    const lk=kw.toLowerCase();
+    const hits=buildIndex().filter(e=> e.key.toLowerCase().includes(lk)||e.reading.includes(kw)||e.extra.toLowerCase().includes(lk)).slice(0,60);
+    if(!hits.length){ res.innerHTML='<div class="empty">没有找到，换个关键词试试</div>'; return; }
+    const mark=s=>{ const t=esc(s); if(!kw) return t; try{ return t.split(esc(kw)).join(`<span class="hl">${esc(kw)}</span>`);}catch(e){return t;} };
+    res.innerHTML = hits.map((e,ix)=>{
+      const tag = {grammar:'<span class="mtag g">N3语法</span>', n2grammar:'<span class="mtag g2">N2语法</span>', vocab:'<span class="mtag v">N3词汇</span>'}[e.module];
+      window['__hit'+ix]=e;
+      return `<div class="card result" data-hit="${ix}">
+        <div class="jp" style="font-size:16.5px;font-weight:700">${tag}${mark(e.key)}</div>
+        ${e.sub?`<div class="meta">${mark(e.sub)}</div>`:''}
+        <div class="where">第${e.w}週 ${e.d}日目 · <span class="jp">${esc(e.dayTitle)}</span></div>
+      </div>`;
+    }).join('');
+  };
+}
+window.openHit = ix=>{
+  const e=window['__hit'+ix]; if(!e) return;
+  setModule(e.module);
+  navTo(e.module==='vocab'?`#/day/${e.w}-${e.d}`:`#/day/${e.w}-${e.d}/p${e.i}`);
+};
+
+/* ---------- flashcards (per module) ---------- */
+let fc={week:0, deck:[], idx:0, flipped:false};
+function buildDeck(week){
+  const deck=[];
+  if(isGram()){
+    for(const w of CUR().weeks){ if(week&&w.n!==week) continue; for(const d of w.days) (d.points||[]).forEach((p,i)=>deck.push({w:w.n,d:d.day,i,p})); }
+  } else {
+    for(const w of V.weeks){ if(week&&w.n!==week) continue; for(const d of w.days) (d.sections||[]).forEach(sec=>(sec.type==='words'||sec.type==='phrases')&&(sec.items||[]).forEach(it=>{ if(it.jp&&(it.cn||it.en)) deck.push({v:it}); })); }
+  }
+  for(let i=deck.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [deck[i],deck[j]]=[deck[j],deck[i]]; }
+  return deck;
+}
+function viewCards(){
+  setNav('cards'); setHeader('记忆卡 · '+modLabel(), false);
+  if(!fc.deck.length){ fc.deck=buildDeck(fc.week); fc.idx=0; fc.flipped=false; }
+  const nWeeks=CUR().weeks.length;
+  const filt=[0].concat(Array.from({length:nWeeks},(_,i)=>i+1)).map(n=>`<button class="${fc.week===n?'on':''}" data-fcweek="${n}">${n===0?'全部':'第'+n+'週'}</button>`).join('');
+  const cur=fc.deck[fc.idx];
+  let cardHTML;
+  if(!cur){ cardHTML=`<div class="fcard"><div class="empty">本组已完成 🎉<br>点「重新洗牌」再来一轮</div></div>`; }
+  else if(isGram()){
+    if(!fc.flipped) cardHTML=`<div class="fcard" data-fcflip="1"><div class="big jp">${esc(cur.p.pattern)}</div><div class="hint">回想接续与意思，点击翻面</div></div>`;
+    else{ const p=cur.p; cardHTML=`<div class="fcard" data-fcflip="1"><div class="backside">
+      <div class="jp" style="font-weight:700;font-size:18px">${R(p,'pattern')}</div>
+      ${p.reading?`<div class="reading jp meta">${esc(p.reading)}</div>`:''}
+      ${p.connection?`<div class="conn jp">接続：${fmt(p.connection)}</div>`:''}
+      ${p.usage_jp?`<div class="usage jp">${R(p,'usage_jp')}</div>`:''}
+      ${p.usage_cn?`<div class="usage"><span class="cn">${esc(p.usage_cn)}</span></div>`:''}
+      ${(p.examples&&p.examples[0])?`<div class="ex"><div class="jp">${R(p.examples[0],'jp')}</div>${p.examples[0].cn?`<div class="cn">${esc(p.examples[0].cn)}</div>`:''}</div>`:''}
+      <div class="meta">出处：第${cur.w}週 ${cur.d}日目　<span class="plink" data-go="#/day/${cur.w}-${cur.d}/p${cur.i}" style="cursor:pointer">详情 ›</span></div>
+    </div></div>`; }
+  } else {
+    const it=cur.v;
+    if(!fc.flipped) cardHTML=`<div class="fcard" data-fcflip="1"><div class="big jp">${it.jp_r||esc(it.jp)}</div><div class="hint">回想中/英文，点击翻面</div></div>`;
+    else cardHTML=`<div class="fcard" data-fcflip="1"><div class="backside" style="text-align:center">
+      <div class="jp" style="font-weight:700;font-size:22px">${it.jp_r||esc(it.jp)}</div>
+      ${it.cn?`<div style="font-size:18px;margin-top:10px">${esc(it.cn)}</div>`:''}
+      ${it.en?`<div class="meta" style="font-size:14px">${esc(it.en)}</div>`:''}
+      ${it.rel?`<div class="vrel jp" style="margin-top:8px">${it.rel_r||esc(it.rel)}</div>`:''}
+    </div></div>`;
+  }
+  app.innerHTML = `<div class="fc-wrap"><div class="fc-filter">${filt}</div>
+    <div class="fc-prog">${fc.deck.length?`${Math.min(fc.idx+1,fc.deck.length)} / ${fc.deck.length}`:''}</div>
+    ${cardHTML}
+    <div class="fc-btns"><button data-fc="prev">‹ 上一张</button><button class="primary" data-fc="next">下一张 ›</button><button data-fc="shuffle">重新洗牌</button></div></div>`;
+}
+window.fcSetWeek=n=>{ fc.week=n; fc.deck=buildDeck(n); fc.idx=0; fc.flipped=false; viewCards(); };
+window.fcFlip=()=>{ fc.flipped=!fc.flipped; viewCards(); };
+window.fcNext=()=>{ if(fc.idx<fc.deck.length){ fc.idx++; fc.flipped=false; } viewCards(); };
+window.fcPrev=()=>{ if(fc.idx>0){ fc.idx--; fc.flipped=false; } viewCards(); };
+window.fcShuffle=()=>{ fc.deck=buildDeck(fc.week); fc.idx=0; fc.flipped=false; viewCards(); };
+
+/* ---------- favorites (收藏 / 生词本) ---------- */
+let favDeck=[], favIdx=0, favFlip=false;
+function viewFavs(){
+  setNav('favs'); setHeader('我的收藏 · 生词本', false);
+  const ids=Object.keys(FAV);
+  if(!ids.length){ app.innerHTML='<div class="empty">还没有收藏。<br>在语法点或单词右侧点 ☆ 即可加入生词本。</div>'; return; }
+  const tagMap={grammar:'<span class="mtag g">N3语法</span>', n2grammar:'<span class="mtag g2">N2语法</span>', vocab:'<span class="mtag v">N3词汇</span>'};
+  let html=`<div class="fav-actions"><button class="primary" data-favfc>▶ 用收藏刷闪卡（${ids.length}）</button><button data-favclear>清空收藏</button></div><div class="card">`;
+  ids.forEach(id=>{
+    const s=FAV[id]||{};
+    const tag=tagMap[s.module]||'';
+    html+=`<div class="fav-item"><button class="starb" data-fav="${escAttr(id)}" aria-label="取消收藏">★</button>
+      <div class="fj" data-go="${esc(s.hash||'#/')}" data-mod="${esc(s.module||'')}"><div class="t jp">${tag}${esc(s.jp||'')}</div>${s.cn?`<div class="c">${esc(s.cn)}</div>`:''}</div>
+      <span class="fw">第${esc(String(s.w||''))}週${esc(String(s.d||''))}日</span></div>`;
+  });
+  html+='</div>';
+  app.innerHTML=html;
+}
+function startFavFc(){ favDeck=Object.values(FAV).map(s=>({jp:s.jp,cn:s.cn})); for(let i=favDeck.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [favDeck[i],favDeck[j]]=[favDeck[j],favDeck[i]]; } favIdx=0; favFlip=false; renderFavFc(); }
+function renderFavFc(){
+  if(!favDeck.length){ viewFavs(); return; }
+  setNav('favs'); setHeader('收藏 · 闪卡', false);
+  const c=favDeck[favIdx];
+  const card = favFlip
+    ? `<div class="fcard" data-favflip><div class="backside" style="text-align:center"><div class="jp" style="font-weight:700;font-size:24px">${esc(c.jp)} ${sayBtn(c.jp)}</div>${c.cn?`<div style="font-size:18px;margin-top:12px">${esc(c.cn)}</div>`:''}</div></div>`
+    : `<div class="fcard" data-favflip><div class="big jp">${esc(c.jp)}</div><div class="hint">点击翻面看释义</div></div>`;
+  app.innerHTML=`<div class="fc-wrap"><div class="fc-prog">${favIdx+1} / ${favDeck.length}</div>${card}
+    <div class="fc-btns"><button data-favprev>‹ 上一张</button><button class="primary" data-favnext>下一张 ›</button><button data-favback>返回收藏</button></div></div>`;
+}
+
+/* ---------- reference (grammar only) ---------- */
+function refTable(cols, rows){
+  return `<div class="table-scroll"><table class="ref">
+    ${cols?`<tr>${cols.map(c=>`<th class="jp">${fmt(c)}</th>`).join('')}</tr>`:''}
+    ${rows.map(r=>`<tr>${r.map(c=>`<td class="jp">${fmt(c)}</td>`).join('')}</tr>`).join('')}
+  </table></div>`;
+}
+function viewRef(){
+  setNav('ref'); setHeader('接続の表示方法', false);
+  const RF=G.reference;
+  let html=`<div class="meta" style="margin-bottom:10px">${esc(RF.note)}</div>`;
+  html+=`<div class="card"><h3 class="jp" style="margin-top:0">${esc(RF.verb.heading)}</h3>
+    ${RF.verb.groups.map(g=>`<div class="meta jp">${esc(g)}</div>`).join('')}
+    ${refTable(RF.verb.columns, RF.verb.rows)}
+    <div class="note"><b class="nt">〔普〕</b><span class="jp">${esc(RF.verb.futsukei)}</span></div>
+    <div class="meta jp">${esc(RF.verb.extra)}</div>
+    <div class="note" style="margin-top:8px"><b class="nt">表示の例</b><span class="jp">${esc(RF.verb.example_box)}</span></div></div>`;
+  html+=`<div class="card"><h3 class="jp" style="margin-top:0">${esc(RF.iadj.heading)}</h3>${refTable(['解説文中の表示','活用形','い形容詞'], RF.iadj.rows)}<div class="note"><b class="nt">〔普〕</b><span class="jp">${esc(RF.iadj.futsukei)}</span></div></div>`;
+  html+=`<div class="card"><h3 class="jp" style="margin-top:0">${esc(RF.naadj.heading)}</h3>${refTable(['解説文中の表示','活用形','な形容詞'], RF.naadj.rows)}<div class="note"><b class="nt">〔普〕</b><span class="jp">${esc(RF.naadj.futsukei)}</span></div></div>`;
+  html+=`<div class="card"><h3 class="jp" style="margin-top:0">${esc(RF.noun.heading)}</h3><div class="meta jp">${esc(RF.noun.note)}</div>${refTable(['解説文中の表示','活用形','名詞'], RF.noun.rows)}<div class="note"><b class="nt">〔普〕</b><span class="jp">${esc(RF.noun.futsukei)}</span></div></div>`;
+  html+=`<div class="card"><h3 style="margin-top:0">本书使用的标记</h3>` + RF.marks.map(m=>`<div class="q"><span class="n" style="min-width:auto;padding:0 8px">${esc(m.mark)}</span><span class="jp">${esc(m.desc)}</span></div>`).join('') + `</div>`;
+  app.innerHTML=html;
+}
+
+render();
+</script>
+</body>
+</html>

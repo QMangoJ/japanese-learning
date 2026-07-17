@@ -1,0 +1,61 @@
+{
+  "week": 6, "day": 6, "title": "意味がたくさんある動詞②", "title_cn": "多义动词②", "title_en": "Verb that has Many Meanings ②",
+  "dialog": {"lines": ["私、来月10日に、ハワイで結婚式をあげるの。都合をつけて来てね。", "そんな……急に言われても予定を立てるのは難しいわ。一応、手帳につけておくけど……"], "cn": "“我下个月10号要在夏威夷办婚礼。你安排好时间来吧。”“这……这么突然，很难安排计划呀。我先记在记事本上吧……”"},
+  "sections": [
+    {"type": "phrases", "heading": "多義動詞：たつ／たてる", "items": [
+      {"jp": "席を立つ", "en": "leave the seat", "cn": "离席", "rel": "⇔ 座る"},
+      {"jp": "時間がたつ", "en": "time passes", "cn": "时间流逝"},
+      {"jp": "うわさが立つ", "en": "a rumor spreading", "cn": "流言四起"},
+      {"jp": "予定を立てる（=計画する）", "en": "plan", "cn": "制订计划"},
+      {"jp": "音を立てる（=出す）", "en": "make noise", "cn": "发出声音"}
+    ]},
+    {"type": "phrases", "heading": "多義動詞：あがる／あげる", "items": [
+      {"jp": "雨が上がる（=やむ）", "en": "rain stopped", "cn": "雨停了"},
+      {"jp": "どうぞお上がり（=入って）ください。", "en": "Please come in.", "cn": "请进。"},
+      {"jp": "風呂から上がる（=出る）", "en": "get out of the bath", "cn": "洗完澡出来"},
+      {"jp": "物価が上がる", "en": "cost of living goes up", "cn": "物价上涨"},
+      {"jp": "効果が上がる", "en": "be effective", "cn": "见成效", "rel": "→ 効果を上げる"},
+      {"jp": "初めてのスピーチであがる（=緊張する）", "en": "get very nervous from giving a speech for the first time", "cn": "第一次参加演讲，怯场了"},
+      {"jp": "例をあげる（=並べる）", "en": "give an example", "cn": "举例"},
+      {"jp": "結婚式をあげる", "en": "have a wedding ceremony", "cn": "举办结婚典礼"}
+    ]},
+    {"type": "phrases", "heading": "多義動詞：さがる／さげる", "items": [
+      {"jp": "熱が下がる", "en": "fever goes down", "cn": "退烧"},
+      {"jp": "黄色い線の内側まで下がる", "en": "move back to the yellow line", "cn": "退到黄线以内"},
+      {"jp": "評判が下がる（=落ちる）", "en": "have a bad reputation", "cn": "名声变差", "rel": "→ 評判を下げる"},
+      {"jp": "カーテンが下がる", "en": "curtains are hanging (on the curtain rod)", "cn": "窗帘拉着", "rel": "→ カーテンを下げる"},
+      {"jp": "買い物かごを下げる", "en": "carry a shopping bag", "cn": "提着购物筐"},
+      {"jp": "一字下げて書く", "en": "put a space at the front of a sentence", "cn": "空一个字再写"},
+      {"jp": "テレビの音を下げる（=小さくする）", "en": "turn down the volume of the TV", "cn": "调低电视的声音"}
+    ]},
+    {"type": "phrases", "heading": "多義動詞：つく／つける", "items": [
+      {"jp": "泥がつく", "en": "get mud on ...", "cn": "沾上泥"},
+      {"jp": "傷がつく", "en": "damage ...", "cn": "受伤", "rel": "→ 傷をつける"},
+      {"jp": "連絡がつく", "en": "get a hold of ...", "cn": "联系上", "rel": "→ 連絡をつける"},
+      {"jp": "都合がつく", "en": "be able to arrange ...", "cn": "有时间", "rel": "→ 都合をつける"},
+      {"jp": "おまけがつく", "en": "get a bonus", "cn": "带附录", "rel": "→ おまけをつける"},
+      {"jp": "印をつける", "en": "mark ...", "cn": "作记号"},
+      {"jp": "たばこに火をつける", "en": "light a cigarette", "cn": "点着香烟", "rel": "→ 火がつく"},
+      {"jp": "日記をつける（=書く）", "en": "keep a diary", "cn": "记日记"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.106",
+    "sections": [
+      {"type": "choice", "instruction": "正しいほうに〇をつけなさい。", "items": [
+        {"n": 1, "q": "彼と連絡が（a. たてない　b. つかない）ので心配だ。"},
+        {"n": 2, "q": "私は毎日、日記を（a. 立てて　b. つけて）います。"},
+        {"n": 3, "q": "ダイエットしているけれど、効果が（a. あがらない　b. 立たない）。"},
+        {"n": 4, "q": "テレビで紹介されたおかげで、その映画の評判が（a. 下がった　b. 上がった）。"},
+        {"n": 5, "q": "風呂から（a. 立って　b. 上がって）から夕食にしよう。"},
+        {"n": 6, "q": "結婚式のスピーチで（a. ついて　b. あがって）しまった。"}
+      ]},
+      {"type": "select", "instruction": "（　）にはどれが入りますか。一つ選びなさい。", "items": [
+        {"n": 7, "q": "その日は都合が（　　）んです。来週にしてくれますか。", "opts": ["つかない", "取れない", "立たない", "かけない"]},
+        {"n": 8, "q": "ここは一字（　　）書きましょう。", "opts": ["あげて", "立てて", "下げて", "つけて"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②b ③a ④b ⑤b ⑥b　Ⅱ：⑦1 ⑧3"
+  },
+  "hitokoto": "きょうの一言：効果が上がるような勉強の仕方をしましょう。"
+}

@@ -1,0 +1,49 @@
+{
+  "week": 3, "day": 4, "title": "食事に行きましょう", "title_cn": "我们去吃饭吧", "title_en": "Let's Go Out to Eat",
+  "dialog": {"lines": ["いらっしゃいませ。何名様ですか。（ウエーター）", "2人です。", "ご注文はお決まりですか。（ウエートレス）", "今日のおすすめは何ですか。", "雰囲気のいい店。すてき～。"], "cn": "“欢迎光临。请问几位？”（服务员）“两位。”“您要点菜了吗？”（服务员）“今天有什么推荐的？”“环境很好的店。真棒～”"},
+  "sections": [
+    {"type": "words", "heading": "絵をみておぼえましょう：レストラン", "items": [
+      {"jp": "ウエートレス", "en": "waitress", "cn": "女服务员"},
+      {"jp": "ウエーター", "en": "waiter", "cn": "男服务员"},
+      {"jp": "メニュー", "en": "menu", "cn": "菜单"}
+    ]},
+    {"type": "phrases", "heading": "もっとおぼえましょう", "items": [
+      {"jp": "家族そろって（=家族全員で）", "en": "go and eat at a restaurant as a family", "cn": "全家人一起"},
+      {"jp": "子どもを連れる", "en": "take your child with you", "cn": "带着孩子", "rel": "→ 子ども連れ（N）（(customers) with kids 带孩子）"},
+      {"jp": "腹（=おなか）がへる", "en": "be hungry", "cn": "肚子饿"},
+      {"jp": "外食をする", "en": "eat out", "cn": "在外就餐"},
+      {"jp": "お昼を食べる／昼食をとる", "en": "have lunch", "cn": "吃午饭", "rel": "→ ランチ（lunch 午饭）"},
+      {"jp": "雰囲気のいい店", "en": "a restaurant with a nice atmosphere", "cn": "环境很好的店"},
+      {"jp": "満席", "en": "No seats", "cn": "满员", "rel": "⇔ すいている（空 空着）"},
+      {"jp": "列に並ぶ", "en": "stand in line", "cn": "排队", "rel": "→ 行列ができる（people lining up 排起了队）"},
+      {"jp": "禁煙席", "en": "Non-smoking seat", "cn": "禁烟席", "rel": "⇔ 喫煙席（a seat in the smoking section 吸烟席）"},
+      {"jp": "ウエートレスにおすすめを聞く", "en": "ask for the waitress's recommendation", "cn": "向女服务员问店里的特色菜"},
+      {"jp": "量が多い", "en": "a big portion", "cn": "量多", "rel": "⇔ 量が少ない（a small portion 量少）"},
+      {"jp": "注文が決まる", "en": "decide on what to order", "cn": "菜点好了"},
+      {"jp": "注文する", "en": "place an order", "cn": "点菜", "rel": "⇔ 注文を取る／受ける（take an order 接受订单）"},
+      {"jp": "デザートを追加する", "en": "place an additional order of desserts", "cn": "追加甜品"},
+      {"jp": "コーヒーのおかわり", "en": "another serving of coffee", "cn": "咖啡的续杯"},
+      {"jp": "食器を下げる", "en": "take the plates away", "cn": "撤下餐具"},
+      {"jp": "料理を残す", "en": "leave food on one's plate", "cn": "剩菜", "rel": "→ 無料／ただ（free 免费）／もったいない（(What) a waste! 可惜）"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.53",
+    "sections": [
+      {"type": "choice", "instruction": "正しいほうに〇をつけなさい。", "items": [
+        {"n": 1, "q": "「お客様は（a. 何名　b. 何人連れ）様ですか。」"},
+        {"n": 2, "q": "ウエートレスに今日の（a. 注文　b. おすすめ）を聞いた。"},
+        {"n": 3, "q": "「もう1時だ。お（a. 昼　b. 夜）にしよう。」"},
+        {"n": 4, "q": "家族全員（a. 連れで　b. そろって）食事に出かけた。"},
+        {"n": 5, "q": "「すごく長い（a. 量　b. 列）だね。あんなに並んでいるということは、おいしいのかな。」"},
+        {"n": 6, "q": "「残したら、もったい（a. ないです　b. ありません）よ。」"}
+      ]},
+      {"type": "select", "instruction": "（　）にはどれが入りますか。一つ選びなさい。", "items": [
+        {"n": 7, "q": "〈客に向かって〉ウエーター「食器を（　　）よろしいですか。」", "opts": ["のこして", "おかわりして", "おそろえして", "おさげして"]},
+        {"n": 8, "q": "〈客に向かって〉ウエートレス「（　　）は、お決まりですか。」", "opts": ["ご注文", "外食", "おすすめ", "腹"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②b ③a ④b ⑤b ⑥a　Ⅱ：⑦4 ⑧1"
+  },
+  "hitokoto": "きょうの一言：もったいないので残さず食べましょう。"
+}

@@ -1,0 +1,52 @@
+{
+  "week": 1, "day": 5, "title": "洗濯をしましょう", "title_cn": "让我们来洗衣服吧", "title_en": "Let's Do the Laundry",
+  "dialog": {"lines": ["洗濯物、まだ湿ってるよ。乾燥機で乾かそうか。", "セーターは乾燥機に入れると縮むから、そのままつるしといて。"], "cn": "“洗的衣服还潮着呢。用烘干机烘干吧。”“毛衣放进烘干机会缩水，就那样挂着吧。”"},
+  "sections": [
+    {"type": "phrases", "heading": "□にいれてよみましょう：洗濯物（laundry 洗的衣服）／洗濯物が＿＿。", "items": [
+      {"jp": "たまる", "en": "(laundry) piles up", "cn": "堆积"},
+      {"jp": "ぬれている", "en": "wet", "cn": "湿"},
+      {"jp": "湿っている", "en": "not dry", "cn": "潮"},
+      {"jp": "乾く", "en": "dry", "cn": "干"},
+      {"jp": "真っ白に仕上がる", "en": "…comes out pure white", "cn": "洗得雪白"}
+    ]},
+    {"type": "phrases", "heading": "□にいれてよみましょう：洗濯物を＿＿。", "items": [
+      {"jp": "ためる", "en": "let it pile up", "cn": "积攒"},
+      {"jp": "ぬらす", "en": "wet", "cn": "沾湿"},
+      {"jp": "干す", "en": "put it out for drying", "cn": "晾干"},
+      {"jp": "乾燥機で乾かす", "en": "dry in the dryer", "cn": "用烘干机烘干"},
+      {"jp": "たたむ", "en": "fold", "cn": "叠起来"}
+    ]},
+    {"type": "phrases", "heading": "もっとおぼえましょう", "items": [
+      {"jp": "服を汚す", "en": "get one's clothes dirty", "cn": "弄脏衣物"},
+      {"jp": "そでが真っ黒に汚れる", "en": "the cuffs have become very dirty", "cn": "袖口脏得黑乎乎的", "rel": "→ 汚れ（N）（dirt 污垢）"},
+      {"jp": "（洗濯用）洗剤を入れる", "en": "add detergent", "cn": "加入洗衣粉", "rel": "→（台所用）洗剤（dish soap（厨房用）洗涤剂）"},
+      {"jp": "スーツをクリーニングに出す", "en": "send a suit to the dry cleaners", "cn": "将西装送到干洗店"},
+      {"jp": "コインランドリーで洗濯をする", "en": "wash the laundry in a Laundromat", "cn": "用投币式洗衣机洗衣物"},
+      {"jp": "タオルを干す", "en": "dry a towel", "cn": "晾毛巾"},
+      {"jp": "服をつるす", "en": "hang an outfit", "cn": "挂衣服"},
+      {"jp": "ワイシャツにアイロンをかける", "en": "iron a shirt", "cn": "熨烫衬衣"},
+      {"jp": "しわを伸ばす", "en": "take the creases out", "cn": "拉平褶皱", "rel": "→ しわが伸びる（the creases have been smoothed out 褶皱拉开）"},
+      {"jp": "ウールのセーターが縮む", "en": "the woolen sweater has shrunk", "cn": "纯毛毛衣缩水"},
+      {"jp": "ジーンズの色が落ちる", "en": "a pair of jeans has faded", "cn": "牛仔裤褪色"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.23",
+    "sections": [
+      {"type": "choice", "instruction": "正しいほうに〇をつけなさい。", "items": [
+        {"n": 1, "q": "洗濯物が乾いたら、（a. たたんで　b. ほして）からしまいましょう。"},
+        {"n": 2, "q": "汚れがひどくて、洗濯しても（a. 真っ白　b. 真っ黒）にならない。"},
+        {"n": 3, "q": "洗濯機がこわれているから（a. クリーニング　b. コインランドリー）で洗濯しました。"},
+        {"n": 4, "q": "洗濯物を干すときは、しわを伸ばして（a. たたみ　b. つるし）ましょう。"},
+        {"n": 5, "q": "ウールのセーターを水で洗ったら（a. 湿って　b. 縮んで）しまった。"},
+        {"n": 6, "q": "雨が続いて洗濯物が（a. 乾かない　b. 乾かさない）から、着るものがない。"}
+      ]},
+      {"type": "select", "instruction": "（　）にはどれが入りますか。一つ選びなさい。", "items": [
+        {"n": 7, "q": "（クリーニング屋で）客「いつ、できますか。」店員「3日後には（　　）ます。」", "opts": ["しあがり", "かけあがり", "ほしあがり", "つるしあがり"]},
+        {"n": 8, "q": "アイロンでしわを（　　）ましょう。", "opts": ["ぬらし", "かわかし", "のばし", "よごし"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②a ③b ④b ⑤b ⑥a　Ⅱ：⑦1 ⑧3"
+  },
+  "hitokoto": "きょうの一言：洗濯物をためないようにしましょう。"
+}

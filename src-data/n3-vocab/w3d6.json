@@ -1,0 +1,49 @@
+{
+  "week": 3, "day": 6, "title": "お金を払いましょう", "title_cn": "来付钱吧", "title_en": "Let's Pay the Bill",
+  "dialog": {"lines": ["現金", "カードで。", "クレジットカード", "請求書", "ぜいたくばかりしていると、生活費に困りますよ。"], "cn": "“现金”“用卡。”“信用卡”“账单”“老是奢侈的话，生活费会紧张的哦。”"},
+  "sections": [
+    {"type": "phrases", "heading": "おぼえましょう", "items": [
+      {"jp": "レジ", "en": "cash register", "cn": "收款机、收款处"},
+      {"jp": "勘定を済ませる", "en": "pay the bill/check", "cn": "算账结束", "rel": "→「お勘定をお願いします。」（Could I have the check please. 我要买单。）"},
+      {"jp": "別々に払う", "en": "pay individually", "cn": "分别付款", "rel": "→「別々でお願いします。」（We will pay separately. 拜托您，我们要分别付款。）"},
+      {"jp": "割り勘にする", "en": "split the bill", "cn": "费用均摊"},
+      {"jp": "おごる", "en": "treat someone to...", "cn": "请客", "rel": "→ おごり（N）（treat 请客）"},
+      {"jp": "現金で払う", "en": "pay cash", "cn": "付现金"},
+      {"jp": "（クレジット）カードで払う", "en": "pay by credit card", "cn": "信用卡结账"},
+      {"jp": "カードの有効期限を確認する", "en": "confirm the expiry date of the credit card", "cn": "确认卡的有效期"},
+      {"jp": "（お）札をくずす", "en": "break a bill", "cn": "将整钱换成零钱"},
+      {"jp": "（お）つりをもらう", "en": "receive the change", "cn": "接收找的零钱"},
+      {"jp": "レシート／領収書をもらう", "en": "ask for a receipt", "cn": "领取收款条／收据"},
+      {"jp": "ぜいたくをする", "en": "splurge", "cn": "奢侈享受"},
+      {"jp": "むだづかいをする", "en": "waste money", "cn": "浪费"},
+      {"jp": "請求書が届く", "en": "receive a bill", "cn": "催款单到了"},
+      {"jp": "費用がかかる", "en": "cost a great deal", "cn": "需要费用"},
+      {"jp": "今月の生活費が不足する", "en": "be short on living expenses for this month", "cn": "这个月的生活费不够", "rel": "→ 交通費（transportation expenses 交通费）"},
+      {"jp": "お金が足りる", "en": "have enough money", "cn": "钱足够", "rel": "⇔ 足りない（run out of money 不够）"},
+      {"jp": "食費を節約する", "en": "economize on food expenses", "cn": "节约餐饮费"},
+      {"jp": "むだを省く", "en": "eliminate waste", "cn": "避免浪费", "rel": "→ むだをなくす（prevent waste 消除浪费）"},
+      {"jp": "貧乏になる", "en": "become poor", "cn": "变穷", "rel": "⇔ （お）金持ちになる（变富）"},
+      {"jp": "貧しい生活", "en": "poor life", "cn": "贫穷的生活"},
+      {"jp": "借金をする", "en": "borrow money", "cn": "借钱"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.58",
+    "sections": [
+      {"type": "choice", "instruction": "正しいほうに〇をつけなさい。", "items": [
+        {"n": 1, "q": "〈レジでお金を払いながら〉「（a. 領収書　b. 請求書）をいただけますか。」"},
+        {"n": 2, "q": "毎月食費はどれくらい（a. かかります　b. たります）か。"},
+        {"n": 3, "q": "この町には、（a. 不足した　b. 貧しい）人が多い。"},
+        {"n": 4, "q": "むだを（a. 省いて　b. 節約して）仕事をしよう。"},
+        {"n": 5, "q": "授業料を払ったら、生活（a. 料　b. 費）がなくなってしまった。"},
+        {"n": 6, "q": "「今日の飲み会は、部長の（a. 勘定　b. おごり）だそうだよ。」"}
+      ]},
+      {"type": "select", "instruction": "（　）にはどれが入りますか。一つ選びなさい。", "items": [
+        {"n": 7, "q": "「一万円札を千円札に（　　）くださいませんか。」", "opts": ["くずして", "はぶいて", "すませて", "かせいで"]},
+        {"n": 8, "q": "「商品を取り替えるときは、必ず（　　）を持ってきてください。」", "opts": ["クレジットカード", "レシート", "レジ", "請求書"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②a ③b ④a ⑤b ⑥b　Ⅱ：⑦1 ⑧2"
+  },
+  "hitokoto": "きょうの一言：ぜいたくをしないで、節約しましょう。"
+}

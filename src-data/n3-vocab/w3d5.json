@@ -1,0 +1,50 @@
+{
+  "week": 3, "day": 5, "title": "お酒を飲みましょう", "title_cn": "一起喝酒吧", "title_en": "Let's Drink",
+  "dialog": {"lines": ["乾杯！", "煙たいなあ。迷惑だなあ。", "よっぱらい", "ビールあふれてるよ！"], "cn": "“干杯！”“烟熏得慌。真讨厌。”“醉汉”“啤酒溢出来了！”"},
+  "sections": [
+    {"type": "phrases", "heading": "おぼえましょう", "items": [
+      {"jp": "宴会を開く", "en": "hold a party", "cn": "开宴会", "rel": "→ 飲み会（drinking party 喝酒聚餐）"},
+      {"jp": "送別会", "en": "a farewell party", "cn": "送别会", "rel": "⇔ 歓迎会（welcome party 欢迎会）"},
+      {"jp": "飲み放題", "en": "all you can drink", "cn": "自助（随便喝）", "rel": "→ 食べ放題（all you can eat 自助随便吃）"},
+      {"jp": "（お）酒を注ぐ", "en": "pour sake into a glass", "cn": "倒酒", "rel": "→ （お）湯を注ぐ（pour hot water 倒水）"},
+      {"jp": "乾杯する", "en": "toast", "cn": "干杯"},
+      {"jp": "盛り上がる", "en": "come to life", "cn": "高涨", "rel": "→ 土が盛り上がる（a mound of dirt 地鼓起来了）"},
+      {"jp": "ビールの泡", "en": "the head of the beer", "cn": "啤酒沫"},
+      {"jp": "あふれる", "en": "overflow", "cn": "冒出来"},
+      {"jp": "こぼす", "en": "spill", "cn": "弄洒", "rel": "→ こぼれる（overflow 洒落）"},
+      {"jp": "ビールを一気に飲む", "en": "down a mug of beer in one gulp", "cn": "一口气喝光啤酒"},
+      {"jp": "ウィスキーの水割り", "en": "whisky and water", "cn": "加水的威士忌"},
+      {"jp": "（お）つまみのチーズ", "en": "cheese for snacking", "cn": "作为小菜的奶酪"},
+      {"jp": "（お）酒によう", "en": "get drunk", "cn": "醉酒"},
+      {"jp": "よっぱらう", "en": "get drunk", "cn": "喝醉酒", "rel": "→ よっぱらい（N）（a drunk 醉鬼）"},
+      {"jp": "あばれる", "en": "get out-of-control", "cn": "乱闹"},
+      {"jp": "にぎやかな", "en": "lively", "cn": "热闹"},
+      {"jp": "やかましい", "en": "noisy", "cn": "吵闹"},
+      {"jp": "さわがしい", "en": "be making noise", "cn": "吵闹", "rel": "→ さわぐ（V）（make merry 喧闹）"},
+      {"jp": "そうぞうしい", "en": "noisy", "cn": "嘈杂"},
+      {"jp": "たばこの煙", "en": "cigarette smoke", "cn": "烟雾", "rel": "→ 煙い／煙たい（smoky 呛人）"},
+      {"jp": "グラスを割る", "en": "break the glass", "cn": "打碎杯子", "rel": "→ グラスが割れる（a glass breaks 杯子碎了）"},
+      {"jp": "ビールびんを倒す", "en": "knock the bottle of beer over", "cn": "弄倒啤酒瓶", "rel": "→ ビールびんが倒れる（a beer bottle falls over 啤酒瓶倒了）"},
+      {"jp": "ほかの客に迷惑をかける", "en": "cause other customers trouble", "cn": "给其他客人添麻烦", "rel": "→ 迷惑がかかる（cause someone trouble 添麻烦）"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.55",
+    "sections": [
+      {"type": "choice", "instruction": "正しいほうに〇をつけなさい。", "items": [
+        {"n": 1, "q": "湯飲みにお茶を（a. そそぐ　b. こぼす）。"},
+        {"n": 2, "q": "グラスが倒れて酒が（a. こぼれた　b. あふれた）。"},
+        {"n": 3, "q": "仕事の後は、（a. 乾杯　b. 飲み会）で楽しみましょう。"},
+        {"n": 4, "q": "よっぱらって、いすを（a. 割って　b. 倒して）しまった。"},
+        {"n": 5, "q": "「ビールのおつまみには（a. 泡　b. チーズ）がいいですね。」"},
+        {"n": 6, "q": "「そんなに（a. さわがしく　b. よっぱらい）していると、隣のお客さんに迷惑がかかるよ。」"}
+      ]},
+      {"type": "select", "instruction": "（　）にはどれが入りますか。一つ選びなさい。", "items": [
+        {"n": 7, "q": "「禁煙席がいいよ。喫煙席は（　　）から。」", "opts": ["やかましい", "けむたい", "迷惑をかける", "よっぱらう"]},
+        {"n": 8, "q": "ワイングラスを倒して、（　　）しまった。", "opts": ["よっぱらって", "あふれて", "割って", "注いで"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②a ③b ④b ⑤b ⑥a　Ⅱ：⑦2 ⑧3"
+  },
+  "hitokoto": "きょうの一言：他人に迷惑をかけないようにしましょう。"
+}

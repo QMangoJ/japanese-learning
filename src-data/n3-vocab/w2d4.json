@@ -1,0 +1,58 @@
+{
+  "week": 2, "day": 4, "title": "車に乗りましょう①", "title_cn": "让我们坐车吧①", "title_en": "Let's Drive ①",
+  "dialog": {"lines": ["ちょっとー！　急ブレーキはやめてよ。赤ちゃん乗せてるんだから。後ろに積んでる荷物は大丈夫？"], "cn": "“喂——！别急刹车呀。车上还坐着婴儿呢。后面装的行李没事吧？”"},
+  "sections": [
+    {"type": "words", "heading": "絵をみておぼえましょう：車", "items": [
+      {"jp": "フロントガラス", "en": "windshield", "cn": "前挡风玻璃"},
+      {"jp": "ワイパー", "en": "wiper", "cn": "雨刷"},
+      {"jp": "ボンネット", "en": "hood / bonnet", "cn": "发动机盖"},
+      {"jp": "ライト", "en": "headlamp", "cn": "车灯"},
+      {"jp": "サイドミラー", "en": "sideview mirror", "cn": "倒车镜"},
+      {"jp": "バックミラー", "en": "rearview mirror", "cn": "后视镜"},
+      {"jp": "トランク", "en": "trunk", "cn": "行李箱"},
+      {"jp": "タイヤ", "en": "tire", "cn": "轮胎"},
+      {"jp": "カーナビ", "en": "car-navigation system", "cn": "汽车导航"},
+      {"jp": "ハンドル", "en": "steering wheel", "cn": "方向盘"},
+      {"jp": "キー", "en": "car key", "cn": "钥匙"},
+      {"jp": "助手席", "en": "passenger seat", "cn": "副驾驶席"},
+      {"jp": "運転席", "en": "driver's seat", "cn": "驾驶座"}
+    ]},
+    {"type": "phrases", "heading": "もっとおぼえましょう", "items": [
+      {"jp": "運転免許証", "en": "driver's license", "cn": "驾驶执照"},
+      {"jp": "ドライブ（を）する", "en": "drive", "cn": "开车兜风"},
+      {"jp": "レンタカーを借りる", "en": "rent a car", "cn": "租赁汽车"},
+      {"jp": "トランクに荷物を積む", "en": "put luggage in the trunk", "cn": "将行李放入行李箱"},
+      {"jp": "人を乗せる", "en": "give someone a ride", "cn": "载人"},
+      {"jp": "シートベルトをしめる", "en": "fasten one's seatbelt", "cn": "系安全带"},
+      {"jp": "エンジンをかける", "en": "start a car", "cn": "启动发动机"},
+      {"jp": "バックミラーで確認（を）する", "en": "check behind through the rearview mirror", "cn": "看后视镜确认", "rel": "＊車の鏡は、「ミラー」と言う。"},
+      {"jp": "ハンドルをにぎる", "en": "take the wheel", "cn": "握方向盘"},
+      {"jp": "アクセルをふむ", "en": "step on the accelerator", "cn": "踩油门"},
+      {"jp": "ブレーキをかける", "en": "step on the brakes", "cn": "刹闸", "rel": "→ 急ブレーキ（a sudden stop 急刹车）"},
+      {"jp": "ライトをつける", "en": "turn on the headlamp", "cn": "打开车灯"},
+      {"jp": "ワイパーを動かす", "en": "turn on the wiper", "cn": "起动雨刷"},
+      {"jp": "ガソリンスタンドに寄る", "en": "stop at a gas station", "cn": "顺便去加油站"},
+      {"jp": "高速（道路）に乗る", "en": "get on a freeway", "cn": "上高速公路"},
+      {"jp": "タイヤがパンクする", "en": "have a flat tire", "cn": "车胎爆胎"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.37",
+    "sections": [
+      {"type": "choice", "instruction": "正しいほうに〇をつけなさい。", "items": [
+        {"n": 1, "q": "雨が降ってきたので、（a. ハンドル　b. ワイパー）を動かした。"},
+        {"n": 2, "q": "暗くなったので、車の（a. ライト　b. ドライブ）をつけた。"},
+        {"n": 3, "q": "友達を（a. のせて　b. つんで）車で京都に行った。"},
+        {"n": 4, "q": "「おかしいなあ。（a. エンジン　b. キー）が、なかなかかからない。」"},
+        {"n": 5, "q": "子どもが飛び出した※ので、急（a. ブレーキ　b. アクセル）をかけた。（※飛び出す +p.99）"},
+        {"n": 6, "q": "前の車は（a. ライト　b. トランク）を開けたまま走っている。"}
+      ]},
+      {"type": "select", "instruction": "（　）にはどれが入りますか。一つ選びなさい。", "items": [
+        {"n": 7, "q": "「道が混んでいるようだね。時間がないから、（　　）で行こうよ。」", "opts": ["道路", "高速", "運転", "急アクセル"]},
+        {"n": 8, "q": "（　　）を右に切ると、右に曲がります。", "opts": ["ハンドル", "タイヤ", "ワイパー", "ブレーキ"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②a ③a ④a ⑤a ⑥b　Ⅱ：⑦2 ⑧1"
+  },
+  "hitokoto": "きょうの一言：急ブレーキをかけるのはやめましょう。"
+}

@@ -1,0 +1,65 @@
+{
+  "week": 3, "day": 1, "title": "デートにさそいましょう", "title_cn": "来约会吧", "title_en": "Let's Go on a Date",
+  "dialog": {"lines": ["ぼ、ぼくと付き合ってください。今度、映画に行きましょう。", "あ、映画には行ってもいいんだけど、えーと、付き合うっていうのは……えーと……（あいまいな返事）"], "cn": "“请、请和我交往吧。下次一起去看电影吧。”“啊，电影是可以去看的，不过，交往什么的……嗯……”（含糊的回答）"},
+  "sections": [
+    {"type": "phrases", "heading": "□にいれてよみましょう：田中さんと＿＿。", "items": [
+      {"jp": "交際する／付き合う", "en": "go out", "cn": "交往"},
+      {"jp": "けんかする", "en": "have a fight", "cn": "吵架"},
+      {"jp": "仲直りする", "en": "reconcile / make up", "cn": "和好"},
+      {"jp": "仲がいい", "en": "be good friends", "cn": "关系好"},
+      {"jp": "仲良しだ", "en": "good friends", "cn": "是好朋友"}
+    ]},
+    {"type": "phrases", "heading": "□にいれてよみましょう：田中さん（のこと）が＿＿。", "items": [
+      {"jp": "気になる", "en": "want to know", "cn": "挂在心上"},
+      {"jp": "好きになる", "en": "come to like", "cn": "喜欢"},
+      {"jp": "きらいになる", "en": "come to dislike", "cn": "讨厌"},
+      {"jp": "いやになる", "en": "lose interest", "cn": "讨厌"},
+      {"jp": "うらやましい", "en": "be envious", "cn": "羡慕"}
+    ]},
+    {"type": "phrases", "heading": "□にいれてよみましょう：田中さんを＿＿。", "items": [
+      {"jp": "コンサートにさそう", "en": "invite someone to a concert", "cn": "邀请去听音乐会"},
+      {"jp": "いやがる", "en": "dislike", "cn": "讨厌"},
+      {"jp": "ふる", "en": "turn ... down", "cn": "甩掉"}
+    ]},
+    {"type": "phrases", "heading": "□にいれてよみましょう：田中さんに＿＿。", "items": [
+      {"jp": "好かれる", "en": "be liked", "cn": "受……喜欢"},
+      {"jp": "きらわれる", "en": "be disliked", "cn": "被……讨厌"},
+      {"jp": "いやがられる", "en": "be regarded annoying", "cn": "被……讨厌"},
+      {"jp": "ふられる", "en": "be turned down", "cn": "被……甩掉"},
+      {"jp": "気がある", "en": "be interested", "cn": "对……感兴趣"},
+      {"jp": "あこがれる", "en": "longs to be ... / is attracted to ...", "cn": "爱慕、憧憬"},
+      {"jp": "夢中になる", "en": "be absorbed", "cn": "热中"},
+      {"jp": "恋をする", "en": "fall in love", "cn": "恋爱"}
+    ]},
+    {"type": "phrases", "heading": "もっとおぼえましょう", "items": [
+      {"jp": "女性にもてる", "en": "be popular with women", "cn": "有女人缘"},
+      {"jp": "（お）互いに気に入る", "en": "like each other", "cn": "彼此中意"},
+      {"jp": "相手の予定を聞く", "en": "inquire about someone's plans", "cn": "询问对方的计划"},
+      {"jp": "都合をつける", "en": "try to make oneself available", "cn": "腾出时间", "rel": "→ 都合がつく（make oneself available 有时间）"},
+      {"jp": "付き合い", "en": "relations", "cn": "交往", "rel": "→ 買い物に付き合う（go shopping with someone just to be nice 一起购物）"},
+      {"jp": "恋人", "en": "boy/girlfriend", "cn": "恋人"},
+      {"jp": "田中さんの彼／彼氏", "en": "Tanaka-san's boyfriend", "cn": "田中的男朋友", "rel": "⇔ 彼女（girlfriend 女朋友）"},
+      {"jp": "結婚を申し込む", "en": "propose", "cn": "申请登记结婚", "rel": "⇔ 断る（turn down 拒绝）"},
+      {"jp": "あいまいな返事をする", "en": "give a vague answer", "cn": "含糊地回答"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.47",
+    "sections": [
+      {"type": "choice", "instruction": "正しいほうに〇をつけなさい。", "items": [
+        {"n": 1, "q": "あの兄弟はとても（a. 仲がいい　b. 仲直りしている）。"},
+        {"n": 2, "q": "「彼と（a. 仲良しする　b. 付き合う）ようになったのは、いつですか。」"},
+        {"n": 3, "q": "「田中さん、恋人に（a. ふられた　b. 好かれた）らしいよ。」"},
+        {"n": 4, "q": "彼女の買い物に（a. 交際した　b. 付き合った）。"},
+        {"n": 5, "q": "あの二人はさっきけんかをしていたのに、もう（a. 仲直り　b. 仲良し）をしたようだ。"},
+        {"n": 6, "q": "田中さんは彼女のことを（a. いや　b. きらい）がっている。"}
+      ]},
+      {"type": "select", "instruction": "（　）にはどれが入りますか。一つ選びなさい。", "items": [
+        {"n": 7, "q": "いやなら、はっきりと（　　）ほうがいい。", "opts": ["いやがられた", "あいまいにした", "都合をつけた", "断った"]},
+        {"n": 8, "q": "彼はしつこい※ので女性に（　　）います。（※しつこい pesky 纠缠不放的）", "opts": ["もてて", "きらわれて", "ふられて", "さそわれて"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②b ③a ④b ⑤a ⑥a　Ⅱ：⑦4 ⑧2"
+  },
+  "hitokoto": "きょうの一言：あいまいな返事はやめましょう。"
+}

@@ -1,0 +1,56 @@
+{
+  "week": 2, "day": 5, "title": "車に乗りましょう②", "title_cn": "让我们坐车吧②", "title_en": "Let's Drive ②",
+  "dialog": {"lines": ["混んでるねぇ。", "この時間はいつも混んでるよ。線路を越えたらすくと思うけど。"], "cn": "“真堵啊。”“这个时间总是堵。不过我想过了铁道就会畅通了。”"},
+  "sections": [
+    {"type": "words", "heading": "絵をみておぼえましょう：道路", "items": [
+      {"jp": "通行止め", "en": "(the road is) closed", "cn": "禁止通行"},
+      {"jp": "工事中", "en": "under construction", "cn": "正在施工"},
+      {"jp": "踏切", "en": "railway crossing", "cn": "岔口、过道口（铁道的）"},
+      {"jp": "線路", "en": "railway", "cn": "轨道"},
+      {"jp": "バス停（=バスの停留所）", "en": "bus stop", "cn": "公交车站"},
+      {"jp": "信号", "en": "traffic light", "cn": "信号"},
+      {"jp": "横断歩道", "en": "pedestrian crossing", "cn": "人行道"},
+      {"jp": "四つ角", "en": "crossroads", "cn": "十字路口"},
+      {"jp": "交差点", "en": "intersection", "cn": "十字路口"},
+      {"jp": "一方通行", "en": "one-way traffic", "cn": "单行道"},
+      {"jp": "渋滞", "en": "congestion", "cn": "堵塞"}
+    ]},
+    {"type": "phrases", "heading": "もっとおぼえましょう", "items": [
+      {"jp": "道路が混んでいる／渋滞している", "en": "the road is congested", "cn": "道路堵塞", "rel": "⇔ すいている（空 畅通）"},
+      {"jp": "回り道（を）する／遠回り（を）する", "en": "make a detour", "cn": "绕远路", "rel": "⇔ 近道（を）する（make a shortcut 走近路）"},
+      {"jp": "突き当たりを左に曲がる", "en": "turn to the left at the far end of the street", "cn": "尽头处向左拐弯"},
+      {"jp": "バスが停車する", "en": "the bus stops", "cn": "公交车停车"},
+      {"jp": "線路を越える", "en": "go over the railway crossing", "cn": "穿过轨道"},
+      {"jp": "トラックを追い越す", "en": "pass a truck", "cn": "赶超卡车"},
+      {"jp": "時速100キロ（km）で走る", "en": "drive at 100 kilometers an hour", "cn": "以时速100公里的速度行驶"},
+      {"jp": "スピード違反で捕まる", "en": "get a speeding ticket", "cn": "超速被抓"},
+      {"jp": "駐車違反をする", "en": "get a parking ticket", "cn": "违规停车"},
+      {"jp": "信号を無視する", "en": "go through a red light", "cn": "闯红灯", "rel": "→ 信号無視（N）"},
+      {"jp": "車をぶつける", "en": "bump one's car into ...", "cn": "撞上汽车", "rel": "→ 車がぶつかる（one's car bumps into ... 汽车相撞）"},
+      {"jp": "猫をひく", "en": "run over a cat", "cn": "轧了猫", "rel": "→ 猫が車にひかれる（a cat gets run over by a car 猫被车轧了）"},
+      {"jp": "（交通）事故にあう", "en": "get involved in a car accident", "cn": "遇车祸"},
+      {"jp": "車に気をつける", "en": "watch out for cars", "cn": "注意汽车"},
+      {"jp": "ななめに横断する", "en": "walk across the street diagonally", "cn": "斜穿"},
+      {"jp": "道路を横切る", "en": "go across the road", "cn": "横穿马路"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.39",
+    "sections": [
+      {"type": "choice", "instruction": "正しいほうに〇をつけなさい。", "items": [
+        {"n": 1, "q": "突き当たりを（a. まっすぐ行って　b. 右に曲がって）ください。"},
+        {"n": 2, "q": "バスが客を乗せるために、（a. 乗車　b. 停車）している。"},
+        {"n": 3, "q": "信号を（a. 違反して　b. 無視して）、事故を起こしてしまった。"},
+        {"n": 4, "q": "工事のため、（a. 近道　b. 回り道）させられた。"},
+        {"n": 5, "q": "（a. 一方通行　b. 四つ角）の道を反対に走ってくる車がいて、びっくりした。"},
+        {"n": 6, "q": "線路には、（a. 踏切　b. 横断歩道）がある。"}
+      ]},
+      {"type": "select", "instruction": "（　）にはどれが入りますか。一つ選びなさい。", "items": [
+        {"n": 7, "q": "タクシーは前をゆっくり走るバスを（　　）。", "opts": ["通過した", "通行した", "乗り越した", "追い越した"]},
+        {"n": 8, "q": "「気をつけて。車に（　　）わよ！」", "opts": ["ふまれる", "越えられる", "ひかれる", "横断される"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②b ③b ④b ⑤a ⑥a　Ⅱ：⑦4 ⑧3"
+  },
+  "hitokoto": "きょうの一言：安全運転をしましょう。"
+}

@@ -1,0 +1,55 @@
+{
+  "week": 3, "day": 2, "title": "したくをしましょう", "title_cn": "让我们来准备一下吧", "title_en": "Let's Get Ready",
+  "dialog": {"lines": ["早くシャワー浴びなさい。はい、これ、着替えのパンツとシャツ。ちゃんとひげもそってね。", "うるさいな～"], "cn": "“快去洗澡。来，这个，换的内裤和衬衫。胡子也好好刮一刮。”“真烦人～”"},
+  "sections": [
+    {"type": "words", "heading": "絵をみておぼえましょう：顔・身につけるもの", "items": [
+      {"jp": "額", "en": "forehead", "cn": "额头"},
+      {"jp": "まつげ", "en": "eyelash", "cn": "睫毛"},
+      {"jp": "ほお／ほほ", "en": "cheek", "cn": "脸颊"},
+      {"jp": "ネックレス", "en": "necklace", "cn": "项链"},
+      {"jp": "まゆ／まゆげ", "en": "eyebrow", "cn": "眉毛"},
+      {"jp": "まぶた", "en": "eyelid", "cn": "眼睑"},
+      {"jp": "イヤリング", "en": "earrings", "cn": "耳环"},
+      {"jp": "唇", "en": "lips", "cn": "嘴唇"},
+      {"jp": "ベルト", "en": "belt", "cn": "皮带"},
+      {"jp": "パンツ", "en": "undershorts (for men) / panties (for women)", "cn": "内裤", "rel": "＊ズボンのことを「パンツ」とも言う"}
+    ]},
+    {"type": "phrases", "heading": "もっとおぼえましょう", "items": [
+      {"jp": "朝のしたくをする", "en": "get ready to go to work/school", "cn": "做早晨的准备"},
+      {"jp": "シャワーを浴びる", "en": "take a shower", "cn": "洗淋浴"},
+      {"jp": "下着", "en": "underwear", "cn": "内衣", "rel": "⇔ 上着（jacket 外衣）"},
+      {"jp": "歯をみがく", "en": "brush one's teeth", "cn": "刷牙", "rel": "→ 歯みがき（N）（tooth brushing 牙刷）"},
+      {"jp": "歯みがき粉をつける", "en": "put toothpaste on one's brush", "cn": "挤上牙膏", "rel": "＊「粉」という漢字を使っているが、今は練り歯みがきのことを言う（现在指牙膏）"},
+      {"jp": "ひげをそる", "en": "shave", "cn": "刮胡子"},
+      {"jp": "ドライヤーで髪を乾かす", "en": "dry one's hair with a dryer", "cn": "用吹风机把头发吹干"},
+      {"jp": "髪をとく／とかす", "en": "brush/comb one's hair", "cn": "梳头"},
+      {"jp": "（お）化粧をする", "en": "put a make-up on", "cn": "化妆"},
+      {"jp": "口紅を塗る／つける", "en": "put on lipstick", "cn": "涂口红"},
+      {"jp": "服を着替える", "en": "change one's clothes", "cn": "换衣服", "rel": "→ 着替え（N）（spare clothes 换衣服）"},
+      {"jp": "おしゃれをする", "en": "get dressed up", "cn": "打扮", "rel": "→ おしゃれな人（smartly dressed person 会打扮的人）"},
+      {"jp": "ひもを結ぶ", "en": "tie a string", "cn": "系上绳子", "rel": "⇔ ほどく（untie 解开）"},
+      {"jp": "マフラーを巻く／する", "en": "wrap a muffler around the neck", "cn": "围上围巾"},
+      {"jp": "手袋をはめる／する", "en": "put on gloves", "cn": "戴手套"},
+      {"jp": "指輪をはめる／する", "en": "wear a ring", "cn": "戴戒指"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.49",
+    "sections": [
+      {"type": "choice", "instruction": "正しいほうに〇をつけなさい。", "items": [
+        {"n": 1, "q": "「白いマフラーを（a. しめている　b. 巻いている）あの子、かわいいね。」"},
+        {"n": 2, "q": "ぼくはお風呂に入ったときに、ひげを（a. そります　b. ときます）。"},
+        {"n": 3, "q": "シャワーを（a. 浴びて　b. 入って）から出かけます。"},
+        {"n": 4, "q": "靴のひもを結んだり（a. ほどいたり　b. みがいたり）するのは、面倒くさい。"},
+        {"n": 5, "q": "「田中さんはいつもすてきな服を着ていて、（a. きがえ　b. おしゃれ）が上手ね。」"},
+        {"n": 6, "q": "赤い口紅を（a. ぬる　b. まく）。"}
+      ]},
+      {"type": "select", "instruction": "（　）にはどれが入りますか。一つ選びなさい。", "items": [
+        {"n": 7, "q": "歯ブラシに歯みがき粉を（　　）。", "opts": ["する", "つける", "そる", "むすぶ"]},
+        {"n": 8, "q": "「この子はまだ小さいから、一人で手袋を（　　）んですよ。」", "opts": ["ほどけない", "きれない", "はけない", "はめられない"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②a ③a ④a ⑤b ⑥a　Ⅱ：⑦2 ⑧4"
+  },
+  "hitokoto": "きょうの一言：食事の後は歯をみがきましょう。"
+}

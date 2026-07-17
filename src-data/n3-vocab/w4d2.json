@@ -1,0 +1,63 @@
+{
+  "week": 4, "day": 2, "title": "学校へ行きましょう②", "title_cn": "到学校去②", "title_en": "Let's Go to School ②",
+  "dialog": {"lines": ["ぼくは法学部を受験します。授業料が高いので大変ですが、奨学金をもらえるように、がんばります。留学もしたいです。"], "cn": "“我要考法学部。学费很贵，很辛苦，不过我会努力争取拿到奖学金。也想去留学。”"},
+  "sections": [
+    {"type": "phrases", "heading": "□にいれてよみましょう：〇〇大学の＿＿を受験する。（学部 department）", "items": [
+      {"jp": "文学部", "en": "department of literature", "cn": "文学系"},
+      {"jp": "経済学部", "en": "department of economics", "cn": "经济系"},
+      {"jp": "法学部", "en": "department of law", "cn": "法学系"},
+      {"jp": "理工学部", "en": "department of science and engineering", "cn": "理工系"},
+      {"jp": "医学部", "en": "department of medicine", "cn": "医学系"}
+    ]},
+    {"type": "phrases", "heading": "□にいれてよみましょう：＿＿を専攻する。（学科 faculty）", "items": [
+      {"jp": "経済学", "en": "Economics", "cn": "经济学"},
+      {"jp": "政治学", "en": "Political science", "cn": "政治学"},
+      {"jp": "心理学", "en": "Psychology", "cn": "心理学"},
+      {"jp": "言語学", "en": "Linguistics", "cn": "语言学"},
+      {"jp": "物理学", "en": "Physics", "cn": "物理学"}
+    ]},
+    {"type": "phrases", "heading": "□にいれてよみましょう：＿＿をとる。", "items": [
+      {"jp": "ゼミ", "en": "(take a) seminar", "cn": "（上）研究班"},
+      {"jp": "単位", "en": "(get) credit(s)", "cn": "（得）学分"}
+    ]},
+    {"type": "phrases", "heading": "□にいれてよみましょう：＿＿を受ける。（to attend a 上课）", "items": [
+      {"jp": "講義", "en": "lecture", "cn": "讲义"},
+      {"jp": "補習", "en": "supplementary lesson", "cn": "补习"},
+      {"jp": "補講", "en": "supplementary lecture", "cn": "补充讲义"}
+    ]},
+    {"type": "phrases", "heading": "もっとおぼえましょう", "items": [
+      {"jp": "進学を希望する", "en": "wish to go to a high school/university", "cn": "希望升学"},
+      {"jp": "合格発表を見に行く", "en": "go to see the exam results", "cn": "去看成绩榜"},
+      {"jp": "合格する／受かる", "en": "pass an exam", "cn": "合格", "rel": "⇔ 不合格になる／落ちる（fail an exam 不合格）"},
+      {"jp": "授業料／学費を払う", "en": "pay for the tuition fees", "cn": "付学费"},
+      {"jp": "奨学金をもらう", "en": "get a scholarship", "cn": "获得奖学金"},
+      {"jp": "大学教授", "en": "professor", "cn": "大学教授", "rel": "→ 学者（scholar 学者）"},
+      {"jp": "講義に間に合う", "en": "be in time for the class", "cn": "上课来得及", "rel": "⇔ 講義に遅れる／遅刻する（be late for the class 上课迟到）"},
+      {"jp": "成績がいい", "en": "good marks", "cn": "成绩好", "rel": "⇔ 成績が悪い（bad marks 成绩不好）"},
+      {"jp": "授業中に居眠りをする", "en": "sleep during the class", "cn": "上课时打盹"},
+      {"jp": "授業をサボる", "en": "skip a class", "cn": "逃学"},
+      {"jp": "単位を落とす", "en": "fail a course", "cn": "丢学分", "rel": "⇔ 単位をとる（get credits 修学分）"},
+      {"jp": "休学する", "en": "take leave from school", "cn": "休学"},
+      {"jp": "留学する", "en": "study abroad", "cn": "留学"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.65",
+    "sections": [
+      {"type": "choice", "instruction": "正しいほうに〇をつけなさい。", "items": [
+        {"n": 1, "q": "電車の事故で、授業に（a. 乗り遅れた　b. 遅刻した）。"},
+        {"n": 2, "q": "病気で1年間（a. 休学　b. 留学）した。"},
+        {"n": 3, "q": "授業を（a. 居眠りして　b. サボって）しかられた。"},
+        {"n": 4, "q": "彼は大学（a. 教授　b. 学者）です。"},
+        {"n": 5, "q": "大学で言語学を（a. 希望　b. 専攻）しています。"},
+        {"n": 6, "q": "成績がよかったので、彼女は学校から（a. 奨学金　b. 授業料）をもらった。"}
+      ]},
+      {"type": "select", "instruction": "（　）にはどれが入りますか。一つ選びなさい。", "items": [
+        {"n": 7, "q": "理工学部を（　　）して、受かった。", "opts": ["授業", "受験", "講義", "進学"]},
+        {"n": 8, "q": "大学で（　　）を取る。", "opts": ["単位", "進学", "教授", "留学"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②a ③b ④a ⑤b ⑥a　Ⅱ：⑦2 ⑧1"
+  },
+  "hitokoto": "きょうの一言：居眠りしないで、まじめに講義を受けましょう。"
+}

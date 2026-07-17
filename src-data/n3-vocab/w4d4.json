@@ -1,0 +1,55 @@
+{
+  "week": 4, "day": 4, "title": "仕事をしましょう", "title_cn": "让我们工作吧", "title_en": "Let's Work",
+  "dialog": {"lines": ["ね、君のバイト、時給いくら？　勤務時間は？　交通費、出る？　仕事、きつい？", "俺もやとってもらえないかな。お金、かせがないと、授業料が払えないんだ。", "仕事、なまけていて、昨日、首になってしまったんだ……", "バイト募集！　急募！"], "cn": "“喂，你打工时薪多少？工作时间呢？有交通费吗？工作累吗？”“不知道能不能也雇我。不挣钱的话就付不起学费了。”“工作偷懒，昨天被开除了……”“招工！急招！”"},
+  "sections": [
+    {"type": "phrases", "heading": "□にいれてよみましょう：お仕事は？——＿＿をしています。", "items": [
+      {"jp": "レストランでバイト／アルバイト", "en": "work part-time at a restaurant", "cn": "在餐馆打工"},
+      {"jp": "工場でパート", "en": "work part-time at a factory", "cn": "在工厂做小时工"},
+      {"jp": "コンビニの店員", "en": "convenient store staff", "cn": "便利店的店员"},
+      {"jp": "英会話講師", "en": "an English teacher", "cn": "英语会话的老师"},
+      {"jp": "翻訳の仕事", "en": "work as a translator", "cn": "笔译的工作", "rel": "→ 翻訳する（translate 笔译）"},
+      {"jp": "通訳の仕事", "en": "work as an interpreter", "cn": "口译的工作", "rel": "→ 通訳する（interpret 口译）"},
+      {"jp": "事務の手伝い", "en": "office assistant", "cn": "事务助理"},
+      {"jp": "ホームヘルパー", "en": "helper in the house", "cn": "家政人员"}
+    ]},
+    {"type": "phrases", "heading": "もっとおぼえましょう", "items": [
+      {"jp": "仕事を探す", "en": "look for a job", "cn": "找工作"},
+      {"jp": "履歴書を書く", "en": "write a CV", "cn": "写简历"},
+      {"jp": "面接をする", "en": "have an interview", "cn": "面试"},
+      {"jp": "ホテルの従業員", "en": "a hotel worker", "cn": "酒店的工作人员"},
+      {"jp": "仕事仲間", "en": "colleague", "cn": "工作伙伴"},
+      {"jp": "やとう", "en": "hire", "cn": "雇用", "rel": "⇔ やとわれる（be hired 被雇用）"},
+      {"jp": "きつい（=つらい）仕事", "en": "hard work", "cn": "艰苦的工作"},
+      {"jp": "給料", "en": "wage", "cn": "工资"},
+      {"jp": "時給1200円", "en": "1200 yen an hour", "cn": "1小时1200日元"},
+      {"jp": "ボーナス", "en": "bonus", "cn": "奖金"},
+      {"jp": "交通費が出る", "en": "be paid transportation fees", "cn": "给交通费"},
+      {"jp": "勤務時間", "en": "work hours", "cn": "工作时间"},
+      {"jp": "お金をかせぐ", "en": "make money", "cn": "挣钱"},
+      {"jp": "お金をもうける", "en": "make a lot of money", "cn": "赚钱", "rel": "→ お金がもうかる"},
+      {"jp": "仕事を済ます／済ませる", "en": "finish the work", "cn": "结束工作"},
+      {"jp": "仕事をなまける", "en": "be lazy in your work", "cn": "工作偷懒"},
+      {"jp": "なまけ者", "en": "lazy person", "cn": "懒人", "rel": "⇔ 働き者（hardworking person 勤快人）"},
+      {"jp": "首になる／やめさせられる", "en": "be fired", "cn": "被解雇"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.69",
+    "sections": [
+      {"type": "choice", "instruction": "正しいほうに〇をつけなさい。", "items": [
+        {"n": 1, "q": "高校を卒業したら、自分でお金を（a. かせごう　b. もうかろう）。"},
+        {"n": 2, "q": "もう一人従業員を（a. やといたい　b. やとわれたい）。"},
+        {"n": 3, "q": "遅刻ばかりしていたら、仕事を（a. 首にした　b. 首になった）。"},
+        {"n": 4, "q": "給料とは別に、（a. 時給　b. 交通費）が出ます。"},
+        {"n": 5, "q": "（a. パート　b. ホームヘルパー）で病院に勤めています。"},
+        {"n": 6, "q": "朝、早い（a. 勤務　b. 面接）ですが、続けられますか。"}
+      ]},
+      {"type": "select", "instruction": "（　）にはどれが入りますか。一つ選びなさい。", "items": [
+        {"n": 7, "q": "私は（　　）の店員をしています。", "opts": ["パート", "コンビニ", "ヘルパー", "バイト"]},
+        {"n": 8, "q": "人と会わずにひとりで家でできるので（　　）の仕事は私に合っています。", "opts": ["従業員", "講師", "通訳", "翻訳"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②a ③b ④b ⑤a ⑥a　Ⅱ：⑦2 ⑧4"
+  },
+  "hitokoto": "きょうの一言：仕事をやめさせられないように、気をつけましょう。"
+}

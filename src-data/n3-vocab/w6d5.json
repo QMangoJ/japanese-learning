@@ -1,0 +1,61 @@
+{
+  "week": 6, "day": 5, "title": "意味がたくさんある動詞①", "title_cn": "多义动词①", "title_en": "Verb that has Many Meanings ①",
+  "dialog": {"lines": ["風邪にかかった。十分な睡眠を取れば治るだろうと思っていたが、のどの痛みも全然取れず、熱も出てきた。早めに医者にかかったほうがよかったかもしれない。"], "cn": "“感冒了。本以为好好睡一觉就会好，可嗓子疼一点也没消，还发起烧来。或许早点去看医生会更好。”"},
+  "sections": [
+    {"type": "phrases", "heading": "多義動詞：出る／出す", "items": [
+      {"jp": "大学を出る（=卒業する）", "en": "graduate from university", "cn": "大学毕业"},
+      {"jp": "会議に出る（=出席する）", "en": "attend a meeting", "cn": "参加会议"},
+      {"jp": "食事が出る", "en": "be served a meal", "cn": "饭来了", "rel": "→ 食事を出す"},
+      {"jp": "結論が出る", "en": "come to a conclusion", "cn": "得出结论", "rel": "→ 結論を出す"},
+      {"jp": "元気が出る", "en": "feel energetic", "cn": "有精神了", "rel": "→ 元気を出す"},
+      {"jp": "新製品が出る（=発売される）", "en": "come up with a new product", "cn": "出新产品", "rel": "→ 新製品を出す"},
+      {"jp": "芽が出る", "en": "buds coming out", "cn": "发芽", "rel": "→ 芽を出す"},
+      {"jp": "ボーナスが出る", "en": "get a bonus", "cn": "发奖金", "rel": "→ ボーナスを出す"},
+      {"jp": "ゴキブリが出る（=現れる）", "en": "find cockroaches", "cn": "有蟑螂"},
+      {"jp": "新聞に名前が出る（=載る）", "en": "have your name appear in a newspaper", "cn": "名字登上报纸了"},
+      {"jp": "角を曲がると駅に出る", "en": "come to the station after turning a corner", "cn": "从拐角拐过去，就是车站"}
+    ]},
+    {"type": "phrases", "heading": "多義動詞：とる／とれる", "items": [
+      {"jp": "財布を取る（=盗む）", "en": "steal a wallet", "cn": "偷钱包"},
+      {"jp": "財布を取りに戻る", "en": "go back to get your wallet", "cn": "回去取钱包"},
+      {"jp": "運転免許を取る", "en": "get a driver's license", "cn": "考取驾照"},
+      {"jp": "コピーを取る（=コピーする）", "en": "make a copy", "cn": "复印"},
+      {"jp": "新聞を取る", "en": "subscribe to a newspaper", "cn": "订报纸"},
+      {"jp": "睡眠を取る（=眠る）", "en": "get some sleep", "cn": "睡觉"},
+      {"jp": "出席を取る", "en": "take attendance", "cn": "点名"},
+      {"jp": "連絡を取る（=連絡する）", "en": "contact", "cn": "联络", "rel": "→ 連絡が取れる"},
+      {"jp": "痛みを取る", "en": "remove the pain", "cn": "止痛", "rel": "→ 痛みが取れる"},
+      {"jp": "ボタンが取れる", "en": "have a button come off", "cn": "纽扣掉了"},
+      {"jp": "新入社員を採る（=採用する）", "en": "hire a new employee", "cn": "录用新职员"}
+    ]},
+    {"type": "phrases", "heading": "多義動詞：かかる／かける", "items": [
+      {"jp": "鍵がかかっている", "en": "locked", "cn": "上锁", "rel": "→ 鍵をかける"},
+      {"jp": "病気にかかる（=病気になる）", "en": "get sick", "cn": "患病"},
+      {"jp": "医者にかかる（=診察してもらう）", "en": "go to see a doctor", "cn": "看医生"},
+      {"jp": "ボタンをかける", "en": "button", "cn": "系扣子", "rel": "⇔ 外す"},
+      {"jp": "CDをかける", "en": "play a CD", "cn": "放CD"},
+      {"jp": "毛布をかける", "en": "put a blanket on", "cn": "盖毛毯"},
+      {"jp": "声をかける", "en": "say hi", "cn": "打招呼", "rel": "→ 声がかかる"},
+      {"jp": "心配をかける（=心配させる）", "en": "make someone worry", "cn": "让人操心"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.103",
+    "sections": [
+      {"type": "choice", "instruction": "正しいほうに〇をつけなさい。", "items": [
+        {"n": 1, "q": "この道をまっすぐ行くと駅に（a. 出ます　b. 出ています）。"},
+        {"n": 2, "q": "どのくらい睡眠を（a. 出して　b. 取って）いますか。"},
+        {"n": 3, "q": "昼寝をすると、疲れが（a. 出る　b. 取れる）。"},
+        {"n": 4, "q": "両親にまた心配を（a. 取って　b. かけて）しまいました。"},
+        {"n": 5, "q": "ぼくのおじいちゃんは一人でシャツのボタンが（a. かけられなく　b. 取れなく）なった。"},
+        {"n": 6, "q": "去年はボーナスが（a. 出ませんでした　b. 取れませんでした）。"}
+      ]},
+      {"type": "select", "instruction": "（　）にはどれが入りますか。一つ選びなさい。", "items": [
+        {"n": 7, "q": "この問題は試験によく（　　）ので覚えましょう。", "opts": ["取る", "取れる", "出る", "出す"]},
+        {"n": 8, "q": "最近、新聞を（　　）家が増えているそうだ。", "opts": ["取らない", "出ない", "かけない", "かからない"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②b ③b ④b ⑤a ⑥a　Ⅱ：⑦3 ⑧1"
+  },
+  "hitokoto": "きょうの一言：親に心配をかけないようにしましょう。"
+}

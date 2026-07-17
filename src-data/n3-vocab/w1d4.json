@@ -1,0 +1,58 @@
+{
+  "week": 1, "day": 4, "title": "掃除をしましょう", "title_cn": "让我们来扫除吧", "title_en": "Let's Clean Up",
+  "dialog": {"lines": ["掃除機をかけるから、ちょっとどいて。", "新聞もどけてよね。あ、コーヒー、こぼさないでね。"], "cn": "“我要用吸尘器了，让一让。”“报纸也挪开。啊，咖啡别洒了。”"},
+  "sections": [
+    {"type": "words", "heading": "絵をみておぼえましょう", "items": [
+      {"jp": "エプロン", "en": "apron", "cn": "围裙"},
+      {"jp": "ほうき", "en": "broom", "cn": "扫帚"},
+      {"jp": "ちりとり", "en": "dust pan", "cn": "撮子"},
+      {"jp": "ぞうきん", "en": "rag", "cn": "抹布"},
+      {"jp": "バケツ", "en": "bucket", "cn": "水桶"}
+    ]},
+    {"type": "phrases", "heading": "もっとおぼえましょう", "items": [
+      {"jp": "エプロンをする／かける／つける", "en": "put apron on", "cn": "围围裙"},
+      {"jp": "ソファーをどける", "en": "push the couch aside", "cn": "挪开沙发", "rel": "→（～が）どく（step aside 让开）"},
+      {"jp": "部屋を散らかす", "en": "clutter the room", "cn": "搞乱房间", "rel": "→ 部屋が散らかる（the room is cluttered 房间很乱）"},
+      {"jp": "部屋を片づける", "en": "tidy up the room", "cn": "收拾房间", "rel": "→ 部屋が片づく（the room is tidied 房间很整洁）"},
+      {"jp": "ジュースをこぼす", "en": "spill the juice", "cn": "弄洒饮料", "rel": "→ ジュースがこぼれる（the juice is spilled 饮料洒了）"},
+      {"jp": "ほこりがたまる", "en": "collect dust", "cn": "积灰尘"},
+      {"jp": "ほこりがつもる", "en": "covered with dust", "cn": "积灰尘", "rel": "→ 雪がつもる（snow fall 积雪）"},
+      {"jp": "ほこりを取る", "en": "dust", "cn": "除灰"},
+      {"jp": "掃除機をかける", "en": "vacuum", "cn": "用吸尘器除尘"},
+      {"jp": "ほうきで掃く", "en": "sweep", "cn": "用扫帚扫"},
+      {"jp": "水をくむ", "en": "fill with water", "cn": "打水"},
+      {"jp": "ぞうきんをぬらす", "en": "wet the rag", "cn": "沾湿抹布"},
+      {"jp": "ぞうきんをしぼる", "en": "wring the rag", "cn": "拧干抹布"},
+      {"jp": "床をふく", "en": "wipe the floor", "cn": "拖地"},
+      {"jp": "ふきんで食器をふく", "en": "dry the dishes with a tea towel", "cn": "用抹布擦餐具"},
+      {"jp": "台ぶきんでテーブルをふく", "en": "wipe the table with a cloth", "cn": "用抹布擦桌子"},
+      {"jp": "家具をみがく", "en": "polish the furniture", "cn": "给家具磨光"},
+      {"jp": "ブラシでこする", "en": "scrub with a brush", "cn": "用刷子刷"},
+      {"jp": "生ゴミ", "en": "kitchen garbage", "cn": "生活垃圾（以食物为主）"},
+      {"jp": "燃えるゴミ", "en": "burnable garbage", "cn": "可燃垃圾"},
+      {"jp": "燃えないゴミ", "en": "non-burnable garbage", "cn": "不可燃垃圾"},
+      {"jp": "ゴミを分けるのは面倒だ。／面倒くさい。", "en": "Sorting garbage is a hassle.", "cn": "给垃圾分类太麻烦。"},
+      {"jp": "スリッパをそろえる", "en": "place the slippers nicely", "cn": "摆正拖鞋"},
+      {"jp": "物置にしまう", "en": "put it away in the storage", "cn": "收拾到库房"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.21",
+    "sections": [
+      {"type": "choice", "instruction": "正しいほうに〇をつけなさい。", "items": [
+        {"n": 1, "q": "（a. ちりとり　b. ほうき）でゴミを掃きましょう。"},
+        {"n": 2, "q": "「（a. 片づいて　b. 散らかって）いますが、どうぞお入りください。」"},
+        {"n": 3, "q": "「そんなところで寝ていたら、じゃまよ。早く（a. どき　b. どけ）なさい。」"},
+        {"n": 4, "q": "「牛乳、（a. こぼさない　b. しぼらない）ように飲んでね。」"},
+        {"n": 5, "q": "靴は（a. ぬらして　b. そろえて）脱ぎましょう。"},
+        {"n": 6, "q": "バケツに水を（a. くんで　b. かけて）、ぞうきんを洗ってください。"}
+      ]},
+      {"type": "select", "instruction": "（　）にはどれが入りますか。一つ選びなさい。", "items": [
+        {"n": 7, "q": "ぞうきんをよく（　　）から、ふいてください。", "opts": ["くんで", "はいて", "すって", "しぼって"]},
+        {"n": 8, "q": "「汚い手で目を（　　）いけませんよ。」", "opts": ["こすっては", "みがいては", "そろえては", "はいては"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②b ③a ④a ⑤b ⑥a　Ⅱ：⑦4 ⑧1"
+  },
+  "hitokoto": "きょうの一言：部屋を散らかさないようにしましょう。"
+}

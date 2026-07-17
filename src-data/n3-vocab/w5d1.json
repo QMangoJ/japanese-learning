@@ -1,0 +1,62 @@
+{
+  "week": 5, "day": 1, "title": "どういう関係ですか？", "title_cn": "什么关系呢？", "title_en": "How Are You Related?",
+  "dialog": {"lines": ["家族：夫（教師）・妻（主婦）＝夫婦。長男（サラリーマン）・次男（大学生20歳）・長女（高校生）・次女（中学生）・三男（小学生・末っ子）＝5人兄弟。", "職場：社長・部長・課長＝上司。先輩・私・後輩。"], "cn": "（家庭：丈夫〈教师〉、妻子〈主妇〉＝夫妇；长男〈上班族〉、次男〈大学生20岁〉、长女〈高中生〉、次女〈初中生〉、三男〈小学生·老幺〉＝五兄弟。职场：社长、部长、科长＝上司；前辈、我、后辈。）"},
+  "sections": [
+    {"type": "phrases", "heading": "□にいれてよみましょう：どういうご関係ですか。——＿＿です。", "items": [
+      {"jp": "長男", "en": "the eldest son", "cn": "长子"},
+      {"jp": "長女", "en": "the eldest daughter", "cn": "长女"},
+      {"jp": "次男", "en": "the second son", "cn": "次子"},
+      {"jp": "次女", "en": "the second daughter", "cn": "次女"},
+      {"jp": "三男", "en": "the third son", "cn": "三儿子"},
+      {"jp": "末っ子", "en": "the youngest child", "cn": "最小的孩子"},
+      {"jp": "おじ", "en": "uncle", "cn": "叔叔、舅舅、伯伯"},
+      {"jp": "おば", "en": "aunt", "cn": "姑妈、姨妈、婶子、伯母"},
+      {"jp": "職場の同僚", "en": "colleague", "cn": "单位同事"},
+      {"jp": "職場の上司", "en": "boss", "cn": "单位上司", "rel": "→ 部下（subordinate 部下）"},
+      {"jp": "会社の先輩", "en": "someone who has been in the company longer than you are", "cn": "公司的前辈", "rel": "→ 会社の後輩（someone who joined the company after you 公司的后辈）"},
+      {"jp": "部長", "en": "manager", "cn": "部长"},
+      {"jp": "課長", "en": "chief", "cn": "科长"}
+    ]},
+    {"type": "words", "heading": "おぼえましょう：学生・仕事", "items": [
+      {"jp": "大学生", "en": "university student", "cn": "大学生"},
+      {"jp": "高校生", "en": "high school student", "cn": "高中生"},
+      {"jp": "中学生", "en": "junior high school student", "cn": "初中生"},
+      {"jp": "小学生", "en": "primary school student", "cn": "小学生"},
+      {"jp": "会社員", "en": "office worker", "cn": "公司职员"},
+      {"jp": "サラリーマン", "en": "businessman", "cn": "工薪族"},
+      {"jp": "主婦", "en": "housewife/homemaker", "cn": "主妇"},
+      {"jp": "教師", "en": "teacher", "cn": "教师"}
+    ]},
+    {"type": "phrases", "heading": "もっとおぼえましょう：表現・関係", "items": [
+      {"jp": "6人兄弟の末っ子", "en": "the youngest of the six brothers", "cn": "兄弟6人中的老小"},
+      {"jp": "3人姉妹のいちばん上", "en": "the oldest of the three sisters", "cn": "姐妹3人中的老大", "rel": "＊「兄弟」には女の子も含まれる。「姉妹」は女の子だけについて言う。（「兄弟」包括女孩子，「姉妹」只适用于女孩子。）"},
+      {"jp": "親せき／親類", "en": "relatives", "cn": "亲戚"},
+      {"jp": "孫", "en": "grandchild", "cn": "（外）孙子（女）"},
+      {"jp": "おい", "en": "nephew", "cn": "侄子"},
+      {"jp": "めい", "en": "niece", "cn": "侄女"},
+      {"jp": "いとこ", "en": "cousin", "cn": "表兄弟（姐妹）"},
+      {"jp": "一人っ子", "en": "an only child", "cn": "独生子"},
+      {"jp": "一人息子", "en": "the only son", "cn": "独生儿子"},
+      {"jp": "一人娘", "en": "the only daughter", "cn": "独生女儿"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.79",
+    "sections": [
+      {"type": "choice", "instruction": "正しいほうに〇をつけなさい。", "items": [
+        {"n": 1, "q": "ぼくの兄弟は女しかいないので、ぼくは（a. 一人っ子　b. 一人息子）です。"},
+        {"n": 2, "q": "兄が一人いるので、ぼくは（a. 長男　b. 次男）です。"},
+        {"n": 3, "q": "ぼくは（a. 息子　b. 長男）ですが、兄弟がいないので、一人っ子です。"},
+        {"n": 4, "q": "彼女は3人姉妹の3番目、つまり（a. 一人娘　b. 末っ子）です。"},
+        {"n": 5, "q": "彼は私の（a. おじ　b. おい）で、父のいちばん下の弟です。"},
+        {"n": 6, "q": "父も母も兄弟がいないので、私には（a. 姉妹　b. いとこ）がいません。"}
+      ]},
+      {"type": "select", "instruction": "（　）にはどれが入りますか。一つ選びなさい。", "items": [
+        {"n": 7, "q": "「娘夫婦には、まだ子どもができないんです。早く（　　）が欲しいんですが。」", "opts": ["めい", "しまい", "おば", "まご"]},
+        {"n": 8, "q": "彼はぼくの（　　）なのに、先に部長になった。", "opts": ["課長", "上司", "後輩", "先輩"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②b ③b ④b ⑤a ⑥b　Ⅱ：⑦4 ⑧3"
+  },
+  "hitokoto": "きょうの一言：職場の人たちといい関係をつくりましょう。"
+}

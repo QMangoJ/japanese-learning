@@ -1,0 +1,49 @@
+{
+  "week": 4, "day": 5, "title": "パソコンを使いましょう", "title_cn": "来使用电脑吧", "title_en": "Let's Use the Computer",
+  "dialog": {"lines": ["うちの母親、今パソコン教室に通っていて、今年はパソコンで年賀状を作るんだって。", "ふーん、私のお母さんも、ネットで買い物したりしてるよ。", "ぼくのお母さんは…"], "cn": "“我妈现在在上电脑班，听说今年要用电脑做贺年卡。”“嗯，我妈也用网络买东西呢。”“我妈妈嘛…”"},
+  "sections": [
+    {"type": "words", "heading": "絵をみておぼえましょう：パソコン", "items": [
+      {"jp": "ノートパソコン", "en": "laptop computer", "cn": "笔记本"},
+      {"jp": "キーボード", "en": "keyboard", "cn": "键盘"},
+      {"jp": "デスクトップ（パソコン）", "en": "desktop (computer)", "cn": "台式电脑"},
+      {"jp": "マウス", "en": "mouse", "cn": "鼠标"}
+    ]},
+    {"type": "phrases", "heading": "おぼえましょう", "items": [
+      {"jp": "初めてパソコンをさわる", "en": "use a computer for the first time", "cn": "第一次摸电脑", "rel": "→ 初心者（beginner 初学者）"},
+      {"jp": "入門講座を受ける", "en": "attend an introductory course", "cn": "去听入门讲座"},
+      {"jp": "パソコンに慣れる", "en": "get used to a computer", "cn": "习惯用电脑"},
+      {"jp": "新製品", "en": "a new product", "cn": "新产品"},
+      {"jp": "新品", "en": "new", "cn": "新品", "rel": "⇔ 中古（used 二手货）"},
+      {"jp": "画面を見る", "en": "look at the screen", "cn": "看画面"},
+      {"jp": "ソフト（ウェア）をインストールする", "en": "install software", "cn": "装入软件"},
+      {"jp": "スタートボタンをクリックする", "en": "click on the start button", "cn": "点击开始键"},
+      {"jp": "ファイルを開く", "en": "open the file", "cn": "打开文件", "rel": "⇔ 閉じる（close 关闭）"},
+      {"jp": "年賀状を作る", "en": "print new years cards", "cn": "制作贺年卡"},
+      {"jp": "（インター）ネットにつなぐ", "en": "get connected to the internet", "cn": "连接英特网", "rel": "→ 世界中とつながる（be connected to the world 和全世界连接）"},
+      {"jp": "情報を得る", "en": "get information", "cn": "获取信息"},
+      {"jp": "オークションに参加する", "en": "take part in an auction", "cn": "参加拍卖"},
+      {"jp": "オークションに品物を出す", "en": "put something on auction", "cn": "把东西拿去拍卖", "rel": "→ 出品する（put something on display 出品）"},
+      {"jp": "ホームページを作る", "en": "create a website", "cn": "制作主页", "rel": "＊日本では、会社などのウェブサイト全体のことを「ホームページ」と言う。"},
+      {"jp": "ブログを始める", "en": "create a blog", "cn": "开始写博客"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.71",
+    "sections": [
+      {"type": "choice", "instruction": "正しいほうに〇をつけなさい。", "items": [
+        {"n": 1, "q": "新しいソフトをパソコンに（a. クリック　b. インストール）した。"},
+        {"n": 2, "q": "（a. ファイル　b. インターネット）は世界中につながっている。"},
+        {"n": 3, "q": "古いピアノを（a. オークション　b. ホームページ）に出品した。"},
+        {"n": 4, "q": "（a. キーボード　b. マウス）の「Enter」と書いてあるところを押してください。"},
+        {"n": 5, "q": "毎日日記を（a. ブログ　b. ソフト）に書いています。"},
+        {"n": 6, "q": "パソコンに（a. つなぐ　b. 慣れる）ため、入門講座を受けた。"}
+      ]},
+      {"type": "select", "instruction": "（　）にはどれが入りますか。一つ選びなさい。", "items": [
+        {"n": 7, "q": "最近のパソコンは3ヵ月ごとに（　　）が出る。", "opts": ["新品", "新製品", "中古", "品物"]},
+        {"n": 8, "q": "ネットで買い物をする場合、OKのボタンを（　　）ときは注意してください。", "opts": ["クリックする", "インストール", "開く", "閉じる"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②b ③a ④a ⑤a ⑥b　Ⅱ：⑦2 ⑧1"
+  },
+  "hitokoto": "きょうの一言：パソコンは、「習うより慣れろ」です。"
+}

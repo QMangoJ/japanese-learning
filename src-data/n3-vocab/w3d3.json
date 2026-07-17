@@ -1,0 +1,52 @@
+{
+  "week": 3, "day": 3, "title": "買い物をしましょう", "title_cn": "我们去买东西吧", "title_en": "Let's Go Shopping",
+  "dialog": {"lines": ["この形は今年いちばんはやっているんですよ。よく売れていて、黒はもう売り切れています。よくお似合いですよ。", "そう？　このピンク、はでじゃない？　でも、私の好きな色なのよね。形も気に入ったし、これ、いただくわ。"], "cn": "“这个款式是今年最流行的。卖得很好，黑色的已经卖光了。很适合您呢。”“是吗？这个粉色，不会太艳吧？不过，是我喜欢的颜色。款式也中意了，这个，我要了。”"},
+  "sections": [
+    {"type": "words", "heading": "絵をみておぼえましょう：服・柄", "items": [
+      {"jp": "そでなし", "en": "sleeveless", "cn": "无袖"},
+      {"jp": "半そで", "en": "short sleeve", "cn": "半袖"},
+      {"jp": "長そで", "en": "long sleeve", "cn": "长袖"},
+      {"jp": "無地", "en": "plain", "cn": "素色"},
+      {"jp": "柄／模様", "en": "pattern", "cn": "花样／图案"},
+      {"jp": "しま", "en": "striped", "cn": "条纹"},
+      {"jp": "水玉", "en": "polka dots", "cn": "圆点"},
+      {"jp": "花柄", "en": "flower patterns", "cn": "花色"}
+    ]},
+    {"type": "phrases", "heading": "もっとおぼえましょう", "items": [
+      {"jp": "似合う", "en": "look good on someone", "cn": "合适"},
+      {"jp": "気に入る", "en": "take a fancy to...", "cn": "喜欢", "rel": "→ お気に入り（N）（one's favorite 喜爱的东西）"},
+      {"jp": "好む", "en": "like", "cn": "喜爱", "rel": "→ 好み（N）（one's taste 喜爱的类型）"},
+      {"jp": "目立つ色", "en": "a color that stands out", "cn": "鲜艳的颜色"},
+      {"jp": "はでな", "en": "gaudy", "cn": "鲜艳的", "rel": "⇔ 地味な（staid 朴素的）"},
+      {"jp": "人気のあるデザイン", "en": "a popular design", "cn": "有人气的设计"},
+      {"jp": "はやっている", "en": "in fashion", "cn": "流行", "rel": "→ はやり／流行（N）（trend/fashion 流行）"},
+      {"jp": "サイズを確かめる／確認する", "en": "check the size", "cn": "确认尺寸", "rel": "→ サイズが合う（size that fits 尺寸合适）"},
+      {"jp": "ゆるい", "en": "loose", "cn": "宽松的", "rel": "⇔ きつい（tight 紧的）"},
+      {"jp": "品物をかごに入れる", "en": "put it in the shopping cart", "cn": "把东西放入筐子"},
+      {"jp": "セール／バーゲンで買う", "en": "buy it on sale", "cn": "在促销时买", "rel": "→ デパートの特売品（a department store bargain 商场特价商品）"},
+      {"jp": "30パーセント（％）オフ／3割引き", "en": "30% off the regular price", "cn": "优惠30%/七折"},
+      {"jp": "売り切れる", "en": "be sold out", "cn": "售完", "rel": "→ 売り切れ（N）（sold out 售完）"},
+      {"jp": "本物のダイヤモンド", "en": "a real diamond", "cn": "真的钻石", "rel": "⇔ にせ物（fake 假货）"},
+      {"jp": "得をする", "en": "come out ahead", "cn": "得到好处", "rel": "⇔ 損をする（suffer a loss 吃亏）"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.51",
+    "sections": [
+      {"type": "choice", "instruction": "正しいほうに〇をつけなさい。", "items": [
+        {"n": 1, "q": "今、このデザインが若い人の間で（a. はやって　b. 好んで）いる。"},
+        {"n": 2, "q": "「その柄、今年はやってますね。よく（a. 気に入って　b. 似合って）いますよ。」"},
+        {"n": 3, "q": "これは、私の（a. 気に入り　b. お気に入り）のバッグです。"},
+        {"n": 4, "q": "人気商品なので、すぐに（a. はやって　b. 売り切れて）しまった。"},
+        {"n": 5, "q": "長さはちょうどいいが、ちょっと（a. きつくて　b. ゆるくて）苦しい。"},
+        {"n": 6, "q": "こちらの商品は20パーセント（a. 特売　b. 引き）です。"}
+      ]},
+      {"type": "select", "instruction": "（　）にはどれが入りますか。一つ選びなさい。", "items": [
+        {"n": 7, "q": "「あの人はいつも（　　）服を着ているから、目立ちますね。」", "opts": ["はでな", "地味な", "無地の", "好みの"]},
+        {"n": 8, "q": "彼の誕生日にマフラーをあげたのに、（　　）もらえなかった。", "opts": ["気に入って", "似合って", "好みを", "お気に入りを"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②b ③b ④b ⑤a ⑥b　Ⅱ：⑦1 ⑧1"
+  },
+  "hitokoto": "きょうの一言：サイズを確かめて買いましょう。"
+}

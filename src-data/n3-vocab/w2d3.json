@@ -1,0 +1,49 @@
+{
+  "week": 2, "day": 3, "title": "電車に乗りましょう②", "title_cn": "让我们乘电车吧②", "title_en": "Let's Take a Train ②",
+  "dialog": {"lines": ["……また、お年寄りや体の不自由な方に席をおゆずりください。なお、優先席近くでの携帯電話のご使用はご遠慮ください。"], "cn": "“……另外，请给老年人和身体不便的乘客让座。此外，在优先席附近请勿使用手机。”"},
+  "sections": [
+    {"type": "phrases", "heading": "もっとおぼえましょう", "items": [
+      {"jp": "（プラット）ホームが混雑している", "en": "the platform is crowded", "cn": "月台很拥挤"},
+      {"jp": "白線／黄色い線の内側に下がる", "en": "stand back at the white/yellow line", "cn": "退到白线/黄线的内侧", "rel": "⇔ 外側（outside 外侧）"},
+      {"jp": "特急が通過する", "en": "the super-express train doesn't stop here", "cn": "特快列车驶过（但不停）"},
+      {"jp": "乗車する", "en": "get on the train", "cn": "乘车", "rel": "⇔ 下車する（get off the train 下车）"},
+      {"jp": "発車する", "en": "leave", "cn": "发车"},
+      {"jp": "電車（の中）はがらがらだ", "en": "the train is empty", "cn": "电车里空荡荡的", "rel": "→ 空っぽ（empty 空空的）"},
+      {"jp": "満員電車で通勤する", "en": "commute in a packed train", "cn": "乘满员电车上班"},
+      {"jp": "電車がゆれる", "en": "the train joggles", "cn": "电车颠簸"},
+      {"jp": "始発（電車）", "en": "the first train of the day", "cn": "首班电车", "rel": "⇔ 終電（the last train of the day 末班电车）"},
+      {"jp": "始発駅から乗る", "en": "get on a train at the point of origin", "cn": "从始发站乘车"},
+      {"jp": "終点で降りる", "en": "get off at the last station", "cn": "在终点站下车"},
+      {"jp": "急行から各駅停車に乗り換える", "en": "change from an express train to a local train", "cn": "快车换乘慢车", "rel": "→ 乗り換え（N）（change trains 换乘）"},
+      {"jp": "乗り遅れる", "en": "miss the train", "cn": "没赶上车"},
+      {"jp": "乗り過ごす", "en": "miss the stop", "cn": "坐过站"},
+      {"jp": "乗り越す", "en": "pass my station", "cn": "坐过站", "rel": "→ 乗り越し（N）（travelling beyond the destination on one's ticket 坐过站）"},
+      {"jp": "運賃を精算する", "en": "adjust the fare", "cn": "补票"},
+      {"jp": "車掌が車内アナウンスをする", "en": "the conductor makes an announcement to the passengers", "cn": "乘务员在车内广播"},
+      {"jp": "携帯電話の使用を控える", "en": "refrain from using a cell phone", "cn": "尽量不要使用手机"},
+      {"jp": "（お）年寄り／老人に席をゆずる", "en": "give a seat to an elderly person", "cn": "给老年人让座", "rel": "→ 優先席（a priority seat 优先席）"},
+      {"jp": "体の不自由な人", "en": "a physically handicapped person", "cn": "残疾人"},
+      {"jp": "ちかんにあう", "en": "be sexually harassed", "cn": "遇到流氓"},
+      {"jp": "駅の売店", "en": "a station kiosk", "cn": "车站的小卖店"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.35",
+    "sections": [
+      {"type": "choice", "instruction": "正しいほうに〇をつけなさい。", "items": [
+        {"n": 1, "q": "ホームでは、黄色い線の（a. 内側　b. 外側）で電車を待ちましょう。"},
+        {"n": 2, "q": "会社は東京駅（a. 乗車　b. 下車）、歩いて5分のところにある。"},
+        {"n": 3, "q": "次の駅で地下鉄に（a. 乗り換えて　b. 乗り越して）ください。"},
+        {"n": 4, "q": "電車の中で寝て、降りる駅を（a. 乗り遅れて　b. 乗り過ごして）しまった。"},
+        {"n": 5, "q": "この駅には、（a. 各駅停車　b. 特急）しか止まらない。"},
+        {"n": 6, "q": "この駅に、急行は止まるが、特急は（a. 通勤　b. 通過）する。"}
+      ]},
+      {"type": "select", "instruction": "（　）にはどれが入りますか。一つ選びなさい。", "items": [
+        {"n": 7, "q": "お年寄りや体の不自由な人のために、席を（　　）。", "opts": ["さがる", "ひかえる", "ゆずる", "ずらす"]},
+        {"n": 8, "q": "急行に乗って、（　　）で降りてください。", "opts": ["始発", "終電", "車内", "終点"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②b ③a ④b ⑤a ⑥b　Ⅱ：⑦3 ⑧4"
+  },
+  "hitokoto": "きょうの一言：電車を乗り過ごさないようにしましょう。"
+}

@@ -1,0 +1,66 @@
+{
+  "week": 2, "day": 1, "title": "計画を立てましょう", "title_cn": "让我们做个计划吧", "title_en": "Let's Make Plans",
+  "dialog": {"lines": ["すみません、先日申し込んだ旅行の日程を変更したいのですが……。"], "cn": "“不好意思，前几天报名的旅行，我想变更一下日程……”"},
+  "sections": [
+    {"type": "words", "heading": "絵をみておぼえましょう：曜日", "items": [
+      {"jp": "さきおととい", "en": "three days ago", "cn": "大前天"},
+      {"jp": "一昨日（=おととい）", "en": "", "cn": "前天"},
+      {"jp": "昨日（=きのう）", "en": "", "cn": "昨天"},
+      {"jp": "今日", "en": "", "cn": "今天"},
+      {"jp": "明日（=あした）", "en": "", "cn": "明天"},
+      {"jp": "あさって", "en": "", "cn": "后天"},
+      {"jp": "しあさって", "en": "three days from now", "cn": "大后天"}
+    ]},
+    {"type": "words", "heading": "絵をみておぼえましょう：1月のカレンダー", "items": [
+      {"jp": "元日／元旦（=1月1日）", "en": "New Year's Day", "cn": "元旦（＊元旦は特に元日の朝を言う）"},
+      {"jp": "上旬／初旬", "en": "the first 10 days of the month", "cn": "上旬"},
+      {"jp": "中旬", "en": "the middle 10 days of the month", "cn": "中旬"},
+      {"jp": "下旬", "en": "the last 10 days of the month", "cn": "下旬"},
+      {"jp": "月末", "en": "the end of the month", "cn": "月末"}
+    ]},
+    {"type": "phrases", "heading": "もっとおぼえましょう", "items": [
+      {"jp": "平日", "en": "weekday", "cn": "平日（非节假日）"},
+      {"jp": "祝日／祭日", "en": "national holiday", "cn": "节假日"},
+      {"jp": "昨年", "en": "", "cn": "（=去年）"},
+      {"jp": "一昨年", "en": "", "cn": "（=おととし，前年）"},
+      {"jp": "再来年", "en": "the year after next", "cn": "后年"},
+      {"jp": "先々月", "en": "the month before last", "cn": "大上个月"},
+      {"jp": "先々週", "en": "the week before last", "cn": "大上周"},
+      {"jp": "再来月", "en": "the month after next", "cn": "大下个月"},
+      {"jp": "再来週", "en": "the week after next", "cn": "大下周"},
+      {"jp": "先日", "en": "the other day", "cn": "前几天"},
+      {"jp": "年末年始", "en": "toward the year-end and at the beginning of the year", "cn": "年底和年初"},
+      {"jp": "暮れ", "en": "at the end of the year", "cn": "年底"},
+      {"jp": "休暇を取る", "en": "take a holiday", "cn": "请假"},
+      {"jp": "予定／日にち／日程／スケジュールを調整する", "en": "adjust (plan/date/schedule/itinerary)", "cn": "调整（预定/日期/日程）"},
+      {"jp": "～を変更する", "en": "change", "cn": "变动"},
+      {"jp": "～をずらす", "en": "shift", "cn": "错开"},
+      {"jp": "旅行会社に申し込む", "en": "ask a travel agent to arrange a trip", "cn": "去旅游公司报名"},
+      {"jp": "予約を取り消す／キャンセルする", "en": "cancel a reservation", "cn": "取消预约"},
+      {"jp": "荷物をつめる", "en": "pack for the trip", "cn": "装行李"},
+      {"jp": "海外旅行", "en": "foreign travel", "cn": "国外游", "rel": "⇔ 国内旅行（domestic travel 国内游）"},
+      {"jp": "二泊三日で温泉に行く", "en": "go on a three-day trip to a hot spring", "cn": "三天二宿温泉游"},
+      {"jp": "日帰りで温泉に行く", "en": "go on a day trip to a hot spring", "cn": "温泉一日游"},
+      {"jp": "旅館に宿泊する", "en": "stay at a Japanese inn", "cn": "住旅馆"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.31",
+    "sections": [
+      {"type": "choice", "instruction": "正しいほうに〇をつけなさい。", "items": [
+        {"n": 1, "q": "「来週の火曜日は（a. 平日　b. 祝日）だから、休みですよ。」"},
+        {"n": 2, "q": "日帰りすることにしたので、ホテルの予約を（a. 申し込んだ　b. 取り消した）。"},
+        {"n": 3, "q": "家賃※は毎月、（a. 月末　b. 暮れ）に支払う※ことになっている。（※家賃／支払う +p.38）"},
+        {"n": 4, "q": "待ち合わせ※の時間を（a. 変更して　b. 取り消して）、1時間遅くしてもらった。（※待ち合わせ appointment 约见）"},
+        {"n": 5, "q": "今度のコンサートは3月の（a. 元旦　b. 下旬）にあります。"},
+        {"n": 6, "q": "今日から2日後は（a. あさって　b. しあさって）です。"}
+      ]},
+      {"type": "select", "instruction": "（　）にはどれが入りますか。一つ選びなさい。", "items": [
+        {"n": 7, "q": "旅行の（　　）を調整する。", "opts": ["日帰り", "キャンセル", "日程", "休暇"]},
+        {"n": 8, "q": "A「隣のおじいさんが、（　　）亡くなったんだって。」B「え、先週会ったとき、元気だったのに。」", "opts": ["先々週", "おととし", "さきおととい", "しあさって"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②b ③a ④a ⑤b ⑥a　Ⅱ：⑦3 ⑧3"
+  },
+  "hitokoto": "きょうの一言：休暇を取って温泉に行きましょう。"
+}

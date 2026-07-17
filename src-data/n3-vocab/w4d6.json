@@ -1,0 +1,52 @@
+{
+  "week": 4, "day": 6, "title": "メールを書きましょう", "title_cn": "让我们写邮件吧", "title_en": "Let's Send E-mail",
+  "dialog": {"lines": ["受信トレイ／送信トレイ／送信済みアイテム／下書き／削除済みアイテム", "新規作成／返信／全員へ返信／転送／送受信／検索／削除／アドレス帳", "宛先：tanaka@xxx.ne.jp　件名：写真をお送りします　添付ファイル：photo_1 photo_2", "田中 陽子様："], "cn": "（邮件界面：收件箱／发件箱／已发送项目／草稿／已删除项目；新建／回复／全部回复／转发／收发／检索／删除／通讯录；收件人、主题、附件……）"},
+  "sections": [
+    {"type": "phrases", "heading": "□にいれてよみましょう：メールを＿＿。", "items": [
+      {"jp": "受信する", "en": "receive", "cn": "接收"},
+      {"jp": "送信する", "en": "send", "cn": "发送"},
+      {"jp": "返信する", "en": "reply", "cn": "回复"},
+      {"jp": "転送する", "en": "forward", "cn": "转发"},
+      {"jp": "新規作成する", "en": "create a new message", "cn": "新建"},
+      {"jp": "まとめて送る", "en": "send them in a batch", "cn": "群发"},
+      {"jp": "整理する", "en": "organize the messages", "cn": "整理"},
+      {"jp": "チェックする", "en": "check the incoming mail", "cn": "检查"}
+    ]},
+    {"type": "phrases", "heading": "□にいれてよみましょう：文字を＿＿。", "items": [
+      {"jp": "入力する", "en": "input", "cn": "输入"},
+      {"jp": "ローマ字で入力する", "en": "write in Roman letters", "cn": "用罗马字输入"},
+      {"jp": "漢字に変換する", "en": "convert ...to Kanji", "cn": "转换成汉字"},
+      {"jp": "挿入する", "en": "insert letters", "cn": "插入"},
+      {"jp": "削除する", "en": "delete", "cn": "删除", "rel": "＊日本語の「メール」はeメールのこと。普通の手紙には使わない。（日语的「メール」就是指电子邮件，不用于一般书信。）"}
+    ]},
+    {"type": "phrases", "heading": "もっとおぼえましょう", "items": [
+      {"jp": "あて先", "en": "addressee", "cn": "收件地址"},
+      {"jp": "差出人", "en": "sender", "cn": "发件人"},
+      {"jp": "件名", "en": "subject", "cn": "文件名"},
+      {"jp": "メールのやり取りをする", "en": "exchange emails", "cn": "邮件往来"},
+      {"jp": "写真を添付する", "en": "attach a photo", "cn": "附上照片"},
+      {"jp": "改行する", "en": "start a new paragraph", "cn": "另起行"},
+      {"jp": "送信者の（メール）アドレスを登録する", "en": "save the (email) address of the sender in the address book", "cn": "保存发件人（电子邮件）地址", "rel": "→ アドレス帳（address book 通讯录）"},
+      {"jp": "送信が完了する", "en": "messages been sent", "cn": "送信完毕"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.74",
+    "sections": [
+      {"type": "choice", "instruction": "正しいほうに〇をつけなさい。", "items": [
+        {"n": 1, "q": "いらないメールを（a. 入力　b. 削除）する。"},
+        {"n": 2, "q": "私に来たメールを、あなたに（a. 転送　b. 受信）します。"},
+        {"n": 3, "q": "メールがたまったら、時々（a. 作成　b. 整理）しましょう。"},
+        {"n": 4, "q": "メールはたくさんの人に（a. チェックして　b. まとめて）送ることができて、便利だ。"},
+        {"n": 5, "q": "課長からのメールに（a. 受信　b. 返信）しておきました。"},
+        {"n": 6, "q": "私は、日本語をローマ字で（a. 入力　b. 変換）するのに慣れている。"}
+      ]},
+      {"type": "select", "instruction": "（　）にはどれが入りますか。一つ選びなさい。", "items": [
+        {"n": 7, "q": "メールに写真を（　　）して、送ります。", "opts": ["入力", "変換", "転送", "添付"]},
+        {"n": 8, "q": "新しい友達のメールアドレスをアドレス帳に（　　）した。", "opts": ["作成", "受信", "完了", "登録"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②a ③b ④b ⑤b ⑥a　Ⅱ：⑦4 ⑧4"
+  },
+  "hitokoto": "きょうの一言：読みやすいメールを作成しましょう。"
+}
