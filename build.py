@@ -153,11 +153,19 @@ def main():
     with open(os.path.join(GSRC, "reference.json"), encoding="utf-8") as f:
         reference = json.load(f)
 
+    with open(os.path.join(GSRC, "contrast.json"), encoding="utf-8") as f:
+        contrast = json.load(f)
+    for g in contrast.get("groups", []):
+        for r in g.get("rows", []):
+            r["form_r"] = ruby(r["form"])
+            if r.get("eg"):
+                r["eg_r"] = ruby(r["eg"])
+
     vweeks = load_days(VSRC, 6, annotate_v)
     n2weeks = load_days(N2SRC, 8, annotate_g)
 
     data = {
-        "grammar": {"weeks": gweeks, "besatsu": besatsu, "reference": reference},
+        "grammar": {"weeks": gweeks, "besatsu": besatsu, "reference": reference, "contrast": contrast},
         "vocab": {"weeks": vweeks},
         "n2grammar": {"weeks": n2weeks},
     }

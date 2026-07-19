@@ -135,6 +135,13 @@ body.no-ruby rt{display:none}
 .fav-item .fj .t{font-weight:600;font-size:15.5px}
 .fav-item .fj .c{color:var(--sub);font-size:13px}
 .fav-item .fw{color:var(--sub);font-size:11.5px;white-space:nowrap}
+.ct-h{font-size:16px;margin:0 0 8px;color:var(--accent)}
+.ct-tip{background:var(--amber-soft);color:var(--amber);border-radius:8px;padding:6px 10px;font-size:13px;margin-bottom:10px;line-height:1.5}
+.ct-row{padding:9px 0;border-top:1px dashed var(--line)}
+.ct-form{font-weight:600;font-size:15px}
+.ct-loc{color:var(--blue);font-size:12px;margin-left:8px;cursor:pointer;white-space:nowrap}
+.ct-eg{color:var(--sub);font-size:13.5px;margin:2px 0}
+.ct-mean{font-size:14px}
 </style>
 </head>
 <body>
@@ -159,6 +166,7 @@ body.no-ruby rt{display:none}
   <button data-nav="search"><span class="ic">🔍</span>搜索</button>
   <button data-nav="cards"><span class="ic">🗂️</span>记忆卡</button>
   <button data-nav="favs"><span class="ic">⭐</span>收藏</button>
+  <button data-nav="contrast" id="navContrast"><span class="ic">🔀</span>辨析</button>
   <button data-nav="ref" id="navRef"><span class="ic">📖</span>接续表</button>
 </nav>
 <script>
@@ -217,6 +225,7 @@ function syncModeBar(){
   const vb=document.querySelector('#typebar button[data-ty="vocab"]');
   if(vb) vb.style.display = LEVEL==='n2'?'none':'';
   $('#navRef').style.display = MODULE==='grammar'?'':'none';
+  $('#navContrast').style.display = MODULE==='grammar'?'':'none';
 }
 function setModule(m){
   MODULE=m; try{ localStorage.setItem('module',m); }catch(e){}
@@ -234,7 +243,7 @@ function navTo(hash){ if(location.hash===hash) render(); else location.hash=hash
 window.addEventListener('hashchange', render);
 backBtn.onclick = ()=>{ history.length>1 ? history.back() : navTo('#/'); };
 document.querySelectorAll('nav.bottom button').forEach(b=>{
-  b.onclick = ()=> navTo({home:'#/',search:'#/search',cards:'#/cards',favs:'#/favs',ref:'#/ref'}[b.dataset.nav]);
+  b.onclick = ()=> navTo({home:'#/',search:'#/search',cards:'#/cards',favs:'#/favs',contrast:'#/contrast',ref:'#/ref'}[b.dataset.nav]);
 });
 /* delegated clicks (artifact CSP blocks inline onclick=) */
 app.addEventListener('click', e=>{
@@ -267,6 +276,7 @@ function render(){
   if(h==='#/cards') return viewCards();
   if(h==='#/favs') return viewFavs();
   if(h==='#/ref'){ if(MODULE!=='grammar') setModule('grammar'); return viewRef(); }
+  if(h==='#/contrast'){ if(MODULE!=='grammar') setModule('grammar'); return viewContrast(); }
   let m = h.match(/^#\/day\/(\d)-(\d)(?:\/p(\d+))?$/);
   if(m) return viewDay(+m[1], +m[2], m[3]?+m[3]:null);
   viewHome();
@@ -573,6 +583,24 @@ function renderFavFc(){
     : `<div class="fcard" data-favflip><div class="big jp">${esc(c.jp)}</div><div class="hint">点击翻面看释义</div></div>`;
   app.innerHTML=`<div class="fc-wrap"><div class="fc-prog">${favIdx+1} / ${favDeck.length}</div>${card}
     <div class="fc-btns"><button data-favprev>‹ 上一张</button><button class="primary" data-favnext>下一张 ›</button><button data-favback>返回收藏</button></div></div>`;
+}
+
+/* ---------- contrast (语法辨析, N3 grammar only) ---------- */
+function viewContrast(){
+  setNav('contrast'); setHeader('语法辨析 · N3', false);
+  const C = G.contrast || {groups:[]};
+  let html = C.intro ? `<div class="meta" style="margin-bottom:10px">${esc(C.intro)}</div>` : '';
+  for(const g of (C.groups||[])){
+    html += `<div class="card"><h3 class="ct-h jp">${esc(g.title)}</h3>`;
+    if(g.tip) html += `<div class="ct-tip">💡 ${esc(g.tip)}</div>`;
+    for(const r of (g.rows||[])){
+      html += `<div class="ct-row"><div class="ct-form jp">${r.form_r||esc(r.form)}<span class="ct-loc" data-go="#/day/${esc(r.loc)}">${esc(r.loc)} ›</span></div>`
+        + (r.eg?`<div class="ct-eg jp">例：${r.eg_r||esc(r.eg)}</div>`:'')
+        + `<div class="ct-mean">${esc(r.mean)}</div></div>`;
+    }
+    html += `</div>`;
+  }
+  app.innerHTML = html;
 }
 
 /* ---------- reference (grammar only) ---------- */
