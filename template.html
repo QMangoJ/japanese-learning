@@ -140,8 +140,23 @@ body.no-ruby rt{display:none}
 .ct-row{padding:9px 0;border-top:1px dashed var(--line)}
 .ct-form{font-weight:600;font-size:15px}
 .ct-loc{color:var(--blue);font-size:12px;margin-left:8px;cursor:pointer;white-space:nowrap}
-.ct-eg{color:var(--sub);font-size:13.5px;margin:2px 0}
+.ct-eg{font-size:14px;margin:2px 0 0}
+.ct-egcn{color:var(--sub);font-size:13px;margin:0 0 2px}
 .ct-mean{font-size:14px}
+.ct-wrap{display:flex;gap:16px;align-items:flex-start}
+.ct-toc{position:sticky;top:150px;flex:0 0 168px;max-height:calc(100vh - 168px);overflow-y:auto;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px}
+.ct-toc-h{font-size:12px;color:var(--sub);font-weight:700;padding:4px 8px}
+.ct-tocitem{display:block;padding:6px 8px;font-size:13px;color:var(--ink);cursor:pointer;border-radius:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ct-tocitem:hover{background:var(--bg);color:var(--accent)}
+.ct-body{flex:1;min-width:0}
+.ct-card{scroll-margin-top:150px}
+@media (max-width:680px){
+  .ct-wrap{flex-direction:column;gap:8px}
+  .ct-toc{top:140px;flex:none;width:auto;max-height:none;display:flex;gap:6px;overflow-x:auto;overflow-y:hidden;z-index:10}
+  .ct-toc-h{display:none}
+  .ct-tocitem{flex:0 0 auto;background:var(--bg);border:1px solid var(--line)}
+  .ct-card{scroll-margin-top:190px}
+}
 </style>
 </head>
 <body>
@@ -247,6 +262,7 @@ document.querySelectorAll('nav.bottom button').forEach(b=>{
 });
 /* delegated clicks (artifact CSP blocks inline onclick=) */
 app.addEventListener('click', e=>{
+  const sc=e.target.closest('[data-scroll]'); if(sc){ const el=document.getElementById(sc.dataset.scroll); if(el) el.scrollIntoView({behavior:'smooth',block:'start'}); return; }
   const sb=e.target.closest('[data-say]'); if(sb){ say(sb.dataset.say); return; }
   const fv=e.target.closest('[data-fav]'); if(fv){ toggleFav(fv.dataset.fav); fv.textContent=isFav(fv.dataset.fav)?'★':'☆'; if((location.hash||'#/')==='#/favs') viewFavs(); return; }
   if(e.target.closest('[data-favfc]')){ startFavFc(); return; }
@@ -589,18 +605,21 @@ function renderFavFc(){
 function viewContrast(){
   setNav('contrast'); setHeader('语法辨析 · N3', false);
   const C = G.contrast || {groups:[]};
-  let html = C.intro ? `<div class="meta" style="margin-bottom:10px">${esc(C.intro)}</div>` : '';
-  for(const g of (C.groups||[])){
-    html += `<div class="card"><h3 class="ct-h jp">${esc(g.title)}</h3>`;
-    if(g.tip) html += `<div class="ct-tip">💡 ${esc(g.tip)}</div>`;
+  const groups = C.groups||[];
+  const toc = groups.map((g,i)=>`<a class="ct-tocitem" data-scroll="ct-g-${i}">${esc(g.title)}</a>`).join('');
+  let body = C.intro ? `<div class="meta" style="margin-bottom:10px">${esc(C.intro)}</div>` : '';
+  groups.forEach((g,i)=>{
+    body += `<div class="card ct-card" id="ct-g-${i}"><h3 class="ct-h jp">${esc(g.title)}</h3>`;
+    if(g.tip) body += `<div class="ct-tip">💡 ${esc(g.tip)}</div>`;
     for(const r of (g.rows||[])){
-      html += `<div class="ct-row"><div class="ct-form jp">${r.form_r||esc(r.form)}<span class="ct-loc" data-go="#/day/${esc(r.loc)}">${esc(r.loc)} ›</span></div>`
+      body += `<div class="ct-row"><div class="ct-form jp">${r.form_r||esc(r.form)}<span class="ct-loc" data-go="#/day/${esc(r.loc)}">${esc(r.loc)} ›</span></div>`
         + (r.eg?`<div class="ct-eg jp">例：${r.eg_r||esc(r.eg)}</div>`:'')
+        + (r.eg_cn?`<div class="ct-egcn">译：${esc(r.eg_cn)}</div>`:'')
         + `<div class="ct-mean">${esc(r.mean)}</div></div>`;
     }
-    html += `</div>`;
-  }
-  app.innerHTML = html;
+    body += `</div>`;
+  });
+  app.innerHTML = `<div class="ct-wrap"><nav class="ct-toc"><div class="ct-toc-h">目录</div>${toc}</nav><div class="ct-body">${body}</div></div>`;
 }
 
 /* ---------- reference (grammar only) ---------- */
