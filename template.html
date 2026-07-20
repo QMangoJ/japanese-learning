@@ -220,10 +220,33 @@ if('speechSynthesis' in window){ pickVoice(); try{ speechSynthesis.onvoiceschang
 function say(t){ try{ if(!('speechSynthesis' in window)||!t) return; speechSynthesis.cancel(); const u=new SpeechSynthesisUtterance(t); u.lang='ja-JP'; u.rate=.9; if(jaVoice)u.voice=jaVoice; speechSynthesis.speak(u); }catch(e){} }
 function sayBtn(t){ return t?`<button class="sayb" data-say="${escAttr(t)}" aria-label="朗读">🔊</button>`:''; }
 
-/* ---- 收藏 (生词本) ---- */
+/* ---- 收藏 (生词本) ---- 本地 localStorage 即时可用，同时后台与 /api/favorites (Cloudflare KV) 同步实现跨设备 */
 let FAV={}; try{ FAV=JSON.parse(localStorage.getItem('favs')||'{}')||{}; }catch(e){ FAV={}; }
 const FAVMETA={};
-function saveFav(){ try{ localStorage.setItem('favs', JSON.stringify(FAV)); }catch(e){} }
+let _favSyncing=false, _favPushTimer=null;
+function pushFavsNow(){
+  fetch('/api/favorites', {method:'PUT', headers:{'content-type':'application/json'}, body: JSON.stringify(FAV)}).catch(()=>{});
+}
+function saveFav(){
+  try{ localStorage.setItem('favs', JSON.stringify(FAV)); }catch(e){}
+  if(_favSyncing) return; // 刚从服务器拉取时不要把同一份数据立刻推回去
+  clearTimeout(_favPushTimer);
+  _favPushTimer = setTimeout(pushFavsNow, 400);
+}
+async function pullFavsFromServer(){
+  try{
+    const res = await fetch('/api/favorites', {cache:'no-store'});
+    if(!res.ok) return;
+    const data = await res.json();
+    if(data && typeof data==='object' && !Array.isArray(data)){
+      _favSyncing = true;
+      FAV = data;
+      try{ localStorage.setItem('favs', JSON.stringify(FAV)); }catch(e){}
+      _favSyncing = false;
+      render();
+    }
+  }catch(e){ /* 离线或本地 file:// 打开时静默失败，继续用本地缓存 */ }
+}
 function isFav(id){ return !!FAV[id]; }
 function toggleFav(id){ if(FAV[id]) delete FAV[id]; else if(FAVMETA[id]) FAV[id]=FAVMETA[id]; saveFav(); }
 function star(id, snap){ FAVMETA[id]=snap; return `<button class="starb" data-fav="${escAttr(id)}" aria-label="收藏">${isFav(id)?'★':'☆'}</button>`; }
@@ -651,6 +674,7 @@ function viewRef(){
 }
 
 render();
+pullFavsFromServer();
 </script>
 </body>
 </html>
