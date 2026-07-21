@@ -182,7 +182,8 @@ body.no-ruby rt{display:none}
 .wk-toc{display:none}
 .week-card{scroll-margin-top:150px}
 @media (max-width:680px){
-  .wk-toc{position:sticky;top:148px;z-index:10;display:flex;gap:6px;overflow-x:auto;padding:6px 0;margin-bottom:6px;background:var(--bg)}
+  .home-top{position:sticky;top:148px;z-index:10;background:var(--bg);padding-bottom:4px}
+  .wk-toc{display:flex;gap:6px;overflow-x:auto;padding:6px 0 0}
   .wk-tocitem{flex:0 0 auto;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:13px;color:var(--ink);cursor:pointer;white-space:nowrap}
   .wk-tocitem:hover{color:var(--accent)}
   .week-card{scroll-margin-top:190px}
@@ -356,8 +357,9 @@ function viewHome(){
   const kind = (MODULE==='vocab'||MODULE==='n2vocab')?'词汇':(MODULE==='kanji'?'汉字':'语法');
   const weeks = CUR().weeks;
   const intro = `《${book}》 · ${weeks.length} 周 × 7 天 · 点击进入每日${kind}`;
-  let html = `<div class="meta" style="margin-bottom:10px">${intro}</div>`;
-  if(weeks.length>3) html += `<div class="wk-toc">${weeks.map(w=>`<a class="wk-tocitem" data-scroll="wk-${w.n}">第${w.n}周</a>`).join('')}</div>`;
+  let html = `<div class="home-top"><div class="meta" style="margin-bottom:10px">${intro}</div>` +
+    (weeks.length>3 ? `<div class="wk-toc">${weeks.map(w=>`<a class="wk-tocitem" data-scroll="wk-${w.n}">第${w.n}周</a>`).join('')}</div>` : '') +
+    `</div>`;
   for(const w of weeks){
     const wt = w.title ? ` <span class="jp">${esc(w.title)}</span>` : '';
     const wsub = w.title_cn ? `<div class="sub">${esc(w.title_cn)}</div>` : '';
