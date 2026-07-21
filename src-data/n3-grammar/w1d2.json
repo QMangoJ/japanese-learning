@@ -9,7 +9,8 @@
       "ああ、汚れちゃったよ。クリーニングに出さないと。",
       "そこに置いといて。明日、出しとくから。"
     ],
-    "cn": "“啊，脏了。必须拿去干洗了。”“先放那吧。我明天拿去洗。”"
+    "cn": "“啊，脏了。必须拿去干洗了。”“先放那吧。我明天拿去洗。”",
+    "en": "“Oh, I got it dirty. I have to send it to the dry cleaners.” “Just put it there. I will do it tomorrow.”"
   },
   "points": [
     {
@@ -18,21 +19,25 @@
       "connection": "Vないと／Vなくちゃ〔会話〕",
       "usage_jp": "「Vないといけない」「Vなければならない」を省略した言い方。",
       "usage_cn": "“Vなければならない（必须V）”的省略说法。",
+      "usage_en": "A shortened form of [Vなければならない (must+verb)].",
       "examples": [
         {
           "jp": "明日は早く出かけるから、もう寝ないと。",
           "eq": "=寝なければならない",
-          "cn": "明天要早点出门，必须睡觉了。"
+          "cn": "明天要早点出门，必须睡觉了。",
+          "en": "I must go to bed now since I will go early tomorrow morning."
         },
         {
           "jp": "試験まであと1ヵ月だ。がんばって勉強しないと。",
           "eq": "=勉強しなければいけない",
-          "cn": "离考试还有1个月。必须努力学习。"
+          "cn": "离考试还有1个月。必须努力学习。",
+          "en": "There is only one month to go before the exam. I must concentrate on my study."
         },
         {
           "jp": "田中さんにメールの返信をしなくちゃ。",
           "eq": "=しなければならない",
-          "cn": "必须给田中回邮件。"
+          "cn": "必须给田中回邮件。",
+          "en": "I must respond to Tanaka-san's message."
         }
       ],
       "notes": [
@@ -52,17 +57,20 @@
         {
           "jp": "「あれ？　ここにあったチョコレートは？」「あ、食べちゃった。いけなかった？」",
           "eq": "=食べてしまった",
-          "cn": "“哎？放在这儿的巧克力呢？”“啊，我吃了。不可以吗？”"
+          "cn": "“哎？放在这儿的巧克力呢？”“啊，我吃了。不可以吗？”",
+          "en": "\"Oh! what happened to the chocolate which was here?\" \"Oh, I ate it. I shouldn't have eaten it?\""
         },
         {
           "jp": "試験が終わった！　今日は飲んじゃおう！",
           "eq": "=飲んでしまおう",
-          "cn": "考试结束了！今天喝酒去吧！"
+          "cn": "考试结束了！今天喝酒去吧！",
+          "en": "Oh, the exam is over! I am going to have a drink!"
         },
         {
           "jp": "もしもし、すみません。車が混んじゃって……少し遅れます。",
           "eq": "=混んでしまって",
-          "cn": "喂，对不起。堵车了……会稍微晚些。"
+          "cn": "喂，对不起。堵车了……会稍微晚些。",
+          "en": "Hello, the traffic is bad... I'll be a little late."
         }
       ],
       "notes": [
@@ -86,17 +94,20 @@
         {
           "jp": "テストで間違ったところを、ノートに書いとこう。",
           "eq": "=書いておこう",
-          "cn": "把考试中出错的地方记在笔记本上。"
+          "cn": "把考试中出错的地方记在笔记本上。",
+          "en": "I will make a note of what I did wrong in the test."
         },
         {
           "jp": "これ洗濯しといて。",
           "eq": "=洗濯しておいて",
-          "cn": "把这个提前洗好。"
+          "cn": "把这个提前洗好。",
+          "en": "Can you wash this?"
         },
         {
           "jp": "トイレットペーパーがもうすぐなくなるから、買っとかないと。",
           "eq": "=買っておかないと〈いけない〉／買っておかなければならない",
-          "cn": "卫生纸马上就要用没了，必须去买。"
+          "cn": "卫生纸马上就要用没了，必须去买。",
+          "en": "We are running out of toilet paper. We'll have to buy some more."
         }
       ],
       "notes": [

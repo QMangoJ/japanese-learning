@@ -1,6 +1,6 @@
 {
   "week": 1, "day": 6, "title": "話を聞こうとしない", "title_cn": "不想听别人说话", "title_en": "He does not even listen",
-  "dialog": {"lines": ["留学しようと思っているが、父は私の話を聞こうとしない。"], "cn": "我想留学，但父亲根本不听我说话。"},
+  "dialog": {"lines": ["留学しようと思っているが、父は私の話を聞こうとしない。"], "cn": "我想留学，但父亲根本不听我说话。", "en": "I am thinking about studying abroad but my father doesn't even listen to what I say."},
   "points": [
     {
       "pattern": "やめようと思う",
@@ -8,9 +8,10 @@
       "connection": "Vようと思う",
       "usage_jp": "意志や予定を表す。",
       "usage_cn": "表示意志或计划。",
+      "usage_en": "To show one's will or plan.",
       "examples": [
-        {"jp": "会社をやめようと思っている。", "eq": "=やめるつもりです", "cn": "我想辞职。"},
-        {"jp": "来年、国に帰ろうと思っています。", "eq": "=帰るつもりです", "cn": "明年想回国。"}
+        {"jp": "会社をやめようと思っている。", "eq": "=やめるつもりです", "cn": "我想辞职。", "en": "I am thinking of quitting my job."},
+        {"jp": "来年、国に帰ろうと思っています。", "eq": "=帰るつもりです", "cn": "明年想回国。", "en": "I am thinking of going home next year."}
       ],
       "notes": []
     },
@@ -21,9 +22,9 @@
       "usage_jp": "動作を始めようとするその瞬間を表す。",
       "usage_cn": "表示正要开始某动作的瞬间。",
       "examples": [
-        {"jp": "電車に乗ろうとしたときに、ドアが閉まって乗れなかった。", "eq": "=乗る動作を始めたときに", "cn": "正要上电车的时候，门关上了，没能上去。"},
-        {"jp": "あ、ポチ〈犬の名前〉が、あなたの靴をかもうとしているよ。", "eq": "=かみそうだ", "cn": "啊，鲍奇（狗的名字）要去咬你的鞋。"},
-        {"jp": "ポチは、ぼくが出かけようとすると、ほえる。", "eq": "=出かける動作を始めると", "cn": "我一要出门，鲍奇就会叫。"}
+        {"jp": "電車に乗ろうとしたときに、ドアが閉まって乗れなかった。", "eq": "=乗る動作を始めたときに", "cn": "正要上电车的时候，门关上了，没能上去。", "en": "I missed the train. The door closed just as I was about to get on."},
+        {"jp": "あ、ポチ〈犬の名前〉が、あなたの靴をかもうとしているよ。", "eq": "=かみそうだ", "cn": "啊，鲍奇（狗的名字）要去咬你的鞋。", "en": "Oh, Pochi (dog) is going to bite your shoe."},
+        {"jp": "ポチは、ぼくが出かけようとすると、ほえる。", "eq": "=出かける動作を始めると", "cn": "我一要出门，鲍奇就会叫。", "en": "Pochi barks whenever I am about to go out."}
       ],
       "notes": []
     },
@@ -33,9 +34,10 @@
       "connection": "Vようとしない",
       "usage_jp": "動作や行動をする意志が感じられないことを表す。",
       "usage_cn": "表明无法感觉到想要行动的意志。",
+      "usage_en": "To indicate present continuous.",
       "examples": [
-        {"jp": "「ポチ、どうしたんだろう。ご飯を食べようとしないんだよ。」", "eq": "=食べるつもりがない", "cn": "鲍奇到底是怎么了？它不想吃饭。"},
-        {"jp": "彼は、自分のことは何も言おうとしない。", "eq": "=言うつもりがない", "cn": "他对自己的事情什么都不想说。"}
+        {"jp": "「ポチ、どうしたんだろう。ご飯を食べようとしないんだよ。」", "eq": "=食べるつもりがない", "cn": "鲍奇到底是怎么了？它不想吃饭。", "en": "Pochi, what's wrong with you? He hasn't been eating all all."},
+        {"jp": "彼は、自分のことは何も言おうとしない。", "eq": "=言うつもりがない", "cn": "他对自己的事情什么都不想说。", "en": "He doesn't talk about himself."}
       ],
       "notes": []
     }

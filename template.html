@@ -181,6 +181,9 @@ body.no-ruby rt{display:none}
 }
 .wk-toc{display:none}
 .week-card{scroll-margin-top:150px}
+.lang-toggle{display:flex;gap:6px;margin-bottom:10px}
+.lang-toggle button{border:1px solid var(--line);background:var(--card);color:var(--sub);border-radius:999px;padding:5px 16px;font-size:13px;font-weight:700;cursor:pointer}
+.lang-toggle button.on{background:var(--accent);border-color:var(--accent);color:#fff}
 @media (max-width:680px){
   .home-top{position:sticky;top:148px;z-index:10;background:var(--bg);padding-bottom:4px}
   .wk-toc{display:flex;gap:6px;overflow-x:auto;padding:6px 0 0}
@@ -221,6 +224,9 @@ const DATA = __DATA__;
 const G = DATA.grammar, V = DATA.vocab, G2 = DATA.n2grammar, K = DATA.kanji, V2 = DATA.n2vocab;
 let MODULE = 'grammar';
 try{ const m=localStorage.getItem('module'); if(['vocab','grammar','n2grammar','kanji','n2vocab'].includes(m)) MODULE=m; }catch(e){}
+let LANG = 'cn';
+try{ const l=localStorage.getItem('lang'); if(l==='en'||l==='cn') LANG=l; }catch(e){}
+const LX = (cn,en)=> (LANG==='en' && en) ? en : (cn||'');
 const CUR = ()=> ({vocab:V, n2grammar:G2, kanji:K, n2vocab:V2}[MODULE]) || G;
 const isGram = ()=> MODULE==='grammar'||MODULE==='n2grammar';
 const modLabel = ()=> ({grammar:'N3 语法', n2grammar:'N2 语法', vocab:'N3 词汇', kanji:'N3 汉字', n2vocab:'N2 词汇'})[MODULE];
@@ -314,6 +320,7 @@ document.querySelectorAll('nav.bottom button').forEach(b=>{
 });
 /* delegated clicks (artifact CSP blocks inline onclick=) */
 app.addEventListener('click', e=>{
+  const lb=e.target.closest('[data-lang]'); if(lb){ LANG=lb.dataset.lang; try{localStorage.setItem('lang',LANG);}catch(e){} render(); return; }
   const sc=e.target.closest('[data-scroll]'); if(sc){ const el=document.getElementById(sc.dataset.scroll); if(el) el.scrollIntoView({behavior:sc.classList.contains('wk-tocitem')?'auto':'smooth',block:'start'}); return; }
   const sb=e.target.closest('[data-say]'); if(sb){ say(sb.dataset.say); return; }
   const fv=e.target.closest('[data-fav]'); if(fv){ toggleFav(fv.dataset.fav); fv.textContent=isFav(fv.dataset.fav)?'★':'☆'; if((location.hash||'#/')==='#/favs') viewFavs(); return; }
@@ -357,19 +364,25 @@ function viewHome(){
   const kind = (MODULE==='vocab'||MODULE==='n2vocab')?'词汇':(MODULE==='kanji'?'汉字':'语法');
   const weeks = CUR().weeks;
   const intro = `《${book}》 · ${weeks.length} 周 × 7 天 · 点击进入每日${kind}`;
-  let html = `<div class="home-top"><div class="meta" style="margin-bottom:10px">${intro}</div>` +
+  const showLang = MODULE==='grammar';
+  const langToggle = showLang ? `<div class="lang-toggle">
+    <button data-lang="cn" class="${LANG==='cn'?'on':''}">中文</button>
+    <button data-lang="en" class="${LANG==='en'?'on':''}">English</button>
+  </div>` : '';
+  let html = `<div class="home-top"><div class="meta" style="margin-bottom:10px">${intro}</div>${langToggle}` +
     (weeks.length>3 ? `<div class="wk-toc">${weeks.map(w=>`<a class="wk-tocitem" data-scroll="wk-${w.n}">第${w.n}周</a>`).join('')}</div>` : '') +
     `</div>`;
   for(const w of weeks){
     const wt = w.title ? ` <span class="jp">${esc(w.title)}</span>` : '';
-    const wsub = w.title_cn ? `<div class="sub">${esc(w.title_cn)}</div>` : '';
+    const wsubText = LX(w.title_cn, w.title_en);
+    const wsub = wsubText ? `<div class="sub">${esc(wsubText)}</div>` : '';
     html += `<div class="card week-card" id="wk-${w.n}"><h2>第${w.n}週${wt}</h2>${wsub}<div class="day-list">` +
       w.days.map(d=>{
         const isExam = d.day===7;
         return `<div class="day-item" data-go="#/day/${w.n}-${d.day}">
           <div class="d">${d.day}日目${isExam?' · 实战':''}</div>
           <div class="t jp">${R(d,'title')}</div>
-          <div class="tc">${esc(d.title_cn||'')}</div></div>`;
+          <div class="tc">${esc(LX(d.title_cn, d.title_en))}</div></div>`;
       }).join('') + `</div></div>`;
   }
   app.innerHTML = html;
@@ -409,25 +422,27 @@ function pointHTML(p, wid, i){
   const connHtml = p.connection?fmt(p.connection):'';
   const pid = MODULE+'#'+wid+'#'+i, pw=wid.split('-')[0], pd=wid.split('-')[1];
   const psnap = {module:MODULE, hash:'#/day/'+wid+'/p'+i, w:pw, d:pd, jp:p.pattern, cn:p.usage_cn||''};
+  const puse = LX(p.usage_cn, p.usage_en);
   let h = `<div class="point" id="pt-${wid}-${i}">
     <h3 class="jp">${R(p,'pattern')}</h3>${star(pid,psnap)}${sayBtn(p.pattern)}
     ${p.reading?`<div class="reading jp">${esc(p.reading)}</div>`:''}
     ${connHtml?`<div><span class="conn jp">接続：${connHtml}</span>${connHtml.includes('<del>')?`<span class="conn-hint">（划线部分去掉）</span>`:''}</div>`:''}
     ${p.usage_jp?`<div class="usage jp">${R(p,'usage_jp')}</div>`:''}
-    ${p.usage_cn?`<div class="usage"><span class="cn">${esc(p.usage_cn)}</span></div>`:''}`;
-  for(const ex of (p.examples||[])) h += `<div class="ex"><div class="jp">${R(ex,'jp')}${sayBtn(ex.jp)}</div>${ex.eq?`<div class="eq jp">（${R(ex,'eq')}）</div>`:''}${ex.cn?`<div class="cn">${esc(ex.cn)}</div>`:''}</div>`;
+    ${puse?`<div class="usage"><span class="cn">${esc(puse)}</span></div>`:''}`;
+  for(const ex of (p.examples||[])){ const exTx=LX(ex.cn, ex.en); h += `<div class="ex"><div class="jp">${R(ex,'jp')}${sayBtn(ex.jp)}</div>${ex.eq?`<div class="eq jp">（${R(ex,'eq')}）</div>`:''}${exTx?`<div class="cn">${esc(exTx)}</div>`:''}</div>`; }
   for(const nt of (p.notes||[])) h += `<div class="${noteClass(nt.type)}"><b class="nt">${esc(noteLabel(nt.type))}</b><span class="jp">${R(nt,'text')}</span></div>`;
   return h + `</div>`;
 }
 function viewDayGrammar(day,w,d,scrollP){
   const wk=CUR().weeks.find(x=>x.n===w);
-  const wt = wk.title?` <span class="jp">${esc(wk.title)}</span>（${esc(wk.title_cn||'')}）`:` · ${MODULE==='n2grammar'?'N2 语法':'语法'}`;
+  const wt = wk.title?` <span class="jp">${esc(wk.title)}</span>（${esc(LX(wk.title_cn, wk.title_en))}）`:` · ${MODULE==='n2grammar'?'N2 语法':'语法'}`;
   let html = `<div class="crumb">第${w}週${wt}</div>`;
   if(d===7){ app.innerHTML = html + examGrammarHTML(day,w); afterRender(scrollP); return; }
-  html += `<h2 class="page jp">${R(day,'title')} <span class="meta">${esc(day.title_cn||'')}${day.title_en?` · ${esc(day.title_en)}`:''}</span></h2>`;
+  html += `<h2 class="page jp">${R(day,'title')} <span class="meta">${esc(LX(day.title_cn, day.title_en))}</span></h2>`;
   if(day.dialog){
     const lines = day.dialog.lines_r || (day.dialog.lines||[]).map(esc);
-    html += `<div class="dialog jp">${lines.join('<br>')} ${sayBtn((day.dialog.lines||[]).join('　'))}${day.dialog.cn?`<div class="cn">${esc(day.dialog.cn)}</div>`:''}</div>`;
+    const dTx = LX(day.dialog.cn, day.dialog.en);
+    html += `<div class="dialog jp">${lines.join('<br>')} ${sayBtn((day.dialog.lines||[]).join('　'))}${dTx?`<div class="cn">${esc(dTx)}</div>`:''}</div>`;
   }
   html += `<div class="card">` + (day.points||[]).map((p,i)=>pointHTML(p,`${w}-${d}`,i)).join('<hr style="border:none;border-top:1px solid var(--line);margin:16px 0">') + `</div>`;
   if(day.exercises){

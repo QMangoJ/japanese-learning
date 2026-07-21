@@ -1,6 +1,6 @@
 {
   "week": 1, "day": 5, "title": "言ったように", "title_cn": "正如所说的", "title_en": "As I said",
-  "dialog": {"lines": ["昨日も言ったように、明日テストをします。ちゃんと復習するように。", "難しくありませんように。"], "cn": "“正如昨天所说的，明天要考试。大家要好好复习。”“希望不要太难。”"},
+  "dialog": {"lines": ["昨日も言ったように、明日テストをします。ちゃんと復習するように。", "難しくありませんように。"], "cn": "“正如昨天所说的，明天要考试。大家要好好复习。”“希望不要太难。”", "en": "“As I said yesterday, I will give you a test tomorrow. Please review the section carefully.” “I hope it won't be too hard.”"},
   "points": [
     {
       "pattern": "ご存じのように",
@@ -8,10 +8,11 @@
       "connection": "Nの／V〔普〕＋ように",
       "usage_jp": "説明の前置きでよく使う。",
       "usage_cn": "经常用于说明的开场白。",
+      "usage_en": "Used when introducing some explanations.",
       "examples": [
-        {"jp": "皆様ご存じのように、試験の内容が変わります。", "eq": "=知っている内容と同じで", "cn": "正如大家所知道的，考试内容有变。"},
-        {"jp": "ここに書いてあるように、今度の木曜日、授業は午前中だけです。", "eq": "=書いてある内容と同じで", "cn": "正如这里所写的，这个星期四只是上午有课。"},
-        {"jp": "前にお話ししたように、来年から授業料が値上がりします。", "eq": "=前に話した内容と同じで", "cn": "正如先前所说的，从明年开始学费要涨了。"}
+        {"jp": "皆様ご存じのように、試験の内容が変わります。", "eq": "=知っている内容と同じで", "cn": "正如大家所知道的，考试内容有变。", "en": "As you are aware, the content of the exam will change."},
+        {"jp": "ここに書いてあるように、今度の木曜日、授業は午前中だけです。", "eq": "=書いてある内容と同じで", "cn": "正如这里所写的，这个星期四只是上午有课。", "en": "As is written here, there will be morning classes only next Thursday."},
+        {"jp": "前にお話ししたように、来年から授業料が値上がりします。", "eq": "=前に話した内容と同じで", "cn": "正如先前所说的，从明年开始学费要涨了。", "en": "As I informed you earlier, the tuition fees will go up next year."}
       ],
       "notes": [{"type": "れい", "text": "図のように／前にお話したように／田中さんが言ったように"}]
     },
@@ -21,9 +22,10 @@
       "connection": "Vる／Vない＋ように。",
       "usage_jp": "軽い命令を表す。",
       "usage_cn": "表示语气比较委婉的命令。",
+      "usage_en": "To indicate a request.",
       "examples": [
-        {"jp": "「明日はもっと早く来るように。」「わかりました。」", "eq": "=来なさい", "cn": "“明天要再早点来。”“明白了。”"},
-        {"jp": "ここで、たばこを吸わないように。", "eq": "=吸わないでください", "cn": "注意不要在这里吸烟。"}
+        {"jp": "「明日はもっと早く来るように。」「わかりました。」", "eq": "=来なさい", "cn": "“明天要再早点来。”“明白了。”", "en": "\"Please come much earlier tomorrow.\" \"OK. Will do.\""},
+        {"jp": "ここで、たばこを吸わないように。", "eq": "=吸わないでください", "cn": "注意不要在这里吸烟。", "en": "Please do not smoke here."}
       ],
       "notes": [{"type": "れい", "text": "するようにしましょう／するようにしなさい"}]
     },
@@ -33,10 +35,11 @@
       "connection": "Vます／Vません／Vれます＋ように。",
       "usage_jp": "願望を表す。",
       "usage_cn": "表示愿望。",
+      "usage_en": "To indicate a hope.",
       "examples": [
-        {"jp": "合格しますように。", "eq": "=合格することを望んでいます", "cn": "希望能合格。"},
-        {"jp": "母の病気が治りますように。", "eq": "=治ることを望んでいます", "cn": "希望母亲的病能治好。"},
-        {"jp": "インフルエンザにかかりませんように。", "eq": "=かからないことを望んでいます", "cn": "希望不要患流感。"}
+        {"jp": "合格しますように。", "eq": "=合格することを望んでいます", "cn": "希望能合格。", "en": "I hope I will pass the exam."},
+        {"jp": "母の病気が治りますように。", "eq": "=治ることを望んでいます", "cn": "希望母亲的病能治好。", "en": "I hope my mother will get better soon."},
+        {"jp": "インフルエンザにかかりませんように。", "eq": "=かからないことを望んでいます", "cn": "希望不要患流感。", "en": "I hope I won't get the flu."}
       ],
       "notes": [{"type": "れい", "text": "勝ちますように／勝てますように／負けませんように"}]
     }

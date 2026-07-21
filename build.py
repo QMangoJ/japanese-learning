@@ -193,15 +193,15 @@ def load_days(folder, weeks, annotate):
     return out
 
 GMETA = {
-    1: ("がんばらなくちゃ！", "必须努力！"), 2: ("がんばってごらん！", "你努力试试吧！"),
-    3: ("もっとがんばってほしい！", "希望你能更加努力！"), 4: ("がんばるしかない！", "只能努力！"),
-    5: ("もっとがんばればよかった！", "要是再努力些就好了"), 6: ("もっとがんばることにした", "决心更加努力"),
+    1: ("がんばらなくちゃ！", "必须努力！", "I have to stick at it!"), 2: ("がんばってごらん！", "你努力试试吧！", None),
+    3: ("もっとがんばってほしい！", "希望你能更加努力！", None), 4: ("がんばるしかない！", "只能努力！", None),
+    5: ("もっとがんばればよかった！", "要是再努力些就好了", None), 6: ("もっとがんばることにした", "决心更加努力", None),
 }
 
 def main():
     gweeks = load_days(GSRC, 6, annotate_g)
     for w in gweeks:
-        t, tc = GMETA[w["n"]]; w["title"], w["title_cn"] = t, tc
+        t, tc, te = GMETA[w["n"]]; w["title"], w["title_cn"], w["title_en"] = t, tc, te
 
     besatsu = {}
     for fn in ("besatsu_w1-w3.json", "besatsu_w4-w5.json", "besatsu_w6.json"):
