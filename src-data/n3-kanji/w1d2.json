@@ -1,0 +1,72 @@
+{
+  "week": 1, "day": 2, "theme": "でかける①", "theme_cn": "外出①", "theme_en": "Go Out ①",
+  "title": "横断歩道", "title_cn": "人行横道", "title_en": "Pedestrian Crossing",
+  "kanji": [
+    {"n":9,"char":"横","strokes":15,"readings":["オウ","よこ"],"words":[
+      {"jp":"横断","reading":"おうだん","en":"a crossing","cn":"横切"},
+      {"jp":"横","reading":"よこ","en":"side","cn":"横"},
+      {"jp":"横断歩道","reading":"おうだんほどう","en":"a pedestrian crossing","cn":"人行横道"}
+    ]},
+    {"n":10,"char":"押","strokes":8,"readings":["おーす","おーさえる"],"words":[
+      {"jp":"押す","reading":"おす","en":"push","cn":"按"},
+      {"jp":"押し入れ","reading":"おしいれ","en":"a closet","cn":"日本式的壁橱"},
+      {"jp":"押さえる","reading":"おさえる","en":"hold down","cn":"按压"}
+    ]},
+    {"n":11,"char":"式","strokes":6,"readings":["シキ"],"words":[
+      {"jp":"押しボタン式","reading":"おしボタンしき","en":"a push-button ...","cn":"摁键式"},
+      {"jp":"数式","reading":"すうしき","en":"a numerical formula","cn":"公式"},
+      {"jp":"入学式","reading":"にゅうがくしき","en":"a ceremony to begin the school term","cn":"入学典礼"}
+    ]},
+    {"n":12,"char":"信","strokes":9,"readings":["シン"],"words":[
+      {"jp":"送信","reading":"そうしん","en":"transmit","cn":"发送"},
+      {"jp":"自信","reading":"じしん","en":"confidence","cn":"自信"},
+      {"jp":"信じる","reading":"しんじる","en":"believe","cn":"相信"},
+      {"jp":"信用","reading":"しんよう","en":"trust","cn":"信用"}
+    ]},
+    {"n":13,"char":"号","strokes":5,"readings":["ゴウ"],"words":[
+      {"jp":"信号","reading":"しんごう","en":"a signal / a traffic light","cn":"交通信号"},
+      {"jp":"〜号車","reading":"ごうしゃ","en":"carriage number ...","cn":"〜号车厢"}
+    ]},
+    {"n":14,"char":"確","strokes":15,"readings":["カク","たしーか","たしーかめる"],"words":[
+      {"jp":"正確(な)","reading":"せいかく","en":"correct, accurate","cn":"正确的"},
+      {"jp":"確かめる","reading":"たしかめる","en":"confirm/verify","cn":"确认"},
+      {"jp":"確か(な)","reading":"たしか","en":"certain","cn":"确实"}
+    ]},
+    {"n":15,"char":"認","strokes":14,"readings":["ニン","みとーめる"],"words":[
+      {"jp":"確認","reading":"かくにん","en":"confirmation","cn":"确认"},
+      {"jp":"認める","reading":"みとめる","en":"admit/approve","cn":"认可"}
+    ]},
+    {"n":16,"char":"飛","strokes":9,"readings":["ヒ","とーぶ"],"words":[
+      {"jp":"飛行場","reading":"ひこうじょう","en":"an airport","cn":"机场"},
+      {"jp":"飛ぶ","reading":"とぶ","en":"fly","cn":"飞行"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.17",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"送信：（a. 送る　b. 信じる）"},
+        {"n":2,"q":"横断：（a. わたる　b. ことわる）"},
+        {"n":3,"q":"飛行：（a. とぶ　b. いく）"},
+        {"n":4,"q":"つぎの（a. 信号　b. 号車）を右にまがる。"},
+        {"n":5,"q":"（a. 飛び出し　b. 押し入れ）に物をしまう。"},
+        {"n":6,"q":"（a. 自信　b. 信用）を持ってスピーチをする。"},
+        {"n":7,"q":"（a. 横　b. 式）を向く。"},
+        {"n":8,"q":"安全を（a. 正確　b. 確認）する。"}
+      ]},
+      {"type":"select","instruction":"正しい読みに〇をつけなさい。","items":[
+        {"n":9,"q":"認める","opts":["みとめる","もとめる","まとめる","かためる"]},
+        {"n":10,"q":"確かめる","opts":["たしかめる","はちかめる","たちかめる","はしかめる"]},
+        {"n":11,"q":"左右","opts":["そう","そゆう","さう","さゆう"]},
+        {"n":12,"q":"横断","opts":["こうだん","おうだん","ぼうだん","ゆうだん"]}
+      ]},
+      {"type":"select","instruction":"正しい漢字に〇をつけなさい。","items":[
+        {"n":13,"q":"おす","opts":["押す","神す","伸す","理す"]},
+        {"n":14,"q":"しんじる","opts":["心じる","真じる","信じる","新じる"]},
+        {"n":15,"q":"とぶ","opts":["都ぶ","止ぶ","登ぶ","飛ぶ"]},
+        {"n":16,"q":"しき","opts":["係","式","号","向"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②a ③a ④a ⑤b ⑥a ⑦a ⑧b　Ⅱ：⑨1 ⑩1 ⑪4 ⑫2　Ⅲ：⑬1 ⑭3 ⑮4 ⑯2"
+  }
+}

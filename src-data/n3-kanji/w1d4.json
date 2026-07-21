@@ -1,0 +1,74 @@
+{
+  "week": 1, "day": 4, "theme": "でかける①", "theme_cn": "外出①", "theme_en": "Go Out ①",
+  "title": "駅のホーム", "title_cn": "车站的站台", "title_en": "A Platform",
+  "kanji": [
+    {"n":25,"char":"線","strokes":15,"readings":["セン"],"words":[
+      {"jp":"線","reading":"せん","en":"a line","cn":"线"},
+      {"jp":"〜番線","reading":"ばんせん","en":"line (platform) number ...","cn":"〜号线"}
+    ]},
+    {"n":26,"char":"面","strokes":9,"readings":["メン"],"words":[
+      {"jp":"全面","reading":"ぜんめん","en":"whole","cn":"全面"},
+      {"jp":"〇〇方面","reading":"ほうめん","en":"... area","cn":"〇〇方面"},
+      {"jp":"画面","reading":"がめん","en":"a screen","cn":"画面"}
+    ]},
+    {"n":27,"char":"普","strokes":12,"readings":["フ"],"words":[
+      {"jp":"普通(の)","reading":"ふつう","en":"ordinary","cn":"普通"}
+    ]},
+    {"n":28,"char":"各","strokes":6,"readings":["カク"],"words":[
+      {"jp":"各駅","reading":"かくえき","en":"every station","cn":"各车站"},
+      {"jp":"各自","reading":"かくじ","en":"respective / each person","cn":"各自"},
+      {"jp":"各国","reading":"かっこく","en":"each country","cn":"各国"}
+    ]},
+    {"n":29,"char":"次","strokes":6,"readings":["ジ","つぎ"],"words":[
+      {"jp":"目次","reading":"もくじ","en":"contents","cn":"目录"},
+      {"jp":"次","reading":"つぎ","en":"next","cn":"下一个"},
+      {"jp":"次回","reading":"じかい","en":"the next time","cn":"下次"}
+    ]},
+    {"n":30,"char":"快","strokes":7,"readings":["カイ"],"words":[
+      {"jp":"快速","reading":"かいそく","en":"ordinary","cn":"快车"}
+    ]},
+    {"n":31,"char":"速","strokes":10,"readings":["ソク","はやーい"],"words":[
+      {"jp":"高速道路","reading":"こうそくどうろ","en":"a highway","cn":"高速公路"},
+      {"jp":"速い","reading":"はやい","en":"fast","cn":"快"},
+      {"jp":"速度","reading":"そくど","en":"speed","cn":"速度"}
+    ]},
+    {"n":32,"char":"過","strokes":12,"readings":["カ","すーぎる"],"words":[
+      {"jp":"通過","reading":"つうか","en":"passage / transit","cn":"通过"},
+      {"jp":"過ぎる","reading":"すぎる","en":"pass","cn":"经过"},
+      {"jp":"過去","reading":"かこ","en":"past","cn":"过去"}
+    ]},
+    {"n":33,"char":"鉄","strokes":13,"readings":["テツ"],"words":[
+      {"jp":"地下鉄","reading":"ちかてつ","en":"a subway","cn":"地铁"},
+      {"jp":"鉄","reading":"てつ","en":"steel","cn":"铁"},
+      {"jp":"鉄道","reading":"てつどう","en":"a railway","cn":"铁道"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.21",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"普通電車：（a. 各駅に止まる　b. 平日に運転する）電車"},
+        {"n":2,"q":"電車が通過する：その駅に（a. 止まる　b. 止まらない）こと"},
+        {"n":3,"q":"先発：先に（a. 出る　b. 着く）こと"},
+        {"n":4,"q":"本の（a. 次回　b. 目次）を見る。"},
+        {"n":5,"q":"ノートパソコンの（a. 全面　b. 画面）は大きくない。"},
+        {"n":6,"q":"世界（a. 各国　b. 各自）から人が集まる。"},
+        {"n":7,"q":"（a. 快速　b. 高速）道路の料金をはらう。"},
+        {"n":8,"q":"彼は足が（a. 早い　b. 速い）。"}
+      ]},
+      {"type":"select","instruction":"＿＿の正しい読みに〇をつけなさい。","items":[
+        {"n":9,"q":"地下鉄に乗りかえましょう。","opts":["ちがてつ","ちかてつ"]},
+        {"n":10,"q":"その駅はもう過ぎましたよ。","opts":["すぎました","つぎました"]},
+        {"n":11,"q":"過去のことは考えない。","opts":["かこ","かきょ"]},
+        {"n":12,"q":"上り方面、電車がまいります。","opts":["かためん","ほうめん"]}
+      ]},
+      {"type":"select","instruction":"＿＿の正しい漢字に〇をつけなさい。","items":[
+        {"n":13,"q":"かいそくはこの駅には止まりません。","opts":["快速","特急"]},
+        {"n":14,"q":"この駅ではタバコはぜんめん禁止です。","opts":["前面","全面"]},
+        {"n":15,"q":"つぎは東京、東京です。","opts":["次","先"]},
+        {"n":16,"q":"ふつうのきっぷと特急券を買う。","opts":["不通","普通"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②b ③a ④b ⑤b ⑥a ⑦b ⑧b　Ⅱ：⑨2 ⑩1 ⑪1 ⑫2　Ⅲ：⑬1 ⑭2 ⑮1 ⑯2"
+  }
+}

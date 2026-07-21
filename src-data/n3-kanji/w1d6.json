@@ -1,0 +1,77 @@
+{
+  "week": 1, "day": 6, "theme": "でかける①", "theme_cn": "外出①", "theme_en": "Go Out ①",
+  "title": "バス", "title_cn": "公交车", "title_en": "Bus",
+  "kanji": [
+    {"n":42,"char":"停","strokes":11,"readings":["テイ"],"words":[
+      {"jp":"停車","reading":"ていしゃ","en":"stop a vehicle","cn":"停车"},
+      {"jp":"バス停","reading":"バスてい","en":"a bus stop","cn":"公交车站"}
+    ]},
+    {"n":43,"char":"整","strokes":16,"readings":["セイ"],"words":[
+      {"jp":"整理","reading":"せいり","en":"tidy","cn":"整理"},
+      {"jp":"整理券","reading":"せいりけん","en":"numbered ticket (issued at cinemas, etc. to indicate the order in which people may enter)","cn":"号码单"}
+    ]},
+    {"n":44,"char":"券","strokes":8,"readings":["ケン"],"words":[
+      {"jp":"駐車券","reading":"ちゅうしゃけん","en":"a parking ticket","cn":"停车券"},
+      {"jp":"回数券","reading":"かいすうけん","en":"(book of) commuter ticket(s)","cn":"联票"},
+      {"jp":"乗車券","reading":"じょうしゃけん","en":"a (boarding) ticket","cn":"车票"}
+    ]},
+    {"n":45,"char":"現","strokes":11,"readings":["ゲン","あらわーれる"],"words":[
+      {"jp":"現金","reading":"げんきん","en":"cash","cn":"现金"},
+      {"jp":"現れる","reading":"あらわれる","en":"appear","cn":"出现"},
+      {"jp":"表現","reading":"ひょうげん","en":"expression","cn":"表达"}
+    ]},
+    {"n":46,"char":"両","strokes":6,"readings":["リョウ"],"words":[
+      {"jp":"両親","reading":"りょうしん","en":"parents","cn":"双亲、父母"},
+      {"jp":"〜両","reading":"りょう","en":"... cars on a train","cn":"〜辆"}
+    ]},
+    {"n":47,"char":"替","strokes":12,"readings":["かーえる"],"words":[
+      {"jp":"取り替える","reading":"とりかえる","en":"exchange","cn":"替换"},
+      {"jp":"着替える","reading":"きがえる","en":"change your clothes","cn":"换衣服"},
+      {"jp":"両替","reading":"りょうがえ","en":"exchange","cn":"兑换"}
+    ]},
+    {"n":48,"char":"優","strokes":17,"readings":["ユウ","やさーしい"],"words":[
+      {"jp":"優先席","reading":"ゆうせんせき","en":"a priority seat","cn":"优先座位（老弱病残孕专座）"},
+      {"jp":"優しい","reading":"やさしい","en":"kind","cn":"温柔"},
+      {"jp":"女優","reading":"じょゆう","en":"an actress","cn":"女演员"}
+    ]},
+    {"n":49,"char":"座","strokes":10,"readings":["ザ","すわーる"],"words":[
+      {"jp":"座席","reading":"ざせき","en":"a seat","cn":"座位"},
+      {"jp":"座る","reading":"すわる","en":"sit","cn":"坐"},
+      {"jp":"正座","reading":"せいざ","en":"sit on the floor Japanese style","cn":"端坐"}
+    ]},
+    {"n":50,"char":"降","strokes":10,"readings":["コウ","おーりる","ふーる"],"words":[
+      {"jp":"降車口","reading":"こうしゃぐち","en":"exit (for getting off)","cn":"下车门"},
+      {"jp":"降りる","reading":"おりる","en":"get off","cn":"下来（车等）"},
+      {"jp":"以降","reading":"いこう","en":"after ...","cn":"以后"},
+      {"jp":"降る","reading":"ふる","en":"fall","cn":"下、降（雪雨等）"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.26",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"お年寄りや体の不自由な人のための席：（a. 優先席　b. 指定席）"},
+        {"n":2,"q":"バスが止まるところ：（a. 降車口　b. バス停）"},
+        {"n":3,"q":"円をドルに（a. 両側　b. 両替）する。"},
+        {"n":4,"q":"たたみの部屋で（a. 正座　b. 座席）する。"},
+        {"n":5,"q":"カードでも（a. 現金　b. 料金）でもいいです。"},
+        {"n":6,"q":"パジャマに（a. 着替えて　b. 取り替えて）寝る。"},
+        {"n":7,"q":"（a. 回数券　b. 整理券）をもらって順番を待つ。"},
+        {"n":8,"q":"バスを（a. 降りる　b. 降る）。"}
+      ]},
+      {"type":"select","instruction":"＿＿の読みに〇をつけなさい。","items":[
+        {"n":9,"q":"田中さんが現れた。","opts":["あらわれた","あわられた"]},
+        {"n":10,"q":"席に座る。","opts":["さわる","すわる"]},
+        {"n":11,"q":"きれいな女優さん。","opts":["じょゆう","じょうゆう"]},
+        {"n":12,"q":"両親に会う。","opts":["りょうしん","りゅうしん"]}
+      ]},
+      {"type":"select","instruction":"＿＿の正しい漢字に〇をつけなさい。","items":[
+        {"n":13,"q":"各駅ていしゃ。","opts":["駐車","停車"]},
+        {"n":14,"q":"3時いこうに来てください。","opts":["以後","以降"]},
+        {"n":15,"q":"じょうしゃけんを買う。","opts":["乗車券","駐車券"]},
+        {"n":16,"q":"あの人はやさしい。","opts":["楽しい","優しい"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②b ③b ④a ⑤a ⑥a ⑦b ⑧a　Ⅱ：⑨1 ⑩2 ⑪1 ⑫1　Ⅲ：⑬2 ⑭2 ⑮1 ⑯2"
+  }
+}

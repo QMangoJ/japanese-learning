@@ -13,6 +13,7 @@ SRC = os.path.join(HERE, "src-data")
 GSRC = os.path.join(SRC, "n3-grammar")
 VSRC = os.path.join(SRC, "n3-vocab")
 N2SRC = os.path.join(SRC, "n2-grammar")
+KSRC = os.path.join(SRC, "n3-kanji")
 TEMPLATE = os.path.join(HERE, "template.html")
 OUT_DIR = os.path.join(HERE, "public")
 OUT = os.path.join(OUT_DIR, "index.html")
@@ -103,6 +104,45 @@ def annotate_g(day):
                 qz["answers_r"] = ruby(qz["answers"])
     return day
 
+def ruby_word(jp, reading):
+    """Wrap a compound word using its EXPLICIT reading (transcribed from the book),
+    trimming shared okurigana prefix/suffix the same way ruby() does — never guessed
+    via kakasi, since we already have the verified reading."""
+    if not reading or not KANJI.search(jp):
+        return esc(jp)
+    o, h, suf, pre = jp, reading, "", ""
+    while o and h and o[-1] == h[-1]:
+        suf = o[-1] + suf; o, h = o[:-1], h[:-1]
+    while o and h and o[0] == h[0]:
+        pre += o[0]; o, h = o[1:], h[1:]
+    if not o or not h or not KANJI.search(o):
+        return esc(jp)
+    return esc(pre) + f"<ruby>{esc(o)}<rt>{esc(h)}</rt></ruby>" + esc(suf)
+
+def annotate_k(day):
+    day["title_r"] = ruby(day["title"])
+    for k in day.get("kanji") or []:
+        for w in k.get("words", []):
+            w["jp_r"] = ruby_word(w["jp"], w.get("reading"))
+    exs = day.get("exercises")
+    if exs:
+        for sec in exs.get("sections", []):
+            sec["instruction_r"] = ruby(sec["instruction"])
+            for it in sec.get("items", []):
+                it["q_r"] = ruby(it["q"])
+                if it.get("opts"):
+                    it["opts_r"] = rlist(it["opts"])
+    for mk in ("mondai1", "mondai2", "mondai3"):
+        m = day.get(mk)
+        if not m:
+            continue
+        m["instruction_r"] = ruby(m["instruction"])
+        for it in m["items"]:
+            it["q_r"] = ruby_ul(it["q"], it.get("ul"))
+            if it.get("opts"):
+                it["opts_r"] = rlist(it["opts"])
+    return day
+
 def annotate_v(day):
     day["title_r"] = ruby(day["title"])
     if day.get("dialog"):
@@ -175,9 +215,14 @@ def main():
 
     vweeks = load_days(VSRC, 6, annotate_v)
     n2weeks = load_days(N2SRC, 8, annotate_g)
+    kweeks = load_days(KSRC, 1, annotate_k)  # N3汉字: only week 1 extracted so far, bump as more weeks are added
+    for w in kweeks:
+        d1 = w["days"][0]
+        w["title"], w["title_cn"] = d1.get("theme", ""), d1.get("theme_cn", "")
 
     data = {
         "grammar": {"weeks": gweeks, "besatsu": besatsu, "reference": reference, "contrast": contrast},
+        "kanji": {"weeks": kweeks},
         "vocab": {"weeks": vweeks},
         "n2grammar": {"weeks": n2weeks},
     }

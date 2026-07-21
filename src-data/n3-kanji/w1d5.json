@@ -1,0 +1,74 @@
+{
+  "week": 1, "day": 5, "theme": "でかける①", "theme_cn": "外出①", "theme_en": "Go Out ①",
+  "title": "特急電車", "title_cn": "特快电车", "title_en": "Express Train",
+  "kanji": [
+    {"n":34,"char":"指","strokes":9,"readings":["シ","ゆび"],"words":[
+      {"jp":"指定","reading":"してい","en":"specify, designate","cn":"指定"},
+      {"jp":"指","reading":"ゆび","en":"a finger","cn":"手指"},
+      {"jp":"指定席","reading":"していせき","en":"a reserved seat","cn":"指定席"},
+      {"jp":"指輪","reading":"ゆびわ","en":"a ring","cn":"戒指"}
+    ]},
+    {"n":35,"char":"定","strokes":8,"readings":["テイ"],"words":[
+      {"jp":"定休日","reading":"ていきゅうび","en":"a set/regular holiday","cn":"固定休息日"},
+      {"jp":"安定","reading":"あんてい","en":"stable","cn":"安定"},
+      {"jp":"不安定","reading":"ふあんてい","en":"unstable","cn":"不安定"}
+    ]},
+    {"n":36,"char":"席","strokes":10,"readings":["セキ"],"words":[
+      {"jp":"席","reading":"せき","en":"a seat","cn":"座位"},
+      {"jp":"出席","reading":"しゅっせき","en":"attend","cn":"出席"},
+      {"jp":"欠席","reading":"けっせき","en":"absence","cn":"缺席"}
+    ]},
+    {"n":37,"char":"由","strokes":5,"readings":["ユウ"],"words":[
+      {"jp":"自由(な)","reading":"じゆう","en":"free","cn":"自由"},
+      {"jp":"理由","reading":"りゆう","en":"reason","cn":"理由"},
+      {"jp":"自由席","reading":"じゆうせき","en":"a non-reserved seat","cn":"自由席"}
+    ]},
+    {"n":38,"char":"番","strokes":12,"readings":["バン"],"words":[
+      {"jp":"番号","reading":"ばんごう","en":"a number","cn":"号码"},
+      {"jp":"〜番線","reading":"ばんせん","en":"line (platform) number ...","cn":"〜号线"},
+      {"jp":"〜番","reading":"ばん","en":"number ...","cn":"〜号"}
+    ]},
+    {"n":39,"char":"窓","strokes":11,"readings":["まど"],"words":[
+      {"jp":"窓","reading":"まど","en":"a window","cn":"窗户"},
+      {"jp":"窓口","reading":"まどぐち","en":"a teller's window","cn":"窗口"}
+    ]},
+    {"n":40,"char":"側","strokes":11,"readings":["かわ"],"words":[
+      {"jp":"両側","reading":"りょうがわ","en":"both sides","cn":"两侧"},
+      {"jp":"窓側","reading":"まどがわ","en":"a window seat","cn":"靠窗一侧"},
+      {"jp":"右側","reading":"みぎがわ","en":"the right side","cn":"右侧"}
+    ]},
+    {"n":41,"char":"路","strokes":13,"readings":["ロ"],"words":[
+      {"jp":"通路","reading":"つうろ","en":"an aisle","cn":"走道"},
+      {"jp":"線路","reading":"せんろ","en":"a railway","cn":"轨道"},
+      {"jp":"道路","reading":"どうろ","en":"a road","cn":"道路"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.23",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"外が見えるように（a. 窓側　b. 通路側）に座る。"},
+        {"n":2,"q":"この電車は全席（a. 安定　b. 指定）です。"},
+        {"n":3,"q":"下り電車は（a. 2番線　b. 2号車）です。"},
+        {"n":4,"q":"この店は年中（a. 無休　b. 定休）です。"},
+        {"n":5,"q":"欠席の（a. 自由　b. 理由）を書く。"},
+        {"n":6,"q":"（a. 席　b. 窓）を開ける。"},
+        {"n":7,"q":"電話（a. 番号　b. 信号）を教える。"},
+        {"n":8,"q":"高速（a. 道路　b. 通路）を車で走る。"}
+      ]},
+      {"type":"select","instruction":"＿＿の正しい読みに〇をつけなさい。","items":[
+        {"n":9,"q":"パーティーに出席する。","opts":["しゅっせき","しゅせき"]},
+        {"n":10,"q":"細くて長い指。","opts":["ゆみ","ゆび"]},
+        {"n":11,"q":"自由席のきっぷを買う。","opts":["じゅうゆせき","じゆうせき"]},
+        {"n":12,"q":"道の両側に店がならんでいる。","opts":["りょうがわ","りょうかわ"]},
+        {"n":13,"q":"ここは指定席です。","opts":["ちていせき","していせき"]},
+        {"n":14,"q":"田中さんは欠席です。","opts":["けっせき","くうせき"]}
+      ]},
+      {"type":"select","instruction":"＿＿の正しい漢字に〇をつけなさい。","items":[
+        {"n":15,"q":"今日の天気はふあんていだ。","opts":["非安定","不安定"]},
+        {"n":16,"q":"つうろに物をおかないでください。","opts":["通路","線路"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②b ③a ④a ⑤b ⑥b ⑦a ⑧a　Ⅱ：⑨1 ⑩2 ⑪2 ⑫1 ⑬2 ⑭1　Ⅲ：⑮2 ⑯1"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "week": 1, "day": 1, "theme": "でかける①", "theme_cn": "外出①", "theme_en": "Go Out ①",
+  "title": "駐車場", "title_cn": "停车场", "title_en": "Parking Lot",
+  "kanji": [
+    {"n":1,"char":"駐","strokes":15,"readings":["チュウ"],"words":[
+      {"jp":"駐車","reading":"ちゅうしゃ","en":"park","cn":"停车"},
+      {"jp":"駐車場","reading":"ちゅうしゃじょう","en":"a parking lot","cn":"停车场"}
+    ]},
+    {"n":2,"char":"無","strokes":12,"readings":["ム","ない"],"words":[
+      {"jp":"無休","reading":"むきゅう","en":"work without a holiday","cn":"不休息"},
+      {"jp":"無理(な)","reading":"むり","en":"unreasonable","cn":"勉强的"},
+      {"jp":"無料","reading":"むりょう","en":"free of charge","cn":"免费"},
+      {"jp":"無い","reading":"ない","en":"does not exist, do not have, gone","cn":"没有"}
+    ]},
+    {"n":3,"char":"満","strokes":12,"readings":["マン"],"words":[
+      {"jp":"満車","reading":"まんしゃ","en":"full (of cars)","cn":"车位已满"},
+      {"jp":"不満(な)","reading":"ふまん","en":"dissatisfied","cn":"不满"},
+      {"jp":"満員","reading":"まんいん","en":"full (of people)","cn":"坐满了人"}
+    ]},
+    {"n":4,"char":"向","strokes":6,"readings":["コウ","むーこう","むーかう","むーき"],"words":[
+      {"jp":"方向","reading":"ほうこう","en":"direction","cn":"方向"},
+      {"jp":"向かう","reading":"むかう","en":"go forward","cn":"朝着、前往"},
+      {"jp":"向こう","reading":"むこう","en":"over there/beyond","cn":"对面、另一侧"},
+      {"jp":"〇〇向き","reading":"むき","en":"be suitable for 〇〇","cn":"朝向〇〇、适合〇〇"}
+    ]},
+    {"n":5,"char":"禁","strokes":13,"readings":["キン"],"words":[
+      {"jp":"禁止","reading":"きんし","en":"prohibition","cn":"禁止"}
+    ]},
+    {"n":6,"char":"関","strokes":14,"readings":["カン"],"words":[
+      {"jp":"関心","reading":"かんしん","en":"interest","cn":"关心"},
+      {"jp":"関する","reading":"かんする","en":"related","cn":"关于……的"}
+    ]},
+    {"n":7,"char":"係","strokes":9,"readings":["ケイ","かかり"],"words":[
+      {"jp":"関係","reading":"かんけい","en":"relation/connection","cn":"关系"},
+      {"jp":"係","reading":"かかり","en":"person in charge","cn":"负责人"}
+    ]},
+    {"n":8,"char":"断","strokes":11,"readings":["ダン","ことわーる"],"words":[
+      {"jp":"無断","reading":"むだん","en":"without permission","cn":"擅自"},
+      {"jp":"断る","reading":"ことわる","en":"refuse","cn":"拒绝"},
+      {"jp":"断水","reading":"だんすい","en":"suspension of the water supply","cn":"停水"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.15",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"満車：車を止める所が（a. いっぱいだ　b. あいている）"},
+        {"n":2,"q":"禁止：何かを（a. してもいい　b. してはいけない）"},
+        {"n":3,"q":"無料：代金が（a. いる　b. いらない）"},
+        {"n":4,"q":"断水：（a. 水道が使えなくなる　b. 水を飲んではいけない）"},
+        {"n":5,"q":"無断：（a. 許可がいらない　b. 許可をもらわない）"},
+        {"n":6,"q":"不満：（a. 満足していない　b. いっぱいではない）"},
+        {"n":7,"q":"日本文化に（a. 関心がある　b. 方向がある）。"},
+        {"n":8,"q":"あまり（a. 不理　b. 無理）をしないでください。"}
+      ]},
+      {"type":"select","instruction":"正しい読みに〇をつけなさい。","items":[
+        {"n":9,"q":"空車","opts":["からしゃ","こうしゃ","あきしゃ","くうしゃ"]},
+        {"n":10,"q":"お断り","opts":["おこまわり","おとこわり","おことわり","おたちわり"]},
+        {"n":11,"q":"駐車","opts":["じゅうしゃ","ちゅうしゃ","じゅうちゃ","ちゅうちゃ"]},
+        {"n":12,"q":"係の人","opts":["けいりのひと","かかりのひと","けいのひと","かけりのひと"]}
+      ]},
+      {"type":"select","instruction":"正しい漢字に〇をつけなさい。","items":[
+        {"n":13,"q":"むこう","opts":["向こう","何こう","同こう","伺こう"]},
+        {"n":14,"q":"むきゅう","opts":["未休","不休","無休","末休"]},
+        {"n":15,"q":"かんけい","opts":["門係","間係","問係","関係"]},
+        {"n":16,"q":"ない","opts":["禁い","不い","外い","無い"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②b ③b ④a ⑤b ⑥a ⑦a ⑧b　Ⅱ：⑨4 ⑩3 ⑪2 ⑫2　Ⅲ：⑬1 ⑭3 ⑮4 ⑯4"
+  }
+}

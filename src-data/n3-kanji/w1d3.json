@@ -1,0 +1,55 @@
+{
+  "week": 1, "day": 3, "theme": "でかける①", "theme_cn": "外出①", "theme_en": "Go Out ①",
+  "title": "サイン", "title_cn": "标志", "title_en": "Signs",
+  "kanji": [
+    {"n":17,"char":"非","strokes":8,"readings":["ヒ"],"words":[
+      {"jp":"非常(の)","reading":"ひじょう","en":"emergency","cn":"非常的"},
+      {"jp":"非常口","reading":"ひじょうぐち","en":"an emergency exit","cn":"安全出口"},
+      {"jp":"非常に","reading":"ひじょうに","en":"extremely","cn":"非常"}
+    ]},
+    {"n":18,"char":"常","strokes":11,"readings":["ジョウ"],"words":[
+      {"jp":"日常(の)","reading":"にちじょう","en":"usual, everyday","cn":"日常"},
+      {"jp":"正常(な)","reading":"せいじょう","en":"normal","cn":"正常的"}
+    ]},
+    {"n":19,"char":"階","strokes":12,"readings":["カイ"],"words":[
+      {"jp":"〜階","reading":"かい","en":"floor","cn":"〜楼"}
+    ]},
+    {"n":20,"char":"段","strokes":9,"readings":["ダン"],"words":[
+      {"jp":"階段","reading":"かいだん","en":"stairs","cn":"楼梯"}
+    ]},
+    {"n":21,"char":"箱","strokes":15,"readings":["はこ"],"words":[
+      {"jp":"箱","reading":"はこ","en":"a box","cn":"箱子"},
+      {"jp":"ごみ箱","reading":"ごみばこ","en":"a trash box","cn":"垃圾（邮件）箱"}
+    ]},
+    {"n":22,"char":"危","strokes":6,"readings":["キ","あぶーない"],"words":[
+      {"jp":"危険(な)","reading":"きけん","en":"danger","cn":"危险"},
+      {"jp":"危ない","reading":"あぶない","en":"dangerous","cn":"危险"}
+    ]},
+    {"n":23,"char":"険","strokes":11,"readings":["ケン"],"words":[
+      {"jp":"危険(な)","reading":"きけん","en":"danger","cn":"危险"}
+    ]},
+    {"n":24,"char":"捨","strokes":11,"readings":["すーてる"],"words":[
+      {"jp":"捨てる","reading":"すてる","en":"throw away","cn":"抛弃"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.19",
+    "sections": [
+      {"type":"select","instruction":"（　）に入れるのに最もよいものを一つえらびなさい。","items":[
+        {"n":1,"q":"午後は（　）に風が強くなるでしょう。","opts":["無断","左右","無理","非常"]},
+        {"n":2,"q":"日本語の（　）会話を習っています。","opts":["正常","非常","日常","無常"]},
+        {"n":3,"q":"（　）ですから、押さないでください。","opts":["危険","満車","信号","確認"]}
+      ]},
+      {"type":"select","instruction":"＿＿の正しい読みに〇をつけなさい。","items":[
+        {"n":4,"q":"ホテルにとまったら、非常口を確かめておきましょう。","opts":["いじょうぐち","ふじょうぐち","むじょうぐち","ひじょうぐち"]},
+        {"n":5,"q":"エレベーターを使わずに、階段を使うようにしています。","opts":["けいらん","けいだん","かいらん","かいだん"]},
+        {"n":6,"q":"その箱の中に何が入っていますか。","opts":["ばこ","ほこ","はこ","ぼこ"]}
+      ]},
+      {"type":"select","instruction":"＿＿の正しい漢字に〇をつけなさい。","items":[
+        {"n":7,"q":"あぶないですから、ここであそばないでください。","opts":["険ない","危ない","非ない","注ない"]},
+        {"n":8,"q":"ここにごみをすてないでください。","opts":["捨てないで","押てないで","飛てないで","認てないで"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①4 ②3 ③1　Ⅱ：④4 ⑤4 ⑥3　Ⅲ：⑦2 ⑧1"
+  }
+}
