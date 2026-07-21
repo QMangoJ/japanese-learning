@@ -1,0 +1,68 @@
+{
+  "week": 2, "day": 6, "theme": "でかける②", "theme_cn": "外出②", "theme_en": "Go Out ②",
+  "title": "困ったときは", "title_cn": "为难的时候", "title_en": "When You Need Help",
+  "kanji": [
+    {"n":99,"char":"困","strokes":7,"readings":["こまーる"],"words":[
+      {"jp":"困る","reading":"こまる","en":"be in trouble","cn":"困难、为难"}
+    ]},
+    {"n":100,"char":"消","strokes":10,"readings":["ショウ","きーえる","けーす"],"words":[
+      {"jp":"消防","reading":"しょうぼう","en":"fire fighting","cn":"消防"},
+      {"jp":"消す","reading":"けす","en":"extinguish","cn":"擦掉"},
+      {"jp":"消える","reading":"きえる","en":"be extinguished, disappear","cn":"消失"},
+      {"jp":"消しゴム","reading":"けしゴム","en":"an eraser","cn":"橡皮擦"}
+    ]},
+    {"n":101,"char":"防","strokes":7,"readings":["ボウ","ふせーぐ"],"words":[
+      {"jp":"予防","reading":"よぼう","en":"precaution, prevention","cn":"预防"},
+      {"jp":"防ぐ","reading":"ふせぐ","en":"prevent","cn":"防止"}
+    ]},
+    {"n":102,"char":"救","strokes":11,"readings":["キュウ","すくーう"],"words":[
+      {"jp":"救急車","reading":"きゅうきゅうしゃ","en":"an ambulance","cn":"救护车"},
+      {"jp":"救う","reading":"すくう","en":"save","cn":"救"}
+    ]},
+    {"n":103,"char":"警","strokes":19,"readings":["ケイ"],"words":[
+      {"jp":"警官","reading":"けいかん","en":"a police officer","cn":"警官"}
+    ]},
+    {"n":104,"char":"察","strokes":14,"readings":["サツ"],"words":[
+      {"jp":"警察","reading":"けいさつ","en":"police","cn":"警察"},
+      {"jp":"警察署","reading":"けいさつしょ","en":"a police station","cn":"警察局"}
+    ]},
+    {"n":105,"char":"故","strokes":9,"readings":["コ"],"words":[
+      {"jp":"事故","reading":"じこ","en":"an accident","cn":"事故"},
+      {"jp":"故障","reading":"こしょう","en":"break-down, failure","cn":"故障"},
+      {"jp":"故〇〇","reading":"こ","en":"the late Mr.","cn":"已故〇〇"}
+    ]},
+    {"n":106,"char":"伝","strokes":6,"readings":["デン","つたーえる"],"words":[
+      {"jp":"伝言","reading":"でんごん","en":"a message","cn":"留言"},
+      {"jp":"伝える","reading":"つたえる","en":"convey / communicate","cn":"传达"},
+      {"jp":"手伝う","reading":"てつだう","en":"help","cn":"帮助"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.42（第7日末尾）",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"故障：（a. こわれている　b. しまっている）"},
+        {"n":2,"q":"伝言：（a. メッセージ　b. マッサージ）"},
+        {"n":3,"q":"救急車：（a. 病人やけが人を運ぶ　b. パトロールする）車"},
+        {"n":4,"q":"消防車：（a. 病気を防ぐ　b. 火事を消す）車"},
+        {"n":5,"q":"故Aさん：（a. けがをした　b. なくなった）Aさん"},
+        {"n":6,"q":"消費：（a. 食品に使うお金　b. 使ってしまうこと）"},
+        {"n":7,"q":"みなさんに、よろしく（a. お伝え　b. お願い）ください。"},
+        {"n":8,"q":"将来（a. 警官　b. 警察）になりたい。"}
+      ]},
+      {"type":"select","instruction":"正しい読みに〇をつけなさい。","items":[
+        {"n":9,"q":"救う","opts":["すくう","つくう","きゅう","こう"]},
+        {"n":10,"q":"消える","opts":["もえる","けえる","きえる","こえる"]},
+        {"n":11,"q":"警察","opts":["けいさつ","けんさつ","かいさつ","けいさい"]},
+        {"n":12,"q":"防ぐ","opts":["かせぐ","ふせぐ","ふさぐ","いそぐ"]}
+      ]},
+      {"type":"select","instruction":"正しい漢字に〇をつけなさい。","items":[
+        {"n":13,"q":"こまる","opts":["回る","因る","囚る","困る"]},
+        {"n":14,"q":"じこ","opts":["事枚","事救","事改","事故"]},
+        {"n":15,"q":"てつだう","opts":["手助う","手伝う","手替う","手救う"]},
+        {"n":16,"q":"よぼう","opts":["矛防","呼防","予防","了防"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②a ③a ④b ⑤b ⑥b ⑦a ⑧a　Ⅱ：⑨1 ⑩3 ⑪1 ⑫2　Ⅲ：⑬4 ⑭4 ⑮2 ⑯3"
+  }
+}

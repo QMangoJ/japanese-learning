@@ -1,0 +1,69 @@
+{
+  "week": 2, "day": 3, "theme": "でかける②", "theme_cn": "外出②", "theme_en": "Go Out ②",
+  "title": "観光地図", "title_cn": "观光地图", "title_en": "Sightseeing Map",
+  "kanji": [
+    {"n":75,"char":"観","strokes":18,"readings":["カン"],"words":[
+      {"jp":"観光","reading":"かんこう","en":"sightseeing","cn":"观光"},
+      {"jp":"観客","reading":"かんきゃく","en":"spectator, audience","cn":"观众"}
+    ]},
+    {"n":76,"char":"園","strokes":13,"readings":["エン"],"words":[
+      {"jp":"動物園","reading":"どうぶつえん","en":"a zoo","cn":"动物园"}
+    ]},
+    {"n":77,"char":"港","strokes":12,"readings":["コウ","みなと"],"words":[
+      {"jp":"空港","reading":"くうこう","en":"an airport","cn":"机场"},
+      {"jp":"港","reading":"みなと","en":"a port","cn":"港口"},
+      {"jp":"〇〇港","reading":"こう","en":"〇〇 port","cn":"〇〇港"}
+    ]},
+    {"n":78,"char":"遊","strokes":12,"readings":["ユウ","あそーぶ"],"words":[
+      {"jp":"遊園地","reading":"ゆうえんち","en":"an amusement park","cn":"游乐场"},
+      {"jp":"遊ぶ","reading":"あそぶ","en":"play","cn":"玩"}
+    ]},
+    {"n":79,"char":"美","strokes":9,"readings":["ビ","うつくーし"],"words":[
+      {"jp":"美術館","reading":"びじゅつかん","en":"a museum","cn":"美术馆"},
+      {"jp":"美しい","reading":"うつくしい","en":"beautiful","cn":"漂亮"},
+      {"jp":"美人","reading":"びじん","en":"a beautiful woman","cn":"美人"}
+    ]},
+    {"n":80,"char":"術","strokes":11,"readings":["ジュツ"],"words":[
+      {"jp":"美術","reading":"びじゅつ","en":"(fine) art","cn":"美术"},
+      {"jp":"手術","reading":"しゅじゅつ","en":"surgery, operation","cn":"手术"},
+      {"jp":"技術","reading":"ぎじゅつ","en":"technique, technology","cn":"技术"}
+    ]},
+    {"n":81,"char":"神","strokes":9,"readings":["シン","ジン","かみ"],"words":[
+      {"jp":"神社","reading":"じんじゃ","en":"a shrine","cn":"神社"},
+      {"jp":"神様","reading":"かみさま","en":"a god","cn":"神"},
+      {"jp":"神経質(な)","reading":"しんけいしつ","en":"nervous","cn":"神经质的"}
+    ]},
+    {"n":82,"char":"寺","strokes":6,"readings":["ジ","てら"],"words":[
+      {"jp":"〇〇寺","reading":"じ","en":"〇〇 Temple","cn":"〇〇寺"},
+      {"jp":"お寺","reading":"てら","en":"a temple","cn":"寺庙"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.35（第4日末尾）",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"遊園地：（a. およぐところ　b. あそぶところ）"},
+        {"n":2,"q":"動物園：動物を（a. 買うところ　b. 見るところ）"},
+        {"n":3,"q":"港：（a. 船が着くところ　b. 飛行機が着くところ）"},
+        {"n":4,"q":"美術：（a. テクニック　b. アート）"},
+        {"n":5,"q":"神経質：小さいことを（a. 気にする　b. 気にしない）"},
+        {"n":6,"q":"美術館：（a. 本を借りるところ　b. 作品を見るところ）"},
+        {"n":7,"q":"日本へは（a. 観光で　b. 空港で）来ました。"},
+        {"n":8,"q":"（a. 観客　b. 全席）は立って手をたたいた。"}
+      ]},
+      {"type":"select","instruction":"正しい読みに〇をつけなさい。","items":[
+        {"n":9,"q":"お寺","opts":["おでら","おたな","おしろ","おてら"]},
+        {"n":10,"q":"港","opts":["めらど","みらと","みなと","みなど"]},
+        {"n":11,"q":"美しい","opts":["うくつしい","うつくしい","うすくしい","うくすしい"]},
+        {"n":12,"q":"神社","opts":["しんしゃ","じんじゃ","しんじゃ","かんしゃ"]}
+      ]},
+      {"type":"select","instruction":"正しい漢字に〇をつけなさい。","items":[
+        {"n":13,"q":"あそぶ","opts":["遊ぶ","飛ぶ"]},
+        {"n":14,"q":"かみさま","opts":["神様","客様"]},
+        {"n":15,"q":"びじん","opts":["無人","美人"]},
+        {"n":16,"q":"しゅじゅつ","opts":["技術","手術"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②b ③a ④b ⑤a ⑥b ⑦a ⑧a　Ⅱ：⑨4 ⑩3 ⑪2 ⑫2　Ⅲ：⑬1 ⑭1 ⑮2 ⑯2"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "week": 2, "day": 5, "theme": "でかける②", "theme_cn": "外出②", "theme_en": "Go Out ②",
+  "title": "病院", "title_cn": "医院", "title_en": "Hospital",
+  "kanji": [
+    {"n":91,"char":"受","strokes":8,"readings":["ジュ","うーける"],"words":[
+      {"jp":"受信","reading":"じゅしん","en":"receive","cn":"收信"},
+      {"jp":"受ける","reading":"うける","en":"receive","cn":"接受"},
+      {"jp":"受験","reading":"じゅけん","en":"an entrance examination","cn":"应试"}
+    ]},
+    {"n":92,"char":"付","strokes":5,"readings":["つーける","つーく"],"words":[
+      {"jp":"付ける","reading":"つける","en":"put on","cn":"附着"},
+      {"jp":"受付","reading":"うけつけ","en":"a reception","cn":"挂号处、问讯处"},
+      {"jp":"片付ける","reading":"かたづける","en":"tidy up","cn":"收拾"},
+      {"jp":"付く","reading":"つく","en":"stick to","cn":"沾上"}
+    ]},
+    {"n":93,"char":"科","strokes":9,"readings":["カ"],"words":[
+      {"jp":"科学","reading":"かがく","en":"science","cn":"科学"},
+      {"jp":"内科","reading":"ないか","en":"internal medicine","cn":"内科"},
+      {"jp":"外科","reading":"げか","en":"surgery department","cn":"外科"},
+      {"jp":"教科書","reading":"きょうかしょ","en":"a textbook","cn":"教科书"}
+    ]},
+    {"n":94,"char":"鼻","strokes":14,"readings":["ビ","はな"],"words":[
+      {"jp":"耳鼻科","reading":"じびか","en":"ears and nose department","cn":"耳鼻科"},
+      {"jp":"鼻","reading":"はな","en":"a nose","cn":"鼻子"}
+    ]},
+    {"n":95,"char":"婦","strokes":11,"readings":["フ"],"words":[
+      {"jp":"婦人","reading":"ふじん","en":"a woman","cn":"妇女"},
+      {"jp":"主婦","reading":"しゅふ","en":"a housewife","cn":"主妇"}
+    ]},
+    {"n":96,"char":"形","strokes":7,"readings":["ケイ","ギョウ","かたち"],"words":[
+      {"jp":"形式","reading":"けいしき","en":"form/type","cn":"形式"},
+      {"jp":"整形外科","reading":"せいけいげか","en":"orthopedics department","cn":"外科、骨科"},
+      {"jp":"人形","reading":"にんぎょう","en":"a doll / puppet","cn":"玩具娃娃"},
+      {"jp":"図形","reading":"ずけい","en":"a diagram","cn":"图形"},
+      {"jp":"形","reading":"かたち","en":"shape/form","cn":"形状"}
+    ]},
+    {"n":97,"char":"骨","strokes":10,"readings":["コツ","ほね"],"words":[
+      {"jp":"骨折","reading":"こっせつ","en":"a bone fracture","cn":"骨折"},
+      {"jp":"骨","reading":"ほね","en":"a bone","cn":"骨头、骨架"}
+    ]},
+    {"n":98,"char":"折","strokes":7,"readings":["セツ","おーる","おーれる"],"words":[
+      {"jp":"右折","reading":"うせつ","en":"a right turn","cn":"往右拐"},
+      {"jp":"左折","reading":"させつ","en":"a left turn","cn":"往左拐"},
+      {"jp":"折る","reading":"おる","en":"break / fold (something)","cn":"折断，弄弯"},
+      {"jp":"折れる","reading":"おれる","en":"break","cn":"折断，破裂"},
+      {"jp":"折り紙","reading":"おりがみ","en":"Japanese art of folding paper","cn":"折纸"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.39（第6日末尾）",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"受験：試験（a. に受かる　b. を受ける）こと"},
+        {"n":2,"q":"骨折：骨が（a. まがる　b. おれる）こと"},
+        {"n":3,"q":"婦人：（a. 女の人　b. おくさん）"},
+        {"n":4,"q":"教科書：（a. 字を調べる　b. 授業で使う）本"},
+        {"n":5,"q":"受信：メールなどを（a. おくる　b. もらう）こと"},
+        {"n":6,"q":"何か顔に（a. 付いています　b. 向いています）よ。"},
+        {"n":7,"q":"定規やコンパスで（a. 図形　b. 形式）をかく。"},
+        {"n":8,"q":"ちらかった部屋を（a. 受付ける　b. 片付ける）。"}
+      ]},
+      {"type":"select","instruction":"正しい読みに〇をつけなさい。","items":[
+        {"n":9,"q":"人形","opts":["にんげん","じんこう","じんけい","にんぎょう"]},
+        {"n":10,"q":"折り紙","opts":["ちりがみ","おりがみ","はりがみ","とりがみ"]},
+        {"n":11,"q":"外科","opts":["げか","がか","ほか","がいか"]},
+        {"n":12,"q":"骨","opts":["はね","こね","ほね","むね"]}
+      ]},
+      {"type":"select","instruction":"正しい漢字に〇をつけなさい。","items":[
+        {"n":13,"q":"かたち","opts":["線","形","面","点"]},
+        {"n":14,"q":"じびか","opts":["目鼻科","耳鼻科","耳目科","目耳科"]},
+        {"n":15,"q":"うせつ","opts":["右折","左折","石折","各折"]},
+        {"n":16,"q":"しゅふ","opts":["夫婦","王婦","玉婦","主婦"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②b ③a ④b ⑤b ⑥a ⑦a ⑧b　Ⅱ：⑨4 ⑩2 ⑪1 ⑫3　Ⅲ：⑬2 ⑭2 ⑮1 ⑯4"
+  }
+}

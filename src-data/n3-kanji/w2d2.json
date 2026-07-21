@@ -1,0 +1,69 @@
+{
+  "week": 2, "day": 2, "theme": "でかける②", "theme_cn": "外出②", "theme_en": "Go Out ②",
+  "title": "禁煙", "title_cn": "禁烟", "title_en": "No Smoking",
+  "kanji": [
+    {"n":67,"char":"煙","strokes":13,"readings":["エン","けむり"],"words":[
+      {"jp":"禁煙","reading":"きんえん","en":"no smoking","cn":"禁烟"},
+      {"jp":"煙","reading":"けむり","en":"smoke","cn":"烟"}
+    ]},
+    {"n":68,"char":"当","strokes":6,"readings":["トウ","あーたる"],"words":[
+      {"jp":"本当","reading":"ほんとう","en":"the truth","cn":"真的"},
+      {"jp":"当たる","reading":"あたる","en":"hit/win","cn":"猜中、适中"},
+      {"jp":"当〇〇","reading":"とう","en":"this 〇〇","cn":"本〇〇"},
+      {"jp":"当たり前","reading":"あたりまえ","en":"natural, not surprising","cn":"当然"}
+    ]},
+    {"n":69,"char":"全","strokes":6,"readings":["ゼン"],"words":[
+      {"jp":"全部","reading":"ぜんぶ","en":"all/whole","cn":"全部"},
+      {"jp":"全席","reading":"ぜんせき","en":"all seats","cn":"全席"},
+      {"jp":"安全(な)","reading":"あんぜん","en":"safe","cn":"安全（的）"}
+    ]},
+    {"n":70,"char":"客","strokes":9,"readings":["キャク"],"words":[
+      {"jp":"客","reading":"きゃく","en":"a customer","cn":"客人"},
+      {"jp":"お客様","reading":"きゃくさま","en":"a customer","cn":"客人"}
+    ]},
+    {"n":71,"char":"様","strokes":14,"readings":["ヨウ","さま"],"words":[
+      {"jp":"様子","reading":"ようす","en":"appearance/situation","cn":"样子"},
+      {"jp":"〇〇様","reading":"さま","en":"an honorific added to people's names, particularly in letters","cn":"接在人名、身份等后面表敬意"}
+    ]},
+    {"n":72,"char":"解","strokes":13,"readings":["カイ"],"words":[
+      {"jp":"理解","reading":"りかい","en":"understand","cn":"理解"},
+      {"jp":"解説","reading":"かいせつ","en":"an explanation","cn":"解说"},
+      {"jp":"解答","reading":"かいとう","en":"an answer","cn":"解答"},
+      {"jp":"分解","reading":"ぶんかい","en":"take apart","cn":"分解"}
+    ]},
+    {"n":73,"char":"協","strokes":8,"readings":["キョウ"],"words":[
+      {"jp":"協力","reading":"きょうりょく","en":"cooperation","cn":"合作"}
+    ]},
+    {"n":74,"char":"願","strokes":19,"readings":["ねがーう"],"words":[
+      {"jp":"願う","reading":"ねがう","en":"wish","cn":"希望"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.33（第3日末尾）",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"当店：（a. この店　b. その店）"},
+        {"n":2,"q":"全席禁煙：全部の席でたばこが（a. 吸える　b. 吸えない）"},
+        {"n":3,"q":"安全：（a. 危ない　b. 危なくない）"},
+        {"n":4,"q":"解答：（a. もんだい　b. こたえ）"},
+        {"n":5,"q":"買い物をして代金をはらうのは（a. 当たり前だ　b. 無料だ）。"},
+        {"n":6,"q":"時計を（a. 分解して　b. 停車して）また組み立てる。"},
+        {"n":7,"q":"本の（a. 理由　b. 解説）を読む。"},
+        {"n":8,"q":"たからくじ※が（a. 当たる　b. 認める）。※たからくじ lottery 彩票"}
+      ]},
+      {"type":"select","instruction":"正しい読みに〇をつけなさい。","items":[
+        {"n":9,"q":"様子","opts":["ようす","ようし","やうす","やうし"]},
+        {"n":10,"q":"協力","opts":["こうりゅく","こうりょく","きゅうりき","きょうりょく"]},
+        {"n":11,"q":"煙","opts":["けむり","きむり","くむり","こむり"]},
+        {"n":12,"q":"本当","opts":["ほんと","ほんど","ほんとう","ほんどう"]}
+      ]},
+      {"type":"select","instruction":"正しい漢字に〇をつけなさい。","items":[
+        {"n":13,"q":"おねがい","opts":["お顔い","お願い","お頭い","お預い"]},
+        {"n":14,"q":"おきゃくさま","opts":["お各様","お皆様","お客様","お名様"]},
+        {"n":15,"q":"りかい","opts":["野解","理解","利解","了解"]},
+        {"n":16,"q":"ぜんせき","opts":["全席","全度","金席","金度"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②b ③b ④b ⑤a ⑥a ⑦b ⑧a　Ⅱ：⑨1 ⑩4 ⑪1 ⑫3　Ⅲ：⑬2 ⑭3 ⑮2 ⑯1"
+  }
+}

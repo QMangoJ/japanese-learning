@@ -1,0 +1,74 @@
+{
+  "week": 3, "day": 5, "theme": "つかう", "theme_cn": "用", "theme_en": "Use",
+  "title": "コピー機・留守番電話", "title_cn": "复印、录音电话", "title_en": "A Copy Machine, An Answering Machine",
+  "kanji": [
+    {"n":148,"char":"留","strokes":10,"readings":["リュウ","ル","とーめる"],"words":[
+      {"jp":"留学","reading":"りゅうがく","en":"study abroad","cn":"留学"},
+      {"jp":"保留","reading":"ほりゅう","en":"reservation / suspension","cn":"保留"},
+      {"jp":"留守番","reading":"るすばん","en":"stay at home","cn":"看家"},
+      {"jp":"書留","reading":"かきとめ","en":"registration (registered mail)","cn":"挂号邮件"}
+    ]},
+    {"n":149,"char":"守","strokes":6,"readings":["シュ","ス","まもーる"],"words":[
+      {"jp":"守備","reading":"しゅび","en":"defence","cn":"守卫"},
+      {"jp":"守る","reading":"まもる","en":"protect","cn":"保卫"},
+      {"jp":"留守","reading":"るす","en":"absence","cn":"不在家"}
+    ]},
+    {"n":150,"char":"濃","strokes":16,"readings":["こーい"],"words":[
+      {"jp":"濃い","reading":"こい","en":"concentrate, dark (color)","cn":"浓"}
+    ]},
+    {"n":151,"char":"薄","strokes":16,"readings":["うすーい"],"words":[
+      {"jp":"薄い","reading":"うすい","en":"thin (material), light (color), weak (drink)","cn":"薄、浅、淡"}
+    ]},
+    {"n":152,"char":"部","strokes":11,"readings":["ブ"],"words":[
+      {"jp":"部分","reading":"ぶぶん","en":"part","cn":"部分"},
+      {"jp":"部長","reading":"ぶちょう","en":"department head / manager","cn":"部长"},
+      {"jp":"学部","reading":"がくぶ","en":"faculty","cn":"院系"},
+      {"jp":"部屋","reading":"へや","en":"a room","cn":"房间"}
+    ]},
+    {"n":153,"char":"数","strokes":13,"readings":["スウ","かず","かぞーえる"],"words":[
+      {"jp":"数字","reading":"すうじ","en":"number","cn":"数字"},
+      {"jp":"数","reading":"かず","en":"a number","cn":"数量"},
+      {"jp":"数学","reading":"すうがく","en":"mathematics","cn":"数学"},
+      {"jp":"数える","reading":"かぞえる","en":"count","cn":"数"}
+    ]},
+    {"n":154,"char":"件","strokes":6,"readings":["ケン"],"words":[
+      {"jp":"件名","reading":"けんめい","en":"subject","cn":"分类专案"},
+      {"jp":"用件","reading":"ようけん","en":"a business/matter","cn":"应办的事情"},
+      {"jp":"事件","reading":"じけん","en":"an incident","cn":"事件"}
+    ]},
+    {"n":155,"char":"再","strokes":6,"readings":["サイ","サ"],"words":[
+      {"jp":"再入国","reading":"さいにゅうこく","en":"re-enter a country","cn":"再入境"},
+      {"jp":"再生","reading":"さいせい","en":"regenerate, recycle","cn":"再生，播放录音"},
+      {"jp":"再ダイヤル","reading":"さいダイヤル","en":"redial","cn":"重拨"},
+      {"jp":"再来週","reading":"さらいしゅう","en":"the week after next","cn":"下下周"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.55（第6日末尾）",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"留学：（a. 卒業できない　b. 外国へ勉強に行く）こと"},
+        {"n":2,"q":"用件：（a. 伝えたい　b. 起こった）こと"},
+        {"n":3,"q":"件名：電子メールなどの（a. アドレス　b. タイトル）"},
+        {"n":4,"q":"保留：しばらく（a. 外国に住む　b. そのままにする）こと"},
+        {"n":5,"q":"あの選手は（a. 予防　b. 守備）がうまい。"},
+        {"n":6,"q":"重要な書類を（a. 書留　b. 快速）で送る。"},
+        {"n":7,"q":"両親が出かけて、私は（a. 留守　b. 留守番）をした。"},
+        {"n":8,"q":"約束や時間を（a. 限る　b. 守る）。"}
+      ]},
+      {"type":"select","instruction":"正しい読みに〇をつけなさい。","items":[
+        {"n":9,"q":"再来週","opts":["さんらいしゅう","さいらいしゅう","さっらいしゅう","さらいしゅう"]},
+        {"n":10,"q":"留守","opts":["るしゅ","りゅす","るす","りゅしゅ"]},
+        {"n":11,"q":"数える","opts":["かじょえる","かずえる","かぞえる","かじゅえる"]},
+        {"n":12,"q":"部屋","opts":["ぶや","へや","はや","ひや"]}
+      ]},
+      {"type":"select","instruction":"正しい漢字に〇をつけなさい。","items":[
+        {"n":13,"q":"じけん","opts":["試験","事故","実験","事件"]},
+        {"n":14,"q":"こい","opts":["若い","農い","苦い","濃い"]},
+        {"n":15,"q":"うすい","opts":["薄い","博い","速い","快い"]},
+        {"n":16,"q":"ぶぶん","opts":["倍分","部分","剖分","陪分"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②a ③b ④b ⑤b ⑥a ⑦b ⑧b　Ⅱ：⑨4 ⑩3 ⑪3 ⑫2　Ⅲ：⑬4 ⑭4 ⑮1 ⑯2"
+  }
+}

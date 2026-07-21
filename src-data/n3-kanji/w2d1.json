@@ -1,0 +1,67 @@
+{
+  "week": 2, "day": 1, "theme": "でかける②", "theme_cn": "外出②", "theme_en": "Go Out ②",
+  "title": "レストラン", "title_cn": "饭店", "title_en": "Restaurant",
+  "kanji": [
+    {"n":59,"char":"準","strokes":13,"readings":["ジュン"],"words":[
+      {"jp":"準備","reading":"じゅんび","en":"preparation","cn":"准备"}
+    ]},
+    {"n":60,"char":"備","strokes":12,"readings":["ビ","そなーえる"],"words":[
+      {"jp":"準備","reading":"じゅんび","en":"preparation","cn":"准备"},
+      {"jp":"備える","reading":"そなえる","en":"prepare","cn":"防备、设置、具备"}
+    ]},
+    {"n":61,"char":"営","strokes":12,"readings":["エイ"],"words":[
+      {"jp":"営業","reading":"えいぎょう","en":"business","cn":"营业"}
+    ]},
+    {"n":62,"char":"閉","strokes":11,"readings":["ヘイ","しーまる","しーめる"],"words":[
+      {"jp":"開閉","reading":"かいへい","en":"open and shut","cn":"开闭"},
+      {"jp":"閉まる","reading":"しまる","en":"shut/close","cn":"紧闭"},
+      {"jp":"閉める","reading":"しめる","en":"shut/close","cn":"关闭"}
+    ]},
+    {"n":63,"char":"案","strokes":10,"readings":["アン"],"words":[
+      {"jp":"案内","reading":"あんない","en":"information","cn":"指示、向导"},
+      {"jp":"案","reading":"あん","en":"a suggestion, proposal, plan","cn":"草案"}
+    ]},
+    {"n":64,"char":"内","strokes":4,"readings":["ナイ","うち"],"words":[
+      {"jp":"家内","reading":"かない","en":"wife","cn":"妻子"},
+      {"jp":"内側","reading":"うちがわ","en":"inside","cn":"内侧"},
+      {"jp":"以内","reading":"いない","en":"within ...","cn":"以内"},
+      {"jp":"国内","reading":"こくない","en":"domestic","cn":"国内"}
+    ]},
+    {"n":65,"char":"予","strokes":4,"readings":["ヨ"],"words":[
+      {"jp":"予定","reading":"よてい","en":"a plan/schedule","cn":"预定的事情"},
+      {"jp":"予習","reading":"よしゅう","en":"preparation (pre-study)","cn":"预习"}
+    ]},
+    {"n":66,"char":"約","strokes":9,"readings":["ヤク"],"words":[
+      {"jp":"予約","reading":"よやく","en":"an appointment/reservation","cn":"预约"},
+      {"jp":"約〜","reading":"やく","en":"approximately","cn":"大约〜"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.31（第2日末尾）",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"営業中：店は（a. あいている　b. しまっている）"},
+        {"n":2,"q":"準備中：店に（a. 入れる　b. 入れない）"},
+        {"n":3,"q":"定休日：店には決まった休みの日が（a. ある　b. ない）"},
+        {"n":4,"q":"営業案内：店についての（a. コンセプト　b. インフォメーション）"},
+        {"n":5,"q":"予約うけたまわります：予約（a. できる　b. できない）"},
+        {"n":6,"q":"ご予約確認メールを3日（a. 以外　b. 以内）にお送りします。"},
+        {"n":7,"q":"屋上駐車場は夜9時に（a. 備えます　b. 閉まります）ので、ご注意ください。"},
+        {"n":8,"q":"あの店は（a. 約　b. 各）50種類のワインを備えている。"}
+      ]},
+      {"type":"select","instruction":"正しい読みに〇をつけなさい。","items":[
+        {"n":9,"q":"営業","opts":["えいぎゅう","えいぎょう","えいごう","えいよう"]},
+        {"n":10,"q":"準備","opts":["じょうび","じょんび","じゅうび","じゅんび"]},
+        {"n":11,"q":"案内","opts":["あねい","あんねい","あない","あんない"]},
+        {"n":12,"q":"予約","opts":["よやく","ゆやく","よゆく","やゆく"]}
+      ]},
+      {"type":"select","instruction":"正しい漢字に〇をつけなさい。","items":[
+        {"n":13,"q":"よしゅう","opts":["子習","了習","予習","丁習"]},
+        {"n":14,"q":"かいへい","opts":["聞閉","閉開","開閉","開門"]},
+        {"n":15,"q":"うちがわ","opts":["家側","内側","中側","向側"]},
+        {"n":16,"q":"そなえる","opts":["定える","準える","営える","備える"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②b ③a ④b ⑤a ⑥b ⑦b ⑧a　Ⅱ：⑨2 ⑩4 ⑪4 ⑫1　Ⅲ：⑬3 ⑭3 ⑮2 ⑯4"
+  }
+}

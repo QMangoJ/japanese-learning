@@ -1,0 +1,73 @@
+{
+  "week": 3, "day": 1, "theme": "つかう", "theme_cn": "用", "theme_en": "Use",
+  "title": "要冷蔵", "title_cn": "需要冷藏", "title_en": "Keep Refrigerated",
+  "kanji": [
+    {"n":114,"char":"要","strokes":9,"readings":["ヨウ","いーる"],"words":[
+      {"jp":"必要(な)","reading":"ひつよう","en":"necessary","cn":"必要"},
+      {"jp":"要る","reading":"いる","en":"need","cn":"需要"},
+      {"jp":"重要(な)","reading":"じゅうよう","en":"important","cn":"重要（的）"}
+    ]},
+    {"n":115,"char":"冷","strokes":7,"readings":["レイ","つめーたい","ひーやす","ひーえる","さーめる","さーます"],"words":[
+      {"jp":"冷房","reading":"れいぼう","en":"air-conditioning","cn":"冷气"},
+      {"jp":"冷たい","reading":"つめたい","en":"cold","cn":"冷"},
+      {"jp":"冷やす","reading":"ひやす","en":"cool","cn":"弄凉"},
+      {"jp":"冷える","reading":"ひえる","en":"become cold","cn":"变冷"},
+      {"jp":"冷める","reading":"さめる","en":"cool down","cn":"变冷、变冷淡"},
+      {"jp":"冷ます","reading":"さます","en":"cool something","cn":"弄凉"}
+    ]},
+    {"n":116,"char":"蔵","strokes":15,"readings":["ゾウ"],"words":[
+      {"jp":"冷蔵庫","reading":"れいぞうこ","en":"a refrigerator","cn":"冰箱"}
+    ]},
+    {"n":117,"char":"凍","strokes":10,"readings":["トウ","こおーる"],"words":[
+      {"jp":"冷凍庫","reading":"れいとうこ","en":"a freezer","cn":"冷库"},
+      {"jp":"凍る","reading":"こおる","en":"freeze","cn":"冻住"}
+    ]},
+    {"n":118,"char":"庫","strokes":10,"readings":["コ"],"words":[
+      {"jp":"金庫","reading":"きんこ","en":"a safe","cn":"金库"},
+      {"jp":"車庫","reading":"しゃこ","en":"a garage","cn":"车库"}
+    ]},
+    {"n":119,"char":"召","strokes":5,"readings":["めーす"],"words":[
+      {"jp":"召し上がる","reading":"めしあがる","en":"eat (polite form)","cn":"吃、喝"}
+    ]},
+    {"n":120,"char":"保","strokes":9,"readings":["ホ"],"words":[
+      {"jp":"保存する","reading":"ほぞんする","en":"preserve","cn":"保存"}
+    ]},
+    {"n":121,"char":"存","strokes":6,"readings":["ゾン"],"words":[
+      {"jp":"ご存じです","reading":"ごぞんじです","en":"know (humble form)","cn":"知道（尊敬语）"},
+      {"jp":"存じません","reading":"ぞんじません","en":"I do not know","cn":"不知道"}
+    ]},
+    {"n":122,"char":"必","strokes":5,"readings":["ヒツ","かならーず"],"words":[
+      {"jp":"必要(な)","reading":"ひつよう","en":"necessary","cn":"必要"},
+      {"jp":"必ず","reading":"かならず","en":"always / certainly","cn":"一定"},
+      {"jp":"必死(に)","reading":"ひっし","en":"desperate(ly)","cn":"拼命地"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.47（第2日末尾）",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"要冷蔵：冷蔵する必要が（a. ある　b. ない）"},
+        {"n":2,"q":"お召し上がりください：（a. 食べてください　b. 入ってください）"},
+        {"n":3,"q":"ご存じですか：（a. 持っていますか　b. 知っていますか）"},
+        {"n":4,"q":"冷凍食品：（a. ひえた　b. こおった）食品"},
+        {"n":5,"q":"車庫：車を（a. しまうところ　b. 点検するところ）"},
+        {"n":6,"q":"「必ず買ってきて」と言われたら（a. 一番最初に　b. 忘れずに）買ってこなければならない。"},
+        {"n":7,"q":"熱いですから、少し（a. 冷めて　b. 冷まして）お飲みください。"},
+        {"n":8,"q":"（a. 必死に　b. 重要に）がんばったら合格した。"}
+      ]},
+      {"type":"select","instruction":"正しい読みに〇をつけなさい。","items":[
+        {"n":9,"q":"保存","opts":["ほじょん","ほぞん","ほうぞん","ほうじょん"]},
+        {"n":10,"q":"冷える","opts":["ふえる","さえる","ひえる","れえる"]},
+        {"n":11,"q":"必ず","opts":["ならかず","からなず","なからず","かならず"]},
+        {"n":12,"q":"凍る","opts":["とうる","こうる","こおる","こごる"]}
+      ]},
+      {"type":"select","instruction":"正しい漢字に〇をつけなさい。","items":[
+        {"n":13,"q":"つめたい","opts":["凍たい","召たい","冷たい","蔵たい"]},
+        {"n":14,"q":"いらない","opts":["不らない","知らない","要らない","重らない"]},
+        {"n":15,"q":"きんこ","opts":["銀行","銀庫","金行","金庫"]},
+        {"n":16,"q":"ぞんじません","opts":["存じません","在じません","信じません","蔵じません"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②a ③b ④b ⑤a ⑥b ⑦b ⑧a　Ⅱ：⑨2 ⑩3 ⑪4 ⑫3　Ⅲ：⑬3 ⑭3 ⑮4 ⑯1"
+  }
+}

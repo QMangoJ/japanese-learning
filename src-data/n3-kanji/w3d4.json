@@ -1,0 +1,76 @@
+{
+  "week": 3, "day": 4, "theme": "つかう", "theme_cn": "用", "theme_en": "Use",
+  "title": "レシピ", "title_cn": "菜谱", "title_en": "Recipes",
+  "kanji": [
+    {"n":139,"char":"材","strokes":7,"readings":["ザイ"],"words":[
+      {"jp":"材料","reading":"ざいりょう","en":"ingredients, materials","cn":"材料"},
+      {"jp":"教材","reading":"きょうざい","en":"teaching material","cn":"教材"}
+    ]},
+    {"n":140,"char":"卵","strokes":7,"readings":["たまご"],"words":[
+      {"jp":"卵","reading":"たまご","en":"an egg","cn":"卵、鸡蛋"},
+      {"jp":"卵焼き","reading":"たまごやき","en":"a Japanese omlet","cn":"煎鸡蛋"}
+    ]},
+    {"n":141,"char":"乳","strokes":8,"readings":["ニュウ"],"words":[
+      {"jp":"牛乳","reading":"ぎゅうにゅう","en":"milk","cn":"牛奶"}
+    ]},
+    {"n":142,"char":"粉","strokes":10,"readings":["こな","こ"],"words":[
+      {"jp":"粉","reading":"こな","en":"powder, flour","cn":"粉末"},
+      {"jp":"小麦粉","reading":"こむぎこ","en":"wheat flour","cn":"面粉"}
+    ]},
+    {"n":143,"char":"袋","strokes":11,"readings":["ふくろ"],"words":[
+      {"jp":"袋","reading":"ふくろ","en":"a bag","cn":"袋子"},
+      {"jp":"ごみ袋","reading":"ごみぶくろ","en":"a garbage bag","cn":"垃圾袋"},
+      {"jp":"紙袋","reading":"かみぶくろ","en":"a paper bag","cn":"纸袋"},
+      {"jp":"手袋","reading":"てぶくろ","en":"gloves","cn":"手套"},
+      {"jp":"足袋","reading":"たび","en":"tabi (traditional Japanese socks worn with a kimono)","cn":"日本式布袜子"}
+    ]},
+    {"n":144,"char":"混","strokes":11,"readings":["コン","まーぜる"],"words":[
+      {"jp":"混雑","reading":"こんざつ","en":"congestion","cn":"混杂"},
+      {"jp":"混ぜる","reading":"まぜる","en":"be mixed","cn":"夹杂、掺混"}
+    ]},
+    {"n":145,"char":"焼","strokes":12,"readings":["やーく","やーける"],"words":[
+      {"jp":"焼く","reading":"やく","en":"roast, grill","cn":"烧、烤"},
+      {"jp":"焼ける","reading":"やける","en":"be burnt/baked","cn":"燃烧"}
+    ]},
+    {"n":146,"char":"表","strokes":8,"readings":["ヒョウ","おもて","あらわーす"],"words":[
+      {"jp":"表","reading":"ひょう","en":"a table (in written documents)","cn":"表"},
+      {"jp":"発表","reading":"はっぴょう","en":"an announcement","cn":"发表"},
+      {"jp":"表","reading":"おもて","en":"a surface, face","cn":"表面"},
+      {"jp":"表面","reading":"ひょうめん","en":"a surface","cn":"表面"},
+      {"jp":"代表","reading":"だいひょう","en":"a representative","cn":"代表"},
+      {"jp":"表す","reading":"あらわす","en":"show, express","cn":"表示"}
+    ]},
+    {"n":147,"char":"裏","strokes":13,"readings":["うら"],"words":[
+      {"jp":"裏","reading":"うら","en":"reverse, back","cn":"背面"},
+      {"jp":"裏返す","reading":"うらがえす","en":"turnover","cn":"翻过来"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.53（第5日末尾）",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"混雑：（a. わけがわからない　b. 人などでいっぱいの）ようす"},
+        {"n":2,"q":"発表：（a. みんなに知らせること　b. 出発の時刻を書いたもの）"},
+        {"n":3,"q":"田中君の席は私の（a. 後ろ　b. 裏）です。"},
+        {"n":4,"q":"データをグラフに（a. 現す　b. 表す）。"},
+        {"n":5,"q":"カンガルーのおなかには（a. 箱　b. 袋）がある。"},
+        {"n":6,"q":"オリンピックの（a. 代表　b. 表面）にえらばれる。"},
+        {"n":7,"q":"パンを（a. 焼く　b. 焼ける）。"},
+        {"n":8,"q":"足袋を（a. かぶる　b. はく）。"}
+      ]},
+      {"type":"select","instruction":"正しい読みに〇をつけなさい。","items":[
+        {"n":9,"q":"混ぜる","opts":["まぜる","もぜる","なぜる","ねぜる"]},
+        {"n":10,"q":"牛乳","opts":["にゅうぎゅう","ぎゅうにゅう","にゅうぎょう","ぎょうにょう"]},
+        {"n":11,"q":"小麦粉","opts":["こむりこ","こめぎこ","きなこ","こむぎこ"]},
+        {"n":12,"q":"手袋","opts":["おび","たぶくろ","たび","てぶくろ"]}
+      ]},
+      {"type":"select","instruction":"正しい漢字に〇をつけなさい。","items":[
+        {"n":13,"q":"たまご","opts":["叩","卵","貝","卯"]},
+        {"n":14,"q":"おもて","opts":["表","裏","面","点"]},
+        {"n":15,"q":"さます","opts":["空ます","温ます","冷ます","凍ます"]},
+        {"n":16,"q":"ざいりょう","opts":["材科","林料","林科","材料"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②a ③a ④b ⑤b ⑥a ⑦a ⑧b　Ⅱ：⑨1 ⑩2 ⑪4 ⑫4　Ⅲ：⑬2 ⑭1 ⑮3 ⑯4"
+  }
+}

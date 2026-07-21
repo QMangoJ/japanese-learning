@@ -1,0 +1,70 @@
+{
+  "week": 3, "day": 6, "theme": "つかう", "theme_cn": "用", "theme_en": "Use",
+  "title": "携帯電話", "title_cn": "手机", "title_en": "Cell Phones",
+  "kanji": [
+    {"n":156,"char":"接","strokes":11,"readings":["セツ"],"words":[
+      {"jp":"接続","reading":"せつぞく","en":"connect","cn":"接续"},
+      {"jp":"面接","reading":"めんせつ","en":"interview","cn":"面试"}
+    ]},
+    {"n":157,"char":"続","strokes":13,"readings":["ゾク","つづーく","つづーける"],"words":[
+      {"jp":"接続","reading":"せつぞく","en":"connect","cn":"接续"},
+      {"jp":"続く","reading":"つづく","en":"continue","cn":"继续、接连不断"},
+      {"jp":"続ける","reading":"つづける","en":"continue","cn":"继续"}
+    ]},
+    {"n":158,"char":"示","strokes":5,"readings":["ジ","しめーす"],"words":[
+      {"jp":"表示","reading":"ひょうじ","en":"indication, expression","cn":"表示"},
+      {"jp":"指示","reading":"しじ","en":"a direction, instruction","cn":"指示"},
+      {"jp":"示す","reading":"しめす","en":"show, point out","cn":"表示、出示"}
+    ]},
+    {"n":159,"char":"戻","strokes":7,"readings":["もどーる","もどーす"],"words":[
+      {"jp":"戻る","reading":"もどる","en":"return","cn":"返回"},
+      {"jp":"戻す","reading":"もどす","en":"return, put back","cn":"恢复"}
+    ]},
+    {"n":160,"char":"完","strokes":7,"readings":["カン"],"words":[
+      {"jp":"完了","reading":"かんりょう","en":"completion","cn":"完了"},
+      {"jp":"完全(な)","reading":"かんぜん","en":"perfect, complete","cn":"完全（的）"}
+    ]},
+    {"n":161,"char":"了","strokes":2,"readings":["リョウ"],"words":[
+      {"jp":"了解","reading":"りょうかい","en":"understand, agree","cn":"了解"},
+      {"jp":"終了","reading":"しゅうりょう","en":"end, expiration","cn":"完了"}
+    ]},
+    {"n":162,"char":"登","strokes":12,"readings":["トウ","ト","のぼーる"],"words":[
+      {"jp":"登録","reading":"とうろく","en":"registration","cn":"登记"},
+      {"jp":"登る","reading":"のぼる","en":"climb","cn":"攀登"},
+      {"jp":"登山","reading":"とざん","en":"mountain climbing","cn":"爬山"}
+    ]},
+    {"n":163,"char":"録","strokes":16,"readings":["ロク"],"words":[
+      {"jp":"記録","reading":"きろく","en":"a record","cn":"记录"},
+      {"jp":"録音","reading":"ろくおん","en":"record (sound)","cn":"录音"},
+      {"jp":"録画","reading":"ろくが","en":"record (video)","cn":"录制影像"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.58（第7日末尾）",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"接続：（a. つなぐこと　b. つづくこと）"},
+        {"n":2,"q":"完全：（a. パーフェクト　b. セーフティ）"},
+        {"n":3,"q":"面接：（a. 入院中の人に　b. その人を知るために）会うこと"},
+        {"n":4,"q":"仕事の内容をノートに（a. 記録する　b. 登録する）。"},
+        {"n":5,"q":"医者の（a. 案内　b. 指示）にしたがう。"},
+        {"n":6,"q":"ラジオ番組を（a. 録音する　b. 録画する）。"},
+        {"n":7,"q":"「3時に駅に着きます。」「（a. 了解　b. 理解）です。」"},
+        {"n":8,"q":"本日の営業は（a. 完了　b. 終了）しました。"}
+      ]},
+      {"type":"select","instruction":"正しい読みに〇をつけなさい。","items":[
+        {"n":9,"q":"登山","opts":["とうざん","とざん","とうさん","とさん"]},
+        {"n":10,"q":"戻る","opts":["もどる","まどる","おとる","かえる"]},
+        {"n":11,"q":"接続","opts":["けいぞく","せっそく","けいそく","せつぞく"]},
+        {"n":12,"q":"完了","opts":["わんりょう","かんりょう","げんりょう","しゅうりょう"]}
+      ]},
+      {"type":"select","instruction":"正しい漢字に〇をつけなさい。","items":[
+        {"n":13,"q":"しめす","opts":["指す","差す","示す","消す"]},
+        {"n":14,"q":"のぼる","opts":["断る","折る","降る","登る"]},
+        {"n":15,"q":"ひょうじ","opts":["表現","指示","消費","表示"]},
+        {"n":16,"q":"とうろく","opts":["登録","当録","登緑","当緑"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②a ③b ④a ⑤b ⑥a ⑦a ⑧b　Ⅱ：⑨2 ⑩1 ⑪4 ⑫2　Ⅲ：⑬3 ⑭4 ⑮4 ⑯1"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "week": 2, "day": 4, "theme": "でかける②", "theme_cn": "外出②", "theme_en": "Go Out ②",
+  "title": "街の地図", "title_cn": "街道地图", "title_en": "A Map of the City",
+  "kanji": [
+    {"n":83,"char":"役","strokes":7,"readings":["ヤク"],"words":[
+      {"jp":"市役所","reading":"しやくしょ","en":"the city office","cn":"市政厅"},
+      {"jp":"役員","reading":"やくいん","en":"an officer/member","cn":"公务员、官员"},
+      {"jp":"役に立つ","reading":"やくにたつ","en":"useful","cn":"有用"}
+    ]},
+    {"n":84,"char":"郵","strokes":11,"readings":["ユウ"],"words":[
+      {"jp":"郵便","reading":"ゆうびん","en":"mail","cn":"邮件"}
+    ]},
+    {"n":85,"char":"局","strokes":7,"readings":["キョク"],"words":[
+      {"jp":"郵便局","reading":"ゆうびんきょく","en":"a post office","cn":"邮政局"},
+      {"jp":"薬局","reading":"やっきょく","en":"a drug store","cn":"药店"}
+    ]},
+    {"n":86,"char":"交","strokes":6,"readings":["コウ"],"words":[
+      {"jp":"交番","reading":"こうばん","en":"a police box","cn":"派出所"},
+      {"jp":"交換","reading":"こうかん","en":"exchange","cn":"交换"},
+      {"jp":"交通","reading":"こうつう","en":"transport","cn":"交通"}
+    ]},
+    {"n":87,"char":"差","strokes":10,"readings":["サ","さーす"],"words":[
+      {"jp":"差","reading":"さ","en":"difference","cn":"差"},
+      {"jp":"差し出す","reading":"さしだす","en":"hand in","cn":"伸出"},
+      {"jp":"差出人","reading":"さしだしにん","en":"a sender","cn":"寄件人"}
+    ]},
+    {"n":88,"char":"点","strokes":9,"readings":["テン"],"words":[
+      {"jp":"交差点","reading":"こうさてん","en":"an intersection","cn":"十字路口"},
+      {"jp":"〜点","reading":"てん","en":"... points","cn":"〜点"},
+      {"jp":"点数","reading":"てんすう","en":"score/points","cn":"分数"}
+    ]},
+    {"n":89,"char":"橋","strokes":16,"readings":["キョウ","はし"],"words":[
+      {"jp":"歩道橋","reading":"ほどうきょう","en":"a foot bridge","cn":"过街天桥"},
+      {"jp":"橋","reading":"はし","en":"a bridge","cn":"桥梁"}
+    ]},
+    {"n":90,"char":"公","strokes":4,"readings":["コウ"],"words":[
+      {"jp":"公園","reading":"こうえん","en":"a park","cn":"公园"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.37（第5日末尾）",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"差出人：手紙や荷物を（a. 送る人　b. 受け取る人）"},
+        {"n":2,"q":"歩道橋：車は（a. わたれる　b. わたれない）橋"},
+        {"n":3,"q":"3と5の（a. 次　b. 差）は2です。"},
+        {"n":4,"q":"（a. 交番　b. 番号）で道を聞く。"},
+        {"n":5,"q":"この本は勉強の（a. 約に　b. 役に）立つ。"},
+        {"n":6,"q":"50円の（a. 郵便　b. 整理）切手を買いました。"},
+        {"n":7,"q":"クラスの（a. 店員　b. 役員）をえらびます。"},
+        {"n":8,"q":"（a. 交差点　b. 横断歩道）を右にまがってください。"}
+      ]},
+      {"type":"select","instruction":"正しい読みに〇をつけなさい。","items":[
+        {"n":9,"q":"橋","opts":["はち","ばち","はし","ばし"]},
+        {"n":10,"q":"市役所","opts":["しやくしょ","しゃくしょ","しょくしょ","しょくしょ"]},
+        {"n":11,"q":"交通","opts":["きょうちゅう","こうつう","こんちゅう","きょうつう"]},
+        {"n":12,"q":"郵便","opts":["やうびん","ようべん","ゆうびん","ゆうべん"]}
+      ]},
+      {"type":"select","instruction":"正しい漢字に〇をつけなさい。","items":[
+        {"n":13,"q":"こうかん","opts":["友換","父換","文換","交換"]},
+        {"n":14,"q":"てんすう","opts":["定数","点数","階数","停数"]},
+        {"n":15,"q":"やっきょく","opts":["薬局","楽局","薬屋","楽屋"]},
+        {"n":16,"q":"こうえん","opts":["草園","楽園","公園","窓園"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②b ③b ④a ⑤b ⑥a ⑦b ⑧a　Ⅱ：⑨3 ⑩1 ⑪2 ⑫3　Ⅲ：⑬4 ⑭2 ⑮1 ⑯3"
+  }
+}

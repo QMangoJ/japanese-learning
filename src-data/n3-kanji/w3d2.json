@@ -1,0 +1,76 @@
+{
+  "week": 3, "day": 2, "theme": "つかう", "theme_cn": "用", "theme_en": "Use",
+  "title": "消費期限", "title_cn": "保质期", "title_en": "Expiration Date/EXP",
+  "kanji": [
+    {"n":123,"char":"費","strokes":12,"readings":["ヒ"],"words":[
+      {"jp":"費用","reading":"ひよう","en":"an expense, cost","cn":"费用"},
+      {"jp":"旅費","reading":"りょひ","en":"travelling expenses","cn":"旅费"},
+      {"jp":"消費者","reading":"しょうひしゃ","en":"consumers","cn":"消费者"},
+      {"jp":"会費","reading":"かいひ","en":"a membership fee","cn":"会费"}
+    ]},
+    {"n":124,"char":"期","strokes":12,"readings":["キ"],"words":[
+      {"jp":"期間","reading":"きかん","en":"a period of time","cn":"期间"},
+      {"jp":"長期","reading":"ちょうき","en":"a long period","cn":"长期"},
+      {"jp":"定期券","reading":"ていきけん","en":"a commuter pass","cn":"月票"},
+      {"jp":"短期","reading":"たんき","en":"a short period","cn":"短期"}
+    ]},
+    {"n":125,"char":"限","strokes":19,"readings":["ゲン","かぎーる"],"words":[
+      {"jp":"期限","reading":"きげん","en":"a time limit","cn":"期限"},
+      {"jp":"限る","reading":"かぎる","en":"limit, restrict","cn":"限于"},
+      {"jp":"限度","reading":"げんど","en":"a limit","cn":"限度"},
+      {"jp":"限定","reading":"げんてい","en":"limitation","cn":"限定"}
+    ]},
+    {"n":126,"char":"製","strokes":14,"readings":["セイ"],"words":[
+      {"jp":"〇〇製","reading":"せい","en":"made in/of 〇〇","cn":"〇〇制"},
+      {"jp":"製品","reading":"せいひん","en":"a product","cn":"制品"}
+    ]},
+    {"n":127,"char":"造","strokes":10,"readings":["ゾウ","つくーる"],"words":[
+      {"jp":"製造","reading":"せいぞう","en":"manufacture","cn":"制造"},
+      {"jp":"造る","reading":"つくる","en":"make","cn":"制、作、造"}
+    ]},
+    {"n":128,"char":"賞","strokes":15,"readings":["ショウ"],"words":[
+      {"jp":"賞","reading":"しょう","en":"a prize","cn":"奖"},
+      {"jp":"賞金","reading":"しょうきん","en":"prize money","cn":"奖金"},
+      {"jp":"賞味期限","reading":"しょうみきげん","en":"Best before","cn":"最佳品尝期限"},
+      {"jp":"賞品","reading":"しょうひん","en":"a prize","cn":"奖品"}
+    ]},
+    {"n":129,"char":"法","strokes":8,"readings":["ホウ"],"words":[
+      {"jp":"方法","reading":"ほうほう","en":"a method / way","cn":"方法"},
+      {"jp":"文法","reading":"ぶんぽう","en":"grammar","cn":"文法"}
+    ]},
+    {"n":130,"char":"温","strokes":12,"readings":["オン","あたたかーい"],"words":[
+      {"jp":"温度","reading":"おんど","en":"temperature","cn":"温度"},
+      {"jp":"温かい","reading":"あたたかい","en":"warm","cn":"暖和的"},
+      {"jp":"気温","reading":"きおん","en":"temperature","cn":"气温"},
+      {"jp":"常温","reading":"じょうおん","en":"normal temperature","cn":"常温"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.49（第3日末尾）",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"製造年月日：この日に（a. うられた　b. つくられた）"},
+        {"n":2,"q":"消費期限：この日まで（a. 保存してもいい　b. 保存してはいけない）"},
+        {"n":3,"q":"賞味期限：この日まで（a. 食べてはいけない　b. おいしく食べられる）"},
+        {"n":4,"q":"常温で保存：冷蔵庫に（a. 入れなくていい　b. 入れなければいけない）"},
+        {"n":5,"q":"期間限定：その期間（a. 以外　b. だけ）"},
+        {"n":6,"q":"同窓会の（a. 食費　b. 会費）を集める。"},
+        {"n":7,"q":"優勝の（a. 賞品　b. 商品）は10万円の旅行券です。"},
+        {"n":8,"q":"毎日会社や学校へ通う人は（a. 乗車券　b. 定期券）が便利で得です。"}
+      ]},
+      {"type":"select","instruction":"正しい読みに〇をつけなさい。","items":[
+        {"n":9,"q":"温かい","opts":["やらわかい","あかたかい","やわらかい","あたたかい"]},
+        {"n":10,"q":"限る","opts":["かにる","かぎる","かみる","かげる"]},
+        {"n":11,"q":"造る","opts":["つくる","こくる","めくる","ちくる"]},
+        {"n":12,"q":"消費者","opts":["そうひしゃ","しょうひしゃ","ちょうひしゃ","しゅうひしゃ"]}
+      ]},
+      {"type":"select","instruction":"正しい漢字に〇をつけなさい。","items":[
+        {"n":13,"q":"おんど","opts":["温席","温度","温渡","温庫"]},
+        {"n":14,"q":"せいひん","opts":["表品","製品","裏品","袋品"]},
+        {"n":15,"q":"ほうほう","opts":["万去","万法","方去","方法"]},
+        {"n":16,"q":"ちょうき","opts":["長期","中期","短期","満期"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②a ③b ④a ⑤b ⑥b ⑦a ⑧b　Ⅱ：⑨4 ⑩2 ⑪1 ⑫2　Ⅲ：⑬2 ⑭2 ⑮4 ⑯1"
+  }
+}

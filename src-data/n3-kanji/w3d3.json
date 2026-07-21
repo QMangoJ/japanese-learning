@@ -1,0 +1,70 @@
+{
+  "week": 3, "day": 3, "theme": "つかう", "theme_cn": "用", "theme_en": "Use",
+  "title": "自動販売機", "title_cn": "自动售卖机", "title_en": "Vending Machines",
+  "kanji": [
+    {"n":131,"char":"販","strokes":11,"readings":["ハン"],"words":[
+      {"jp":"販売","reading":"はんばい","en":"sell","cn":"售卖"},
+      {"jp":"自動販売機","reading":"じどうはんばいき","en":"a vending machine","cn":"自动售卖机"}
+    ]},
+    {"n":132,"char":"機","strokes":16,"readings":["キ"],"words":[
+      {"jp":"飛行機","reading":"ひこうき","en":"an airplane","cn":"飞机"},
+      {"jp":"機会","reading":"きかい","en":"an opportunity","cn":"机会"},
+      {"jp":"機械","reading":"きかい","en":"a machine","cn":"机器"}
+    ]},
+    {"n":133,"char":"増","strokes":14,"readings":["ゾウ","ふーえる","ふーやす"],"words":[
+      {"jp":"増加","reading":"ぞうか","en":"an increase","cn":"增加"},
+      {"jp":"増える","reading":"ふえる","en":"increase","cn":"增加"},
+      {"jp":"増やす","reading":"ふやす","en":"increase, add","cn":"增多"}
+    ]},
+    {"n":134,"char":"減","strokes":12,"readings":["ゲン","へーる","へーらす"],"words":[
+      {"jp":"減少","reading":"げんしょう","en":"a decrease","cn":"减少"},
+      {"jp":"減る","reading":"へる","en":"decrease, reduce","cn":"减少"},
+      {"jp":"減らす","reading":"へらす","en":"decrease","cn":"使……减少"}
+    ]},
+    {"n":135,"char":"量","strokes":12,"readings":["リョウ"],"words":[
+      {"jp":"量","reading":"りょう","en":"quantity","cn":"量"},
+      {"jp":"増量","reading":"ぞうりょう","en":"increase the amount","cn":"增量"},
+      {"jp":"数量","reading":"すうりょう","en":"amount","cn":"数量"},
+      {"jp":"減量","reading":"げんりょう","en":"a loss in quantity (weight)","cn":"减量"}
+    ]},
+    {"n":136,"char":"氷","strokes":5,"readings":["こおり"],"words":[
+      {"jp":"氷","reading":"こおり","en":"ice","cn":"冰"}
+    ]},
+    {"n":137,"char":"返","strokes":7,"readings":["ヘン","かえーす"],"words":[
+      {"jp":"返事","reading":"へんじ","en":"a reply","cn":"回答"},
+      {"jp":"返す","reading":"かえす","en":"return (something)","cn":"归还"},
+      {"jp":"返却","reading":"へんきゃく","en":"return","cn":"归还"}
+    ]},
+    {"n":138,"char":"湯","strokes":12,"readings":["ゆ"],"words":[
+      {"jp":"(お)湯","reading":"ゆ","en":"hot water","cn":"热水"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.51（第4日末尾）",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"販売：（a. 売ること　b. 買うこと）"},
+        {"n":2,"q":"機会：（a. マシン　b. チャンス）"},
+        {"n":3,"q":"返事：（a. よぶこと　b. こたえること）"},
+        {"n":4,"q":"自動：（a. オートマチック　b. アスレチック）"},
+        {"n":5,"q":"飛行：（a. 旅行すること　b. 空をとぶこと）"},
+        {"n":6,"q":"人口が（a. 減量する　b. 減少する）。"},
+        {"n":7,"q":"おつりをもらうときは、（a. 返却ボタン　b. 確認ボタン）を押す。"},
+        {"n":8,"q":"甘くしたいので砂糖を（a. 増量する　b. 増加する）。"}
+      ]},
+      {"type":"select","instruction":"正しい読みに〇をつけなさい。","items":[
+        {"n":9,"q":"冷水","opts":["おひや","りょうすい","れいすい","おみず"]},
+        {"n":10,"q":"増える","opts":["ほえる","ふえる","はえる","ひえる"]},
+        {"n":11,"q":"減る","opts":["はる","ふる","ひる","へる"]},
+        {"n":12,"q":"返す","opts":["かいす","かえす","かれす","はずす"]}
+      ]},
+      {"type":"select","instruction":"正しい漢字に〇をつけなさい。","items":[
+        {"n":13,"q":"こおり","opts":["水","永","氷","凍"]},
+        {"n":14,"q":"ゆ","opts":["湯","場","揚","楊"]},
+        {"n":15,"q":"きかい","opts":["自動","販売","機合","機械"]},
+        {"n":16,"q":"りょう","opts":["重","量","黒","里"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②b ③b ④a ⑤b ⑥b ⑦a ⑧a　Ⅱ：⑨3 ⑩2 ⑪4 ⑫2　Ⅲ：⑬3 ⑭1 ⑮4 ⑯2"
+  }
+}
