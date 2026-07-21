@@ -21,10 +21,11 @@
 html{margin:0;padding:0;max-width:100%;overflow-x:hidden}
 body{margin:0;padding:0;max-width:100%;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans","Hiragino Kaku Gothic ProN","Microsoft YaHei","Noto Sans CJK SC",sans-serif;font-size:16px;line-height:1.65;padding-bottom:calc(64px + env(safe-area-inset-bottom));overflow-wrap:break-word}
 .jp{font-family:-apple-system,"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic","Noto Sans CJK JP","PingFang SC",sans-serif}
-header.top{position:sticky;top:0;z-index:20;background:var(--card);border-bottom:1px solid var(--line);padding:10px 14px;display:flex;align-items:center;gap:10px;box-shadow:var(--shadow)}
+.topbar{position:sticky;top:0;z-index:20}
+header.top{background:var(--card);border-bottom:1px solid var(--line);padding:10px 14px;display:flex;align-items:center;gap:10px;box-shadow:var(--shadow)}
 header.top .back{border:none;background:none;color:var(--blue);font-size:15px;padding:4px 6px;cursor:pointer;flex:none}
 header.top h1{font-size:16px;margin:0;font-weight:700;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.modewrap{position:sticky;top:53px;z-index:19;background:var(--card);border-bottom:1px solid var(--line)}
+.modewrap{background:var(--card);border-bottom:1px solid var(--line)}
 .levelbar{display:flex;gap:8px;justify-content:center;padding:8px 14px 5px}
 .levelbar button{border:1px solid var(--line);background:var(--bg);color:var(--sub);border-radius:999px;padding:5px 26px;font-size:14px;font-weight:800;letter-spacing:.5px;cursor:pointer;min-width:84px}
 .levelbar button.on{background:var(--blue);border-color:var(--blue);color:#fff}
@@ -182,19 +183,18 @@ body.no-ruby rt{display:none}
   .ct-tocitem{flex:0 0 auto;background:var(--bg);border:1px solid var(--line)}
   .ct-card{scroll-margin-top:190px}
 }
-.home-top{position:sticky;top:150px;z-index:10;background:var(--bg);padding-bottom:4px}
+.home-top{position:sticky;top:var(--topbarh,97px);z-index:10;background:var(--bg);padding-bottom:4px}
 .wk-toc{display:none}
-.week-card{scroll-margin-top:150px}
+.week-card{scroll-margin-top:calc(var(--topbarh,97px) + var(--hometoph,40px))}
 @media (max-width:680px){
-  .home-top{top:148px}
   .wk-toc{display:flex;gap:6px;overflow-x:auto;padding:6px 0 0}
   .wk-tocitem{flex:0 0 auto;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:13px;color:var(--ink);cursor:pointer;white-space:nowrap}
   .wk-tocitem:hover{color:var(--accent)}
-  .week-card{scroll-margin-top:190px}
 }
 </style>
 </head>
 <body>
+<div class="topbar" id="topbar">
 <header class="top">
   <button class="back" id="backBtn" style="visibility:hidden">‹ 返回</button>
   <h1 id="title">N3 学习助手</h1>
@@ -214,6 +214,7 @@ body.no-ruby rt{display:none}
     <button data-lang="cn">中文</button>
     <button data-lang="en">English</button>
   </div>
+</div>
 </div>
 <main id="app"></main>
 <nav class="bottom">
@@ -352,18 +353,28 @@ function setHeader(t, showBack){
   backBtn.style.visibility = showBack?'visible':'hidden';
   topAction.style.display='inline-block'; topAction.textContent = rubyBtnText();
 }
+function updateStickyVars(){
+  const tb = document.getElementById('topbar');
+  if(tb) document.documentElement.style.setProperty('--topbarh', tb.offsetHeight+'px');
+  const ht = document.querySelector('.home-top');
+  document.documentElement.style.setProperty('--hometoph', (ht?ht.offsetHeight:0)+'px');
+}
+window.addEventListener('resize', updateStickyVars);
 function render(){
   syncModeBar();
   const h = location.hash || '#/'; window.scrollTo(0,0);
-  if(h==='#/') return viewHome();
-  if(h==='#/search') return viewSearch();
-  if(h==='#/cards') return viewCards();
-  if(h==='#/favs') return viewFavs();
-  if(h==='#/ref'){ if(MODULE!=='grammar') setModule('grammar'); return viewRef(); }
-  if(h==='#/contrast'){ if(MODULE!=='grammar') setModule('grammar'); return viewContrast(); }
-  let m = h.match(/^#\/day\/(\d)-(\d)(?:\/p(\d+))?$/);
-  if(m) return viewDay(+m[1], +m[2], m[3]?+m[3]:null);
-  viewHome();
+  if(h==='#/') viewHome();
+  else if(h==='#/search') viewSearch();
+  else if(h==='#/cards') viewCards();
+  else if(h==='#/favs') viewFavs();
+  else if(h==='#/ref'){ if(MODULE!=='grammar') setModule('grammar'); viewRef(); }
+  else if(h==='#/contrast'){ if(MODULE!=='grammar') setModule('grammar'); viewContrast(); }
+  else {
+    let m = h.match(/^#\/day\/(\d)-(\d)(?:\/p(\d+))?$/);
+    if(m) viewDay(+m[1], +m[2], m[3]?+m[3]:null);
+    else viewHome();
+  }
+  updateStickyVars();
 }
 
 /* ---------- home ---------- */
