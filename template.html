@@ -313,7 +313,7 @@ document.querySelectorAll('nav.bottom button').forEach(b=>{
 });
 /* delegated clicks (artifact CSP blocks inline onclick=) */
 app.addEventListener('click', e=>{
-  const sc=e.target.closest('[data-scroll]'); if(sc){ const el=document.getElementById(sc.dataset.scroll); if(el) el.scrollIntoView({behavior:'smooth',block:'start'}); return; }
+  const sc=e.target.closest('[data-scroll]'); if(sc){ const el=document.getElementById(sc.dataset.scroll); if(el) el.scrollIntoView({behavior:sc.classList.contains('wk-tocitem')?'auto':'smooth',block:'start'}); return; }
   const sb=e.target.closest('[data-say]'); if(sb){ say(sb.dataset.say); return; }
   const fv=e.target.closest('[data-fav]'); if(fv){ toggleFav(fv.dataset.fav); fv.textContent=isFav(fv.dataset.fav)?'★':'☆'; if((location.hash||'#/')==='#/favs') viewFavs(); return; }
   if(e.target.closest('[data-favfc]')){ startFavFc(); return; }
