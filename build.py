@@ -45,6 +45,18 @@ def ruby(text):
 def rlist(xs):
     return [ruby(x) for x in xs]
 
+def ruby_ul(text, pattern):
+    """Like ruby(), but wraps the first exact occurrence of `pattern` in <u>.
+    Only underlines on an exact substring match (never guesses), mirroring the
+    underline the source textbook prints under the grammar point inside each
+    example sentence."""
+    if pattern:
+        i = text.find(pattern)
+        if i >= 0:
+            before, match, after = text[:i], text[i:i+len(pattern)], text[i+len(pattern):]
+            return ruby(before) + "<u>" + ruby(match) + "</u>" + ruby(after)
+    return ruby(text)
+
 def annotate_g(day):
     day["title_r"] = ruby(day["title"])
     if day.get("dialog"):
@@ -54,7 +66,7 @@ def annotate_g(day):
         if p.get("usage_jp"):
             p["usage_jp_r"] = ruby(p["usage_jp"])
         for ex in p.get("examples", []):
-            ex["jp_r"] = ruby(ex["jp"])
+            ex["jp_r"] = ruby_ul(ex["jp"], p.get("pattern"))
             if ex.get("eq"):
                 ex["eq_r"] = ruby(ex["eq"])
         for nt in p.get("notes", []):
