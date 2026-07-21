@@ -30,6 +30,9 @@ header.top h1{font-size:16px;margin:0;font-weight:700;flex:1;white-space:nowrap;
 .levelbar button.on{background:var(--blue);border-color:var(--blue);color:#fff}
 .typebar{display:flex;gap:6px;justify-content:center;padding:0 14px 8px}
 .typebar button{flex:1;max-width:170px;border:1px solid var(--line);background:var(--bg);color:var(--sub);border-radius:999px;padding:6px 0;font-size:14px;font-weight:700;cursor:pointer}
+.langbar{display:flex;gap:6px;justify-content:center;padding:0 14px 8px}
+.langbar button{border:1px solid var(--line);background:var(--bg);color:var(--sub);border-radius:999px;padding:4px 18px;font-size:13px;font-weight:700;cursor:pointer}
+.langbar button.on{background:var(--accent);border-color:var(--accent);color:#fff}
 .typebar button.on{background:var(--accent);border-color:var(--accent);color:#fff}
 main{max-width:760px;margin:0 auto;padding:14px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:14px 16px;margin-bottom:12px}
@@ -182,9 +185,6 @@ body.no-ruby rt{display:none}
 .home-top{position:sticky;top:150px;z-index:10;background:var(--bg);padding-bottom:4px}
 .wk-toc{display:none}
 .week-card{scroll-margin-top:150px}
-.lang-toggle{display:flex;gap:6px;margin-bottom:10px}
-.lang-toggle button{border:1px solid var(--line);background:var(--card);color:var(--sub);border-radius:999px;padding:5px 16px;font-size:13px;font-weight:700;cursor:pointer}
-.lang-toggle button.on{background:var(--accent);border-color:var(--accent);color:#fff}
 @media (max-width:680px){
   .home-top{top:148px}
   .wk-toc{display:flex;gap:6px;overflow-x:auto;padding:6px 0 0}
@@ -209,6 +209,10 @@ body.no-ruby rt{display:none}
     <button data-ty="grammar">📘 语法</button>
     <button data-ty="vocab">📗 词汇</button>
     <button data-ty="kanji">📙 汉字</button>
+  </div>
+  <div class="langbar" id="langbar" style="display:none">
+    <button data-lang="cn">中文</button>
+    <button data-lang="en">English</button>
   </div>
 </div>
 <main id="app"></main>
@@ -300,6 +304,8 @@ function syncModeBar(){
   document.querySelectorAll('#typebar button[data-ty="kanji"]').forEach(b=>{ b.style.display = LEVEL==='n2'?'none':''; });
   $('#navRef').style.display = MODULE==='grammar'?'':'none';
   $('#navContrast').style.display = MODULE==='grammar'?'':'none';
+  $('#langbar').style.display = MODULE==='grammar'?'':'none';
+  document.querySelectorAll('#langbar button').forEach(b=>b.classList.toggle('on', b.dataset.lang===LANG));
 }
 function setModule(m){
   MODULE=m; try{ localStorage.setItem('module',m); }catch(e){}
@@ -311,6 +317,9 @@ document.querySelectorAll('#levelbar button').forEach(b=>{
 document.querySelectorAll('#typebar button').forEach(b=>{
   b.onclick=()=>{ setModule(moduleFrom(LEVEL, b.dataset.ty)); navTo('#/'); };
 });
+document.querySelectorAll('#langbar button').forEach(b=>{
+  b.onclick=()=>{ LANG=b.dataset.lang; try{localStorage.setItem('lang',LANG);}catch(e){} syncModeBar(); render(); };
+});
 
 /* ---------- routing ---------- */
 function navTo(hash){ if(location.hash===hash) render(); else location.hash=hash; }
@@ -321,7 +330,6 @@ document.querySelectorAll('nav.bottom button').forEach(b=>{
 });
 /* delegated clicks (artifact CSP blocks inline onclick=) */
 app.addEventListener('click', e=>{
-  const lb=e.target.closest('[data-lang]'); if(lb){ LANG=lb.dataset.lang; try{localStorage.setItem('lang',LANG);}catch(e){} render(); return; }
   const sc=e.target.closest('[data-scroll]'); if(sc){ const el=document.getElementById(sc.dataset.scroll); if(el) el.scrollIntoView({behavior:sc.classList.contains('wk-tocitem')?'auto':'smooth',block:'start'}); return; }
   const sb=e.target.closest('[data-say]'); if(sb){ say(sb.dataset.say); return; }
   const fv=e.target.closest('[data-fav]'); if(fv){ toggleFav(fv.dataset.fav); fv.textContent=isFav(fv.dataset.fav)?'★':'☆'; if((location.hash||'#/')==='#/favs') viewFavs(); return; }
@@ -365,12 +373,7 @@ function viewHome(){
   const kind = (MODULE==='vocab'||MODULE==='n2vocab')?'词汇':(MODULE==='kanji'?'汉字':'语法');
   const weeks = CUR().weeks;
   const intro = `《${book}》 · ${weeks.length} 周 × 7 天 · 点击进入每日${kind}`;
-  const showLang = MODULE==='grammar';
-  const langToggle = showLang ? `<div class="lang-toggle">
-    <button data-lang="cn" class="${LANG==='cn'?'on':''}">中文</button>
-    <button data-lang="en" class="${LANG==='en'?'on':''}">English</button>
-  </div>` : '';
-  let html = `<div class="home-top"><div class="meta" style="margin-bottom:10px">${intro}</div>${langToggle}` +
+  let html = `<div class="home-top"><div class="meta" style="margin-bottom:10px">${intro}</div>` +
     (weeks.length>3 ? `<div class="wk-toc">${weeks.map(w=>`<a class="wk-tocitem" data-scroll="wk-${w.n}">第${w.n}周</a>`).join('')}</div>` : '') +
     `</div>`;
   for(const w of weeks){
