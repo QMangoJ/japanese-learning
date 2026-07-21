@@ -1,0 +1,65 @@
+{
+  "week": 1, "day": 2, "title": "引っ越しは大変です", "title_cn": "搬家很麻烦", "title_en": "It's a lot of work to move",
+  "sections": [
+    {"type":"words","heading":"絵をみておぼえましょう","items":[
+      {"jp":"段ボール箱","en":"a cardboard box","cn":"纸板箱"},
+      {"jp":"ガムテープ","en":"a parcel tape","cn":"胶带"},
+      {"jp":"ポリ袋","en":"a plastic bag","cn":"塑料袋"},
+      {"jp":"レジ袋","en":"a plastic bag (received at the checkout counter)","cn":"购物袋（在款台领到的）"},
+      {"jp":"（卵・牛乳などの）パック","en":"an egg carton","cn":"包装盒"},
+      {"jp":"（肉などの）トレイ","en":"a styrofoam tray","cn":"泡沫盒子"},
+      {"jp":"キャップ","en":"a bottle top","cn":"瓶盖"},
+      {"jp":"ラベル","en":"a label","cn":"标签"},
+      {"jp":"ペットボトル","en":"a pet bottle","cn":"塑料瓶子、PET瓶"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"買い換える","en":"buy a new one for the old one","cn":"买新的、重新买"},
+      {"jp":"家電製品","en":"electronic appliances","cn":"家电、家用电器"},
+      {"jp":"省エネ","en":"energy-saving","cn":"节省能源、节能"},
+      {"jp":"電気代を節約する","en":"reduce the electricity bill","cn":"节约电费"},
+      {"jp":"ごみがたまる","en":"garbage accumulates","cn":"积存垃圾"},
+      {"jp":"リサイクルに出す","en":"put ... out for recycling","cn":"把东西拿到再利用处"},
+      {"jp":"不用品を処分する","en":"get rid of clutter","cn":"处理不用品"},
+      {"jp":"ごみを分別する","en":"separate garbage","cn":"垃圾分类"},
+      {"jp":"燃えるごみ／可燃ごみ","en":"burnable garbage","cn":"可燃垃圾"},
+      {"jp":"燃やせるごみ","en":"burnable garbage","cn":"能烧的垃圾"},
+      {"jp":"燃えないごみ／不燃ごみ","en":"unburnable garbage","cn":"不可燃垃圾"},
+      {"jp":"燃やせないごみ","en":"unburnable garbage","cn":"不能烧的垃圾"},
+      {"jp":"生ごみ","en":"kitchen garbage","cn":"生活垃圾（以食物为主）"},
+      {"jp":"粗大ごみ","en":"large-size garbage","cn":"大型垃圾"},
+      {"jp":"資源ごみ","en":"recyclable garbage","cn":"资源垃圾"},
+      {"jp":"指定のごみ袋","en":"garbage bag specified by the city government","cn":"指定的垃圾袋"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"ペットボトルをすすぐ","en":"rinse a PET bottle","cn":"涮塑料瓶子"},
+      {"jp":"ラベルをはがす","en":"peel the label off","cn":"揭标签"},
+      {"jp":"シールを貼る","en":"put a sticker on","cn":"贴封印纸、贴贴纸"},
+      {"jp":"アルミ缶をつぶす","en":"crush the aluminum can","cn":"压扁铝罐"},
+      {"jp":"古新聞を再利用する","en":"reuse the old newspaper","cn":"再利用旧报纸"},
+      {"jp":"水がもれる","en":"water leaks","cn":"漏水"},
+      {"jp":"水をもらす","en":"flood ...","cn":"溢水、把水弄出来"},
+      {"jp":"秘密がもれる","en":"a secret leaks out","cn":"秘密泄露"},
+      {"jp":"秘密をもらす","en":"leak a secret","cn":"泄密、透露秘密"},
+      {"jp":"こぼれる","en":"spill out","cn":"洒落、溢出"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.17",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"新しい洗濯機に買い換えたら水道代が（a. 節約　b. 省エネ）できました。"},
+        {"n":2,"q":"古くなったテレビを（a. 分別　b. 処分）した。"},
+        {"n":3,"q":"ビンはよく（a. もれて　b. すすいで）からリサイクルに出してください。"},
+        {"n":4,"q":"生ごみの袋から、何か液が（a. もれて　b. たまって）いる。"},
+        {"n":5,"q":"不燃ごみと可燃ごみを（a. 分別　b. 処分）して捨ててください。"},
+        {"n":6,"q":"段ボールの箱は（a. 貼って　b. つぶして）から資源ごみに出してください。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"グラスが倒れて、酒が（　　）しまった。","opts":["もれて","すすいで","こぼれて","たまって"]},
+        {"n":8,"q":"箱に詰めたらふたをしてガムテープで（　　）ください。","opts":["はって","つぶして","出して","はがして"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②b ③b ④a ⑤a ⑥b　Ⅱ：⑦3 ⑧1"
+  },
+  "hitokoto": "ごみは正しく分別しましょう。"
+}

@@ -1,0 +1,66 @@
+{
+  "week": 1, "day": 1, "title": "アパートを探しています", "title_cn": "正在找房子", "title_en": "I'm looking for an apartment",
+  "sections": [
+    {"type":"words","heading":"アパート／マンションのチラシの情報","items":[
+      {"jp":"チラシ／びら","en":"leaflet","cn":"广告单"},
+      {"jp":"賃貸アパート","en":"a rental apartment","cn":"出租公寓"},
+      {"jp":"家賃","en":"monthly rent","cn":"房租"},
+      {"jp":"管理費","en":"caretaker fee","cn":"管理费"},
+      {"jp":"無料／ただ","en":"free","cn":"免费","rel":"⇔有料 not free 收费"},
+      {"jp":"徒歩5分","en":"a five-minute walk","cn":"步行5分钟"},
+      {"jp":"3階建て","en":"a three story building","cn":"3层建筑"},
+      {"jp":"南向き","en":"faces south","cn":"朝南"},
+      {"jp":"築10年","en":"built 10 years ago","cn":"建筑10年"},
+      {"jp":"自転車置き場","en":"a bicycle parking lot","cn":"放自行车的地方"},
+      {"jp":"マンション","en":"Rather high-class apartment. May be available for rental or purchase.","cn":"感觉比较高级的公寓，有出售和出租。"},
+      {"jp":"敷金","en":"Key money deposited with the owner as a guarantee when the contract is first taken out.","cn":"租房时向房主预付的押金。签订合同时先付给房主的保证金"},
+      {"jp":"礼金","en":"One time payment to the owner when you rent an apartment or house. In some cases this payment isn't required.","cn":"租房时一次性付给房东的谢礼。也有不付的情况"},
+      {"jp":"1DK","reading":"ワンディーケー","en":"L: living room D: dining K: kitchen. Number: number of rooms other than LDK","cn":"L：起居室，D：餐厅，K：厨房，数字：表示LDK以外的房间数"},
+      {"jp":"2LDK","reading":"ニーエルディーケー","en":"see 1DK","cn":"同上"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"広々（と）している","en":"spacious","cn":"宽敞、宽阔"},
+      {"jp":"一軒家／一戸建て","en":"a house","cn":"独门独户的房子、单栋住宅"},
+      {"jp":"ながめがいい","en":"have a good view","cn":"景致优美、眺望好"},
+      {"jp":"物干し","en":"a clothesline","cn":"晒衣处、晾晒台"},
+      {"jp":"日当たりがいい","en":"gets a lot of sunlight","cn":"光照好、日照充足"},
+      {"jp":"風呂場","en":"a bathroom","cn":"浴室"},
+      {"jp":"人通りが多い","en":"street with lots of pedestrians","cn":"来往行人多"},
+      {"jp":"洗面所","en":"a washroom","cn":"盥洗室、洗脸间"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"一人暮らし","en":"live alone","cn":"一个人生活"},
+      {"jp":"この辺り","en":"around here","cn":"这一带"},
+      {"jp":"一人住まい","en":"live alone","cn":"独自生活"},
+      {"jp":"この付近","en":"around here","cn":"这附近"},
+      {"jp":"近所付き合い","en":"relations with neighbors","cn":"邻里交往"},
+      {"jp":"真ん前","en":"right in front of ...","cn":"正前方、对面"},
+      {"jp":"彼と付き合う","en":"go out with a man","cn":"和他交往（谈朋友）"},
+      {"jp":"真後ろ","en":"right behind ...","cn":"正后方、正后面"},
+      {"jp":"友達に付き合う","en":"go along with a friend","cn":"和朋友交往"},
+      {"jp":"真ん中","en":"right in the middle","cn":"正中间"},
+      {"jp":"引っ越しの荷造りをする","en":"pack up for a move","cn":"搬家打包、打行李"},
+      {"jp":"斜め前","en":"kitty corner to the right (left)","cn":"斜前方"},
+      {"jp":"回覧板を回す","en":"send a bulletin around to the neighbors","cn":"传阅回览板"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.15",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"私は10階（a. 建て　b. 建ち）のマンションに住んでいます。"},
+        {"n":2,"q":"引っ越ししてから（a. 荷造り　b. 近所付き合い）が大変になった。"},
+        {"n":3,"q":"ベランダには（a. 物干し　b. 洗面所）も付いているからよかった。"},
+        {"n":4,"q":"友達に付き（a. 合って　b. 回って）買い物に行った。"},
+        {"n":5,"q":"（a. 礼金　b. 敷金）は後で返してくれることになっている。"},
+        {"n":6,"q":"近くに大学があるので、このアパートには（a. 一人住まい　b. 人通り）が多い。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"ベランダから見る外の（　　）は最高です。","opts":["辺り","日当たり","住まい","ながめ"]},
+        {"n":8,"q":"ぼくは、教室でいつもリンさんの（　　）に座っている。","opts":["直後","直後ろ","真後ろ","真ん後ろ"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②b ③a ④a ⑤b ⑥a　Ⅱ：⑦4 ⑧3"
+  },
+  "hitokoto": "引っ越しの荷造りは大変ですね。"
+}

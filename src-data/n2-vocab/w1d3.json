@@ -1,0 +1,49 @@
+{
+  "week": 1, "day": 3, "title": "友人を招きました", "title_cn": "邀请了朋友", "title_en": "I've invited my friends",
+  "sections": [
+    {"type":"words","heading":"いろいろなあいさつ","items":[
+      {"jp":"よくいらっしゃいました。どうぞおあがりください。","en":"Welcome! Please come in.","cn":"欢迎光临。请进，快请进。"},
+      {"jp":"おじゃまします。","en":"Thank you.","cn":"打扰了。"},
+      {"jp":"ご無沙汰しています。お元気で（いらっしゃいま）したか。","en":"It has been a long time since we saw each other. How have you been?","cn":"好久不见了。您身体好吧。"},
+      {"jp":"ええ、おかげさまで。","en":"Quite well, thank you.","cn":"嗯，托您的福。"},
+      {"jp":"つまらないものですが……。","en":"I have something to give to you. I hope you will like it.","cn":"一点小意思……保存不成敬意。","note":"人にお土産などをあげるときの謙遜した言い方。"},
+      {"jp":"ありがとうございます。遠慮なくいただきます。","en":"Thank you very much. It is very kind of you.","cn":"谢谢。那我就不客气收下了。"},
+      {"jp":"お茶をお持ちします。","en":"I will bring you a cup of tea.","cn":"我去倒茶。"},
+      {"jp":"どうぞおかまいなく。","en":"Please don't worry.","cn":"您别张罗了、不用麻烦了。"},
+      {"jp":"ゆっくりしていってください。","en":"Please stay as long as you can.","cn":"请多坐会儿。"},
+      {"jp":"ごゆっくりお召し上がりください。","en":"Please enjoy.","cn":"请慢用。","note":"レストランなどでよく聞く表現。"}
+    ]},
+    {"type":"words","heading":"もっと おぼえましょう","items":[
+      {"jp":"友人を家に招く／招待する","en":"invite friends to your home","cn":"招待朋友来家里"},
+      {"jp":"座り心地がいいソファー","en":"a comfortable sofa","cn":"坐着舒服的沙发"},
+      {"jp":"寝心地がいいベッド","en":"a comfortable bed","cn":"睡着舒服的床"},
+      {"jp":"居心地がいい家","en":"a comfortable house","cn":"舒适的家"},
+      {"jp":"家で過ごす","en":"stay home","cn":"在家过、待在家里"},
+      {"jp":"ゆっくりする","en":"have a leisurely time","cn":"不着急、慢慢来"},
+      {"jp":"のんびりする","en":"relax","cn":"悠闲自得"},
+      {"jp":"くつろぐ","en":"relax／make yourself at home","cn":"放松、身心舒畅"},
+      {"jp":"快適に暮らす","en":"have a comfortable life","cn":"舒适地生活"},
+      {"jp":"半額セール","en":"a half price sale","cn":"半价促销"},
+      {"jp":"手ごろな価格","en":"an affordable price","cn":"合适的价格"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.19",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"大きいソファーがあって、とても（a. 座り心地　b. 居心地）がいい部屋ですね。"},
+        {"n":2,"q":"昨日は家でゆっくり（a. くつろいだ　b. 暮らした）。"},
+        {"n":3,"q":"遠いところまで（a. ゆっくりしていってください　b. よくいらっしゃいました）。"},
+        {"n":4,"q":"田中さんの誕生パーティーに（a. 付き合われた　b. まねかれた）。"},
+        {"n":5,"q":"どうぞ（a. ゆっくりして　b. 過ごして）いってください。"},
+        {"n":6,"q":"当店は（a. お買い得な　b. お手ごろな）お値段のランチを用意しております。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"去年の夏、1週間ほど北海道の友人の家で（　　）。","opts":["暮らした","招かれた","過ごした","おじゃました"]},
+        {"n":8,"q":"（　　）価格のソファーを探しています。","opts":["手ごろな","のんびりした","くつろいだ","座り心地のいい"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②a ③b ④b ⑤a ⑥b　Ⅱ：⑦3 ⑧1"
+  },
+  "hitokoto": "快適に暮らしましょう。"
+}

@@ -14,6 +14,7 @@ GSRC = os.path.join(SRC, "n3-grammar")
 VSRC = os.path.join(SRC, "n3-vocab")
 N2SRC = os.path.join(SRC, "n2-grammar")
 KSRC = os.path.join(SRC, "n3-kanji")
+V2SRC = os.path.join(SRC, "n2-vocab")
 TEMPLATE = os.path.join(HERE, "template.html")
 OUT_DIR = os.path.join(HERE, "public")
 OUT = os.path.join(OUT_DIR, "index.html")
@@ -148,6 +149,8 @@ def annotate_v(day):
     if day.get("dialog"):
         day["dialog"]["lines_r"] = rlist(day["dialog"].get("lines", []))
     for s in day.get("sections") or []:
+        if s.get("pattern"):
+            s["pattern_r"] = ruby(s["pattern"])
         for it in s.get("items", []):
             it["jp_r"] = ruby(it.get("jp", ""))
             if it.get("rel"):
@@ -171,6 +174,13 @@ def annotate_v(day):
             if it.get("opts"):
                 it["opts_r"] = rlist(it["opts"])
     return day
+
+def count_weeks(folder):
+    """Auto-detect how many complete weeks (7 day files each) exist, starting from week 1."""
+    n = 0
+    while all(os.path.exists(os.path.join(folder, f"w{n+1}d{d}.json")) for d in range(1, 8)):
+        n += 1
+    return n
 
 def load_days(folder, weeks, annotate):
     out = []
@@ -215,16 +225,18 @@ def main():
 
     vweeks = load_days(VSRC, 6, annotate_v)
     n2weeks = load_days(N2SRC, 8, annotate_g)
-    kweeks = load_days(KSRC, 1, annotate_k)  # N3汉字: only week 1 extracted so far, bump as more weeks are added
+    kweeks = load_days(KSRC, count_weeks(KSRC), annotate_k)  # N3汉字: auto-detects how many weeks are extracted so far
     for w in kweeks:
         d1 = w["days"][0]
         w["title"], w["title_cn"] = d1.get("theme", ""), d1.get("theme_cn", "")
+    v2weeks = load_days(V2SRC, count_weeks(V2SRC), annotate_v)  # N2词汇: auto-detects how many weeks are extracted so far
 
     data = {
         "grammar": {"weeks": gweeks, "besatsu": besatsu, "reference": reference, "contrast": contrast},
         "kanji": {"weeks": kweeks},
         "vocab": {"weeks": vweeks},
         "n2grammar": {"weeks": n2weeks},
+        "n2vocab": {"weeks": v2weeks},
     }
     blob = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
 

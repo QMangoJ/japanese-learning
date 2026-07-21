@@ -1,0 +1,48 @@
+{
+  "week": 1, "day": 6, "title": "お金を使いすぎました", "title_cn": "花钱花多了", "title_en": "I've spent too much money",
+  "sections": [
+    {"type":"words","heading":"","items":[
+      {"jp":"銀行でお金を下ろす／引き出す","en":"withdraw some money from your account","cn":"在银行取钱","rel":"⇔預ける put money in a bank account 存款"},
+      {"jp":"銀行口座","en":"bank account","cn":"银行账户"},
+      {"jp":"自動で引き落とされる","en":"be paid by automatic bank transfer","cn":"自动划账"},
+      {"jp":"授業料を払い込む","en":"pay tuition fees with a bank transfer","cn":"缴纳学费"},
+      {"jp":"家賃を振り込む","en":"transfer a monthly rent","cn":"转账汇入房租","rel":"振込(N) bank transfer 转账汇款"},
+      {"jp":"公共料金を支払う","en":"pay the utility charges","cn":"缴公共费用","rel":"支払い(N) payment 支付／＊公共料金＝電気代、ガス代、水道代、電話代など 电费、煤气费、水费、电话费等"},
+      {"jp":"手数料がかかる","en":"a bank charge","cn":"花费手续费"},
+      {"jp":"収入","en":"income／revenue","cn":"收入","rel":"⇔支出 expenditure 支出"},
+      {"jp":"赤字","en":"deficit／in the red","cn":"赤字","rel":"⇔黒字 profits／in the black 盈余"},
+      {"jp":"外食する","en":"eat out","cn":"在外就餐","rel":"⇔自炊する cook one's own meals 自己做饭"},
+      {"jp":"高くつく","en":"costly","cn":"花费高（本想花低价，结果适得其反）"},
+      {"jp":"栄養がかたよる","en":"a poor diet","cn":"营养失调"},
+      {"jp":"バランスが取れた食事","en":"a balanced meal","cn":"均衡的饮食"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"生活費が不足する","en":"run out of spending money","cn":"生活费不足"},
+      {"jp":"ぜいたくをする","en":"splurge","cn":"奢侈享受"},
+      {"jp":"食費を節約する","en":"economize on food expenses","cn":"节约餐饮费"},
+      {"jp":"むだづかいをする","en":"waste money","cn":"浪费"},
+      {"jp":"旅行する余裕がない","en":"have no extra money for travelling","cn":"没有多余的钱去旅行"},
+      {"jp":"むだを省く","en":"eliminate waste","cn":"避免浪费"},
+      {"jp":"収入につりあう生活","en":"affordable lifestyle","cn":"和收入相符的生活"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.26",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"銀行に（a. 預けてある　b. 振り込んである）お金が減ってきた。"},
+        {"n":2,"q":"電気代を（a. 不足　b. 節約）するためにエアコンを止めた。"},
+        {"n":3,"q":"毎日レストランへ行くのは（a. ぜいたくだ　b. 余裕がない）と思う。"},
+        {"n":4,"q":"今月分の家賃の（a. 支払い　b. 支出）を済ませた。"},
+        {"n":5,"q":"電話代が口座から（a. 下された　b. 引き落とされた）。"},
+        {"n":6,"q":"彼は（a. かたよった　b. つりあった）考え方をしている。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"外食は高く（　　）から、できるだけ自炊をしましょう。","opts":["する","とる","でる","つく"]},
+        {"n":8,"q":"今月は赤字だから、コンサートや映画に（　　）余裕がない。","opts":["行く","行くことの","行けば","行くという"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②b ③a ④a ⑤b ⑥a　Ⅱ：⑦4 ⑧1"
+  },
+  "hitokoto": "収入につりあう生活をしましょう。"
+}

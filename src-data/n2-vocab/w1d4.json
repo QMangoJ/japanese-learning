@@ -1,0 +1,63 @@
+{
+  "week": 1, "day": 4, "title": "家事・子育ては大変です", "title_cn": "家务、养育孩子很辛苦", "title_en": "Housework and child rearing are very hard work",
+  "sections": [
+    {"type":"words","heading":"","items":[
+      {"jp":"家事をする","en":"do housework","cn":"做家务、干家务活"},
+      {"jp":"食卓を片付ける","en":"clear the table","cn":"收拾餐桌"},
+      {"jp":"汚れた食器","en":"dirty dishes","cn":"脏了的餐具"},
+      {"jp":"子育てをする","en":"raise a child","cn":"养育孩子"},
+      {"jp":"子どもをかわいがる","en":"love your child","cn":"疼爱孩子"},
+      {"jp":"子どもを甘やかす","en":"spoil your child","cn":"溺爱孩子"},
+      {"jp":"子どもをしつける","en":"teach manners to a child","cn":"教育孩子（管教礼节）"},
+      {"jp":"お尻をたたく","en":"spank","cn":"打屁股"},
+      {"jp":"怒鳴る","en":"yell","cn":"吼、大声呵斥"},
+      {"jp":"よす","en":"(=やめる) stop","cn":"作罢、算了","rel":"◆この話はよそう。Let's stop talking about it. 別说这话了。／よしなさい。／よせ。 Stop it. 别这样。"},
+      {"jp":"妊娠する","en":"get pregnant","cn":"怀孕"},
+      {"jp":"子どもを産む","en":"give birth to a baby","cn":"生孩子"},
+      {"jp":"赤ちゃんをおんぶする／おぶう","en":"carry a baby on your back","cn":"背着孩子"},
+      {"jp":"おむつを換える／当てる","en":"change a diaper／put a diaper on the baby","cn":"换尿布／戴尿布"},
+      {"jp":"炊事","en":"cooking","cn":"做饭、炊事"},
+      {"jp":"洗い物を流しに持っていく","en":"take the dirty dishes to the sink","cn":"把要洗的东西拿到水池"},
+      {"jp":"育児","en":"child rearing","cn":"育儿"},
+      {"jp":"子どもが甘える","en":"a child wanting more attention","cn":"孩子撒娇"},
+      {"jp":"しつけ","en":"discipline／manners","cn":"教养、管教"},
+      {"jp":"生まれる","en":"be born","cn":"出生、诞生"},
+      {"jp":"（腕に）だっこする／抱く","en":"pick the baby/pet up","cn":"抱（在怀里）"},
+      {"jp":"紙おむつ","en":"disposable diaper","cn":"纸尿布"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"やんちゃな子ども","en":"a mischievous child","cn":"调皮的孩子"},
+      {"jp":"落書きをする","en":"scribble","cn":"乱涂乱写"},
+      {"jp":"いたずらをする","en":"get into mischief","cn":"调皮捣蛋"},
+      {"jp":"暴れる","en":"get out of control","cn":"乱闹、胡闹"},
+      {"jp":"さわぐ","en":"make merry","cn":"喧闹、吵闹"},
+      {"jp":"頭をぶつ","en":"bump your head on ...","cn":"打脑袋"},
+      {"jp":"そうぞうしい","en":"noisy","cn":"喧闹的"},
+      {"jp":"顔をなぐる","en":"punch someone in the face","cn":"打脸"},
+      {"jp":"やかましい","en":"noisy","cn":"吵闹的"},
+      {"jp":"足でける","en":"kick","cn":"用脚踢"},
+      {"jp":"にぎやかな","en":"lively","cn":"热闹的"},
+      {"jp":"猫の耳を引っ張る","en":"pull a cat's ear","cn":"拽猫的耳朵"},
+      {"jp":"動物をいじめる","en":"be cruel to an animal","cn":"欺负动物"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.21",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"お母さんが赤ちゃんを背中に（a. だっこ　b. おんぶ）している。"},
+        {"n":2,"q":"サッカーボールを足で（a. なぐった　b. けった）。"},
+        {"n":3,"q":"子どもが注射をいやがって（a. あばれている　b. ぶっている）。"},
+        {"n":4,"q":"食べたあとの、洗い物を（a. 洗濯機　b. 流し）に持っていきなさい。"},
+        {"n":5,"q":"爪をかむのは（a. よしなさい　b. たたきなさい）。"},
+        {"n":6,"q":"父に大声で（a. なぐられた　b. どなられた）。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"5歳の息子はいつも（　　）ばかりしている。","opts":["しつけ","いじめ","おしめ","いたずら"]},
+        {"n":8,"q":"子どもを（　　）ように育てるのは難しいです。","opts":["なぐらない","あまやかさない","いじめない","しつけない"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②b ③a ④b ⑤a ⑥b　Ⅱ：⑦4 ⑧2"
+  },
+  "hitokoto": "子どもを甘やかさないようにしましょう。"
+}

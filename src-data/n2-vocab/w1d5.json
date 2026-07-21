@@ -1,0 +1,51 @@
+{
+  "week": 1, "day": 5, "title": "夏休みを海で過ごしています", "title_cn": "在海边度暑假", "title_en": "I'm spending my summer holiday on the beach",
+  "sections": [
+    {"type":"words","heading":"","items":[
+      {"jp":"海水浴に行く","en":"go swimming in the ocean","cn":"去海水浴场"},
+      {"jp":"日光浴をする／太陽の光を浴びる","en":"sunbathe／stay in the sun","cn":"晒日光浴／晒太阳"},
+      {"jp":"日焼けする","en":"get a suntan","cn":"晒黑、晒太阳"},
+      {"jp":"肌が真っ黒になる","en":"get a sunburn","cn":"皮肤晒得漆黑"},
+      {"jp":"サングラスを外す","en":"take off your sunglasses","cn":"摘下太阳镜"},
+      {"jp":"サングラスのあとがついている","en":"get a tan mark from your sunglasses","cn":"有戴墨镜留下的印痕"},
+      {"jp":"汗をかく","en":"sweat","cn":"出汗"},
+      {"jp":"シャワーを浴びる","en":"take a shower","cn":"淋浴"},
+      {"jp":"真っ暗な部屋","en":"a pitch black room","cn":"漆黑的房间"},
+      {"jp":"ボタンを外す","en":"unbutton","cn":"解开扣子"},
+      {"jp":"海にもぐる","en":"dive into the ocean","cn":"潜入海中"},
+      {"jp":"おぼれる","en":"almost drown","cn":"溺水"},
+      {"jp":"ロープをつかむ","en":"grab a rope","cn":"抓住绳子"},
+      {"jp":"ロープにつかまる","en":"hang onto a rope","cn":"抓紧绳子"},
+      {"jp":"魚を捕まえる","en":"catch fish","cn":"捕鱼、抓鱼","rel":"（〜が）捕まる be caught 被捕"},
+      {"jp":"魚をつる","en":"fish","cn":"钓鱼","rel":"棚をつる put up a shelf 挂吊板"},
+      {"jp":"魚が網に引っかかる","en":"catch fish with a net","cn":"鱼被网兜住了","rel":"詐欺に引っかかる get conned 被诈骗／（〜を）引っかける hook 挂、钩住"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"ボートをこぐ","en":"row a boat","cn":"划船","rel":"自転車をこぐ ride a bicycle 蹬自行车"},
+      {"jp":"ボートがひっくり返る","en":"a boat tipped over","cn":"船翻了","rel":"（〜を）ひっくり返す overturn 把……弄翻"},
+      {"jp":"ボートの行方","en":"the whereabouts of the boat","cn":"船的去处","rel":"行方不明 go missing 下落不明"},
+      {"jp":"船を岸に近づける","en":"take a boat into the shore","cn":"把船靠岸","rel":"サメが近づく／近寄る a shark coming close 鲨鱼靠近了"},
+      {"jp":"あちこち／あちらこちらへ行く","en":"go all over the place","cn":"四处走"},
+      {"jp":"うまそうな（＝おいしそうな）えさ","en":"tempting bait","cn":"看上去很美味的饲料","rel":"⇔まずそう looks bad 看上去不好吃","note":"「おいしい」という意味の「うまい」は男性がよく使う。"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.23",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"この自転車は古いので（a. かく　b. こぐ）と変な音がする。"},
+        {"n":2,"q":"泥棒が（a. つかまれた　b. つかまえられた）。"},
+        {"n":3,"q":"電気が消えて（a. 真っ暗　b. 真っ黒）になった。"},
+        {"n":4,"q":"「あ、大変だ！　あそこで子どもが（a. もぐっている　b. おぼれている）。」"},
+        {"n":5,"q":"食べてみたら、（a. まずかった　b. うまそうだった）。"},
+        {"n":6,"q":"祖父が振り込め詐欺に（a. 引っかけて　b. 引っかかって）しまった。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"その犬にあまり（　　）とかまれるよ。","opts":["近づける","近寄る","あばれる","つかまる"]},
+        {"n":8,"q":"コーヒーカップを（　　）しまった。","opts":["はずして","おぼれて","引っかかって","ひっくり返して"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②b ③a ④b ⑤a ⑥b　Ⅱ：⑦2 ⑧4"
+  },
+  "hitokoto": "肌は焼きすぎないように注意しましょう。"
+}
