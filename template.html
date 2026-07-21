@@ -31,8 +31,8 @@ header.top h1{font-size:16px;margin:0;font-weight:700;flex:1;white-space:nowrap;
 .levelbar button.on{background:var(--blue);border-color:var(--blue);color:#fff}
 .typebar{display:flex;gap:6px;justify-content:center;padding:0 14px 8px}
 .typebar button{flex:1;max-width:170px;border:1px solid var(--line);background:var(--bg);color:var(--sub);border-radius:999px;padding:6px 0;font-size:14px;font-weight:700;cursor:pointer}
-.langbar{display:flex;gap:6px;justify-content:center;padding:0 14px 8px}
-.langbar button{border:1px solid var(--line);background:var(--bg);color:var(--sub);border-radius:999px;padding:4px 18px;font-size:13px;font-weight:700;cursor:pointer}
+.langbar{display:flex;gap:4px;flex:none}
+.langbar button{border:1px solid var(--line);background:var(--bg);color:var(--sub);border-radius:999px;padding:4px 10px;font-size:12px;font-weight:700;cursor:pointer}
 .langbar button.on{background:var(--accent);border-color:var(--accent);color:#fff}
 .typebar button.on{background:var(--accent);border-color:var(--accent);color:#fff}
 main{max-width:760px;margin:0 auto;padding:14px}
@@ -198,6 +198,10 @@ body.no-ruby rt{display:none}
 <header class="top">
   <button class="back" id="backBtn" style="visibility:hidden">‹ 返回</button>
   <h1 id="title">N3 学习助手</h1>
+  <div class="langbar" id="langbar">
+    <button data-lang="cn">中文</button>
+    <button data-lang="en">EN</button>
+  </div>
   <button class="toggle-all" id="topAction" style="display:none"></button>
 </header>
 <div class="modewrap">
@@ -210,20 +214,16 @@ body.no-ruby rt{display:none}
     <button data-ty="vocab">📗 词汇</button>
     <button data-ty="kanji">📙 汉字</button>
   </div>
-  <div class="langbar" id="langbar">
-    <button data-lang="cn">中文</button>
-    <button data-lang="en">English</button>
-  </div>
 </div>
 </div>
 <main id="app"></main>
 <nav class="bottom">
-  <button data-nav="home"><span class="ic">📚</span>周目录</button>
-  <button data-nav="search"><span class="ic">🔍</span>搜索</button>
-  <button data-nav="cards"><span class="ic">🗂️</span>记忆卡</button>
-  <button data-nav="favs"><span class="ic">⭐</span>收藏</button>
-  <button data-nav="contrast" id="navContrast"><span class="ic">🔀</span>辨析</button>
-  <button data-nav="ref" id="navRef"><span class="ic">📖</span>接续表</button>
+  <button data-nav="home"><span class="ic">📚</span><span class="lbl" data-cn="周目录" data-en="Weeks">周目录</span></button>
+  <button data-nav="search"><span class="ic">🔍</span><span class="lbl" data-cn="搜索" data-en="Search">搜索</span></button>
+  <button data-nav="cards"><span class="ic">🗂️</span><span class="lbl" data-cn="记忆卡" data-en="Flashcards">记忆卡</span></button>
+  <button data-nav="favs"><span class="ic">⭐</span><span class="lbl" data-cn="收藏" data-en="Favorites">收藏</span></button>
+  <button data-nav="contrast" id="navContrast"><span class="ic">🔀</span><span class="lbl" data-cn="辨析" data-en="Contrast">辨析</span></button>
+  <button data-nav="ref" id="navRef"><span class="ic">📖</span><span class="lbl" data-cn="接续表" data-en="Reference">接续表</span></button>
 </nav>
 <script>
 const DATA = __DATA__;
@@ -235,7 +235,8 @@ try{ const l=localStorage.getItem('lang'); if(l==='en'||l==='cn') LANG=l; }catch
 const LX = (cn,en)=> (LANG==='en' && en) ? en : (cn||'');
 const CUR = ()=> ({vocab:V, n2grammar:G2, kanji:K, n2vocab:V2}[MODULE]) || G;
 const isGram = ()=> MODULE==='grammar'||MODULE==='n2grammar';
-const modLabel = ()=> ({grammar:'N3 语法', n2grammar:'N2 语法', vocab:'N3 词汇', kanji:'N3 汉字', n2vocab:'N2 词汇'})[MODULE];
+const MODLABELS = {grammar:['N3 语法','N3 Grammar'], n2grammar:['N2 语法','N2 Grammar'], vocab:['N3 词汇','N3 Vocabulary'], kanji:['N3 汉字','N3 Kanji'], n2vocab:['N2 词汇','N2 Vocabulary']};
+const modLabel = ()=> LX(...MODLABELS[MODULE]);
 
 const $ = s=>document.querySelector(s);
 const app=$('#app'), titleEl=$('#title'), backBtn=$('#backBtn'), topAction=$('#topAction');
@@ -306,6 +307,7 @@ function syncModeBar(){
   $('#navRef').style.display = MODULE==='grammar'?'':'none';
   $('#navContrast').style.display = MODULE==='grammar'?'':'none';
   document.querySelectorAll('#langbar button').forEach(b=>b.classList.toggle('on', b.dataset.lang===LANG));
+  document.querySelectorAll('.lbl[data-cn]').forEach(el=>{ el.textContent = LX(el.dataset.cn, el.dataset.en); });
 }
 function setModule(m){
   MODULE=m; try{ localStorage.setItem('module',m); }catch(e){}
@@ -379,10 +381,16 @@ function render(){
 /* ---------- home ---------- */
 function viewHome(){
   setNav('home'); setHeader(modLabel(), false);
-  const book = {grammar:'考前对策 N3语法', n2grammar:'考前对策 N2语法', vocab:'考前对策 N3词汇', kanji:'考前对策 N3汉字', n2vocab:'考前对策 N2词汇'}[MODULE];
-  const kind = (MODULE==='vocab'||MODULE==='n2vocab')?'词汇':(MODULE==='kanji'?'汉字':'语法');
+  const book = LX(
+    {grammar:'考前对策 N3语法', n2grammar:'考前对策 N2语法', vocab:'考前对策 N3词汇', kanji:'考前对策 N3汉字', n2vocab:'考前对策 N2词汇'}[MODULE],
+    {grammar:'JLPT Prep N3 Grammar', n2grammar:'JLPT Prep N2 Grammar', vocab:'JLPT Prep N3 Vocabulary', kanji:'JLPT Prep N3 Kanji', n2vocab:'JLPT Prep N2 Vocabulary'}[MODULE]
+  );
+  const kind = LX(
+    (MODULE==='vocab'||MODULE==='n2vocab')?'词汇':(MODULE==='kanji'?'汉字':'语法'),
+    (MODULE==='vocab'||MODULE==='n2vocab')?'vocabulary':(MODULE==='kanji'?'kanji':'grammar')
+  );
   const weeks = CUR().weeks;
-  const intro = `《${book}》 · ${weeks.length} 周 × 7 天 · 点击进入每日${kind}`;
+  const intro = LX(`《${book}》 · ${weeks.length} 周 × 7 天 · 点击进入每日${kind}`, `${book} · ${weeks.length} weeks × 7 days · Tap to open each day's ${kind}`);
   let html = `<div class="home-top"><div class="meta" style="margin-bottom:10px">${intro}</div>` +
     (weeks.length>3 ? `<div class="wk-toc">${weeks.map(w=>`<a class="wk-tocitem" data-scroll="wk-${w.n}">第${w.n}周</a>`).join('')}</div>` : '') +
     `</div>`;
@@ -425,7 +433,7 @@ function optsRow(it){
 function viewDay(w,d,scrollP){
   const day=findDay(w,d);
   if(!day){ app.innerHTML='<div class="empty">未找到</div>'; return; }
-  setNav('home'); setHeader(`第${w}週 ${d}日目`, true);
+  setNav('home'); setHeader(LX(`第${w}週 ${d}日目`, `Week ${w} Day ${d}`), true);
   if(isGram()) viewDayGrammar(day,w,d,scrollP);
   else if(MODULE==='kanji') viewDayKanji(day,w,d);
   else viewDayVocab(day,w,d);
@@ -629,7 +637,7 @@ function buildIndex(){
   return searchIndex;
 }
 function viewSearch(){
-  setNav('search'); setHeader('搜索（语法 + 词汇）', false);
+  setNav('search'); setHeader(LX('搜索（语法 + 词汇）','Search (Grammar + Vocabulary)'), false);
   const total=buildIndex().length;
   app.innerHTML = `<div class="search-box"><input id="q" type="search" placeholder="日文 / 假名 / 中文 / 英文，如：ばかり · 冰箱 · fridge" autocomplete="off"></div><div id="results"><div class="empty">共收录 ${total} 条（语法点 + 词汇）<br>结果标注所属模块，点击直达</div></div>`;
   const q=$('#q'), res=$('#results'); q.focus();
@@ -672,7 +680,7 @@ function buildDeck(week){
   return deck;
 }
 function viewCards(){
-  setNav('cards'); setHeader('记忆卡 · '+modLabel(), false);
+  setNav('cards'); setHeader(LX('记忆卡','Flashcards')+' · '+modLabel(), false);
   if(!fc.deck.length){ fc.deck=buildDeck(fc.week); fc.idx=0; fc.flipped=false; }
   const nWeeks=CUR().weeks.length;
   const filt=[0].concat(Array.from({length:nWeeks},(_,i)=>i+1)).map(n=>`<button class="${fc.week===n?'on':''}" data-fcweek="${n}">${n===0?'全部':'第'+n+'週'}</button>`).join('');
@@ -722,7 +730,7 @@ window.fcShuffle=()=>{ fc.deck=buildDeck(fc.week); fc.idx=0; fc.flipped=false; v
 /* ---------- favorites (收藏 / 生词本) ---------- */
 let favDeck=[], favIdx=0, favFlip=false;
 function viewFavs(){
-  setNav('favs'); setHeader('我的收藏 · 生词本', false);
+  setNav('favs'); setHeader(LX('我的收藏 · 生词本','My Favorites · Word Book'), false);
   const ids=Object.keys(FAV);
   if(!ids.length){ app.innerHTML='<div class="empty">还没有收藏。<br>在语法点或单词右侧点 ☆ 即可加入生词本。</div>'; return; }
   const tagMap={grammar:'<span class="mtag g">N3语法</span>', n2grammar:'<span class="mtag g2">N2语法</span>', vocab:'<span class="mtag v">N3词汇</span>', kanji:'<span class="mtag k">N3汉字</span>', n2vocab:'<span class="mtag v2">N2词汇</span>'};
@@ -740,7 +748,7 @@ function viewFavs(){
 function startFavFc(){ favDeck=Object.values(FAV).map(s=>({jp:s.jp,cn:s.cn})); for(let i=favDeck.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [favDeck[i],favDeck[j]]=[favDeck[j],favDeck[i]]; } favIdx=0; favFlip=false; renderFavFc(); }
 function renderFavFc(){
   if(!favDeck.length){ viewFavs(); return; }
-  setNav('favs'); setHeader('收藏 · 闪卡', false);
+  setNav('favs'); setHeader(LX('收藏 · 闪卡','Favorites · Flashcards'), false);
   const c=favDeck[favIdx];
   const card = favFlip
     ? `<div class="fcard" data-favflip><div class="backside" style="text-align:center"><div class="jp" style="font-weight:700;font-size:24px">${esc(c.jp)} ${sayBtn(c.jp)}</div>${c.cn?`<div style="font-size:18px;margin-top:12px">${esc(c.cn)}</div>`:''}</div></div>`
@@ -751,7 +759,7 @@ function renderFavFc(){
 
 /* ---------- contrast (语法辨析, N3 grammar only) ---------- */
 function viewContrast(){
-  setNav('contrast'); setHeader('语法辨析 · N3', false);
+  setNav('contrast'); setHeader(LX('语法辨析 · N3','Grammar Contrast · N3'), false);
   const C = G.contrast || {groups:[]};
   const groups = C.groups||[];
   const toc = groups.map((g,i)=>`<a class="ct-tocitem" data-scroll="ct-g-${i}">${esc(g.title)}</a>`).join('');
