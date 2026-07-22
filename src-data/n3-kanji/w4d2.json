@@ -1,0 +1,67 @@
+{
+  "week": 4, "day": 2, "theme": "かう", "theme_cn": "买", "theme_en": "Buy",
+  "title": "広告メール", "title_cn": "广告邮件", "title_en": "Ad Mail",
+  "kanji": [
+    {"n":179,"char":"告","strokes":7,"readings":["コク"],"words":[
+      {"jp":"広告","reading":"こうこく","en":"an advertisement","cn":"广告"}
+    ]},
+    {"n":180,"char":"利","strokes":7,"readings":["リ"],"words":[
+      {"jp":"便利(な)","reading":"べんり","en":"convenient","cn":"方便"},
+      {"jp":"利用","reading":"りよう","en":"use","cn":"利用"}
+    ]},
+    {"n":181,"char":"割","strokes":12,"readings":["わーる","わーれる"],"words":[
+      {"jp":"割る","reading":"わる","en":"break","cn":"割、除"},
+      {"jp":"割れる","reading":"われる","en":"crack/cleave","cn":"裂开"},
+      {"jp":"割合","reading":"わりあい","en":"a ratio, a percentage","cn":"比例"},
+      {"jp":"割引","reading":"わりびき","en":"a discount","cn":"折扣"}
+    ]},
+    {"n":182,"char":"倍","strokes":10,"readings":["バイ"],"words":[
+      {"jp":"〜倍","reading":"ばい","en":"... times (quantity)","cn":"〜倍"}
+    ]},
+    {"n":183,"char":"値","strokes":10,"readings":["ね"],"words":[
+      {"jp":"値段","reading":"ねだん","en":"a price","cn":"价格"},
+      {"jp":"値上げ","reading":"ねあげ","en":"a price increase","cn":"提高价格"},
+      {"jp":"値下げ","reading":"ねさげ","en":"a price reduction","cn":"降低价格"}
+    ]},
+    {"n":184,"char":"商","strokes":11,"readings":["ショウ"],"words":[
+      {"jp":"商品","reading":"しょうひん","en":"goods","cn":"商品"},
+      {"jp":"商店","reading":"しょうてん","en":"a shop","cn":"商店"}
+    ]},
+    {"n":185,"char":"支","strokes":4,"readings":["シ"],"words":[
+      {"jp":"支店","reading":"してん","en":"a branch","cn":"分店"},
+      {"jp":"支社","reading":"ししゃ","en":"a branch office","cn":"分公司"}
+    ]},
+    {"n":186,"char":"払","strokes":5,"readings":["はらーう"],"words":[
+      {"jp":"払う","reading":"はらう","en":"pay","cn":"支付"},
+      {"jp":"支払い","reading":"しはらい","en":"a payment","cn":"付款"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.65（第3日末尾）",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"広告：商品などについての（a. お知らせ　b. お断り）"},
+        {"n":2,"q":"1割引：10%（a. 高くなる　b. 安くなる）こと"},
+        {"n":3,"q":"窓ガラスが（a. 割る　b. 割れる）。"},
+        {"n":4,"q":"この店の（a. 本店　b. 当店）は東京にある。"},
+        {"n":5,"q":"卵とスープは1：3の（a. 割合　b. 材料）にします。"},
+        {"n":6,"q":"毎度（a. ご利用　b. ご使用）ありがとうございます。"},
+        {"n":7,"q":"（a. お払い　b. お支払い）方法をおえらびください。"},
+        {"n":8,"q":"その町の観光客は前の年の（a. 3割　b. 3倍）に増加した。"}
+      ]},
+      {"type":"select","instruction":"正しい読みに〇をつけなさい。","items":[
+        {"n":9,"q":"値下げ","opts":["ねさげ","にさげ","ぬさげ","ちさげ"]},
+        {"n":10,"q":"商品","opts":["しゅうひん","せいひん","しょうひん","そうひん"]},
+        {"n":11,"q":"払う","opts":["あらう","わらう","はらう","ひろう"]},
+        {"n":12,"q":"倍","opts":["べい","ばい","まい","わり"]}
+      ]},
+      {"type":"select","instruction":"正しい漢字に〇をつけなさい。","items":[
+        {"n":13,"q":"べんり","opts":["便別","便判","便利","便刑"]},
+        {"n":14,"q":"ねだん","opts":["階段","値段","直段","相段"]},
+        {"n":15,"q":"ししゃ","opts":["冬社","友社","皮社","支社"]},
+        {"n":16,"q":"こうこく","opts":["広各","広告","広局","広格"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②b ③b ④a ⑤a ⑥a ⑦b ⑧b　Ⅱ：⑨1 ⑩3 ⑪3 ⑫2　Ⅲ：⑬3 ⑭2 ⑮4 ⑯2"
+  }
+}

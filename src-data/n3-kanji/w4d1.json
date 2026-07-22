@@ -1,0 +1,69 @@
+{
+  "week": 4, "day": 1, "theme": "かう", "theme_cn": "买", "theme_en": "Buy",
+  "title": "日用品", "title_cn": "日用品", "title_en": "Daily Necessities",
+  "kanji": [
+    {"n":171,"char":"砂","strokes":9,"readings":["サ","すな"],"words":[
+      {"jp":"砂糖","reading":"さとう","en":"sugar","cn":"砂糖"},
+      {"jp":"砂","reading":"すな","en":"sand","cn":"沙"}
+    ]},
+    {"n":172,"char":"塩","strokes":13,"readings":["エン","しお"],"words":[
+      {"jp":"食塩","reading":"しょくえん","en":"table salt","cn":"食盐"},
+      {"jp":"塩","reading":"しお","en":"salt","cn":"盐"}
+    ]},
+    {"n":173,"char":"油","strokes":8,"readings":["ユ","あぶら"],"words":[
+      {"jp":"しょう油","reading":"しょうゆ","en":"soy sauce","cn":"酱油"},
+      {"jp":"灯油","reading":"とうゆ","en":"kerosene","cn":"灯油"},
+      {"jp":"石油","reading":"せきゆ","en":"oil (petroleum)","cn":"石油"},
+      {"jp":"油","reading":"あぶら","en":"oil","cn":"油"}
+    ]},
+    {"n":174,"char":"緑","strokes":14,"readings":["リョク","みどり"],"words":[
+      {"jp":"緑茶","reading":"りょくちゃ","en":"green tea","cn":"绿茶"},
+      {"jp":"緑(色)","reading":"みどりいろ","en":"green","cn":"绿色"}
+    ]},
+    {"n":175,"char":"紅","strokes":9,"readings":["コウ","べに"],"words":[
+      {"jp":"紅茶","reading":"こうちゃ","en":"tea","cn":"红茶"},
+      {"jp":"口紅","reading":"くちべに","en":"lipstick","cn":"口红"}
+    ]},
+    {"n":176,"char":"冊","strokes":5,"readings":["サツ"],"words":[
+      {"jp":"〜冊","reading":"さつ","en":"counter for books","cn":"〜本、〜册"},
+      {"jp":"冊数","reading":"さっすう","en":"the number of copies","cn":"册数"}
+    ]},
+    {"n":177,"char":"個","strokes":10,"readings":["コ"],"words":[
+      {"jp":"〜個","reading":"こ","en":"counter of general objects","cn":"〜个"},
+      {"jp":"個人","reading":"こじん","en":"individual (person)","cn":"个人"},
+      {"jp":"個数","reading":"こすう","en":"the number of items","cn":"个数"}
+    ]},
+    {"n":178,"char":"枚","strokes":8,"readings":["マイ"],"words":[
+      {"jp":"〜枚","reading":"まい","en":"counter for flat objects","cn":"〜张"},
+      {"jp":"枚数","reading":"まいすう","en":"the number of sheets/copies","cn":"张数"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.63（第2日末尾）",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"灯油：（a. 料理　b. ヒーターなど）に使う油"},
+        {"n":2,"q":"個人：（a. ひとりひとりの　b. なくなった）人"},
+        {"n":3,"q":"口紅：（a. 食品　b. 化粧品）の一つ"},
+        {"n":4,"q":"食塩：料理（a. を入れる　b. に味をつける）もの"},
+        {"n":5,"q":"海岸で（a. 砂　b. 粉）遊びをする。"},
+        {"n":6,"q":"80円の切手を10（a. 枚　b. 部）ください。"},
+        {"n":7,"q":"1（a. 個　b. 固）200円のりんご"},
+        {"n":8,"q":"図書館で本を2（a. 本　b. 冊）借りました。"}
+      ]},
+      {"type":"select","instruction":"正しい読みに〇をつけなさい。","items":[
+        {"n":9,"q":"石油","opts":["とうゆ","しょうゆ","せきゆ","いしゆ"]},
+        {"n":10,"q":"砂糖","opts":["さとう","しゃとう","こしょう","こむぎ"]},
+        {"n":11,"q":"個人","opts":["ことな","こにん","こびと","こじん"]},
+        {"n":12,"q":"緑","opts":["みのり","みどり","みろり","みだり"]}
+      ]},
+      {"type":"select","instruction":"正しい漢字に〇をつけなさい。","items":[
+        {"n":13,"q":"こうちゃ","opts":["赤茶","黒茶","紅茶","黄茶"]},
+        {"n":14,"q":"あぶら","opts":["由","畑","柚","油"]},
+        {"n":15,"q":"しお","opts":["酢","塩","酒","乳"]},
+        {"n":16,"q":"ぶすう","opts":["冊数","部数","枚数","個数"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②a ③b ④b ⑤a ⑥a ⑦a ⑧b　Ⅱ：⑨3 ⑩1 ⑪4 ⑫2　Ⅲ：⑬3 ⑭4 ⑮2 ⑯2"
+  }
+}

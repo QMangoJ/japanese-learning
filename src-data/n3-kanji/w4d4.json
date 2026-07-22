@@ -1,0 +1,75 @@
+{
+  "week": 4, "day": 4, "theme": "かう", "theme_cn": "买", "theme_en": "Buy",
+  "title": "申込書", "title_cn": "申请书", "title_en": "Application Forms",
+  "kanji": [
+    {"n":195,"char":"申","strokes":5,"readings":["シン","もうーす"],"words":[
+      {"jp":"申し込む","reading":"もうしこむ","en":"apply","cn":"申请"},
+      {"jp":"申告","reading":"しんこく","en":"a declaration","cn":"申报"},
+      {"jp":"申す","reading":"もうす","en":"say (humble form)","cn":"（自谦）说、叫作"},
+      {"jp":"申込書","reading":"もうしこみしょ","en":"an application form","cn":"申请书"},
+      {"jp":"申請","reading":"しんせい","en":"application","cn":"申请"},
+      {"jp":"申し上げる","reading":"もうしあげる","en":"say (very humble form)","cn":"（自谦）说、说讲"}
+    ]},
+    {"n":196,"char":"記","strokes":10,"readings":["キ"],"words":[
+      {"jp":"記入","reading":"きにゅう","en":"entry","cn":"记入"},
+      {"jp":"記号","reading":"きごう","en":"a sign, a symbol","cn":"记号"},
+      {"jp":"日記","reading":"にっき","en":"a diary / journal","cn":"日记"},
+      {"jp":"記事","reading":"きじ","en":"an article","cn":"报道"}
+    ]},
+    {"n":197,"char":"例","strokes":8,"readings":["レイ","たとーえる"],"words":[
+      {"jp":"例","reading":"れい","en":"an example","cn":"例子"},
+      {"jp":"例えば","reading":"たとえば","en":"for example","cn":"例如"}
+    ]},
+    {"n":198,"char":"齢","strokes":17,"readings":["レイ"],"words":[
+      {"jp":"年齢","reading":"ねんれい","en":"age","cn":"年龄"},
+      {"jp":"高齢","reading":"こうれい","en":"old age","cn":"高龄"}
+    ]},
+    {"n":199,"char":"歳","strokes":13,"readings":["サイ"],"words":[
+      {"jp":"〜歳","reading":"さい","en":"... years old","cn":"〜岁"},
+      {"jp":"二十歳","reading":"にじゅっさい","en":"20 years old","cn":"二十岁"},
+      {"jp":"二十歳","reading":"はたち","en":"20 years old","cn":"二十岁"}
+    ]},
+    {"n":200,"char":"性","strokes":8,"readings":["セイ"],"words":[
+      {"jp":"性別","reading":"せいべつ","en":"sex/gender","cn":"性别"},
+      {"jp":"女性","reading":"じょせい","en":"woman","cn":"女性"},
+      {"jp":"性格","reading":"せいかく","en":"personality","cn":"性格"},
+      {"jp":"男性","reading":"だんせい","en":"man","cn":"男性"}
+    ]},
+    {"n":201,"char":"連","strokes":10,"readings":["レン","つーれる"],"words":[
+      {"jp":"連休","reading":"れんきゅう","en":"a holiday","cn":"连休"},
+      {"jp":"連れて行く","reading":"つれていく","en":"take someone to ...","cn":"带去"},
+      {"jp":"連れて来る","reading":"つれてくる","en":"bring someone to ...","cn":"带来"}
+    ]},
+    {"n":202,"char":"絡","strokes":12,"readings":["ラク"],"words":[
+      {"jp":"連絡","reading":"れんらく","en":"contact/connection","cn":"联络"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.69（第5日末尾）",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"連休：（a. 休日が続いている　b. 電車が止まっている）こと"},
+        {"n":2,"q":"記入：（a. 袋に入れる　b. 書き入れる）こと"},
+        {"n":3,"q":"祖父は（a. 高齢　b. 多齢）のため、一人で外出できません。"},
+        {"n":4,"q":"税金を（a. 申告　b. 申込）する。"},
+        {"n":5,"q":"犬を散歩に（a. 連れて行く　b. 持って行く）。"},
+        {"n":6,"q":"彼女はあまり仕事はできないが、（a. 性別　b. 性格）がいい。"},
+        {"n":7,"q":"新聞（a. 記事　b. 記号）を読む。"},
+        {"n":8,"q":"よろしくお願い（a. 申し上げます　b. 召し上がります）。"}
+      ]},
+      {"type":"select","instruction":"正しい読みに〇をつけなさい。","items":[
+        {"n":9,"q":"例えば","opts":["たたえば","とたえば","たとえば","こたえば"]},
+        {"n":10,"q":"申込書","opts":["しんこくしょ","もうしこみしょ","めしこみしょ","しんせいしょ"]},
+        {"n":11,"q":"年齢","opts":["れんれい","れんねい","ねんらい","ねんれい"]},
+        {"n":12,"q":"二十歳","opts":["はたち","はつか","はだち","ふつか"]}
+      ]},
+      {"type":"select","instruction":"正しい漢字に〇をつけなさい。","items":[
+        {"n":13,"q":"れんらく","opts":["連格","運格","連絡","運絡"]},
+        {"n":14,"q":"きごう","opts":["信号","番号","記号","暗号"]},
+        {"n":15,"q":"にっき","opts":["日記","日時","日付","日気"]},
+        {"n":16,"q":"だんせい","opts":["個性","女性","中性","男性"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②b ③a ④b ⑤b ⑥b ⑦a ⑧b　Ⅱ：⑨3 ⑩2 ⑪4 ⑫1　Ⅲ：⑬3 ⑭3 ⑮1 ⑯4"
+  }
+}

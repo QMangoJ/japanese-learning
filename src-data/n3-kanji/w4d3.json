@@ -1,0 +1,70 @@
+{
+  "week": 4, "day": 3, "theme": "かう", "theme_cn": "买", "theme_en": "Buy",
+  "title": "通信販売", "title_cn": "网络（电话）购物", "title_en": "Mail-Order Sales",
+  "kanji": [
+    {"n":187,"char":"米","strokes":6,"readings":["ベイ","こめ"],"words":[
+      {"jp":"米国","reading":"べいこく","en":"the United States of America","cn":"美国"},
+      {"jp":"米","reading":"こめ","en":"rice","cn":"大米"}
+    ]},
+    {"n":188,"char":"級","strokes":9,"readings":["キュウ"],"words":[
+      {"jp":"高級","reading":"こうきゅう","en":"high class/grade","cn":"高级"},
+      {"jp":"上級","reading":"じょうきゅう","en":"advanced level","cn":"高级"}
+    ]},
+    {"n":189,"char":"残","strokes":10,"readings":["ザン","のこーる","のこーす"],"words":[
+      {"jp":"残業","reading":"ざんぎょう","en":"overtime work","cn":"加班"},
+      {"jp":"残る","reading":"のこる","en":"remain","cn":"剩余"},
+      {"jp":"残り","reading":"のこり","en":"the remainder","cn":"剩余"},
+      {"jp":"残す","reading":"のこす","en":"leave, leave behind","cn":"留下"}
+    ]},
+    {"n":190,"char":"型","strokes":9,"readings":["かた"],"words":[
+      {"jp":"大型","reading":"おおがた","en":"large, jumbo","cn":"大型"},
+      {"jp":"新型","reading":"しんがた","en":"new-model","cn":"新型"},
+      {"jp":"小型","reading":"こがた","en":"small-sized","cn":"小型"}
+    ]},
+    {"n":191,"char":"税","strokes":12,"readings":["ゼイ"],"words":[
+      {"jp":"消費税","reading":"しょうひぜい","en":"consumption tax","cn":"消费税"},
+      {"jp":"税金","reading":"ぜいきん","en":"a tax","cn":"税金"}
+    ]},
+    {"n":192,"char":"込","strokes":5,"readings":["こーむ"],"words":[
+      {"jp":"込む","reading":"こむ","en":"congest/crowd","cn":"拥挤，进入，加深"},
+      {"jp":"振り込む","reading":"ふりこむ","en":"transfer money to a person's account","cn":"汇款"},
+      {"jp":"税込","reading":"ぜいこみ","en":"taxes included","cn":"税前（金额）"}
+    ]},
+    {"n":193,"char":"価","strokes":8,"readings":["カ"],"words":[
+      {"jp":"価格","reading":"かかく","en":"a price","cn":"价格"},
+      {"jp":"定価","reading":"ていか","en":"a fixed price","cn":"定价"}
+    ]},
+    {"n":194,"char":"格","strokes":10,"readings":["カク"],"words":[
+      {"jp":"合格","reading":"ごうかく","en":"pass an exam","cn":"合格"},
+      {"jp":"格安","reading":"かくやす","en":"a bargain","cn":"特别便宜"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.67（第4日末尾）",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"米国：（a. イギリス　b. アメリカ）"},
+        {"n":2,"q":"税込：税金が（a. ふくまれている　b. ふくまれていない）"},
+        {"n":3,"q":"合格：試験に（a. 受かる　b. 受ける）"},
+        {"n":4,"q":"残業：終わりの時間が過ぎても（a. 授業　b. 仕事）をすること"},
+        {"n":5,"q":"道が（a. 組んでいる　b. 込んでいる）。"},
+        {"n":6,"q":"定価（a. 現金　b. 1万円）の商品が5千円でお求めになれます。"},
+        {"n":7,"q":"銀行からお金を（a. 飛び出す　b. 振り込む）。"},
+        {"n":8,"q":"日本語のクラスは初級、中級、（a. 上級　b. 高級）に分かれています。"}
+      ]},
+      {"type":"select","instruction":"正しい読みに〇をつけなさい。","items":[
+        {"n":9,"q":"米","opts":["まめ","むぎ","こめ","めし"]},
+        {"n":10,"q":"税金","opts":["ざいきん","ちょきん","しゃっきん","ぜいきん"]},
+        {"n":11,"q":"小型","opts":["こけい","こがた","しょうけい","おがた"]},
+        {"n":12,"q":"残業","opts":["さんぎょう","せんぎょう","ざんぎょう","じゅんぎょう"]}
+      ]},
+      {"type":"select","instruction":"正しい漢字に〇をつけなさい。","items":[
+        {"n":13,"q":"かくやす","opts":["各安","格安","客安","額安"]},
+        {"n":14,"q":"のこる","opts":["戻る","登る","凍る","残る"]},
+        {"n":15,"q":"ていか","opts":["定価","停過","定値","走過"]},
+        {"n":16,"q":"しょうひぜい","opts":["生費税","食費税","消費税","商費税"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②a ③a ④b ⑤b ⑥b ⑦b ⑧a　Ⅱ：⑨3 ⑩4 ⑪2 ⑫3　Ⅲ：⑬2 ⑭4 ⑮1 ⑯3"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "week": 4, "day": 6, "theme": "かう", "theme_cn": "买", "theme_en": "Buy",
+  "title": "不在通知", "title_cn": "不在通知", "title_en": "Missed-Delivery Notice",
+  "kanji": [
+    {"n":211,"char":"在","strokes":6,"readings":["ザイ"],"words":[
+      {"jp":"不在","reading":"ふざい","en":"absence","cn":"不在家"},
+      {"jp":"現在","reading":"げんざい","en":"present (time)","cn":"现在"}
+    ]},
+    {"n":212,"char":"取","strokes":8,"readings":["とーる"],"words":[
+      {"jp":"取る","reading":"とる","en":"take","cn":"得到"},
+      {"jp":"受け取る","reading":"うけとる","en":"receive, take","cn":"领取"},
+      {"jp":"受取人","reading":"うけとりにん","en":"a recipient","cn":"领取人"}
+    ]},
+    {"n":213,"char":"預","strokes":13,"readings":["ヨ","あずーける"],"words":[
+      {"jp":"預金","reading":"よきん","en":"a money deposit","cn":"存款"},
+      {"jp":"預ける","reading":"あずける","en":"entrust","cn":"寄存"}
+    ]},
+    {"n":214,"char":"衣","strokes":6,"readings":["イ"],"words":[
+      {"jp":"衣類","reading":"いるい","en":"clothing","cn":"衣服总称"},
+      {"jp":"衣服","reading":"いふく","en":"clothes","cn":"衣服"}
+    ]},
+    {"n":215,"char":"参","strokes":8,"readings":["サン","まいーる"],"words":[
+      {"jp":"参加","reading":"さんか","en":"participate","cn":"参加"},
+      {"jp":"参る","reading":"まいる","en":"go / come (humble form)","cn":"来、去"},
+      {"jp":"参考書","reading":"さんこうしょ","en":"a reference book","cn":"参考书"}
+    ]},
+    {"n":216,"char":"達","strokes":12,"readings":["タツ"],"words":[
+      {"jp":"上達","reading":"じょうたつ","en":"make progress","cn":"进步"},
+      {"jp":"友達","reading":"ともだち","en":"a friend","cn":"朋友"},
+      {"jp":"速達","reading":"そくたつ","en":"a special delivery","cn":"快递"}
+    ]},
+    {"n":217,"char":"勤","strokes":12,"readings":["キン","つとーめる"],"words":[
+      {"jp":"通勤","reading":"つうきん","en":"commuting to work","cn":"通勤"},
+      {"jp":"勤める","reading":"つとめる","en":"work / be employed","cn":"工作"}
+    ]},
+    {"n":218,"char":"帯","strokes":10,"readings":["タイ","おび"],"words":[
+      {"jp":"携帯(電話)","reading":"けいたい(でんわ)","en":"a cell phone / mobile phone","cn":"手机"},
+      {"jp":"帯","reading":"おび","en":"a belt/sash","cn":"（和服的）腰带"},
+      {"jp":"時間帯","reading":"じかんたい","en":"a time zone, a time slot","cn":"时间段"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.74（第7日末尾）",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"不在：（a. ない　b. いない）"},
+        {"n":2,"q":"通勤：仕事をする場所（a. に通う　b. を通る）こと"},
+        {"n":3,"q":"携帯電話：（a. 持ち運び　b. 折りたたみ）できる電話"},
+        {"n":4,"q":"衣類：（a. 着るもの　b. 書いたもの）"},
+        {"n":5,"q":"この時間（a. 期　b. 帯）の電車は込みます。"},
+        {"n":6,"q":"会社に（a. 働く　b. 勤める）。"},
+        {"n":7,"q":"日本語が（a. 上手　b. 上達）した。"},
+        {"n":8,"q":"電車が（a. 参ります　b. 届きます）。"}
+      ]},
+      {"type":"select","instruction":"正しい読みに〇をつけなさい。","items":[
+        {"n":9,"q":"預金","opts":["ちゃきん","ちょきん","よきん","ゆきん"]},
+        {"n":10,"q":"現在","opts":["ぜんざい","けんざい","せんざい","げんざい"]},
+        {"n":11,"q":"参加","opts":["さんこう","せんか","さんが","さんか"]},
+        {"n":12,"q":"預ける","opts":["さずける","あずける","たすける","あつける"]}
+      ]},
+      {"type":"select","instruction":"正しい漢字に〇をつけなさい。","items":[
+        {"n":13,"q":"ともだち","opts":["友達","友遠","友違","友過"]},
+        {"n":14,"q":"まいる","opts":["配る","取る","参る","座る"]},
+        {"n":15,"q":"おび","opts":["衣","帯","服","袋"]},
+        {"n":16,"q":"とる","opts":["通る","最る","割る","取る"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②a ③a ④a ⑤b ⑥b ⑦b ⑧a　Ⅱ：⑨3 ⑩4 ⑪4 ⑫2　Ⅲ：⑬1 ⑭3 ⑮2 ⑯4"
+  }
+}
