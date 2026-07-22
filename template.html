@@ -187,7 +187,7 @@ body.no-ruby rt{display:none}
 .wk-toc{display:none}
 .week-card{scroll-margin-top:calc(var(--topbarh,97px) + var(--hometoph,40px))}
 @media (max-width:680px){
-  .wk-toc{display:flex;gap:6px;overflow-x:auto;padding:6px 0 0}
+  .wk-toc{display:flex;gap:6px;overflow-x:auto;padding:6px 2px 4px;width:100%;max-width:100%;box-sizing:border-box;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
   .wk-tocitem{flex:0 0 auto;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:13px;color:var(--ink);cursor:pointer;white-space:nowrap}
   .wk-tocitem:hover{color:var(--accent)}
 }
