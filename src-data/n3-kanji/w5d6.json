@@ -1,0 +1,72 @@
+{
+  "week": 5, "day": 6, "theme": "かく", "theme_cn": "写", "theme_en": "Write",
+  "title": "問診票——健康診断", "title_cn": "问诊调查表②——体检", "title_en": "A Medical Check Up Questionnaire",
+  "kanji": [
+    {"n":267,"char":"身","strokes":7,"readings":["シン","み"],"words":[
+      {"jp":"身長","reading":"しんちょう","en":"height","cn":"身高"},
+      {"jp":"身分","reading":"みぶん","en":"social status","cn":"身份"},
+      {"jp":"独身","reading":"どくしん","en":"single, unmarried","cn":"单身"},
+      {"jp":"刺身","reading":"さしみ","en":"sashimi (sliced raw fish)","cn":"生鱼片"}
+    ]},
+    {"n":268,"char":"酒","strokes":10,"readings":["シュ","さけ","さか"],"words":[
+      {"jp":"日本酒","reading":"にほんしゅ","en":"sake","cn":"日本酒"},
+      {"jp":"お酒","reading":"おさけ","en":"alcohol, liquor","cn":"酒"},
+      {"jp":"料理酒","reading":"りょうりしゅ","en":"cooking sake","cn":"料酒"},
+      {"jp":"酒屋","reading":"さかや","en":"a liquor store","cn":"小酒馆"}
+    ]},
+    {"n":269,"char":"吸","strokes":6,"readings":["キュウ","すーう"],"words":[
+      {"jp":"呼吸","reading":"こきゅう","en":"breathing, respiration","cn":"呼吸"},
+      {"jp":"吸う","reading":"すう","en":"breathe / inhale","cn":"吸，吸收，吸入"}
+    ]},
+    {"n":270,"char":"欲","strokes":11,"readings":["ヨク","ほーしい"],"words":[
+      {"jp":"食欲","reading":"しょくよく","en":"appetite","cn":"食欲"},
+      {"jp":"欲しい","reading":"ほしい","en":"want","cn":"想要"},
+      {"jp":"意欲","reading":"いよく","en":"a will, eagerness, motivation","cn":"意欲"}
+    ]},
+    {"n":271,"char":"眠","strokes":10,"readings":["ミン","ねむーい","ねむーる"],"words":[
+      {"jp":"睡眠","reading":"すいみん","en":"sleep","cn":"睡眠"},
+      {"jp":"眠い","reading":"ねむい","en":"sleepy","cn":"困"},
+      {"jp":"眠る","reading":"ねむる","en":"sleep","cn":"睡觉"}
+    ]},
+    {"n":272,"char":"疲","strokes":10,"readings":["つかーれる"],"words":[
+      {"jp":"疲れる","reading":"つかれる","en":"get tired, exhaust","cn":"疲劳"}
+    ]},
+    {"n":273,"char":"息","strokes":10,"readings":["いき"],"words":[
+      {"jp":"息","reading":"いき","en":"a breath","cn":"气息"},
+      {"jp":"息子","reading":"むすこ","en":"a son","cn":"儿子"},
+      {"jp":"息切れ","reading":"いきぎれ","en":"be short of breath","cn":"气喘"}
+    ]},
+    {"n":274,"char":"呼","strokes":8,"readings":["コ","よーぶ"],"words":[
+      {"jp":"呼吸","reading":"こきゅう","en":"breathing, respiration","cn":"呼吸"},
+      {"jp":"呼ぶ","reading":"よぶ","en":"call","cn":"叫唤"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.90（第7日末尾）",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"意欲：（a. 生意気　b. やる気）"},
+        {"n":2,"q":"呼吸：（a. 息をする　b. 息が切れる）こと"},
+        {"n":3,"q":"息子：（a. 男　b. 女）のこども"},
+        {"n":4,"q":"独身：（a. 結婚している　b. 結婚していない）"},
+        {"n":5,"q":"睡眠：（a. 寝る　b. 眠れない）こと"},
+        {"n":6,"q":"身長：（a. 体の重さ　b. せの高さ）"},
+        {"n":7,"q":"たばこを（a. 払う　b. 吸う）。"},
+        {"n":8,"q":"救急車を（a. 呼ぶ　b. 飛ぶ）。"}
+      ]},
+      {"type":"select","instruction":"正しい読みに〇をつけなさい。","items":[
+        {"n":9,"q":"息子","opts":["むすこ","むすめ","おい","めい"]},
+        {"n":10,"q":"酒屋","opts":["さかば","さけや","さかや","さけてん"]},
+        {"n":11,"q":"身分","opts":["みわけ","しんぶん","みぶん","しんわけ"]},
+        {"n":12,"q":"欲しい","opts":["おしい","ほしい","はしい","よくしい"]}
+      ]},
+      {"type":"select","instruction":"正しい漢字に〇をつけなさい。","items":[
+        {"n":13,"q":"さしみ","opts":["鮮魚","生魚","刺身","赤身"]},
+        {"n":14,"q":"つかれる","opts":["療れる","病れる","痛れる","疲れる"]},
+        {"n":15,"q":"ねむい","opts":["眠い","寝い","睡い","服い"]},
+        {"n":16,"q":"いき","opts":["呼","鼻","吸","息"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②a ③a ④b ⑤a ⑥b ⑦b ⑧a　Ⅱ：⑨1 ⑩3 ⑪3 ⑫2　Ⅲ：⑬3 ⑭4 ⑮1 ⑯4"
+  }
+}

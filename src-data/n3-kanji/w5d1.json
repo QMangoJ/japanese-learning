@@ -1,0 +1,67 @@
+{
+  "week": 5, "day": 1, "theme": "かく", "theme_cn": "写", "theme_en": "Write",
+  "title": "メールを送る", "title_cn": "发邮件", "title_en": "Sending E-mail (texting)",
+  "kanji": [
+    {"n":226,"char":"礼","strokes":5,"readings":["レイ"],"words":[
+      {"jp":"お礼","reading":"おれい","en":"thanks","cn":"谢意、礼物"}
+    ]},
+    {"n":227,"char":"伺","strokes":7,"readings":["うかがーう"],"words":[
+      {"jp":"伺う","reading":"うかがう","en":"visit, ask (humble form)","cn":"拜访、打听、询问"}
+    ]},
+    {"n":228,"char":"遅","strokes":12,"readings":["チ","おそーい","おくーれる"],"words":[
+      {"jp":"遅刻","reading":"ちこく","en":"tardiness","cn":"迟到"},
+      {"jp":"遅い","reading":"おそい","en":"slow","cn":"慢"},
+      {"jp":"遅れる","reading":"おくれる","en":"be late","cn":"晚、迟"}
+    ]},
+    {"n":229,"char":"失","strokes":5,"readings":["シツ"],"words":[
+      {"jp":"失礼(な)","reading":"しつれい","en":"rudeness","cn":"失礼"},
+      {"jp":"失礼する","reading":"しつれいする","en":"be excused","cn":"失礼"},
+      {"jp":"失敗","reading":"しっぱい","en":"failure, mistake","cn":"失败"}
+    ]},
+    {"n":230,"char":"汗","strokes":6,"readings":["あせ"],"words":[
+      {"jp":"汗","reading":"あせ","en":"perspiration, sweat","cn":"汗"},
+      {"jp":"汗をかく","reading":"あせをかく","en":"sweat","cn":"出汗"}
+    ]},
+    {"n":231,"char":"念","strokes":8,"readings":["ネン"],"words":[
+      {"jp":"残念(な)","reading":"ざんねん","en":"regret, disappointment","cn":"遗憾"},
+      {"jp":"記念","reading":"きねん","en":"commemoration","cn":"纪念"}
+    ]},
+    {"n":232,"char":"涙","strokes":10,"readings":["なみだ"],"words":[
+      {"jp":"涙","reading":"なみだ","en":"tear(s)","cn":"泪"},
+      {"jp":"涙を流す","reading":"なみだをながす","en":"weep","cn":"流泪"}
+    ]},
+    {"n":233,"char":"笑","strokes":10,"readings":["わらーう","えーむ"],"words":[
+      {"jp":"笑う","reading":"わらう","en":"laugh/smile","cn":"笑"},
+      {"jp":"笑い","reading":"わらい","en":"laughter","cn":"笑声"},
+      {"jp":"笑顔","reading":"えがお","en":"smile / smiling face","cn":"笑脸"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.79（第2日末尾）",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"遅刻：（a. 間に合う　b. 間に合わない）"},
+        {"n":2,"q":"お礼：（a. ありがとう　b. ごめんなさい）という気持ち"},
+        {"n":3,"q":"失敗：（a. うまくいく　b. うまくいかない）こと"},
+        {"n":4,"q":"「ちょっと、お伺いしますが、駅はどちらでしょう」：（a. 聞きたい　b. 会いたい）"},
+        {"n":5,"q":"（a. 涙　b. 汗）をかく。"},
+        {"n":6,"q":"卒業式で（a. 記念　b. 記号）写真をとる。"},
+        {"n":7,"q":"お先に（a. 失礼です　b. 失礼します）。"},
+        {"n":8,"q":"出席できなくて（a. 失望　b. 残念）です。"}
+      ]},
+      {"type":"select","instruction":"正しい読みに〇をつけなさい。","items":[
+        {"n":9,"q":"笑顔","opts":["ねがお","いがお","えがお","ほほえみ"]},
+        {"n":10,"q":"伺う","opts":["いたがう","うかがう","いかがう","うたがう"]},
+        {"n":11,"q":"残念","opts":["ざんねん","だんねん","ざんれん","だんれん"]},
+        {"n":12,"q":"遅れる","opts":["ちそれる","おそれる","ちくれる","おくれる"]}
+      ]},
+      {"type":"select","instruction":"正しい漢字に〇をつけなさい。","items":[
+        {"n":13,"q":"わらう","opts":["習う","洗う","払う","笑う"]},
+        {"n":14,"q":"おそい","opts":["伺い","笑い","遅い","失い"]},
+        {"n":15,"q":"なみだ","opts":["混","汗","涙","湯"]},
+        {"n":16,"q":"ちこく","opts":["遅刻","時刻","予告","広告"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②b ③b ④a ⑤b ⑥a ⑦b ⑧b　Ⅱ：⑨3 ⑩2 ⑪1 ⑫4　Ⅲ：⑬4 ⑭3 ⑮3 ⑯1"
+  }
+}

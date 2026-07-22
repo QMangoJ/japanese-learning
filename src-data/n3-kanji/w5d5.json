@@ -1,0 +1,72 @@
+{
+  "week": 5, "day": 5, "theme": "かく", "theme_cn": "写", "theme_en": "Write",
+  "title": "問診票——歯科で", "title_cn": "问诊调查表——牙科", "title_en": "Dental Patient Registration Sheet",
+  "kanji": [
+    {"n":259,"char":"痛","strokes":12,"readings":["ツウ","いたーい"],"words":[
+      {"jp":"頭痛","reading":"ずつう","en":"a headache","cn":"头痛"},
+      {"jp":"痛い","reading":"いたい","en":"sore, painful","cn":"痛"},
+      {"jp":"腹痛","reading":"ふくつう","en":"stomach ache","cn":"腹痛"}
+    ]},
+    {"n":260,"char":"熱","strokes":15,"readings":["ネツ","あつーい"],"words":[
+      {"jp":"熱","reading":"ねつ","en":"heat, fever","cn":"发烧"},
+      {"jp":"熱い","reading":"あつい","en":"hot","cn":"热"},
+      {"jp":"熱心(な)","reading":"ねっしん","en":"enthusiasm, zeal","cn":"热心"}
+    ]},
+    {"n":261,"char":"虫","strokes":6,"readings":["むし"],"words":[
+      {"jp":"虫","reading":"むし","en":"an insect","cn":"虫"}
+    ]},
+    {"n":262,"char":"歯","strokes":12,"readings":["シ","は"],"words":[
+      {"jp":"歯科","reading":"しか","en":"dentistry","cn":"牙科"},
+      {"jp":"歯医者","reading":"はいしゃ","en":"a dentist","cn":"牙医"},
+      {"jp":"歯","reading":"は","en":"teeth","cn":"牙齿"},
+      {"jp":"虫歯","reading":"むしば","en":"a decayed tooth","cn":"蛀牙"}
+    ]},
+    {"n":263,"char":"治","strokes":8,"readings":["ジ","チ","なおーる","なおーす"],"words":[
+      {"jp":"政治","reading":"せいじ","en":"politics, government","cn":"政治"},
+      {"jp":"治る","reading":"なおる","en":"heal","cn":"痊愈"},
+      {"jp":"治療","reading":"ちりょう","en":"a treatment","cn":"治疗"},
+      {"jp":"治す","reading":"なおす","en":"cure","cn":"治疗"}
+    ]},
+    {"n":264,"char":"汚","strokes":6,"readings":["きたなーい","よごーれる"],"words":[
+      {"jp":"汚い","reading":"きたない","en":"dirty","cn":"肮脏"},
+      {"jp":"汚れる","reading":"よごれる","en":"become dirty","cn":"脏"}
+    ]},
+    {"n":265,"char":"並","strokes":8,"readings":["ならーぶ","ならーべる"],"words":[
+      {"jp":"並ぶ","reading":"ならぶ","en":"stand in a line","cn":"排列"},
+      {"jp":"並べる","reading":"ならべる","en":"line up, set up","cn":"排列"},
+      {"jp":"歯並び","reading":"はならび","en":"the alignment of your teeth","cn":"牙齿排列"}
+    ]},
+    {"n":266,"char":"他","strokes":5,"readings":["タ"],"words":[
+      {"jp":"他の","reading":"たの","en":"other","cn":"其他的"},
+      {"jp":"その他","reading":"そのた","en":"other","cn":"其它"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.87（第6日末尾）",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"腹痛：（a. あたま　b. おなか）が痛いこと"},
+        {"n":2,"q":"治療：病気やけがを（a. たすける　b. なおす）こと"},
+        {"n":3,"q":"将来は（a. 歯科　b. 歯医者）になりたい。"},
+        {"n":4,"q":"（a. 汚れ　b. 汚い）をとる。"},
+        {"n":5,"q":"店の前に品物を（a. 並ぶ　b. 並べる）。"},
+        {"n":6,"q":"（a. 熱心　b. 関心）に勉強する。"},
+        {"n":7,"q":"間違えた字を（a. 直す　b. 治す）。"},
+        {"n":8,"q":"（a. 暑い　b. 熱い）お茶。"}
+      ]},
+      {"type":"select","instruction":"正しい読みに〇をつけなさい。","items":[
+        {"n":9,"q":"熱","opts":["れつ","ねつ","なつ","らつ"]},
+        {"n":10,"q":"歯科","opts":["はか","いか","しか","ちか"]},
+        {"n":11,"q":"汚れる","opts":["おごれる","おれる","きたれる","よごれる"]},
+        {"n":12,"q":"熱い","opts":["ねつい","なつい","あつい","れつい"]}
+      ]},
+      {"type":"select","instruction":"正しい漢字に〇をつけなさい。","items":[
+        {"n":13,"q":"むし","opts":["史","虫","戸","申"]},
+        {"n":14,"q":"ならべる","opts":["並べる","調べる","飛べる","呼べる"]},
+        {"n":15,"q":"た","opts":["外","地","池","他"]},
+        {"n":16,"q":"きたない","opts":["汚い","痛い","清い","厚い"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②b ③b ④a ⑤b ⑥a ⑦a ⑧b　Ⅱ：⑨2 ⑩3 ⑪4 ⑫3　Ⅲ：⑬2 ⑭1 ⑮4 ⑯1"
+  }
+}

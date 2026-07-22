@@ -1,0 +1,78 @@
+{
+  "week": 5, "day": 3, "theme": "かく", "theme_cn": "写", "theme_en": "Write",
+  "title": "日本語クラス", "title_cn": "日语班", "title_en": "A Japanese Class",
+  "kanji": [
+    {"n":242,"char":"練","strokes":14,"readings":["レン"],"words":[
+      {"jp":"練習","reading":"れんしゅう","en":"practice","cn":"练习"}
+    ]},
+    {"n":243,"char":"最","strokes":12,"readings":["サイ","もっとーも"],"words":[
+      {"jp":"最近","reading":"さいきん","en":"recently","cn":"最近"},
+      {"jp":"最初","reading":"さいしょ","en":"first / beginning","cn":"最初"},
+      {"jp":"最後","reading":"さいご","en":"last / end","cn":"最后"},
+      {"jp":"最も","reading":"もっとも","en":"most","cn":"最"}
+    ]},
+    {"n":244,"char":"適","strokes":14,"readings":["テキ"],"words":[
+      {"jp":"適当(な)","reading":"てきとう","en":"correct / appropriate","cn":"适当"},
+      {"jp":"快適(な)","reading":"かいてき","en":"comfortable","cn":"舒适"}
+    ]},
+    {"n":245,"char":"選","strokes":15,"readings":["セン","えらーぶ"],"words":[
+      {"jp":"選挙","reading":"せんきょ","en":"an election","cn":"选举"},
+      {"jp":"選手","reading":"せんしゅ","en":"a player, an athlete","cn":"选手"},
+      {"jp":"選ぶ","reading":"えらぶ","en":"choose","cn":"选择"}
+    ]},
+    {"n":246,"char":"違","strokes":13,"readings":["ちがーう","ちがーえる"],"words":[
+      {"jp":"違う","reading":"ちがう","en":"different, wrong","cn":"不同"},
+      {"jp":"間違い","reading":"まちがい","en":"a mistake","cn":"错误"},
+      {"jp":"間違う","reading":"まちがう","en":"make a mistake","cn":"弄错"},
+      {"jp":"間違える","reading":"まちがえる","en":"make a mistake","cn":"弄错"}
+    ]},
+    {"n":247,"char":"直","strokes":8,"readings":["チョク","なおーる","なおーす"],"words":[
+      {"jp":"直線","reading":"ちょくせん","en":"a straight line","cn":"直线"},
+      {"jp":"直接","reading":"ちょくせつ","en":"direct","cn":"直接"},
+      {"jp":"直る","reading":"なおる","en":"be repaired","cn":"改正"},
+      {"jp":"直す","reading":"なおす","en":"fix","cn":"修改"}
+    ]},
+    {"n":248,"char":"復","strokes":12,"readings":["フク"],"words":[
+      {"jp":"復習","reading":"ふくしゅう","en":"review","cn":"复习"},
+      {"jp":"往復","reading":"おうふく","en":"a round trip","cn":"往返、来回"},
+      {"jp":"回復","reading":"かいふく","en":"recovery/recuperation","cn":"恢复"}
+    ]},
+    {"n":249,"char":"辞","strokes":13,"readings":["ジ","やーめる"],"words":[
+      {"jp":"辞書","reading":"じしょ","en":"a dictionary","cn":"词典"},
+      {"jp":"辞める","reading":"やめる","en":"resign, retire","cn":"辞职"}
+    ]},
+    {"n":250,"char":"宿","strokes":11,"readings":["シュク","やど"],"words":[
+      {"jp":"宿題","reading":"しゅくだい","en":"a homework","cn":"课外作业"},
+      {"jp":"宿","reading":"やど","en":"an inn, a hotel","cn":"宿舍"},
+      {"jp":"下宿","reading":"げしゅく","en":"lodgings","cn":"出租的房子"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.83（第4日末尾）",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"直線：（a. まっすぐな　b. まがった）線"},
+        {"n":2,"q":"復習：（a. 習っていないこと　b. 習ったこと）を勉強すること"},
+        {"n":3,"q":"快適：とても（a. 気分がいい　b. 速い）こと"},
+        {"n":4,"q":"最近：（a. このごろ　b. 近い場所）"},
+        {"n":5,"q":"回復：天気や病気などが（a. よくなる　b. また悪くなる）こと"},
+        {"n":6,"q":"往復：（a. 上りと下り　b. 行きと帰り）"},
+        {"n":7,"q":"（a. 選手　b. 選挙）で新しい市長を選ぶ。"},
+        {"n":8,"q":"知り合いの家に（a. 下宿　b. 宿題）する。"}
+      ]},
+      {"type":"select","instruction":"正しい読みに〇をつけなさい。","items":[
+        {"n":9,"q":"宿","opts":["いど","まど","かど","やど"]},
+        {"n":10,"q":"最も","opts":["もっとも","さいも","まっとも","とても"]},
+        {"n":11,"q":"選ぶ","opts":["あそぶ","とぶ","えらぶ","よぶ"]},
+        {"n":12,"q":"往復","opts":["しゅふく","じゅうふく","おうふく","ちょうふく"]}
+      ]},
+      {"type":"select","instruction":"正しい漢字に〇をつけなさい。","items":[
+        {"n":13,"q":"まちがえる","opts":["聞違える","間違える","寝違える","見違える"]},
+        {"n":14,"q":"やめる","opts":["留める","勤める","停める","辞める"]},
+        {"n":15,"q":"なおる","opts":["配る","直る","割る","凍る"]},
+        {"n":16,"q":"れんしゅう","opts":["練習","予習","学習","復習"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②b ③a ④a ⑤a ⑥b ⑦b ⑧a　Ⅱ：⑨4 ⑩1 ⑪3 ⑫3　Ⅲ：⑬2 ⑭4 ⑮2 ⑯1"
+  }
+}

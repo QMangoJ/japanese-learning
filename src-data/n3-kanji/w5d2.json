@@ -1,0 +1,67 @@
+{
+  "week": 5, "day": 2, "theme": "かく", "theme_cn": "写", "theme_en": "Write",
+  "title": "アンケート", "title_cn": "问卷调查", "title_en": "A Questionnaire",
+  "kanji": [
+    {"n":234,"char":"調","strokes":15,"readings":["チョウ","しらーべる"],"words":[
+      {"jp":"調子","reading":"ちょうし","en":"condition","cn":"状况"},
+      {"jp":"調べる","reading":"しらべる","en":"look up something, investigate","cn":"审查"},
+      {"jp":"強調","reading":"きょうちょう","en":"emphasis, stress","cn":"强调"}
+    ]},
+    {"n":235,"char":"査","strokes":9,"readings":["サ"],"words":[
+      {"jp":"調査","reading":"ちょうさ","en":"an investigation/inquiry","cn":"调查"}
+    ]},
+    {"n":236,"char":"移","strokes":11,"readings":["イ","うつーる","うつーす"],"words":[
+      {"jp":"移動","reading":"いどう","en":"move / transfer","cn":"转移"},
+      {"jp":"移る","reading":"うつる","en":"move / shift","cn":"移动"},
+      {"jp":"移す","reading":"うつす","en":"move / shift (something)","cn":"移"}
+    ]},
+    {"n":237,"char":"難","strokes":18,"readings":["ナン","むずかーしい"],"words":[
+      {"jp":"困難(な)","reading":"こんなん","en":"difficulty","cn":"困难"},
+      {"jp":"難しい","reading":"むずかしい","en":"difficult","cn":"难办的"},
+      {"jp":"難問","reading":"なんもん","en":"a difficult problem","cn":"难题"}
+    ]},
+    {"n":238,"char":"簡","strokes":18,"readings":["カン"],"words":[
+      {"jp":"簡単(な)","reading":"かんたん","en":"easy","cn":"简单"}
+    ]},
+    {"n":239,"char":"単","strokes":9,"readings":["タン"],"words":[
+      {"jp":"単語","reading":"たんご","en":"vocabulary","cn":"单词"},
+      {"jp":"単位","reading":"たんい","en":"a unit, credit","cn":"学分"}
+    ]},
+    {"n":240,"char":"感","strokes":13,"readings":["カン"],"words":[
+      {"jp":"感じる","reading":"かんじる","en":"feel","cn":"感觉"},
+      {"jp":"感動","reading":"かんどう","en":"inspiration","cn":"感动"}
+    ]},
+    {"n":241,"char":"想","strokes":13,"readings":["ソウ"],"words":[
+      {"jp":"感想","reading":"かんそう","en":"impressions, thoughts","cn":"感想"},
+      {"jp":"予想","reading":"よそう","en":"anticipation, forecast","cn":"预想"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.81（第3日末尾）",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"調子：（a. ようす　b. ぐあい）"},
+        {"n":2,"q":"移動：（a. よく動く　b. 位置をかえる）こと"},
+        {"n":3,"q":"感動：（a. 心が動く　b. 体を動かす）こと"},
+        {"n":4,"q":"予想が（a. 困難　b. 残念）だ。"},
+        {"n":5,"q":"読んだ本の（a. 感想　b. 予想）文を書く。"},
+        {"n":6,"q":"（a. 難問　b. 正門）にチャレンジする。"},
+        {"n":7,"q":"重要なところを（a. 強調　b. 強力）する。"},
+        {"n":8,"q":"卒業に必要な（a. 単語　b. 単位）を取る。"}
+      ]},
+      {"type":"select","instruction":"正しい読みに〇をつけなさい。","items":[
+        {"n":9,"q":"調べる","opts":["くらべる","しらべる","えらべる","ちらべる"]},
+        {"n":10,"q":"調査","opts":["しんさ","ちゅうさ","けんさ","ちょうさ"]},
+        {"n":11,"q":"困難","opts":["かんなん","くんなん","こんなん","くなん"]},
+        {"n":12,"q":"予想","opts":["よこく","よしょう","よしん","よそう"]}
+      ]},
+      {"type":"select","instruction":"正しい漢字に〇をつけなさい。","items":[
+        {"n":13,"q":"かんたん","opts":["問単","簡単","聞単","開単"]},
+        {"n":14,"q":"むずかしい","opts":["離しい","勤しい","雑しい","難しい"]},
+        {"n":15,"q":"うつす","opts":["移す","差す","消す","渡す"]},
+        {"n":16,"q":"かんじる","opts":["演じる","感じる","混じる","動じる"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②b ③a ④a ⑤a ⑥a ⑦a ⑧b　Ⅱ：⑨2 ⑩4 ⑪3 ⑫4　Ⅲ：⑬2 ⑭4 ⑮1 ⑯2"
+  }
+}

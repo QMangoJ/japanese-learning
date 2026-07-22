@@ -1,0 +1,74 @@
+{
+  "week": 5, "day": 4, "theme": "かく", "theme_cn": "写", "theme_en": "Write",
+  "title": "作文", "title_cn": "作文", "title_en": "A Composition",
+  "kanji": [
+    {"n":251,"char":"昨","strokes":9,"readings":["サク"],"words":[
+      {"jp":"昨日","reading":"さくじつ","en":"yesterday","cn":"昨天"},
+      {"jp":"昨夜","reading":"さくや","en":"last night","cn":"昨天晚上"},
+      {"jp":"昨年","reading":"さくねん","en":"last year","cn":"去年"}
+    ]},
+    {"n":252,"char":"君","strokes":7,"readings":["クン","きみ"],"words":[
+      {"jp":"〇〇君","reading":"くん","en":"honorific appended to names of males younger than oneself","cn":"接在同辈或晚辈的姓名后表示敬意"},
+      {"jp":"君","reading":"きみ","en":"you","cn":"你"}
+    ]},
+    {"n":253,"char":"結","strokes":12,"readings":["ケツ","むすーぶ"],"words":[
+      {"jp":"結構(な)","reading":"けっこう","en":"splendid, nice","cn":"很好"},
+      {"jp":"「いいえ、結構です」","reading":"けっこうです","en":"No, thank you.","cn":"不，不用了。"},
+      {"jp":"結局","reading":"けっきょく","en":"after all","cn":"最终"},
+      {"jp":"結ぶ","reading":"むすぶ","en":"tie / connect / conclude","cn":"系，连结"}
+    ]},
+    {"n":254,"char":"婚","strokes":11,"readings":["コン"],"words":[
+      {"jp":"結婚","reading":"けっこん","en":"a marriage","cn":"结婚"},
+      {"jp":"新婚旅行","reading":"しんこんりょこう","en":"a honeymoon","cn":"蜜月旅行"},
+      {"jp":"婚約","reading":"こんやく","en":"an engagement","cn":"婚约"}
+    ]},
+    {"n":255,"char":"祝","strokes":9,"readings":["シュク","いわーう"],"words":[
+      {"jp":"祝日","reading":"しゅくじつ","en":"a holiday / festival day","cn":"（政府规定的）节日"},
+      {"jp":"祝う","reading":"いわう","en":"celebrate/congratulate","cn":"庆祝"},
+      {"jp":"お祝い","reading":"おいわい","en":"celebration/congratulation","cn":"祝贺"}
+    ]},
+    {"n":256,"char":"曲","strokes":6,"readings":["キョク","まーがる","まーげる"],"words":[
+      {"jp":"曲","reading":"きょく","en":"a piece of music","cn":"（音）歌曲"},
+      {"jp":"曲線","reading":"きょくせん","en":"a curve","cn":"曲线"},
+      {"jp":"曲がる","reading":"まがる","en":"bend, turn a corner","cn":"弯曲"},
+      {"jp":"曲げる","reading":"まげる","en":"bend","cn":"弄弯"}
+    ]},
+    {"n":257,"char":"奥","strokes":12,"readings":["おく"],"words":[
+      {"jp":"奥さん","reading":"おくさん","en":"another person's wife","cn":"太太"},
+      {"jp":"奥","reading":"おく","en":"inmost","cn":"内部"}
+    ]},
+    {"n":258,"char":"寝","strokes":13,"readings":["ねーる"],"words":[
+      {"jp":"寝る","reading":"ねる","en":"sleep","cn":"睡觉"},
+      {"jp":"昼寝","reading":"ひるね","en":"a nap","cn":"午睡"},
+      {"jp":"寝坊","reading":"ねぼう","en":"late riser, sleepyhead","cn":"早上赖床"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.85（第5日末尾）",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"寝坊：（a. 寝ている赤ちゃん　b. 起きる時間に起きないこと）"},
+        {"n":2,"q":"婚約：（a. 結婚の約束　b. 結婚式場の予約）"},
+        {"n":3,"q":"この（a. 曲　b. 局）を聞くと国を思い出す。"},
+        {"n":4,"q":"（スーパーのレジで）「袋は（a. 無断　b. 結構）です。」"},
+        {"n":5,"q":"使わないものを押し入れの（a. 込　b. 奥）にしまう。"},
+        {"n":6,"q":"つぎの信号を右に（a. 曲げて　b. 曲がって）ください。"},
+        {"n":7,"q":"行くかどうかまよったが、（a. 結局　b. 広告）行かなかった。"},
+        {"n":8,"q":"明日は（a. 土日　b. 祝日）です。"}
+      ]},
+      {"type":"select","instruction":"正しい読みに〇をつけなさい。","items":[
+        {"n":9,"q":"昨夜","opts":["さくばん","さくよ","さくじつ","さくや"]},
+        {"n":10,"q":"昼寝","opts":["うたたね","あさね","ひるね","よるね"]},
+        {"n":11,"q":"結婚","opts":["けっこん","けこん","けっかん","けんこん"]},
+        {"n":12,"q":"昨日","opts":["きょう","きのう","きょねん","おととい"]}
+      ]},
+      {"type":"select","instruction":"正しい漢字に〇をつけなさい。","items":[
+        {"n":13,"q":"きみ","opts":["君","式","友","婦"]},
+        {"n":14,"q":"おくさん","opts":["姉さん","妻さん","夫さん","奥さん"]},
+        {"n":15,"q":"むすぶ","opts":["練ぶ","婚ぶ","結ぶ","笑ぶ"]},
+        {"n":16,"q":"おいわい","opts":["お使い","お見舞い","お祝い","お手洗い"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②a ③a ④b ⑤b ⑥b ⑦a ⑧b　Ⅱ：⑨4 ⑩3 ⑪1 ⑫2　Ⅲ：⑬1 ⑭4 ⑮3 ⑯3"
+  }
+}
