@@ -1,0 +1,64 @@
+{
+  "week": 6, "day": 1, "theme": "よむ", "theme_cn": "读", "theme_en": "Read",
+  "title": "天気予報", "title_cn": "天气预报", "title_en": "The Weather Forecast",
+  "kanji": [
+    {"n":281,"char":"報","strokes":12,"readings":["ホウ"],"words":[
+      {"jp":"予報","reading":"よほう","en":"a forecast","cn":"预报"},
+      {"jp":"報告","reading":"ほうこく","en":"a report","cn":"报告"}
+    ]},
+    {"n":282,"char":"晴","strokes":12,"readings":["はーれる"],"words":[
+      {"jp":"晴れる","reading":"はれる","en":"be sunny","cn":"晴、天气晴朗"},
+      {"jp":"晴れ","reading":"はれ","en":"fine weather","cn":"晴天"}
+    ]},
+    {"n":283,"char":"雲","strokes":12,"readings":["くも"],"words":[
+      {"jp":"雲","reading":"くも","en":"clouds","cn":"云"}
+    ]},
+    {"n":284,"char":"吹","strokes":7,"readings":["ふーく"],"words":[
+      {"jp":"吹く","reading":"ふく","en":"blow","cn":"吹"}
+    ]},
+    {"n":285,"char":"暖","strokes":13,"readings":["ダン","あたたーかい"],"words":[
+      {"jp":"暖房","reading":"だんぼう","en":"a heater","cn":"暖气"},
+      {"jp":"暖かい","reading":"あたたかい","en":"warm","cn":"暖和的"}
+    ]},
+    {"n":286,"char":"雪","strokes":11,"readings":["ゆき"],"words":[
+      {"jp":"雪","reading":"ゆき","en":"snow","cn":"雪"}
+    ]},
+    {"n":287,"char":"震","strokes":15,"readings":["シン"],"words":[
+      {"jp":"地震","reading":"じしん","en":"an earthquake","cn":"地震"},
+      {"jp":"震度","reading":"しんど","en":"seismic intensity","cn":"震级"}
+    ]},
+    {"n":288,"char":"波","strokes":8,"readings":["ハ","なみ"],"words":[
+      {"jp":"電波","reading":"でんぱ","en":"electromagnetic wave","cn":"电波"},
+      {"jp":"波","reading":"なみ","en":"a wave","cn":"波涛"},
+      {"jp":"津波","reading":"つなみ","en":"tsunami","cn":"海啸"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.95（第2日末尾）",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"暖房：（a. ヒーター　b. クーラー）"},
+        {"n":2,"q":"震度：地震の（a. 深さ　b. 強さ）"},
+        {"n":3,"q":"報告：（a. レポート　b. ポスター）"},
+        {"n":4,"q":"どちらが勝つか（a. 予報　b. 予想）する。"},
+        {"n":5,"q":"風が（a. 付く　b. 吹く）。"},
+        {"n":6,"q":"地震による（a. 津波　b. 電波）の心配はありません。"},
+        {"n":7,"q":"天気（a. 予報　b. 予定）"},
+        {"n":8,"q":"（a. 雲　b. 雪）が降る。"}
+      ]},
+      {"type":"select","instruction":"正しい読みに〇をつけなさい。","items":[
+        {"n":9,"q":"波","opts":["あみ","なみ","まみ","のみ"]},
+        {"n":10,"q":"雲","opts":["しも","ゆき","くも","ひょう"]},
+        {"n":11,"q":"吹く","opts":["つく","すく","ふく","ひく"]},
+        {"n":12,"q":"地震","opts":["ちしん","じちん","しじん","じしん"]}
+      ]},
+      {"type":"select","instruction":"正しい漢字に〇をつけなさい。","items":[
+        {"n":13,"q":"でんぱ","opts":["電波","電飛","電報","電流"]},
+        {"n":14,"q":"はれる","opts":["情れる","清れる","晴れる","精れる"]},
+        {"n":15,"q":"あたたかい","opts":["緩かい","援かい","媛かい","暖かい"]},
+        {"n":16,"q":"ほうこく","opts":["報告","広告","申告","警告"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②b ③a ④b ⑤b ⑥a ⑦a ⑧b　Ⅱ：⑨2 ⑩3 ⑪3 ⑫4　Ⅲ：⑬1 ⑭3 ⑮4 ⑯1"
+  }
+}

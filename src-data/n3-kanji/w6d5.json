@@ -1,0 +1,67 @@
+{
+  "week": 6, "day": 5, "theme": "よむ", "theme_cn": "读", "theme_en": "Read",
+  "title": "地球温暖化", "title_cn": "地球温暖化", "title_en": "Global Warming",
+  "kanji": [
+    {"n":313,"char":"化","strokes":4,"readings":["カ","ケ"],"words":[
+      {"jp":"文化","reading":"ぶんか","en":"culture","cn":"文化"},
+      {"jp":"化学","reading":"かがく","en":"chemistry","cn":"化学"},
+      {"jp":"〇〇化","reading":"か","en":"-ize (change something into something else)","cn":"〇〇化"},
+      {"jp":"化粧","reading":"けしょう","en":"makeup","cn":"化妆"}
+    ]},
+    {"n":314,"char":"比","strokes":4,"readings":["くらーべる"],"words":[
+      {"jp":"比べる","reading":"くらべる","en":"compare","cn":"比较"}
+    ]},
+    {"n":315,"char":"原","strokes":10,"readings":["ゲン"],"words":[
+      {"jp":"原料","reading":"げんりょう","en":"(raw) material","cn":"原料"}
+    ]},
+    {"n":316,"char":"因","strokes":6,"readings":["イン"],"words":[
+      {"jp":"原因","reading":"げんいん","en":"a cause","cn":"原因"}
+    ]},
+    {"n":317,"char":"際","strokes":14,"readings":["サイ"],"words":[
+      {"jp":"国際(の)","reading":"こくさい","en":"international","cn":"国际"},
+      {"jp":"交際","reading":"こうさい","en":"association/dealings (with)","cn":"交际"}
+    ]},
+    {"n":318,"char":"議","strokes":20,"readings":["ギ"],"words":[
+      {"jp":"会議","reading":"かいぎ","en":"a meeting","cn":"会议"},
+      {"jp":"議員","reading":"ぎいん","en":"a member of an assembly","cn":"议员"}
+    ]},
+    {"n":319,"char":"活","strokes":9,"readings":["カツ"],"words":[
+      {"jp":"生活","reading":"せいかつ","en":"life / livelihood","cn":"生活"},
+      {"jp":"活動","reading":"かつどう","en":"activity","cn":"活动"}
+    ]},
+    {"n":320,"char":"変","strokes":9,"readings":["ヘン","かーわる","かーえる"],"words":[
+      {"jp":"大変(な)","reading":"たいへん","en":"very, serious","cn":"不容易"},
+      {"jp":"変わる","reading":"かわる","en":"change","cn":"变化"},
+      {"jp":"変化","reading":"へんか","en":"a change","cn":"变化"},
+      {"jp":"変える","reading":"かえる","en":"change (something)","cn":"变更"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.103（第6日末尾）",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"サイエンス：（a. 科学　b. 化学）"},
+        {"n":2,"q":"地球の温度は昔と（a. 過ぎて　b. 比べて）上がっている。"},
+        {"n":3,"q":"お酒の（a. 材料　b. 原料）は米です。"},
+        {"n":4,"q":"ボランティア（a. 行動　b. 活動）をする。"},
+        {"n":5,"q":"口紅は（a. 化粧品　b. 化粧室）です。"},
+        {"n":6,"q":"気温の（a. 変化　b. 文化）"},
+        {"n":7,"q":"住所が（a. 変える　b. 変わる）。"},
+        {"n":8,"q":"貿易の自由（a. 課　b. 化）"}
+      ]},
+      {"type":"select","instruction":"正しい読みに〇をつけなさい。","items":[
+        {"n":9,"q":"化粧","opts":["かしょう","けしょう","きしょう","けちょう"]},
+        {"n":10,"q":"文化","opts":["ぶんか","もんか","ぶんけ","もんけ"]},
+        {"n":11,"q":"比べる","opts":["こらべる","くらべる","ならべる","しらべる"]},
+        {"n":12,"q":"大変","opts":["おおへん","だいへん","たいぺん","たいへん"]}
+      ]},
+      {"type":"select","instruction":"正しい漢字に〇をつけなさい。","items":[
+        {"n":13,"q":"ぎいん","opts":["議員","議人","議民","議因"]},
+        {"n":14,"q":"こくさい","opts":["交察","交際","国察","国際"]},
+        {"n":15,"q":"げんいん","opts":["原困","原因","原囚","原回"]},
+        {"n":16,"q":"せいかつ","opts":["政治","正確","生活","性格"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②b ③b ④b ⑤a ⑥a ⑦b ⑧b　Ⅱ：⑨2 ⑩1 ⑪2 ⑫4　Ⅲ：⑬1 ⑭4 ⑮2 ⑯3"
+  }
+}

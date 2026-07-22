@@ -1,0 +1,71 @@
+{
+  "week": 6, "day": 2, "theme": "よむ", "theme_cn": "读", "theme_en": "Read",
+  "title": "求人広告", "title_cn": "招聘广告", "title_en": "A Help-Wanted Ad",
+  "kanji": [
+    {"n":289,"char":"求","strokes":7,"readings":["キュウ","もとーめる"],"words":[
+      {"jp":"要求","reading":"ようきゅう","en":"a demand, request","cn":"要求"},
+      {"jp":"請求書","reading":"せいきゅうしょ","en":"a bill, invoice","cn":"账单"},
+      {"jp":"求人","reading":"きゅうじん","en":"'Help Wanted'","cn":"招聘人员"},
+      {"jp":"求める","reading":"もとめる","en":"demand, request","cn":"要求"}
+    ]},
+    {"n":290,"char":"募","strokes":12,"readings":["ボ"],"words":[
+      {"jp":"募集","reading":"ぼしゅう","en":"recruitment","cn":"招募"}
+    ]},
+    {"n":291,"char":"職","strokes":18,"readings":["ショク"],"words":[
+      {"jp":"職場","reading":"しょくば","en":"a work place","cn":"职场"},
+      {"jp":"転職","reading":"てんしょく","en":"change your job","cn":"换工作"},
+      {"jp":"職業","reading":"しょくぎょう","en":"an occupation/profession","cn":"职业"},
+      {"jp":"職員","reading":"しょくいん","en":"employees","cn":"职员"}
+    ]},
+    {"n":292,"char":"容","strokes":10,"readings":["ヨウ"],"words":[
+      {"jp":"美容院","reading":"びよういん","en":"a hairdresser","cn":"美容院"},
+      {"jp":"内容","reading":"ないよう","en":"contents/substance","cn":"内容"}
+    ]},
+    {"n":293,"char":"技","strokes":7,"readings":["ギ"],"words":[
+      {"jp":"技術","reading":"ぎじゅつ","en":"technique, technology","cn":"技术"},
+      {"jp":"技術者","reading":"ぎじゅつしゃ","en":"a technician","cn":"技术人员"}
+    ]},
+    {"n":294,"char":"般","strokes":10,"readings":["ハン"],"words":[
+      {"jp":"一般","reading":"いっぱん","en":"general, average","cn":"一般"},
+      {"jp":"一般に","reading":"いっぱんに","en":"in general","cn":"普通"}
+    ]},
+    {"n":295,"char":"務","strokes":11,"readings":["ム"],"words":[
+      {"jp":"事務","reading":"じむ","en":"office work","cn":"事务"},
+      {"jp":"事務所","reading":"じむしょ","en":"an office","cn":"办公室"},
+      {"jp":"公務員","reading":"こうむいん","en":"a civil servant, government employee","cn":"公务员"},
+      {"jp":"税務署","reading":"ぜいむしょ","en":"tax office","cn":"税务局"}
+    ]},
+    {"n":296,"char":"課","strokes":15,"readings":["カ"],"words":[
+      {"jp":"第1課","reading":"だい1か","en":"Lesson one","cn":"第1课"},
+      {"jp":"課長","reading":"かちょう","en":"a section chief","cn":"科长"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.97（第3日末尾）",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"技術者：（a. アーティスト　b. エンジニア）"},
+        {"n":2,"q":"転職：（a. 仕事を変える　b. 会社をやめる）こと"},
+        {"n":3,"q":"請求書：代金を（a. 払う前　b. 払った後）にもらうもの"},
+        {"n":4,"q":"事務所：（a. オフィス　b. インフォメーション）"},
+        {"n":5,"q":"アルバイトを（a. 要求　b. 募集）する。"},
+        {"n":6,"q":"父は（a. 求人　b. 公務員）です。"},
+        {"n":7,"q":"やる気のある人を（a. 求めて　b. 願って）います。"},
+        {"n":8,"q":"彼とは（a. 職業　b. 職場）で知り合いました。"}
+      ]},
+      {"type":"select","instruction":"正しい読みに〇をつけなさい。","items":[
+        {"n":9,"q":"要求","opts":["そうきゅう","せいきゅう","しょうきゅう","ようきゅう"]},
+        {"n":10,"q":"求める","opts":["まとめる","もとめる","みとめる","むとめる"]},
+        {"n":11,"q":"税務署","opts":["ぜいむしょ","じょうむしょ","ぞうむしょ","ざいむしょ"]},
+        {"n":12,"q":"求人","opts":["ゆうじん","きょうじん","ようじん","きゅうじん"]}
+      ]},
+      {"type":"select","instruction":"正しい漢字に〇をつけなさい。","items":[
+        {"n":13,"q":"かちょう","opts":["社長","部長","課長","会長"]},
+        {"n":14,"q":"びよういん","opts":["理容院","病院","美容院","両院"]},
+        {"n":15,"q":"ないよう","opts":["代用","必要","無用","内容"]},
+        {"n":16,"q":"いっぱん","opts":["一船","一般","一投","一沿"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②a ③a ④a ⑤b ⑥b ⑦a ⑧b　Ⅱ：⑨4 ⑩2 ⑪1 ⑫4　Ⅲ：⑬3 ⑭3 ⑮4 ⑯2"
+  }
+}

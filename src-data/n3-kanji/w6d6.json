@@ -1,0 +1,70 @@
+{
+  "week": 6, "day": 6, "theme": "よむ", "theme_cn": "读", "theme_en": "Read",
+  "title": "政治", "title_cn": "政治", "title_en": "Politics",
+  "kanji": [
+    {"n":321,"char":"政","strokes":9,"readings":["セイ"],"words":[
+      {"jp":"政治","reading":"せいじ","en":"politics","cn":"政治"},
+      {"jp":"政治家","reading":"せいじか","en":"a politician","cn":"政治家"}
+    ]},
+    {"n":322,"char":"府","strokes":8,"readings":["フ"],"words":[
+      {"jp":"政府","reading":"せいふ","en":"a government, administration","cn":"政府"},
+      {"jp":"都道府県","reading":"とどうふけん","en":"prefectures","cn":"都道府县"}
+    ]},
+    {"n":323,"char":"改","strokes":7,"readings":["カイ","あらたーめる"],"words":[
+      {"jp":"改正","reading":"かいせい","en":"an amendment","cn":"修改"},
+      {"jp":"改める","reading":"あらためる","en":"change / check","cn":"改正、检查"},
+      {"jp":"改札口","reading":"かいさつぐち","en":"a ticket gate","cn":"检票口"}
+    ]},
+    {"n":324,"char":"否","strokes":7,"readings":["ヒ"],"words":[
+      {"jp":"否定","reading":"ひてい","en":"negation","cn":"否定"}
+    ]},
+    {"n":325,"char":"的","strokes":8,"readings":["テキ"],"words":[
+      {"jp":"否定的(な)","reading":"ひていてき","en":"negative","cn":"否定的"},
+      {"jp":"国際的(な)","reading":"こくさいてき","en":"international","cn":"国际的"},
+      {"jp":"目的","reading":"もくてき","en":"an aim, purpose","cn":"目的"},
+      {"jp":"個人的(な)","reading":"こじんてき","en":"personal","cn":"个人的"}
+    ]},
+    {"n":326,"char":"実","strokes":8,"readings":["ジツ"],"words":[
+      {"jp":"実際に","reading":"じっさいに","en":"practice, actual conditions","cn":"实际上"},
+      {"jp":"実験","reading":"じっけん","en":"an experiment","cn":"实验"},
+      {"jp":"実は","reading":"じつは","en":"to tell the truth","cn":"说实话"}
+    ]},
+    {"n":327,"char":"欠","strokes":4,"readings":["ケツ","かーける"],"words":[
+      {"jp":"欠点","reading":"けってん","en":"a shortcoming","cn":"缺点"},
+      {"jp":"欠ける","reading":"かける","en":"chip, lack","cn":"缺乏"},
+      {"jp":"欠席","reading":"けっせき","en":"absence","cn":"缺席"}
+    ]},
+    {"n":328,"char":"専","strokes":9,"readings":["セン"],"words":[
+      {"jp":"専門","reading":"せんもん","en":"specialty","cn":"专业，专长"},
+      {"jp":"専門家","reading":"せんもんか","en":"an expert","cn":"专家"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.106（第7日末尾）",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"欠点：（a. いい　b. 悪い）ところ"},
+        {"n":2,"q":"欠席：参加（a. する　b. しない）こと"},
+        {"n":3,"q":"専門家：（a. プロ　b. アマチュア）"},
+        {"n":4,"q":"国際的：（a. パーソナル　b. インターナショナル）"},
+        {"n":5,"q":"日本へ来た（a. 目的　b. 原因）は研究です。"},
+        {"n":6,"q":"（a. 窓口　b. 改札口）を出た所で待っています。"},
+        {"n":7,"q":"（a. 真　b. 実）は会社を辞めたいんです。"},
+        {"n":8,"q":"電車の時刻が（a. 改正　b. 変化）された。"}
+      ]},
+      {"type":"select","instruction":"正しい読みに〇をつけなさい。","items":[
+        {"n":9,"q":"欠ける","opts":["うける","たける","かける","すける"]},
+        {"n":10,"q":"専門","opts":["せんもん","てんもん","でんもん","ぜんもん"]},
+        {"n":11,"q":"実験","opts":["しけん","しっけん","じけん","じっけん"]},
+        {"n":12,"q":"改める","opts":["たかしめる","あらためる","たしかめる","あたらめる"]}
+      ]},
+      {"type":"select","instruction":"正しい漢字に〇をつけなさい。","items":[
+        {"n":13,"q":"せいふ","opts":["政府","勝負","正付","西部"]},
+        {"n":14,"q":"ひてい","opts":["日程","不定","非常","否定"]},
+        {"n":15,"q":"とどうふけん","opts":["県都道","道都府県","都県道府","都道府県"]},
+        {"n":16,"q":"せいじ","opts":["戦時","政治","静止","少子"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②b ③a ④b ⑤a ⑥b ⑦b ⑧a　Ⅱ：⑨3 ⑩1 ⑪4 ⑫2　Ⅲ：⑬1 ⑭4 ⑮4 ⑯2"
+  }
+}

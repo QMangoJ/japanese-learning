@@ -1,0 +1,68 @@
+{
+  "week": 6, "day": 4, "theme": "よむ", "theme_cn": "读", "theme_en": "Read",
+  "title": "経済", "title_cn": "经济", "title_en": "The Economy",
+  "kanji": [
+    {"n":305,"char":"戦","strokes":13,"readings":["セン","たたかーう"],"words":[
+      {"jp":"戦後","reading":"せんご","en":"after the war","cn":"战后"},
+      {"jp":"戦う","reading":"たたかう","en":"fight","cn":"搏斗"},
+      {"jp":"戦争","reading":"せんそう","en":"war","cn":"战争、激烈竞争"}
+    ]},
+    {"n":306,"char":"経","strokes":11,"readings":["ケイ"],"words":[
+      {"jp":"経験","reading":"けいけん","en":"an experience","cn":"经验"},
+      {"jp":"経営","reading":"けいえい","en":"management","cn":"经营"}
+    ]},
+    {"n":307,"char":"済","strokes":11,"readings":["サイ","すーむ"],"words":[
+      {"jp":"経済","reading":"けいざい","en":"economy","cn":"经济"},
+      {"jp":"済む","reading":"すむ","en":"finish","cn":"终结"}
+    ]},
+    {"n":308,"char":"成","strokes":6,"readings":["セイ"],"words":[
+      {"jp":"成長","reading":"せいちょう","en":"growth","cn":"成长"},
+      {"jp":"完成","reading":"かんせい","en":"completion","cn":"完成"}
+    ]},
+    {"n":309,"char":"貿","strokes":12,"readings":["ボウ"],"words":[
+      {"jp":"貿易","reading":"ぼうえき","en":"trade","cn":"贸易"}
+    ]},
+    {"n":310,"char":"易","strokes":8,"readings":["エキ","やさーしい"],"words":[
+      {"jp":"貿易","reading":"ぼうえき","en":"trade","cn":"贸易"},
+      {"jp":"易しい","reading":"やさしい","en":"easy, plain, simple","cn":"容易"}
+    ]},
+    {"n":311,"char":"輸","strokes":16,"readings":["ユ"],"words":[
+      {"jp":"輸出","reading":"ゆしゅつ","en":"export","cn":"出口"},
+      {"jp":"輸送","reading":"ゆそう","en":"transport","cn":"输送"},
+      {"jp":"輸入","reading":"ゆにゅう","en":"import","cn":"进口"}
+    ]},
+    {"n":312,"char":"相","strokes":9,"readings":["ソウ","ショウ","あい"],"words":[
+      {"jp":"相談","reading":"そうだん","en":"consultation","cn":"商量"},
+      {"jp":"相手","reading":"あいて","en":"an opponent/competitor","cn":"对方"},
+      {"jp":"首相","reading":"しゅしょう","en":"prime minister","cn":"首相"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.101（第5日末尾）",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"外国と物の売り買いをすること：（a. 戦争　b. 貿易）"},
+        {"n":2,"q":"建物が（a. 完了　b. 完成）する。"},
+        {"n":3,"q":"戦争を（a. 経験　b. 関係）する。"},
+        {"n":4,"q":"子どもが（a. 完成　b. 成長）した。"},
+        {"n":5,"q":"今日の試験は（a. 易しかった　b. 優しかった）。"},
+        {"n":6,"q":"食事が（a. 済む　b. 住む）。"},
+        {"n":7,"q":"レストランを（a. 経営　b. 経済）する。"},
+        {"n":8,"q":"トラックで（a. 郵送　b. 輸送）する。"}
+      ]},
+      {"type":"select","instruction":"正しい読みに〇をつけなさい。","items":[
+        {"n":9,"q":"首相","opts":["ちゅそう","しゅそう","すしょう","しゅしょう"]},
+        {"n":10,"q":"貿易","opts":["もういき","ぼうえき","こうえき","かいいき"]},
+        {"n":11,"q":"戦争","opts":["せんそう","たんそう","せんしょう","さんそう"]},
+        {"n":12,"q":"経験","opts":["かんけい","けんけい","けいかん","けいけん"]}
+      ]},
+      {"type":"select","instruction":"正しい漢字に〇をつけなさい。","items":[
+        {"n":13,"q":"あいて","opts":["会手","空手","対手","相手"]},
+        {"n":14,"q":"たたかう","opts":["浅う","戦う","残う","横う"]},
+        {"n":15,"q":"そうだん","opts":["値段","商談","相談","階段"]},
+        {"n":16,"q":"ゆしゅつ","opts":["輪出","輸出","軽出","転出"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②b ③a ④b ⑤a ⑥a ⑦a ⑧b　Ⅱ：⑨4 ⑩2 ⑪1 ⑫4　Ⅲ：⑬4 ⑭2 ⑮3 ⑯2"
+  }
+}

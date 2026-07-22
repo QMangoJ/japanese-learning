@@ -1,0 +1,70 @@
+{
+  "week": 6, "day": 3, "theme": "よむ", "theme_cn": "读", "theme_en": "Read",
+  "title": "スポーツ記事", "title_cn": "体育报道", "title_en": "A Sports Article",
+  "kanji": [
+    {"n":297,"char":"球","strokes":11,"readings":["キュウ"],"words":[
+      {"jp":"地球","reading":"ちきゅう","en":"the earth","cn":"地球"},
+      {"jp":"電球","reading":"でんきゅう","en":"a light bulb","cn":"灯泡"},
+      {"jp":"野球","reading":"やきゅう","en":"baseball","cn":"棒球"}
+    ]},
+    {"n":298,"char":"決","strokes":7,"readings":["ケツ","きーめる","きーまる"],"words":[
+      {"jp":"決して","reading":"けっして","en":"by no means","cn":"决（不）"},
+      {"jp":"決める","reading":"きめる","en":"decide (something)","cn":"做决定"},
+      {"jp":"決定","reading":"けってい","en":"a decision","cn":"决定"},
+      {"jp":"決まる","reading":"きまる","en":"be decided","cn":"决定"}
+    ]},
+    {"n":299,"char":"勝","strokes":12,"readings":["ショウ","かーつ"],"words":[
+      {"jp":"優勝","reading":"ゆうしょう","en":"a victory, championship","cn":"优胜"},
+      {"jp":"勝つ","reading":"かつ","en":"win","cn":"胜"},
+      {"jp":"決勝","reading":"けっしょう","en":"final game","cn":"决赛"}
+    ]},
+    {"n":300,"char":"対","strokes":7,"readings":["タイ"],"words":[
+      {"jp":"1対2","reading":"いちたいに","en":"(a score of) one to two","cn":"1比2"},
+      {"jp":"反対","reading":"はんたい","en":"opposite","cn":"反对"}
+    ]},
+    {"n":301,"char":"流","strokes":10,"readings":["ながーれる","ながーす"],"words":[
+      {"jp":"流れる","reading":"ながれる","en":"flow","cn":"流"},
+      {"jp":"流す","reading":"ながす","en":"let (water, etc.) flow","cn":"使……流动"}
+    ]},
+    {"n":302,"char":"負","strokes":9,"readings":["フ","まーける"],"words":[
+      {"jp":"勝負","reading":"しょうぶ","en":"a match, contest, game","cn":"胜负"},
+      {"jp":"負ける","reading":"まける","en":"lose","cn":"输"}
+    ]},
+    {"n":303,"char":"投","strokes":7,"readings":["トウ","なーげる"],"words":[
+      {"jp":"投手","reading":"とうしゅ","en":"(baseball) pitcher","cn":"投手"},
+      {"jp":"投げる","reading":"なげる","en":"throw","cn":"投"}
+    ]},
+    {"n":304,"char":"果","strokes":8,"readings":["カ"],"words":[
+      {"jp":"結果","reading":"けっか","en":"a result","cn":"结果"},
+      {"jp":"果物","reading":"くだもの","en":"fruit","cn":"水果"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.99（第4日末尾）",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"投手：（a. ピッチャー　b. バッター）"},
+        {"n":2,"q":"勝負：勝ち負けを（a. 決める　b. 決めない）こと"},
+        {"n":3,"q":"家族は留学に（a. 反対　b. 禁止）した。"},
+        {"n":4,"q":"（a. 野球　b. 電球）を新しいのと交換する。"},
+        {"n":5,"q":"涙を（a. 流す　b. 流れる）。"},
+        {"n":6,"q":"お世話になったことは（a. 決して　b. 失して）忘れません。"},
+        {"n":7,"q":"試合は（a. 3比3　b. 3対3）の同点だ。"},
+        {"n":8,"q":"美人コンテストでミス日本が（a. 決勝　b. 決定）した。"}
+      ]},
+      {"type":"select","instruction":"正しい読みに〇をつけなさい。","items":[
+        {"n":9,"q":"地球","opts":["ちきょう","じきゅう","ちきゅう","ちっくう"]},
+        {"n":10,"q":"反対","opts":["はんたい","はんだい","はんてい","はんでい"]},
+        {"n":11,"q":"投げる","opts":["まげる","なげる","にげる","もげる"]},
+        {"n":12,"q":"勝つ","opts":["うつ","たつ","かつ","けつ"]}
+      ]},
+      {"type":"select","instruction":"正しい漢字に〇をつけなさい。","items":[
+        {"n":13,"q":"ゆうしょう","opts":["先勝","決勝","全勝","優勝"]},
+        {"n":14,"q":"けっか","opts":["結束","経過","結果","結構"]},
+        {"n":15,"q":"くだもの","opts":["果物","果実","子供","荷物"]},
+        {"n":16,"q":"まける","opts":["預ける","化ける","向ける","負ける"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②a ③a ④b ⑤a ⑥a ⑦b ⑧b　Ⅱ：⑨3 ⑩1 ⑪2 ⑫3　Ⅲ：⑬4 ⑭3 ⑮1 ⑯4"
+  }
+}
