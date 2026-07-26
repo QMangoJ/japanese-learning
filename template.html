@@ -203,10 +203,11 @@ body.hide-cn .vcn,body.hide-cn .ven{visibility:hidden}
 .ct-body{flex:1;min-width:0}
 .ct-card{scroll-margin-top:150px}
 @media (max-width:680px){
-  .ct-wrap{flex-direction:column;gap:8px}
-  .ct-toc{top:148px;flex:none;width:auto;max-height:none;display:flex;gap:6px;overflow-x:auto;overflow-y:hidden;z-index:10}
+  .ct-wrap{flex-direction:column;gap:8px;align-items:stretch}
+  .ct-toc{top:148px;flex:none;width:100%;max-width:100%;box-sizing:border-box;max-height:none;display:flex;gap:6px;overflow-x:auto;overflow-y:hidden;z-index:10;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
   .ct-toc-h{display:none}
   .ct-tocitem{flex:0 0 auto;background:var(--bg);border:1px solid var(--line)}
+  .ct-body{min-width:0;max-width:100%}
   .ct-card{scroll-margin-top:190px}
 }
 .home-top{position:sticky;top:var(--topbarh,97px);z-index:10;background:var(--bg);padding-bottom:4px}
