@@ -9,12 +9,14 @@
   --bg:#f6f7f9; --card:#ffffff; --ink:#22272e; --sub:#6a737d; --line:#e3e6ea;
   --accent:#c0392b; --accent-soft:#fdf0ee; --blue:#2b6cb0; --blue-soft:#ebf3fb;
   --green:#2f855a; --green-soft:#ecf7f0; --amber:#b7791f; --amber-soft:#fdf6e9;
+  --red:#c0392b; --red-soft:#fdecea;
   --shadow:0 1px 3px rgba(0,0,0,.06),0 4px 14px rgba(0,0,0,.04); --radius:14px;
 }
 @media (prefers-color-scheme: dark){
   :root{ --bg:#14171c; --card:#1e232a; --ink:#e6e9ed; --sub:#98a1ab; --line:#313842;
     --accent:#e57365; --accent-soft:#33231f; --blue:#6ea8dc; --blue-soft:#1e2a38;
     --green:#7cc39a; --green-soft:#1d2c24; --amber:#d9a557; --amber-soft:#2e2718;
+    --red:#e57373; --red-soft:#3a2323;
     --shadow:0 1px 3px rgba(0,0,0,.4);}
 }
 *{box-sizing:border-box; -webkit-tap-highlight-color:transparent}
@@ -73,6 +75,17 @@ main{max-width:760px;margin:0 auto;padding:14px}
 .ansbtn{border:1px dashed var(--blue);background:none;color:var(--blue);border-radius:8px;padding:4px 12px;font-size:13.5px;cursor:pointer;margin:8px 0}
 .answer{display:none;background:var(--green-soft);border-radius:8px;padding:8px 12px;font-size:14px;margin-top:6px}
 .answer.show{display:block}
+.opt-btn{border:1px solid var(--line);border-radius:8px;padding:3px 11px;font-size:13.5px;background:var(--bg);color:var(--ink);max-width:100%;overflow-wrap:break-word;cursor:pointer;font-family:inherit}
+.opt-btn:active{transform:scale(.97)}
+.qz.answered .opt-btn{cursor:default}
+.qz.answered .opt-btn:active{transform:none}
+.qz.answered .opt-btn.correct{background:var(--green-soft);border-color:var(--green);color:var(--green);font-weight:700}
+.qz.answered .opt-btn.wrong{background:var(--red-soft);border-color:var(--red);color:var(--red);font-weight:700}
+.qz-note{display:none;background:var(--amber-soft);color:var(--ink);border-radius:8px;padding:8px 12px;font-size:13.5px;margin-top:6px;line-height:1.6}
+.qz-note.show{display:block}
+.qz-result{font-size:12.5px;font-weight:700;margin-top:4px}
+.qz-result.ok{color:var(--green)}
+.qz-result.ng{color:var(--red)}
 .answer b{color:var(--green)}
 .passage{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:14.5px;margin:8px 0;white-space:pre-wrap}
 .meta{color:var(--sub);font-size:13px}
@@ -340,6 +353,25 @@ document.querySelectorAll('nav.bottom button').forEach(b=>{
 });
 /* delegated clicks (artifact CSP blocks inline onclick=) */
 app.addEventListener('click', e=>{
+  const ob=e.target.closest('.opt-btn'); if(ob){
+    const wrap=ob.closest('.qz');
+    if(wrap && !wrap.classList.contains('answered')){
+      const correct=+wrap.dataset.qcorrect, picked=+ob.dataset.optidx;
+      wrap.classList.add('answered');
+      wrap.querySelectorAll('.opt-btn').forEach(b=>{
+        const idx=+b.dataset.optidx;
+        if(idx===correct) b.classList.add('correct');
+        else if(idx===picked) b.classList.add('wrong');
+      });
+      const qEl=wrap.closest('.q');
+      if(qEl){
+        const r=qEl.querySelector('.qz-result'); if(r) r.textContent = picked===correct?'✓ 答对了':'✗ 答错了';
+        if(r) r.classList.add(picked===correct?'ok':'ng');
+        const note=qEl.querySelector('.qz-note'); if(note) note.classList.add('show');
+      }
+    }
+    return;
+  }
   const sc=e.target.closest('[data-scroll]'); if(sc){ const el=document.getElementById(sc.dataset.scroll); if(el) el.scrollIntoView({behavior:sc.classList.contains('wk-tocitem')?'auto':'smooth',block:'start'}); return; }
   const sb=e.target.closest('[data-say]'); if(sb){ say(sb.dataset.say); return; }
   const fv=e.target.closest('[data-fav]'); if(fv){ toggleFav(fv.dataset.fav); fv.textContent=isFav(fv.dataset.fav)?'★':'☆'; if((location.hash||'#/')==='#/favs') viewFavs(); return; }
@@ -432,6 +464,28 @@ function afterRender(scrollP){
     if(el){ el.scrollIntoView({block:'center'}); el.style.background='var(--amber-soft)'; setTimeout(()=>el.style.background='',1600); }
   }
 }
+const CIRCLED_NUMS = '①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳㉑㉒㉓㉔㉕㉖㉗㉘㉙㉚㉛㉜㉝㉞㉟';
+function parseCircledAnswers(str){
+  const map={};
+  if(!str) return map;
+  let i=0;
+  while(i<str.length){
+    const ci = CIRCLED_NUMS.indexOf(str[i]);
+    if(ci>=0){
+      let j=i+1, num='';
+      while(j<str.length && /[0-9]/.test(str[j])){ num+=str[j]; j++; }
+      if(num) map[ci+1]=+num;
+      i=j;
+    } else i++;
+  }
+  return map;
+}
+function quizOptsHTML(it, correctAns){
+  const opts = it.opts_r||(it.opts||[]).map(esc);
+  if(!it.opts) return '';
+  if(correctAns==null) return `<div class="opts">${opts.map((o,i)=>`<span class="jp">${i+1} ${o}</span>`).join('')}</div>`;
+  return `<div class="opts qz" data-qcorrect="${correctAns}">${opts.map((o,i)=>`<button type="button" class="opt-btn jp" data-optidx="${i+1}">${i+1} ${o}</button>`).join('')}</div>`;
+}
 function optsRow(it){
   const opts = it.options_r||it.opts_r||(it.options||it.opts||[]).map(esc);
   if(!(it.options||it.opts)) return '';
@@ -499,15 +553,21 @@ function examGrammarHTML(day,w){
   if(useBesatsu) for(const k of ['mondai1','mondai2','mondai3']) for(const a of (bes[k]||[])) ansMap[a.n]=a;
   let html = `<h2 class="page jp">実戦問題 <span class="meta">实战问题 · ${esc(day.time_limit||'')} · ${esc(day.scoring||'')}</span></h2>`;
   const renderQ = it=>{
-    const a=ansMap[it.n]; const opts=it.opts_r||(it.opts||[]).map(esc);
+    const a=ansMap[it.n];
     let h=`<div class="q"><span class="n">${it.n}</span><span class="jp">${R(it,'q')}</span>`;
-    if(it.opts) h+=`<div class="opts">${opts.map((o,i)=>`<span class="jp">${i+1} ${o}</span>`).join('')}</div>`;
-    if(a){
-      let c=`<b>答案：${a.ans}</b>`;
-      if(it.opts && a.ans>=1 && a.ans<=it.opts.length) c+=`　<span class="jp">${opts[a.ans-1]}</span>`;
-      if(a.order) c+=`　<span class="jp">顺序：${esc(a.order)}</span>`;
-      if(a.note) c+=`<div class="jp" style="margin-top:4px">${R(a,'note')}</div>`;
-      h+=ansBlock(`exam-${w}-${it.n}`, c);
+    if(it.opts && a && a.ans && !a.order){
+      h += quizOptsHTML(it, a.ans);
+      h += `<div class="qz-result"></div>`;
+      if(a.note) h += `<div class="qz-note jp">${R(a,'note')}</div>`;
+    } else if(it.opts){
+      const opts=it.opts_r||(it.opts||[]).map(esc);
+      h += `<div class="opts">${opts.map((o,i)=>`<span class="jp">${i+1} ${o}</span>`).join('')}</div>`;
+      if(a){
+        let c=`<b>答案：${a.ans}</b>`;
+        if(a.order) c+=`　<span class="jp">顺序：${esc(a.order)}</span>`;
+        if(a.note) c+=`<div class="jp" style="margin-top:4px">${R(a,'note')}</div>`;
+        h+=ansBlock(`exam-${w}-${it.n}`, c);
+      }
     }
     return h+`</div>`;
   };
@@ -573,13 +633,20 @@ function viewDayVocab(day,w,d,scrollTok){
   if(scrollTok) scrollHighlight(`v-${w}-${d}-${scrollTok}`);
 }
 function examVocabHTML(day,w){
+  const ansMap = parseCircledAnswers(day.answers);
   let html = `<h2 class="page jp">実戦問題 <span class="meta">实战问题 · ${esc(day.time_limit||'')} · ${esc(day.scoring||'')}</span></h2>`;
   for(const [key,label] of [['mondai1','問題1'],['mondai2','問題2'],['mondai3','問題3'],['mondai4','問題4']]){
     const m=day[key]; if(!m) continue;
     html += `<div class="sec-title">${label}</div><div class="card"><div class="meta jp">${R(m,'instruction')}</div>`;
-    html += m.items.map(it=>`<div class="q"><span class="n">${it.n}</span><span class="jp">${R(it,'q')}</span>${optsRow(it)}</div>`).join('') + `</div>`;
+    html += m.items.map(it=>{
+      const correct=ansMap[it.n];
+      let h=`<div class="q"><span class="n">${it.n}</span><span class="jp">${R(it,'q')}</span>`;
+      h += it.opts ? quizOptsHTML(it, correct!=null?correct:null) : '';
+      if(it.opts && correct!=null) h += `<div class="qz-result"></div>`;
+      return h+`</div>`;
+    }).join('') + `</div>`;
   }
-  if(day.answers) html += `<div class="card">` + ansBlock(`examv-${w}`, `<b>答案：</b><span class="jp">${esc(day.answers)}</span>`) + `</div>`;
+  if(day.answers) html += `<div class="card">` + ansBlock(`examv-${w}`, `<b>完整答案：</b><span class="jp">${esc(day.answers)}</span>`) + `</div>`;
   return html;
 }
 
