@@ -195,6 +195,13 @@ body.hide-cn .vcn,body.hide-cn .ven{visibility:hidden}
 .ct-eg{font-size:14px;margin:2px 0 0}
 .ct-egcn{color:var(--sub);font-size:13px;margin:0 0 2px}
 .ct-mean{font-size:14px}
+.ct-daysum{margin-bottom:10px}
+.ct-daysum h4{margin:0 0 8px;font-size:15px;display:flex;align-items:baseline;gap:6px;flex-wrap:wrap}
+.ct-daysum h4 .meta{font-weight:400}
+.ct-daysum h4 a.plink{margin-left:auto;font-size:13px}
+.ct-daysum ul{margin:0;padding-left:18px}
+.ct-daysum li{margin:6px 0;font-size:14.5px;line-height:1.5}
+.ct-daysum li .ct-mean{color:var(--sub)}
 .ct-wrap{display:flex;gap:16px;align-items:flex-start}
 .ct-toc{position:sticky;top:150px;flex:0 0 168px;max-height:calc(100vh - 168px);overflow-y:auto;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px}
 .ct-toc-h{font-size:12px;color:var(--sub);font-weight:700;padding:4px 8px}
@@ -409,6 +416,8 @@ app.addEventListener('click', e=>{
   const fv=e.target.closest('[data-fav]'); if(fv){ toggleFav(fv.dataset.fav); fv.textContent=isFav(fv.dataset.fav)?'★':'☆'; if((location.hash||'#/')==='#/favs') viewFavs(); return; }
   if(e.target.closest('[data-favfc]')){ startFavFc(); return; }
   const ffl=e.target.closest('[data-favfilter]'); if(ffl){ favFilter=ffl.dataset.favfilter; viewFavs(); return; }
+  const cm=e.target.closest('[data-ctmode]'); if(cm){ ctMode=cm.dataset.ctmode; viewContrast(); return; }
+  const cw=e.target.closest('[data-ctweek]'); if(cw){ ctWeek=+cw.dataset.ctweek; viewContrast(); return; }
   const fclr=e.target.closest('[data-favclear]'); if(fclr){ if(fclr.dataset.armed){ FAV={}; saveFav(); viewFavs(); } else { fclr.dataset.armed='1'; fclr.textContent='再点一次清空'; } return; }
   if(e.target.closest('[data-favflip]')){ favFlip=!favFlip; renderFavFc(); return; }
   if(e.target.closest('[data-favprev]')){ if(favIdx>0){ favIdx--; favFlip=false; renderFavFc(); } return; }
@@ -923,8 +932,8 @@ function renderFavFc(){
 }
 
 /* ---------- contrast (语法辨析, N3 grammar only) ---------- */
-function viewContrast(){
-  setNav('contrast'); setHeader(LX('语法辨析 · N3','Grammar Contrast · N3'), false);
+let ctMode='family', ctWeek=1;
+function viewContrastFamily(){
   const C = G.contrast || {groups:[]};
   const groups = C.groups||[];
   const toc = groups.map((g,i)=>`<a class="ct-tocitem" data-scroll="ct-g-${i}">${esc(g.title)}</a>`).join('');
@@ -940,7 +949,38 @@ function viewContrast(){
     }
     body += `</div>`;
   });
-  app.innerHTML = `<div class="ct-wrap"><nav class="ct-toc"><div class="ct-toc-h">目录</div>${toc}</nav><div class="ct-body">${body}</div></div>`;
+  return `<div class="ct-wrap"><nav class="ct-toc"><div class="ct-toc-h">目录</div>${toc}</nav><div class="ct-body">${body}</div></div>`;
+}
+function viewContrastWeek(){
+  const weeks = G.weeks||[];
+  if(ctWeek>weeks.length) ctWeek=1;
+  const wkBar = weeks.map(w=>`<button class="${ctWeek===w.n?'on':''}" data-ctweek="${w.n}">第${w.n}周</button>`).join('');
+  const wk = weeks.find(w=>w.n===ctWeek);
+  let body = `<div class="fc-filter" style="margin-bottom:12px">${wkBar}</div>`;
+  if(!wk){ return body+'<div class="empty">暂无内容</div>'; }
+  const wt = wk.title?` <span class="jp">${esc(wk.title)}</span>`:'';
+  const wsub = LX(wk.title_cn, wk.title_en);
+  body += `<div class="card" style="margin-bottom:12px"><h3 class="ct-h">第${wk.n}周${wt}</h3>${wsub?`<div class="meta">${esc(wsub)}</div>`:''}</div>`;
+  wk.days.forEach(d=>{
+    if(d.day===7 || !d.points) return;
+    const dt = LX(d.title_cn, d.title_en);
+    body += `<div class="card ct-daysum">
+      <h4>${d.day}日目 <span class="jp">${R(d,'title')}</span>${dt?`<span class="meta">（${esc(dt)}）</span>`:''}<a class="plink" data-go="#/day/${wk.n}-${d.day}">详情 ›</a></h4>
+      <ul>${(d.points||[]).map(p=>{
+        const use=LX(p.usage_cn,p.usage_en);
+        return `<li><span class="jp">${p.pattern_r||esc(p.pattern)}</span>${use?`<span class="ct-mean"> — ${esc(use)}</span>`:''}</li>`;
+      }).join('')}</ul>
+    </div>`;
+  });
+  return body;
+}
+function viewContrast(){
+  setNav('contrast'); setHeader(LX('语法辨析 · N3','Grammar Contrast · N3'), false);
+  const modeBar = `<div class="fc-filter" style="margin-bottom:12px">
+    <button class="${ctMode==='family'?'on':''}" data-ctmode="family">语法家族</button>
+    <button class="${ctMode==='week'?'on':''}" data-ctmode="week">每周总结</button>
+  </div>`;
+  app.innerHTML = modeBar + (ctMode==='week' ? viewContrastWeek() : viewContrastFamily());
 }
 
 /* ---------- reference (grammar only) ---------- */
