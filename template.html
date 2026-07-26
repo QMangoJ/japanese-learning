@@ -379,8 +379,8 @@ function render(){
   else if(h==='#/ref'){ if(MODULE!=='grammar') setModule('grammar'); viewRef(); }
   else if(h==='#/contrast'){ if(MODULE!=='grammar') setModule('grammar'); viewContrast(); }
   else {
-    let m = h.match(/^#\/day\/(\d)-(\d)(?:\/p(\d+))?$/);
-    if(m) viewDay(+m[1], +m[2], m[3]?+m[3]:null);
+    let m = h.match(/^#\/day\/(\d)-(\d)(?:\/(p\d+|v\d+-\d+|k\d+))?$/);
+    if(m) viewDay(+m[1], +m[2], m[3]||null);
     else viewHome();
   }
   updateStickyVars();
@@ -438,13 +438,17 @@ function optsRow(it){
 }
 
 /* ---------- day view (dispatch) ---------- */
-function viewDay(w,d,scrollP){
+function viewDay(w,d,scrollTok){
   const day=findDay(w,d);
   if(!day){ app.innerHTML='<div class="empty">未找到</div>'; return; }
   setNav('home'); setHeader(LX(`第${w}週 ${d}日目`, `Week ${w} Day ${d}`), true);
-  if(isGram()) viewDayGrammar(day,w,d,scrollP);
-  else if(MODULE==='kanji') viewDayKanji(day,w,d);
-  else viewDayVocab(day,w,d);
+  if(isGram()) viewDayGrammar(day,w,d, scrollTok&&scrollTok[0]==='p'?+scrollTok.slice(1):null);
+  else if(MODULE==='kanji') viewDayKanji(day,w,d, scrollTok&&scrollTok[0]==='k'?scrollTok.slice(1):null);
+  else viewDayVocab(day,w,d, scrollTok&&scrollTok[0]==='v'?scrollTok.slice(1):null);
+}
+function scrollHighlight(id){
+  const el=document.getElementById(id);
+  if(el){ el.scrollIntoView({block:'center'}); el.style.background='var(--amber-soft)'; setTimeout(()=>{el.style.background='';},1600); }
 }
 
 /* ---------- grammar day ---------- */
@@ -527,7 +531,7 @@ function examGrammarHTML(day,w){
 }
 
 /* ---------- vocab day ---------- */
-function viewDayVocab(day,w,d){
+function viewDayVocab(day,w,d,scrollTok){
   const mod = MODULE, modLbl = mod==='n2vocab'?'N2 词汇':'词汇';
   let html = `<div class="crumb">第${w}週 · ${modLbl}</div>`;
   if(d===7){ app.innerHTML = html + examVocabHTML(day,w); return; }
@@ -543,7 +547,7 @@ function viewDayVocab(day,w,d){
     (sec.items||[]).forEach((it,ii)=>{
       const vid=mod+'#'+w+'-'+d+'#'+si+'#'+ii;
       const vsnap={module:mod, hash:'#/day/'+w+'-'+d, w:w, d:d, jp:it.jp, cn:it.cn||it.en||''};
-      html += `<div class="vrow"><div class="vjp jp">${it.jp_r||esc(it.jp)}${sayBtn(it.jp)}${star(vid,vsnap)}</div><div class="vmn">`;
+      html += `<div class="vrow" id="v-${w}-${d}-${si}-${ii}"><div class="vjp jp">${it.jp_r||esc(it.jp)}${sayBtn(it.jp)}${star(vid,vsnap)}</div><div class="vmn">`;
       if(it.cn) html += `<span class="vcn">${esc(it.cn)}</span>`;
       if(it.en) html += `<span class="ven">${esc(it.en)}</span>`;
       if(it.rel) html += `<span class="vrel jp">${it.rel_r||esc(it.rel)}</span>`;
@@ -564,6 +568,7 @@ function viewDayVocab(day,w,d){
   }
   if(day.hitokoto) html += `<div class="card hito"><div class="jp">${esc(day.hitokoto)}</div></div>`;
   app.innerHTML = html;
+  if(scrollTok) scrollHighlight(`v-${w}-${d}-${scrollTok}`);
 }
 function examVocabHTML(day,w){
   let html = `<h2 class="page jp">実戦問題 <span class="meta">实战问题 · ${esc(day.time_limit||'')} · ${esc(day.scoring||'')}</span></h2>`;
@@ -578,7 +583,7 @@ function examVocabHTML(day,w){
 
 /* ---------- kanji day ---------- */
 function romanN(i){ return ['Ⅰ','Ⅱ','Ⅲ','Ⅳ','Ⅴ'][i]||(i+1); }
-function viewDayKanji(day,w,d){
+function viewDayKanji(day,w,d,scrollTok){
   let html = `<div class="crumb">第${w}週 · 汉字${day.theme?` <span class="jp">${esc(day.theme)}</span>（${esc(day.theme_cn||'')}）`:''}</div>`;
   if(d===7){ app.innerHTML = html + examKanjiHTML(day,w); return; }
   html += `<h2 class="page jp">${R(day,'title')} <span class="meta">${esc(LX(day.title_cn, day.title_en))}</span></h2>`;
@@ -607,6 +612,7 @@ function viewDayKanji(day,w,d){
     html += `</div>`;
   }
   app.innerHTML = html;
+  if(scrollTok) scrollHighlight(`k-${w}-${d}-${scrollTok}`);
 }
 function examKanjiHTML(day,w){
   let html = `<h2 class="page jp">実戦問題 <span class="meta">实战问题 · ${esc(day.time_limit||'')} · ${esc(day.scoring||'')}</span></h2>`;
@@ -632,14 +638,14 @@ function buildIndex(){
   }); };
   pushG('grammar', G.weeks);
   pushG('n2grammar', G2.weeks);
-  const pushV = (mod, weeks)=>{ for(const w of weeks) for(const d of w.days) (d.sections||[]).forEach(sec=>(sec.items||[]).forEach(it=>{
-    searchIndex.push({module:mod, w:w.n,d:d.day, key:it.jp||'', reading:'',
+  const pushV = (mod, weeks)=>{ for(const w of weeks) for(const d of w.days) (d.sections||[]).forEach((sec,si)=>(sec.items||[]).forEach((it,ii)=>{
+    searchIndex.push({module:mod, w:w.n,d:d.day, si, ii, key:it.jp||'', reading:'',
       extra:(it.en||'')+' '+(it.cn||'')+' '+(it.rel||''), sub:[it.cn,it.en].filter(Boolean).join(' · '), dayTitle:d.title});
   })); };
   pushV('vocab', V.weeks);
   pushV('n2vocab', V2.weeks);
-  for(const w of K.weeks) for(const d of w.days) (d.kanji||[]).forEach(k=>(k.words||[]).forEach(wd=>{
-    searchIndex.push({module:'kanji', w:w.n,d:d.day, key:wd.jp||'', reading:wd.reading||'',
+  for(const w of K.weeks) for(const d of w.days) (d.kanji||[]).forEach((k,ki)=>(k.words||[]).forEach(wd=>{
+    searchIndex.push({module:'kanji', w:w.n,d:d.day, ki, key:wd.jp||'', reading:wd.reading||'',
       extra:(wd.en||'')+' '+(wd.cn||'')+' '+(k.char||''), sub:[wd.cn,wd.en].filter(Boolean).join(' · '), dayTitle:d.title});
   }));
   return searchIndex;
@@ -691,7 +697,11 @@ window.openHit = ix=>{
   const e=window['__hit'+ix]; if(!e) return;
   if(lastSearchKw) saveSearchHistory(lastSearchKw);
   setModule(e.module);
-  navTo((e.module==='vocab'||e.module==='kanji'||e.module==='n2vocab')?`#/day/${e.w}-${e.d}`:`#/day/${e.w}-${e.d}/p${e.i}`);
+  let hash=`#/day/${e.w}-${e.d}`;
+  if(e.module==='kanji') hash+=`/k${e.ki}`;
+  else if(e.module==='vocab'||e.module==='n2vocab') hash+=`/v${e.si}-${e.ii}`;
+  else hash+=`/p${e.i}`;
+  navTo(hash);
 };
 
 /* ---------- flashcards (per module) ---------- */
