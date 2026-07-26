@@ -167,6 +167,11 @@ a.plink{color:var(--blue);text-decoration:none}
 del{text-decoration:line-through;color:var(--sub)}
 ruby rt{font-size:.55em;color:var(--sub);letter-spacing:0;user-select:none}
 body.no-ruby rt{display:none}
+.mem-bar{display:flex;gap:8px;margin-bottom:12px}
+.mem-bar button{flex:1;border:1px solid var(--line);background:var(--card);color:var(--sub);border-radius:999px;padding:6px 0;font-size:13px;font-weight:700;cursor:pointer}
+.mem-bar button.on{background:var(--accent);border-color:var(--accent);color:#fff}
+body.hide-jp .vjp-text{visibility:hidden}
+body.hide-cn .vcn,body.hide-cn .ven{visibility:hidden}
 .conn-hint{font-size:11.5px;color:var(--sub);margin-left:6px}
 .hito{font-style:italic;color:var(--green);border-left:3px solid var(--green)}
 .sayb{border:none;background:none;cursor:pointer;font-size:14px;padding:0 3px;color:var(--blue);vertical-align:middle;opacity:.55}
@@ -265,12 +270,30 @@ const esc = s=>String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(
 const fmt = s=>esc(s).replace(/~([^~]+)~/g,'<del>$1</del>');
 const R = (o,f)=>(o&&o[f+'_r'])||esc(o?o[f]:'');
 try{ if(localStorage.getItem('noruby')==='1') document.body.classList.add('no-ruby'); }catch(e){}
+try{ if(localStorage.getItem('hidejp')==='1') document.body.classList.add('hide-jp'); }catch(e){}
+try{ if(localStorage.getItem('hidecn')==='1') document.body.classList.add('hide-cn'); }catch(e){}
 function rubyBtnText(){ return document.body.classList.contains('no-ruby')?'注音：关':'注音：开'; }
 topAction.onclick = ()=>{
   document.body.classList.toggle('no-ruby');
   try{ localStorage.setItem('noruby', document.body.classList.contains('no-ruby')?'1':'0'); }catch(e){}
   topAction.textContent = rubyBtnText();
+  syncMemBar();
 };
+function memBarHTML(){
+  const on=(cls)=>document.body.classList.contains(cls)?'on':'';
+  return `<div class="mem-bar">
+    <button data-memtoggle="ruby" class="${document.body.classList.contains('no-ruby')?'':'on'}">读音</button>
+    <button data-memtoggle="jp" class="${on('hide-jp')?'':'on'}">汉字</button>
+    <button data-memtoggle="cn" class="${on('hide-cn')?'':'on'}">翻译</button>
+  </div>`;
+}
+function syncMemBar(){
+  const bar=document.querySelector('.mem-bar'); if(!bar) return;
+  const btns=bar.querySelectorAll('button');
+  btns[0].classList.toggle('on', !document.body.classList.contains('no-ruby'));
+  btns[1].classList.toggle('on', !document.body.classList.contains('hide-jp'));
+  btns[2].classList.toggle('on', !document.body.classList.contains('hide-cn'));
+}
 function noteClass(t){ return (t==='ダメ')?'note dame':'note'; }
 function noteLabel(t){ return ({'れい':'れい','ダメ':'ダメ✗','OK':'OK','もっと':'もっと!','tag':'💬','!':'注意','◆':'◆'})[t]||t; }
 
@@ -353,6 +376,14 @@ document.querySelectorAll('nav.bottom button').forEach(b=>{
 });
 /* delegated clicks (artifact CSP blocks inline onclick=) */
 app.addEventListener('click', e=>{
+  const mt=e.target.closest('[data-memtoggle]'); if(mt){
+    const kind=mt.dataset.memtoggle;
+    if(kind==='ruby'){ document.body.classList.toggle('no-ruby'); try{localStorage.setItem('noruby', document.body.classList.contains('no-ruby')?'1':'0');}catch(e){} topAction.textContent=rubyBtnText(); }
+    else if(kind==='jp'){ document.body.classList.toggle('hide-jp'); try{localStorage.setItem('hidejp', document.body.classList.contains('hide-jp')?'1':'0');}catch(e){} }
+    else if(kind==='cn'){ document.body.classList.toggle('hide-cn'); try{localStorage.setItem('hidecn', document.body.classList.contains('hide-cn')?'1':'0');}catch(e){} }
+    syncMemBar();
+    return;
+  }
   const ob=e.target.closest('.opt-btn'); if(ob){
     const wrap=ob.closest('.qz');
     if(wrap && !wrap.classList.contains('answered')){
@@ -598,6 +629,7 @@ function viewDayVocab(day,w,d,scrollTok){
   let html = `<div class="crumb">第${w}週 · ${modLbl}</div>`;
   if(d===7){ app.innerHTML = html + examVocabHTML(day,w); return; }
   html += `<h2 class="page jp">${R(day,'title')} <span class="meta">${esc(LX(day.title_cn, day.title_en))}</span></h2>`;
+  html += memBarHTML();
   if(day.dialog){
     const lines = day.dialog.lines_r || (day.dialog.lines||[]).map(esc);
     html += `<div class="dialog jp">${lines.map(l=>'「'+l+'」').join('<br>')} ${sayBtn((day.dialog.lines||[]).join('　'))}${day.dialog.cn?`<div class="cn">${esc(day.dialog.cn)}</div>`:''}</div>`;
@@ -609,7 +641,7 @@ function viewDayVocab(day,w,d,scrollTok){
     (sec.items||[]).forEach((it,ii)=>{
       const vid=mod+'#'+w+'-'+d+'#'+si+'#'+ii;
       const vsnap={module:mod, hash:'#/day/'+w+'-'+d, w:w, d:d, jp:it.jp, cn:it.cn||it.en||''};
-      html += `<div class="vrow" id="v-${w}-${d}-${si}-${ii}"><div class="vjp jp">${it.jp_r||esc(it.jp)}${sayBtn(it.jp)}${star(vid,vsnap)}</div><div class="vmn">`;
+      html += `<div class="vrow" id="v-${w}-${d}-${si}-${ii}"><div class="vjp jp"><span class="vjp-text">${it.jp_r||esc(it.jp)}</span>${sayBtn(it.jp)}${star(vid,vsnap)}</div><div class="vmn">`;
       if(it.cn) html += `<span class="vcn">${esc(it.cn)}</span>`;
       if(it.en) html += `<span class="ven">${esc(it.en)}</span>`;
       if(it.rel) html += `<span class="vrel jp">${it.rel_r||esc(it.rel)}</span>`;
@@ -656,13 +688,14 @@ function viewDayKanji(day,w,d,scrollTok){
   let html = `<div class="crumb">第${w}週 · 汉字${day.theme?` <span class="jp">${esc(day.theme)}</span>（${esc(day.theme_cn||'')}）`:''}</div>`;
   if(d===7){ app.innerHTML = html + examKanjiHTML(day,w); return; }
   html += `<h2 class="page jp">${R(day,'title')} <span class="meta">${esc(LX(day.title_cn, day.title_en))}</span></h2>`;
+  html += memBarHTML();
   html += `<div class="card kanji-card">`;
   (day.kanji||[]).forEach((k,ki)=>{
     html += `<div class="krow" id="k-${w}-${d}-${ki}"><div class="kchar-wrap"><div class="kchar jp">${esc(k.char)}</div><div class="kmeta">${k.strokes?esc(k.strokes)+'画':''}</div><div class="kreads jp">${(k.readings||[]).map(r=>`<span class="kread">${esc(r)}</span>`).join('')}</div></div><div class="kwords">`;
     (k.words||[]).forEach((wd,wi)=>{
       const kid='kanji#'+w+'-'+d+'#'+ki+'#'+wi;
       const ksnap={module:'kanji', hash:'#/day/'+w+'-'+d, w:w, d:d, jp:wd.jp, cn:wd.cn||wd.en||''};
-      html += `<div class="vrow"><div class="vjp jp">${wd.jp_r||esc(wd.jp)}${sayBtn(wd.jp)}${star(kid,ksnap)}</div><div class="vmn">`;
+      html += `<div class="vrow"><div class="vjp jp"><span class="vjp-text">${wd.jp_r||esc(wd.jp)}</span>${sayBtn(wd.jp)}${star(kid,ksnap)}</div><div class="vmn">`;
       if(wd.cn) html += `<span class="vcn">${esc(wd.cn)}</span>`;
       if(wd.en) html += `<span class="ven">${esc(wd.en)}</span>`;
       html += `</div></div>`;
