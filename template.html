@@ -99,7 +99,9 @@ main{max-width:760px;margin:0 auto;padding:14px}
 .kchar-wrap{flex:0 0 auto;width:74px;text-align:center}
 .kchar{font-size:42px;font-weight:700;line-height:1.1}
 .kmeta{color:var(--sub);font-size:11px;margin-top:2px}
-.kreads{color:var(--blue);font-size:12.5px;margin-top:2px;line-height:1.4}
+.kreads{color:var(--blue);font-size:12.5px;margin-top:2px;line-height:1.6}
+.kread{white-space:nowrap;display:inline-block}
+.kread+.kread::before{content:"　"}
 .kwords{flex:1;min-width:0}
 @media (max-width:520px){
   .krow{gap:10px}
@@ -589,7 +591,7 @@ function viewDayKanji(day,w,d,scrollTok){
   html += `<h2 class="page jp">${R(day,'title')} <span class="meta">${esc(LX(day.title_cn, day.title_en))}</span></h2>`;
   html += `<div class="card kanji-card">`;
   (day.kanji||[]).forEach((k,ki)=>{
-    html += `<div class="krow" id="k-${w}-${d}-${ki}"><div class="kchar-wrap"><div class="kchar jp">${esc(k.char)}</div><div class="kmeta">${k.strokes?esc(k.strokes)+'画':''}</div><div class="kreads jp">${(k.readings||[]).map(esc).join('　')}</div></div><div class="kwords">`;
+    html += `<div class="krow" id="k-${w}-${d}-${ki}"><div class="kchar-wrap"><div class="kchar jp">${esc(k.char)}</div><div class="kmeta">${k.strokes?esc(k.strokes)+'画':''}</div><div class="kreads jp">${(k.readings||[]).map(r=>`<span class="kread">${esc(r)}</span>`).join('')}</div></div><div class="kwords">`;
     (k.words||[]).forEach((wd,wi)=>{
       const kid='kanji#'+w+'-'+d+'#'+ki+'#'+wi;
       const ksnap={module:'kanji', hash:'#/day/'+w+'-'+d, w:w, d:d, jp:wd.jp, cn:wd.cn||wd.en||''};
@@ -742,7 +744,7 @@ function viewCards(){
     if(!fc.flipped) cardHTML=`<div class="fcard" data-fcflip="1"><div class="big jp" style="font-size:64px">${esc(k.char)}</div><div class="hint">回想读音与词语，点击翻面</div></div>`;
     else cardHTML=`<div class="fcard" data-fcflip="1"><div class="backside" style="text-align:center">
       <div class="jp" style="font-weight:700;font-size:40px">${esc(k.char)}</div>
-      <div class="meta jp" style="font-size:15px">${(k.readings||[]).map(esc).join('　')}${k.strokes?'　'+esc(k.strokes)+'画':''}</div>
+      <div class="meta jp" style="font-size:15px">${(k.readings||[]).map(r=>`<span class="kread">${esc(r)}</span>`).join('')}${k.strokes?`<span class="kread">${esc(k.strokes)}画</span>`:''}</div>
       ${(k.words||[]).map(wd=>`<div class="ex"><div class="jp">${wd.jp_r||esc(wd.jp)}</div>${wd.cn?`<div class="cn">${esc(wd.cn)}</div>`:''}</div>`).join('')}
     </div></div>`;
   } else {
