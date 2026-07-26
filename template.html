@@ -407,6 +407,7 @@ app.addEventListener('click', e=>{
   const sb=e.target.closest('[data-say]'); if(sb){ say(sb.dataset.say); return; }
   const fv=e.target.closest('[data-fav]'); if(fv){ toggleFav(fv.dataset.fav); fv.textContent=isFav(fv.dataset.fav)?'★':'☆'; if((location.hash||'#/')==='#/favs') viewFavs(); return; }
   if(e.target.closest('[data-favfc]')){ startFavFc(); return; }
+  const ffl=e.target.closest('[data-favfilter]'); if(ffl){ favFilter=ffl.dataset.favfilter; viewFavs(); return; }
   const fclr=e.target.closest('[data-favclear]'); if(fclr){ if(fclr.dataset.armed){ FAV={}; saveFav(); viewFavs(); } else { fclr.dataset.armed='1'; fclr.textContent='再点一次清空'; } return; }
   if(e.target.closest('[data-favflip]')){ favFlip=!favFlip; renderFavFc(); return; }
   if(e.target.closest('[data-favprev]')){ if(favIdx>0){ favIdx--; favFlip=false; renderFavFc(); } return; }
@@ -870,13 +871,29 @@ window.fcShuffle=()=>{ fc.deck=buildDeck(fc.week); fc.idx=0; fc.flipped=false; v
 
 /* ---------- favorites (收藏 / 生词本) ---------- */
 let favDeck=[], favIdx=0, favFlip=false;
+let favFilter='all';
+const FAV_MOD_ORDER=['grammar','n2grammar','vocab','n2vocab','kanji'];
+const FAV_MOD_LABEL={grammar:'N3语法', n2grammar:'N2语法', vocab:'N3词汇', n2vocab:'N2词汇', kanji:'N3汉字'};
+function favGroups(){
+  const groups={};
+  for(const id of Object.keys(FAV)){ const m=(FAV[id]||{}).module||'other'; (groups[m]=groups[m]||[]).push(id); }
+  return groups;
+}
 function viewFavs(){
   setNav('favs'); setHeader(LX('我的收藏 · 生词本','My Favorites · Word Book'), false);
   const ids=Object.keys(FAV);
   if(!ids.length){ app.innerHTML='<div class="empty">还没有收藏。<br>在语法点或单词右侧点 ☆ 即可加入生词本。</div>'; return; }
   const tagMap={grammar:'<span class="mtag g">N3语法</span>', n2grammar:'<span class="mtag g2">N2语法</span>', vocab:'<span class="mtag v">N3词汇</span>', kanji:'<span class="mtag k">N3汉字</span>', n2vocab:'<span class="mtag v2">N2词汇</span>'};
-  let html=`<div class="fav-actions"><button class="primary" data-favfc>▶ 用收藏刷闪卡（${ids.length}）</button><button data-favclear>清空收藏</button></div><div class="card">`;
-  ids.forEach(id=>{
+  const groups=favGroups();
+  const presentMods=FAV_MOD_ORDER.filter(m=>groups[m]&&groups[m].length);
+  if(favFilter!=='all' && !(groups[favFilter]&&groups[favFilter].length)) favFilter='all';
+  const shownIds = favFilter==='all' ? ids : groups[favFilter];
+  const filterBar = presentMods.length>1 ? `<div class="fc-filter" style="margin-bottom:12px">
+    <button class="${favFilter==='all'?'on':''}" data-favfilter="all">全部（${ids.length}）</button>
+    ${presentMods.map(m=>`<button class="${favFilter===m?'on':''}" data-favfilter="${m}">${FAV_MOD_LABEL[m]}（${groups[m].length}）</button>`).join('')}
+  </div>` : '';
+  let html=`<div class="fav-actions"><button class="primary" data-favfc>▶ 用收藏刷闪卡（${shownIds.length}）</button><button data-favclear>清空收藏</button></div>${filterBar}<div class="card">`;
+  shownIds.forEach(id=>{
     const s=FAV[id]||{};
     const tag=tagMap[s.module]||'';
     html+=`<div class="fav-item"><button class="starb" data-fav="${escAttr(id)}" aria-label="取消收藏">★</button>
@@ -886,7 +903,13 @@ function viewFavs(){
   html+='</div>';
   app.innerHTML=html;
 }
-function startFavFc(){ favDeck=Object.values(FAV).map(s=>({jp:s.jp,cn:s.cn})); for(let i=favDeck.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [favDeck[i],favDeck[j]]=[favDeck[j],favDeck[i]]; } favIdx=0; favFlip=false; renderFavFc(); }
+function startFavFc(){
+  const groups=favGroups();
+  const ids = favFilter==='all' ? Object.keys(FAV) : (groups[favFilter]||[]);
+  favDeck=ids.map(id=>FAV[id]).map(s=>({jp:s.jp,cn:s.cn}));
+  for(let i=favDeck.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [favDeck[i],favDeck[j]]=[favDeck[j],favDeck[i]]; }
+  favIdx=0; favFlip=false; renderFavFc();
+}
 function renderFavFc(){
   if(!favDeck.length){ viewFavs(); return; }
   setNav('favs'); setHeader(LX('收藏 · 闪卡','Favorites · Flashcards'), false);
