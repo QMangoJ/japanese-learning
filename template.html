@@ -113,6 +113,12 @@ nav.bottom button.on{color:var(--accent);font-weight:700}
 .search-box{display:flex;gap:8px;margin-bottom:12px}
 .search-box input{flex:1;border:1px solid var(--line);border-radius:10px;padding:9px 12px;font-size:16px;background:var(--card);color:var(--ink);outline:none}
 .search-box input:focus{border-color:var(--blue)}
+.search-hist{margin-bottom:14px}
+.search-hist-h{color:var(--sub);font-size:12.5px;margin-bottom:8px;display:flex;justify-content:space-between;align-items:center}
+.search-hist-h a{color:var(--blue);cursor:pointer;font-size:12.5px}
+.search-hist-chips{display:flex;flex-wrap:wrap;gap:8px}
+.hist-chip{background:var(--card);border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:5px 14px;font-size:13.5px;cursor:pointer}
+.hist-chip:hover{border-color:var(--blue);color:var(--blue)}
 .result{cursor:pointer}
 .result .where{color:var(--sub);font-size:12.5px}
 .mtag{display:inline-block;font-size:11px;font-weight:700;padding:1px 7px;border-radius:999px;margin-right:6px;vertical-align:middle}
@@ -344,6 +350,8 @@ app.addEventListener('click', e=>{
   const go=e.target.closest('[data-go]'); if(go){ if(go.dataset.mod) setModule(go.dataset.mod); navTo(go.dataset.go); return; }
   const an=e.target.closest('[data-ans]'); if(an){ const a=document.getElementById(an.dataset.ans); if(a){ a.classList.toggle('show'); an.textContent=a.classList.contains('show')?'隐藏答案':'显示答案'; } return; }
   const hit=e.target.closest('[data-hit]'); if(hit){ openHit(+hit.dataset.hit); return; }
+  const hq=e.target.closest('[data-histq]'); if(hq){ const qi=$('#q'); if(qi){ qi.value=hq.dataset.histq; qi.oninput(); } return; }
+  const hc=e.target.closest('[data-histclear]'); if(hc){ clearSearchHistory(); const qi=$('#q'); if(qi){ qi.value=''; qi.oninput(); } return; }
   const fw=e.target.closest('[data-fcweek]'); if(fw){ fcSetWeek(+fw.dataset.fcweek); return; }
   const fb=e.target.closest('[data-fc]'); if(fb){ ({prev:fcPrev,next:fcNext,shuffle:fcShuffle})[fb.dataset.fc](); return; }
   if(e.target.closest('[data-fcflip]')){ fcFlip(); return; }
@@ -636,14 +644,32 @@ function buildIndex(){
   }));
   return searchIndex;
 }
+const SEARCH_HIST_KEY='searchHistory', SEARCH_HIST_MAX=15;
+function getSearchHistory(){ try{ return JSON.parse(localStorage.getItem(SEARCH_HIST_KEY)||'[]'); }catch(e){ return []; } }
+function saveSearchHistory(kw){
+  if(!kw) return;
+  try{
+    let h=getSearchHistory().filter(x=>x!==kw);
+    h.unshift(kw);
+    localStorage.setItem(SEARCH_HIST_KEY, JSON.stringify(h.slice(0,SEARCH_HIST_MAX)));
+  }catch(e){}
+}
+function clearSearchHistory(){ try{ localStorage.removeItem(SEARCH_HIST_KEY); }catch(e){} }
+let lastSearchKw='';
 function viewSearch(){
   setNav('search'); setHeader(LX('搜索（语法 + 词汇）','Search (Grammar + Vocabulary)'), false);
   const total=buildIndex().length;
-  app.innerHTML = `<div class="search-box"><input id="q" type="search" placeholder="日文 / 假名 / 中文 / 英文，如：ばかり · 冰箱 · fridge" autocomplete="off"></div><div id="results"><div class="empty">共收录 ${total} 条（语法点 + 词汇）<br>结果标注所属模块，点击直达</div></div>`;
+  app.innerHTML = `<div class="search-box"><input id="q" type="search" placeholder="日文 / 假名 / 中文 / 英文，如：ばかり · 冰箱 · fridge" autocomplete="off"></div><div id="results"></div>`;
   const q=$('#q'), res=$('#results'); q.focus();
   q.oninput = ()=>{
     const kw=q.value.trim();
-    if(!kw){ res.innerHTML=`<div class="empty">共收录 ${total} 条</div>`; return; }
+    lastSearchKw=kw;
+    if(!kw){
+      const h=getSearchHistory();
+      const histHTML = h.length ? `<div class="search-hist"><div class="search-hist-h"><span>最近搜索</span><a data-histclear>清空</a></div><div class="search-hist-chips">${h.map(x=>`<span class="hist-chip" data-histq="${esc(x)}">${esc(x)}</span>`).join('')}</div></div>` : '';
+      res.innerHTML = `${histHTML}<div class="empty">共收录 ${total} 条（语法点 + 词汇）<br>结果标注所属模块，点击直达</div>`;
+      return;
+    }
     const lk=kw.toLowerCase();
     const hits=buildIndex().filter(e=> e.key.toLowerCase().includes(lk)||e.reading.includes(kw)||e.extra.toLowerCase().includes(lk)).slice(0,60);
     if(!hits.length){ res.innerHTML='<div class="empty">没有找到，换个关键词试试</div>'; return; }
@@ -658,9 +684,12 @@ function viewSearch(){
       </div>`;
     }).join('');
   };
+  q.onkeydown = ev=>{ if(ev.key==='Enter' && q.value.trim()) saveSearchHistory(q.value.trim()); };
+  q.oninput();
 }
 window.openHit = ix=>{
   const e=window['__hit'+ix]; if(!e) return;
+  if(lastSearchKw) saveSearchHistory(lastSearchKw);
   setModule(e.module);
   navTo((e.module==='vocab'||e.module==='kanji'||e.module==='n2vocab')?`#/day/${e.w}-${e.d}`:`#/day/${e.w}-${e.d}/p${e.i}`);
 };
