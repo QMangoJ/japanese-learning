@@ -260,7 +260,7 @@ body.hide-cn .vcn,body.hide-cn .ven{visibility:hidden}
   <button data-nav="ref" id="navRef"><span class="ic">📖</span><span class="lbl" data-cn="接续表" data-en="Reference">接续表</span></button>
 </nav>
 <script>
-let DATA={}, G={weeks:[]}, V={weeks:[]}, K={weeks:[]}, G2={weeks:[]}, V2={weeks:[]}, dataLoaded=false;
+let DATA={}, G={weeks:[]}, V={weeks:[]}, K={weeks:[]}, G2={weeks:[]}, V2={weeks:[]}, dataLoaded=false, n2Loaded=false;
 let MODULE = 'grammar';
 try{ const m=localStorage.getItem('module'); if(['vocab','grammar','n2grammar','kanji','n2vocab'].includes(m)) MODULE=m; }catch(e){}
 let LANG = 'cn';
@@ -446,8 +446,11 @@ function updateStickyVars(){
 window.addEventListener('resize', updateStickyVars);
 function render(){
   if(!dataLoaded){ app.innerHTML='<div class="empty">加载中…</div>'; return; }
+  const h = location.hash || '#/';
+  if((MODULE==='n2grammar'||MODULE==='n2vocab') && !n2Loaded){ setNav('home'); setHeader(modLabel(), false); app.innerHTML='<div class="empty">N2 数据加载中，请稍候…</div>'; return; }
+  if(h==='#/search' && !n2Loaded){ setNav('search'); setHeader(LX('搜索（语法 + 词汇）','Search (Grammar + Vocabulary)'), false); app.innerHTML='<div class="empty">词典数据加载中，马上就好…</div>'; return; }
   syncModeBar();
-  const h = location.hash || '#/'; window.scrollTo(0,0);
+  window.scrollTo(0,0);
   if(h==='#/') viewHome();
   else if(h==='#/search') viewSearch();
   else if(h==='#/cards') viewCards();
@@ -1008,18 +1011,31 @@ function viewRef(){
 }
 
 const DATA_FILES = __DATA_FILES__;
-async function boot(){
+async function bootN3(){
   try{
-    const names=['grammar','vocab','kanji','n2grammar','n2vocab'];
-    const [g,v,k,g2,v2]=await Promise.all(names.map(n=>fetch('data/'+DATA_FILES[n]).then(r=>r.json())));
-    G=g; V=v; K=k; G2=g2; V2=v2;
-    DATA={grammar:G, vocab:V, kanji:K, n2grammar:G2, n2vocab:V2};
+    const names=['grammar','vocab','kanji'];
+    const [g,v,k]=await Promise.all(names.map(n=>fetch('data/'+DATA_FILES[n]).then(r=>r.json())));
+    G=g; V=v; K=k;
+    DATA.grammar=G; DATA.vocab=V; DATA.kanji=K;
     dataLoaded=true;
   }catch(e){ app.innerHTML='<div class="empty">数据加载失败，请检查网络后刷新重试。</div>'; return; }
   render();
+  bootN2(); // N3 优先，N2 随后低优先级加载
+}
+async function bootN2(){
+  try{
+    const names=['n2grammar','n2vocab'];
+    const [g2,v2]=await Promise.all(names.map(n=>fetch('data/'+DATA_FILES[n]).then(r=>r.json())));
+    G2=g2; V2=v2;
+    DATA.n2grammar=G2; DATA.n2vocab=V2;
+    n2Loaded=true;
+    searchIndex=null; // N2 数据到位后让搜索索引下次重新构建，纳入N2结果
+    const h=location.hash||'#/';
+    if(MODULE==='n2grammar'||MODULE==='n2vocab'||h==='#/search') render();
+  }catch(e){ /* N2 加载失败时静默：N3 内容不受影响，用户切到N2或搜索时会看到持续的加载提示 */ }
 }
 render();
-boot();
+bootN3();
 pullFavsFromServer();
 </script>
 </body>
