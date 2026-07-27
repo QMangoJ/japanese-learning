@@ -238,17 +238,26 @@ def main():
         "n2grammar": {"weeks": n2weeks},
         "n2vocab": {"weeks": v2weeks},
     }
-    blob = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
 
     with open(TEMPLATE, encoding="utf-8") as f:
         tpl = f.read()
-    if "__DATA__" not in tpl:
-        raise SystemExit("template.html is missing the __DATA__ placeholder")
+    if "__DATA__" in tpl:
+        raise SystemExit("template.html still has the old inline __DATA__ placeholder; it should fetch per-module JSON from data/ instead")
 
     os.makedirs(OUT_DIR, exist_ok=True)
+    data_dir = os.path.join(OUT_DIR, "data")
+    os.makedirs(data_dir, exist_ok=True)
+    total_kb = 0
+    for name, obj in data.items():
+        path = os.path.join(data_dir, f"{name}.json")
+        blob = json.dumps(obj, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(blob)
+        total_kb += os.path.getsize(path) // 1024
+
     with open(OUT, "w", encoding="utf-8") as f:
-        f.write(tpl.replace("__DATA__", blob, 1))
-    print(f"OK  {os.path.getsize(OUT)//1024} KB -> {OUT}")
+        f.write(tpl)
+    print(f"OK  index.html {os.path.getsize(OUT)//1024} KB + data/*.json {total_kb} KB -> {OUT_DIR}")
 
 if __name__ == "__main__":
     main()

@@ -260,8 +260,7 @@ body.hide-cn .vcn,body.hide-cn .ven{visibility:hidden}
   <button data-nav="ref" id="navRef"><span class="ic">📖</span><span class="lbl" data-cn="接续表" data-en="Reference">接续表</span></button>
 </nav>
 <script>
-const DATA = __DATA__;
-const G = DATA.grammar, V = DATA.vocab, G2 = DATA.n2grammar, K = DATA.kanji, V2 = DATA.n2vocab;
+let DATA={}, G={weeks:[]}, V={weeks:[]}, K={weeks:[]}, G2={weeks:[]}, V2={weeks:[]}, dataLoaded=false;
 let MODULE = 'grammar';
 try{ const m=localStorage.getItem('module'); if(['vocab','grammar','n2grammar','kanji','n2vocab'].includes(m)) MODULE=m; }catch(e){}
 let LANG = 'cn';
@@ -446,6 +445,7 @@ function updateStickyVars(){
 }
 window.addEventListener('resize', updateStickyVars);
 function render(){
+  if(!dataLoaded){ app.innerHTML='<div class="empty">加载中…</div>'; return; }
   syncModeBar();
   const h = location.hash || '#/'; window.scrollTo(0,0);
   if(h==='#/') viewHome();
@@ -1007,7 +1007,18 @@ function viewRef(){
   app.innerHTML=html;
 }
 
+async function boot(){
+  try{
+    const files=['grammar','vocab','kanji','n2grammar','n2vocab'];
+    const [g,v,k,g2,v2]=await Promise.all(files.map(f=>fetch('data/'+f+'.json').then(r=>r.json())));
+    G=g; V=v; K=k; G2=g2; V2=v2;
+    DATA={grammar:G, vocab:V, kanji:K, n2grammar:G2, n2vocab:V2};
+    dataLoaded=true;
+  }catch(e){ app.innerHTML='<div class="empty">数据加载失败，请检查网络后刷新重试。</div>'; return; }
+  render();
+}
 render();
+boot();
 pullFavsFromServer();
 </script>
 </body>
