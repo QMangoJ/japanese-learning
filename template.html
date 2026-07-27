@@ -357,9 +357,6 @@ function syncModeBar(){
   document.querySelectorAll('#levelbar button').forEach(b=>b.classList.toggle('on', b.dataset.lv===LEVEL));
   document.querySelectorAll('#typebar button').forEach(b=>b.classList.toggle('on', b.dataset.ty===TYPE));
   document.querySelectorAll('#typebar button[data-ty="kanji"]').forEach(b=>{ b.style.display = LEVEL==='n2'?'none':''; });
-  $('#navRef').style.display = MODULE==='grammar'?'':'none';
-  $('#navContrast').style.display = MODULE==='grammar'?'':'none';
-  $('#navKatsuyou').style.display = MODULE==='grammar'?'':'none';
   document.querySelectorAll('#langbar button').forEach(b=>b.classList.toggle('on', b.dataset.lang===LANG));
   document.querySelectorAll('.lbl[data-cn]').forEach(el=>{ el.textContent = LX(el.dataset.cn, el.dataset.en); });
 }
