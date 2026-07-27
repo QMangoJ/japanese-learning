@@ -223,6 +223,9 @@ def main():
             if r.get("eg"):
                 r["eg_r"] = ruby(r["eg"])
 
+    with open(os.path.join(GSRC, "katsuyou.json"), encoding="utf-8") as f:
+        katsuyou = json.load(f)
+
     vweeks = load_days(VSRC, 6, annotate_v)
     n2weeks = load_days(N2SRC, 8, annotate_g)
     kweeks = load_days(KSRC, count_weeks(KSRC), annotate_k)  # N3汉字: auto-detects how many weeks are extracted so far
@@ -232,7 +235,7 @@ def main():
     v2weeks = load_days(V2SRC, count_weeks(V2SRC), annotate_v)  # N2词汇: auto-detects how many weeks are extracted so far
 
     data = {
-        "grammar": {"weeks": gweeks, "besatsu": besatsu, "reference": reference, "contrast": contrast},
+        "grammar": {"weeks": gweeks, "besatsu": besatsu, "reference": reference, "contrast": contrast, "katsuyou": katsuyou},
         "kanji": {"weeks": kweeks},
         "vocab": {"weeks": vweeks},
         "n2grammar": {"weeks": n2weeks},

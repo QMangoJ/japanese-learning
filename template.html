@@ -259,6 +259,7 @@ body.hide-cn .vcn,body.hide-cn .ven{visibility:hidden}
   <button data-nav="favs"><span class="ic">⭐</span><span class="lbl" data-cn="收藏" data-en="Favorites">收藏</span></button>
   <button data-nav="contrast" id="navContrast"><span class="ic">🔀</span><span class="lbl" data-cn="辨析" data-en="Contrast">辨析</span></button>
   <button data-nav="ref" id="navRef"><span class="ic">📖</span><span class="lbl" data-cn="接续表" data-en="Reference">接续表</span></button>
+  <button data-nav="katsuyou" id="navKatsuyou"><span class="ic">🙇</span><span class="lbl" data-cn="活用" data-en="Conjugation">活用</span></button>
 </nav>
 <script>
 let DATA={}, G={weeks:[]}, V={weeks:[]}, K={weeks:[]}, G2={weeks:[]}, V2={weeks:[]}, dataLoaded=false, n2Loaded=false;
@@ -358,6 +359,7 @@ function syncModeBar(){
   document.querySelectorAll('#typebar button[data-ty="kanji"]').forEach(b=>{ b.style.display = LEVEL==='n2'?'none':''; });
   $('#navRef').style.display = MODULE==='grammar'?'':'none';
   $('#navContrast').style.display = MODULE==='grammar'?'':'none';
+  $('#navKatsuyou').style.display = MODULE==='grammar'?'':'none';
   document.querySelectorAll('#langbar button').forEach(b=>b.classList.toggle('on', b.dataset.lang===LANG));
   document.querySelectorAll('.lbl[data-cn]').forEach(el=>{ el.textContent = LX(el.dataset.cn, el.dataset.en); });
 }
@@ -380,7 +382,7 @@ function navTo(hash){ if(location.hash===hash) render(); else location.hash=hash
 window.addEventListener('hashchange', render);
 backBtn.onclick = ()=>{ history.length>1 ? history.back() : navTo('#/'); };
 document.querySelectorAll('nav.bottom button').forEach(b=>{
-  b.onclick = ()=> navTo({home:'#/',search:'#/search',cards:'#/cards',favs:'#/favs',contrast:'#/contrast',ref:'#/ref'}[b.dataset.nav]);
+  b.onclick = ()=> navTo({home:'#/',search:'#/search',cards:'#/cards',favs:'#/favs',contrast:'#/contrast',ref:'#/ref',katsuyou:'#/katsuyou'}[b.dataset.nav]);
 });
 /* delegated clicks (artifact CSP blocks inline onclick=) */
 app.addEventListener('click', e=>{
@@ -458,6 +460,7 @@ function render(){
   else if(h==='#/favs') viewFavs();
   else if(h==='#/ref'){ if(MODULE!=='grammar') setModule('grammar'); viewRef(); }
   else if(h==='#/contrast'){ if(MODULE!=='grammar') setModule('grammar'); viewContrast(); }
+  else if(h==='#/katsuyou'){ if(MODULE!=='grammar') setModule('grammar'); viewKatsuyou(); }
   else {
     let m = h.match(/^#\/day\/(\d)-(\d)(?:\/(p\d+|v\d+-\d+|k\d+))?$/);
     if(m) viewDay(+m[1], +m[2], m[3]||null);
@@ -1009,6 +1012,47 @@ function viewRef(){
   html+=`<div class="card"><h3 class="jp" style="margin-top:0">${esc(RF.noun.heading)}</h3><div class="meta jp">${esc(RF.noun.note)}</div>${refTable(['解説文中の表示','活用形','名詞'], RF.noun.rows)}<div class="note"><b class="nt">〔普〕</b><span class="jp">${esc(RF.noun.futsukei)}</span></div></div>`;
   html+=`<div class="card"><h3 style="margin-top:0">本书使用的标记</h3>` + RF.marks.map(m=>`<div class="q"><span class="n" style="min-width:auto;padding:0 8px">${esc(m.mark)}</span><span class="jp">${esc(m.desc)}</span></div>`).join('') + `</div>`;
   app.innerHTML=html;
+}
+
+/* ---------- 活用一覧 (普通形/丁寧形/尊敬語, grammar only) ---------- */
+function ktable(cols, rows){
+  return `<div class="table-scroll"><table class="ref">
+    <tr><th></th>${cols.map(c=>`<th>${esc(c)}</th>`).join('')}</tr>
+    ${rows.map(r=>`<tr><th>${esc(r.label)}</th>${r.vals.map((v,i)=>`<td class="jp"${i===cols.length-1?' style="color:var(--accent);font-weight:600"':''}>${esc(v)}</td>`).join('')}</tr>`).join('')}
+  </table></div>`;
+}
+function viewKatsuyou(){
+  setNav('katsuyou'); setHeader(LX('活用一覧 · 普通形/丁寧形/尊敬語','Conjugation: Plain/Polite/Honorific'), false);
+  const K2 = G.katsuyou;
+  if(!K2){ app.innerHTML='<div class="empty">暂无内容</div>'; return; }
+  let html = K2.intro ? `<div class="meta" style="margin-bottom:10px">${esc(K2.intro)}</div>` : '';
+  (K2.sections||[]).forEach(s=>{
+    html += `<div class="card"><h3 class="jp" style="margin-top:0">${esc(s.kind)} <span class="meta">${esc(s.kindEn)}</span></h3>`;
+    html += `<div class="meta jp" style="margin-bottom:6px">例：${esc(s.word)}</div>`;
+    html += ktable(s.cols, s.rows);
+    if(s.note) html += `<div class="note"><span class="jp">${esc(s.note)}</span></div>`;
+    html += `</div>`;
+  });
+  const V3 = K2.verb;
+  if(V3){
+    html += `<div class="card"><h3 class="jp" style="margin-top:0">${esc(V3.kind)} <span class="meta">${esc(V3.kindEn)}</span></h3>`;
+    html += `<div class="meta jp" style="margin-bottom:6px">例：${esc(V3.word)}</div>`;
+    (V3.tables||[]).forEach(t=>{
+      html += `<div class="meta jp" style="margin:10px 0 4px;font-weight:700">${esc(t.head)}</div>` + ktable(V3.cols, t.rows);
+    });
+    if(V3.note) html += `<div class="note"><span class="jp">${esc(V3.note)}</span></div>`;
+    if(V3.callout){
+      const c=V3.callout;
+      html += `<div class="ct-tip" style="margin-top:14px">💡 ${esc(c.title)}</div>`;
+      html += (c.chains||[]).map(ch=>`<div class="jp" style="margin:4px 0"><span style="color:var(--sub)">${esc(ch[0])}</span> → <span style="color:var(--sub)">${esc(ch[1])}</span> → <span style="color:var(--accent);font-weight:600">${esc(ch[2])}</span></div>`).join('');
+      if(c.suppletiveNote) html += `<div class="meta" style="margin-top:10px">${esc(c.suppletiveNote)}</div>`;
+      html += `<div class="opts">` + (c.suppletive||[]).map(p=>`<span class="jp">${esc(p[0])} → <b style="color:var(--accent)">${esc(p[1])}</b></span>`).join('') + `</div>`;
+      if(c.tip) html += `<div class="note" style="margin-top:8px"><span class="jp">${esc(c.tip)}</span></div>`;
+    }
+    html += `</div>`;
+  }
+  if(K2.footer) html += `<div class="meta" style="margin-top:10px">${esc(K2.footer)}</div>`;
+  app.innerHTML = html;
 }
 
 const DATA_FILES = __DATA_FILES__;
