@@ -1007,10 +1007,11 @@ function viewRef(){
   app.innerHTML=html;
 }
 
+const DATA_FILES = __DATA_FILES__;
 async function boot(){
   try{
-    const files=['grammar','vocab','kanji','n2grammar','n2vocab'];
-    const [g,v,k,g2,v2]=await Promise.all(files.map(f=>fetch('data/'+f+'.json').then(r=>r.json())));
+    const names=['grammar','vocab','kanji','n2grammar','n2vocab'];
+    const [g,v,k,g2,v2]=await Promise.all(names.map(n=>fetch('data/'+DATA_FILES[n]).then(r=>r.json())));
     G=g; V=v; K=k; G2=g2; V2=v2;
     DATA={grammar:G, vocab:V, kanji:K, n2grammar:G2, n2vocab:V2};
     dataLoaded=true;

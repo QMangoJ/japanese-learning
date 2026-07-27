@@ -5,7 +5,7 @@
 Run locally:  pip install -r requirements.txt && python build.py
 Output:       public/index.html  (a single self-contained page)
 """
-import json, os, re
+import hashlib, json, os, re, shutil
 import pykakasi
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -243,20 +243,40 @@ def main():
         tpl = f.read()
     if "__DATA__" in tpl:
         raise SystemExit("template.html still has the old inline __DATA__ placeholder; it should fetch per-module JSON from data/ instead")
+    if "__DATA_FILES__" not in tpl:
+        raise SystemExit("template.html is missing the __DATA_FILES__ placeholder")
 
     os.makedirs(OUT_DIR, exist_ok=True)
     data_dir = os.path.join(OUT_DIR, "data")
-    os.makedirs(data_dir, exist_ok=True)
+    if os.path.isdir(data_dir):
+        shutil.rmtree(data_dir)  # drop stale hashed filenames from previous builds
+    os.makedirs(data_dir)
     total_kb = 0
+    files = {}
     for name, obj in data.items():
-        path = os.path.join(data_dir, f"{name}.json")
         blob = json.dumps(obj, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
-        with open(path, "w", encoding="utf-8") as f:
+        digest = hashlib.sha256(blob.encode("utf-8")).hexdigest()[:10]
+        fname = f"{name}.{digest}.json"
+        with open(os.path.join(data_dir, fname), "w", encoding="utf-8") as f:
             f.write(blob)
-        total_kb += os.path.getsize(path) // 1024
+        files[name] = fname
+        total_kb += len(blob.encode("utf-8")) // 1024
 
     with open(OUT, "w", encoding="utf-8") as f:
-        f.write(tpl)
+        f.write(tpl.replace("__DATA_FILES__", json.dumps(files, separators=(",", ":")), 1))
+
+    # data/*.json filenames are content-hashed -> safe to cache forever; index.html must
+    # always be revalidated since it's what points at the current hashed filenames.
+    with open(os.path.join(OUT_DIR, "_headers"), "w", encoding="utf-8") as f:
+        f.write(
+            "/data/*\n"
+            "  Cache-Control: public, max-age=31536000, immutable\n\n"
+            "/\n"
+            "  Cache-Control: public, max-age=0, must-revalidate\n\n"
+            "/index.html\n"
+            "  Cache-Control: public, max-age=0, must-revalidate\n"
+        )
+
     print(f"OK  index.html {os.path.getsize(OUT)//1024} KB + data/*.json {total_kb} KB -> {OUT_DIR}")
 
 if __name__ == "__main__":
