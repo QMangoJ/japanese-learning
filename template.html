@@ -265,6 +265,9 @@ body.hide-cn .vcn,body.hide-cn .ven{visibility:hidden}
 let DATA={}, G={weeks:[]}, V={weeks:[]}, K={weeks:[]}, G2={weeks:[]}, V2={weeks:[]}, dataLoaded=false, n2Loaded=false;
 let MODULE = 'grammar';
 try{ const m=localStorage.getItem('module'); if(['vocab','grammar','n2grammar','kanji','n2vocab'].includes(m)) MODULE=m; }catch(e){}
+let lastVisit={};
+try{ lastVisit=JSON.parse(localStorage.getItem('lastVisit')||'{}')||{}; }catch(e){ lastVisit={}; }
+function entryHash(mod){ return lastVisit[mod] || '#/'; }
 let LANG = 'cn';
 try{ const l=localStorage.getItem('lang'); if(l==='en'||l==='cn') LANG=l; }catch(e){}
 const LX = (cn,en)=> (LANG==='en' && en) ? en : (cn||'');
@@ -365,10 +368,10 @@ function setModule(m){
   fc.deck=[]; fc.week=0; syncModeBar();
 }
 document.querySelectorAll('#levelbar button').forEach(b=>{
-  b.onclick=()=>{ const lv=b.dataset.lv; const ty=(lv==='n2'&&TYPE==='kanji')?'grammar':TYPE; setModule(moduleFrom(lv, ty)); navTo('#/'); };
+  b.onclick=()=>{ const lv=b.dataset.lv; const ty=(lv==='n2'&&TYPE==='kanji')?'grammar':TYPE; const mod=moduleFrom(lv, ty); setModule(mod); navTo(entryHash(mod)); };
 });
 document.querySelectorAll('#typebar button').forEach(b=>{
-  b.onclick=()=>{ setModule(moduleFrom(LEVEL, b.dataset.ty)); navTo('#/'); };
+  b.onclick=()=>{ const mod=moduleFrom(LEVEL, b.dataset.ty); setModule(mod); navTo(entryHash(mod)); };
 });
 document.querySelectorAll('#langbar button').forEach(b=>{
   b.onclick=()=>{ LANG=b.dataset.lang; try{localStorage.setItem('lang',LANG);}catch(e){} syncModeBar(); render(); };
@@ -460,7 +463,11 @@ function render(){
   else if(h==='#/katsuyou'){ if(MODULE!=='grammar') setModule('grammar'); viewKatsuyou(); }
   else {
     let m = h.match(/^#\/day\/(\d)-(\d)(?:\/(p\d+|v\d+-\d+|k\d+))?$/);
-    if(m) viewDay(+m[1], +m[2], m[3]||null);
+    if(m){
+      lastVisit[MODULE] = `#/day/${m[1]}-${m[2]}`;
+      try{ localStorage.setItem('lastVisit', JSON.stringify(lastVisit)); }catch(e){}
+      viewDay(+m[1], +m[2], m[3]||null);
+    }
     else viewHome();
   }
   updateStickyVars();
