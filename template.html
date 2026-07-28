@@ -268,6 +268,10 @@ try{ const m=localStorage.getItem('module'); if(['vocab','grammar','n2grammar','
 let lastVisit={};
 try{ lastVisit=JSON.parse(localStorage.getItem('lastVisit')||'{}')||{}; }catch(e){ lastVisit={}; }
 function entryHash(mod){ return lastVisit[mod] || '#/'; }
+function saveLastVisit(hash){
+  lastVisit[MODULE] = hash;
+  try{ localStorage.setItem('lastVisit', JSON.stringify(lastVisit)); }catch(e){}
+}
 let LANG = 'cn';
 try{ const l=localStorage.getItem('lang'); if(l==='en'||l==='cn') LANG=l; }catch(e){}
 const LX = (cn,en)=> (LANG==='en' && en) ? en : (cn||'');
@@ -454,7 +458,7 @@ function render(){
   if(h==='#/search' && !n2Loaded){ setNav('search'); setHeader(LX('搜索（语法 + 词汇）','Search (Grammar + Vocabulary)'), false); app.innerHTML='<div class="empty">词典数据加载中，马上就好…</div>'; return; }
   syncModeBar();
   window.scrollTo(0,0);
-  if(h==='#/') viewHome();
+  if(h==='#/'){ saveLastVisit('#/'); viewHome(); }
   else if(h==='#/search') viewSearch();
   else if(h==='#/cards') viewCards();
   else if(h==='#/favs') viewFavs();
@@ -464,8 +468,7 @@ function render(){
   else {
     let m = h.match(/^#\/day\/(\d)-(\d)(?:\/(p\d+|v\d+-\d+|k\d+))?$/);
     if(m){
-      lastVisit[MODULE] = `#/day/${m[1]}-${m[2]}`;
-      try{ localStorage.setItem('lastVisit', JSON.stringify(lastVisit)); }catch(e){}
+      saveLastVisit(`#/day/${m[1]}-${m[2]}`);
       viewDay(+m[1], +m[2], m[3]||null);
     }
     else viewHome();
