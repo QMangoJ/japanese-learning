@@ -57,6 +57,18 @@ python build.py
 
 不绑定 KV 也完全不影响其余功能：`/api/favorites` 请求失败会静默忽略，自动退回到仅本机 `localStorage`。
 
+## 错题/生词本跨设备同步（Cloudflare KV）
+
+首页"错题/生词本"卡片同样默认存浏览器 `localStorage`。要跨设备同步，再绑定一个 KV 命名空间：
+
+1. Cloudflare 控制台 → **Storage & Databases → KV → Create a namespace**，起个名字（如 `n3-mistakes`）。
+2. 回到本 Pages 项目 → **Settings → Functions → KV namespace bindings → Add binding**：
+   - **Variable name**: `MISTAKES_KV`（必须完全一致，代码里写死了这个名字）
+   - **KV namespace**: 选刚才建的那个
+3. 保存后**重新部署一次**即可生效。
+
+跟收藏一样是单用户设计、无身份校验，不绑定 KV 也不影响其余功能，`/api/mistakes` 请求失败会静默退回本机 `localStorage`。
+
 ## 更新内容
 
 - 改语法/词汇内容 → 编辑对应 `src-data/<模块>/wXdY.json`
