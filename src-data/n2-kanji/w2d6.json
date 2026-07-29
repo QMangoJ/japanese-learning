@@ -1,0 +1,92 @@
+{
+  "week": 2, "day": 6, "theme": "つかう①", "theme_cn": "用①", "theme_en": "Use ①",
+  "title": "携帯電話・パソコン", "title_cn": "手机・个人电脑", "title_en": "Cell Phones, Personal Computers",
+  "dialog": {"lines": ["A：アドレスはどうやって登録するんでしたっけ。", "B：新しく作成する場合は「新規」、編集する場合は「機能」を押して「修正」し、作業が終わったら「完了」を押します。", "A：わかりました。えっと、それから、画像はどうやって送るんですか。"]},
+  "kanji": [
+    {"n":157,"char":"登","strokes":12,"readings":["トウ","ト","のぼ-る"],"words":[
+      {"jp":"登録","reading":"とうろく","en":"registration","cn":"登记"},
+      {"jp":"登場","reading":"とうじょう","en":"appearance","cn":"登场"},
+      {"jp":"登山","reading":"とざん","en":"mountain climbing","cn":"爬山"},
+      {"jp":"山登り","reading":"やまのぼり","en":"mountain climbing","cn":"爬山"}
+    ]},
+    {"n":158,"char":"編","strokes":15,"readings":["ヘン","あ-む"],"words":[
+      {"jp":"編集","reading":"へんしゅう","en":"editing","cn":"编辑"},
+      {"jp":"短編","reading":"たんぺん","en":"short work","cn":"短篇"},
+      {"jp":"長編","reading":"ちょうへん","en":"long work","cn":"长篇"},
+      {"jp":"編み物","reading":"あみもの","en":"knitting","cn":"针织品"}
+    ]},
+    {"n":159,"char":"能","strokes":10,"readings":["ノウ"],"words":[
+      {"jp":"機能","reading":"きのう","en":"function","cn":"功能"},
+      {"jp":"能力","reading":"のうりょく","en":"ability","cn":"能力"},
+      {"jp":"可能(な)","reading":"かのう","en":"possible","cn":"可能"}
+    ]},
+    {"n":160,"char":"修","strokes":10,"readings":["シュウ"],"words":[
+      {"jp":"修正","reading":"しゅうせい","en":"amendment/modification","cn":"修订"},
+      {"jp":"修士","reading":"しゅうし","en":"master (holder of a masters degree)","cn":"硕士"},
+      {"jp":"修理","reading":"しゅうり","en":"repair","cn":"修理"}
+    ]},
+    {"n":161,"char":"完","strokes":7,"readings":["カン"],"words":[
+      {"jp":"完了","reading":"かんりょう","en":"completion","cn":"完了"},
+      {"jp":"完備","reading":"かんび","en":"be fully equipped","cn":"完备"},
+      {"jp":"完成","reading":"かんせい","en":"completion","cn":"完成"}
+    ]},
+    {"n":162,"char":"了","strokes":2,"readings":["リョウ"],"words":[
+      {"jp":"終了","reading":"しゅうりょう","en":"end, expiration","cn":"完了、终了"},
+      {"jp":"修了","reading":"しゅうりょう","en":"completion","cn":"修完"}
+    ]},
+    {"n":163,"char":"像","strokes":14,"readings":["ゾウ"],"words":[
+      {"jp":"画像","reading":"がぞう","en":"a picture/image","cn":"影像"},
+      {"jp":"現像","reading":"げんぞう","en":"developing (a photograph)","cn":"冲洗(照片)"},
+      {"jp":"映像","reading":"えいぞう","en":"a reflection/image/video","cn":"影像"}
+    ]},
+    {"n":164,"char":"類","strokes":18,"readings":["ルイ"],"words":[
+      {"jp":"書類","reading":"しょるい","en":"a document","cn":"文书"},
+      {"jp":"人類","reading":"じんるい","en":"the human race","cn":"人类"},
+      {"jp":"分類","reading":"ぶんるい","en":"classification","cn":"分类"}
+    ]},
+    {"n":165,"char":"式","strokes":6,"readings":["シキ"],"words":[
+      {"jp":"書式","reading":"しょしき","en":"format","cn":"公文格式"},
+      {"jp":"日本式","reading":"にほんしき","en":"Japanese style","cn":"日式"},
+      {"jp":"入学式","reading":"にゅうがくしき","en":"a ceremony to begin the school term","cn":"入学典礼"},
+      {"jp":"正式(な)","reading":"せいしき","en":"formal/official","cn":"正式"}
+    ]},
+    {"n":166,"char":"央","strokes":5,"readings":["オウ"],"words":[
+      {"jp":"中央","reading":"ちゅうおう","en":"center","cn":"中央"}
+    ]},
+    {"n":167,"char":"存","strokes":6,"readings":["ゾン","ソン"],"words":[
+      {"jp":"保存","reading":"ほぞん","en":"save","cn":"保存"},
+      {"jp":"ご存知","reading":"ごぞんじ","en":"know (humble form)","cn":"知道(敬语)"},
+      {"jp":"生存","reading":"せいぞん","en":"survival","cn":"生存"},
+      {"jp":"存在","reading":"そんざい","en":"existence","cn":"存在"}
+    ]},
+    {"n":168,"char":"印","strokes":6,"readings":["イン","しるし"],"words":[
+      {"jp":"認め印","reading":"みとめいん","en":"a seal (stamp)","cn":"(常用的)图章、便章"},
+      {"jp":"印","reading":"しるし","en":"a mark/token","cn":"记号、标记"},
+      {"jp":"目印","reading":"めじるし","en":"a sign/landmark","cn":"记号、标记"}
+    ]},
+    {"n":169,"char":"刷","strokes":8,"readings":["サツ"],"words":[
+      {"jp":"印刷","reading":"いんさつ","en":"printing","cn":"印刷"}
+    ]},
+    {"n":170,"char":"拡","strokes":8,"readings":["カク"],"words":[
+      {"jp":"拡大","reading":"かくだい","en":"enlargement","cn":"扩大"},
+      {"jp":"縮小","reading":"しゅくしょう","en":"reduction","cn":"缩小"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"このフィルムを（a. 現像　b. 映像）してください。"},
+        {"n":2,"q":"コピー機の調子が悪いので（a. 修理　b. 編集）に来てください。"},
+        {"n":3,"q":"この部屋はエアコン（a. 機能　b. 完備）です。"},
+        {"n":4,"q":"アドレスを（a. 登録　b. 登場）する。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"ここに受け取りの（a. 認め印　b. 目印）をお願いします。"},
+        {"n":6,"q":"タイトルは（a. 中央　b. 拡大）に、日付と名前は右に書きます。"},
+        {"n":7,"q":"ここにある書類を（a. 書式　b. 分類）してファイルしてください。"},
+        {"n":8,"q":"作成したファイルを（a. 保存　b. 生存）する。"}
+      ]}
+    ],
+    "answers": "左：①a ②a ③b ④a／右：①a ②a ③b ④a"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "week": 1, "day": 6, "theme": "みる①", "theme_cn": "看①", "theme_en": "Look and See ①",
+  "title": "郵便局・病院で見る表示", "title_cn": "在邮局、医院看到的标示", "title_en": "Signs Seen at the Post Office or Hospital",
+  "kanji": [
+    {"n":67,"char":"郵","strokes":11,"readings":["ユウ"],"words":[
+      {"jp":"郵便","reading":"ゆうびん","en":"mail","cn":"邮件"},
+      {"jp":"郵送","reading":"ゆうそう","en":"send by post","cn":"邮寄"}
+    ]},
+    {"n":68,"char":"局","strokes":7,"readings":["キョク"],"words":[
+      {"jp":"郵便局","reading":"ゆうびんきょく","en":"a post office","cn":"邮局"},
+      {"jp":"放送局","reading":"ほうそうきょく","en":"a broadcasting station","cn":"广播电台"}
+    ]},
+    {"n":69,"char":"貯","strokes":12,"readings":["チョ"],"words":[
+      {"jp":"貯金","reading":"ちょきん","en":"savings","cn":"储蓄"}
+    ]},
+    {"n":70,"char":"包","strokes":5,"readings":["ホウ","つつ-む","つつ-み"],"words":[
+      {"jp":"包帯","reading":"ほうたい","en":"a bandage","cn":"绷带"},
+      {"jp":"包む","reading":"つつむ","en":"wrap","cn":"包"},
+      {"jp":"小包","reading":"こづつみ","en":"a parcel","cn":"邮包"}
+    ]},
+    {"n":71,"char":"達","strokes":12,"readings":["タツ","ともだち"],"words":[
+      {"jp":"発達","reading":"はったつ","en":"development","cn":"发达"},
+      {"jp":"友達","reading":"ともだち","en":"a friend","cn":"朋友"},
+      {"jp":"速達","reading":"そくたつ","en":"a special delivery","cn":"快递"}
+    ]},
+    {"n":72,"char":"際","strokes":14,"readings":["サイ"],"words":[
+      {"jp":"国際","reading":"こくさい","en":"international","cn":"国际"},
+      {"jp":"実際に","reading":"じっさいに","en":"actually","cn":"实际上"},
+      {"jp":"〜の際","reading":"さい","en":"at the time of...","cn":"~的时候"}
+    ]},
+    {"n":73,"char":"初","strokes":7,"readings":["ショ","はじ-め","はじ-めて","はつ"],"words":[
+      {"jp":"初診","reading":"しょしん","en":"the first medical consultation","cn":"初诊"},
+      {"jp":"初恋","reading":"はつこい","en":"one's first love","cn":"初恋"},
+      {"jp":"初めて","reading":"はじめて","en":"the first time","cn":"初次"},
+      {"jp":"初雪","reading":"はつゆき","en":"the first snow of the season","cn":"初雪"}
+    ]},
+    {"n":74,"char":"再","strokes":6,"readings":["サイ","ふたた-び"],"words":[
+      {"jp":"再診","reading":"さいしん","en":"a follow-up medical consultation","cn":"复诊"},
+      {"jp":"再来年","reading":"さらいねん","en":"the year after next","cn":"后年"},
+      {"jp":"再生","reading":"さいせい","en":"regenerate, recycle","cn":"再生"},
+      {"jp":"再び","reading":"ふたたび","en":"again","cn":"再次"}
+    ]},
+    {"n":75,"char":"療","strokes":17,"readings":["リョウ"],"words":[
+      {"jp":"診療","reading":"しんりょう","en":"medical examination and treatment","cn":"诊疗"},
+      {"jp":"治療","reading":"ちりょう","en":"treatment","cn":"治疗"},
+      {"jp":"医療","reading":"いりょう","en":"a medical treatment","cn":"医疗"}
+    ]},
+    {"n":76,"char":"科","strokes":9,"readings":["カ"],"words":[
+      {"jp":"科学","reading":"かがく","en":"science","cn":"科学"},
+      {"jp":"内科","reading":"ないか","en":"internal medicine department","cn":"内科"},
+      {"jp":"外科","reading":"げか","en":"a surgery department","cn":"外科"}
+    ]},
+    {"n":77,"char":"婦","strokes":11,"readings":["フ"],"words":[
+      {"jp":"産婦人科","reading":"さんふじんか","en":"obstetrics and gynecology department","cn":"妇产科"},
+      {"jp":"婦人","reading":"ふじん","en":"a woman","cn":"妇女"},
+      {"jp":"主婦","reading":"しゅふ","en":"a housewife","cn":"主妇"}
+    ]},
+    {"n":78,"char":"皮","strokes":5,"readings":["ヒ","かわ"],"words":[
+      {"jp":"皮肉(な)","reading":"ひにく","en":"irony, sarcasm","cn":"讽刺"},
+      {"jp":"皮","reading":"かわ","en":"skin, peel, bark","cn":"皮"}
+    ]},
+    {"n":79,"char":"膚","strokes":15,"readings":["フ"],"words":[
+      {"jp":"皮膚","reading":"ひふ","en":"skin","cn":"皮肤"}
+    ]},
+    {"n":80,"char":"救","strokes":11,"readings":["キュウ","すく-う"],"words":[
+      {"jp":"救急","reading":"きゅうきゅう","en":"first aid","cn":"急救"},
+      {"jp":"救う","reading":"すくう","en":"save","cn":"救"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"急ぎの手紙を（a. 小包　b. 速達）で送る。"},
+        {"n":2,"q":"国際郵便＝（a. 海外　b. 国内）へ送る郵便"},
+        {"n":3,"q":"郵便貯金＝郵便局（a. からお金を送る　b. にお金を預ける）"},
+        {"n":4,"q":"この紙を（a. 薬局　b. 包帯）に持って行って、薬をもらってください。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"急病人のために、夜でも開いている入口＝（a. 夜間救急入口　b. 非常口）"},
+        {"n":6,"q":"初めて診察を受けに来た人は（a. 初診　b. 再診）受付へ行く。"},
+        {"n":7,"q":"（a. 科学は化学　b. 化学は科学）の一つです。"},
+        {"n":8,"q":"手術は（a. 内科　b. 外科）で行います。"}
+      ]}
+    ],
+    "answers": "左：①b ②a ③b ④a／右：①a ②a ③b ④b"
+  }
+}

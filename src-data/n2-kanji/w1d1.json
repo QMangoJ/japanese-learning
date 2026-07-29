@@ -1,0 +1,85 @@
+{
+  "week": 1, "day": 1, "theme": "みる①", "theme_cn": "看①", "theme_en": "Look and See ①",
+  "title": "立て札・注意書き", "title_cn": "告示牌・标示", "title_en": "Notices and Warnings",
+  "kanji": [
+    {"n":1,"char":"禁","strokes":13,"readings":["キン"],"words":[
+      {"jp":"禁止","reading":"きんし","en":"prohibition","cn":"禁止"}
+    ]},
+    {"n":2,"char":"煙","strokes":13,"readings":["エン","けむり"],"words":[
+      {"jp":"禁煙","reading":"きんえん","en":"no smoking","cn":"禁烟"},
+      {"jp":"煙","reading":"けむり","en":"smoke","cn":"烟"}
+    ]},
+    {"n":3,"char":"静","strokes":14,"readings":["セイ","しずーか","しず-まる"],"words":[
+      {"jp":"安静(な)","reading":"あんせい","en":"quietly","cn":"安静"},
+      {"jp":"静か(な)","reading":"しずか","en":"quiet","cn":"寂静"},
+      {"jp":"静まる","reading":"しずまる","en":"become quiet","cn":"平静下来"}
+    ]},
+    {"n":4,"char":"危","strokes":6,"readings":["キ","あぶ-ない","あや-うい"],"words":[
+      {"jp":"危機","reading":"きき","en":"a crisis","cn":"危机"},
+      {"jp":"危ない","reading":"あぶない","en":"dangerous","cn":"危险"},
+      {"jp":"危うい","reading":"あやうい","en":"dangerous (narrow escape)","cn":"危险的"}
+    ]},
+    {"n":5,"char":"険","strokes":11,"readings":["ケン","けわ-しい"],"words":[
+      {"jp":"危険(な)","reading":"きけん","en":"danger","cn":"危险"},
+      {"jp":"険しい","reading":"けわしい","en":"steep","cn":"险峻"}
+    ]},
+    {"n":6,"char":"関","strokes":14,"readings":["カン","かか-わる"],"words":[
+      {"jp":"関心","reading":"かんしん","en":"an interest","cn":"关心"},
+      {"jp":"関わる","reading":"かかわる","en":"have to do with","cn":"关系到"},
+      {"jp":"(〜に)関する","reading":"かんする","en":"related","cn":"关于...的"}
+    ]},
+    {"n":7,"char":"係","strokes":9,"readings":["ケイ","かかり"],"words":[
+      {"jp":"関係","reading":"かんけい","en":"a relation, connection","cn":"关系"},
+      {"jp":"係","reading":"かかり","en":"person in charge","cn":"担任者"},
+      {"jp":"係員","reading":"かかりいん","en":"person in charge","cn":"工作人员"}
+    ]},
+    {"n":8,"char":"落","strokes":12,"readings":["ラク","お-ちる","お-とす"],"words":[
+      {"jp":"転落","reading":"てんらく","en":"a fall","cn":"滚落"},
+      {"jp":"落ちる","reading":"おちる","en":"fall","cn":"落下"},
+      {"jp":"落第","reading":"らくだい","en":"fail/repeat a course","cn":"不及格"},
+      {"jp":"落とす","reading":"おとす","en":"drop","cn":"使落下"}
+    ]},
+    {"n":9,"char":"石","strokes":5,"readings":["セキ","いし"],"words":[
+      {"jp":"落石","reading":"らくせき","en":"falling rocks","cn":"落石"},
+      {"jp":"石","reading":"いし","en":"a stone","cn":"石头"},
+      {"jp":"磁石","reading":"じしゃく","en":"a magnet, compass","cn":"磁铁"}
+    ]},
+    {"n":10,"char":"飛","strokes":9,"readings":["ヒ","と-ぶ","と-ばす"],"words":[
+      {"jp":"飛行場","reading":"ひこうじょう","en":"an airport","cn":"机场"},
+      {"jp":"飛ぶ","reading":"とぶ","en":"fly","cn":"飞行"},
+      {"jp":"飛び出す","reading":"とびだす","en":"run out suddenly","cn":"跳出"}
+    ]},
+    {"n":11,"char":"駐","strokes":15,"readings":["チュウ"],"words":[
+      {"jp":"駐車場","reading":"ちゅうしゃじょう","en":"a parking lot","cn":"停车场"},
+      {"jp":"駐車","reading":"ちゅうしゃ","en":"parking","cn":"停车"}
+    ]},
+    {"n":12,"char":"捨","strokes":11,"readings":["シャ","す-てる"],"words":[
+      {"jp":"四捨五入","reading":"ししゃごにゅう","en":"round to the nearest","cn":"四舍五入"},
+      {"jp":"捨てる","reading":"すてる","en":"throw away","cn":"抛弃"}
+    ]},
+    {"n":13,"char":"遊","strokes":12,"readings":["ユウ","あそ-ぶ"],"words":[
+      {"jp":"遊泳","reading":"ゆうえい","en":"swimming","cn":"游泳"},
+      {"jp":"遊ぶ","reading":"あそぶ","en":"play","cn":"玩"}
+    ]},
+    {"n":14,"char":"泳","strokes":8,"readings":["エイ","およ-ぐ"],"words":[
+      {"jp":"水泳","reading":"すいえい","en":"swimming","cn":"游泳"},
+      {"jp":"泳ぐ","reading":"およぐ","en":"swim","cn":"游泳"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"「関係者以外立ち入り禁止」＝関係者でない人は（a. 入らなければならない　b. 入ってはいけない）"},
+        {"n":2,"q":"「お静かに」＝（a. 静かにしてください　b. 静かにしてはいけません）"},
+        {"n":3,"q":"「（a. 危うい　b. 危ない）ですから、下がってください。」"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":4,"q":"「スピード落とせ」＝スピードを（a. 上げろ　b. おそくしろ）"},
+        {"n":5,"q":"「遊泳禁止」＝（a. ここで遊ぶべきだ　b. ここで泳いではいけない）"},
+        {"n":6,"q":"「落石注意」＝（a. 石が落ちてくるかもしれない　b. 石を落としてはいけない）"},
+        {"n":7,"q":"「駐車禁止」＝（a. 駐車場がない　b. 車を止めてはいけない）"}
+      ]}
+    ],
+    "answers": "左：①b ②a ③b／右：①b ②b ③a ④b"
+  }
+}

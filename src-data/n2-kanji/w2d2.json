@@ -1,0 +1,94 @@
+{
+  "week": 2, "day": 2, "theme": "つかう①", "theme_cn": "用①", "theme_en": "Use ①",
+  "title": "現金自動支払機", "title_cn": "提款机", "title_en": "ATM",
+  "kanji": [
+    {"n":101,"char":"現","strokes":11,"readings":["ゲン","あらわ-れる","あらわ-す"],"words":[
+      {"jp":"現金","reading":"げんきん","en":"cash","cn":"现金"},
+      {"jp":"現れる","reading":"あらわれる","en":"appear","cn":"出现"},
+      {"jp":"表現","reading":"ひょうげん","en":"an expression","cn":"表现"}
+    ]},
+    {"n":102,"char":"支","strokes":4,"readings":["シ","ささ-える"],"words":[
+      {"jp":"支店","reading":"してん","en":"a branch shop/office","cn":"分店"},
+      {"jp":"支える","reading":"ささえる","en":"support","cn":"支撑、维持"},
+      {"jp":"支持","reading":"しじ","en":"support","cn":"支持"}
+    ]},
+    {"n":103,"char":"払","strokes":5,"readings":["はら-う"],"words":[
+      {"jp":"払う","reading":"はらう","en":"pay","cn":"支付"},
+      {"jp":"支払機","reading":"しはらいき","en":"a machine for dispensing cash","cn":"付款机"},
+      {"jp":"支払う","reading":"しはらう","en":"pay","cn":"付款"}
+    ]},
+    {"n":104,"char":"預","strokes":13,"readings":["ヨ","あず-ける","あず-かる"],"words":[
+      {"jp":"預金","reading":"よきん","en":"a deposit","cn":"存款"},
+      {"jp":"預ける","reading":"あずける","en":"entrust","cn":"寄存"},
+      {"jp":"預かる","reading":"あずかる","en":"look up something, investigate","cn":"保管"}
+    ]},
+    {"n":105,"char":"戻","strokes":7,"readings":["もど-す","もど-る"],"words":[
+      {"jp":"戻る","reading":"もどる","en":"return","cn":"返回"},
+      {"jp":"払い戻し","reading":"はらいもどし","en":"a refund","cn":"找还"}
+    ]},
+    {"n":106,"char":"残","strokes":10,"readings":["ザン","のこ-る","のこ-す"],"words":[
+      {"jp":"残高照会","reading":"ざんだかしょうかい","en":"an account balance inquiry","cn":"余额查询"},
+      {"jp":"残る","reading":"のこる","en":"remain","cn":"剩余"},
+      {"jp":"残す","reading":"のこす","en":"leave, leave behind","cn":"留下、留给"}
+    ]},
+    {"n":107,"char":"照","strokes":13,"readings":["ショウ","て-る","て-らす"],"words":[
+      {"jp":"照明","reading":"しょうめい","en":"illumination, light","cn":"照明"},
+      {"jp":"照らす","reading":"てらす","en":"light up","cn":"照耀"},
+      {"jp":"対照的","reading":"たいしょうてき","en":"in contrast to","cn":"对照的"}
+    ]},
+    {"n":108,"char":"硬","strokes":12,"readings":["コウ","かた-い"],"words":[
+      {"jp":"硬貨","reading":"こうか","en":"a coin","cn":"硬币"},
+      {"jp":"硬い","reading":"かたい","en":"hard","cn":"硬的"}
+    ]},
+    {"n":109,"char":"貨","strokes":11,"readings":["カ"],"words":[
+      {"jp":"貨物","reading":"かもつ","en":"freight","cn":"货物"},
+      {"jp":"通貨","reading":"つうか","en":"currency","cn":"流通的货币"}
+    ]},
+    {"n":110,"char":"確","strokes":15,"readings":["カク","たし-か","たし-かめる"],"words":[
+      {"jp":"確定","reading":"かくてい","en":"determination","cn":"确定"},
+      {"jp":"確か(な)","reading":"たしか","en":"certain","cn":"确实"},
+      {"jp":"明確(な)","reading":"めいかく","en":"clear","cn":"明确(的)"},
+      {"jp":"確かめる","reading":"たしかめる","en":"confirm/verify","cn":"弄清、确认"}
+    ]},
+    {"n":111,"char":"認","strokes":14,"readings":["ニン","みと-める"],"words":[
+      {"jp":"確認","reading":"かくにん","en":"a confirmation","cn":"确认"},
+      {"jp":"認める","reading":"みとめる","en":"admit/approve","cn":"认可、认定"}
+    ]},
+    {"n":112,"char":"違","strokes":13,"readings":["イ","ちが-う","ちが-える"],"words":[
+      {"jp":"違法","reading":"いほう","en":"illegal","cn":"违法"},
+      {"jp":"間違える","reading":"まちがえる","en":"make a mistake","cn":"弄错、犯错"},
+      {"jp":"違い","reading":"ちがい","en":"a difference","cn":"差异"},
+      {"jp":"間違い","reading":"まちがい","en":"a mistake","cn":"错误、失误"}
+    ]},
+    {"n":113,"char":"取","strokes":8,"readings":["シュ","と-る"],"words":[
+      {"jp":"取材","reading":"しゅざい","en":"collect data","cn":"采访、取材"},
+      {"jp":"取る","reading":"とる","en":"take","cn":"得到"},
+      {"jp":"書き取り","reading":"かきとり","en":"a dictation","cn":"听写"},
+      {"jp":"取り消し","reading":"とりけし","en":"a cancellation","cn":"取消"},
+      {"jp":"聞き取り","reading":"ききとり","en":"listening ability","cn":"听取、听力"}
+    ]},
+    {"n":114,"char":"消","strokes":10,"readings":["ショウ","き-える","け-す"],"words":[
+      {"jp":"消去","reading":"しょうきょ","en":"eliminate","cn":"消去"},
+      {"jp":"消す","reading":"けす","en":"extinguish","cn":"擦掉"},
+      {"jp":"消える","reading":"きえる","en":"be extinguished, disappear","cn":"消失"},
+      {"jp":"消しゴム","reading":"けしゴム","en":"an eraser","cn":"橡皮擦"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"この店は（a. 照明　b. 調整）が明るくて気持ちがいい。"},
+        {"n":2,"q":"私は家族や友人に（a. 数え　b. 支え）られて生きています。"},
+        {"n":3,"q":"この日本語の（a. 言語　b. 表現）は英語で何と言いますか。"},
+        {"n":4,"q":"銀行にお金を（a. 預ける　b. 預かる）。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"漢字の（a. 聞き取り　b. 書き取り）のテストで100点を取った。"},
+        {"n":6,"q":"「五百円（a. 通貨　b. 硬貨）はお使いになれません。」"},
+        {"n":7,"q":"（a. 違い　b. 間違い）を消しゴムで消して書き直す。"},
+        {"n":8,"q":"電話番号を（a. お確かめ　b. お認め）ください。"}
+      ]}
+    ],
+    "answers": "左：①a ②b ③b ④a／右：①b ②b ③b ④a"
+  }
+}

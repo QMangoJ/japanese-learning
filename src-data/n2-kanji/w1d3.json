@@ -1,0 +1,83 @@
+{
+  "week": 1, "day": 3, "theme": "みる①", "theme_cn": "看①", "theme_en": "Look and See ①",
+  "title": "建物の内外でよく見る表示", "title_cn": "建筑物内外常见的标示", "title_en": "Signs Often Seen Inside and Outside Buildings",
+  "kanji": [
+    {"n":27,"char":"営","strokes":12,"readings":["エイ"],"words":[
+      {"jp":"営業","reading":"えいぎょう","en":"business","cn":"营业"}
+    ]},
+    {"n":28,"char":"放","strokes":8,"readings":["ホウ","はな-す","はな-れる"],"words":[
+      {"jp":"放送","reading":"ほうそう","en":"a broadcast","cn":"广播"},
+      {"jp":"開放","reading":"かいほう","en":"open","cn":"开放"},
+      {"jp":"開放厳禁","reading":"かいほうげんきん","en":"don't leave...open (strictly prohibited)","cn":"禁止打开"},
+      {"jp":"放す","reading":"はなす","en":"let go","cn":"放开"}
+    ]},
+    {"n":29,"char":"押","strokes":8,"readings":["オウ","お-す","お-さえる"],"words":[
+      {"jp":"押す","reading":"おす","en":"push","cn":"按"},
+      {"jp":"押し入れ","reading":"おしいれ","en":"a closet","cn":"日本式的壁橱"},
+      {"jp":"押さえる","reading":"おさえる","en":"hold down","cn":"按压"}
+    ]},
+    {"n":30,"char":"準","strokes":13,"readings":["ジュン"],"words":[
+      {"jp":"準備","reading":"じゅんび","en":"preparation","cn":"准备"},
+      {"jp":"準急","reading":"じゅんきゅう","en":"a semi-express train","cn":"普通快车"},
+      {"jp":"水準","reading":"すいじゅん","en":"a standard","cn":"水平"},
+      {"jp":"準決勝","reading":"じゅんけっしょう","en":"semifinals","cn":"半决赛"}
+    ]},
+    {"n":31,"char":"備","strokes":12,"readings":["ビ","そな-える"],"words":[
+      {"jp":"備品","reading":"びひん","en":"an equipment","cn":"备品"},
+      {"jp":"備える","reading":"そなえる","en":"prepare","cn":"防备、设置、具备"},
+      {"jp":"備え付けの","reading":"そなえつけの","en":"furnished with, built-in","cn":"配备的"}
+    ]},
+    {"n":32,"char":"定","strokes":8,"readings":["テイ","ジョウ"],"words":[
+      {"jp":"定員","reading":"ていいん","en":"capacity, allowed number of people","cn":"规定的人数"},
+      {"jp":"定食","reading":"ていしょく","en":"a set menu","cn":"客饭"},
+      {"jp":"定休日","reading":"ていきゅうび","en":"set/regular holiday","cn":"公休日、定期休日"},
+      {"jp":"定規","reading":"じょうぎ","en":"a ruler (for measuring)","cn":"尺子"}
+    ]},
+    {"n":33,"char":"流","strokes":10,"readings":["リュウ","なが-れる","なが-す"],"words":[
+      {"jp":"流行","reading":"りゅうこう","en":"fashion","cn":"流行"},
+      {"jp":"流れる","reading":"ながれる","en":"flow","cn":"流"},
+      {"jp":"流す","reading":"ながす","en":"let flow (water, etc.)","cn":"使...流动"}
+    ]},
+    {"n":34,"char":"清","strokes":11,"readings":["セイ","きよ-い"],"words":[
+      {"jp":"清書","reading":"せいしょ","en":"a clean copy","cn":"誊写"},
+      {"jp":"清い","reading":"きよい","en":"clean, pure","cn":"清"},
+      {"jp":"清流","reading":"せいりゅう","en":"a clear stream","cn":"清溪"}
+    ]},
+    {"n":35,"char":"掃","strokes":11,"readings":["ソウ","は-く"],"words":[
+      {"jp":"清掃","reading":"せいそう","en":"clean","cn":"打扫"},
+      {"jp":"掃く","reading":"はく","en":"sweep","cn":"打扫"}
+    ]},
+    {"n":36,"char":"閉","strokes":11,"readings":["ヘイ","と-じる","し-める","し-まる"],"words":[
+      {"jp":"閉会","reading":"へいかい","en":"closing of a meeting","cn":"闭会"},
+      {"jp":"閉まる","reading":"しまる","en":"shut, close","cn":"紧闭"},
+      {"jp":"閉める","reading":"しめる","en":"shut, close","cn":"关闭"},
+      {"jp":"(口・目・本を)閉じる","reading":"とじる","en":"shut, close","cn":"合上、盖上"}
+    ]},
+    {"n":37,"char":"点","strokes":9,"readings":["テン"],"words":[
+      {"jp":"点","reading":"てん","en":"a point","cn":"点"},
+      {"jp":"欠点","reading":"けってん","en":"a shortcoming","cn":"缺点"},
+      {"jp":"〜点","reading":"てん","en":"...points","cn":"~分"}
+    ]},
+    {"n":38,"char":"検","strokes":12,"readings":["ケン"],"words":[
+      {"jp":"点検","reading":"てんけん","en":"an inspection","cn":"检查"},
+      {"jp":"検問","reading":"けんもん","en":"an inspection","cn":"盘问"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"「あ、（a. 準備中　b. 定休日）だ、まだ早いんだね。また後で来よう。」"},
+        {"n":2,"q":"「開放厳禁」＝（a. 開けてはいけない　b. 開けておいてはいけない）"},
+        {"n":3,"q":"A「何にする？」B「安くて早いから（a. 定食　b. 洋食）がいいよ。」"},
+        {"n":4,"q":"うちのチームは（a. 準急　b. 準決勝）まで勝ち進んだ。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"「備え付けの紙以外、流さないでください。」＝トイレットペーパー（a. しか　b. だけ）使えない。"},
+        {"n":6,"q":"「テストをしますから、本を（a. 閉めて　b. 閉じて）ください。」"},
+        {"n":7,"q":"「エレベーターは（a. 点検中　b. 検問中）ですから、階段を使ってください。」"},
+        {"n":8,"q":"（a. 閉店　b. 閉会）セールを行う。"}
+      ]}
+    ],
+    "answers": "左：①a ②b ③a ④b／右：①a ②b ③a ④a"
+  }
+}

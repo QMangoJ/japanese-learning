@@ -1,0 +1,84 @@
+{
+  "week": 1, "day": 2, "theme": "みる①", "theme_cn": "看①", "theme_en": "Look and See ①",
+  "title": "建物の中でよく見る表示", "title_cn": "建筑物内常见的标示", "title_en": "Signs Often Seen Inside Buildings",
+  "kanji": [
+    {"n":15,"char":"喫","strokes":12,"readings":["キツ"],"words":[
+      {"jp":"喫茶店","reading":"きっさてん","en":"a coffee shop","cn":"咖啡店"},
+      {"jp":"喫煙所","reading":"きつえんじょ","en":"a smoking area","cn":"吸烟室"}
+    ]},
+    {"n":16,"char":"非","strokes":8,"readings":["ヒ"],"words":[
+      {"jp":"非〜","reading":"ひ","en":"non-, anti-, dis-","cn":"非~"},
+      {"jp":"非常に","reading":"ひじょうに","en":"extremely","cn":"非常"},
+      {"jp":"非常口","reading":"ひじょうぐち","en":"an emergency exit","cn":"太平门"}
+    ]},
+    {"n":17,"char":"御","strokes":12,"readings":["ゴ","オン","お"],"words":[
+      {"jp":"御〜/御〜","reading":"ご/お","en":"(honorific form)","cn":"表尊敬、谦恭"},
+      {"jp":"御中","reading":"おんちゅう","en":"(written on letters addressed to an organization)","cn":"启、公启"},
+      {"jp":"御手洗い","reading":"おてあらい","en":"a toilet","cn":"洗手间"}
+    ]},
+    {"n":18,"char":"常","strokes":11,"readings":["ジョウ","つね"],"words":[
+      {"jp":"日常","reading":"にちじょう","en":"usual, everyday","cn":"日常"},
+      {"jp":"常に","reading":"つねに","en":"always","cn":"经常"},
+      {"jp":"常識","reading":"じょうしき","en":"common sense","cn":"常识"}
+    ]},
+    {"n":19,"char":"受","strokes":8,"readings":["ジュ","う-ける"],"words":[
+      {"jp":"受験","reading":"じゅけん","en":"an examination","cn":"应试"},
+      {"jp":"受ける","reading":"うける","en":"receive","cn":"接受"},
+      {"jp":"受付","reading":"うけつけ","en":"a reception","cn":"接待处"}
+    ]},
+    {"n":20,"char":"付","strokes":5,"readings":["フ","つ-ける","つ-く"],"words":[
+      {"jp":"付近","reading":"ふきん","en":"vicinity","cn":"附近"},
+      {"jp":"〜付き","reading":"つき","en":"attached, with","cn":"附带~"},
+      {"jp":"日付","reading":"ひづけ","en":"date","cn":"日期"},
+      {"jp":"受付","reading":"うけつけ","en":"a reception","cn":"接待处"}
+    ]},
+    {"n":21,"char":"案","strokes":10,"readings":["アン"],"words":[
+      {"jp":"案内","reading":"あんない","en":"information","cn":"指示、向导"},
+      {"jp":"案","reading":"あん","en":"a suggestion, proposal, plan","cn":"草案"}
+    ]},
+    {"n":22,"char":"内","strokes":4,"readings":["ナイ"],"words":[
+      {"jp":"以内","reading":"いない","en":"within","cn":"以内"},
+      {"jp":"〜内","reading":"ない","en":"inside, within","cn":"~之内"},
+      {"jp":"社内","reading":"しゃない","en":"within the company","cn":"公司内"}
+    ]},
+    {"n":23,"char":"議","strokes":20,"readings":["ギ"],"words":[
+      {"jp":"会議室","reading":"かいぎしつ","en":"a meeting room","cn":"会议室"},
+      {"jp":"議論","reading":"ぎろん","en":"argument, discussion, debate","cn":"争论"},
+      {"jp":"不思議(な)","reading":"ふしぎ","en":"strange, curious","cn":"不可思议"},
+      {"jp":"議員","reading":"ぎいん","en":"a politician","cn":"议员"}
+    ]},
+    {"n":24,"char":"化","strokes":4,"readings":["カ","ケ"],"words":[
+      {"jp":"文化","reading":"ぶんか","en":"culture","cn":"文化"},
+      {"jp":"〜化","reading":"か","en":"-ize (change into something else)","cn":"~化"},
+      {"jp":"化学","reading":"かがく","en":"chemistry","cn":"化学"},
+      {"jp":"化粧室","reading":"けしょうしつ","en":"a powder room, toilet","cn":"化妆室"}
+    ]},
+    {"n":25,"char":"階","strokes":12,"readings":["カイ"],"words":[
+      {"jp":"階段","reading":"かいだん","en":"stairs","cn":"楼梯"},
+      {"jp":"段階","reading":"だんかい","en":"level","cn":"阶段"},
+      {"jp":"一階","reading":"いっかい","en":"floor","cn":"~楼"}
+    ]},
+    {"n":26,"char":"段","strokes":9,"readings":["ダン"],"words":[
+      {"jp":"一段と","reading":"いちだんと","en":"even more","cn":"更加"},
+      {"jp":"手段","reading":"しゅだん","en":"a means, way","cn":"手段"},
+      {"jp":"石段","reading":"いしだん","en":"a stone step","cn":"石阶"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"タバコを吸う所＝（a. 禁煙席　b. 喫煙所）"},
+        {"n":2,"q":"「この（a. 付近　b. 日付）に喫茶店はありませんか。」"},
+        {"n":3,"q":"「日本語は（a. 日常　b. 非常）会話ならできます。」"},
+        {"n":4,"q":"あの人は（a. 常識　b. 御中）がない。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"A「すみません、化粧室はどこですか。」B「はい、（a. お手洗い　b. 案内所）は、あちらでございます。」"},
+        {"n":6,"q":"A「会議室はどこですか。」B「（a. 段階　b. 階段）を上って、すぐ右です。」"},
+        {"n":7,"q":"「このごろ（a. 一段と　b. 石段と）寒くなってきましたね。」"},
+        {"n":8,"q":"ベストセラーになった小説が映画（a. 化　b. 案）された。"}
+      ]}
+    ],
+    "answers": "左：①b ②a ③a ④a／右：①a ②b ③a ④a"
+  }
+}

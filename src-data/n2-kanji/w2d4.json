@@ -1,0 +1,95 @@
+{
+  "week": 2, "day": 4, "theme": "つかう①", "theme_cn": "用①", "theme_en": "Use ①",
+  "title": "家電のリモコン", "title_cn": "家电的遥控器", "title_en": "Remote Control Devices",
+  "kanji": [
+    {"n":129,"char":"設","strokes":11,"readings":["セツ"],"words":[
+      {"jp":"設定","reading":"せってい","en":"setting","cn":"设定"},
+      {"jp":"設計","reading":"せっけい","en":"design/plan","cn":"设计"},
+      {"jp":"設備","reading":"せつび","en":"equipment","cn":"设备"}
+    ]},
+    {"n":130,"char":"換","strokes":12,"readings":["カン","か-える","か-わる"],"words":[
+      {"jp":"換気","reading":"かんき","en":"ventilation","cn":"通风换气"},
+      {"jp":"運転切換","reading":"うんてんきりかえ","en":"change of mode of operation","cn":"运转切换"},
+      {"jp":"乗り換え","reading":"のりかえ","en":"changing trains","cn":"换乘"}
+    ]},
+    {"n":131,"char":"向","strokes":6,"readings":["コウ","む-く","む-ける","む-かう","む-こう"],"words":[
+      {"jp":"風向","reading":"ふうこう","en":"angle of louvre","cn":"风向"},
+      {"jp":"風の向き","reading":"かぜのむき","en":"angle of louvre","cn":"风向"},
+      {"jp":"向こう","reading":"むこう","en":"over there","cn":"对面、对边"},
+      {"jp":"向かい","reading":"むかい","en":"opposite/across","cn":"对面、正对面"}
+    ]},
+    {"n":132,"char":"停","strokes":11,"readings":["テイ"],"words":[
+      {"jp":"停止","reading":"ていし","en":"stop","cn":"停止"},
+      {"jp":"停電","reading":"ていでん","en":"electricity black out","cn":"停电"},
+      {"jp":"停車","reading":"ていしゃ","en":"stop a vehicle","cn":"停车"}
+    ]},
+    {"n":133,"char":"暖","strokes":13,"readings":["ダン","あたた-かい","あたた-まる","あたた-める"],"words":[
+      {"jp":"暖房","reading":"だんぼう","en":"warm","cn":"暖和的"},
+      {"jp":"温暖(な)","reading":"おんだん","en":"warm","cn":"温暖"},
+      {"jp":"暖かい","reading":"あたたかい","en":"a heater","cn":"暖气"}
+    ]},
+    {"n":134,"char":"除","strokes":10,"readings":["ジョ","ジ","のぞ-く"],"words":[
+      {"jp":"除湿","reading":"じょしつ","en":"dehumidification","cn":"除湿"},
+      {"jp":"掃除","reading":"そうじ","en":"cleaning","cn":"扫除"},
+      {"jp":"除く","reading":"のぞく","en":"remove/exclude","cn":"除去"}
+    ]},
+    {"n":135,"char":"湿","strokes":12,"readings":["シツ","しめ-る"],"words":[
+      {"jp":"湿度","reading":"しつど","en":"humidity","cn":"湿度"},
+      {"jp":"湿気","reading":"しっけ","en":"humidity/moisture","cn":"湿气"},
+      {"jp":"湿る","reading":"しめる","en":"become damp/moist","cn":"潮湿"}
+    ]},
+    {"n":136,"char":"標","strokes":15,"readings":["ヒョウ"],"words":[
+      {"jp":"標準","reading":"ひょうじゅん","en":"standard","cn":"标准"},
+      {"jp":"目標","reading":"もくひょう","en":"an aim/objective","cn":"目标"},
+      {"jp":"標本","reading":"ひょうほん","en":"a specimen/sample","cn":"标本"}
+    ]},
+    {"n":137,"char":"倍","strokes":10,"readings":["バイ"],"words":[
+      {"jp":"倍","reading":"ばい","en":"times (size, quantity)","cn":"倍"},
+      {"jp":"〜倍","reading":"ばい","en":"times (quantity, e.g. two times as many)","cn":"~倍"}
+    ]},
+    {"n":138,"char":"巻","strokes":9,"readings":["カン","ま-く"],"words":[
+      {"jp":"〜巻","reading":"かん","en":"volume (used for books with several volumes)","cn":"~卷"},
+      {"jp":"巻く","reading":"まく","en":"wind, roll up","cn":"卷"},
+      {"jp":"巻き戻し","reading":"まきもどし","en":"rewinding","cn":"倒带"}
+    ]},
+    {"n":139,"char":"録","strokes":16,"readings":["ロク"],"words":[
+      {"jp":"録画","reading":"ろくが","en":"record (video)","cn":"录制影像"},
+      {"jp":"録音","reading":"ろくおん","en":"record (sound)","cn":"录音"}
+    ]},
+    {"n":140,"char":"量","strokes":12,"readings":["リョウ","はか-る"],"words":[
+      {"jp":"音量","reading":"おんりょう","en":"volume","cn":"音量"},
+      {"jp":"風量","reading":"ふうりょう","en":"air strength","cn":"风量"},
+      {"jp":"分量","reading":"ぶんりょう","en":"quantity","cn":"分量"},
+      {"jp":"数量","reading":"すうりょう","en":"amount","cn":"数量"},
+      {"jp":"量る","reading":"はかる","en":"measure","cn":"测量、称(重量)"}
+    ]},
+    {"n":141,"char":"予","strokes":4,"readings":["ヨ"],"words":[
+      {"jp":"予定","reading":"よてい","en":"a plan/schedule","cn":"预定(的事情)"},
+      {"jp":"予習","reading":"よしゅう","en":"a review (pre-study)","cn":"预习"},
+      {"jp":"予備","reading":"よび","en":"reserve","cn":"预备"},
+      {"jp":"予算","reading":"よさん","en":"budget/estimate","cn":"预算"}
+    ]},
+    {"n":142,"char":"約","strokes":9,"readings":["ヤク"],"words":[
+      {"jp":"予約","reading":"よやく","en":"an appointment/reservation","cn":"预约"},
+      {"jp":"約〜","reading":"やく","en":"approximately","cn":"大约~"},
+      {"jp":"約束","reading":"やくそく","en":"a promise/appointment","cn":"约定"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"梅雨の時期はエアコンを（a. 除湿　b. 停電）にすると快適だ。"},
+        {"n":2,"q":"次の駅で地下鉄に（a. 乗り換え　b. 切り換え）ましょう。"},
+        {"n":3,"q":"室内の温度が高くなりすぎたら、（a. 設定　b. 指定）温度を下げましょう。"},
+        {"n":4,"q":"年中無休。ただし、年末年始を（a. 包む　b. 除く）。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"テレビの音声（a. 切換　b. 換気）をして英語で聞く。"},
+        {"n":6,"q":"（a. 標準　b. 水準）モードでビデオを予約録画する。"},
+        {"n":7,"q":"見終わったビデオは（a. 早送り　b. 巻き戻し）してお返しください。"},
+        {"n":8,"q":"中国の人口は日本の約10（a. 倍　b. 量）です。"}
+      ]}
+    ],
+    "answers": "左：①a ②a ③a ④b／右：①a ②a ③b ④a"
+  }
+}

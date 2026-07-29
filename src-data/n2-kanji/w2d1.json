@@ -1,0 +1,97 @@
+{
+  "week": 2, "day": 1, "theme": "つかう①", "theme_cn": "用①", "theme_en": "Use ①",
+  "title": "自動券売機", "title_cn": "自动售票机", "title_en": "Automatic Ticket Machine",
+  "kanji": [
+    {"n":87,"char":"普","strokes":12,"readings":["フ"],"words":[
+      {"jp":"普通","reading":"ふつう","en":"ordinary","cn":"普通"},
+      {"jp":"普段(の)","reading":"ふだん","en":"usually","cn":"平常"}
+    ]},
+    {"n":88,"char":"券","strokes":8,"readings":["ケン"],"words":[
+      {"jp":"回数券","reading":"かいすうけん","en":"a (book of) commuter ticket(s)","cn":"联票"},
+      {"jp":"旅券","reading":"りょけん","en":"a passport","cn":"护照"},
+      {"jp":"乗車券","reading":"じょうしゃけん","en":"a (boarding) ticket","cn":"车票"},
+      {"jp":"発券","reading":"はっけん","en":"issue a ticket","cn":"发行(票等)"}
+    ]},
+    {"n":89,"char":"数","strokes":13,"readings":["スウ","かず","かぞ-える"],"words":[
+      {"jp":"数字","reading":"すうじ","en":"number","cn":"数字"},
+      {"jp":"点数","reading":"てんすう","en":"score/points","cn":"分数"},
+      {"jp":"数学","reading":"すうがく","en":"mathematics","cn":"数学"},
+      {"jp":"数を数える","reading":"かずをかぞえる","en":"count numbers","cn":"数数"}
+    ]},
+    {"n":90,"char":"機","strokes":16,"readings":["キ"],"words":[
+      {"jp":"飛行機","reading":"ひこうき","en":"an airplane","cn":"飞机"},
+      {"jp":"自動券売機","reading":"じどうけんばいき","en":"an automatic ticket machine","cn":"自动售票机"},
+      {"jp":"交通機関","reading":"こうつうきかん","en":"transport system","cn":"交通机关"},
+      {"jp":"危機","reading":"きき","en":"a crisis","cn":"危机"}
+    ]},
+    {"n":91,"char":"復","strokes":12,"readings":["フク"],"words":[
+      {"jp":"復習","reading":"ふくしゅう","en":"a review","cn":"复习"},
+      {"jp":"回復","reading":"かいふく","en":"recovery, recuperation","cn":"恢复"},
+      {"jp":"往復","reading":"おうふく","en":"a round trip","cn":"往返、来回"}
+    ]},
+    {"n":92,"char":"片","strokes":4,"readings":["ヘン","かた"],"words":[
+      {"jp":"破片","reading":"はへん","en":"a fragment","cn":"破片"},
+      {"jp":"片付ける","reading":"かたづける","en":"tidy up","cn":"收拾、整理"},
+      {"jp":"片道切符","reading":"かたみちきっぷ","en":"a one way ticket","cn":"单程票"},
+      {"jp":"片〜","reading":"かた","en":"one side","cn":"一个~、单~"}
+    ]},
+    {"n":93,"char":"枚","strokes":8,"readings":["マイ"],"words":[
+      {"jp":"〜枚","reading":"まい","en":"counter for flat objects","cn":"~张"},
+      {"jp":"枚数","reading":"まいすう","en":"number of... (e.g. tickets)","cn":"张数"}
+    ]},
+    {"n":94,"char":"期","strokes":12,"readings":["キ"],"words":[
+      {"jp":"期間","reading":"きかん","en":"a period of time","cn":"期间"},
+      {"jp":"定期券","reading":"ていきけん","en":"a commuter pass","cn":"月票"},
+      {"jp":"定期","reading":"ていき","en":"a fixed period of time","cn":"定期"}
+    ]},
+    {"n":95,"char":"販","strokes":11,"readings":["ハン"],"words":[
+      {"jp":"販売","reading":"はんばい","en":"sell","cn":"贩卖"},
+      {"jp":"自動販売機","reading":"じどうはんばいき","en":"a vending machine","cn":"自动贩卖机"}
+    ]},
+    {"n":96,"char":"指","strokes":9,"readings":["シ","ゆび","さ-す"],"words":[
+      {"jp":"指定席","reading":"していせき","en":"a reserved seat","cn":"指定座位"},
+      {"jp":"指","reading":"ゆび","en":"a finger","cn":"手指"},
+      {"jp":"指す","reading":"さす","en":"point","cn":"指"}
+    ]},
+    {"n":97,"char":"調","strokes":15,"readings":["チョウ","しら-べる"],"words":[
+      {"jp":"調整","reading":"ちょうせい","en":"an adjustment","cn":"调整"},
+      {"jp":"調べる","reading":"しらべる","en":"look up something, investigate","cn":"调查"},
+      {"jp":"調子","reading":"ちょうし","en":"condition","cn":"状况、(身)状态"}
+    ]},
+    {"n":98,"char":"整","strokes":16,"readings":["セイ","とと-のう"],"words":[
+      {"jp":"整理券","reading":"せいりけん","en":"numbered ticket (issued at cinemas, etc.)","cn":"号码单"},
+      {"jp":"整備","reading":"せいび","en":"maintenance, overhaul","cn":"配备、调整"},
+      {"jp":"整う","reading":"ととのう","en":"be tidy","cn":"齐全、准备好"}
+    ]},
+    {"n":99,"char":"表","strokes":8,"readings":["ヒョウ","おもて","あらわ-す","あらわ-れる"],"words":[
+      {"jp":"表","reading":"ひょう","en":"table (in written documents)","cn":"表"},
+      {"jp":"発表","reading":"はっぴょう","en":"an announcement","cn":"发表"},
+      {"jp":"表","reading":"おもて","en":"surface, face","cn":"表面、前面"},
+      {"jp":"時刻表","reading":"じこくひょう","en":"a timetable","cn":"时刻表"},
+      {"jp":"表す","reading":"あらわす","en":"show, express","cn":"表现"}
+    ]},
+    {"n":100,"char":"示","strokes":5,"readings":["ジ","しめ-す"],"words":[
+      {"jp":"表示","reading":"ひょうじ","en":"indication, expression","cn":"表示"},
+      {"jp":"掲示","reading":"けいじ","en":"a notice","cn":"揭示"},
+      {"jp":"指示","reading":"しじ","en":"an instruction","cn":"指示"},
+      {"jp":"示す","reading":"しめす","en":"show, point out","cn":"表示、指示"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"勉強したところを、もう一度（a. 準備　b. 復習）しましょう。"},
+        {"n":2,"q":"手袋が（a. 片方　b. 両方）しかない。どこで落としたのだろう。"},
+        {"n":3,"q":"飛行機や電車などを交通（a. 機関　b. 関係）という。"},
+        {"n":4,"q":"私は通学に（a. 回復　b. 往復）3時間かかります。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"ここでは係員の（a. 指示　b. 指定）通りに駐車してください。"},
+        {"n":6,"q":"この時刻（a. 表　b. 図）に電車の発車時刻が書いてあります。"},
+        {"n":7,"q":"銀行員「（a. 回数券　b. 整理券）をお取りになってお待ちください。」"},
+        {"n":8,"q":"朝からおなかの（a. 整備　b. 調子）がよくない。"}
+      ]}
+    ],
+    "answers": "左：①a ②a ③a ④b／右：①b ②b ③b ④a"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "week": 2, "day": 5, "theme": "つかう①", "theme_cn": "用①", "theme_en": "Use ①",
+  "title": "電話・携帯電話", "title_cn": "电话・手机", "title_en": "Telephones, Cell Phones",
+  "dialog": {"lines": ["私は家に帰るとすぐ留守番電話の伝言を聞き、再生済みの用件を消去する。携帯電話は電車の中や仕事中など、普段はマナーモードに設定している。"]},
+  "kanji": [
+    {"n":143,"char":"帯","strokes":10,"readings":["タイ","おび"],"words":[
+      {"jp":"地帯","reading":"ちたい","en":"a region/area","cn":"地带"},
+      {"jp":"温帯","reading":"おんたい","en":"Temperate Zone","cn":"温带"},
+      {"jp":"携帯電話","reading":"けいたいでんわ","en":"a cell phone/mobile phone","cn":"手机"},
+      {"jp":"帯","reading":"おび","en":"a belt/sash","cn":"(和服的)腰带"}
+    ]},
+    {"n":144,"char":"保","strokes":9,"readings":["ホ","たも-つ"],"words":[
+      {"jp":"保温","reading":"ほおん","en":"retention of warmth","cn":"保温"},
+      {"jp":"保険","reading":"ほけん","en":"insurance","cn":"保险"},
+      {"jp":"保湿","reading":"ほしつ","en":"retention of dampness","cn":"保湿"},
+      {"jp":"保つ","reading":"たもつ","en":"keep/maintain","cn":"保持"}
+    ]},
+    {"n":145,"char":"留","strokes":10,"readings":["リュウ","ル","と-める"],"words":[
+      {"jp":"保留","reading":"ほりゅう","en":"a reservation/suspension","cn":"保留"},
+      {"jp":"停留所","reading":"ていりゅうじょ","en":"a (bus) stop/station","cn":"公交车站"},
+      {"jp":"留学","reading":"りゅうがく","en":"study abroad","cn":"留学"},
+      {"jp":"書留","reading":"かきとめ","en":"registration (registered mail)","cn":"挂号邮件"},
+      {"jp":"留守","reading":"るす","en":"absence","cn":"不在家"}
+    ]},
+    {"n":146,"char":"守","strokes":6,"readings":["シュ","ス","まも-る"],"words":[
+      {"jp":"保守的(な)","reading":"ほしゅてき","en":"conservative","cn":"保守的"},
+      {"jp":"守る","reading":"まもる","en":"protect","cn":"保卫、守护"},
+      {"jp":"お守り","reading":"おまもり","en":"a (good luck) charm","cn":"护身符"}
+    ]},
+    {"n":147,"char":"伝","strokes":6,"readings":["デン","つた-わる","つた-える"],"words":[
+      {"jp":"伝言","reading":"でんごん","en":"a message","cn":"留言"},
+      {"jp":"手伝う","reading":"てつだう","en":"help","cn":"帮助"},
+      {"jp":"伝える","reading":"つたえる","en":"convey/communicate","cn":"传达"}
+    ]},
+    {"n":148,"char":"済","strokes":11,"readings":["サイ","す-む","す-ます"],"words":[
+      {"jp":"済む","reading":"すむ","en":"finish","cn":"终结"},
+      {"jp":"返済","reading":"へんさい","en":"repayment","cn":"还、偿还"},
+      {"jp":"〜済み","reading":"ずみ","en":"completed","cn":"~完了、~毕"}
+    ]},
+    {"n":149,"char":"件","strokes":6,"readings":["ケン"],"words":[
+      {"jp":"用件","reading":"ようけん","en":"a business/matter","cn":"事情"},
+      {"jp":"件名","reading":"けんめい","en":"subject","cn":"(分类的)单项名称"},
+      {"jp":"事件","reading":"じけん","en":"an incident/crime","cn":"事件"}
+    ]},
+    {"n":150,"char":"信","strokes":9,"readings":["シン"],"words":[
+      {"jp":"通信","reading":"つうしん","en":"correspondence","cn":"通讯联络"},
+      {"jp":"自信","reading":"じしん","en":"confidence","cn":"自信"},
+      {"jp":"信じる","reading":"しんじる","en":"believe","cn":"相信"}
+    ]},
+    {"n":151,"char":"歴","strokes":14,"readings":["レキ"],"words":[
+      {"jp":"着信履歴","reading":"ちゃくしんりれき","en":"record of calls received","cn":"已接来电记录"},
+      {"jp":"歴史","reading":"れきし","en":"history","cn":"历史"},
+      {"jp":"履歴書","reading":"りれきしょ","en":"a resume/curriculum vitae","cn":"履历表"}
+    ]},
+    {"n":152,"char":"箱","strokes":15,"readings":["はこ"],"words":[
+      {"jp":"受信箱","reading":"じゅしんばこ","en":"inbox","cn":"收件箱"},
+      {"jp":"ごみ箱","reading":"ごみばこ","en":"a recycle bin","cn":"垃圾(邮件)箱"},
+      {"jp":"送信箱","reading":"そうしんばこ","en":"outbox","cn":"发件箱"}
+    ]},
+    {"n":153,"char":"規","strokes":11,"readings":["キ"],"words":[
+      {"jp":"新規","reading":"しんき","en":"new/fresh (e.g. a new business project)","cn":"新的、新规定"},
+      {"jp":"規定","reading":"きてい","en":"regulation","cn":"规定"}
+    ]},
+    {"n":154,"char":"変","strokes":9,"readings":["ヘン","か-わる","か-える"],"words":[
+      {"jp":"変換","reading":"へんかん","en":"conversion","cn":"变换"},
+      {"jp":"変わる","reading":"かわる","en":"change","cn":"变化"},
+      {"jp":"大変(な)","reading":"たいへん","en":"very, serious","cn":"严重、大事"},
+      {"jp":"変える","reading":"かえる","en":"change (something)","cn":"变更"}
+    ]},
+    {"n":155,"char":"選","strokes":15,"readings":["セン","えら-ぶ"],"words":[
+      {"jp":"選択","reading":"せんたく","en":"a choice","cn":"选、选择"},
+      {"jp":"選考","reading":"せんこう","en":"a selection","cn":"选拔、甄选"},
+      {"jp":"選手","reading":"せんしゅ","en":"a player, an athlete","cn":"选手"},
+      {"jp":"選ぶ","reading":"えらぶ","en":"choose","cn":"选择"}
+    ]},
+    {"n":156,"char":"決","strokes":7,"readings":["ケツ","き-める","き-まる"],"words":[
+      {"jp":"決定","reading":"けってい","en":"a decision","cn":"决定"},
+      {"jp":"決める","reading":"きめる","en":"decide (something)","cn":"决定"},
+      {"jp":"決まる","reading":"きまる","en":"be decided","cn":"决定、定下来"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"この件は（a. 保留　b. 停留）にしておいて、また後で考えます。"},
+        {"n":2,"q":"大事な手紙やお金を郵便（a. 書留　b. 貯金）で送る。"},
+        {"n":3,"q":"家を買ったので毎月のローンの（a. 温帯　b. 返済）がたいへんだ。"},
+        {"n":4,"q":"もうすぐ受験なので、神社で（a. お守り　b. お伝え）を買った。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"車も人も、信号を（a. 保ち　b. 守り）ましょう。"},
+        {"n":6,"q":"携帯電話の電話番号が（a. 変え　b. 変わり）ましたのでお知らせします。"},
+        {"n":7,"q":"選考の結果、オリンピックに出場する選手が（a. 選んだ　b. 決まった）。"},
+        {"n":8,"q":"メールを（a. 規定　b. 新規）作成する。"}
+      ]}
+    ],
+    "answers": "左：①a ②a ③b ④a／右：①b ②b ③b ④b"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "week": 1, "day": 4, "theme": "みる①", "theme_cn": "看①", "theme_en": "Look and See ①",
+  "title": "駅でよく見る表示", "title_cn": "车站常见的标示", "title_en": "Signs Often Seen at the Station",
+  "kanji": [
+    {"n":39,"char":"鉄","strokes":13,"readings":["テツ"],"words":[
+      {"jp":"地下鉄","reading":"ちかてつ","en":"the subway","cn":"地铁"},
+      {"jp":"私鉄","reading":"してつ","en":"a private railway","cn":"私营铁路"}
+    ]},
+    {"n":40,"char":"窓","strokes":11,"readings":["ソウ","まど"],"words":[
+      {"jp":"同窓会","reading":"どうそうかい","en":"a school reunion","cn":"同学会"},
+      {"jp":"窓","reading":"まど","en":"a window","cn":"窗户"},
+      {"jp":"窓口","reading":"まどぐち","en":"an information office (window)","cn":"窗口"}
+    ]},
+    {"n":41,"char":"符","strokes":11,"readings":["フ"],"words":[
+      {"jp":"切符","reading":"きっぷ","en":"a ticket","cn":"票"}
+    ]},
+    {"n":42,"char":"精","strokes":14,"readings":["セイ"],"words":[
+      {"jp":"精算","reading":"せいさん","en":"a (fare) adjustment","cn":"清算"},
+      {"jp":"精神","reading":"せいしん","en":"spirit, mind","cn":"精神、思想"}
+    ]},
+    {"n":43,"char":"算","strokes":14,"readings":["サン"],"words":[
+      {"jp":"計算","reading":"けいさん","en":"calculation","cn":"计算"},
+      {"jp":"引き算","reading":"ひきざん","en":"subtraction","cn":"减法"},
+      {"jp":"足し算","reading":"たしざん","en":"addition","cn":"加法"}
+    ]},
+    {"n":44,"char":"改","strokes":7,"readings":["カイ","あらた-める","あらた-まる"],"words":[
+      {"jp":"改正","reading":"かいせい","en":"an amendment","cn":"修改"},
+      {"jp":"改める","reading":"あらためる","en":"①change ②check","cn":"①改正 ②检查、查"},
+      {"jp":"改札口","reading":"かいさつぐち","en":"a ticket gate","cn":"检票口"}
+    ]},
+    {"n":45,"char":"札","strokes":5,"readings":["サツ","ふだ"],"words":[
+      {"jp":"1万円札","reading":"まんえんさつ","en":"a 10,000 yen note","cn":"1万日元纸币"},
+      {"jp":"札","reading":"ふだ","en":"a card","cn":"牌子"}
+    ]},
+    {"n":46,"char":"線","strokes":15,"readings":["セン"],"words":[
+      {"jp":"下線","reading":"かせん","en":"underline","cn":"下划线"},
+      {"jp":"新幹線","reading":"しんかんせん","en":"a bullet train","cn":"新干线"},
+      {"jp":"線路","reading":"せんろ","en":"a railway track","cn":"线路"}
+    ]},
+    {"n":47,"char":"刻","strokes":8,"readings":["コク","きざ-む"],"words":[
+      {"jp":"時刻","reading":"じこく","en":"time","cn":"时间"},
+      {"jp":"刻む","reading":"きざむ","en":"engrave","cn":"刻上"}
+    ]},
+    {"n":48,"char":"番","strokes":12,"readings":["バン"],"words":[
+      {"jp":"番号","reading":"ばんごう","en":"number","cn":"号码"},
+      {"jp":"〜番線","reading":"ばんせん","en":"line (platform) number","cn":"~号线"}
+    ]},
+    {"n":49,"char":"号","strokes":5,"readings":["ゴウ"],"words":[
+      {"jp":"符号","reading":"ふごう","en":"a symbol/sign","cn":"符号"},
+      {"jp":"信号","reading":"しんごう","en":"a signal","cn":"交通信号灯"},
+      {"jp":"〜号車","reading":"ごうしゃ","en":"carriage number","cn":"~号车"}
+    ]},
+    {"n":50,"char":"快","strokes":7,"readings":["カイ","こころ-よい"],"words":[
+      {"jp":"快速","reading":"かいそく","en":"high speed","cn":"快速"},
+      {"jp":"快い","reading":"こころよい","en":"pleasant","cn":"愉快"}
+    ]},
+    {"n":51,"char":"速","strokes":10,"readings":["ソク","はや-い"],"words":[
+      {"jp":"時速","reading":"じそく","en":"speed (per hour)","cn":"时速"},
+      {"jp":"速い","reading":"はやい","en":"fast","cn":"快"},
+      {"jp":"早速","reading":"さっそく","en":"at once","cn":"马上"}
+    ]},
+    {"n":52,"char":"路","strokes":13,"readings":["ロ"],"words":[
+      {"jp":"道路","reading":"どうろ","en":"a road","cn":"道路"},
+      {"jp":"通路","reading":"つうろ","en":"an isle","cn":"走道"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"足りない料金を払うところ＝（a. 精算所　b. 清算所）"},
+        {"n":2,"q":"「その切符では（a. 改札口　b. 自動改札）は通れませんから、駅員のいるほうを通ってください。」"},
+        {"n":3,"q":"「わからないことは駅の（a. 窓口　b. 受付）で聞いてください。」"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":4,"q":"「今度の快速は（a. 3番線　b. 3号車）から発車します。」"},
+        {"n":5,"q":"「4月から電車の時刻が（a. 改正　b. 改刻）されます。」"},
+        {"n":6,"q":"「（a. 線路内　b. 道路内）に物を落としたときは、駅係員にお知らせください。」"},
+        {"n":7,"q":"〇〇君は足が（a. 快い　b. 速い）。"}
+      ]}
+    ],
+    "answers": "左：①a ②b ③a／右：①a ②a ③a ④b"
+  }
+}

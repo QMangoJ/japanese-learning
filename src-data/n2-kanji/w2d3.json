@@ -1,0 +1,95 @@
+{
+  "week": 2, "day": 3, "theme": "つかう①", "theme_cn": "用①", "theme_en": "Use ①",
+  "title": "自動販売機・自動券売機", "title_cn": "自动贩卖机・自动售票机", "title_en": "Vending Machines, Ticket Machines",
+  "dialog": {"lines": ["A：何にする？　温かいお茶？", "B：冷たいのがいい。えーっと、緑茶、紅茶……ウーロン茶にしよう。", "A：あ、五百円玉は使えないんだって……千円札は使えるね。あれ？　おつりは？", "B：その返却レバーを引けば出てくるよ。"]},
+  "kanji": [
+    {"n":115,"char":"温","strokes":12,"readings":["オン","あたた-かい","あたた-まる","あたた-める"],"words":[
+      {"jp":"温度","reading":"おんど","en":"temperature","cn":"温度"},
+      {"jp":"温室","reading":"おんしつ","en":"a greenhouse","cn":"温室"},
+      {"jp":"体温計","reading":"たいおんけい","en":"a thermometer","cn":"体温计"},
+      {"jp":"温かい","reading":"あたたかい","en":"warm","cn":"暖和的"}
+    ]},
+    {"n":116,"char":"冷","strokes":7,"readings":["レイ","つめ-たい","ひ-える","ひ-やす","さ-める","さ-ます"],"words":[
+      {"jp":"冷静(な)","reading":"れいせい","en":"calmness","cn":"冷静"},
+      {"jp":"冷える","reading":"ひえる","en":"become cold","cn":"变冷"},
+      {"jp":"冷める","reading":"さめる","en":"cool down","cn":"变冷、变淡"},
+      {"jp":"冷たい","reading":"つめたい","en":"cold","cn":"冷"},
+      {"jp":"冷やす","reading":"ひやす","en":"cool","cn":"弄凉"},
+      {"jp":"冷ます","reading":"さます","en":"cool something","cn":"弄凉、使冷却"}
+    ]},
+    {"n":117,"char":"緑","strokes":14,"readings":["リョク","みどり"],"words":[
+      {"jp":"緑茶","reading":"りょくちゃ","en":"green tea","cn":"绿茶"},
+      {"jp":"緑(色)","reading":"みどりいろ","en":"green","cn":"绿色"}
+    ]},
+    {"n":118,"char":"紅","strokes":9,"readings":["コウ","べに"],"words":[
+      {"jp":"紅茶","reading":"こうちゃ","en":"tea","cn":"红茶"},
+      {"jp":"口紅","reading":"くちべに","en":"lipstick","cn":"口红"}
+    ]},
+    {"n":119,"char":"玉","strokes":5,"readings":["たま"],"words":[
+      {"jp":"水玉","reading":"みずたま","en":"a drop of water","cn":"水珠"},
+      {"jp":"十円玉","reading":"じゅうえんだま","en":"a 10 yen coin","cn":"10円硬币"}
+    ]},
+    {"n":120,"char":"返","strokes":7,"readings":["ヘン","かえ-す","かえ-る"],"words":[
+      {"jp":"返事","reading":"へんじ","en":"reply","cn":"回答"},
+      {"jp":"返金","reading":"へんきん","en":"a refund","cn":"还债、退钱"},
+      {"jp":"返却","reading":"へんきゃく","en":"return (something)","cn":"归还"},
+      {"jp":"返す","reading":"かえす","en":"return (something)","cn":"归还、给还"}
+    ]},
+    {"n":121,"char":"団","strokes":6,"readings":["ダン","トン"],"words":[
+      {"jp":"団体","reading":"だんたい","en":"a group, organization","cn":"团体"},
+      {"jp":"団地","reading":"だんち","en":"a large housing/apartment complex","cn":"住宅区"},
+      {"jp":"集団","reading":"しゅうだん","en":"a group","cn":"集团"},
+      {"jp":"布団","reading":"ふとん","en":"futon (Japanese mattress)","cn":"棉被"}
+    ]},
+    {"n":122,"char":"般","strokes":10,"readings":["ハン"],"words":[
+      {"jp":"一般","reading":"いっぱん","en":"(in) general","cn":"普通"},
+      {"jp":"全般","reading":"ぜんぱん","en":"overall","cn":"全面"}
+    ]},
+    {"n":123,"char":"幼","strokes":5,"readings":["ヨウ","おさな-い"],"words":[
+      {"jp":"幼児","reading":"ようじ","en":"baby","cn":"幼儿"},
+      {"jp":"幼い","reading":"おさない","en":"very young, childish","cn":"年幼"}
+    ]},
+    {"n":124,"char":"児","strokes":7,"readings":["ニ","ジ"],"words":[
+      {"jp":"小児科","reading":"しょうにか","en":"pediatrics department","cn":"小儿科"},
+      {"jp":"児童","reading":"じどう","en":"children, juvenile","cn":"儿童"}
+    ]},
+    {"n":125,"char":"歳","strokes":13,"readings":["サイ"],"words":[
+      {"jp":"〜歳","reading":"さい","en":"...years old","cn":"~岁"},
+      {"jp":"二十歳","reading":"にじゅっさい","en":"20 years old","cn":"二十岁"},
+      {"jp":"二十歳","reading":"はたち","en":"20 years old","cn":"二十岁"}
+    ]},
+    {"n":126,"char":"未","strokes":5,"readings":["ミ"],"words":[
+      {"jp":"未定","reading":"みてい","en":"undecided/indefinite","cn":"未决定"},
+      {"jp":"未知","reading":"みち","en":"unknown","cn":"未知"},
+      {"jp":"未来","reading":"みらい","en":"future","cn":"未来"},
+      {"jp":"未〜","reading":"み","en":"not yet","cn":"未~"}
+    ]},
+    {"n":127,"char":"満","strokes":12,"readings":["マン","み-ちる","み-たす"],"words":[
+      {"jp":"未満","reading":"みまん","en":"less than","cn":"未满"},
+      {"jp":"満足","reading":"まんぞく","en":"satisfaction","cn":"满足"},
+      {"jp":"満員","reading":"まんいん","en":"full (of people)","cn":"满员"},
+      {"jp":"満ちる","reading":"みちる","en":"filled with","cn":"充满"}
+    ]},
+    {"n":128,"char":"老","strokes":6,"readings":["ロウ","お-いる"],"words":[
+      {"jp":"老人","reading":"ろうじん","en":"an old person","cn":"老人"},
+      {"jp":"年老いた","reading":"としおいた","en":"old (person)","cn":"上了年纪的"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"このデザートは（a. 冷やして　b. 冷えて）食べるとおいしい。"},
+        {"n":2,"q":"この辺は（a. 緑　b. 紅）が多くて静かできれいですね。"},
+        {"n":3,"q":"キャッシュバックというのは（a. 返事　b. 返金）のことです。"},
+        {"n":4,"q":"この自動販売機は硬貨だけでなく千円（a. 玉　b. 札）も使える。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"「18歳（a. 以下　b. 未満）」には18歳は入りません。"},
+        {"n":6,"q":"（a. 小児　b. 幼児）科の医者の数が足りないそうです。"},
+        {"n":7,"q":"（a. 集団　b. 団体）旅行は安いが、自由に行動できない。"},
+        {"n":8,"q":"冬の登山は危険に（a. 老いている　b. 満ちている）。"}
+      ]}
+    ],
+    "answers": "左：①a ②a ③b ④b／右：①b ②a ③b ④b"
+  }
+}
