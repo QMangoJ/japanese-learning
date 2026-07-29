@@ -188,6 +188,25 @@ body.hide-cn .vcn,body.hide-cn .ven{visibility:hidden}
 .fav-item .fj .t{font-weight:600;font-size:15.5px}
 .fav-item .fj .c{color:var(--sub);font-size:13px}
 .fav-item .fw{color:var(--sub);font-size:11.5px;white-space:nowrap}
+.mistake-widget{margin-bottom:14px}
+.mistake-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:10px}
+.mistake-head h3{margin:0;font-size:15px}
+.mistake-types{display:flex;gap:6px;margin-bottom:8px}
+.mistake-types button{border:1px solid var(--line);background:var(--bg);color:var(--sub);border-radius:999px;padding:4px 12px;font-size:12.5px;font-weight:700;cursor:pointer}
+.mistake-types button.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.mistake-input{width:100%;border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:14.5px;background:var(--bg);color:var(--ink);resize:vertical;font-family:inherit;box-sizing:border-box}
+.mistake-widget>button[data-mistake-add]{margin-top:8px;border:none;background:var(--accent);color:#fff;border-radius:8px;padding:7px 16px;font-size:14px;font-weight:700;cursor:pointer}
+.mistake-recent{margin-top:14px;border-top:1px dashed var(--line);padding-top:10px}
+.mistake-item{padding:8px 0;border-top:1px dashed var(--line)}
+.mistake-item:first-child{border-top:0}
+.mistake-item-head{display:flex;align-items:center;gap:8px;margin-bottom:4px}
+.mistake-date{color:var(--sub);font-size:12px}
+.mistake-del{margin-left:auto;border:none;background:none;color:var(--sub);cursor:pointer;font-size:13px;padding:2px 4px}
+.mistake-del:hover{color:var(--accent)}
+.mistake-text{font-size:14.5px;line-height:1.6;white-space:pre-wrap}
+.mt-q{background:var(--accent-soft);color:var(--accent)}
+.mt-word{background:var(--blue-soft);color:var(--blue)}
+.mt-grammar{background:var(--green-soft);color:var(--green)}
 .ct-h{font-size:16px;margin:0 0 8px;color:var(--accent)}
 .ct-tip{background:var(--amber-soft);color:var(--amber);border-radius:8px;padding:6px 10px;font-size:13px;margin-bottom:10px;line-height:1.5}
 .ct-row{padding:9px 0;border-top:1px dashed var(--line)}
@@ -352,6 +371,52 @@ function say(t){ try{ if(!('speechSynthesis' in window)||!t) return; speechSynth
 function sayBtn(t){ return t?`<button class="sayb" data-say="${escAttr(t)}" aria-label="朗读">🔊</button>`:''; }
 
 /* ---- 收藏 (生词本) ---- 本地 localStorage 即时可用，同时后台与 /api/favorites (Cloudflare KV) 同步实现跨设备 */
+/* ---------- 错题/生词本 (自己录入的错题、忘记的单词/语法，纯本地存储) ---------- */
+let MISTAKES=[]; try{ MISTAKES=JSON.parse(localStorage.getItem('mistakes')||'[]')||[]; }catch(e){ MISTAKES=[]; }
+let mistakeAddType='q';
+const MISTAKE_TYPES={q:'错题', word:'单词', grammar:'语法'};
+function saveMistakes(){ try{ localStorage.setItem('mistakes', JSON.stringify(MISTAKES)); }catch(e){} }
+function addMistake(type, text){
+  text=(text||'').trim(); if(!text) return;
+  MISTAKES.unshift({id:Date.now()+'-'+Math.random().toString(36).slice(2,7), type, text, ts:Date.now()});
+  saveMistakes();
+}
+function deleteMistake(id){ MISTAKES=MISTAKES.filter(m=>m.id!==id); saveMistakes(); }
+function mistakeDate(ts){
+  const d=new Date(ts), p=n=>String(n).padStart(2,'0');
+  return `${d.getFullYear()}-${p(d.getMonth()+1)}-${p(d.getDate())}`;
+}
+function mistakeWidgetHTML(){
+  const recent=MISTAKES.slice(0,3);
+  return `<div class="card mistake-widget">
+    <div class="mistake-head"><h3 class="jp">📝 错题 / 生词本</h3>${MISTAKES.length?`<a class="plink" data-go="#/mistakes">查看全部（${MISTAKES.length}）›</a>`:''}</div>
+    <div class="mistake-types" id="mistakeTypes">${Object.entries(MISTAKE_TYPES).map(([k,v])=>`<button class="${k===mistakeAddType?'on':''}" data-mtype="${k}">${v}</button>`).join('')}</div>
+    <textarea id="mistakeInput" class="mistake-input" rows="2" placeholder="记一下考试错题、老是记不住的单词或语法点……"></textarea>
+    <button class="primary" data-mistake-add>保存</button>
+    ${recent.length?`<div class="mistake-recent">${recent.map(mistakeItemHTML).join('')}</div>`:''}
+  </div>`;
+}
+function mistakeItemHTML(m){
+  return `<div class="mistake-item">
+    <div class="mistake-item-head"><span class="mtag mt-${m.type}">${MISTAKE_TYPES[m.type]||m.type}</span><span class="mistake-date">${mistakeDate(m.ts)}</span><button class="mistake-del" data-mistake-del="${escAttr(m.id)}" aria-label="删除">✕</button></div>
+    <div class="mistake-text">${esc(m.text).replace(/\n/g,'<br>')}</div>
+  </div>`;
+}
+let mistakeFilter='all';
+function viewMistakes(){
+  setNav('home'); setHeader(LX('错题 / 生词本','My Mistakes & Notes'), true);
+  const list = mistakeFilter==='all' ? MISTAKES : MISTAKES.filter(m=>m.type===mistakeFilter);
+  const filterBar = `<div class="fc-filter" style="margin-bottom:14px">
+    <button class="${mistakeFilter==='all'?'on':''}" data-mfilter="all">全部（${MISTAKES.length}）</button>
+    ${Object.entries(MISTAKE_TYPES).map(([k,v])=>`<button class="${mistakeFilter===k?'on':''}" data-mfilter="${k}">${v}（${MISTAKES.filter(m=>m.type===k).length}）</button>`).join('')}
+  </div>`;
+  const body = list.length ? list.map(mistakeItemHTML).join('') : '<div class="empty">还没有记录，回首页添加一条吧。</div>';
+  app.innerHTML = `<div class="card mistake-widget" style="margin-bottom:14px">
+    <div class="mistake-types" id="mistakeTypes">${Object.entries(MISTAKE_TYPES).map(([k,v])=>`<button class="${k===mistakeAddType?'on':''}" data-mtype="${k}">${v}</button>`).join('')}</div>
+    <textarea id="mistakeInput" class="mistake-input" rows="2" placeholder="记一下考试错题、老是记不住的单词或语法点……"></textarea>
+    <button class="primary" data-mistake-add>保存</button>
+  </div>${filterBar}${body}`;
+}
 let FAV={}; try{ FAV=JSON.parse(localStorage.getItem('favs')||'{}')||{}; }catch(e){ FAV={}; }
 const FAVMETA={};
 let _favSyncing=false, _favPushTimer=null;
@@ -454,6 +519,10 @@ app.addEventListener('click', e=>{
   const ffl=e.target.closest('[data-favfilter]'); if(ffl){ favFilter=ffl.dataset.favfilter; viewFavs(); return; }
   const cm=e.target.closest('[data-ctmode]'); if(cm){ ctMode=cm.dataset.ctmode; viewContrast(); return; }
   const cw=e.target.closest('[data-ctweek]'); if(cw){ ctWeek=+cw.dataset.ctweek; viewContrast(); return; }
+  const mty=e.target.closest('[data-mtype]'); if(mty){ mistakeAddType=mty.dataset.mtype; document.querySelectorAll('#mistakeTypes button').forEach(b=>b.classList.toggle('on', b.dataset.mtype===mistakeAddType)); return; }
+  if(e.target.closest('[data-mistake-add]')){ const ta=document.getElementById('mistakeInput'); if(ta && ta.value.trim()){ addMistake(mistakeAddType, ta.value); render(); } return; }
+  const md=e.target.closest('[data-mistake-del]'); if(md){ deleteMistake(md.dataset.mistakeDel); render(); return; }
+  const mf=e.target.closest('[data-mfilter]'); if(mf){ mistakeFilter=mf.dataset.mfilter; viewMistakes(); return; }
   const fclr=e.target.closest('[data-favclear]'); if(fclr){ if(fclr.dataset.armed){ FAV={}; saveFav(); viewFavs(); } else { fclr.dataset.armed='1'; fclr.textContent='再点一次清空'; } return; }
   if(e.target.closest('[data-favflip]')){ favFlip=!favFlip; renderFavFc(); return; }
   if(e.target.closest('[data-favprev]')){ if(favIdx>0){ favIdx--; favFlip=false; renderFavFc(); } return; }
@@ -495,6 +564,7 @@ function render(){
   else if(h==='#/ref'){ if(MODULE!=='grammar') setModule('grammar'); viewRef(); }
   else if(h==='#/contrast'){ if(MODULE!=='grammar') setModule('grammar'); viewContrast(); }
   else if(h==='#/katsuyou'){ if(MODULE!=='grammar') setModule('grammar'); viewKatsuyou(); }
+  else if(h==='#/mistakes') viewMistakes();
   else {
     let m = h.match(/^#\/day\/(\d)-(\d)(?:\/(p\d+|v\d+-\d+|k\d+))?$/);
     if(m){
@@ -522,6 +592,7 @@ function viewHome(){
   let html = `<div class="home-top"><div class="meta" style="margin-bottom:10px">${intro}</div>` +
     (weeks.length>3 ? `<div class="wk-toc">${weeks.map(w=>`<a class="wk-tocitem" data-scroll="wk-${w.n}">第${w.n}周</a>`).join('')}</div>` : '') +
     `</div>`;
+  html += mistakeWidgetHTML();
   for(const w of weeks){
     const wt = w.title ? ` <span class="jp">${esc(w.title)}</span>` : '';
     const wsubText = LX(w.title_cn, w.title_en);
