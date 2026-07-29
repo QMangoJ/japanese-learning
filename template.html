@@ -226,6 +226,36 @@ body.hide-cn .vcn,body.hide-cn .ven{visibility:hidden}
   .wk-tocitem{flex:0 0 auto;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:13px;color:var(--ink);cursor:pointer;white-space:nowrap}
   .wk-tocitem:hover{color:var(--accent)}
 }
+/* PC端正文字号调大一号，读音注音跟着放大，减轻长时间阅读的眼睛负担 */
+@media (min-width:681px){
+  body{font-size:17px}
+  ruby rt{font-size:.65em}
+  .point h3{font-size:19px}
+  .point .reading{font-size:14px}
+  .conn{font-size:14.5px}
+  .usage{font-size:16px}
+  .ex .jp{font-size:17px}
+  .ex .eq{font-size:14.5px}
+  .ex .cn{font-size:15px}
+  .note{font-size:15px}
+  .dialog{font-size:16px}
+  .dialog .cn{font-size:14.5px}
+  .q{font-size:16.5px}
+  .opts span,.opt-btn{font-size:15px}
+  .passage{font-size:16px}
+  .vjp{font-size:17.5px}
+  .ven,.vrel{font-size:14px}
+  .vnote{font-size:13.5px}
+  .fillin-pat{font-size:16px}
+  .kreads{font-size:14px}
+  .kmeta{font-size:12.5px}
+  table.ref{font-size:14.5px}
+  .ct-form{font-size:16.5px}
+  .ct-eg,.ct-mean{font-size:15.5px}
+  .ct-egcn{font-size:14.5px}
+  .keigo li{font-size:15.5px}
+  h2.page{font-size:21px}
+}
 </style>
 </head>
 <body>
