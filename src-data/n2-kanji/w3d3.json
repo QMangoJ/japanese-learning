@@ -1,0 +1,102 @@
+{
+  "week": 3, "day": 3, "theme": "よむ①", "theme_cn": "读①", "theme_en": "Read ①",
+  "title": "ポイントカード・商品券・クリーニング預かり票", "title_cn": "积分卡・礼券・干洗单", "title_en": "Point Cards, Gift certificates, Cleaning Dockets",
+  "kanji": [
+    {"n":209,"char":"商","strokes":11,"readings":["ショウ"],"words":[
+      {"jp":"商品","reading":"しょうひん","en":"goods","cn":"商品"},
+      {"jp":"商業","reading":"しょうぎょう","en":"commerce","cn":"商业"},
+      {"jp":"商店","reading":"しょうてん","en":"a shop","cn":"商店"},
+      {"jp":"商売","reading":"しょうばい","en":"a business","cn":"作买卖"}
+    ]},
+    {"n":210,"char":"個","strokes":10,"readings":["コ"],"words":[
+      {"jp":"〜個","reading":"こ","en":"counter for general objects","cn":"~个"},
+      {"jp":"個々","reading":"ここ","en":"individual/various","cn":"各个"},
+      {"jp":"個人","reading":"こじん","en":"an individual (person)","cn":"个人"},
+      {"jp":"個別","reading":"こべつ","en":"individual/separate","cn":"个别"}
+    ]},
+    {"n":211,"char":"相","strokes":9,"readings":["ソウ","ショウ","あい"],"words":[
+      {"jp":"〜相当","reading":"そうとう","en":"correspond to","cn":"相当于"},
+      {"jp":"外相","reading":"がいしょう","en":"a foreign minister","cn":"外交部长"},
+      {"jp":"相手","reading":"あいて","en":"an opponent/competitor","cn":"对方"},
+      {"jp":"首相","reading":"しゅしょう","en":"a prime minister","cn":"首相"},
+      {"jp":"相変わらず","reading":"あいかわらず","en":"still/as ever","cn":"仍旧、变化"},
+      {"jp":"相撲","reading":"すもう","en":"a sumo wrestling","cn":"相扑"}
+    ]},
+    {"n":212,"char":"交","strokes":6,"readings":["コウ"],"words":[
+      {"jp":"交換","reading":"こうかん","en":"exchange","cn":"交换"},
+      {"jp":"交際","reading":"こうさい","en":"association/dealings (with)","cn":"交际"},
+      {"jp":"交通機関","reading":"こうつうきかん","en":"transportation system","cn":"交通机关"},
+      {"jp":"交流","reading":"こうりゅう","en":"an exchange","cn":"交流"}
+    ]},
+    {"n":213,"char":"効","strokes":8,"readings":["コウ","き-く"],"words":[
+      {"jp":"有効(な)","reading":"ゆうこう","en":"valid","cn":"有效"},
+      {"jp":"効く","reading":"きく","en":"be effective","cn":"有效果"},
+      {"jp":"効果","reading":"こうか","en":"an effect","cn":"效果"},
+      {"jp":"効き目","reading":"ききめ","en":"an effect","cn":"效果、效能"}
+    ]},
+    {"n":214,"char":"限","strokes":9,"readings":["ゲン","かぎ-る"],"words":[
+      {"jp":"期限","reading":"きげん","en":"a time limit","cn":"期限"},
+      {"jp":"限界","reading":"げんかい","en":"a limit","cn":"界限"},
+      {"jp":"限度額","reading":"げんどがく","en":"a price limit","cn":"限度额"},
+      {"jp":"〜限り","reading":"かぎり","en":"limit/insofar","cn":"只限于~"}
+    ]},
+    {"n":215,"char":"全","strokes":6,"readings":["ゼン","まった-く","すべ-て"],"words":[
+      {"jp":"全国","reading":"ぜんこく","en":"the whole country","cn":"全国"},
+      {"jp":"完全(な)","reading":"かんぜん","en":"perfect, complete","cn":"完全(的)"},
+      {"jp":"全〜","reading":"ぜん","en":"the whole","cn":"全~"},
+      {"jp":"全く","reading":"まったく","en":"quite/completely","cn":"完全、全然"},
+      {"jp":"全て","reading":"すべて","en":"all/whole","cn":"全部"}
+    ]},
+    {"n":216,"char":"共","strokes":6,"readings":["キョウ","とも"],"words":[
+      {"jp":"共通","reading":"きょうつう","en":"common/mutual","cn":"共通"},
+      {"jp":"〜と共に","reading":"とともに","en":"together with...","cn":"同时~、与~共同"}
+    ]},
+    {"n":217,"char":"忘","strokes":7,"readings":["ボウ","わす-れる"],"words":[
+      {"jp":"忘年会","reading":"ぼうねんかい","en":"an end-of-year party","cn":"年终大会"},
+      {"jp":"忘れる","reading":"わすれる","en":"forget","cn":"忘记"},
+      {"jp":"忘れ物","reading":"わすれもの","en":"thing left behind (lost property)","cn":"忘了的东西"}
+    ]},
+    {"n":218,"char":"経","strokes":11,"readings":["ケイ"],"words":[
+      {"jp":"経過","reading":"けいか","en":"a process/course","cn":"经过"},
+      {"jp":"経済","reading":"けいざい","en":"economy","cn":"经济"},
+      {"jp":"経験","reading":"けいけん","en":"experience","cn":"经验"},
+      {"jp":"経理","reading":"けいり","en":"accounting","cn":"会计"}
+    ]},
+    {"n":219,"char":"過","strokes":12,"readings":["カ","す-ぎる","す-ごす"],"words":[
+      {"jp":"過去","reading":"かこ","en":"the past","cn":"过去"},
+      {"jp":"過ぎる","reading":"すぎる","en":"pass","cn":"超过"},
+      {"jp":"通過","reading":"つうか","en":"passage/transit","cn":"通过"},
+      {"jp":"過ごす","reading":"すごす","en":"spend (time)","cn":"度过"}
+    ]},
+    {"n":220,"char":"責","strokes":11,"readings":["セキ","せ-める"],"words":[
+      {"jp":"責任","reading":"せきにん","en":"responsibility","cn":"责任"},
+      {"jp":"責める","reading":"せめる","en":"blame/accuse","cn":"责备"}
+    ]},
+    {"n":221,"char":"任","strokes":6,"readings":["ニン","まか-せる","まか-す"],"words":[
+      {"jp":"担任","reading":"たんにん","en":"teacher in charge (e.g. home room teacher)","cn":"担任"},
+      {"jp":"任せる","reading":"まかせる","en":"entrust","cn":"委托"}
+    ]},
+    {"n":222,"char":"負","strokes":9,"readings":["フ","ま-ける","お-う"],"words":[
+      {"jp":"負担","reading":"ふたん","en":"a burden","cn":"负担"},
+      {"jp":"負ける","reading":"まける","en":"lose","cn":"败、输"},
+      {"jp":"負う","reading":"おう","en":"bear","cn":"背、担负着"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"この薬は風邪によく（a. 効く　b. 聞く）。"},
+        {"n":2,"q":"外国の人たちと（a. 交流　b. 交換）するのは楽しいです。"},
+        {"n":3,"q":"今までに一度も負けたことのない（a. 相手　b. 相当）に負けてしまった。"},
+        {"n":4,"q":"卵10個入りパック百円！　お一人様1パック（a. 参り　b. 限り）！"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"子どもの勉強のことは（a. 担任　b. 責任）の先生にお任せしています。"},
+        {"n":6,"q":"この薬を飲んでください。1週間（a. 経験　b. 経過）をみましょう。"},
+        {"n":7,"q":"仕事の量が多過ぎる。社員の（a. 負担　b. 担当）を軽くしなければならない。"},
+        {"n":8,"q":"このカードは全店（a. 共通　b. 通過）でお使いになれます。"}
+      ]}
+    ],
+    "answers": "左：①a ②a ③a ④b／右：①a ②b ③a ④a"
+  }
+}

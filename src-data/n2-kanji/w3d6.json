@@ -1,0 +1,96 @@
+{
+  "week": 3, "day": 6, "theme": "よむ①", "theme_cn": "读①", "theme_en": "Read ①",
+  "title": "いろいろな通知②", "title_cn": "各种各样的通知②", "title_en": "Various Notices ②",
+  "kanji": [
+    {"n":250,"char":"結","strokes":12,"readings":["ケツ","むす-ぶ"],"words":[
+      {"jp":"結果","reading":"けっか","en":"a result","cn":"结果"},
+      {"jp":"結ぶ","reading":"むすぶ","en":"tie/connect/conclude","cn":"系、连结"},
+      {"jp":"結局","reading":"けっきょく","en":"after all","cn":"最终、结局"}
+    ]},
+    {"n":251,"char":"果","strokes":8,"readings":["カ","は-たす"],"words":[
+      {"jp":"効果","reading":"こうか","en":"effect","cn":"效果"},
+      {"jp":"果物","reading":"くだもの","en":"a fruit","cn":"水果"},
+      {"jp":"果実","reading":"かじつ","en":"a fruit","cn":"果实"},
+      {"jp":"果たす","reading":"はたす","en":"fulfill","cn":"实现、完成"}
+    ]},
+    {"n":252,"char":"封","strokes":9,"readings":["フウ"],"words":[
+      {"jp":"開封","reading":"かいふう","en":"unseal/open a letter","cn":"拆封"},
+      {"jp":"同封","reading":"どうふう","en":"enclosed (with a letter)","cn":"附在信内"},
+      {"jp":"封書","reading":"ふうしょ","en":"a (sealed) letter","cn":"封口的书信"}
+    ]},
+    {"n":253,"char":"法","strokes":8,"readings":["ホウ"],"words":[
+      {"jp":"方法","reading":"ほうほう","en":"a method/way","cn":"方法"},
+      {"jp":"作法","reading":"さほう","en":"a manner","cn":"礼节"},
+      {"jp":"文法","reading":"ぶんぽう","en":"grammar","cn":"文法"},
+      {"jp":"法人","reading":"ほうじん","en":"a corporate body","cn":"法人"}
+    ]},
+    {"n":254,"char":"各","strokes":6,"readings":["カク"],"words":[
+      {"jp":"各〜","reading":"かく","en":"each/every","cn":"各~"},
+      {"jp":"各地","reading":"かくち","en":"everywhere/many places","cn":"各地"},
+      {"jp":"各自","reading":"かくじ","en":"respective/each person","cn":"各自"}
+    ]},
+    {"n":255,"char":"位","strokes":7,"readings":["イ","くらい"],"words":[
+      {"jp":"〜各位","reading":"かくい","en":"every one of you/whom it may concern","cn":"~各位"},
+      {"jp":"〜位","reading":"い","en":"...place (used for ranking things)","cn":"~位(助数词)"},
+      {"jp":"地位","reading":"ちい","en":"status","cn":"地位"},
+      {"jp":"位","reading":"くらい","en":"rank","cn":"地位、程度"}
+    ]},
+    {"n":256,"char":"異","strokes":11,"readings":["イ","こと"],"words":[
+      {"jp":"異常(な)","reading":"いじょう","en":"an abnormality","cn":"异常"},
+      {"jp":"異変","reading":"いへん","en":"an accident/unusual thing","cn":"异常变化"},
+      {"jp":"同音異義語","reading":"どうおんいぎご","en":"a homonym","cn":"同音异义字"},
+      {"jp":"異なる","reading":"ことなる","en":"differ","cn":"不同"}
+    ]},
+    {"n":257,"char":"移","strokes":11,"readings":["イ","うつ-る","うつ-す"],"words":[
+      {"jp":"移転","reading":"いてん","en":"a move/transfer","cn":"移动、搬家"},
+      {"jp":"移る","reading":"うつる","en":"move/shift","cn":"迁、变换"},
+      {"jp":"移動","reading":"いどう","en":"a move/transfer","cn":"移动"},
+      {"jp":"移す","reading":"うつす","en":"move/shift (something)","cn":"移、挪"}
+    ]},
+    {"n":258,"char":"務","strokes":11,"readings":["ム","つと-める"],"words":[
+      {"jp":"事務","reading":"じむ","en":"office work","cn":"事务"},
+      {"jp":"任務","reading":"にんむ","en":"a duty/task","cn":"任务"},
+      {"jp":"事務所","reading":"じむしょ","en":"an office","cn":"办公室"},
+      {"jp":"務める","reading":"つとめる","en":"work/serve","cn":"任、担任"}
+    ]},
+    {"n":259,"char":"更","strokes":7,"readings":["コウ"],"words":[
+      {"jp":"変更","reading":"へんこう","en":"a change/alteration","cn":"变更"},
+      {"jp":"更衣室","reading":"こういしつ","en":"a change room","cn":"更衣室"},
+      {"jp":"更新","reading":"こうしん","en":"a renewal","cn":"更新"}
+    ]},
+    {"n":260,"char":"越","strokes":12,"readings":["こ-す","こ-える"],"words":[
+      {"jp":"引っ越す","reading":"ひっこす","en":"move house","cn":"搬家"},
+      {"jp":"お越しの際","reading":"おこしのさい","en":"when you come","cn":"您来的时候"},
+      {"jp":"乗り越す","reading":"のりこす","en":"go past (the correct station)","cn":"坐过站"}
+    ]},
+    {"n":261,"char":"郊","strokes":9,"readings":["コウ"],"words":[
+      {"jp":"郊外","reading":"こうがい","en":"a suburb(s)","cn":"郊外"},
+      {"jp":"近郊","reading":"きんこう","en":"environs","cn":"近郊"}
+    ]},
+    {"n":262,"char":"周","strokes":8,"readings":["シュウ","まわ-り"],"words":[
+      {"jp":"円周","reading":"えんしゅう","en":"the circumference","cn":"圆周"},
+      {"jp":"周り","reading":"まわり","en":"around/neighborhood","cn":"周围"}
+    ]},
+    {"n":263,"char":"畑","strokes":9,"readings":["はたけ"],"words":[
+      {"jp":"畑","reading":"はたけ","en":"a (vegetable) field","cn":"旱田、田地"},
+      {"jp":"花畑","reading":"はなばたけ","en":"a (flower) field","cn":"花田、花圃"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"手紙に写真を（a. 開封　b. 同封）する。"},
+        {"n":2,"q":"最近、全国（a. 各位　b. 各地）で異常な事件が起こっている。"},
+        {"n":3,"q":"朝、（a. 果物　b. 貨物）を食べると体にいいそうだ。"},
+        {"n":4,"q":"運動靴のひもがほどけそうですよ。しっかり（a. 結んで　b. 積んで）。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"会社の経理（a. 事務　b. 任務）を担当しています。"},
+        {"n":6,"q":"旅券事務所でパスポートの（a. 延期　b. 更新）をする。"},
+        {"n":7,"q":"女子更衣室は2階に（a. 移り　b. 写り）ました。"},
+        {"n":8,"q":"引っ越した家の（a. 周り　b. 配り）は緑が多い。"}
+      ]}
+    ],
+    "answers": "左：①b ②b ③a ④a／右：①a ②b ③a ④a"
+  }
+}

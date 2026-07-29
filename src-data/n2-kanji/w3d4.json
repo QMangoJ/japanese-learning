@@ -1,0 +1,98 @@
+{
+  "week": 3, "day": 4, "theme": "よむ①", "theme_cn": "读①", "theme_en": "Read ①",
+  "title": "ゴミの分別", "title_cn": "垃圾分类", "title_en": "Rubbish Classification and Separation",
+  "kanji": [
+    {"n":223,"char":"必","strokes":5,"readings":["ヒツ","かなら-ず"],"words":[
+      {"jp":"必要(な)","reading":"ひつよう","en":"necessary","cn":"必要"},
+      {"jp":"必死","reading":"ひっし","en":"desperate(ly)","cn":"拼命地"},
+      {"jp":"必ず","reading":"かならず","en":"always/certainly","cn":"一定"}
+    ]},
+    {"n":224,"char":"袋","strokes":11,"readings":["ふくろ"],"words":[
+      {"jp":"袋","reading":"ふくろ","en":"a bag","cn":"袋子"},
+      {"jp":"手袋","reading":"てぶくろ","en":"a glove","cn":"手套"},
+      {"jp":"レジ袋","reading":"レジぶくろ","en":"a plastic bag (received at the checkout counter)","cn":"塑料袋"},
+      {"jp":"足袋","reading":"たび","en":"tabi (traditional Japanese socks worn with a kimono)","cn":"日式布袜子"}
+    ]},
+    {"n":225,"char":"積","strokes":16,"readings":["セキ","つ-もる","つ-む"],"words":[
+      {"jp":"ゴミ集積所","reading":"ゴミしゅうせきじょ","en":"a rubbish collection point","cn":"垃圾堆放处"},
+      {"jp":"積もる","reading":"つもる","en":"pile up","cn":"堆积"},
+      {"jp":"面積","reading":"めんせき","en":"an (surface) area","cn":"面积"},
+      {"jp":"積む","reading":"つむ","en":"load","cn":"堆、装载"}
+    ]},
+    {"n":226,"char":"燃","strokes":16,"readings":["ネン","も-える","も-やす"],"words":[
+      {"jp":"燃料","reading":"ねんりょう","en":"fuel","cn":"燃料"},
+      {"jp":"不燃","reading":"ふねん","en":"nonflammable, incombustible","cn":"不可燃"},
+      {"jp":"可燃","reading":"かねん","en":"be burnable","cn":"可燃"},
+      {"jp":"燃やせる","reading":"もやせる","en":"be able to burn","cn":"可焚烧"}
+    ]},
+    {"n":227,"char":"枝","strokes":8,"readings":["えだ"],"words":[
+      {"jp":"枝","reading":"えだ","en":"a branch","cn":"枝、分支"},
+      {"jp":"小枝","reading":"こえだ","en":"a twig/stick","cn":"小树枝"}
+    ]},
+    {"n":228,"char":"葉","strokes":12,"readings":["ヨウ","は"],"words":[
+      {"jp":"紅葉","reading":"こうよう","en":"autumn leaves","cn":"红叶、枫叶"},
+      {"jp":"葉","reading":"は","en":"a leaf","cn":"叶"},
+      {"jp":"言葉","reading":"ことば","en":"word/language","cn":"语言"},
+      {"jp":"紅葉","reading":"もみじ","en":"maple leaves","cn":"枫叶"},
+      {"jp":"落ち葉","reading":"おちば","en":"fallen leaves","cn":"落叶"}
+    ]},
+    {"n":229,"char":"埋","strokes":10,"readings":["う-まる","う-める"],"words":[
+      {"jp":"埋まる","reading":"うまる","en":"be buried","cn":"埋上"},
+      {"jp":"埋める","reading":"うめる","en":"bury","cn":"埋"},
+      {"jp":"埋め立てる","reading":"うめたてる","en":"reclaim (land), fill in","cn":"填平"}
+    ]},
+    {"n":230,"char":"製","strokes":14,"readings":["セイ"],"words":[
+      {"jp":"製品","reading":"せいひん","en":"a product","cn":"制品"},
+      {"jp":"〜製","reading":"せい","en":"made in/of...","cn":"~制"}
+    ]},
+    {"n":231,"char":"容","strokes":10,"readings":["ヨウ"],"words":[
+      {"jp":"内容","reading":"ないよう","en":"contents/substance","cn":"内容"},
+      {"jp":"美容","reading":"びよう","en":"beauty treatment","cn":"美容"},
+      {"jp":"容器","reading":"ようき","en":"a container","cn":"容器"}
+    ]},
+    {"n":232,"char":"器","strokes":15,"readings":["キ","うつわ"],"words":[
+      {"jp":"食器","reading":"しょっき","en":"tableware","cn":"餐具"},
+      {"jp":"受話器","reading":"じゅわき","en":"telephone receiver","cn":"电话听筒"},
+      {"jp":"楽器","reading":"がっき","en":"a musical instrument","cn":"乐器"},
+      {"jp":"器","reading":"うつわ","en":"a container","cn":"容器"}
+    ]},
+    {"n":233,"char":"装","strokes":12,"readings":["ソウ","ショウ"],"words":[
+      {"jp":"包装","reading":"ほうそう","en":"wrapping","cn":"包装"},
+      {"jp":"服装","reading":"ふくそう","en":"clothes","cn":"服装"},
+      {"jp":"新装開店","reading":"しんそうかいてん","en":"renovated and open","cn":"装修后开店"},
+      {"jp":"衣装","reading":"いしょう","en":"costume","cn":"衣裳"}
+    ]},
+    {"n":234,"char":"雑","strokes":14,"readings":["ザツ"],"words":[
+      {"jp":"雑音","reading":"ざつおん","en":"a noise","cn":"杂音"},
+      {"jp":"雑(な)","reading":"ざつ","en":"miscellaneous","cn":"混杂"},
+      {"jp":"雑用","reading":"ざつよう","en":"odd jobs","cn":"各种用途、杂务"},
+      {"jp":"雑貨","reading":"ざっか","en":"sundry goods","cn":"杂货"}
+    ]},
+    {"n":235,"char":"誌","strokes":14,"readings":["シ"],"words":[
+      {"jp":"雑誌","reading":"ざっし","en":"a magazine","cn":"杂志"},
+      {"jp":"日誌","reading":"にっし","en":"a journal/diary","cn":"日志"}
+    ]},
+    {"n":236,"char":"資","strokes":13,"readings":["シ"],"words":[
+      {"jp":"資源","reading":"しげん","en":"resource(s)","cn":"资源"},
+      {"jp":"資金","reading":"しきん","en":"fund(s)","cn":"资金"},
+      {"jp":"資料","reading":"しりょう","en":"material(s)/data","cn":"资料"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"雪が（a. 保って　b. 積もって）花だんが埋まってしまった。"},
+        {"n":2,"q":"落ち葉や木の枝は（a. 燃やせる　b. 埋め立て）ゴミになります。"},
+        {"n":3,"q":"この洗剤を使うときは必ずゴム（a. 手袋　b. 足袋）をしてください。"},
+        {"n":4,"q":"植物から自動車の（a. 原料　b. 燃料）を作る。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"（a. 衣　b. 器）がきれいだと、料理もおいしく見える。"},
+        {"n":6,"q":"この時計はスイス（a. 製　b. 作）です。"},
+        {"n":7,"q":"（a. 雑用　b. 雑音）がひどくて電話がよく聞こえません。"},
+        {"n":8,"q":"この町ではリサイクルのため、第2土曜日に古新聞・古雑誌などを（a. 回収　b. 包装）します。"}
+      ]}
+    ],
+    "answers": "左：①b ②a ③a ④b／右：①b ②a ③b ④a"
+  }
+}

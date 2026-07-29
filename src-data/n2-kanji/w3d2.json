@@ -1,0 +1,97 @@
+{
+  "week": 3, "day": 2, "theme": "よむ①", "theme_cn": "读①", "theme_en": "Read ①",
+  "title": "不在通知", "title_cn": "领收邮件通知单", "title_en": "Notices of Absence",
+  "kanji": [
+    {"n":195,"char":"連","strokes":10,"readings":["レン","つ-れる"],"words":[
+      {"jp":"関連","reading":"かんれん","en":"a relation(ship)","cn":"关联"},
+      {"jp":"連休","reading":"れんきゅう","en":"consecutive holidays","cn":"连续假期"},
+      {"jp":"連絡","reading":"れんらく","en":"a contact/connection","cn":"联络"},
+      {"jp":"連続","reading":"れんぞく","en":"a series","cn":"连续"},
+      {"jp":"連れる","reading":"つれる","en":"accompany","cn":"带着"}
+    ]},
+    {"n":196,"char":"絡","strokes":12,"readings":["ラク"],"words":[
+      {"jp":"連絡","reading":"れんらく","en":"a contact/connection","cn":"联络"}
+    ]},
+    {"n":197,"char":"荷","strokes":10,"readings":["カ","に"],"words":[
+      {"jp":"入荷","reading":"にゅうか","en":"a receipt (of goods)","cn":"进货"},
+      {"jp":"荷物","reading":"にもつ","en":"luggage","cn":"行李"},
+      {"jp":"出荷","reading":"しゅっか","en":"a shipment","cn":"上市"}
+    ]},
+    {"n":198,"char":"届","strokes":8,"readings":["とど-ける","とど-く"],"words":[
+      {"jp":"届ける","reading":"とどける","en":"deliver","cn":"送到"},
+      {"jp":"届く","reading":"とどく","en":"arrive (mail)","cn":"送到、达到"},
+      {"jp":"届け出","reading":"とどけで","en":"a report/registration","cn":"申报"}
+    ]},
+    {"n":199,"char":"参","strokes":8,"readings":["サン","まい-る"],"words":[
+      {"jp":"参考書","reading":"さんこうしょ","en":"a reference book","cn":"参考书"},
+      {"jp":"参る","reading":"まいる","en":"go/come","cn":"来、去"},
+      {"jp":"持参","reading":"じさん","en":"bring","cn":"带来(去)"},
+      {"jp":"お参り","reading":"おまいり","en":"visiting a shrine","cn":"去神社、寺院参拜"}
+    ]},
+    {"n":200,"char":"衣","strokes":6,"readings":["イ"],"words":[
+      {"jp":"衣類","reading":"いるい","en":"clothing","cn":"衣服之总称"},
+      {"jp":"衣服","reading":"いふく","en":"clothes","cn":"衣服"},
+      {"jp":"衣料品","reading":"いりょうひん","en":"clothing","cn":"衣料品"},
+      {"jp":"衣食住","reading":"いしょくじゅう","en":"food, clothing and shelter","cn":"衣食住"}
+    ]},
+    {"n":201,"char":"他","strokes":5,"readings":["タ","ほか"],"words":[
+      {"jp":"その他","reading":"そのた","en":"other","cn":"其他"},
+      {"jp":"他方","reading":"たほう","en":"on the other hand","cn":"另一方"},
+      {"jp":"他人","reading":"たにん","en":"a stranger/other people","cn":"别人"}
+    ]},
+    {"n":202,"char":"蔵","strokes":15,"readings":["ゾウ"],"words":[
+      {"jp":"冷蔵","reading":"れいぞう","en":"refrigeration","cn":"冷藏"},
+      {"jp":"内蔵","reading":"ないぞう","en":"contained within","cn":"内含(~装置)"},
+      {"jp":"貯蔵","reading":"ちょぞう","en":"storage","cn":"储藏"}
+    ]},
+    {"n":203,"char":"凍","strokes":10,"readings":["トウ","こお-る","こご-える"],"words":[
+      {"jp":"冷凍","reading":"れいとう","en":"freezing (refrigeration)","cn":"冷冻"},
+      {"jp":"凍る","reading":"こおる","en":"freeze","cn":"结冰"},
+      {"jp":"凍える","reading":"こごえる","en":"be frozen","cn":"冻僵"}
+    ]},
+    {"n":204,"char":"等","strokes":12,"readings":["トウ","ひと-しい"],"words":[
+      {"jp":"〜等","reading":"とう/など","en":"et cetera","cn":"~等"},
+      {"jp":"上等","reading":"じょうとう","en":"good/superior","cn":"高级"},
+      {"jp":"高等学校","reading":"こうとうがっこう","en":"a high school","cn":"高中"},
+      {"jp":"等しい","reading":"ひとしい","en":"equal","cn":"相等"}
+    ]},
+    {"n":205,"char":"配","strokes":10,"readings":["ハイ","くば-る"],"words":[
+      {"jp":"配達","reading":"はいたつ","en":"a delivery","cn":"配送到家"},
+      {"jp":"心配(な)","reading":"しんぱい","en":"anxiety/worry","cn":"担心"},
+      {"jp":"気配","reading":"けはい","en":"a sign/indication","cn":"情形、苗头"},
+      {"jp":"配る","reading":"くばる","en":"distribute","cn":"分配、分给"}
+    ]},
+    {"n":206,"char":"担","strokes":8,"readings":["タン"],"words":[
+      {"jp":"担当","reading":"たんとう","en":"taking charge of","cn":"担任"},
+      {"jp":"分担","reading":"ぶんたん","en":"share (workload)","cn":"分担"}
+    ]},
+    {"n":207,"char":"当","strokes":6,"readings":["トウ","あ-たる","あ-てる"],"words":[
+      {"jp":"当日","reading":"とうじつ","en":"that day","cn":"当天"},
+      {"jp":"当〜","reading":"とう","en":"this...","cn":"本~、当~"},
+      {"jp":"弁当","reading":"べんとう","en":"a packed lunch","cn":"便当"},
+      {"jp":"当たる","reading":"あたる","en":"hit (light rays)","cn":"照射、适中"}
+    ]},
+    {"n":208,"char":"頂","strokes":11,"readings":["チョウ","いただ-く"],"words":[
+      {"jp":"頂点","reading":"ちょうてん","en":"a sumit/peak","cn":"顶点"},
+      {"jp":"頂く","reading":"いただく","en":"receive","cn":"领受"},
+      {"jp":"頂上","reading":"ちょうじょう","en":"a summit/top","cn":"顶峰"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"5月の（a. 週休　b. 連休）に両親を旅行に連れていく。"},
+        {"n":2,"q":"「会議に使いますから、この（a. 衣類　b. 書類）をコピーしてください。」"},
+        {"n":3,"q":"教科書や参考書、（a. その他　b. 他方）必要な本を買う。"},
+        {"n":4,"q":"品物が入荷しましたら、電話で（a. ご連絡　b. お届け）します。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"「山の（a. 頂上　b. 頂点）でお弁当にしましょう。」"},
+        {"n":6,"q":"「今お配りしたプリントに作業の（a. 分担　b. 復習）が書いてあります。」"},
+        {"n":7,"q":"アイスクリームは冷蔵庫の（a. 冷蔵室　b. 冷凍室）に入れます。"},
+        {"n":8,"q":"A＝Bとは、AはBと（a. 等しい　b. 当たる）という意味です。"}
+      ]}
+    ],
+    "answers": "左：①b ②b ③a ④a／右：①a ②a ③b ④a"
+  }
+}

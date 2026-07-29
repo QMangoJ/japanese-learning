@@ -1,0 +1,103 @@
+{
+  "week": 3, "day": 1, "theme": "よむ①", "theme_cn": "读①", "theme_en": "Read ①",
+  "title": "料金通知・払込用紙", "title_cn": "缴费通知・缴款单", "title_en": "Notices and Forms for Payment of Fees",
+  "kanji": [
+    {"n":181,"char":"様","strokes":14,"readings":["ヨウ","さま"],"words":[
+      {"jp":"様子","reading":"ようす","en":"an appearance/situation","cn":"样子"},
+      {"jp":"〜様","reading":"さま","en":"an honorific added to people's names, particularly in letters","cn":"接在人名、身份等后面表示敬意"},
+      {"jp":"同様","reading":"どうよう","en":"the same thing","cn":"同样"},
+      {"jp":"様々(な)","reading":"さまざま","en":"various","cn":"各式各样"}
+    ]},
+    {"n":182,"char":"要","strokes":9,"readings":["ヨウ","い-る"],"words":[
+      {"jp":"重要(な)","reading":"じゅうよう","en":"important","cn":"重要"},
+      {"jp":"要約","reading":"ようやく","en":"a summary","cn":"概要"},
+      {"jp":"要点","reading":"ようてん","en":"an essential point","cn":"要点"},
+      {"jp":"要る","reading":"いる","en":"need","cn":"需要"}
+    ]},
+    {"n":183,"char":"利","strokes":7,"readings":["リ"],"words":[
+      {"jp":"利用","reading":"りよう","en":"use","cn":"利用"},
+      {"jp":"金利","reading":"きんり","en":"interest (rate)","cn":"利息"},
+      {"jp":"便利(な)","reading":"べんり","en":"convenient","cn":"方便"},
+      {"jp":"有利(な)","reading":"ゆうり","en":"advantageous","cn":"有利的"}
+    ]},
+    {"n":184,"char":"細","strokes":11,"readings":["サイ","ほそ-い","こま-かい"],"words":[
+      {"jp":"明細","reading":"めいさい","en":"details","cn":"清单"},
+      {"jp":"細い","reading":"ほそい","en":"fine/thin","cn":"细"},
+      {"jp":"細かい","reading":"こまかい","en":"fine/small","cn":"零碎的"},
+      {"jp":"心細い","reading":"こころぼそい","en":"lonely/helpless","cn":"不安"}
+    ]},
+    {"n":185,"char":"在","strokes":6,"readings":["ザイ"],"words":[
+      {"jp":"在中","reading":"ざいちゅう","en":"containing (written on envelopes)","cn":"内附…、内装"},
+      {"jp":"現在","reading":"げんざい","en":"the present (time)","cn":"现在"},
+      {"jp":"在学","reading":"ざいがく","en":"at school","cn":"在学"},
+      {"jp":"不在","reading":"ふざい","en":"absence","cn":"不在家"}
+    ]},
+    {"n":186,"char":"客","strokes":9,"readings":["キャク"],"words":[
+      {"jp":"客席","reading":"きゃくせき","en":"a seat (in auditorium)","cn":"客人的座位"},
+      {"jp":"お客様","reading":"おきゃくさま","en":"customer","cn":"客人"},
+      {"jp":"乗客","reading":"じょうきゃく","en":"a passenger","cn":"乘客"}
+    ]},
+    {"n":187,"char":"額","strokes":18,"readings":["ガク","ひたい"],"words":[
+      {"jp":"額","reading":"がく","en":"a frame","cn":"额数"},
+      {"jp":"額","reading":"ひたい","en":"forehead","cn":"额头"},
+      {"jp":"金額","reading":"きんがく","en":"an amount/sum (of money)","cn":"金额"}
+    ]},
+    {"n":188,"char":"込","strokes":5,"readings":["こ-む","こ-める"],"words":[
+      {"jp":"込む","reading":"こむ","en":"congest/crowd","cn":"拥挤、涌入"},
+      {"jp":"払い込む","reading":"はらいこむ","en":"pay","cn":"缴纳"},
+      {"jp":"飛び込む","reading":"とびこむ","en":"dive, jump into","cn":"跳入"},
+      {"jp":"申し込む","reading":"もうしこむ","en":"apply","cn":"申请"},
+      {"jp":"思い込む","reading":"おもいこむ","en":"imagine/assume","cn":"深信、笃定"}
+    ]},
+    {"n":189,"char":"領","strokes":14,"readings":["リョウ"],"words":[
+      {"jp":"領収書","reading":"りょうしゅうしょ","en":"a receipt","cn":"收据"},
+      {"jp":"領事館","reading":"りょうじかん","en":"consular office","cn":"领事馆"},
+      {"jp":"〜領","reading":"りょう","en":"territory","cn":"领地、领土"},
+      {"jp":"大統領","reading":"だいとうりょう","en":"a president","cn":"总统"}
+    ]},
+    {"n":190,"char":"収","strokes":4,"readings":["シュウ","おさ-める","おさ-まる"],"words":[
+      {"jp":"収入","reading":"しゅうにゅう","en":"income","cn":"收入"},
+      {"jp":"回収","reading":"かいしゅう","en":"a collection/recovery","cn":"回收"},
+      {"jp":"収める","reading":"おさめる","en":"put (in), obtain","cn":"装进"},
+      {"jp":"収集","reading":"しゅうしゅう","en":"a collection/assemblage","cn":"收集"},
+      {"jp":"吸収","reading":"きゅうしゅう","en":"absorption","cn":"吸收"}
+    ]},
+    {"n":191,"char":"械","strokes":11,"readings":["カイ"],"words":[
+      {"jp":"機械","reading":"きかい","en":"a machine","cn":"机器"},
+      {"jp":"器械体操","reading":"きかいたいそう","en":"gymnastics (using equipment)","cn":"器械体操"}
+    ]},
+    {"n":192,"char":"曲","strokes":6,"readings":["キョク","ま-がる","ま-げる"],"words":[
+      {"jp":"曲","reading":"きょく","en":"piece of music (音)","cn":"歌曲"},
+      {"jp":"折り曲げる","reading":"おりまげる","en":"bend, twist","cn":"折弯、弄弯"},
+      {"jp":"曲線","reading":"きょくせん","en":"a curve","cn":"曲线"},
+      {"jp":"曲がる","reading":"まがる","en":"bend, turn a corner","cn":"弯曲、拐弯"}
+    ]},
+    {"n":193,"char":"汚","strokes":6,"readings":["オ","きたな-い","よご-す","よご-れる"],"words":[
+      {"jp":"汚染","reading":"おせん","en":"pollution","cn":"污染"},
+      {"jp":"汚す","reading":"よごす","en":"become dirty","cn":"脏、玷污"},
+      {"jp":"汚い","reading":"きたない","en":"dirty","cn":"肮脏"},
+      {"jp":"汚れる","reading":"よごれる","en":"make dirty, pollute","cn":"弄脏"}
+    ]},
+    {"n":194,"char":"殿","strokes":13,"readings":["との","どの"],"words":[
+      {"jp":"〜殿","reading":"どの","en":"Mr./Mrs./Esquire (used in official letters from offices, etc.)","cn":"先生、小姐、女士"},
+      {"jp":"殿様","reading":"とのさま","en":"a feudal lord","cn":"老爷、大人"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"「お客様のおかけになった番号は（a. 現在　b. 現代）使われておりません。」"},
+        {"n":2,"q":"「（a. 細かい　b. 細い）お金が要るんですが、両替してくれませんか。」"},
+        {"n":3,"q":"「（a. 金額　b. 金利）が低いときに、お金を借りたほうがいいですね。」"},
+        {"n":4,"q":"読んだ本の内容を（a. 要約　b. 要点）する。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"手紙のあて名にはふつう「（a. 様　b. 殿）」を使います。"},
+        {"n":6,"q":"「その信号を右に（a. 曲げて　b. 曲がって）ください。」"},
+        {"n":7,"q":"コンビニでも（a. 払い込み　b. 飛び込み）ができるので便利だ。"},
+        {"n":8,"q":"ごみの（a. 収集　b. 吸収）は月・水・金です。"}
+      ]}
+    ],
+    "answers": "左：①a ②a ③b ④a／右：①a ②b ③a ④a"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "week": 3, "day": 5, "theme": "よむ①", "theme_cn": "读①", "theme_en": "Read ①",
+  "title": "いろいろな通知①", "title_cn": "各种各样的通知①", "title_en": "Various Notices ①",
+  "dialog": {"lines": ["避難訓練のお知らせ　地震に備えて避難訓練を行います。できるだけご参加ください。なお、雨天の場合は延期となります。"]},
+  "kanji": [
+    {"n":237,"char":"難","strokes":18,"readings":["ナン","かた-い","むずか-しい"],"words":[
+      {"jp":"避難","reading":"ひなん","en":"an evacuation","cn":"避难"},
+      {"jp":"難しい","reading":"むずかしい","en":"difficult","cn":"难办的"},
+      {"jp":"困難(な)","reading":"こんなん","en":"difficult","cn":"困难"},
+      {"jp":"〜し難い","reading":"しがたい","en":"difficult to...","cn":"很难~、~很困难"}
+    ]},
+    {"n":238,"char":"訓","strokes":10,"readings":["クン"],"words":[
+      {"jp":"教訓","reading":"きょうくん","en":"a lesson","cn":"教训"},
+      {"jp":"訓読み","reading":"くんよみ","en":"Japanese reading of Kanji","cn":"训读"}
+    ]},
+    {"n":239,"char":"練","strokes":14,"readings":["レン"],"words":[
+      {"jp":"訓練","reading":"くんれん","en":"training/a drill","cn":"训练"},
+      {"jp":"練習","reading":"れんしゅう","en":"a practice","cn":"练习"}
+    ]},
+    {"n":240,"char":"震","strokes":15,"readings":["シン","ふる-える"],"words":[
+      {"jp":"地震","reading":"じしん","en":"an earthquake","cn":"地震"},
+      {"jp":"震える","reading":"ふるえる","en":"shake/tremble","cn":"震动、颤抖"}
+    ]},
+    {"n":241,"char":"加","strokes":5,"readings":["カ","くわ-える","くわ-わる"],"words":[
+      {"jp":"参加","reading":"さんか","en":"participation","cn":"参加"},
+      {"jp":"加える","reading":"くわえる","en":"add to","cn":"加、添"},
+      {"jp":"加速","reading":"かそく","en":"accelerate","cn":"加速"},
+      {"jp":"加わる","reading":"くわわる","en":"join/participate","cn":"增加、增多"}
+    ]},
+    {"n":242,"char":"延","strokes":8,"readings":["エン","の-びる","の-ばす"],"words":[
+      {"jp":"延期","reading":"えんき","en":"postponement","cn":"延期"},
+      {"jp":"延びる","reading":"のびる","en":"lengthen/reach","cn":"延长、延长到"},
+      {"jp":"延長","reading":"えんちょう","en":"an extension","cn":"延长"},
+      {"jp":"延ばす","reading":"のばす","en":"extend/delay","cn":"伸展、延长"}
+    ]},
+    {"n":243,"char":"断","strokes":11,"readings":["ダン","ことわ-る"],"words":[
+      {"jp":"断水","reading":"だんすい","en":"suspension of the water supply","cn":"停水"},
+      {"jp":"横断","reading":"おうだん","en":"a crossing","cn":"横跨"},
+      {"jp":"断定","reading":"だんてい","en":"a decision/assertion","cn":"断定"},
+      {"jp":"断る","reading":"ことわる","en":"refuse","cn":"拒绝"}
+    ]},
+    {"n":244,"char":"管","strokes":14,"readings":["カン","くだ"],"words":[
+      {"jp":"水道管","reading":"すいどうかん","en":"water pipes","cn":"自来水管"},
+      {"jp":"保管","reading":"ほかん","en":"custody/safekeeping","cn":"保管"},
+      {"jp":"管理","reading":"かんり","en":"management/supervision/control","cn":"管理"},
+      {"jp":"管","reading":"くだ","en":"a pipe","cn":"管、筒"}
+    ]},
+    {"n":245,"char":"記","strokes":10,"readings":["キ","しる-す"],"words":[
+      {"jp":"日記","reading":"にっき","en":"a diary/journal","cn":"日记"},
+      {"jp":"記号","reading":"きごう","en":"a mark/symbol","cn":"符号"},
+      {"jp":"記者","reading":"きしゃ","en":"a reporter","cn":"记者"},
+      {"jp":"記す","reading":"しるす","en":"write down","cn":"记述"},
+      {"jp":"記入","reading":"きにゅう","en":"entry","cn":"记入"},
+      {"jp":"下記","reading":"かき","en":"below, following","cn":"下列"},
+      {"jp":"記事","reading":"きじ","en":"an article","cn":"报道"}
+    ]},
+    {"n":246,"char":"迷","strokes":9,"readings":["メイ","まよ-う"],"words":[
+      {"jp":"迷惑","reading":"めいわく","en":"a nuisance","cn":"麻烦"},
+      {"jp":"迷う","reading":"まよう","en":"become lost","cn":"迷惑"},
+      {"jp":"迷信","reading":"めいしん","en":"a superstition","cn":"迷信"},
+      {"jp":"迷子","reading":"まいご","en":"lost child","cn":"走失的孩子"}
+    ]},
+    {"n":247,"char":"協","strokes":8,"readings":["キョウ"],"words":[
+      {"jp":"協力","reading":"きょうりょく","en":"cooperation","cn":"共同努力"},
+      {"jp":"協会","reading":"きょうかい","en":"an association","cn":"协会"},
+      {"jp":"協定","reading":"きょうてい","en":"an agreement","cn":"协定"}
+    ]},
+    {"n":248,"char":"願","strokes":19,"readings":["ガン","ねが-う"],"words":[
+      {"jp":"願書","reading":"がんしょ","en":"an application","cn":"志愿书"},
+      {"jp":"願う","reading":"ねがう","en":"a wish","cn":"愿望、希望"}
+    ]},
+    {"n":249,"char":"平","strokes":5,"readings":["ヘイ","ビョウ","たい-ら","ひら"],"words":[
+      {"jp":"平成","reading":"へいせい","en":"name of an era","cn":"平成(年号)"},
+      {"jp":"平気(な)","reading":"へいき","en":"calm/indifferent","cn":"不在乎"},
+      {"jp":"平ら(な)","reading":"たいら","en":"flat/even","cn":"平坦"},
+      {"jp":"平日","reading":"へいじつ","en":"week days","cn":"平日"},
+      {"jp":"平等","reading":"びょうどう","en":"equality","cn":"平等"},
+      {"jp":"平仮名","reading":"ひらがな","en":"hiragana","cn":"平假名"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"この（a. 練習　b. 訓練）問題はあまり難しくない。"},
+        {"n":2,"q":"「届かないので（a. 延期　b. 延長）コードを持ってきてください。」"},
+        {"n":3,"q":"「あ！（a. 火事　b. 地震）だ！　揺れてる！」"},
+        {"n":4,"q":"材料がやわらかくなったら、さとうを（a. 加えます　b. 凍えます）。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"（a. 迷信　b. 迷惑）メールが何通も届いて困っている。"},
+        {"n":6,"q":"（a. 平日　b. 平成）のこの時間は道路が込んでいる。"},
+        {"n":7,"q":"「（a. 駐車　b. 禁煙）お断り」"},
+        {"n":8,"q":"大学に入学（a. 願書　b. 明細）を郵送する。"}
+      ]}
+    ],
+    "answers": "左：①a ②b ③b ④a／右：①b ②a ③a ④a"
+  }
+}
