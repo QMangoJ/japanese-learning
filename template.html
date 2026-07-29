@@ -189,14 +189,11 @@ body.hide-cn .vcn,body.hide-cn .ven{visibility:hidden}
 .fav-item .fj .c{color:var(--sub);font-size:13px}
 .fav-item .fw{color:var(--sub);font-size:11.5px;white-space:nowrap}
 .mistake-widget{margin-bottom:14px}
-.mistake-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:10px}
-.mistake-head h3{margin:0;font-size:15px}
 .mistake-types{display:flex;gap:6px;margin-bottom:8px}
 .mistake-types button{border:1px solid var(--line);background:var(--bg);color:var(--sub);border-radius:999px;padding:4px 12px;font-size:12.5px;font-weight:700;cursor:pointer}
 .mistake-types button.on{background:var(--accent);border-color:var(--accent);color:#fff}
 .mistake-input{width:100%;border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:14.5px;background:var(--bg);color:var(--ink);resize:vertical;font-family:inherit;box-sizing:border-box}
 .mistake-widget>button[data-mistake-add]{margin-top:8px;border:none;background:var(--accent);color:#fff;border-radius:8px;padding:7px 16px;font-size:14px;font-weight:700;cursor:pointer}
-.mistake-recent{margin-top:14px;border-top:1px dashed var(--line);padding-top:10px}
 .mistake-item{padding:8px 0;border-top:1px dashed var(--line)}
 .mistake-item:first-child{border-top:0}
 .mistake-item-head{display:flex;align-items:center;gap:8px;margin-bottom:4px}
@@ -306,6 +303,7 @@ body.hide-cn .vcn,body.hide-cn .ven{visibility:hidden}
   <button data-nav="search"><span class="ic">🔍</span><span class="lbl" data-cn="搜索" data-en="Search">搜索</span></button>
   <button data-nav="cards"><span class="ic">🗂️</span><span class="lbl" data-cn="记忆卡" data-en="Flashcards">记忆卡</span></button>
   <button data-nav="favs"><span class="ic">⭐</span><span class="lbl" data-cn="收藏" data-en="Favorites">收藏</span></button>
+  <button data-nav="mistakes"><span class="ic">📝</span><span class="lbl" data-cn="错题本" data-en="Notes">错题本</span></button>
   <button data-nav="contrast" id="navContrast"><span class="ic">🔀</span><span class="lbl" data-cn="辨析" data-en="Contrast">辨析</span></button>
   <button data-nav="ref" id="navRef"><span class="ic">📖</span><span class="lbl" data-cn="接续表" data-en="Reference">接续表</span></button>
   <button data-nav="katsuyou" id="navKatsuyou"><span class="ic">🔄</span><span class="lbl" data-cn="活用" data-en="Conjugation">活用</span></button>
@@ -409,16 +407,6 @@ function mistakeDate(ts){
   const d=new Date(ts), p=n=>String(n).padStart(2,'0');
   return `${d.getFullYear()}-${p(d.getMonth()+1)}-${p(d.getDate())}`;
 }
-function mistakeWidgetHTML(){
-  const recent=MISTAKES.slice(0,3);
-  return `<div class="card mistake-widget">
-    <div class="mistake-head"><h3 class="jp">📝 错题 / 生词本</h3>${MISTAKES.length?`<a class="plink" data-go="#/mistakes">查看全部（${MISTAKES.length}）›</a>`:''}</div>
-    <div class="mistake-types" id="mistakeTypes">${Object.entries(MISTAKE_TYPES).map(([k,v])=>`<button class="${k===mistakeAddType?'on':''}" data-mtype="${k}">${v}</button>`).join('')}</div>
-    <textarea id="mistakeInput" class="mistake-input" rows="2" placeholder="记一下考试错题、老是记不住的单词或语法点……"></textarea>
-    <button class="primary" data-mistake-add>保存</button>
-    ${recent.length?`<div class="mistake-recent">${recent.map(mistakeItemHTML).join('')}</div>`:''}
-  </div>`;
-}
 function mistakeItemHTML(m){
   return `<div class="mistake-item">
     <div class="mistake-item-head"><span class="mtag mt-${m.type}">${MISTAKE_TYPES[m.type]||m.type}</span><span class="mistake-date">${mistakeDate(m.ts)}</span><button class="mistake-del" data-mistake-del="${escAttr(m.id)}" aria-label="删除">✕</button></div>
@@ -427,13 +415,13 @@ function mistakeItemHTML(m){
 }
 let mistakeFilter='all';
 function viewMistakes(){
-  setNav('home'); setHeader(LX('错题 / 生词本','My Mistakes & Notes'), true);
+  setNav('mistakes'); setHeader(LX('错题 / 生词本','My Mistakes & Notes'), false);
   const list = mistakeFilter==='all' ? MISTAKES : MISTAKES.filter(m=>m.type===mistakeFilter);
   const filterBar = `<div class="fc-filter" style="margin-bottom:14px">
     <button class="${mistakeFilter==='all'?'on':''}" data-mfilter="all">全部（${MISTAKES.length}）</button>
     ${Object.entries(MISTAKE_TYPES).map(([k,v])=>`<button class="${mistakeFilter===k?'on':''}" data-mfilter="${k}">${v}（${MISTAKES.filter(m=>m.type===k).length}）</button>`).join('')}
   </div>`;
-  const body = list.length ? list.map(mistakeItemHTML).join('') : '<div class="empty">还没有记录，回首页添加一条吧。</div>';
+  const body = list.length ? list.map(mistakeItemHTML).join('') : '<div class="empty">还没有记录，在上面写一条保存试试。</div>';
   app.innerHTML = `<div class="card mistake-widget" style="margin-bottom:14px">
     <div class="mistake-types" id="mistakeTypes">${Object.entries(MISTAKE_TYPES).map(([k,v])=>`<button class="${k===mistakeAddType?'on':''}" data-mtype="${k}">${v}</button>`).join('')}</div>
     <textarea id="mistakeInput" class="mistake-input" rows="2" placeholder="记一下考试错题、老是记不住的单词或语法点……"></textarea>
@@ -504,7 +492,7 @@ function navTo(hash){ if(location.hash===hash) render(); else location.hash=hash
 window.addEventListener('hashchange', render);
 backBtn.onclick = ()=>{ history.length>1 ? history.back() : navTo('#/'); };
 document.querySelectorAll('nav.bottom button').forEach(b=>{
-  b.onclick = ()=> navTo({home:'#/',search:'#/search',cards:'#/cards',favs:'#/favs',contrast:'#/contrast',ref:'#/ref',katsuyou:'#/katsuyou'}[b.dataset.nav]);
+  b.onclick = ()=> navTo({home:'#/',search:'#/search',cards:'#/cards',favs:'#/favs',mistakes:'#/mistakes',contrast:'#/contrast',ref:'#/ref',katsuyou:'#/katsuyou'}[b.dataset.nav]);
 });
 /* delegated clicks (artifact CSP blocks inline onclick=) */
 app.addEventListener('click', e=>{
@@ -615,7 +603,6 @@ function viewHome(){
   let html = `<div class="home-top"><div class="meta" style="margin-bottom:10px">${intro}</div>` +
     (weeks.length>3 ? `<div class="wk-toc">${weeks.map(w=>`<a class="wk-tocitem" data-scroll="wk-${w.n}">第${w.n}周</a>`).join('')}</div>` : '') +
     `</div>`;
-  html += mistakeWidgetHTML();
   for(const w of weeks){
     const wt = w.title ? ` <span class="jp">${esc(w.title)}</span>` : '';
     const wsubText = LX(w.title_cn, w.title_en);
