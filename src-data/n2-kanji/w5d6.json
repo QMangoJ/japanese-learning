@@ -1,0 +1,99 @@
+{
+  "week": 5, "day": 6, "theme": "つかう②", "theme_cn": "用②", "theme_en": "Use ②",
+  "title": "インターホン・パソコン", "title_cn": "对讲机・个人电脑", "title_en": "Intercom, Personal Computers",
+  "dialog": {"lines": ["チャイムが鳴ったら受話器を取って話します。訪問者の顔も見えます。ほかの部屋を呼び出すときは呼出ボタンを押します。非常を知らせるときは非常警報ボタンを強く押します。警報音を止めるには、カバーを裏から押し戻し、元の位置にセットします。"]},
+  "kanji": [
+    {"n":440,"char":"鳴","strokes":14,"readings":["な-る","な-らす","な-く"],"words":[
+      {"jp":"鳴る","reading":"なる","en":"ring, chime","cn":"鸣、扬名、声音响"},
+      {"jp":"怒鳴る","reading":"どなる","en":"shout","cn":"大声斥责、吼叫"},
+      {"jp":"鳴らす","reading":"ならす","en":"ring/chime (a bell)","cn":"鸣、发出声音"},
+      {"jp":"鳴く","reading":"なく","en":"chirp/croak/bleat (etc.)","cn":"啼叫(动物叫声)"}
+    ]},
+    {"n":441,"char":"訪","strokes":11,"readings":["ホウ","おとず-れる","たず-ねる"],"words":[
+      {"jp":"訪問","reading":"ほうもん","en":"a visit","cn":"访问"},
+      {"jp":"訪れる","reading":"おとずれる","en":"visit, come (e.g. \"the day came\")","cn":"拜访、来临"},
+      {"jp":"訪ねる","reading":"たずねる","en":"visit","cn":"访问、拜访"}
+    ]},
+    {"n":442,"char":"呼","strokes":8,"readings":["コ","よ-ぶ"],"words":[
+      {"jp":"呼吸","reading":"こきゅう","en":"respiration","cn":"呼吸"},
+      {"jp":"呼ぶ","reading":"よぶ","en":"call","cn":"叫唤、招呼"},
+      {"jp":"呼び出す","reading":"よびだす","en":"call, summon","cn":"唤出来、叫出来"}
+    ]},
+    {"n":443,"char":"警","strokes":19,"readings":["ケイ"],"words":[
+      {"jp":"警官","reading":"けいかん","en":"a police officer","cn":"警官"},
+      {"jp":"警察","reading":"けいさつ","en":"police","cn":"警察"},
+      {"jp":"警備","reading":"けいび","en":"security","cn":"警备、警戒"}
+    ]},
+    {"n":444,"char":"報","strokes":12,"readings":["ホウ"],"words":[
+      {"jp":"警報","reading":"けいほう","en":"warning, alarm","cn":"警报"},
+      {"jp":"情報","reading":"じょうほう","en":"information","cn":"信息"},
+      {"jp":"予報","reading":"よほう","en":"a forecast","cn":"预报"},
+      {"jp":"電報","reading":"でんぽう","en":"a telegram","cn":"电报"}
+    ]},
+    {"n":445,"char":"裏","strokes":13,"readings":["うら"],"words":[
+      {"jp":"裏","reading":"うら","en":"reverse, back","cn":"背面、里面"},
+      {"jp":"裏切る","reading":"うらぎる","en":"deceive","cn":"背叛、辜负"},
+      {"jp":"裏口","reading":"うらぐち","en":"a back door","cn":"后门"},
+      {"jp":"裏表","reading":"うらおもて","en":"both sides","cn":"正反两面"}
+    ]},
+    {"n":446,"char":"差","strokes":10,"readings":["サ","さ-す"],"words":[
+      {"jp":"交差点","reading":"こうさてん","en":"an intersection","cn":"十字路口"},
+      {"jp":"差","reading":"さ","en":"difference","cn":"差、差异"},
+      {"jp":"差別","reading":"さべつ","en":"discrimination","cn":"差别、歧视"},
+      {"jp":"差出人","reading":"さしだしにん","en":"a sender","cn":"寄件人"},
+      {"jp":"人差し指","reading":"ひとさしゆび","en":"an index finger","cn":"食指"}
+    ]},
+    {"n":447,"char":"続","strokes":13,"readings":["ゾク","つづ-く","つづ-ける"],"words":[
+      {"jp":"接続","reading":"せつぞく","en":"a connection","cn":"连接"},
+      {"jp":"続く","reading":"つづく","en":"continue","cn":"继续、持续"},
+      {"jp":"継続","reading":"けいぞく","en":"continuity","cn":"继续"},
+      {"jp":"手続き","reading":"てつづき","en":"a procedure","cn":"手续"}
+    ]},
+    {"n":448,"char":"辞","strokes":13,"readings":["ジ","や-める"],"words":[
+      {"jp":"辞書","reading":"じしょ","en":"a dictionary","cn":"词典"},
+      {"jp":"辞表","reading":"じひょう","en":"resignation","cn":"辞呈"},
+      {"jp":"辞典","reading":"じてん","en":"dictionary, encyclopedia","cn":"字典"},
+      {"jp":"辞める","reading":"やめる","en":"resign, retire","cn":"辞职、不干了"}
+    ]},
+    {"n":449,"char":"面","strokes":9,"readings":["メン"],"words":[
+      {"jp":"画面","reading":"がめん","en":"a screen","cn":"画面"},
+      {"jp":"正面","reading":"しょうめん","en":"front","cn":"正面"},
+      {"jp":"方面","reading":"ほうめん","en":"direction","cn":"方面"},
+      {"jp":"面積","reading":"めんせき","en":"an (surface) area","cn":"面积"}
+    ]},
+    {"n":450,"char":"操","strokes":16,"readings":["ソウ"],"words":[
+      {"jp":"操作","reading":"そうさ","en":"operation, manipulation","cn":"操作"},
+      {"jp":"体操","reading":"たいそう","en":"exercise, gymnastics","cn":"体操"}
+    ]},
+    {"n":451,"char":"実","strokes":8,"readings":["ジツ","み","みの-る"],"words":[
+      {"jp":"実行","reading":"じっこう","en":"practice, action","cn":"实行"},
+      {"jp":"事実","reading":"じじつ","en":"a fact","cn":"事实"},
+      {"jp":"実","reading":"み","en":"a fruit, nut","cn":"果实"},
+      {"jp":"実験","reading":"じっけん","en":"an experiment","cn":"实验"},
+      {"jp":"実る","reading":"みのる","en":"bear fruit","cn":"结果实"}
+    ]},
+    {"n":452,"char":"列","strokes":6,"readings":["レツ"],"words":[
+      {"jp":"列","reading":"れつ","en":"a line, queue","cn":"列"},
+      {"jp":"列車","reading":"れっしゃ","en":"a train","cn":"列车"},
+      {"jp":"行列","reading":"ぎょうれつ","en":"a procession","cn":"行列、队伍"},
+      {"jp":"列島","reading":"れっとう","en":"an archipelago","cn":"群岛"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"訪問販売の人が何度も（a. 訪ねて　b. 栄えて）きてチャイムを鳴らす。"},
+        {"n":2,"q":"台風が近づいて雨や風が強くなり、注意報が（a. 警報　b. 電報）に変わった。"},
+        {"n":3,"q":"あの人の言動には（a. 内外　b. 裏表）があって、信用できない。"},
+        {"n":4,"q":"お客様に（a. お呼び出し　b. お呼び込み）を申し上げます。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"（a. 正面　b. 前面）玄関は閉まっていますから、裏口から入ってください。"},
+        {"n":6,"q":"合格した人は入学（a. 手続き　b. 操作）をしてください。"},
+        {"n":7,"q":"新製品を買いたい人の（a. 行　b. 列）が店の前から交差点まで続いている。"},
+        {"n":8,"q":"私は課長に（a. 辞表　b. 裏表）を出した。"}
+      ]}
+    ],
+    "answers": "左：①a ②a ③b ④a／右：①a ②a ③b ④a"
+  }
+}

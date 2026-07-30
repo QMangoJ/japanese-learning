@@ -1,0 +1,96 @@
+{
+  "week": 5, "day": 3, "theme": "つかう②", "theme_cn": "用②", "theme_en": "Use ②",
+  "title": "家庭用品 洗剤②", "title_cn": "家庭用品（洗洁剂）②", "title_en": "Household Goods (Cleansers) ②",
+  "kanji": [
+    {"n":400,"char":"途","strokes":10,"readings":["ト"],"words":[
+      {"jp":"用途","reading":"ようと","en":"use","cn":"用途"},
+      {"jp":"中途","reading":"ちゅうと","en":"midway, unfinished","cn":"中途"},
+      {"jp":"途中","reading":"とちゅう","en":"on the way, part way","cn":"途中"},
+      {"jp":"途端","reading":"とたん","en":"just as (...something happened)","cn":"刚一…时、恰逢那一瞬"}
+    ]},
+    {"n":401,"char":"具","strokes":8,"readings":["グ"],"words":[
+      {"jp":"道具","reading":"どうぐ","en":"a tool","cn":"道具"},
+      {"jp":"家具","reading":"かぐ","en":"furniture","cn":"家具"},
+      {"jp":"具合","reading":"ぐあい","en":"condition","cn":"情况、状态"},
+      {"jp":"雨具","reading":"あまぐ","en":"raingear","cn":"雨具"}
+    ]},
+    {"n":402,"char":"床","strokes":7,"readings":["ショウ","ゆか","とこ"],"words":[
+      {"jp":"起床","reading":"きしょう","en":"getting up","cn":"起床"},
+      {"jp":"床屋","reading":"とこや","en":"a barbershop","cn":"理发店"},
+      {"jp":"床の間","reading":"とこのま","en":"alcove (a place for traditional pictures and ornaments)","cn":"日式壁龛(挂画装饰用的凹间)"},
+      {"jp":"床","reading":"ゆか","en":"floor","cn":"(室内的)地板"}
+    ]},
+    {"n":403,"char":"壁","strokes":16,"readings":["かべ"],"words":[
+      {"jp":"壁","reading":"かべ","en":"wall","cn":"墙壁"}
+    ]},
+    {"n":404,"char":"乾","strokes":11,"readings":["カン","かわ-く","かわ-かす"],"words":[
+      {"jp":"乾電池","reading":"かんでんち","en":"a dry cell battery","cn":"干电池"},
+      {"jp":"乾く","reading":"かわく","en":"dry","cn":"干、干燥"},
+      {"jp":"乾かす","reading":"かわかす","en":"dry something","cn":"弄干、晒干、烘干"}
+    ]},
+    {"n":405,"char":"布","strokes":5,"readings":["フ","ぬの"],"words":[
+      {"jp":"毛布","reading":"もうふ","en":"a blanket","cn":"毛毯"},
+      {"jp":"座布団","reading":"ざぶとん","en":"zabuton; square Japanese floor cushion","cn":"坐垫"},
+      {"jp":"布","reading":"ぬの","en":"a cloth","cn":"布、织物"},
+      {"jp":"分布","reading":"ぶんぷ","en":"distribution","cn":"分布"}
+    ]},
+    {"n":406,"char":"柱","strokes":9,"readings":["チュウ","はしら"],"words":[
+      {"jp":"電柱","reading":"でんちゅう","en":"a telegraph pole","cn":"电线杆子"},
+      {"jp":"柱","reading":"はしら","en":"a pillar, post","cn":"柱子"}
+    ]},
+    {"n":407,"char":"虫","strokes":6,"readings":["チュウ","むし"],"words":[
+      {"jp":"防虫剤","reading":"ぼうちゅうざい","en":"insect repellant","cn":"防虫剂"},
+      {"jp":"虫","reading":"むし","en":"insect","cn":"虫、昆虫"},
+      {"jp":"殺虫剤","reading":"さっちゅうざい","en":"an insecticide","cn":"杀虫剂"},
+      {"jp":"虫歯","reading":"むしば","en":"a decayed tooth","cn":"蛀牙"}
+    ]},
+    {"n":408,"char":"歯","strokes":12,"readings":["シ","は"],"words":[
+      {"jp":"歯科","reading":"しか","en":"dentistry","cn":"牙科"},
+      {"jp":"歯医者","reading":"はいしゃ","en":"a dentist","cn":"牙医"},
+      {"jp":"歯周病","reading":"ししゅうびょう","en":"gum disease","cn":"牙周病"},
+      {"jp":"歯車","reading":"はぐるま","en":"a cog, gear","cn":"齿轮、齿状轮"}
+    ]},
+    {"n":409,"char":"防","strokes":7,"readings":["ボウ","ふせ-ぐ"],"words":[
+      {"jp":"予防","reading":"よぼう","en":"precaution, prevention","cn":"预防"},
+      {"jp":"防止","reading":"ぼうし","en":"prevention","cn":"防止"},
+      {"jp":"消防","reading":"しょうぼう","en":"fire fighting","cn":"消防"},
+      {"jp":"防ぐ","reading":"ふせぐ","en":"prevent","cn":"防、防止"}
+    ]},
+    {"n":410,"char":"磨","strokes":16,"readings":["みが-く"],"words":[
+      {"jp":"磨く","reading":"みがく","en":"polish/brush","cn":"擦、擦亮"},
+      {"jp":"歯磨き","reading":"はみがき","en":"tooth brushing","cn":"刷牙、牙刷"}
+    ]},
+    {"n":411,"char":"抜","strokes":7,"readings":["バツ","ぬ-く","ぬ-ける"],"words":[
+      {"jp":"抜群","reading":"ばつぐん","en":"outstanding, unrivaled","cn":"出众、拔群"},
+      {"jp":"抜く","reading":"ぬく","en":"remove, extract, omit","cn":"抽出、拔出、摘掉"},
+      {"jp":"抜ける","reading":"ぬける","en":"fall out, be missing","cn":"脱落"},
+      {"jp":"追い抜く","reading":"おいぬく","en":"leave behind","cn":"赶过、超越"}
+    ]},
+    {"n":412,"char":"悩","strokes":10,"readings":["なや-む"],"words":[
+      {"jp":"悩む","reading":"なやむ","en":"worry (about something)","cn":"烦恼"},
+      {"jp":"悩み","reading":"なやみ","en":"a worry, distress","cn":"烦恼、苦恼"}
+    ]},
+    {"n":413,"char":"髪","strokes":14,"readings":["かみ"],"words":[
+      {"jp":"髪","reading":"かみ","en":"hair","cn":"头发"},
+      {"jp":"白髪","reading":"しらが","en":"white/gray hair","cn":"白发"},
+      {"jp":"髪の毛","reading":"かみのけ","en":"hair","cn":"头发"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"いい天気なので（a. 毛布　b. 分布）を洗った。よく乾いた。"},
+        {"n":2,"q":"この花入れは柱にかけたり、（a. 床屋　b. 床の間）に置いたりしてください。"},
+        {"n":3,"q":"家に帰る（a. 中途　b. 途中）、コンビニに寄って、乾電池を買った。"},
+        {"n":4,"q":"（a. 床　b. 壁）にカーペットをしく。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"歯医者で歯を（a. 抜いた　b. 抜けた）ばかりなので具合が悪い。"},
+        {"n":6,"q":"髪がぬれたままだと風邪を引くから（a. 磨いた　b. 乾かした）ほうがいいですよ。"},
+        {"n":7,"q":"毛糸のセーターを引き出しやタンスにしまう際には、（a. 防虫剤　b. 殺虫剤）を一緒に入れます。"},
+        {"n":8,"q":"歯周病（a. 予防　b. 防止）によく効く歯磨きを買う。"}
+      ]}
+    ],
+    "answers": "左：①a ②b ③b ④a／右：①a ②b ③a ④a"
+  }
+}

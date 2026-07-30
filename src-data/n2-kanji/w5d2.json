@@ -1,0 +1,82 @@
+{
+  "week": 5, "day": 2, "theme": "つかう②", "theme_cn": "用②", "theme_en": "Use ②",
+  "title": "家庭用品 洗剤①", "title_cn": "家庭用品（洗洁剂）①", "title_en": "Household Goods (Detergents) ①",
+  "kanji": [
+    {"n":387,"char":"毛","strokes":4,"readings":["モウ","け"],"words":[
+      {"jp":"羊毛","reading":"ようもう","en":"wool","cn":"羊毛"},
+      {"jp":"毛","reading":"け","en":"fur, hair, wool","cn":"毛"},
+      {"jp":"毛皮","reading":"けがわ","en":"fur","cn":"毛皮"}
+    ]},
+    {"n":388,"char":"糸","strokes":8,"readings":["いと"],"words":[
+      {"jp":"糸","reading":"いと","en":"a thread","cn":"线"},
+      {"jp":"毛糸","reading":"けいと","en":"yarn","cn":"毛线"}
+    ]},
+    {"n":389,"char":"肌","strokes":6,"readings":["はだ"],"words":[
+      {"jp":"肌","reading":"はだ","en":"skin","cn":"皮肤"},
+      {"jp":"肌着","reading":"はだぎ","en":"an undershirt","cn":"贴身衣物"}
+    ]},
+    {"n":390,"char":"柔","strokes":9,"readings":["ジュウ","やわ-らかい"],"words":[
+      {"jp":"柔軟(な)","reading":"じゅうなん","en":"flexible","cn":"柔软"},
+      {"jp":"柔道","reading":"じゅうどう","en":"judo","cn":"柔道"},
+      {"jp":"柔らかい","reading":"やわらかい","en":"soft, tender","cn":"柔软"}
+    ]},
+    {"n":391,"char":"香","strokes":9,"readings":["コウ","かお-り","かお-る"],"words":[
+      {"jp":"香水","reading":"こうすい","en":"perfume","cn":"香水"},
+      {"jp":"無香料","reading":"むこうりょう","en":"without scent","cn":"不含香料"},
+      {"jp":"香辛料","reading":"こうしんりょう","en":"spice","cn":"香辣调味料"},
+      {"jp":"香り","reading":"かおり","en":"a scent, smell","cn":"香、香气"}
+    ]},
+    {"n":392,"char":"軟","strokes":11,"readings":["ナン","やわ-らかい"],"words":[
+      {"jp":"軟弱(な)","reading":"なんじゃく","en":"weak","cn":"软弱"},
+      {"jp":"柔軟体操","reading":"じゅうなんたいそう","en":"warm-up exercises","cn":"伸展操"},
+      {"jp":"軟らかい","reading":"やわらかい","en":"soft","cn":"柔软"}
+    ]},
+    {"n":393,"char":"溶","strokes":13,"readings":["ヨウ","と-ける","と-かす"],"words":[
+      {"jp":"溶岩","reading":"ようがん","en":"lava","cn":"熔岩"},
+      {"jp":"溶ける","reading":"とける","en":"dissolve, melt","cn":"溶解、化"},
+      {"jp":"溶かす","reading":"とかす","en":"dissolve/melt","cn":"溶解、化开"}
+    ]},
+    {"n":394,"char":"濯","strokes":17,"readings":["タク"],"words":[
+      {"jp":"洗濯","reading":"せんたく","en":"washing","cn":"洗衣服"},
+      {"jp":"洗濯機","reading":"せんたくき","en":"a washing machine","cn":"洗衣机"}
+    ]},
+    {"n":395,"char":"接","strokes":11,"readings":["セツ"],"words":[
+      {"jp":"直接","reading":"ちょくせつ","en":"direct","cn":"直接"},
+      {"jp":"面接","reading":"めんせつ","en":"an interview","cn":"面试"},
+      {"jp":"間接","reading":"かんせつ","en":"indirect","cn":"间接"},
+      {"jp":"接近","reading":"せっきん","en":"proximity","cn":"接近"}
+    ]},
+    {"n":396,"char":"塗","strokes":13,"readings":["ぬ-る"],"words":[
+      {"jp":"塗る","reading":"ぬる","en":"paint/spread","cn":"涂抹、涂、抹"}
+    ]},
+    {"n":397,"char":"緒","strokes":14,"readings":["ショ"],"words":[
+      {"jp":"一緒","reading":"いっしょ","en":"together","cn":"一起"}
+    ]},
+    {"n":398,"char":"泥","strokes":8,"readings":["どろ"],"words":[
+      {"jp":"泥","reading":"どろ","en":"mud","cn":"泥"},
+      {"jp":"泥棒","reading":"どろぼう","en":"a thief","cn":"小偷"}
+    ]},
+    {"n":399,"char":"黄","strokes":11,"readings":["オウ","き"],"words":[
+      {"jp":"卵黄","reading":"らんおう","en":"an egg yolk","cn":"蛋黄"},
+      {"jp":"（卵の）黄身","reading":"きみ","en":"an egg yolk","cn":"蛋黄"},
+      {"jp":"黄色","reading":"きいろ","en":"yellow","cn":"黄色"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"スポーツには（a. 軟弱　b. 柔軟）体操は欠かせない。"},
+        {"n":2,"q":"猫を抱いたら、服に猫の（a. 毛　b. 糸）がたくさんついてしまった。"},
+        {"n":3,"q":"この化粧品は肌の弱い方用で、（a. 香料　b. 香辛料）は使用しておりません。"},
+        {"n":4,"q":"妹は（a. 茶道　b. 柔道）の選手です。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"その看板は黄色いペンキで（a. 写して　b. 塗って）あってよく目立つ。"},
+        {"n":6,"q":"この風邪薬はお湯に（a. 溶かして　b. 溶けて）お飲みください。"},
+        {"n":7,"q":"子供たちは（a. 泥　b. 肌）だらけになって遊ぶので、洗濯が大変だ。"},
+        {"n":8,"q":"（a. 一諸　b. 一緒）に映画に行きませんか。"}
+      ]}
+    ],
+    "answers": "左：①b ②a ③a ④b／右：①b ②a ③a ④b"
+  }
+}

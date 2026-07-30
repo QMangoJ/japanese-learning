@@ -1,0 +1,102 @@
+{
+  "week": 5, "day": 1, "theme": "つかう②", "theme_cn": "用②", "theme_en": "Use ②",
+  "title": "家庭用品（ポット・ヒーター）", "title_cn": "家庭用品（热水瓶・电炉）", "title_en": "Household Goods (thermos flask, heater)",
+  "dialog": {"lines": ["子：余った灯油は来年使えばいいね。", "父：いや、使い切らないとダメなんだよ。ほら、書いてある。"]},
+  "kanji": [
+    {"n":373,"char":"傾","strokes":13,"readings":["ケイ","かたむ-く","かたむ-ける"],"words":[
+      {"jp":"傾向","reading":"けいこう","en":"a trend, tendency","cn":"倾向"},
+      {"jp":"傾く","reading":"かたむく","en":"tilt/incline","cn":"倾斜、歪"},
+      {"jp":"傾ける","reading":"かたむける","en":"(make something) tilt/incline","cn":"使倾斜"}
+    ]},
+    {"n":374,"char":"横","strokes":15,"readings":["オウ","よこ"],"words":[
+      {"jp":"横転","reading":"おうてん","en":"overturn","cn":"横向倒下"},
+      {"jp":"横断歩道","reading":"おうだんほどう","en":"a pedestrian crossing","cn":"斑马线、横断步道"},
+      {"jp":"横","reading":"よこ","en":"side","cn":"横、旁"}
+    ]},
+    {"n":375,"char":"湯","strokes":12,"readings":["トウ","ゆ"],"words":[
+      {"jp":"熱湯","reading":"ねっとう","en":"boiling water","cn":"热水"},
+      {"jp":"湯","reading":"ゆ","en":"hot water","cn":"热水"},
+      {"jp":"湯飲み","reading":"ゆのみ","en":"teacup","cn":"茶杯"},
+      {"jp":"湯気","reading":"ゆげ","en":"steam","cn":"蒸汽"}
+    ]},
+    {"n":376,"char":"恐","strokes":10,"readings":["キョウ","おそ-れる","おそ-ろしい"],"words":[
+      {"jp":"恐怖","reading":"きょうふ","en":"fear","cn":"恐怖"},
+      {"jp":"恐れ","reading":"おそれ","en":"fear","cn":"有~的危险、忧虑、恐怕"},
+      {"jp":"恐ろしい","reading":"おそろしい","en":"fearful, terrible","cn":"可怕的、可怕"},
+      {"jp":"恐れ入ります","reading":"おそれいります","en":"I beg your pardon. Excuse me.","cn":"不好意思、抱歉"}
+    ]},
+    {"n":377,"char":"原","strokes":10,"readings":["ゲン","はら"],"words":[
+      {"jp":"原料","reading":"げんりょう","en":"(raw) material","cn":"原料"},
+      {"jp":"原産","reading":"げんさん","en":"native (e.g. native flower)","cn":"原产"},
+      {"jp":"野原","reading":"のはら","en":"a field","cn":"原野"}
+    ]},
+    {"n":378,"char":"因","strokes":6,"readings":["イン"],"words":[
+      {"jp":"原因","reading":"げんいん","en":"a cause","cn":"原因"},
+      {"jp":"要因","reading":"よういん","en":"a factor","cn":"主要原因"}
+    ]},
+    {"n":379,"char":"置","strokes":13,"readings":["チ","お-く"],"words":[
+      {"jp":"位置","reading":"いち","en":"a location","cn":"位置"},
+      {"jp":"置く","reading":"おく","en":"put","cn":"放置"},
+      {"jp":"装置","reading":"そうち","en":"device","cn":"装置"},
+      {"jp":"物置","reading":"ものおき","en":"a closet, storeroom","cn":"库房"}
+    ]},
+    {"n":380,"char":"寝","strokes":13,"readings":["シン","ね-る"],"words":[
+      {"jp":"寝室","reading":"しんしつ","en":"a bedroom","cn":"寝室"},
+      {"jp":"寝る","reading":"ねる","en":"sleep","cn":"睡觉"},
+      {"jp":"寝坊","reading":"ねぼう","en":"a late riser, getting up late","cn":"早上赖床、晚起"},
+      {"jp":"昼寝","reading":"ひるね","en":"a nap","cn":"午觉"}
+    ]},
+    {"n":381,"char":"熱","strokes":15,"readings":["ネツ","あつ-い"],"words":[
+      {"jp":"熱","reading":"ねつ","en":"heat, fever","cn":"热"},
+      {"jp":"熱中","reading":"ねっちゅう","en":"mania, passion, enthusiasm","cn":"热中"},
+      {"jp":"熱心(な)","reading":"ねっしん","en":"enthusiasm, zeal","cn":"热心"},
+      {"jp":"熱い","reading":"あつい","en":"hot","cn":"热的"}
+    ]},
+    {"n":382,"char":"焼","strokes":12,"readings":["ショウ","や-く","や-ける"],"words":[
+      {"jp":"燃焼","reading":"ねんしょう","en":"combustion","cn":"燃烧"},
+      {"jp":"焼く","reading":"やく","en":"roast, grill","cn":"烧、烤"},
+      {"jp":"焼ける","reading":"やける","en":"be burnt/baked","cn":"燃烧、烤熟"}
+    ]},
+    {"n":383,"char":"触","strokes":13,"readings":["ショク","ふ-れる","さわ-る"],"words":[
+      {"jp":"接触","reading":"せっしょく","en":"contact","cn":"接触"},
+      {"jp":"触れる","reading":"ふれる","en":"touch, mention","cn":"触、接触"},
+      {"jp":"感触","reading":"かんしょく","en":"(the sense of) touch","cn":"感触"},
+      {"jp":"触る","reading":"さわる","en":"touch","cn":"摸、接触"}
+    ]},
+    {"n":384,"char":"灯","strokes":6,"readings":["トウ"],"words":[
+      {"jp":"灯油","reading":"とうゆ","en":"kerosene","cn":"灯油"},
+      {"jp":"蛍光灯","reading":"けいこうとう","en":"a fluorescent light","cn":"日光灯"},
+      {"jp":"灯台","reading":"とうだい","en":"a lighthouse","cn":"灯台"},
+      {"jp":"電灯","reading":"でんとう","en":"an electric light","cn":"电灯"}
+    ]},
+    {"n":385,"char":"油","strokes":8,"readings":["ユ","あぶら"],"words":[
+      {"jp":"石油","reading":"せきゆ","en":"oil (petroleum)","cn":"石油"},
+      {"jp":"油断","reading":"ゆだん","en":"negligence, inattention","cn":"疏忽大意、放松警惕"},
+      {"jp":"原油","reading":"げんゆ","en":"crude oil","cn":"原油"},
+      {"jp":"油","reading":"あぶら","en":"oil","cn":"油"}
+    ]},
+    {"n":386,"char":"余","strokes":7,"readings":["ヨ","あま-る"],"words":[
+      {"jp":"余分(な)","reading":"よぶん","en":"excess","cn":"剩余、多余"},
+      {"jp":"余裕","reading":"よゆう","en":"leeway (e.g. time to spare)","cn":"余裕、从容"},
+      {"jp":"余計(な)","reading":"よけい","en":"excess","cn":"多余、无用"},
+      {"jp":"余る","reading":"あまる","en":"be left over","cn":"剩余、超出"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"試験に出される問題の（a. 傾向　b. 原因）を調べて受験勉強をする。"},
+        {"n":2,"q":"「（a. 恐れ入ります　b. 恐ろしいです）が、荷物はそちらに置いてください。」"},
+        {"n":3,"q":"アフリカ（a. 原料　b. 原産）のお茶を飲む。"},
+        {"n":4,"q":"この車にはABSという安全（a. 装置　b. 位置）がついています。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"「作品には手を（a. 触れないで　b. 届けないで）ください。」"},
+        {"n":6,"q":"今朝は寝坊をして朝食をとる（a. 余分　b. 余裕）がなかった。"},
+        {"n":7,"q":"電灯をつけるのを忘れるぐらいゲームに（a. 熱心　b. 熱中）した。"},
+        {"n":8,"q":"（a. 灯台　b. 灯油）は船に位置を教えます。"}
+      ]}
+    ],
+    "answers": "左：①a ②a ③b ④a／右：①a ②b ③b ④a"
+  }
+}

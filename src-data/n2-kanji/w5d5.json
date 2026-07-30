@@ -1,0 +1,91 @@
+{
+  "week": 5, "day": 5, "theme": "つかう②", "theme_cn": "用②", "theme_en": "Use ②",
+  "title": "食品", "title_cn": "食品", "title_en": "Food",
+  "dialog": {"lines": ["おいしい召し上がり方　①お湯カップ2杯半を沸騰させ、めんを入れて軽くほぐしながら、3分煮ます。②火を止めてから粉末スープを加えると、できあがり！　★お好みにより野菜や肉などを入れますと、栄養のバランスもよく召し上がれます。"]},
+  "kanji": [
+    {"n":427,"char":"賞","strokes":15,"readings":["ショウ"],"words":[
+      {"jp":"賞","reading":"しょう","en":"a prize","cn":"奖"},
+      {"jp":"賞品","reading":"しょうひん","en":"prize (goods)","cn":"奖品"},
+      {"jp":"賞金","reading":"しょうきん","en":"a prize (money)","cn":"奖金"},
+      {"jp":"賞味期限","reading":"しょうみきげん","en":"\"best before\" date","cn":"保质期"}
+    ]},
+    {"n":428,"char":"庫","strokes":10,"readings":["コ"],"words":[
+      {"jp":"金庫","reading":"きんこ","en":"a safe","cn":"金库"},
+      {"jp":"冷蔵庫","reading":"れいぞうこ","en":"a refrigerator","cn":"冰箱"},
+      {"jp":"車庫","reading":"しゃこ","en":"a garage","cn":"车库"}
+    ]},
+    {"n":429,"char":"造","strokes":10,"readings":["ゾウ","つく-る"],"words":[
+      {"jp":"製造","reading":"せいぞう","en":"manufacture","cn":"制造"},
+      {"jp":"造る","reading":"つくる","en":"make","cn":"制、作、造"},
+      {"jp":"改造","reading":"かいぞう","en":"an adaptation, conversion","cn":"改造"}
+    ]},
+    {"n":430,"char":"費","strokes":12,"readings":["ヒ"],"words":[
+      {"jp":"費用","reading":"ひよう","en":"an expense, cost","cn":"费用"},
+      {"jp":"消費","reading":"しょうひ","en":"consumption","cn":"消费"},
+      {"jp":"〜費","reading":"ひ","en":"expense, cost","cn":"~费"}
+    ]},
+    {"n":431,"char":"可","strokes":5,"readings":["カ"],"words":[
+      {"jp":"可","reading":"か","en":"possible","cn":"可以"},
+      {"jp":"可能(な)","reading":"かのう","en":"possible","cn":"可能"},
+      {"jp":"不可","reading":"ふか","en":"impossible","cn":"不可以"},
+      {"jp":"可決","reading":"かけつ","en":"approval","cn":"通过、获准"}
+    ]},
+    {"n":432,"char":"秒","strokes":9,"readings":["ビョウ"],"words":[
+      {"jp":"秒","reading":"びょう","en":"a second","cn":"秒"}
+    ]},
+    {"n":433,"char":"身","strokes":7,"readings":["シン","み"],"words":[
+      {"jp":"自身","reading":"じしん","en":"oneself","cn":"本身、自身"},
+      {"jp":"身体","reading":"しんたい","en":"body","cn":"身体"},
+      {"jp":"中身","reading":"なかみ","en":"content","cn":"馅、里面、内容"},
+      {"jp":"出身","reading":"しゅっしん","en":"come from...","cn":"籍贯、出身"},
+      {"jp":"身長","reading":"しんちょう","en":"height","cn":"身高"},
+      {"jp":"刺身","reading":"さしみ","en":"sashimi (sliced raw fish)","cn":"生鱼片"}
+    ]},
+    {"n":434,"char":"召","strokes":5,"readings":["め-す"],"words":[
+      {"jp":"召し上がる","reading":"めしあがる","en":"eat (polite form)","cn":"吃、喝(敬语)"}
+    ]},
+    {"n":435,"char":"杯","strokes":8,"readings":["ハイ","さかずき"],"words":[
+      {"jp":"〜杯","reading":"はい","en":"...cups","cn":"~杯"},
+      {"jp":"杯","reading":"さかずき","en":"a cup, wine glass","cn":"酒杯"},
+      {"jp":"乾杯","reading":"かんぱい","en":"cheers!","cn":"干杯"}
+    ]},
+    {"n":436,"char":"沸","strokes":8,"readings":["フツ","わ-く","わ-かす"],"words":[
+      {"jp":"沸騰","reading":"ふっとう","en":"boiling","cn":"沸腾"},
+      {"jp":"沸く","reading":"わく","en":"boil","cn":"沸腾、开"},
+      {"jp":"沸かす","reading":"わかす","en":"boil (something)","cn":"使沸腾、烧开"}
+    ]},
+    {"n":437,"char":"粉","strokes":10,"readings":["フン","こ","こな"],"words":[
+      {"jp":"粉末","reading":"ふんまつ","en":"powder","cn":"粉末"},
+      {"jp":"小麦粉","reading":"こむぎこ","en":"wheat flour","cn":"面粉"},
+      {"jp":"花粉","reading":"かふん","en":"pollen","cn":"花粉"},
+      {"jp":"粉","reading":"こな","en":"powder, flour","cn":"粉末"}
+    ]},
+    {"n":438,"char":"末","strokes":5,"readings":["マツ","すえ"],"words":[
+      {"jp":"月末","reading":"げつまつ","en":"the end of the month","cn":"月底"},
+      {"jp":"末","reading":"すえ","en":"the end","cn":"结尾、末端"},
+      {"jp":"末っ子","reading":"すえっこ","en":"youngest child","cn":"老幺"}
+    ]},
+    {"n":439,"char":"栄","strokes":9,"readings":["エイ","さか-える"],"words":[
+      {"jp":"栄養","reading":"えいよう","en":"nutrition","cn":"营养"},
+      {"jp":"栄える","reading":"さかえる","en":"flourish/prosper","cn":"繁荣、兴旺"},
+      {"jp":"繁栄","reading":"はんえい","en":"prosperity","cn":"繁荣"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"〜酒造というのは酒を（a. 製造　b. 改造）している会社です。"},
+        {"n":2,"q":"この試合の（a. 費用　b. 賞金）の額は1位と2位とでは全然違う。"},
+        {"n":3,"q":"「身長と体重をここに記入してください。」"},
+        {"n":4,"q":"この電車は（a. 車庫　b. 金庫）に入りますので、ご乗車になれません。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"「開封後はなるべく早く（a. お召し上がり　b. お召しになって）ください。」"},
+        {"n":6,"q":"「この町の発展と繁栄を願って、（a. 一杯　b. 乾杯）！」"},
+        {"n":7,"q":"「（a. 年末　b. 年未）年始は休業とさせていただきます。」"},
+        {"n":8,"q":"明日は（a. 粉末　b. 花粉）が多くなりそうです。ご注意ください。"}
+      ]}
+    ],
+    "answers": "左：①a ②b ③a ④a／右：①a ②b ③a ④b"
+  }
+}

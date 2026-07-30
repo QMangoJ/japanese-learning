@@ -1,0 +1,92 @@
+{
+  "week": 5, "day": 4, "theme": "つかう②", "theme_cn": "用②", "theme_en": "Use ②",
+  "title": "家庭用品（薬）", "title_cn": "家庭用品（药品）", "title_en": "Household Goods (Medicine)",
+  "kanji": [
+    {"n":414,"char":"刺","strokes":8,"readings":["シ","さ-す","さ-さる"],"words":[
+      {"jp":"名刺","reading":"めいし","en":"a name card","cn":"名片"},
+      {"jp":"刺す","reading":"さす","en":"stab (something)","cn":"刺、扎"},
+      {"jp":"刺激","reading":"しげき","en":"a stimulus","cn":"刺激"},
+      {"jp":"刺さる","reading":"ささる","en":"be pierced","cn":"扎、扎入"}
+    ]},
+    {"n":415,"char":"肩","strokes":8,"readings":["かた"],"words":[
+      {"jp":"肩","reading":"かた","en":"shoulder","cn":"肩膀"},
+      {"jp":"肩書き","reading":"かたがき","en":"a title","cn":"头衔"}
+    ]},
+    {"n":416,"char":"腰","strokes":13,"readings":["ヨウ","こし"],"words":[
+      {"jp":"腰痛","reading":"ようつう","en":"(lower) back ache","cn":"腰痛"},
+      {"jp":"腰掛ける","reading":"こしかける","en":"sit","cn":"坐下"},
+      {"jp":"腰","reading":"こし","en":"waist, hip","cn":"腰"},
+      {"jp":"腰掛け","reading":"こしかけ","en":"a chair, seat","cn":"凳子"}
+    ]},
+    {"n":417,"char":"節","strokes":13,"readings":["セツ","ふし"],"words":[
+      {"jp":"関節","reading":"かんせつ","en":"a joint","cn":"关节"},
+      {"jp":"節約","reading":"せつやく","en":"thrift","cn":"节约"},
+      {"jp":"調節","reading":"ちょうせつ","en":"an adjustment","cn":"调节"},
+      {"jp":"節","reading":"ふし","en":"a knot (in wood), joint","cn":"节、结、关节"}
+    ]},
+    {"n":418,"char":"神","strokes":9,"readings":["シン","ジン","かみ"],"words":[
+      {"jp":"神話","reading":"しんわ","en":"a myth","cn":"神话"},
+      {"jp":"神経","reading":"しんけい","en":"nerve","cn":"神经"},
+      {"jp":"神様","reading":"かみさま","en":"a god","cn":"神"},
+      {"jp":"神道","reading":"しんとう","en":"Shintoism","cn":"神道"},
+      {"jp":"神社","reading":"じんじゃ","en":"a shrine","cn":"神社"}
+    ]},
+    {"n":419,"char":"痛","strokes":12,"readings":["ツウ","いた-い","いた-む"],"words":[
+      {"jp":"頭痛","reading":"ずつう","en":"a headache","cn":"头痛"},
+      {"jp":"痛い","reading":"いたい","en":"sore, painful","cn":"痛"},
+      {"jp":"苦痛","reading":"くつう","en":"pain, suffering","cn":"痛苦"},
+      {"jp":"痛む","reading":"いたむ","en":"ache, hurt","cn":"疼痛"}
+    ]},
+    {"n":420,"char":"浴","strokes":10,"readings":["ヨク","あ-びる"],"words":[
+      {"jp":"入浴","reading":"にゅうよく","en":"bathing","cn":"入浴"},
+      {"jp":"海水浴","reading":"かいすいよく","en":"sea bathing","cn":"海水浴"},
+      {"jp":"浴衣","reading":"ゆかた","en":"yukata (summer kimono)","cn":"浴衣(夏季和服)"},
+      {"jp":"浴室","reading":"よくしつ","en":"a bathroom","cn":"浴室"},
+      {"jp":"浴びる","reading":"あびる","en":"shower, soak up","cn":"淋、浴"}
+    ]},
+    {"n":421,"char":"的","strokes":8,"readings":["テキ"],"words":[
+      {"jp":"目的","reading":"もくてき","en":"an aim, purpose","cn":"目的"},
+      {"jp":"〜的","reading":"てき","en":"like/in the manner of (adjective-forming suffix)","cn":"~的"},
+      {"jp":"具体的(な)","reading":"ぐたいてき","en":"concrete, specific","cn":"具体的"},
+      {"jp":"的確(な)","reading":"てきかく","en":"accurate, exact","cn":"正确、准确"}
+    ]},
+    {"n":422,"char":"汗","strokes":6,"readings":["あせ"],"words":[
+      {"jp":"汗","reading":"あせ","en":"perspiration, sweat","cn":"汗"}
+    ]},
+    {"n":423,"char":"師","strokes":10,"readings":["シ"],"words":[
+      {"jp":"医師","reading":"いし","en":"a doctor","cn":"医生"},
+      {"jp":"技師","reading":"ぎし","en":"an engineer","cn":"技师"},
+      {"jp":"教師","reading":"きょうし","en":"a teacher","cn":"教师"}
+    ]},
+    {"n":424,"char":"談","strokes":15,"readings":["ダン"],"words":[
+      {"jp":"相談","reading":"そうだん","en":"a consultation","cn":"商量"},
+      {"jp":"冗談","reading":"じょうだん","en":"a joke","cn":"玩笑"},
+      {"jp":"会談","reading":"かいだん","en":"conference, dialogue","cn":"会谈"}
+    ]},
+    {"n":425,"char":"燥","strokes":17,"readings":["ソウ"],"words":[
+      {"jp":"乾燥","reading":"かんそう","en":"dryness","cn":"干燥"}
+    ]},
+    {"n":426,"char":"折","strokes":7,"readings":["セツ","お-れる","お-る"],"words":[
+      {"jp":"骨折","reading":"こっせつ","en":"a bone fracture","cn":"骨折"},
+      {"jp":"折れる","reading":"おれる","en":"break","cn":"折断、弯折"},
+      {"jp":"折る","reading":"おる","en":"break/fold (something)","cn":"折断、折叠"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"名刺の（a. 品書き　b. 肩書き）によれば、あの人は偉い人のようだ。"},
+        {"n":2,"q":"神社には（a. 上様　b. 神様）が、寺には仏様がいらっしゃいます。"},
+        {"n":3,"q":"この腰掛けは高さが（a. 調節　b. 調子）できます。"},
+        {"n":4,"q":"虫に（a. 抜かれて　b. 刺されて）かゆい。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"（a. 汁　b. 汗）をかいたのでシャワーを浴びたい。"},
+        {"n":6,"q":"医師に相談したら（a. 的確な　b. 快適な）助言をしてくれた。"},
+        {"n":7,"q":"指を（a. 折って　b. 祈って）数を数える。"},
+        {"n":8,"q":"この洗濯機には（a. 乾電　b. 乾燥）機能も付いています。"}
+      ]}
+    ],
+    "answers": "左：①b ②b ③a ④b／右：①b ②a ③a ④b"
+  }
+}
