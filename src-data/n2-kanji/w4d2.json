@@ -1,0 +1,94 @@
+{
+  "week": 4, "day": 2, "theme": "かく", "theme_cn": "写", "theme_en": "Write",
+  "title": "返事を書く", "title_cn": "写回信", "title_en": "Writing Replies",
+  "dialog": {"lines": ["結婚パーティー等の招待状に返事を書くとき、「ご出席」や「御欠席」の「ご」や「御」を二重線（＝）で消して、どちらかに〇をつけます。また、相手の名前の下の「行」を消して「様」に変えます。「ご結婚おめでとうございます」「喜んで出席させていただきます」などとメッセージを書くとよいでしょう。自治会や学会などの会議を欠席する場合には「欠席」に〇をつけ、委任状のところに自分の名前を書きます。", "先日はお忙しいところ、結婚パーティーにご出席いただきまして、ありがとうございました。これからは妻と二人で頑張ります。今後ともよろしくお願い申し上げます。奥様にもよろしくお伝えください。"]},
+  "kanji": [
+    {"n":284,"char":"婚","strokes":11,"readings":["コン"],"words":[
+      {"jp":"結婚","reading":"けっこん","en":"a marriage","cn":"结婚"},
+      {"jp":"未婚","reading":"みこん","en":"unmarried","cn":"未婚"},
+      {"jp":"婚約","reading":"こんやく","en":"an engagement","cn":"婚约"},
+      {"jp":"新婚","reading":"しんこん","en":"newly wedded","cn":"新婚"}
+    ]},
+    {"n":285,"char":"招","strokes":8,"readings":["ショウ","まね-く"],"words":[
+      {"jp":"招待","reading":"しょうたい","en":"an invitation","cn":"招待"},
+      {"jp":"招く","reading":"まねく","en":"invite","cn":"招待、邀请"}
+    ]},
+    {"n":286,"char":"状","strokes":7,"readings":["ジョウ"],"words":[
+      {"jp":"〜状","reading":"じょう","en":"a letter (e.g. of invitation)","cn":"~信件、~状"},
+      {"jp":"状態","reading":"じょうたい","en":"a situation","cn":"状态"},
+      {"jp":"現状","reading":"げんじょう","en":"an existing situation","cn":"现状"},
+      {"jp":"年賀状","reading":"ねんがじょう","en":"a new years card","cn":"贺年卡"}
+    ]},
+    {"n":287,"char":"欠","strokes":4,"readings":["ケツ","か-ける"],"words":[
+      {"jp":"欠席","reading":"けっせき","en":"absence","cn":"缺席"},
+      {"jp":"欠点","reading":"けってん","en":"a shortcoming","cn":"缺点"},
+      {"jp":"出欠","reading":"しゅっけつ","en":"attendance (or absence)","cn":"出席和缺席"}
+    ]},
+    {"n":288,"char":"喜","strokes":12,"readings":["よろこ-ぶ"],"words":[
+      {"jp":"喜ぶ","reading":"よろこぶ","en":"be pleased","cn":"欢喜"},
+      {"jp":"喜んで","reading":"よろこんで","en":"gladly","cn":"愉快地接受、欣然"}
+    ]},
+    {"n":289,"char":"治","strokes":8,"readings":["チ","なお-る","なお-す"],"words":[
+      {"jp":"政治","reading":"せいじ","en":"politics","cn":"政治"},
+      {"jp":"自治体","reading":"じちたい","en":"self-governing body","cn":"自治团体"},
+      {"jp":"自治会","reading":"じちかい","en":"self-governing association","cn":"自治会"},
+      {"jp":"治す","reading":"なおす","en":"cure","cn":"治疗"}
+    ]},
+    {"n":290,"char":"委","strokes":8,"readings":["イ"],"words":[
+      {"jp":"委員","reading":"いいん","en":"committee member","cn":"委员"},
+      {"jp":"委任状","reading":"いにんじょう","en":"a power of attorney","cn":"委任状"},
+      {"jp":"委員会","reading":"いいんかい","en":"a committee","cn":"委员会"}
+    ]},
+    {"n":291,"char":"祝","strokes":9,"readings":["シュク","いわ-う"],"words":[
+      {"jp":"祝日","reading":"しゅくじつ","en":"a holiday/festival day (government designated)","cn":"节日"},
+      {"jp":"祝う","reading":"いわう","en":"celebrate/congratulate","cn":"庆祝"},
+      {"jp":"お祝い","reading":"おいわい","en":"celebration/congratulation","cn":"祝贺"}
+    ]},
+    {"n":292,"char":"舞","strokes":15,"readings":["ブ","ま-う","ま-い"],"words":[
+      {"jp":"舞台","reading":"ぶたい","en":"a stage","cn":"舞台"},
+      {"jp":"舞う","reading":"まう","en":"dance/flutter","cn":"跳舞"},
+      {"jp":"お見舞い","reading":"おみまい","en":"a visit (hospital)","cn":"探望"}
+    ]},
+    {"n":293,"char":"礼","strokes":5,"readings":["レイ"],"words":[
+      {"jp":"お礼","reading":"おれい","en":"thanks","cn":"谢意、礼物"},
+      {"jp":"礼儀","reading":"れいぎ","en":"etiquette","cn":"礼节、礼貌"},
+      {"jp":"失礼(な)","reading":"しつれい","en":"rudeness","cn":"失礼"}
+    ]},
+    {"n":294,"char":"忙","strokes":6,"readings":["ボウ","いそが-しい"],"words":[
+      {"jp":"多忙(な)","reading":"たぼう","en":"busy","cn":"非常忙"},
+      {"jp":"忙しい","reading":"いそがしい","en":"busy","cn":"忙碌、忙"}
+    ]},
+    {"n":295,"char":"妻","strokes":8,"readings":["サイ","つま"],"words":[
+      {"jp":"夫妻","reading":"ふさい","en":"husband and wife","cn":"夫妻"},
+      {"jp":"妻","reading":"つま","en":"wife","cn":"妻子"}
+    ]},
+    {"n":296,"char":"張","strokes":11,"readings":["チョウ","は-る"],"words":[
+      {"jp":"主張","reading":"しゅちょう","en":"an assertion, claim","cn":"主张"},
+      {"jp":"頑張る","reading":"がんばる","en":"try one's hardest/do one's best","cn":"努力"},
+      {"jp":"張る","reading":"はる","en":"stretch/tighten","cn":"伸展"},
+      {"jp":"出張","reading":"しゅっちょう","en":"a business trip","cn":"出差"},
+      {"jp":"引っ張る","reading":"ひっぱる","en":"pull","cn":"拉、拽"}
+    ]},
+    {"n":297,"char":"奥","strokes":12,"readings":["おく"],"words":[
+      {"jp":"奥様","reading":"おくさま","en":"a wife (respectful form)","cn":"太太、夫人"},
+      {"jp":"奥","reading":"おく","en":"inmost","cn":"内部、深处"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"ゴミの出し方は地方（a. 自治体　b. 自治会）によって違う。"},
+        {"n":2,"q":"短所、つまり（a. 利点　b. 欠点）はだれにでもあるだろう。"},
+        {"n":3,"q":"（a. 未婚　b. 再婚）というのはもう一度結婚することです。"},
+        {"n":4,"q":"結婚式の（a. 委任状　b. 招待状）に返事を書く。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"梅雨明けの暑い時に、日本では（a. 暑中見舞い　b. 年賀状）を出す。"},
+        {"n":6,"q":"5月5日は「こどもの日」、（a. 祝日　b. 平日）です。"},
+        {"n":7,"q":"明日は北海道へ（a. 出張　b. 主張）だ。"},
+        {"n":8,"q":"りんごを送ってもらったので（a. お祝い　b. お礼）の手紙を出す。"}
+      ]}
+    ],
+    "answers": "左：①a ②b ③b ④b／右：①a ②a ③a ④b"
+  }
+}

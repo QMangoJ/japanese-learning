@@ -1,0 +1,116 @@
+{
+  "week": 4, "day": 6, "theme": "かく", "theme_cn": "写", "theme_en": "Write",
+  "title": "作文", "title_cn": "作文", "title_en": "Composition",
+  "dialog": {"lines": ["私の夢　リン・ユウ　私の専門は歴史です。特に文化史に関心があります。日本の地域の祭りについて調査しています。私は戦争がなくなるように、将来、世界の架け橋となるような仕事をしたいです。人間と人間が互いに憎しみ合ったり殺し合ったりするのは悲しく恥ずかしいことだと感じています。地球は一つ。私の願いも一つ、それは平和です。世界中の人々が家族のように愛し合い、仲良くすること、それが私の夢です。"]},
+  "kanji": [
+    {"n":339,"char":"夢","strokes":13,"readings":["ム","ゆめ"],"words":[
+      {"jp":"夢中","reading":"むちゅう","en":"be engrossed","cn":"着迷、热衷"},
+      {"jp":"夢","reading":"ゆめ","en":"a dream","cn":"梦"}
+    ]},
+    {"n":340,"char":"専","strokes":9,"readings":["セン"],"words":[
+      {"jp":"専門","reading":"せんもん","en":"specialty","cn":"专业、专长"},
+      {"jp":"専攻","reading":"せんこう","en":"a major/specialty","cn":"专门研究、主修"},
+      {"jp":"専用","reading":"せんよう","en":"exclusive (use)","cn":"专用、专门使用"}
+    ]},
+    {"n":341,"char":"史","strokes":5,"readings":["シ"],"words":[
+      {"jp":"歴史","reading":"れきし","en":"history","cn":"历史"},
+      {"jp":"〜史","reading":"し","en":"history","cn":"~史"}
+    ]},
+    {"n":342,"char":"域","strokes":11,"readings":["イキ"],"words":[
+      {"jp":"区域","reading":"くいき","en":"an area/zone","cn":"区域"},
+      {"jp":"地域","reading":"ちいき","en":"an area/region","cn":"地区"}
+    ]},
+    {"n":343,"char":"祭","strokes":11,"readings":["サイ","まつ-り"],"words":[
+      {"jp":"祭日","reading":"さいじつ","en":"a holiday/festival day","cn":"节日"},
+      {"jp":"(お)祭り","reading":"おまつり","en":"festival","cn":"祭祀、庆典"},
+      {"jp":"〜祭","reading":"さい","en":"festival","cn":"~节、~祭"}
+    ]},
+    {"n":344,"char":"査","strokes":9,"readings":["サ"],"words":[
+      {"jp":"検査","reading":"けんさ","en":"an inspection/test","cn":"检查"},
+      {"jp":"審査","reading":"しんさ","en":"a review/hearing","cn":"审查"},
+      {"jp":"調査","reading":"ちょうさ","en":"an investigation/inquiry","cn":"调查"}
+    ]},
+    {"n":345,"char":"戦","strokes":13,"readings":["セン","たたか-う"],"words":[
+      {"jp":"〜戦","reading":"せん","en":"a fight/tournament","cn":"~战、~赛"},
+      {"jp":"戦争","reading":"せんそう","en":"war","cn":"战争"},
+      {"jp":"大戦","reading":"たいせん","en":"a major war (e.g. First World War)","cn":"大战"},
+      {"jp":"戦う","reading":"たたかう","en":"fight","cn":"搏斗、战斗"}
+    ]},
+    {"n":346,"char":"争","strokes":6,"readings":["ソウ","あらそ-う"],"words":[
+      {"jp":"競争","reading":"きょうそう","en":"competition","cn":"竞争"},
+      {"jp":"争う","reading":"あらそう","en":"fight/dispute","cn":"争夺、竞争"}
+    ]},
+    {"n":347,"char":"将","strokes":10,"readings":["ショウ"],"words":[
+      {"jp":"将来","reading":"しょうらい","en":"future","cn":"将来"},
+      {"jp":"将棋","reading":"しょうぎ","en":"shogi (Japanese chess)","cn":"日本象棋"}
+    ]},
+    {"n":348,"char":"橋","strokes":16,"readings":["キョウ","はし"],"words":[
+      {"jp":"歩道橋","reading":"ほどうきょう","en":"a foot bridge","cn":"天桥"},
+      {"jp":"橋","reading":"はし","en":"a bridge","cn":"桥梁"},
+      {"jp":"鉄橋","reading":"てっきょう","en":"a railroad bridge","cn":"铁桥"},
+      {"jp":"架け橋","reading":"かけはし","en":"a bridge/go-between","cn":"桥梁、纽带"}
+    ]},
+    {"n":349,"char":"憎","strokes":14,"readings":["にく-い","にく-む","にく-しみ","にく-らしい"],"words":[
+      {"jp":"憎い","reading":"にくい","en":"detestable","cn":"憎恨、嫉妒"},
+      {"jp":"憎しみ","reading":"にくしみ","en":"hatred/enmity","cn":"憎恨、憎恶"},
+      {"jp":"憎む","reading":"にくむ","en":"detest","cn":"憎恨"},
+      {"jp":"憎らしい","reading":"にくらしい","en":"detestable","cn":"可憎的"}
+    ]},
+    {"n":350,"char":"殺","strokes":10,"readings":["サツ","ころ-す"],"words":[
+      {"jp":"自殺","reading":"じさつ","en":"a suicide","cn":"自杀"},
+      {"jp":"殺す","reading":"ころす","en":"kill","cn":"杀"}
+    ]},
+    {"n":351,"char":"悲","strokes":12,"readings":["ヒ","かな-しい","かな-しむ"],"words":[
+      {"jp":"悲観","reading":"ひかん","en":"pessimism","cn":"悲观"},
+      {"jp":"悲しい","reading":"かなしい","en":"sad","cn":"悲伤的"},
+      {"jp":"悲しむ","reading":"かなしむ","en":"grieve/lament","cn":"感到悲伤、悲痛"}
+    ]},
+    {"n":352,"char":"恥","strokes":10,"readings":["はじ","は-ずかしい"],"words":[
+      {"jp":"恥","reading":"はじ","en":"shame/humiliation","cn":"丢脸、耻辱"},
+      {"jp":"恥ずかしい","reading":"はずかしい","en":"ashamed/embarrassed","cn":"羞耻、害羞"}
+    ]},
+    {"n":353,"char":"感","strokes":13,"readings":["カン"],"words":[
+      {"jp":"感じる","reading":"かんじる","en":"feel","cn":"感觉"},
+      {"jp":"感心(な)","reading":"かんしん","en":"admiration/wonder","cn":"佩服"},
+      {"jp":"感情","reading":"かんじょう","en":"emotion","cn":"感情"},
+      {"jp":"感動","reading":"かんどう","en":"emotion/inspiration","cn":"感动"}
+    ]},
+    {"n":354,"char":"球","strokes":11,"readings":["キュウ","たま"],"words":[
+      {"jp":"地球","reading":"ちきゅう","en":"the earth","cn":"地球"},
+      {"jp":"野球","reading":"やきゅう","en":"a baseball","cn":"棒球"},
+      {"jp":"電球","reading":"でんきゅう","en":"a light bulb","cn":"灯泡"},
+      {"jp":"球","reading":"たま","en":"a ball, sphere","cn":"球"}
+    ]},
+    {"n":355,"char":"和","strokes":8,"readings":["ワ"],"words":[
+      {"jp":"平和","reading":"へいわ","en":"peace","cn":"和平"},
+      {"jp":"和式","reading":"わしき","en":"Japanese style","cn":"日本式"}
+    ]},
+    {"n":356,"char":"愛","strokes":13,"readings":["アイ"],"words":[
+      {"jp":"愛","reading":"あい","en":"love","cn":"爱"},
+      {"jp":"愛情","reading":"あいじょう","en":"love/affection","cn":"爱情"},
+      {"jp":"愛する","reading":"あいする","en":"love","cn":"疼爱"},
+      {"jp":"恋愛","reading":"れんあい","en":"love/romance","cn":"恋爱"}
+    ]},
+    {"n":357,"char":"仲","strokes":6,"readings":["なか"],"words":[
+      {"jp":"仲","reading":"なか","en":"relations/terms","cn":"关系、交情"},
+      {"jp":"仲間","reading":"なかま","en":"a friend/circle of friends","cn":"伙伴、同事、同类"}
+    ]},
+    {"n":358,"char":"良","strokes":7,"readings":["リョウ","よ-い"],"words":[
+      {"jp":"改良","reading":"かいりょう","en":"a improvement/reform","cn":"改良"},
+      {"jp":"良い","reading":"よい","en":"good","cn":"好的"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"弟は野球に（a. 夢中　b. 感動）で、将来はプロの選手になりたいと言っている。"},
+        {"n":2,"q":"大学では数学を（a. 専攻　b. 専門）した。"},
+        {"n":3,"q":"この建物のトイレは洋式と（a. 和式　b. 正式）のほかに車いす用のもある。"},
+        {"n":4,"q":"この製品は（a. 良好　b. 改良）を重ね、良い味になった。"},
+        {"n":5,"q":"あの人と私はオリンピックで金メダルを（a. 戦った　b. 争った）仲だ。"},
+        {"n":6,"q":"姉から（a. 愛情　b. 恋愛）のこもった手紙をもらった。"}
+      ]}
+    ],
+    "answers": "①a ②a ③a ④b ⑤b ⑥a"
+  }
+}

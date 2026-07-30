@@ -1,0 +1,96 @@
+{
+  "week": 4, "day": 1, "theme": "かく", "theme_cn": "写", "theme_en": "Write",
+  "title": "伝票・申込書", "title_cn": "传票・申请书", "title_en": "Checks, Slips, Application Forms",
+  "dialog": {"lines": ["店員：お支払い回数は1回ですね。では、こちらにご署名をお願いします。それから、こちらにご配送先とお客様のご住所とお名前、お電話番号をお書きください。"]},
+  "kanji": [
+    {"n":270,"char":"署","strokes":13,"readings":["ショ"],"words":[
+      {"jp":"署名","reading":"しょめい","en":"a signature","cn":"签名"},
+      {"jp":"消防署","reading":"しょうぼうしょ","en":"a fire station","cn":"消防队"},
+      {"jp":"部署","reading":"ぶしょ","en":"post/station","cn":"工作岗位"},
+      {"jp":"税務署","reading":"ぜいむしょ","en":"tax office","cn":"税务所"}
+    ]},
+    {"n":271,"char":"依","strokes":8,"readings":["イ"],"words":[
+      {"jp":"依頼","reading":"いらい","en":"request/dependence","cn":"委托"}
+    ]},
+    {"n":272,"char":"頼","strokes":16,"readings":["ライ","たの-む","たの-もしい","たよ-る"],"words":[
+      {"jp":"信頼","reading":"しんらい","en":"trust","cn":"信赖"},
+      {"jp":"頼む","reading":"たのむ","en":"request","cn":"恳求、拜托、委托"},
+      {"jp":"頼もしい","reading":"たのもしい","en":"reliable","cn":"可靠的、值得信赖"},
+      {"jp":"頼る","reading":"たよる","en":"depend upon","cn":"依靠"},
+      {"jp":"頼りない","reading":"たよりない","en":"powerless/unreliable","cn":"无依无靠、没有依赖的地方"}
+    ]},
+    {"n":273,"char":"府","strokes":8,"readings":["フ"],"words":[
+      {"jp":"都道府県","reading":"とどうふけん","en":"prefectures","cn":"都道府县"},
+      {"jp":"京都府","reading":"きょうとふ","en":"Kyoto Prefecture","cn":"京都府"}
+    ]},
+    {"n":274,"char":"到","strokes":8,"readings":["トウ"],"words":[
+      {"jp":"到着","reading":"とうちゃく","en":"arrival","cn":"到达"}
+    ]},
+    {"n":275,"char":"希","strokes":7,"readings":["キ"],"words":[
+      {"jp":"希望","reading":"きぼう","en":"hope","cn":"希望"}
+    ]},
+    {"n":276,"char":"望","strokes":11,"readings":["ボウ","のぞ-む"],"words":[
+      {"jp":"失望","reading":"しつぼう","en":"despair","cn":"失望"},
+      {"jp":"望む","reading":"のぞむ","en":"want, hope for","cn":"希望"},
+      {"jp":"望遠鏡","reading":"ぼうえんきょう","en":"a telescope","cn":"望远镜"}
+    ]},
+    {"n":277,"char":"申","strokes":5,"readings":["シン","もう-す"],"words":[
+      {"jp":"申請","reading":"しんせい","en":"an application","cn":"申请"},
+      {"jp":"申し込み","reading":"もうしこみ","en":"application","cn":"申请"},
+      {"jp":"申す","reading":"もうす","en":"say (humble form)","cn":"(谦)说、叫作"},
+      {"jp":"申し上げる","reading":"もうしあげる","en":"say (very humble form)","cn":"(谦)说、禀告"}
+    ]},
+    {"n":278,"char":"姓","strokes":8,"readings":["セイ"],"words":[
+      {"jp":"姓","reading":"せい","en":"family name","cn":"姓"},
+      {"jp":"姓名","reading":"せいめい","en":"full name","cn":"姓名"}
+    ]},
+    {"n":279,"char":"齢","strokes":17,"readings":["レイ"],"words":[
+      {"jp":"年齢","reading":"ねんれい","en":"age","cn":"年龄"},
+      {"jp":"高齢","reading":"こうれい","en":"old age","cn":"高龄"}
+    ]},
+    {"n":280,"char":"性","strokes":8,"readings":["セイ"],"words":[
+      {"jp":"男性","reading":"だんせい","en":"a man","cn":"男性"},
+      {"jp":"女性","reading":"じょせい","en":"a woman","cn":"女性"},
+      {"jp":"性別","reading":"せいべつ","en":"sex/gender","cn":"性别"},
+      {"jp":"性質","reading":"せいしつ","en":"nature/disposition","cn":"性质"},
+      {"jp":"安全性","reading":"あんぜんせい","en":"safety","cn":"安全性"},
+      {"jp":"可能性","reading":"かのうせい","en":"possibility","cn":"可能性"}
+    ]},
+    {"n":281,"char":"宅","strokes":6,"readings":["タク"],"words":[
+      {"jp":"お宅","reading":"おたく","en":"a house/home (respectful form)","cn":"府上、宅"},
+      {"jp":"住宅","reading":"じゅうたく","en":"housing","cn":"住宅"},
+      {"jp":"自宅","reading":"じたく","en":"a house/home","cn":"自己的家"},
+      {"jp":"帰宅","reading":"きたく","en":"go/come home","cn":"回家"}
+    ]},
+    {"n":282,"char":"勤","strokes":12,"readings":["キン","つと-める"],"words":[
+      {"jp":"勤務","reading":"きんむ","en":"employment","cn":"工作、勤务"},
+      {"jp":"通勤","reading":"つうきん","en":"commuting to work","cn":"通勤"},
+      {"jp":"出勤","reading":"しゅっきん","en":"attendance at work","cn":"上班、出勤"},
+      {"jp":"勤める","reading":"つとめる","en":"work/be employed","cn":"工作、任职"}
+    ]},
+    {"n":283,"char":"部","strokes":11,"readings":["ブ"],"words":[
+      {"jp":"全部","reading":"ぜんぶ","en":"all/whole","cn":"全部"},
+      {"jp":"部長","reading":"ぶちょう","en":"department head/manager","cn":"部长"},
+      {"jp":"部屋","reading":"へや","en":"a room","cn":"房间"},
+      {"jp":"部分","reading":"ぶぶん","en":"part","cn":"部分"},
+      {"jp":"学部","reading":"がくぶ","en":"a faculty","cn":"学院、学部"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"自分の（a. 望み　b. 頼み）通りの大学に入学できた。"},
+        {"n":2,"q":"来日する友人を空港の（a. 出発　b. 到着）ロビーで待つ。"},
+        {"n":3,"q":"商品の配送を（a. 依頼　b. 願い）する。"},
+        {"n":4,"q":"市民が駅前に立ち（a. 署名　b. 照明）を集める活動を始めた。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"日本では結婚すると夫の（a. 性　b. 姓）になる女の人が多い。"},
+        {"n":6,"q":"朝夕の（a. 通勤　b. 出勤）ラッシュ時は電車が満員になる。"},
+        {"n":7,"q":"お客様に迷子のお知らせを（a. 申します　b. 申し上げます）。"},
+        {"n":8,"q":"パスポートの（a. 申請　b. 再生）をする。"}
+      ]}
+    ],
+    "answers": "左：①a ②b ③a ④a／右：①b ②a ③b ④a"
+  }
+}

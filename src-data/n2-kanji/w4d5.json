@@ -1,0 +1,96 @@
+{
+  "week": 4, "day": 5, "theme": "かく", "theme_cn": "写", "theme_en": "Write",
+  "title": "答案用紙", "title_cn": "答题纸", "title_en": "Answer Sheets",
+  "kanji": [
+    {"n":326,"char":"次","strokes":6,"readings":["ジ","シ","つぎ"],"words":[
+      {"jp":"次","reading":"つぎ","en":"the next","cn":"下一个"},
+      {"jp":"次第","reading":"しだい","en":"①as soon as ②depending on the circumstances","cn":"①~之后即~ ②全凭~"},
+      {"jp":"一次試験","reading":"いちじしけん","en":"the first examination","cn":"第一次考试"}
+    ]},
+    {"n":327,"char":"章","strokes":11,"readings":["ショウ"],"words":[
+      {"jp":"文章","reading":"ぶんしょう","en":"a sentence/composition","cn":"文章"},
+      {"jp":"章","reading":"しょう","en":"a chapter","cn":"章、篇章"}
+    ]},
+    {"n":328,"char":"対","strokes":7,"readings":["タイ","ツイ"],"words":[
+      {"jp":"対する","reading":"たいする","en":"toward/against","cn":"对于"},
+      {"jp":"〜対〜","reading":"たい","en":"...versus...","cn":"~对~"},
+      {"jp":"対照的(な)","reading":"たいしょうてき","en":"contrasting","cn":"对照、对比的"},
+      {"jp":"対","reading":"つい","en":"pair, couple","cn":"对、一双"}
+    ]},
+    {"n":329,"char":"最","strokes":12,"readings":["サイ","もっと-も"],"words":[
+      {"jp":"最初","reading":"さいしょ","en":"the first/beginning","cn":"最初"},
+      {"jp":"最近","reading":"さいきん","en":"recently","cn":"最近"},
+      {"jp":"最後","reading":"さいご","en":"the last/end","cn":"最后"},
+      {"jp":"最も","reading":"もっとも","en":"most","cn":"最"}
+    ]},
+    {"n":330,"char":"適","strokes":14,"readings":["テキ"],"words":[
+      {"jp":"適当(な)","reading":"てきとう","en":"correct/appropriate","cn":"适当"},
+      {"jp":"適する","reading":"てきする","en":"suit/be fit for","cn":"适宜、适当"},
+      {"jp":"適切(な)","reading":"てきせつ","en":"appropriateness","cn":"适当、妥当"},
+      {"jp":"適度(な)","reading":"てきど","en":"proper/moderation","cn":"适度、酌量"}
+    ]},
+    {"n":331,"char":"誤","strokes":14,"readings":["ゴ","あやま-る"],"words":[
+      {"jp":"誤解","reading":"ごかい","en":"misunderstanding","cn":"误会"},
+      {"jp":"誤り","reading":"あやまり","en":"a mistake","cn":"错误、失误"}
+    ]},
+    {"n":332,"char":"直","strokes":8,"readings":["チョク","ジキ","なお-す","なお-る","ただ-ちに"],"words":[
+      {"jp":"直線","reading":"ちょくせん","en":"a straight line","cn":"直线"},
+      {"jp":"直す","reading":"なおす","en":"fix","cn":"修改"},
+      {"jp":"直ちに","reading":"ただちに","en":"immediately","cn":"立刻、即刻"},
+      {"jp":"正直(な)","reading":"しょうじき","en":"honesty","cn":"诚实"},
+      {"jp":"素直(な)","reading":"すなお","en":"obedient/flexible","cn":"诚挚、坦率"}
+    ]},
+    {"n":333,"char":"例","strokes":8,"readings":["レイ","たと-える"],"words":[
+      {"jp":"例","reading":"れい","en":"an example","cn":"例子"},
+      {"jp":"実例","reading":"じつれい","en":"an example/instance","cn":"实例"},
+      {"jp":"例えば","reading":"たとえば","en":"for example","cn":"例如"},
+      {"jp":"例外","reading":"れいがい","en":"an exception","cn":"例外"},
+      {"jp":"例える","reading":"たとえる","en":"compare/liken","cn":"比喻、举例说明"}
+    ]},
+    {"n":334,"char":"詞","strokes":12,"readings":["シ"],"words":[
+      {"jp":"名詞","reading":"めいし","en":"a noun","cn":"名词"},
+      {"jp":"自動詞","reading":"じどうし","en":"an intransitive verb","cn":"自动词"},
+      {"jp":"動詞","reading":"どうし","en":"a verb","cn":"动词"},
+      {"jp":"他動詞","reading":"たどうし","en":"a transitive verb","cn":"他动词"}
+    ]},
+    {"n":335,"char":"形","strokes":7,"readings":["ケイ","ギョウ","かたち"],"words":[
+      {"jp":"形式","reading":"けいしき","en":"form/formality","cn":"形式"},
+      {"jp":"図形","reading":"ずけい","en":"a diagram","cn":"图形"},
+      {"jp":"形容詞","reading":"けいようし","en":"an adjective","cn":"形容词"},
+      {"jp":"人形","reading":"にんぎょう","en":"a doll/puppet","cn":"娃娃、人形"},
+      {"jp":"形","reading":"かたち","en":"shape/form","cn":"形状"}
+    ]},
+    {"n":336,"char":"助","strokes":7,"readings":["ジョ","たす-かる","たす-ける"],"words":[
+      {"jp":"救助","reading":"きゅうじょ","en":"rescue/help","cn":"救助"},
+      {"jp":"助手","reading":"じょしゅ","en":"an assistant","cn":"助手"},
+      {"jp":"助詞","reading":"じょし","en":"a particle (preposition/postposition)","cn":"助词"},
+      {"jp":"助かる","reading":"たすかる","en":"be saved, be helpful","cn":"得救、得到帮助"},
+      {"jp":"助ける","reading":"たすける","en":"help","cn":"救助、帮忙"}
+    ]},
+    {"n":337,"char":"副","strokes":11,"readings":["フク"],"words":[
+      {"jp":"副詞","reading":"ふくし","en":"an adverb","cn":"副词"},
+      {"jp":"副〜","reading":"ふく","en":"vice/assistant","cn":"副的~"}
+    ]},
+    {"n":338,"char":"囲","strokes":7,"readings":["イ","かこ-む"],"words":[
+      {"jp":"周囲","reading":"しゅうい","en":"perimeter/neighborhood","cn":"周围"},
+      {"jp":"囲む","reading":"かこむ","en":"surround","cn":"围、包围"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"その小説の最初の（a. 章　b. 部）を読み終えたところです。"},
+        {"n":2,"q":"健康のために（a. 準備　b. 適度）な運動をするようにしています。"},
+        {"n":3,"q":"明日行くかどうかは天気（a. 次第　b. 次第に）です。"},
+        {"n":4,"q":"（a. 正直に　b. 直ちに）安全な場所に移動してください。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"周囲の住民はマンションの建設に（a. 違反　b. 反対）している。"},
+        {"n":6,"q":"（a. 形式　b. 図形）も重要だが、内容はもっと重要だ。"},
+        {"n":7,"q":"副社長がよく働いてくれるので、社長は（a. 助けて　b. 助かって）いる。"},
+        {"n":8,"q":"彼女は花に（a. 例えば　b. 例えると）白いユリです。"}
+      ]}
+    ],
+    "answers": "左：①a ②b ③a ④b／右：①b ②a ③b ④b"
+  }
+}

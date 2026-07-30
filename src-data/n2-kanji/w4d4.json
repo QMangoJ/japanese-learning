@@ -1,0 +1,97 @@
+{
+  "week": 4, "day": 4, "theme": "かく", "theme_cn": "写", "theme_en": "Write",
+  "title": "ビジネスメール", "title_cn": "商务邮件", "title_en": "Business E-Mail",
+  "dialog": {"lines": ["福山様　お世話になっております。メール拝見しました。打ち合わせの件ですが、ご希望の日時はあいにく先約があります。下記の日時でしたらお伺いできますが、ご都合いかがでしょうか。お返事いただければ幸いです。取り急ぎ用件のみにて失礼いたします。　ダニエル・リード", "奥村様　いつもお世話になっております。突然ですが、この度、諸般の事情により退職することとなりました。つきましては後任の者をご紹介させていただきたく、ご挨拶に参りたいと存じます。"]},
+  "kanji": [
+    {"n":312,"char":"福","strokes":13,"readings":["フク"],"words":[
+      {"jp":"幸福","reading":"こうふく","en":"happiness","cn":"幸福"},
+      {"jp":"福祉","reading":"ふくし","en":"welfare","cn":"福利"}
+    ]},
+    {"n":313,"char":"拝","strokes":8,"readings":["ハイ","おが-む"],"words":[
+      {"jp":"拝見","reading":"はいけん","en":"see (humble form)","cn":"看(谦)"},
+      {"jp":"拝借","reading":"はいしゃく","en":"borrow (humble form)","cn":"借(谦)"},
+      {"jp":"参拝者","reading":"さんぱいしゃ","en":"a worshipper","cn":"参拜的人"},
+      {"jp":"拝む","reading":"おがむ","en":"worship","cn":"拜"}
+    ]},
+    {"n":314,"char":"打","strokes":5,"readings":["ダ","う-つ"],"words":[
+      {"jp":"打者","reading":"だしゃ","en":"a batter/hitter (baseball)","cn":"击球手"},
+      {"jp":"打つ","reading":"うつ","en":"strike/hit","cn":"打"},
+      {"jp":"打ち合わせ","reading":"うちあわせ","en":"arrangement","cn":"商量、磋商"}
+    ]},
+    {"n":315,"char":"伺","strokes":7,"readings":["うかが-う"],"words":[
+      {"jp":"伺う","reading":"うかがう","en":"visit (humble form)","cn":"拜访、打听"}
+    ]},
+    {"n":316,"char":"幸","strokes":8,"readings":["コウ","さいわ-い","しあわ-せ"],"words":[
+      {"jp":"幸運(な)","reading":"こううん","en":"good luck","cn":"幸运"},
+      {"jp":"幸せ(な)","reading":"しあわせ","en":"happiness","cn":"幸福"},
+      {"jp":"不幸(な)","reading":"ふこう","en":"unhappiness/misfortune","cn":"不幸"},
+      {"jp":"幸い","reading":"さいわい","en":"fortunate(ly)","cn":"幸运、幸亏"}
+    ]},
+    {"n":317,"char":"失","strokes":5,"readings":["シツ","うしな-う"],"words":[
+      {"jp":"失礼(な)","reading":"しつれい","en":"rudeness","cn":"失礼"},
+      {"jp":"失望","reading":"しつぼう","en":"despair","cn":"失望"},
+      {"jp":"失業","reading":"しつぎょう","en":"unemployment","cn":"失业"},
+      {"jp":"失う","reading":"うしなう","en":"lose","cn":"丧失、丢失"}
+    ]},
+    {"n":318,"char":"突","strokes":8,"readings":["トツ","つ-く"],"words":[
+      {"jp":"突然","reading":"とつぜん","en":"sudden","cn":"突然"},
+      {"jp":"突き当たり","reading":"つきあたり","en":"end of (e.g. the road)","cn":"(通道走道的)尽头"},
+      {"jp":"煙突","reading":"えんとつ","en":"a chimney","cn":"烟囱"},
+      {"jp":"突っ込む","reading":"つっこむ","en":"thrust into, lunge","cn":"深入、闯进"}
+    ]},
+    {"n":319,"char":"然","strokes":12,"readings":["ゼン","ネン"],"words":[
+      {"jp":"全然","reading":"ぜんぜん","en":"(not) at all","cn":"一点也(不)"},
+      {"jp":"当然","reading":"とうぜん","en":"of course","cn":"当然"},
+      {"jp":"自然","reading":"しぜん","en":"nature","cn":"自然"},
+      {"jp":"天然","reading":"てんねん","en":"natural","cn":"天然"}
+    ]},
+    {"n":320,"char":"諸","strokes":15,"readings":["ショ"],"words":[
+      {"jp":"諸〜","reading":"しょ","en":"various","cn":"众多、诸~"},
+      {"jp":"諸般","reading":"しょはん","en":"various","cn":"各种、诸般"},
+      {"jp":"諸問題","reading":"しょもんだい","en":"various problems","cn":"众多问题"}
+    ]},
+    {"n":321,"char":"情","strokes":11,"readings":["ジョウ","なさ-け"],"words":[
+      {"jp":"事情","reading":"じじょう","en":"circumstance","cn":"情况、缘故"},
+      {"jp":"表情","reading":"ひょうじょう","en":"a facial expression","cn":"表情"},
+      {"jp":"情け","reading":"なさけ","en":"sympathy/mercy","cn":"同情"},
+      {"jp":"友情","reading":"ゆうじょう","en":"a friendship","cn":"友情"},
+      {"jp":"情けない","reading":"なさけない","en":"woeful/disgraceful","cn":"可怜、可耻"}
+    ]},
+    {"n":322,"char":"退","strokes":9,"readings":["タイ","しりぞ-く"],"words":[
+      {"jp":"引退","reading":"いんたい","en":"retirement","cn":"引退、隐居"},
+      {"jp":"退学","reading":"たいがく","en":"withdrawal from a course/school","cn":"退学"},
+      {"jp":"退院","reading":"たいいん","en":"discharge from hospital","cn":"出院、退出"},
+      {"jp":"退く","reading":"しりぞく","en":"retreat/withdraw","cn":"后退、退却"}
+    ]},
+    {"n":323,"char":"職","strokes":18,"readings":["ショク"],"words":[
+      {"jp":"職業","reading":"しょくぎょう","en":"an occupation/profession","cn":"职业"},
+      {"jp":"退職","reading":"たいしょく","en":"retirement","cn":"退职、退休"},
+      {"jp":"職場","reading":"しょくば","en":"a work place","cn":"职场"},
+      {"jp":"職人","reading":"しょくにん","en":"an artisan","cn":"手艺师傅、工匠"}
+    ]},
+    {"n":324,"char":"紹","strokes":11,"readings":["ショウ"],"words":[
+      {"jp":"紹介","reading":"しょうかい","en":"introduction","cn":"介绍"}
+    ]},
+    {"n":325,"char":"介","strokes":4,"readings":["カイ"],"words":[
+      {"jp":"介入","reading":"かいにゅう","en":"intervention","cn":"插手、干预"},
+      {"jp":"介護","reading":"かいご","en":"care/nursing","cn":"护理病人或老人"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"「ちょっと（a. 拝見　b. お伺い）しますが、郵便局はどちらでしょうか。」"},
+        {"n":2,"q":"「君には（a. 失業　b. 失望）したよ」と部長に言われてしまった。"},
+        {"n":3,"q":"「ご結婚おめでとう！　お（a. 幸い　b. 幸せ）に！」"},
+        {"n":4,"q":"雪のため、元日の（a. 参拝者　b. 打者）はやや少なかった。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"この辺りも開発が進み、（a. 自然　b. 天然）が失われつつある。"},
+        {"n":6,"q":"今の職場は友人に（a. 招待　b. 紹介）してもらった。"},
+        {"n":7,"q":"「まっすぐ行って、（a. 突っ込み　b. 突き当たり）を右に曲がってください。」"},
+        {"n":8,"q":"（a. 失業　b. 職業）訓練を受けて仕事を見つける。"}
+      ]}
+    ],
+    "answers": "左：①b ②b ③b ④a／右：①a ②b ③b ④b"
+  }
+}

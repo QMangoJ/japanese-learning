@@ -1,0 +1,94 @@
+{
+  "week": 4, "day": 3, "theme": "かく", "theme_cn": "写", "theme_en": "Write",
+  "title": "メール・はがき", "title_cn": "电子邮件・明信片", "title_en": "Email, Postcard",
+  "dialog": {"lines": ["浅野君　久しぶり。元気？　僕は相変わらず忙しいけど元気！　お互いに頑張ろう！　じゃあ、また！　ダン　追伸　皆さんにもよろしく。", "先生　お元気ですか。日本語クラスでは大変お世話になりました。私は毎日忙しく暮らしています。仕事にも慣れましたが、学生生活が恋しいです。先生のご健康をお祈り申し上げます。　ダニエル・リード"]},
+  "kanji": [
+    {"n":298,"char":"浅","strokes":9,"readings":["あさ-い"],"words":[
+      {"jp":"浅い","reading":"あさい","en":"shallow","cn":"浅的"},
+      {"jp":"浅ましい","reading":"あさましい","en":"shameful/sordid","cn":"卑鄙的"},
+      {"jp":"浅草","reading":"あさくさ","en":"(place name)","cn":"浅草"}
+    ]},
+    {"n":299,"char":"君","strokes":7,"readings":["クン","きみ"],"words":[
+      {"jp":"〜君","reading":"くん","en":"an honorific appended to names of males younger than oneself","cn":"接在同辈或晚辈的姓名后表示敬意"},
+      {"jp":"君","reading":"きみ","en":"you","cn":"你"}
+    ]},
+    {"n":300,"char":"久","strokes":3,"readings":["キュウ","ひさ-しい"],"words":[
+      {"jp":"永久","reading":"えいきゅう","en":"permanent, eternal","cn":"永久"},
+      {"jp":"久しぶり","reading":"ひさしぶり","en":"long time no see","cn":"好久不见"}
+    ]},
+    {"n":301,"char":"互","strokes":4,"readings":["ゴ","たが-い"],"words":[
+      {"jp":"相互","reading":"そうご","en":"mutual/reciprocal","cn":"相互"},
+      {"jp":"お互いに","reading":"おたがいに","en":"mutually","cn":"相互、彼此"},
+      {"jp":"交互","reading":"こうご","en":"alternation","cn":"轮流、交替"}
+    ]},
+    {"n":302,"char":"追","strokes":9,"readings":["ツイ","お-う"],"words":[
+      {"jp":"追加","reading":"ついか","en":"an addition/supplement","cn":"追加"},
+      {"jp":"追い越す","reading":"おいこす","en":"overtake","cn":"赶超、超越"},
+      {"jp":"追う","reading":"おう","en":"pursue","cn":"追求、驱赶"},
+      {"jp":"追い付く","reading":"おいつく","en":"catch up","cn":"追上、赶上"},
+      {"jp":"追伸","reading":"ついしん","en":"a postscript","cn":"(信)附注"}
+    ]},
+    {"n":303,"char":"伸","strokes":7,"readings":["シン","の-びる","の-ばす"],"words":[
+      {"jp":"伸びる","reading":"のびる","en":"grow/stretch","cn":"延长、拉长"},
+      {"jp":"伸ばす","reading":"のばす","en":"extend/stretch","cn":"延展"},
+      {"jp":"伸びをする","reading":"のびをする","en":"stretch out","cn":"伸懒腰"}
+    ]},
+    {"n":304,"char":"皆","strokes":9,"readings":["みな"],"words":[
+      {"jp":"皆","reading":"みな","en":"everyone","cn":"大家"},
+      {"jp":"皆さん","reading":"みなさん","en":"everyone (greeting)","cn":"各位、诸位"}
+    ]},
+    {"n":305,"char":"暮","strokes":14,"readings":["ボ","く-れる","く-らす"],"words":[
+      {"jp":"お歳暮","reading":"おせいぼ","en":"a year-end gift","cn":"年礼、年末礼品"},
+      {"jp":"暮れ","reading":"くれ","en":"end of the year","cn":"年底"},
+      {"jp":"暮らす","reading":"くらす","en":"live/dwell","cn":"过日子"},
+      {"jp":"夕暮れ","reading":"ゆうぐれ","en":"dusk","cn":"傍晚"}
+    ]},
+    {"n":306,"char":"慣","strokes":14,"readings":["カン","な-れる","な-らす"],"words":[
+      {"jp":"習慣","reading":"しゅうかん","en":"a custom/habit","cn":"习惯"},
+      {"jp":"慣れる","reading":"なれる","en":"become accustomed to","cn":"习惯、熟悉"}
+    ]},
+    {"n":307,"char":"活","strokes":9,"readings":["カツ"],"words":[
+      {"jp":"生活","reading":"せいかつ","en":"life/livelihood","cn":"生活"},
+      {"jp":"活字","reading":"かつじ","en":"font","cn":"铅字"},
+      {"jp":"活用","reading":"かつよう","en":"use","cn":"活用"},
+      {"jp":"活発(な)","reading":"かっぱつ","en":"activity/vivacity (lively)","cn":"活泼"}
+    ]},
+    {"n":308,"char":"恋","strokes":10,"readings":["レン","こい","こい-しい"],"words":[
+      {"jp":"恋愛","reading":"れんあい","en":"love/romance","cn":"恋爱"},
+      {"jp":"恋人","reading":"こいびと","en":"a lover (boy/girlfriend)","cn":"恋人"},
+      {"jp":"恋","reading":"こい","en":"love","cn":"恋爱"},
+      {"jp":"恋しい","reading":"こいしい","en":"love","cn":"眷恋、想念"}
+    ]},
+    {"n":309,"char":"健","strokes":11,"readings":["ケン","すこ-やか"],"words":[
+      {"jp":"健在","reading":"けんざい","en":"healthy","cn":"健在"},
+      {"jp":"健やか(な)","reading":"すこやか","en":"sound/healthy (body, mind)","cn":"健全的、结实"},
+      {"jp":"健全(な)","reading":"けんぜん","en":"sound/healthy","cn":"健全"}
+    ]},
+    {"n":310,"char":"康","strokes":11,"readings":["コウ"],"words":[
+      {"jp":"健康","reading":"けんこう","en":"health","cn":"健康"},
+      {"jp":"健康保険証","reading":"けんこうほけんしょう","en":"a health insurance card","cn":"健保卡"}
+    ]},
+    {"n":311,"char":"祈","strokes":8,"readings":["キ","いの-る"],"words":[
+      {"jp":"祈願","reading":"きがん","en":"a prayer","cn":"祈祷"},
+      {"jp":"祈る","reading":"いのる","en":"pray","cn":"祈祷、祝福"},
+      {"jp":"祈り","reading":"いのり","en":"a prayer","cn":"祈祷、祷告"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"久しぶりに会った友達はひげを（a. 伸びて　b. 伸ばして）いた。"},
+        {"n":2,"q":"この道路は（a. 追い越し　b. 引っ越し）禁止です。"},
+        {"n":3,"q":"この川は（a. 浅い　b. 細い）ので、子どもたちが遊ぶのにちょうどいい。"},
+        {"n":4,"q":"P.S.というのは（a. 追伸　b. 返信）のことです。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"年の（a. 慣れ　b. 暮れ）にお世話になった人にお礼をする習慣がある。"},
+        {"n":6,"q":"（a. 健康　b. 生活）保険証を持ってきてください。"},
+        {"n":7,"q":"私はいつも食事の前に（a. お祈り　b. お祝い）をします。"},
+        {"n":8,"q":"（a. 活発な　b. 健在な）議論をする。"}
+      ]}
+    ],
+    "answers": "左：①b ②a ③a ④a／右：①b ②a ③a ④a"
+  }
+}
