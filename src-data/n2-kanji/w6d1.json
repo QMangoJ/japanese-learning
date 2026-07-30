@@ -1,0 +1,100 @@
+{
+  "week": 6, "day": 1, "theme": "みる②", "theme_cn": "看②", "theme_en": "Look and See ②",
+  "title": "広告・チラシ", "title_cn": "广告・广告单", "title_en": "Advertisements, Leaflets",
+  "kanji": [
+    {"n":471,"char":"得","strokes":11,"readings":["トク","え-る","う-る"],"words":[
+      {"jp":"得","reading":"とく","en":"a profit, benefit","cn":"有利、赢、得利"},
+      {"jp":"得る","reading":"える","en":"obtain","cn":"得到"},
+      {"jp":"納得","reading":"なっとく","en":"assent, understanding","cn":"理解、认可"},
+      {"jp":"心得る","reading":"こころえる","en":"understand, be well aware","cn":"领会、理解"}
+    ]},
+    {"n":472,"char":"告","strokes":7,"readings":["コク","つ-げる"],"words":[
+      {"jp":"広告","reading":"こうこく","en":"an advertisement","cn":"广告"},
+      {"jp":"警告","reading":"けいこく","en":"warning, caution","cn":"警告"},
+      {"jp":"報告","reading":"ほうこく","en":"a report","cn":"报告"},
+      {"jp":"告げる","reading":"つげる","en":"inform","cn":"告诉、告知"}
+    ]},
+    {"n":473,"char":"税","strokes":12,"readings":["ゼイ"],"words":[
+      {"jp":"税金","reading":"ぜいきん","en":"a tax","cn":"税金"},
+      {"jp":"税関","reading":"ぜいかん","en":"Customs","cn":"海关"},
+      {"jp":"消費税","reading":"しょうひぜい","en":"a consumption tax","cn":"消费税"},
+      {"jp":"課税","reading":"かぜい","en":"taxation","cn":"课税"}
+    ]},
+    {"n":474,"char":"価","strokes":8,"readings":["カ"],"words":[
+      {"jp":"定価","reading":"ていか","en":"a fixed price","cn":"定价"},
+      {"jp":"物価","reading":"ぶっか","en":"price, cost of living","cn":"物价"}
+    ]},
+    {"n":475,"char":"格","strokes":10,"readings":["カク"],"words":[
+      {"jp":"価格","reading":"かかく","en":"a price","cn":"价格"},
+      {"jp":"性格","reading":"せいかく","en":"character, personality","cn":"性格"}
+    ]},
+    {"n":476,"char":"超","strokes":12,"readings":["チョウ","こ-える","こ-す"],"words":[
+      {"jp":"超〜","reading":"ちょう","en":"very, extremely","cn":"超~"},
+      {"jp":"超える","reading":"こえる","en":"get over, go over, exceed","cn":"越过、超过"},
+      {"jp":"超過","reading":"ちょうか","en":"excess, surplus","cn":"越过、超过"},
+      {"jp":"超す","reading":"こす","en":"cross, pass, exceed","cn":"超过、超越"}
+    ]},
+    {"n":477,"char":"均","strokes":7,"readings":["キン"],"words":[
+      {"jp":"平均","reading":"へいきん","en":"average","cn":"平均"},
+      {"jp":"均一","reading":"きんいつ","en":"uniformity, equality","cn":"均等、均一"},
+      {"jp":"均等","reading":"きんとう","en":"uniformity, equality","cn":"均等"}
+    ]},
+    {"n":478,"char":"靴","strokes":13,"readings":["くつ"],"words":[
+      {"jp":"靴","reading":"くつ","en":"shoes","cn":"鞋子"},
+      {"jp":"長靴","reading":"ながぐつ","en":"boots","cn":"靴子、长靴"},
+      {"jp":"靴下","reading":"くつした","en":"socks","cn":"袜子"},
+      {"jp":"雨靴","reading":"あまぐつ","en":"rain shoes","cn":"雨鞋"}
+    ]},
+    {"n":479,"char":"供","strokes":8,"readings":["キョウ","とも"],"words":[
+      {"jp":"提供","reading":"ていきょう","en":"offer, tender","cn":"提供"},
+      {"jp":"子供","reading":"こども","en":"a child","cn":"小孩"}
+    ]},
+    {"n":480,"char":"象","strokes":12,"readings":["ショウ","ゾウ"],"words":[
+      {"jp":"印象","reading":"いんしょう","en":"an impression","cn":"印象"},
+      {"jp":"対象","reading":"たいしょう","en":"object (e.g. of study)","cn":"对象"},
+      {"jp":"現象","reading":"げんしょう","en":"a phenomenon","cn":"现象"},
+      {"jp":"象","reading":"ぞう","en":"an elephant","cn":"象"}
+    ]},
+    {"n":481,"char":"組","strokes":11,"readings":["ソ","く-む","くみ"],"words":[
+      {"jp":"組織","reading":"そしき","en":"an organization","cn":"组织"},
+      {"jp":"組み合わせ","reading":"くみあわせ","en":"combination","cn":"搭配、组合"},
+      {"jp":"番組","reading":"ばんぐみ","en":"a (TV) program","cn":"电视节目"},
+      {"jp":"組合","reading":"くみあい","en":"an association","cn":"组合、工会"}
+    ]},
+    {"n":482,"char":"値","strokes":10,"readings":["チ","ね","あたい"],"words":[
+      {"jp":"価値","reading":"かち","en":"value","cn":"价值"},
+      {"jp":"値段","reading":"ねだん","en":"a price","cn":"价格"},
+      {"jp":"数値","reading":"すうち","en":"an numerical value","cn":"数值"},
+      {"jp":"値","reading":"あたい","en":"value","cn":"价格、价值"}
+    ]},
+    {"n":483,"char":"募","strokes":12,"readings":["ボ","つの-る"],"words":[
+      {"jp":"募集","reading":"ぼしゅう","en":"recruitment","cn":"招募"},
+      {"jp":"募金","reading":"ぼきん","en":"fund-raising","cn":"募捐"},
+      {"jp":"応募","reading":"おうぼ","en":"an application","cn":"应征"},
+      {"jp":"募る","reading":"つのる","en":"collect/raise (money), recruit","cn":"越来越厉害、募集"}
+    ]},
+    {"n":484,"char":"無","strokes":12,"readings":["ム","ブ","な-い"],"words":[
+      {"jp":"無料","reading":"むりょう","en":"free of charge","cn":"免费"},
+      {"jp":"無事","reading":"ぶじ","en":"unharmed, safe","cn":"平安、无事"},
+      {"jp":"有無","reading":"うむ","en":"exist or don't exist","cn":"有无"},
+      {"jp":"〜無し","reading":"なし","en":"without ...","cn":"~无、~没有"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"消費税は商品に（a. 均等　b. 平均）に課税される。"},
+        {"n":2,"q":"「広告が事実と異なり、（a. 心得　b. 納得）がいかない場合はこちらにご連絡を。」"},
+        {"n":3,"q":"「〇〇ランドの入場者数がすでに百万人を（a. 超え　b. 告げ）ました。」"},
+        {"n":4,"q":"世界で最も（a. 定価　b. 物価）の高い都市はどこでしょう。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"子供を（a. 対象　b. 対照）としたテレビ番組を制作する。"},
+        {"n":6,"q":"コレステロールの（a. 数値　b. 価値）が上がっているので注意してください。"},
+        {"n":7,"q":"（a. 靴下　b. 雨靴）は無いが、ぬれてもいい靴ならある。"},
+        {"n":8,"q":"この番組は〇〇食品の（a. 提供　b. 現象）でお送りしました。"}
+      ]}
+    ],
+    "answers": "左：①a ②b ③a ④b／右：①a ②a ③b ④a"
+  }
+}

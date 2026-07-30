@@ -1,0 +1,102 @@
+{
+  "week": 6, "day": 2, "theme": "みる②", "theme_cn": "看②", "theme_en": "Look and See ②",
+  "title": "折り込み広告", "title_cn": "夹报广告", "title_en": "Advertising Inserts",
+  "kanji": [
+    {"n":485,"char":"詰","strokes":13,"readings":["つ-める","つ-まる"],"words":[
+      {"jp":"詰める","reading":"つめる","en":"stuff/cram/package","cn":"塞满、填满、装进"},
+      {"jp":"箱詰め","reading":"はこづめ","en":"food etc. in a box","cn":"装箱"},
+      {"jp":"缶詰","reading":"かんづめ","en":"food etc. in a can","cn":"罐头"}
+    ]},
+    {"n":486,"char":"麦","strokes":7,"readings":["むぎ"],"words":[
+      {"jp":"小麦粉","reading":"こむぎこ","en":"flour","cn":"面粉"},
+      {"jp":"麦畑","reading":"むぎばたけ","en":"a wheat field","cn":"麦田"}
+    ]},
+    {"n":487,"char":"純","strokes":10,"readings":["ジュン"],"words":[
+      {"jp":"純粋","reading":"じゅんすい","en":"pure","cn":"纯粹"},
+      {"jp":"単純(な)","reading":"たんじゅん","en":"simple (minded)","cn":"单纯"},
+      {"jp":"純情(な)","reading":"じゅんじょう","en":"a pure heart","cn":"纯情"},
+      {"jp":"純米酢","reading":"じゅんまいず","en":"rice vinegar","cn":"纯米醋"}
+    ]},
+    {"n":488,"char":"草","strokes":9,"readings":["ソウ","くさ"],"words":[
+      {"jp":"雑草","reading":"ざっそう","en":"weed","cn":"杂草"},
+      {"jp":"草","reading":"くさ","en":"grass","cn":"草"},
+      {"jp":"除草","reading":"じょそう","en":"weeding","cn":"除草"},
+      {"jp":"草花","reading":"くさばな","en":"a flower","cn":"花草"}
+    ]},
+    {"n":489,"char":"塩","strokes":13,"readings":["エン","しお"],"words":[
+      {"jp":"食塩","reading":"しょくえん","en":"table salt","cn":"食盐"},
+      {"jp":"塩","reading":"しお","en":"salt","cn":"盐"}
+    ]},
+    {"n":490,"char":"固","strokes":8,"readings":["コ","かた-い","かた-まる"],"words":[
+      {"jp":"固定","reading":"こてい","en":"stability, fixation","cn":"固定"},
+      {"jp":"固形","reading":"こけい","en":"solid","cn":"固体"},
+      {"jp":"固い","reading":"かたい","en":"hard","cn":"坚固"},
+      {"jp":"固体","reading":"こたい","en":"solid","cn":"固体"},
+      {"jp":"固まる","reading":"かたまる","en":"harden","cn":"凝固、变硬"}
+    ]},
+    {"n":491,"char":"演","strokes":14,"readings":["エン"],"words":[
+      {"jp":"実演","reading":"じつえん","en":"a demonstration","cn":"实际演出"},
+      {"jp":"演習","reading":"えんしゅう","en":"exercises, maneuvers","cn":"演习"},
+      {"jp":"演技","reading":"えんぎ","en":"acting, performance","cn":"演技"},
+      {"jp":"演説","reading":"えんぜつ","en":"a speech, oration","cn":"演说"}
+    ]},
+    {"n":492,"char":"菓","strokes":11,"readings":["カ"],"words":[
+      {"jp":"菓子","reading":"かし","en":"sweets","cn":"点心"},
+      {"jp":"和菓子","reading":"わがし","en":"Japanese sweets","cn":"日本式点心"},
+      {"jp":"洋菓子","reading":"ようがし","en":"Western sweets","cn":"西式点心"}
+    ]},
+    {"n":493,"char":"贈","strokes":18,"readings":["おく-る"],"words":[
+      {"jp":"贈り物","reading":"おくりもの","en":"a gift","cn":"礼物"},
+      {"jp":"贈る","reading":"おくる","en":"present, give","cn":"赠送、赠与"}
+    ]},
+    {"n":494,"char":"省","strokes":9,"readings":["セイ","ショウ","はぶ-く"],"words":[
+      {"jp":"帰省","reading":"きせい","en":"homecoming","cn":"返乡"},
+      {"jp":"〜省","reading":"しょう","en":"Ministry of...","cn":"~部、~省"},
+      {"jp":"省く","reading":"はぶく","en":"delete/omit","cn":"省略、去掉"},
+      {"jp":"反省","reading":"はんせい","en":"self-examination","cn":"反省"},
+      {"jp":"省エネ","reading":"しょうエネ","en":"energy saving","cn":"节省能源"},
+      {"jp":"省略","reading":"しょうりゃく","en":"an abbreviation, omission","cn":"省略"}
+    ]},
+    {"n":495,"char":"承","strokes":8,"readings":["ショウ","うけたまわ-る"],"words":[
+      {"jp":"了承","reading":"りょうしょう","en":"consent, approval","cn":"谅解、知悉"},
+      {"jp":"承知","reading":"しょうち","en":"know/realize","cn":"知道、知晓"},
+      {"jp":"承認","reading":"しょうにん","en":"approval, confirmation","cn":"承认"},
+      {"jp":"承る","reading":"うけたまわる","en":"receive, listen","cn":"听(谦让语)、领受"}
+    ]},
+    {"n":496,"char":"展","strokes":10,"readings":["テン"],"words":[
+      {"jp":"展覧会","reading":"てんらんかい","en":"an exhibition","cn":"展览会"},
+      {"jp":"〜展","reading":"てん","en":"...exhibition","cn":"~展"},
+      {"jp":"展示","reading":"てんじ","en":"an exhibition","cn":"展览"},
+      {"jp":"発展","reading":"はってん","en":"development","cn":"发展"}
+    ]},
+    {"n":497,"char":"破","strokes":10,"readings":["ハ","やぶ-れる","やぶ-る"],"words":[
+      {"jp":"破格","reading":"はかく","en":"exceptional","cn":"破例"},
+      {"jp":"破片","reading":"はへん","en":"a fragment","cn":"破片"},
+      {"jp":"破れる","reading":"やぶれる","en":"break, rip","cn":"破碎、破损"},
+      {"jp":"破産","reading":"はさん","en":"bankruptcy","cn":"破产"},
+      {"jp":"破る","reading":"やぶる","en":"break/rip/violate (something)","cn":"弄破、揭破、破坏"}
+    ]},
+    {"n":498,"char":"処","strokes":5,"readings":["ショ"],"words":[
+      {"jp":"処理","reading":"しょり","en":"disposal","cn":"处理"},
+      {"jp":"処分","reading":"しょぶん","en":"disposal","cn":"处分"},
+      {"jp":"処置","reading":"しょち","en":"management, measure","cn":"处置"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"草花や野菜、果物などを箱に（a. 詰めて　b. 固めて）出荷する。"},
+        {"n":2,"q":"その作業は（a. 純粋　b. 単純）だが、ミスをすると危険だ。"},
+        {"n":3,"q":"商品を使ったり作ったりして見せて売ることを（a. 実演　b. 演習）販売という。"},
+        {"n":4,"q":"年に2回、住民による地域の（a. 雑草　b. 除草）作業が行われる。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"事故処理中の道路に、まだ車の破片が散らばっている。"},
+        {"n":6,"q":"贈り物の包装はサービスカウンターで（a. 承ります　b. 預ります）。"},
+        {"n":7,"q":"省エネというのはエネルギーを（a. 省略　b. 節約）することです。"},
+        {"n":8,"q":"全国の珍しいお菓子を集めた（a. 展示　b. 発展）会が開かれた。"}
+      ]}
+    ],
+    "answers": "左：①a ②b ③a ④b／右：①b ②a ③b ④a"
+  }
+}

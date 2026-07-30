@@ -1,0 +1,95 @@
+{
+  "week": 6, "day": 6, "theme": "みる②", "theme_cn": "看②", "theme_en": "Look and See ②",
+  "title": "どっち？", "title_cn": "哪一个？", "title_en": "Which One?",
+  "kanji": [
+    {"n":541,"char":"層","strokes":14,"readings":["ソウ"],"words":[
+      {"jp":"高層","reading":"こうそう","en":"high-rise","cn":"高层"},
+      {"jp":"一層","reading":"いっそう","en":"more, still more","cn":"一层、更加"},
+      {"jp":"低層","reading":"ていそう","en":"low (building)","cn":"低层"}
+    ]},
+    {"n":542,"char":"束","strokes":7,"readings":["ソク","たば"],"words":[
+      {"jp":"約束","reading":"やくそく","en":"promise, appointment","cn":"约定"},
+      {"jp":"花束","reading":"はなたば","en":"bunch of flowers","cn":"花束"},
+      {"jp":"束","reading":"たば","en":"a bunch, bundle","cn":"束、捆"},
+      {"jp":"束ねる","reading":"たばねる","en":"bind in a bunch/bundle","cn":"捆、扎"}
+    ]},
+    {"n":543,"char":"甘","strokes":5,"readings":["あま-い","あま-やかす"],"words":[
+      {"jp":"甘い","reading":"あまい","en":"sweet","cn":"甜"},
+      {"jp":"甘やかす","reading":"あまやかす","en":"spoil (a child)","cn":"娇养、姑息迁就"},
+      {"jp":"甘口","reading":"あまくち","en":"sweet (wine)","cn":"带甜味的"}
+    ]},
+    {"n":544,"char":"辛","strokes":7,"readings":["から-い"],"words":[
+      {"jp":"辛い","reading":"からい","en":"(spicy) hot","cn":"辣、呛"},
+      {"jp":"辛口","reading":"からくち","en":"dry (wine)","cn":"辣味"}
+    ]},
+    {"n":545,"char":"皿","strokes":5,"readings":["さら"],"words":[
+      {"jp":"皿","reading":"さら","en":"plate","cn":"盘子"},
+      {"jp":"大皿","reading":"おおざら","en":"a big plate","cn":"大盘子"},
+      {"jp":"〜皿","reading":"さら","en":"...plates","cn":"~盘"},
+      {"jp":"小皿","reading":"こざら","en":"a small plate","cn":"小盘子"}
+    ]},
+    {"n":546,"char":"綿","strokes":14,"readings":["メン","わた"],"words":[
+      {"jp":"綿","reading":"めん","en":"cotton (material)","cn":"棉、面纱"},
+      {"jp":"綿","reading":"わた","en":"cotton (plant)","cn":"棉花"},
+      {"jp":"木綿","reading":"もめん","en":"cotton (material)","cn":"棉花、棉"}
+    ]},
+    {"n":547,"char":"旧","strokes":5,"readings":["キュウ"],"words":[
+      {"jp":"旧館","reading":"きゅうかん","en":"the older building","cn":"旧馆"},
+      {"jp":"復旧","reading":"ふっきゅう","en":"restoration","cn":"恢复"},
+      {"jp":"旧姓","reading":"きゅうせい","en":"a maiden name","cn":"原来的姓，结婚前的姓"}
+    ]},
+    {"n":548,"char":"厚","strokes":9,"readings":["コウ","あつ-い"],"words":[
+      {"jp":"厚生労働省","reading":"こうせいろうどうしょう","en":"ministry of Health","cn":"福利劳工部"},
+      {"jp":"厚い","reading":"あつい","en":"thick","cn":"厚"},
+      {"jp":"厚かましい","reading":"あつかましい","en":"impudent","cn":"厚颜无耻"},
+      {"jp":"厚切り","reading":"あつぎり","en":"thick slice","cn":"厚片、厚切"},
+      {"jp":"厚手","reading":"あつで","en":"thick, heavy (cloth)","cn":"质地厚"}
+    ]},
+    {"n":549,"char":"薄","strokes":16,"readings":["うす-い","うす-める"],"words":[
+      {"jp":"薄い","reading":"うすい","en":"thin (material), light (color), weak (drink)","cn":"薄、淡、稀"},
+      {"jp":"薄手","reading":"うすで","en":"thin (cloth)","cn":"质地薄"},
+      {"jp":"薄切り","reading":"うすぎり","en":"thin slice","cn":"薄片"},
+      {"jp":"薄める","reading":"うすめる","en":"dilute","cn":"弄淡、稀释"}
+    ]},
+    {"n":550,"char":"粒","strokes":11,"readings":["つぶ"],"words":[
+      {"jp":"粒","reading":"つぶ","en":"grain","cn":"颗粒"},
+      {"jp":"〜粒","reading":"つぶ","en":"...grains","cn":"~粒"}
+    ]},
+    {"n":551,"char":"極","strokes":12,"readings":["キョク","ゴク"],"words":[
+      {"jp":"北極","reading":"ほっきょく","en":"the North Pole","cn":"北极"},
+      {"jp":"積極的","reading":"せっきょくてき","en":"active, positive","cn":"积极地"},
+      {"jp":"南極","reading":"なんきょく","en":"the South Pole","cn":"南极"},
+      {"jp":"消極的","reading":"しょうきょくてき","en":"passive, negative","cn":"消极地"},
+      {"jp":"極","reading":"ごく","en":"very, extremely","cn":"非常"}
+    ]},
+    {"n":552,"char":"革","strokes":9,"readings":["カク","かわ"],"words":[
+      {"jp":"改革","reading":"かいかく","en":"reform","cn":"改革"},
+      {"jp":"革","reading":"かわ","en":"leather","cn":"皮革"},
+      {"jp":"革命","reading":"かくめい","en":"a revolution","cn":"革命"},
+      {"jp":"革製","reading":"かわせい","en":"made of leather","cn":"使用皮革制作"}
+    ]},
+    {"n":553,"char":"苦","strokes":8,"readings":["ク","くる-しい","くる-しむ","にが-い"],"words":[
+      {"jp":"苦痛","reading":"くつう","en":"pain, suffering","cn":"痛苦"},
+      {"jp":"苦しい","reading":"くるしい","en":"distressful, trying","cn":"痛苦"},
+      {"jp":"苦い","reading":"にがい","en":"bitter","cn":"味苦、痛苦"},
+      {"jp":"苦しむ","reading":"くるしむ","en":"suffer","cn":"感到痛苦、辛苦"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"バラを花束にすると一層（a. 甘い　b. 辛い）香りがする。"},
+        {"n":2,"q":"肌が弱い人は、（a. 綿　b. 毛）のシャツを着るとよいでしょう。"},
+        {"n":3,"q":"当店のスパゲティは（a. 一皿　b. 一山）が2人前の量です。"},
+        {"n":4,"q":"今は田中ですが、（a. 前名　b. 旧姓）は林です。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"「みそ汁、味が（a. 薄い　b. 厚い）から、今度からもう少し濃くして。」"},
+        {"n":6,"q":"「一粒でお口の中がスッキリ、さわやか！　〇〇キャンディー」"},
+        {"n":7,"q":"「教育制度の改革に（a. 消極的　b. 積極的）に取り組もう！」"},
+        {"n":8,"q":"フランス（a. 革命　b. 改革）は1978年に起きた。"}
+      ]}
+    ],
+    "answers": "左：①a ②a ③a ④b／右：①a ②b ③b ④a"
+  }
+}

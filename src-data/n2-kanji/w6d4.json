@@ -1,0 +1,95 @@
+{
+  "week": 6, "day": 4, "theme": "みる②", "theme_cn": "看②", "theme_en": "Look and See ②",
+  "title": "地図", "title_cn": "地图", "title_en": "Maps",
+  "kanji": [
+    {"n":513,"char":"辺","strokes":5,"readings":["ヘン","あた-り","べ"],"words":[
+      {"jp":"この辺","reading":"このへん","en":"around here","cn":"这边、近处"},
+      {"jp":"辺り","reading":"あたり","en":"around","cn":"附近、周边"},
+      {"jp":"周辺","reading":"しゅうへん","en":"vicinity","cn":"周围、周边"},
+      {"jp":"海辺","reading":"うみべ","en":"a beach","cn":"海边、海滨"}
+    ]},
+    {"n":514,"char":"察","strokes":14,"readings":["サツ"],"words":[
+      {"jp":"警察","reading":"けいさつ","en":"police","cn":"警察"},
+      {"jp":"診察","reading":"しんさつ","en":"an (medical) consultation","cn":"诊断"}
+    ]},
+    {"n":515,"char":"役","strokes":7,"readings":["ヤク","エキ"],"words":[
+      {"jp":"役所","reading":"やくしょ","en":"a government office","cn":"官署"},
+      {"jp":"役目","reading":"やくめ","en":"a role, duty","cn":"任务"},
+      {"jp":"役者","reading":"やくしゃ","en":"an actor","cn":"演员"},
+      {"jp":"現役","reading":"げんえき","en":"active","cn":"现役"}
+    ]},
+    {"n":516,"char":"美","strokes":9,"readings":["ビ","うつく-しい"],"words":[
+      {"jp":"美人","reading":"びじん","en":"a beautiful woman","cn":"美人"},
+      {"jp":"美しい","reading":"うつくしい","en":"beautiful","cn":"漂亮、美丽"},
+      {"jp":"美容","reading":"びよう","en":"beauty treatment","cn":"美容"}
+    ]},
+    {"n":517,"char":"術","strokes":11,"readings":["ジュツ"],"words":[
+      {"jp":"美術","reading":"びじゅつ","en":"(fine) art","cn":"美术"},
+      {"jp":"手術","reading":"しゅじゅつ","en":"surgery, operation","cn":"手术"},
+      {"jp":"技術","reading":"ぎじゅつ","en":"technique, technology","cn":"技术"},
+      {"jp":"芸術","reading":"げいじゅつ","en":"art","cn":"艺术"}
+    ]},
+    {"n":518,"char":"坂","strokes":7,"readings":["さか"],"words":[
+      {"jp":"坂","reading":"さか","en":"hill, slope","cn":"斜坡"},
+      {"jp":"〜坂","reading":"ざか","en":"...Hill","cn":"~坡"}
+    ]},
+    {"n":519,"char":"寺","strokes":6,"readings":["ジ","てら"],"words":[
+      {"jp":"〜寺","reading":"じ","en":"...Temple","cn":"~寺"},
+      {"jp":"寺","reading":"てら","en":"a temple","cn":"寺庙"},
+      {"jp":"寺院","reading":"じいん","en":"a temple, abbey","cn":"寺院"}
+    ]},
+    {"n":520,"char":"湾","strokes":12,"readings":["ワン"],"words":[
+      {"jp":"湾","reading":"わん","en":"a bay","cn":"湾"},
+      {"jp":"〜湾","reading":"わん","en":"...Bay","cn":"~湾"}
+    ]},
+    {"n":521,"char":"島","strokes":10,"readings":["トウ","しま"],"words":[
+      {"jp":"〜島","reading":"とう","en":"...Island","cn":"~岛"},
+      {"jp":"列島","reading":"れっとう","en":"an archipelago","cn":"群岛、列岛"},
+      {"jp":"半島","reading":"はんとう","en":"a peninsula","cn":"半岛"},
+      {"jp":"島","reading":"しま","en":"an island","cn":"岛"}
+    ]},
+    {"n":522,"char":"岸","strokes":8,"readings":["ガン","きし"],"words":[
+      {"jp":"海岸","reading":"かいがん","en":"a sea shore","cn":"海岸"},
+      {"jp":"岸","reading":"きし","en":"a shore, bank","cn":"岸、水边"},
+      {"jp":"湾岸","reading":"わんがん","en":"a gulf","cn":"海湾的沿岸"},
+      {"jp":"川岸","reading":"かわぎし","en":"a river bank","cn":"河岸"}
+    ]},
+    {"n":523,"char":"園","strokes":13,"readings":["エン"],"words":[
+      {"jp":"公園","reading":"こうえん","en":"a park","cn":"公园"},
+      {"jp":"遊園地","reading":"ゆうえんち","en":"an amusement park","cn":"游乐场"},
+      {"jp":"動物園","reading":"どうぶつえん","en":"zoo","cn":"动物园"},
+      {"jp":"〜園","reading":"えん","en":"...Park","cn":"~园"}
+    ]},
+    {"n":524,"char":"湖","strokes":12,"readings":["コ","みずうみ"],"words":[
+      {"jp":"〜湖","reading":"こ","en":"...Lake","cn":"~湖"},
+      {"jp":"湖","reading":"みずうみ","en":"a lake","cn":"湖"}
+    ]},
+    {"n":525,"char":"城","strokes":9,"readings":["ジョウ","しろ"],"words":[
+      {"jp":"〜城","reading":"じょう","en":"...Castle","cn":"~城"},
+      {"jp":"城","reading":"しろ","en":"a castle","cn":"城"}
+    ]},
+    {"n":526,"char":"谷","strokes":7,"readings":["コク","たに"],"words":[
+      {"jp":"渓谷","reading":"けいこく","en":"a gorge, ravine","cn":"溪谷"},
+      {"jp":"谷","reading":"たに","en":"a valley","cn":"谷、峡谷"},
+      {"jp":"谷間","reading":"たにま","en":"a valley, ravine","cn":"峡谷、山沟"},
+      {"jp":"谷川","reading":"たにがわ","en":"a mountain stream","cn":"山谷间的溪流"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"この（a. 坂　b. 役）を上ると美しいお寺がありますよ。"},
+        {"n":2,"q":"市役所は（a. 警察　b. 診察）署の向かいにあります。"},
+        {"n":3,"q":"日本の科学（a. 技術　b. 手術）を学ぶために来ました。"},
+        {"n":4,"q":"あのお相撲さんは（a. 現役　b. 役目）を引退して解説者になるそうだ。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"湖の（a. 岸　b. 谷）に白鳥がたくさんいるのが見える。"},
+        {"n":6,"q":"日本（a. 半島　b. 列島）を北から南まで旅行してみたい。"},
+        {"n":7,"q":"この公園の中に、お（a. 城　b. 湾）や植物園があります。"},
+        {"n":8,"q":"（a. 渓谷　b. 海岸）には波で打ち寄せられたごみが落ちていた。"}
+      ]}
+    ],
+    "answers": "左：①a ②a ③a ④a／右：①a ②b ③a ④b"
+  }
+}

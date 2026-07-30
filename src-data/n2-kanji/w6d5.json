@@ -1,0 +1,101 @@
+{
+  "week": 6, "day": 5, "theme": "みる②", "theme_cn": "看②", "theme_en": "Look and See ②",
+  "title": "文化財・展示", "title_cn": "文物・展示", "title_en": "Cultural Heritage",
+  "kanji": [
+    {"n":527,"char":"財","strokes":10,"readings":["ザイ","サイ"],"words":[
+      {"jp":"財産","reading":"ざいさん","en":"property, fortune","cn":"财产"},
+      {"jp":"財布","reading":"さいふ","en":"a wallet, purse","cn":"钱包"},
+      {"jp":"文化財","reading":"ぶんかざい","en":"cultural heritage","cn":"文化财产"}
+    ]},
+    {"n":528,"char":"観","strokes":18,"readings":["カン"],"words":[
+      {"jp":"観光","reading":"かんこう","en":"sightseeing","cn":"观光"},
+      {"jp":"観察","reading":"かんさつ","en":"observation","cn":"观察"},
+      {"jp":"観客","reading":"かんきゃく","en":"a spectator, audience","cn":"观众"},
+      {"jp":"観音","reading":"かんのん","en":"Kannon, the Goddess of Mercy","cn":"观世音菩萨"}
+    ]},
+    {"n":529,"char":"宝","strokes":8,"readings":["ホウ","たから"],"words":[
+      {"jp":"宝石","reading":"ほうせき","en":"a jewel, gem","cn":"宝石"},
+      {"jp":"国宝","reading":"こくほう","en":"a national treasure","cn":"国宝"},
+      {"jp":"宝物館","reading":"ほうもつかん","en":"museum of treasures","cn":"宝物馆"},
+      {"jp":"宝物","reading":"たからもの","en":"treasure","cn":"宝物"}
+    ]},
+    {"n":530,"char":"仏","strokes":4,"readings":["ブツ","ほとけ"],"words":[
+      {"jp":"仏教","reading":"ぶっきょう","en":"Buddhism","cn":"佛教"},
+      {"jp":"仏","reading":"ほとけ","en":"Buddha, deceased person","cn":"佛、故人"},
+      {"jp":"仏像","reading":"ぶつぞう","en":"a statue of Buddha","cn":"佛像"},
+      {"jp":"日仏","reading":"にちふつ","en":"Japan and France","cn":"日本和法国"}
+    ]},
+    {"n":531,"char":"王","strokes":4,"readings":["オウ"],"words":[
+      {"jp":"国王","reading":"こくおう","en":"a king","cn":"国王"},
+      {"jp":"王女","reading":"おうじょ","en":"a princess","cn":"公主"},
+      {"jp":"王子","reading":"おうじ","en":"a prince","cn":"王子"},
+      {"jp":"女王","reading":"じょおう","en":"a queen","cn":"女王"}
+    ]},
+    {"n":532,"char":"銅","strokes":14,"readings":["ドウ"],"words":[
+      {"jp":"銅","reading":"どう","en":"copper, bronze","cn":"铜"},
+      {"jp":"銅像","reading":"どうぞう","en":"a bronze statue","cn":"铜像"}
+    ]},
+    {"n":533,"char":"塔","strokes":12,"readings":["トウ"],"words":[
+      {"jp":"塔","reading":"とう","en":"a tower, pagoda","cn":"塔"},
+      {"jp":"〜塔","reading":"とう","en":"...Pagoda","cn":"~塔"},
+      {"jp":"五重の塔","reading":"ごじゅうのとう","en":"a five-storied pagoda","cn":"五重塔"}
+    ]},
+    {"n":534,"char":"絵","strokes":12,"readings":["エ","カイ"],"words":[
+      {"jp":"絵","reading":"え","en":"a picture","cn":"画"},
+      {"jp":"絵画","reading":"かいが","en":"a painting","cn":"绘画"},
+      {"jp":"絵の具","reading":"えのぐ","en":"paints, colors","cn":"图画用颜料"}
+    ]},
+    {"n":535,"char":"略","strokes":11,"readings":["リャク"],"words":[
+      {"jp":"略","reading":"りゃく","en":"an abbreviation","cn":"概略"},
+      {"jp":"省略","reading":"しょうりゃく","en":"abbreviation, abridgment","cn":"省略"},
+      {"jp":"略す","reading":"りゃくす","en":"abbreviate","cn":"省略、缩短"},
+      {"jp":"略歴","reading":"りゃくれき","en":"a profile","cn":"简历"}
+    ]},
+    {"n":536,"char":"順","strokes":12,"readings":["ジュン"],"words":[
+      {"jp":"順","reading":"じゅん","en":"order","cn":"次序"},
+      {"jp":"順番","reading":"じゅんばん","en":"a turn, order","cn":"顺序、次序"},
+      {"jp":"順路","reading":"じゅんろ","en":"a route","cn":"顺路"},
+      {"jp":"順調","reading":"じゅんちょう","en":"smooth, favorable","cn":"顺利"}
+    ]},
+    {"n":537,"char":"版","strokes":8,"readings":["ハン"],"words":[
+      {"jp":"出版","reading":"しゅっぱん","en":"a publication","cn":"出版"},
+      {"jp":"版画","reading":"はんが","en":"a print, engraving","cn":"版画"},
+      {"jp":"出版社","reading":"しゅっぱんしゃ","en":"publishing company","cn":"出版社"}
+    ]},
+    {"n":538,"char":"芸","strokes":7,"readings":["ゲイ"],"words":[
+      {"jp":"芸術","reading":"げいじゅつ","en":"art","cn":"艺术"},
+      {"jp":"芸能","reading":"げいのう","en":"public entertainments","cn":"表演艺术总称"},
+      {"jp":"工芸","reading":"こうげい","en":"industrial arts","cn":"工艺"},
+      {"jp":"園芸","reading":"えんげい","en":"gardening","cn":"园艺"}
+    ]},
+    {"n":539,"char":"複","strokes":14,"readings":["フク"],"words":[
+      {"jp":"複製","reading":"ふくせい","en":"a duplicate, replica","cn":"复制"},
+      {"jp":"複写","reading":"ふくしゃ","en":"a duplicate, copy","cn":"复写"},
+      {"jp":"複雑(な)","reading":"ふくざつ","en":"complex, complicated","cn":"复杂"},
+      {"jp":"複数","reading":"ふくすう","en":"plural","cn":"复数"}
+    ]},
+    {"n":540,"char":"刊","strokes":5,"readings":["カン"],"words":[
+      {"jp":"刊行物","reading":"かんこうぶつ","en":"a magazine, journal","cn":"发行物、刊物"},
+      {"jp":"週刊","reading":"しゅうかん","en":"weekly (newspaper/magazine)","cn":"周刊"},
+      {"jp":"朝刊","reading":"ちょうかん","en":"a morning newspaper","cn":"早报"},
+      {"jp":"月刊","reading":"げっかん","en":"a monthly (magazine)","cn":"月刊"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"このツアーの（a. 観光　b. 観察）コースにパリのエッフェル塔も入っています。"},
+        {"n":2,"q":"この建物は（a. 財産　b. 国宝）に指定されています。"},
+        {"n":3,"q":"渋谷駅の犬の（a. 銅像　b. 仏像）の前で待ち合わせしましょう。"},
+        {"n":4,"q":"あの国には3人の（a. 王子　b. 玉子）がいます。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"有名な絵画の（a. 複写　b. 複製）を部屋にかざる。"},
+        {"n":6,"q":"これに関する説明は複雑なため、ここでは（a. 省略　b. 節約）します。"},
+        {"n":7,"q":"出版社の（a. 順番　b. 刊行物）の案内を見て、注文する。"},
+        {"n":8,"q":"昨日、デパートでテレビによく出ている（a. 芸能　b. 役者）人を見かけた。"}
+      ]}
+    ],
+    "answers": "左：①a ②b ③a ④a／右：①b ②a ③b ④a"
+  }
+}

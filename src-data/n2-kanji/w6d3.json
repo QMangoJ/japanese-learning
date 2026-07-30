@@ -1,0 +1,97 @@
+{
+  "week": 6, "day": 3, "theme": "みる②", "theme_cn": "看②", "theme_en": "Look and See ②",
+  "title": "広告", "title_cn": "广告", "title_en": "Advertisements",
+  "kanji": [
+    {"n":499,"char":"泉","strokes":9,"readings":["セン","いずみ"],"words":[
+      {"jp":"温泉","reading":"おんせん","en":"a hot spring","cn":"温泉"},
+      {"jp":"泉","reading":"いずみ","en":"a spring","cn":"泉"}
+    ]},
+    {"n":500,"char":"宿","strokes":11,"readings":["シュク","やど"],"words":[
+      {"jp":"宿題","reading":"しゅくだい","en":"a homework","cn":"课外作业"},
+      {"jp":"宿","reading":"やど","en":"an inn","cn":"旅店"},
+      {"jp":"下宿","reading":"げしゅく","en":"lodgings","cn":"出租的房子"}
+    ]},
+    {"n":501,"char":"季","strokes":8,"readings":["キ"],"words":[
+      {"jp":"季節","reading":"きせつ","en":"a season","cn":"季节"},
+      {"jp":"冬季","reading":"とうき","en":"winter","cn":"冬季"},
+      {"jp":"四季","reading":"しき","en":"four seasons","cn":"四季"}
+    ]},
+    {"n":502,"char":"豊","strokes":13,"readings":["ホウ","ゆた-か"],"words":[
+      {"jp":"豊作","reading":"ほうさく","en":"a bumper crop","cn":"丰收"},
+      {"jp":"豊か(な)","reading":"ゆたか","en":"abundant","cn":"丰富、富足"}
+    ]},
+    {"n":503,"char":"富","strokes":12,"readings":["フ","と-む","とみ"],"words":[
+      {"jp":"豊富(な)","reading":"ほうふ","en":"abundance","cn":"丰富"},
+      {"jp":"富","reading":"とみ","en":"wealth","cn":"财富、财产"},
+      {"jp":"富士山","reading":"ふじさん","en":"Mount Fuji","cn":"富士山"},
+      {"jp":"富む","reading":"とむ","en":"be wealthy/abundant","cn":"富有、丰富"}
+    ]},
+    {"n":504,"char":"迎","strokes":7,"readings":["ゲイ","むか-える"],"words":[
+      {"jp":"送迎","reading":"そうげい","en":"a pickup service","cn":"接送"},
+      {"jp":"迎える","reading":"むかえる","en":"(go to) meet, welcome","cn":"迎接"},
+      {"jp":"歓迎","reading":"かんげい","en":"welcome","cn":"欢迎"},
+      {"jp":"出迎え","reading":"でむかえ","en":"going to meet someone (e.g. at the station)","cn":"迎接、去接"}
+    ]},
+    {"n":505,"char":"泊","strokes":8,"readings":["ハク","と-まる","と-める"],"words":[
+      {"jp":"〜泊","reading":"はく","en":"...night stay","cn":"~夜、~晚"},
+      {"jp":"泊まる","reading":"とまる","en":"stay","cn":"投宿、留宿"},
+      {"jp":"宿泊","reading":"しゅくはく","en":"lodging","cn":"住宿"}
+    ]},
+    {"n":506,"char":"居","strokes":8,"readings":["キョ","い-る"],"words":[
+      {"jp":"入居","reading":"にゅうきょ","en":"moving into (e.g. an apartment)","cn":"入住"},
+      {"jp":"居眠り","reading":"いねむり","en":"doze","cn":"打瞌睡、打盹儿"},
+      {"jp":"居間","reading":"いま","en":"a living room","cn":"起居室"},
+      {"jp":"居る","reading":"いる","en":"be","cn":"在、存在"}
+    ]},
+    {"n":507,"char":"築","strokes":16,"readings":["チク"],"words":[
+      {"jp":"築〜年","reading":"ちくねん","en":"built in ...(year)","cn":"修筑~年、盖好~年"},
+      {"jp":"建築","reading":"けんちく","en":"architecture","cn":"建筑"}
+    ]},
+    {"n":508,"char":"角","strokes":7,"readings":["カク","かど"],"words":[
+      {"jp":"三角","reading":"さんかく","en":"a triangle","cn":"三角"},
+      {"jp":"方角","reading":"ほうがく","en":"direction, way","cn":"方向、方位"},
+      {"jp":"角度","reading":"かくど","en":"an angle","cn":"角度"},
+      {"jp":"角","reading":"かど","en":"a corner","cn":"角、拐角"}
+    ]},
+    {"n":509,"char":"徒","strokes":10,"readings":["ト"],"words":[
+      {"jp":"生徒","reading":"せいと","en":"a student","cn":"学生"},
+      {"jp":"徒歩","reading":"とほ","en":"on foot","cn":"徒步"}
+    ]},
+    {"n":510,"char":"畳","strokes":12,"readings":["ジョウ","たた-む","たたみ"],"words":[
+      {"jp":"畳","reading":"たたみ","en":"tatami (Japanese straw mat)","cn":"榻榻米"},
+      {"jp":"〜畳","reading":"じょう","en":"...mats","cn":"~叠、~张"},
+      {"jp":"畳む","reading":"たたむ","en":"fold","cn":"叠、折叠"}
+    ]},
+    {"n":511,"char":"米","strokes":6,"readings":["ベイ","マイ","こめ"],"words":[
+      {"jp":"欧米","reading":"おうべい","en":"Europe and America, the West","cn":"欧美"},
+      {"jp":"新米","reading":"しんまい","en":"①new rice ②new face","cn":"①新米 ②新进员工、新手"},
+      {"jp":"平米","reading":"へいべい","en":"square meters","cn":"平方米"},
+      {"jp":"米","reading":"こめ","en":"rice","cn":"稻米"}
+    ]},
+    {"n":512,"char":"解","strokes":13,"readings":["カイ","と-く"],"words":[
+      {"jp":"解説","reading":"かいせつ","en":"an explanation","cn":"解说"},
+      {"jp":"解放","reading":"かいほう","en":"a release","cn":"解放"},
+      {"jp":"解約","reading":"かいやく","en":"a cancellation (of a contract)","cn":"解除契约"},
+      {"jp":"解決","reading":"かいけつ","en":"a solution","cn":"解决"},
+      {"jp":"解散","reading":"かいさん","en":"dissolution","cn":"解散"},
+      {"jp":"解く","reading":"とく","en":"solve, untie","cn":"解答、解开"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"週末は富士山の近くの温泉（a. 家　b. 宿）に泊まる予定です。"},
+        {"n":2,"q":"冬季オリンピック選手の帰国を空港で（a. 出迎える　b. 迎えに行く）。"},
+        {"n":3,"q":"この町は自然に囲まれた緑（a. 豊かな　b. 富む）ところです。"},
+        {"n":4,"q":"明日から（a. 1泊　b. 1晩）2日の旅行に行きます。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"様々な（a. 方角　b. 角度）からアプローチして問題を解決する。"},
+        {"n":6,"q":"居間と食堂を合わせて12（a. 畳　b. 置）です。"},
+        {"n":7,"q":"私は大学で（a. 新築　b. 建築）の勉強をしています。"},
+        {"n":8,"q":"お金が必要になったので、定期預金を（a. 解約　b. 解決）する。"}
+      ]}
+    ],
+    "answers": "左：①b ②a ③a ④a／右：①b ②a ③b ④a"
+  }
+}
