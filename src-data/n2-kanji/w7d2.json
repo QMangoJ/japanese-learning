@@ -1,0 +1,95 @@
+{
+  "week": 7, "day": 2, "theme": "よむ②", "theme_cn": "读②", "theme_en": "Read ②",
+  "title": "掲示板・地域新聞", "title_cn": "公告栏・地区报纸", "title_en": "Notice Boards, Local Newspapers",
+  "kanji": [
+    {"n":579,"char":"庭","strokes":10,"readings":["テイ","にわ"],"words":[
+      {"jp":"校庭","reading":"こうてい","en":"a playground, schoolyard","cn":"校园"},
+      {"jp":"家庭","reading":"かてい","en":"a home, family, household","cn":"家庭"},
+      {"jp":"庭","reading":"にわ","en":"a garden","cn":"庭院"}
+    ]},
+    {"n":580,"char":"育","strokes":8,"readings":["イク","そだ-つ","そだ-てる"],"words":[
+      {"jp":"教育","reading":"きょういく","en":"education","cn":"教育"},
+      {"jp":"体育","reading":"たいいく","en":"physical education","cn":"体育"},
+      {"jp":"育児","reading":"いくじ","en":"childcare, nursing","cn":"育儿"},
+      {"jp":"育つ","reading":"そだつ","en":"grow","cn":"成长"},
+      {"jp":"育てる","reading":"そだてる","en":"raise, bring up","cn":"养育"}
+    ]},
+    {"n":581,"char":"猫","strokes":11,"readings":["ねこ"],"words":[
+      {"jp":"猫","reading":"ねこ","en":"a cat","cn":"猫"}
+    ]},
+    {"n":582,"char":"探","strokes":11,"readings":["タン","さが-す","さぐ-る"],"words":[
+      {"jp":"探検","reading":"たんけん","en":"an exploration, expedition","cn":"探险"},
+      {"jp":"探す","reading":"さがす","en":"search","cn":"寻找"},
+      {"jp":"探る","reading":"さぐる","en":"search, look for","cn":"探索、摸索"}
+    ]},
+    {"n":583,"char":"灰","strokes":6,"readings":["はい"],"words":[
+      {"jp":"灰","reading":"はい","en":"ash","cn":"灰"},
+      {"jp":"灰色","reading":"はいいろ","en":"gray","cn":"灰色"},
+      {"jp":"灰皿","reading":"はいざら","en":"an ashtray","cn":"烟灰缸"}
+    ]},
+    {"n":584,"char":"輪","strokes":15,"readings":["リン","わ"],"words":[
+      {"jp":"車輪","reading":"しゃりん","en":"a (car) wheel","cn":"车轮"},
+      {"jp":"指輪","reading":"ゆびわ","en":"a ring","cn":"戒指"},
+      {"jp":"首輪","reading":"くびわ","en":"a collar","cn":"项链"}
+    ]},
+    {"n":585,"char":"晩","strokes":12,"readings":["バン"],"words":[
+      {"jp":"今晩","reading":"こんばん","en":"tonight","cn":"今晚"},
+      {"jp":"毎晩","reading":"まいばん","en":"every night","cn":"每晚"},
+      {"jp":"晩御飯","reading":"ばんごはん","en":"a dinner","cn":"晚饭"}
+    ]},
+    {"n":586,"char":"劇","strokes":15,"readings":["ゲキ"],"words":[
+      {"jp":"劇","reading":"げき","en":"a drama, play","cn":"剧"},
+      {"jp":"劇場","reading":"げきじょう","en":"a theater, playhouse","cn":"剧场"},
+      {"jp":"劇団","reading":"げきだん","en":"a theatrical company","cn":"剧团"},
+      {"jp":"演劇","reading":"えんげき","en":"a (theatrical) play","cn":"戏剧"}
+    ]},
+    {"n":587,"char":"公","strokes":4,"readings":["コウ"],"words":[
+      {"jp":"公園","reading":"こうえん","en":"a park","cn":"公园"},
+      {"jp":"公共","reading":"こうきょう","en":"public, communal","cn":"公共"},
+      {"jp":"公演","reading":"こうえん","en":"a public performance","cn":"公演"},
+      {"jp":"公務員","reading":"こうむいん","en":"a civil servant, government employee","cn":"公务员"}
+    ]},
+    {"n":588,"char":"踊","strokes":14,"readings":["ヨウ","おど-る","おど-り"],"words":[
+      {"jp":"日本舞踊","reading":"にほんぶよう","en":"traditional Japanese dance","cn":"日本舞蹈"},
+      {"jp":"踊る","reading":"おどる","en":"dance","cn":"跳舞"},
+      {"jp":"踊り","reading":"おどり","en":"a dance","cn":"舞蹈"}
+    ]},
+    {"n":589,"char":"種","strokes":14,"readings":["シュ","たね"],"words":[
+      {"jp":"種類","reading":"しゅるい","en":"type, kind","cn":"种类"},
+      {"jp":"雑種","reading":"ざっしゅ","en":"a hybrid","cn":"杂种"},
+      {"jp":"人種","reading":"じんしゅ","en":"a race (of people)","cn":"人种"},
+      {"jp":"種","reading":"たね","en":"a seed","cn":"种子"}
+    ]},
+    {"n":590,"char":"匹","strokes":4,"readings":["ヒツ","ひき"],"words":[
+      {"jp":"匹敵する","reading":"ひってきする","en":"compare with, rival","cn":"匹敌"},
+      {"jp":"〜匹","reading":"ひき","en":"(counter for small animals)","cn":"~只、~匹"}
+    ]},
+    {"n":591,"char":"渡","strokes":12,"readings":["ト","わた-る","わた-す"],"words":[
+      {"jp":"渡米","reading":"とべい","en":"going to America","cn":"到美国去"},
+      {"jp":"渡す","reading":"わたす","en":"hand over","cn":"交给、传交、给"},
+      {"jp":"渡る","reading":"わたる","en":"cross over","cn":"渡过"},
+      {"jp":"渡辺","reading":"わたなべ","en":"(surname)","cn":"(人名)"}
+    ]},
+    {"n":592,"char":"馬","strokes":10,"readings":["バ","うま"],"words":[
+      {"jp":"乗馬","reading":"じょうば","en":"horse riding","cn":"骑马"},
+      {"jp":"馬","reading":"うま","en":"a horse","cn":"马"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"デパートで気に入った指輪を（a. 探す　b. 探る）。"},
+        {"n":2,"q":"地域全体で子供たちを（a. 育ち　b. 育て）ましょう。"},
+        {"n":3,"q":"多くの駅では、禁煙になって（a. 灰　b. 灰皿）がなくなった。"},
+        {"n":4,"q":"朝早くから（a. 校庭　b. 家庭）を走っているのは運動部の生徒です。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"（a. 公共　b. 公園）の場では互いにルールを守ろう。"},
+        {"n":6,"q":"歩行者は横断歩道を（a. 渡し　b. 渡り）ましょう。"},
+        {"n":7,"q":"この店ではたくさんの（a. 種類　b. 書類）の花の種を売っている。"},
+        {"n":8,"q":"人気のある劇団の（a. 講演　b. 公演）を見に行く。"}
+      ]}
+    ],
+    "answers": "左：①a ②b ③b ④a／右：①a ②b ③a ④b"
+  }
+}

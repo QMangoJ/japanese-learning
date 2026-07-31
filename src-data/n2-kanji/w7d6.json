@@ -1,0 +1,67 @@
+{
+  "week": 7, "day": 6, "theme": "よむ②", "theme_cn": "读②", "theme_en": "Read ②",
+  "title": "気象情報", "title_cn": "气象信息", "title_en": "Weather Information",
+  "dialog": {"lines": ["沖縄から東北南部にかけて晴天に恵まれます。西日本は春の陽気となるでしょう。東北北部と北海道では朝のうちは雲が多く、雨のところもありますが、次第に天気は回復に向かうでしょう。"]},
+  "kanji": [
+    {"n":633,"char":"率","strokes":11,"readings":["リツ","ソツ"],"words":[
+      {"jp":"率","reading":"りつ","en":"a rate, ratio","cn":"比率"},
+      {"jp":"確率","reading":"かくりつ","en":"probability","cn":"概率"},
+      {"jp":"率直(な)","reading":"そっちょく","en":"frankness, candor","cn":"坦率"},
+      {"jp":"利率","reading":"りりつ","en":"interest rate","cn":"利率"},
+      {"jp":"能率","reading":"のうりつ","en":"efficiency","cn":"效率"}
+    ]},
+    {"n":634,"char":"宇","strokes":6,"readings":["ウ"],"words":[
+      {"jp":"宇宙","reading":"うちゅう","en":"the universe, outer space","cn":"宇宙"},
+      {"jp":"宇都宮","reading":"うつのみや","en":"(place name)","cn":"(地名)"}
+    ]},
+    {"n":635,"char":"戸","strokes":4,"readings":["コ","と"],"words":[
+      {"jp":"〜戸","reading":"こ","en":"counter for houses","cn":"~户"},
+      {"jp":"戸","reading":"と","en":"a door","cn":"门"},
+      {"jp":"水戸","reading":"みと","en":"(place name)","cn":"(地名)"},
+      {"jp":"一戸建て","reading":"いっこだて","en":"a detached house","cn":"独门独户的房子"},
+      {"jp":"雨戸","reading":"あまど","en":"a sliding storm door","cn":"防雨板"}
+    ]},
+    {"n":636,"char":"晴","strokes":12,"readings":["セイ","は-れる"],"words":[
+      {"jp":"晴天","reading":"せいてん","en":"fine weather","cn":"晴天"},
+      {"jp":"晴れる","reading":"はれる","en":"be sunny","cn":"天气晴朗"},
+      {"jp":"快晴","reading":"かいせい","en":"good weather","cn":"晴朗"},
+      {"jp":"素晴らしい","reading":"すばらしい","en":"wonderful, magnificent","cn":"极优秀、美妙"}
+    ]},
+    {"n":637,"char":"曇","strokes":16,"readings":["くも-る"],"words":[
+      {"jp":"曇り","reading":"くもり","en":"cloudy weather","cn":"阴天"},
+      {"jp":"曇る","reading":"くもる","en":"become cloudy","cn":"阴、模糊"}
+    ]},
+    {"n":638,"char":"雪","strokes":11,"readings":["セツ","ゆき"],"words":[
+      {"jp":"積雪","reading":"せきせつ","en":"(an accumulation of) snow","cn":"积雪"},
+      {"jp":"雪","reading":"ゆき","en":"snow","cn":"雪"},
+      {"jp":"吹雪","reading":"ふぶき","en":"a snow storm","cn":"暴风雪"},
+      {"jp":"大雪","reading":"おおゆき","en":"heavy snow","cn":"大雪"}
+    ]},
+    {"n":639,"char":"恵","strokes":10,"readings":["ケイ","めぐ-む"],"words":[
+      {"jp":"知恵","reading":"ちえ","en":"wisdom","cn":"智慧"},
+      {"jp":"恵まれる","reading":"めぐまれる","en":"be blessed with","cn":"被赋予…、不匮乏"},
+      {"jp":"恩恵","reading":"おんけい","en":"benefits","cn":"恩惠"}
+    ]},
+    {"n":640,"char":"陽","strokes":12,"readings":["ヨウ"],"words":[
+      {"jp":"太陽","reading":"たいよう","en":"sun","cn":"太阳"},
+      {"jp":"陽気","reading":"ようき","en":"①weather ②cheerfulness","cn":"①日气 ②(性格)爽朗、开朗"}
+    ]},
+    {"n":641,"char":"雲","strokes":12,"readings":["くも"],"words":[
+      {"jp":"雲","reading":"くも","en":"clouds","cn":"云"},
+      {"jp":"雨雲","reading":"あまぐも","en":"rain clouds","cn":"雨云、阴云"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"（a. 率業　b. 卒業）記念に校庭に木を植える。"},
+        {"n":2,"q":"今日は良いお天気に（a. 恵まれて　b. 晴れて）春のような陽気でした。"},
+        {"n":3,"q":"疲れたときはちょっと休んだほうが（a. 利率　b. 能率）が上がる。"},
+        {"n":4,"q":"メガネが湯気で（a. 曇って　b. 雲って）何も見えない。"},
+        {"n":5,"q":"昔の人は、便利な機械がない代わりに（a. 知恵　b. 予想）を使って生活した。"},
+        {"n":6,"q":"都心のマンションから郊外の（a. 一戸建て　b. 家庭）に引っ越した。"}
+      ]}
+    ],
+    "answers": "①b ②a ③b ④a ⑤a ⑥a"
+  }
+}

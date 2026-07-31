@@ -1,0 +1,95 @@
+{
+  "week": 7, "day": 3, "theme": "よむ②", "theme_cn": "读②", "theme_en": "Read ②",
+  "title": "メニュー・成分表示", "title_cn": "菜单・成分表示", "title_en": "Menus, Ingredient Labels",
+  "dialog": {"lines": ["A：ん〜おいしい！　これは何かな？　え〜っと……アサリガイノサケ……", "B：さかむし、ね。"]},
+  "kanji": [
+    {"n":593,"char":"貝","strokes":7,"readings":["かい"],"words":[
+      {"jp":"貝","reading":"かい","en":"a shell, shellfish","cn":"贝、贝壳"},
+      {"jp":"貝がら","reading":"かいがら","en":"shell","cn":"贝壳"}
+    ]},
+    {"n":594,"char":"酒","strokes":10,"readings":["シュ","さけ","さか"],"words":[
+      {"jp":"〜酒","reading":"しゅ","en":"...liquor","cn":"~酒"},
+      {"jp":"酒","reading":"さけ","en":"alcohol, liquor","cn":"酒"},
+      {"jp":"酒屋","reading":"さかや","en":"a liquor store","cn":"酒店"},
+      {"jp":"居酒屋","reading":"いざかや","en":"Japanese pub","cn":"小酒馆"}
+    ]},
+    {"n":595,"char":"蒸","strokes":13,"readings":["ジョウ","む-す"],"words":[
+      {"jp":"蒸発","reading":"じょうはつ","en":"evaporation","cn":"蒸发"},
+      {"jp":"蒸す","reading":"むす","en":"steam","cn":"蒸"},
+      {"jp":"水蒸気","reading":"すいじょうき","en":"water vapor, steam","cn":"水蒸气"},
+      {"jp":"蒸し暑い","reading":"むしあつい","en":"humid, sultry","cn":"闷热的、闷热"}
+    ]},
+    {"n":596,"char":"干","strokes":3,"readings":["ほ-す","ひ-る"],"words":[
+      {"jp":"干す","reading":"ほす","en":"hang","cn":"晾"},
+      {"jp":"干物","reading":"ひもの","en":"dried food","cn":"晒干的鱼贝类等"}
+    ]},
+    {"n":597,"char":"竹","strokes":6,"readings":["たけ"],"words":[
+      {"jp":"竹","reading":"たけ","en":"a bamboo","cn":"竹子"},
+      {"jp":"竹の子","reading":"たけのこ","en":"a bamboo shoot","cn":"笋"}
+    ]},
+    {"n":598,"char":"卵","strokes":7,"readings":["ラン","たまご"],"words":[
+      {"jp":"卵黄","reading":"らんおう","en":"an egg yolk","cn":"蛋黄"},
+      {"jp":"卵","reading":"たまご","en":"an egg","cn":"鸡蛋"}
+    ]},
+    {"n":599,"char":"根","strokes":10,"readings":["コン","ね"],"words":[
+      {"jp":"大根","reading":"だいこん","en":"a Japanese white radish","cn":"白萝卜"},
+      {"jp":"根","reading":"ね","en":"a root","cn":"根"},
+      {"jp":"屋根","reading":"やね","en":"a roof","cn":"屋顶"}
+    ]},
+    {"n":600,"char":"材","strokes":7,"readings":["ザイ"],"words":[
+      {"jp":"材料","reading":"ざいりょう","en":"ingredients, materials","cn":"材料"},
+      {"jp":"原材料","reading":"げんざいりょう","en":"raw materials","cn":"原材料"},
+      {"jp":"材質","reading":"ざいしつ","en":"material properties","cn":"材质"},
+      {"jp":"教材","reading":"きょうざい","en":"teaching materials","cn":"教材"}
+    ]},
+    {"n":601,"char":"植","strokes":12,"readings":["ショク","う-える"],"words":[
+      {"jp":"植物","reading":"しょくぶつ","en":"plant","cn":"植物"},
+      {"jp":"植木","reading":"うえき","en":"potted plants, garden shrubs","cn":"栽的树木"},
+      {"jp":"植える","reading":"うえる","en":"plant, grow","cn":"种植"},
+      {"jp":"田植え","reading":"たうえ","en":"rice planting","cn":"插秧"}
+    ]},
+    {"n":602,"char":"砂","strokes":9,"readings":["サ","すな"],"words":[
+      {"jp":"砂糖","reading":"さとう","en":"sugar","cn":"砂糖"},
+      {"jp":"砂","reading":"すな","en":"sand","cn":"沙"},
+      {"jp":"砂漠","reading":"さばく","en":"desert","cn":"沙漠"}
+    ]},
+    {"n":603,"char":"乳","strokes":8,"readings":["ニュウ","ちち"],"words":[
+      {"jp":"牛乳","reading":"ぎゅうにゅう","en":"milk","cn":"牛奶"},
+      {"jp":"乳児","reading":"にゅうじ","en":"a baby (under 1 year old)","cn":"婴儿"},
+      {"jp":"乳製品","reading":"にゅうせいひん","en":"dairy products","cn":"乳制品"},
+      {"jp":"乳","reading":"ちち","en":"milk, breast milk","cn":"乳"}
+    ]},
+    {"n":604,"char":"含","strokes":7,"readings":["ふく-む","ふく-める"],"words":[
+      {"jp":"含む","reading":"ふくむ","en":"be included","cn":"含有"},
+      {"jp":"含める","reading":"ふくめる","en":"include","cn":"包含、包括在内"}
+    ]},
+    {"n":605,"char":"炭","strokes":9,"readings":["タン","すみ"],"words":[
+      {"jp":"炭水化物","reading":"たんすいかぶつ","en":"carbohydrate","cn":"碳水化合物"},
+      {"jp":"炭","reading":"すみ","en":"charcoal","cn":"木炭"},
+      {"jp":"石炭","reading":"せきたん","en":"coal","cn":"煤炭"}
+    ]},
+    {"n":606,"char":"脂","strokes":10,"readings":["シ","あぶら"],"words":[
+      {"jp":"脂肪","reading":"しぼう","en":"fat, grease","cn":"脂肪"},
+      {"jp":"油脂","reading":"ゆし","en":"fats and oils","cn":"油脂"},
+      {"jp":"脂質","reading":"ししつ","en":"lipids, fats","cn":"类脂质、脂肪分"},
+      {"jp":"脂","reading":"あぶら","en":"fat, lard","cn":"脂肪"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"梅雨の時期は（a. 蒸し　b. 干し）暑い。"},
+        {"n":2,"q":"猫が家の（a. 屋根　b. 羽根）の上を歩いている。"},
+        {"n":3,"q":"（a. 酒屋　b. 居酒屋）で新入社員の歓迎会をする。"},
+        {"n":4,"q":"海辺で拾った（a. 貝　b. 具）でアクセサリーを作る。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"この価格に消費税は（a. 込まれて　b. 含まれて）おりません。"},
+        {"n":6,"q":"ガスより（a. 炭　b. 材）で焼いたほうが、肉も魚もおいしい。"},
+        {"n":7,"q":"貝を濃い塩水にしばらくつけておいて（a. 砂　b. 脂）を抜く。"},
+        {"n":8,"q":"（a. 干物　b. 植物）を育てる。"}
+      ]}
+    ],
+    "answers": "左：①a ②a ③b ④a／右：①b ②a ③a ④b"
+  }
+}

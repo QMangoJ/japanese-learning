@@ -1,0 +1,93 @@
+{
+  "week": 7, "day": 4, "theme": "よむ②", "theme_cn": "读②", "theme_en": "Read ②",
+  "title": "受験案内", "title_cn": "应试指南", "title_en": "Entrance Examination Information",
+  "kanji": [
+    {"n":607,"char":"筒","strokes":12,"readings":["トウ","つつ"],"words":[
+      {"jp":"封筒","reading":"ふうとう","en":"an envelope","cn":"信封"},
+      {"jp":"筒","reading":"つつ","en":"a pipe, tube","cn":"筒"},
+      {"jp":"水筒","reading":"すいとう","en":"a canteen, water bottle","cn":"水壶"}
+    ]},
+    {"n":608,"char":"卒","strokes":8,"readings":["ソツ"],"words":[
+      {"jp":"卒業","reading":"そつぎょう","en":"graduation","cn":"毕业"},
+      {"jp":"卒業証明書","reading":"そつぎょうしょうめいしょ","en":"a diploma","cn":"毕业证书"}
+    ]},
+    {"n":609,"char":"績","strokes":17,"readings":["セキ"],"words":[
+      {"jp":"成績","reading":"せいせき","en":"results, record","cn":"成绩"},
+      {"jp":"実績","reading":"じっせき","en":"actual results, achievement","cn":"实际成效、绩效"},
+      {"jp":"業績","reading":"ぎょうせき","en":"performance, achievement","cn":"业绩"}
+    ]},
+    {"n":610,"char":"論","strokes":15,"readings":["ロン"],"words":[
+      {"jp":"論文","reading":"ろんぶん","en":"a thesis, treatise","cn":"论文"},
+      {"jp":"結論","reading":"けつろん","en":"a conclusion","cn":"结论"},
+      {"jp":"議論","reading":"ぎろん","en":"an argument, discussion, debate","cn":"争论、议论"},
+      {"jp":"論じる","reading":"ろんじる","en":"argue, discuss, debate","cn":"论述"}
+    ]},
+    {"n":611,"char":"志","strokes":7,"readings":["シ"],"words":[
+      {"jp":"志望","reading":"しぼう","en":"wish, desire","cn":"志愿"},
+      {"jp":"意志","reading":"いし","en":"will, volition","cn":"意志"}
+    ]},
+    {"n":612,"char":"述","strokes":8,"readings":["ジュツ","の-べる"],"words":[
+      {"jp":"記述","reading":"きじゅつ","en":"a description","cn":"记述"},
+      {"jp":"前述","reading":"ぜんじゅつ","en":"afore-mentioned, above-mentioned","cn":"前述"},
+      {"jp":"口述","reading":"こうじゅつ","en":"verbal statement","cn":"口述"},
+      {"jp":"述べる","reading":"のべる","en":"state, mention","cn":"说明、陈述"}
+    ]},
+    {"n":613,"char":"構","strokes":14,"readings":["コウ","かま-う"],"words":[
+      {"jp":"結構(な)","reading":"けっこう","en":"splendid, nice","cn":"很好、挺好"},
+      {"jp":"構内","reading":"こうない","en":"a campus, grounds","cn":"设施的范围内"},
+      {"jp":"構成","reading":"こうせい","en":"a composition","cn":"构成"},
+      {"jp":"構う","reading":"かまう","en":"mind, care about","cn":"介意、相干"}
+    ]},
+    {"n":614,"char":"遅","strokes":12,"readings":["チ","おそ-い","おく-れる"],"words":[
+      {"jp":"遅刻","reading":"ちこく","en":"tardiness","cn":"迟到"},
+      {"jp":"遅い","reading":"おそい","en":"slow","cn":"慢"},
+      {"jp":"遅れる","reading":"おくれる","en":"be late","cn":"迟"}
+    ]},
+    {"n":615,"char":"仮","strokes":6,"readings":["カ","かり"],"words":[
+      {"jp":"仮名","reading":"かな","en":"Japanese syllabary","cn":"假名(日本的表音文字)"},
+      {"jp":"仮定","reading":"かてい","en":"assumption, supposition","cn":"假设"},
+      {"jp":"振り仮名","reading":"ふりがな","en":"pronunciation (written beside Japanese characters)","cn":"汉字旁注的假名"},
+      {"jp":"仮","reading":"かり","en":"temporary, provisional","cn":"临时、暂时"}
+    ]},
+    {"n":616,"char":"机","strokes":6,"readings":["つくえ"],"words":[
+      {"jp":"机","reading":"つくえ","en":"a desk","cn":"桌子"}
+    ]},
+    {"n":617,"char":"冊","strokes":5,"readings":["サツ"],"words":[
+      {"jp":"〜冊","reading":"さつ","en":"counter for books","cn":"~本、~册"},
+      {"jp":"冊子","reading":"さっし","en":"a booklet, pamphlet","cn":"册子"}
+    ]},
+    {"n":618,"char":"採","strokes":11,"readings":["サイ","と-る"],"words":[
+      {"jp":"採点","reading":"さいてん","en":"grading, marking","cn":"评分"},
+      {"jp":"採用","reading":"さいよう","en":"use, adopt","cn":"采用"},
+      {"jp":"採集","reading":"さいしゅう","en":"collecting, gathering","cn":"搜集"},
+      {"jp":"採る","reading":"とる","en":"adopt (a measure/proposal)","cn":"采取"}
+    ]},
+    {"n":619,"char":"濃","strokes":16,"readings":["ノウ","こ-い"],"words":[
+      {"jp":"濃度","reading":"のうど","en":"concentration, density","cn":"浓度"},
+      {"jp":"濃い","reading":"こい","en":"concentrate, dark (color)","cn":"浓"}
+    ]},
+    {"n":620,"char":"筆","strokes":12,"readings":["ヒツ","ふで"],"words":[
+      {"jp":"鉛筆","reading":"えんぴつ","en":"a pencil","cn":"铅笔"},
+      {"jp":"筆者","reading":"ひっしゃ","en":"a writer, author","cn":"笔者"},
+      {"jp":"筆記","reading":"ひっき","en":"(taking) notes, copying","cn":"笔记"},
+      {"jp":"筆","reading":"ふで","en":"a writing brush","cn":"毛笔"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"明日のハイキングには必ず（a. 水筒　b. 筒）とお弁当を持参すること。"},
+        {"n":2,"q":"この試験はマークシートではなく、（a. 前述　b. 記述）式です。"},
+        {"n":3,"q":"この論文は（a. 構内　b. 構成）が非常に良い。"},
+        {"n":4,"q":"彼は（a. 志望　b. 意志）が弱くて、お酒がやめられない。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"夏休みの自由研究で植物（a. 採集　b. 採点）をした。"},
+        {"n":6,"q":"前を走っている車には（a. 仮免許　b. 仮採用）練習中と書いてある。"},
+        {"n":7,"q":"兄は新聞（a. 筆者　b. 記者）です。"},
+        {"n":8,"q":"ノートは（a. 机　b. 筆）の引き出しに入っています。"}
+      ]}
+    ],
+    "answers": "左：①a ②b ③b ④b／右：①a ②a ③b ④a"
+  }
+}

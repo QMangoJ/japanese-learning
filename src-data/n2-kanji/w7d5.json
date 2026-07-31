@@ -1,0 +1,88 @@
+{
+  "week": 7, "day": 5, "theme": "よむ②", "theme_cn": "读②", "theme_en": "Read ②",
+  "title": "交通情報", "title_cn": "交通信息", "title_en": "Traffic Information",
+  "kanji": [
+    {"n":621,"char":"航","strokes":10,"readings":["コウ"],"words":[
+      {"jp":"航空","reading":"こうくう","en":"aviation, flying","cn":"航空"},
+      {"jp":"欠航","reading":"けっこう","en":"suspension of service (ship, plane)","cn":"(船、飞机)停开"},
+      {"jp":"運航","reading":"うんこう","en":"operation (e.g. ships, aircraft)","cn":"航运"}
+    ]},
+    {"n":622,"char":"陸","strokes":11,"readings":["リク"],"words":[
+      {"jp":"陸","reading":"りく","en":"land, shore","cn":"陆地"},
+      {"jp":"大陸","reading":"たいりく","en":"a continent","cn":"大陆"},
+      {"jp":"着陸","reading":"ちゃくりく","en":"a landing, touch down","cn":"着陆"},
+      {"jp":"陸上","reading":"りくじょう","en":"land, ground, shore","cn":"陆上"}
+    ]},
+    {"n":623,"char":"損","strokes":13,"readings":["ソン"],"words":[
+      {"jp":"損","reading":"そん","en":"loss, disadvantage","cn":"损失"},
+      {"jp":"損害","reading":"そんがい","en":"damage, injury, loss","cn":"损失、损害"},
+      {"jp":"損傷","reading":"そんしょう","en":"damage, injury","cn":"损坏、损伤"},
+      {"jp":"損得","reading":"そんとく","en":"loss and gain","cn":"损益、损失和利益"}
+    ]},
+    {"n":624,"char":"候","strokes":10,"readings":["コウ"],"words":[
+      {"jp":"気候","reading":"きこう","en":"climate","cn":"气候"},
+      {"jp":"天候","reading":"てんこう","en":"weather","cn":"天气、日气"}
+    ]},
+    {"n":625,"char":"船","strokes":11,"readings":["セン","ふね"],"words":[
+      {"jp":"風船","reading":"ふうせん","en":"a balloon","cn":"气球"},
+      {"jp":"船","reading":"ふね","en":"a boat, ship","cn":"船"},
+      {"jp":"造船","reading":"ぞうせん","en":"shipbuilding","cn":"造船"},
+      {"jp":"船便","reading":"ふなびん","en":"surface/sea mail","cn":"海运"}
+    ]},
+    {"n":626,"char":"丸","strokes":3,"readings":["まる","まる-い"],"words":[
+      {"jp":"丸","reading":"まる","en":"a circle","cn":"圆形"},
+      {"jp":"丸い","reading":"まるい","en":"round, circular, spherical","cn":"圆的、圆"},
+      {"jp":"〜丸","reading":"まる","en":"(name of a ship)","cn":"(船的名字)"}
+    ]},
+    {"n":627,"char":"混","strokes":11,"readings":["コン","ま-じる","ま-ざる","ま-ぜる"],"words":[
+      {"jp":"混雑","reading":"こんざつ","en":"confusion, congestion","cn":"混杂、拥挤"},
+      {"jp":"かき混ぜる","reading":"かきまぜる","en":"stir","cn":"搅拌"},
+      {"jp":"混じる","reading":"まじる","en":"be mixed","cn":"夹杂、掺混"},
+      {"jp":"混ざる","reading":"まざる","en":"be mixed","cn":"掺混"}
+    ]},
+    {"n":628,"char":"想","strokes":13,"readings":["ソウ"],"words":[
+      {"jp":"予想","reading":"よそう","en":"anticipation, forecast","cn":"预想"},
+      {"jp":"想像","reading":"そうぞう","en":"imagination, guess","cn":"想象"},
+      {"jp":"感想","reading":"かんそう","en":"impressions, thoughts","cn":"感想"},
+      {"jp":"理想","reading":"りそう","en":"ideal","cn":"理想"}
+    ]},
+    {"n":629,"char":"故","strokes":9,"readings":["コ"],"words":[
+      {"jp":"事故","reading":"じこ","en":"an accident","cn":"事故"},
+      {"jp":"故郷","reading":"こきょう","en":"hometown, birthplace","cn":"故乡"},
+      {"jp":"故障","reading":"こしょう","en":"break-down, failure","cn":"故障、坏了"}
+    ]},
+    {"n":630,"char":"乱","strokes":7,"readings":["ラン","みだ-れる"],"words":[
+      {"jp":"混乱","reading":"こんらん","en":"disorder, confusion","cn":"混乱"},
+      {"jp":"乱れる","reading":"みだれる","en":"fall into disorder","cn":"乱、混乱、纷乱"},
+      {"jp":"乱暴(な)","reading":"らんぼう","en":"rude, violent, rough","cn":"粗暴、鲁莽"}
+    ]},
+    {"n":631,"char":"河","strokes":8,"readings":["カ","かわ"],"words":[
+      {"jp":"運河","reading":"うんが","en":"a canal, waterway","cn":"运河"},
+      {"jp":"河","reading":"かわ","en":"a river, stream","cn":"河川"},
+      {"jp":"河川","reading":"かせん","en":"a river","cn":"河川"}
+    ]},
+    {"n":632,"char":"輸","strokes":16,"readings":["ユ"],"words":[
+      {"jp":"輸出","reading":"ゆしゅつ","en":"export","cn":"出口"},
+      {"jp":"輸血","reading":"ゆけつ","en":"a blood transfusion","cn":"输血"},
+      {"jp":"輸入","reading":"ゆにゅう","en":"import","cn":"进口"},
+      {"jp":"輸送","reading":"ゆそう","en":"transport","cn":"输送、运输"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"たくさんの（a. 風船　b. 造船）が空高く舞い上がる。"},
+        {"n":2,"q":"船便は遅いから（a. 航空　b. 空港）便でお願いします。"},
+        {"n":3,"q":"（a. 陸上　b. 大陸）の気候は降水量が少ない。"},
+        {"n":4,"q":"火事や事故などに備えて（a. 損害　b. 公害）保険に入る。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"現金（a. 郵送　b. 輸送）車が事故を起こした。"},
+        {"n":6,"q":"昼休みで飲食店はどこも（a. 混雑　b. 混乱）している。"},
+        {"n":7,"q":"（a. 理想　b. 感想）と現実にはギャップがある。"},
+        {"n":8,"q":"人身事故でダイヤが（a. 乱れて　b. 混じって）います。"}
+      ]}
+    ],
+    "answers": "左：①a ②a ③b ④a／右：①b ②a ③a ④a"
+  }
+}

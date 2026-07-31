@@ -1,0 +1,101 @@
+{
+  "week": 7, "day": 1, "theme": "よむ②", "theme_cn": "读②", "theme_en": "Read ②",
+  "title": "求人・募集", "title_cn": "招聘・招募", "title_en": "\"Help Wanted\", Recruitment",
+  "kanji": [
+    {"n":565,"char":"求","strokes":7,"readings":["キュウ","もと-める"],"words":[
+      {"jp":"求人","reading":"きゅうじん","en":"\"Help Wanted\"","cn":"招聘人员"},
+      {"jp":"請求書","reading":"せいきゅうしょ","en":"a bill, invoice","cn":"账单、请求书"},
+      {"jp":"要求","reading":"ようきゅう","en":"a demand, request","cn":"要求"},
+      {"jp":"求める","reading":"もとめる","en":"demand, request","cn":"要求、求"}
+    ]},
+    {"n":566,"char":"簡","strokes":18,"readings":["カン"],"words":[
+      {"jp":"簡単","reading":"かんたん","en":"easy","cn":"简单"}
+    ]},
+    {"n":567,"char":"単","strokes":9,"readings":["タン"],"words":[
+      {"jp":"単語","reading":"たんご","en":"vocabulary","cn":"单词"},
+      {"jp":"単に","reading":"たんに","en":"merely, simply","cn":"仅仅、只是"},
+      {"jp":"単位","reading":"たんい","en":"a unit, credit","cn":"单位、学分"},
+      {"jp":"単なる","reading":"たんなる","en":"mere, simple","cn":"仅仅、单纯的"}
+    ]},
+    {"n":568,"char":"許","strokes":11,"readings":["キョ","ゆる-す"],"words":[
+      {"jp":"許可","reading":"きょか","en":"permission","cn":"允许"},
+      {"jp":"許す","reading":"ゆるす","en":"permit, allow","cn":"准许、许可"},
+      {"jp":"免許","reading":"めんきょ","en":"a permit, license","cn":"执照、免许"}
+    ]},
+    {"n":569,"char":"給","strokes":12,"readings":["キュウ"],"words":[
+      {"jp":"給料","reading":"きゅうりょう","en":"a wage, salary","cn":"薪水"},
+      {"jp":"供給","reading":"きょうきゅう","en":"supply, provision","cn":"供给"},
+      {"jp":"週給","reading":"しゅうきゅう","en":"a weekly wage","cn":"周薪"},
+      {"jp":"支給","reading":"しきゅう","en":"a payment","cn":"支付"},
+      {"jp":"月給","reading":"げっきゅう","en":"a monthly wage","cn":"月薪"},
+      {"jp":"日給","reading":"にっきゅう","en":"a daily wage","cn":"日薪"}
+    ]},
+    {"n":570,"char":"与","strokes":3,"readings":["ヨ","あた-える"],"words":[
+      {"jp":"給与","reading":"きゅうよ","en":"an allowance","cn":"支付钱款和物品"},
+      {"jp":"与える","reading":"あたえる","en":"give, present","cn":"给予"}
+    ]},
+    {"n":571,"char":"応","strokes":7,"readings":["オウ"],"words":[
+      {"jp":"応募","reading":"おうぼ","en":"an application","cn":"应募"},
+      {"jp":"一応","reading":"いちおう","en":"tentatively","cn":"大略、姑且"},
+      {"jp":"応じる","reading":"おうじる","en":"respond","cn":"接受、应"},
+      {"jp":"応用","reading":"おうよう","en":"put to practical use","cn":"应用"}
+    ]},
+    {"n":572,"char":"課","strokes":15,"readings":["カ"],"words":[
+      {"jp":"課","reading":"か","en":"a chapter, section","cn":"课、节"},
+      {"jp":"日課","reading":"にっか","en":"a daily lesson","cn":"每天必做的事情"},
+      {"jp":"課長","reading":"かちょう","en":"a section chief","cn":"科长"}
+    ]},
+    {"n":573,"char":"程","strokes":12,"readings":["テイ"],"words":[
+      {"jp":"課程","reading":"かてい","en":"a course, curriculum","cn":"课程"},
+      {"jp":"程度","reading":"ていど","en":"degree, amount","cn":"程度"},
+      {"jp":"過程","reading":"かてい","en":"a process, course","cn":"过程"},
+      {"jp":"日程","reading":"にってい","en":"a schedule","cn":"日程"}
+    ]},
+    {"n":574,"char":"制","strokes":8,"readings":["セイ"],"words":[
+      {"jp":"制度","reading":"せいど","en":"a system","cn":"制度"},
+      {"jp":"制作","reading":"せいさく","en":"work, production","cn":"制作"},
+      {"jp":"制限","reading":"せいげん","en":"a restriction, limitation","cn":"限制"},
+      {"jp":"体制","reading":"たいせい","en":"a system, structure","cn":"体制"}
+    ]},
+    {"n":575,"char":"講","strokes":7,"readings":["コウ"],"words":[
+      {"jp":"講座","reading":"こうざ","en":"a class, course","cn":"讲座"},
+      {"jp":"講演","reading":"こうえん","en":"a lecture","cn":"演讲"},
+      {"jp":"講義","reading":"こうぎ","en":"a lecture","cn":"讲义、讲课"},
+      {"jp":"講師","reading":"こうし","en":"a lecturer","cn":"讲师"}
+    ]},
+    {"n":576,"char":"級","strokes":9,"readings":["キュウ"],"words":[
+      {"jp":"初級","reading":"しょきゅう","en":"beginning level","cn":"初级"},
+      {"jp":"上級","reading":"じょうきゅう","en":"advanced level","cn":"高级、上级"},
+      {"jp":"中級","reading":"ちゅうきゅう","en":"intermediate level","cn":"中级"},
+      {"jp":"高級","reading":"こうきゅう","en":"high class/grade","cn":"高级"}
+    ]},
+    {"n":577,"char":"基","strokes":11,"readings":["キ"],"words":[
+      {"jp":"基本","reading":"きほん","en":"a foundation, basis","cn":"基本"},
+      {"jp":"基準","reading":"きじゅん","en":"a standard, basis","cn":"基准"},
+      {"jp":"基礎","reading":"きそ","en":"a foundation, basis","cn":"基础"},
+      {"jp":"基地","reading":"きち","en":"a base","cn":"基地"}
+    ]},
+    {"n":578,"char":"導","strokes":15,"readings":["ドウ","みちび-く"],"words":[
+      {"jp":"指導","reading":"しどう","en":"leadership, guidance","cn":"指导"},
+      {"jp":"導く","reading":"みちびく","en":"lead","cn":"指引、引导"},
+      {"jp":"導入","reading":"どうにゅう","en":"a introduction","cn":"导入"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"店のドアに「アルバイト求む」と、（a. 求人　b. 応募）の張り紙がしてある。"},
+        {"n":2,"q":"（a. 支給　b. 時給）800円です。"},
+        {"n":3,"q":"ここに駐車するには会社の（a. 免許　b. 許可）が必要です。"},
+        {"n":4,"q":"勤務時間は相談に（a. 応じます　b. 与えます）。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"機械を（a. 指導　b. 導入）して作業のスピードを上げる。"},
+        {"n":6,"q":"毎朝のランニングをするのが、私の（a. 日課　b. 日程）です。"},
+        {"n":7,"q":"（a. 制限　b. 過程）時間内に問題を解く練習をする。"},
+        {"n":8,"q":"ラジオ（a. 講演　b. 講座）で日本語を勉強する。"}
+      ]}
+    ],
+    "answers": "左：①a ②b ③b ④a／右：①b ②a ③a ④b"
+  }
+}
