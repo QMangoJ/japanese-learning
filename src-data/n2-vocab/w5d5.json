@@ -1,0 +1,58 @@
+{
+  "week": 5, "day": 5, "title": "手品・合図・強気", "title_cn": "魔术、信号、好强", "title_en": "Magic, cue, aggressive",
+  "sections": [
+    {"type":"words","heading":"手","items":[
+      {"jp":"手当て（する）","en":"treat the injury","cn":"治疗伤势"},
+      {"jp":"手入れ（する）","en":"look after the camera","cn":"修理相机"},
+      {"jp":"手書き","en":"write a paper by hand","cn":"用手写报告"},
+      {"jp":"手作り","en":"home-made cake","cn":"手工蛋糕"},
+      {"jp":"手品","en":"card tricks","cn":"扑克魔术"},
+      {"jp":"手前","en":"one stop before","cn":"前一个车站"},
+      {"jp":"話し手","en":"speaker","cn":"说话人","rel":"⊙聞き手 listener 听话人"},
+      {"jp":"人手","en":"lack manpower","cn":"人手不够"},
+      {"jp":"手話","en":"learn sign language","cn":"学习手语"}
+    ]},
+    {"type":"words","heading":"合","items":[
+      {"jp":"合計（する）","en":"come up with the total","cn":"算出总计"},
+      {"jp":"合理的（な）","en":"logical thinking","cn":"合理的想法"},
+      {"jp":"合同","en":"practice together","cn":"联合练习"},
+      {"jp":"集合（する）","en":"meeting place","cn":"集合场所"},
+      {"jp":"都合","en":"squeeze it into someone's schedule","cn":"设法安排"},
+      {"jp":"合図（する）","en":"send a signal","cn":"发送信号"},
+      {"jp":"合間","en":"do some exercise during the break from the studies","cn":"学习的空闲运动"}
+    ]},
+    {"type":"words","heading":"体","items":[
+      {"jp":"体重","en":"weigh himself","cn":"量体重"},
+      {"jp":"体力","en":"I feel I do not have much stamina these days.","cn":"最近没有体力。","rel":"⊙気力 vigour 气力"},
+      {"jp":"死体","en":"bury the body","cn":"掩埋尸体"},
+      {"jp":"重体","en":"He is seriously injured in the accident.","cn":"他因事故而病危"}
+    ]},
+    {"type":"words","heading":"強","items":[
+      {"jp":"強化（する）","en":"build up the strength of the team","cn":"强化队伍"},
+      {"jp":"強力（な）","en":"a strong glue","cn":"强力粘着剂"},
+      {"jp":"強引（な）","en":"force someone to admit","cn":"强行让承认"},
+      {"jp":"強気（な）","en":"a strong opinion","cn":"强硬的发言","rel":"⇔弱気（な）timidity 胆怯"},
+      {"jp":"力強い","en":"an inspiring speech","cn":"有力的演说"},
+      {"jp":"力強い味方","en":"a strong supporter","cn":"强有力的伙伴"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.87",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"12時にロビーに（a. 集合　b. 合同）してください。"},
+        {"n":2,"q":"セールスマンに（a. 強気　b. 強引）に契約させられた。"},
+        {"n":3,"q":"携帯電話には（a. 強力な　b. 力強い）磁石が使われている。"},
+        {"n":4,"q":"運動を続けているのに（a. 体力　b. 体重）が増えてしまった。"},
+        {"n":5,"q":"休日に庭の（a. 手入れ　b. 手当て）をした。"},
+        {"n":6,"q":"仕事の（a. 都合　b. 合間）に家に電話を入れた。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"給料がこんなに安くては働く（　　）もなくなるよ。","opts":["気力","体力","強力","手当て"]},
+        {"n":8,"q":"パソコンを使わずに（　　）であて名を書いた。","opts":["人手","手書き","手前","手作り"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②b ③a ④b ⑤a ⑥b　Ⅱ：⑦1 ⑧2"
+  },
+  "hitokoto": "勉強の合間に、少し体を動かしましょう。"
+}

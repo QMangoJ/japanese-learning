@@ -1,0 +1,60 @@
+{
+  "week": 5, "day": 4, "title": "土地・名字・発売", "title_cn": "土地、姓名、出售", "title_en": "Land, surname, sale",
+  "sections": [
+    {"type":"words","heading":"地","items":[
+      {"jp":"地方","en":"Kanto region / live in a countryside","cn":"关东地区 / 住在地方上"},
+      {"jp":"地区","en":"residential area","cn":"住宅区"},
+      {"jp":"地理","en":"be quite familiar with the layout of Tokyo","cn":"熟悉东京的地理情况"},
+      {"jp":"地理学","en":"geology","cn":"地理学"},
+      {"jp":"地下","en":"the underground mall","cn":"地下街"},
+      {"jp":"土地","en":"buy a piece of land","cn":"买土地"},
+      {"jp":"地元","en":"the local TV station","cn":"当地的电视台"},
+      {"jp":"地味（な）","en":"dull outfit","cn":"朴素的衣服","rel":"⇔派手（な）gaudy 华丽的"},
+      {"jp":"生地","en":"dress material / bread dough","cn":"衣服的质地 / 面包的面团"}
+    ]},
+    {"type":"words","heading":"名","items":[
+      {"jp":"名所","en":"visit the famous spots","cn":"参观名胜"},
+      {"jp":"名人","en":"a master at fishing","cn":"钓鱼的名人"},
+      {"jp":"名物","en":"a local speciality","cn":"这个地方的名产"},
+      {"jp":"名字","en":"family name and given name","cn":"姓和(名的)名字"},
+      {"jp":"本名","en":"real name","cn":"真名"},
+      {"jp":"あだ名","en":"nickname","cn":"绰号"}
+    ]},
+    {"type":"words","heading":"発","items":[
+      {"jp":"発売（する）","en":"sell tickets","cn":"售票"},
+      {"jp":"発明（する）","en":"invent a new machine","cn":"发明新机械"},
+      {"jp":"発言（する）","en":"speak at a conference","cn":"在会议上发言"},
+      {"jp":"発見（する）","en":"discover a new star","cn":"发现新的星星"},
+      {"jp":"発行（する）","en":"issue a visa","cn":"发签证"},
+      {"jp":"発生（する）","en":"a typhoon forms","cn":"台风出现"},
+      {"jp":"発車（する）","en":"a train leaves on time","cn":"正点发车"}
+    ]},
+    {"type":"words","heading":"会","items":[
+      {"jp":"会計","en":"hold a meeting","cn":"结完账","rel":"⊙会計係 a treasurer 会计人员"},
+      {"jp":"会合","en":"pay the bill","cn":"举办聚会"},
+      {"jp":"会場","en":"meeting site","cn":"聚会的场所"},
+      {"jp":"開会（する）","en":"opening ceremony","cn":"开会典礼","rel":"⇔閉会式 closing ceremony 闭会典礼"},
+      {"jp":"大会","en":"attend an assembly","cn":"参加大会"},
+      {"jp":"出会い","en":"an accidental encounter","cn":"偶然相遇"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.85",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"東京で開かれる（a. 大会　b. 開会）に出るため上京した。"},
+        {"n":2,"q":"電話の（a. 発明者　b. 発見者）は、一般的にベルだと言われている。"},
+        {"n":3,"q":"私の（a. 地下　b. 地元）では、この魚は食べない。"},
+        {"n":4,"q":"東北（a. 地区　b. 地方）に伝わる昔話を聞いた。"},
+        {"n":5,"q":"納豆は水戸の（a. 名所　b. 名物）です。"},
+        {"n":6,"q":"ピザの（a. 地味　b. 生地）は小麦粉で作る。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"新しい紙幣が（　　）された。","opts":["発行","発売","発生","発明"]},
+        {"n":8,"q":"このあたりの（　　）には詳しくないので、道に迷った。","opts":["会合","名所","地元","地理"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②b ③a ④b ⑤b ⑥b　Ⅱ：⑦1 ⑧4"
+  },
+  "hitokoto": "会議では、できるだけ発言しましょう。"
+}

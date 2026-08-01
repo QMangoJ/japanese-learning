@@ -1,0 +1,62 @@
+{
+  "week": 5, "day": 2, "title": "夜中・世間・作業", "title_cn": "夜晚、社会、工作", "title_en": "Night, life, work",
+  "sections": [
+    {"type":"words","heading":"大","items":[
+      {"jp":"大工","en":"ask a carpenter for a repair","cn":"请木工修理"},
+      {"jp":"重大","en":"There will be an important announcement.","cn":"有重大事情宣布"},
+      {"jp":"大小","en":"There are 10 boxes, large and small.","cn":"箱子大小共10个"},
+      {"jp":"大気","en":"The atmosphere gets polluted","cn":"大气污染"},
+      {"jp":"大半","en":"majority has agreed","cn":"多数赞成"},
+      {"jp":"大金","en":"spend a lot of money","cn":"用巨款"},
+      {"jp":"大木","en":"cut down a huge tree","cn":"锯大树"}
+    ]},
+    {"type":"words","heading":"中","items":[
+      {"jp":"中心","en":"the center of the circle","cn":"圆心"},
+      {"jp":"中世","en":"medieval literature","cn":"中世纪文学"},
+      {"jp":"中古","en":"buy a used car","cn":"买二手车"},
+      {"jp":"空中","en":"float in the air","cn":"浮在空中"},
+      {"jp":"集中（する）","en":"study intensively","cn":"集中学习"},
+      {"jp":"夜中","en":"stay up until midnight","cn":"半夜不睡"},
+      {"jp":"世の中","en":"He knows a lot about the world.","cn":"他非常了解社会"}
+    ]},
+    {"type":"words","heading":"間","items":[
+      {"jp":"手間","en":"cumbersome","cn":"费工夫"},
+      {"jp":"中間","en":"mid-term examinations","cn":"期中考试"},
+      {"jp":"世間","en":"the public","cn":"社会上的人"},
+      {"jp":"昼間","en":"daytime","cn":"白天"},
+      {"jp":"夜間","en":"an outing at night","cn":"夜间外出"},
+      {"jp":"週間","en":"check the weekly weather forecast","cn":"收看一周天气预报"}
+    ]},
+    {"type":"words","heading":"作","items":[
+      {"jp":"名作","en":"read world famous literature","cn":"读名著"},
+      {"jp":"作者","en":"interview the author","cn":"访问作者"},
+      {"jp":"作品","en":"The work has been completed.","cn":"作品完成了"},
+      {"jp":"作業（する）","en":"the work is progressing","cn":"工作有进展"}
+    ]},
+    {"type":"words","heading":"通","items":[
+      {"jp":"通行（する）","en":"keep to the right","cn":"靠右边通行","rel":"⊙一方通行 one way traffic 单行"},
+      {"jp":"通知（する）","en":"an acceptance letter","cn":"合格通知"},
+      {"jp":"文通（する）","en":"pen pal","cn":"通信对方"},
+      {"jp":"一通り","en":"quickly review the lesson","cn":"大致复习"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.81",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"クラスの（a. 大半　b. 大小）が自転車で通学している。"},
+        {"n":2,"q":"この作品を作るのには、（a. 手間　b. 世間）がかかった。"},
+        {"n":3,"q":"この（a. 作業　b. 集中）が終わったら、次に進みましょう。"},
+        {"n":4,"q":"東京は日本の経済の（a. 集中　b. 中心）です。"},
+        {"n":5,"q":"昨日、友人と（a. 夜中　b. 夜間）まで電話で話をした。"},
+        {"n":6,"q":"あまりうまくできなかったが、（a. 名作　b. 作品）が仕上がった。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"会社に入って（　　）のきびしさを知る。","opts":["大気","空中","世間","大木"]},
+        {"n":8,"q":"「これとこれの（　　）のサイズがありますか。」","opts":["大小","中古","中間","中心"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②a ③a ④b ⑤a ⑥b　Ⅱ：⑦3 ⑧1"
+  },
+  "hitokoto": "もっと集中して勉強しましょう。"
+}

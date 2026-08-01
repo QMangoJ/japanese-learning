@@ -1,0 +1,59 @@
+{
+  "week": 5, "day": 6, "title": "本気・気楽・目安", "title_cn": "认真、轻松、目标", "title_en": "Official name, easy going, aim",
+  "sections": [
+    {"type":"words","heading":"本","items":[
+      {"jp":"本日","en":"Closed for today.","cn":"今天休业"},
+      {"jp":"本年","en":"We look forward to another good year together.","cn":"今年也请多多关照","rel":"＊新年のあいさつ"},
+      {"jp":"本社","en":"go on a trip to visit the headquarters","cn":"去总公司出差"},
+      {"jp":"本店","en":"headquarters","cn":"总店","rel":"⊙支店 branch shop 分店"},
+      {"jp":"本人","en":"Are you Mr. ...?","cn":"是您本人吗？"},
+      {"jp":"本気","en":"study in earnest","cn":"认真地学习"},
+      {"jp":"本気にする","en":"believe it","cn":"当真"},
+      {"jp":"本来","en":"real character","cn":"本来的样子"}
+    ]},
+    {"type":"words","heading":"家","items":[
+      {"jp":"家屋","en":"an old house","cn":"旧房子"},
+      {"jp":"一家","en":"support the family","cn":"支撑一家"},
+      {"jp":"芸術家","en":"a promising artist","cn":"有才能的艺术家"},
+      {"jp":"読書家","en":"My brother is a great reader.","cn":"哥哥是读书家"},
+      {"jp":"作家","en":"a famous novelist","cn":"有名作家"},
+      {"jp":"画家","en":"an unknown painter","cn":"无名画家"},
+      {"jp":"大家","en":"the apartment's landlord","cn":"公寓的房东"}
+    ]},
+    {"type":"words","heading":"目","items":[
+      {"jp":"目上","en":"one's senior","cn":"上司、长辈"},
+      {"jp":"目下","en":"one's junior","cn":"部下、晚辈"},
+      {"jp":"目安","en":"come up with a rough estimate","cn":"定目标"},
+      {"jp":"目指す","en":"aiming for a well-known university","cn":"以知名大学为目标"},
+      {"jp":"目立つ","en":"an inconspicuous student","cn":"不起眼的学生"},
+      {"jp":"注目（する）","en":"pay attention to the end result","cn":"关注结果"}
+    ]},
+    {"type":"words","heading":"気","items":[
+      {"jp":"気体","en":"gas, liquid, solid","cn":"气体、液体、固体"},
+      {"jp":"気分","en":"feel well","cn":"心情好"},
+      {"jp":"気味","en":"Snakes are creepy.","cn":"蛇让人感觉恐怖","rel":"⊙疲れ気味 rather tired 有点累"},
+      {"jp":"気楽（な）","en":"Take it easy!","cn":"放松做吧"},
+      {"jp":"平気（な）","en":"I can't stand snakes but am OK with spiders.","cn":"讨厌蛇，但蜘蛛无所谓"},
+      {"jp":"短気（な）","en":"a short-tempered person","cn":"性急的人"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.90",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"赤ちゃんの成長の（a. 注目　b. 目安）は体重の増え方です。"},
+        {"n":2,"q":"熱が下がってだいぶ（a. 気味　b. 気分）が良くなった。"},
+        {"n":3,"q":"銀行で（a. 本人　b. 本名）の確認のため免許証を見せるように言われた。"},
+        {"n":4,"q":"彼は（a. 平気　b. 本気）でうそをつくので、信用できない。"},
+        {"n":5,"q":"田中さん（a. 一家　b. 大家）は、3日前から旅行に出かけたようだ。"},
+        {"n":6,"q":"年をとって白髪が（a. 注目する　b. 目立つ）ようになった。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"彼のこれからの活躍に（　　）いこうと思う。","opts":["目指して","本気を出して","目立って","注目して"]},
+        {"n":8,"q":"彼女が（　　）の力を出せば、優勝できるでしょう。","opts":["本日","本来","本名","本店"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②b ③a ④a ⑤a ⑥b　Ⅱ：⑦4 ⑧2"
+  },
+  "hitokoto": "合格を目指してがんばりましょう。"
+}

@@ -1,0 +1,60 @@
+{
+  "week": 5, "day": 3, "title": "一生・用心・見事", "title_cn": "一生、警惕、漂亮", "title_en": "Lifetime, caution, excellent",
+  "sections": [
+    {"type":"words","heading":"生","items":[
+      {"jp":"生じる","en":"a problem arises","cn":"出现问题"},
+      {"jp":"生える","en":"weeds are coming up","cn":"长草"},
+      {"jp":"一生","en":"remember for the rest of one's life","cn":"一生不忘"},
+      {"jp":"人生","en":"a harsh life","cn":"艰难的人生"},
+      {"jp":"生産（する）","en":"grow vegetables","cn":"生产蔬菜"},
+      {"jp":"生け花","en":"learn how to arrange flowers","cn":"学习插花"},
+      {"jp":"生","en":"raw fish","cn":"新鲜的鱼"}
+    ]},
+    {"type":"words","heading":"学","items":[
+      {"jp":"学力","en":"acquire scholastic ability","cn":"掌握知识技能"},
+      {"jp":"学習（する）","en":"increase study hours","cn":"增加学习时间"},
+      {"jp":"学者","en":"a linguist","cn":"语言学者"},
+      {"jp":"学問","en":"concentrate on studying","cn":"努力求学"},
+      {"jp":"学会","en":"present at a conference","cn":"在学会发表"},
+      {"jp":"文学","en":"study the literature","cn":"学文学"}
+    ]},
+    {"type":"words","heading":"用","items":[
+      {"jp":"用いる","en":"utilize tools","cn":"使用道具"},
+      {"jp":"用語","en":"memorize technical words","cn":"记忆专业术语"},
+      {"jp":"用紙","en":"fill in a form","cn":"填表"},
+      {"jp":"用心（する）","en":"be aware of pick-pockets","cn":"注意小偷"},
+      {"jp":"使用（する）","en":"use a fax machine","cn":"使用传真"},
+      {"jp":"引用（する）","en":"quote a proverb","cn":"引用谚语"},
+      {"jp":"通用（する）","en":"be generally accepted","cn":"在社会上行得通"},
+      {"jp":"急用","en":"an urgent matter","cn":"急事"},
+      {"jp":"日用品","en":"buy daily necessities","cn":"买日用品"}
+    ]},
+    {"type":"words","heading":"見","items":[
+      {"jp":"見学（する）","en":"tour the factory","cn":"参观工厂"},
+      {"jp":"見事（な）","en":"a spectacular painting","cn":"精美的画"},
+      {"jp":"見方","en":"look at it from a different perspective","cn":"改变看法"},
+      {"jp":"見出し","en":"a newspaper headline","cn":"报纸的标题"},
+      {"jp":"見本","en":"refer to the example","cn":"参考样品"},
+      {"jp":"見回る","en":"patrol the school yard","cn":"在校内转转"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.83",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"私はあなたを（a. 一生　b. 人生）愛し続けます。"},
+        {"n":2,"q":"あー、こんなところにもカビが（a. 生じちゃった　b. 生えちゃった）よ。"},
+        {"n":3,"q":"医学（a. 用語　b. 学習）を覚えるのは、大変です。"},
+        {"n":4,"q":"毎日、パソコンを（a. 引用　b. 使用）している。"},
+        {"n":5,"q":"私の父は物の（a. 見学　b. 見方）が古い。"},
+        {"n":6,"q":"「（a. 用心　b. 急用）があるので、先に帰ります。」"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"私は（　　）の道に進みたい。","opts":["学習","学問","学力","学会"]},
+        {"n":8,"q":"パソコンを（　　）書類を作成する。","opts":["はげんで","用いて","生じて","見回って"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②a ③a ④b ⑤a ⑥b　Ⅱ：⑦3 ⑧3"
+  },
+  "hitokoto": "日本語で文学作品を読んでみましょう。"
+}

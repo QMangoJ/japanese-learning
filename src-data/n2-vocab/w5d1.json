@@ -1,0 +1,60 @@
+{
+  "week": 5, "day": 1, "title": "物事・日中・年月", "title_cn": "事物、白天、年月", "title_en": "Things, daytime, years",
+  "sections": [
+    {"type":"words","heading":"物","items":[
+      {"jp":"物事","en":"learn a lot of things at school","cn":"在学校里学习许多知识"},
+      {"jp":"人物","en":"a famous person","cn":"名人"},
+      {"jp":"物理","en":"physics exam","cn":"物理实验"},
+      {"jp":"食物","en":"high calorie food","cn":"高热量食物"},
+      {"jp":"作物","en":"The rice is the main crop in this area.","cn":"这一地区主要作物是水稻"},
+      {"jp":"書物","en":"read old books","cn":"读古老的书籍"},
+      {"jp":"生き物","en":"take care of animals/insects","cn":"照顾生物","rel":"⊙生物 a living thing 生物"},
+      {"jp":"入れ物","en":"a plastic container","cn":"塑料盒子"},
+      {"jp":"物音","en":"hear a sound","cn":"传来动静"},
+      {"jp":"物置","en":"put it away in the storage","cn":"收拾到库房"},
+      {"jp":"物語","en":"read a story","cn":"读故事"}
+    ]},
+    {"type":"words","heading":"日","items":[
+      {"jp":"生年月日","en":"ask one's date of birth","cn":"询问出生年月日"},
+      {"jp":"月日","en":"time passes","cn":"岁月流逝"},
+      {"jp":"元日","en":"New Year's Day","cn":"元旦"},
+      {"jp":"後日","en":"I will contact you later.","cn":"过几天，再联络"},
+      {"jp":"日時","en":"decide on the date of the party","cn":"决定聚会的日期"},
+      {"jp":"今日","en":"review the Japanese society of today","cn":"思考今天的日本社会"},
+      {"jp":"日中","en":"I won't be at home during the day tomorrow.","cn":"明天白天不在家"},
+      {"jp":"日光","en":"bathe in the sun","cn":"沐浴阳光"},
+      {"jp":"日の出","en":"sunrise","cn":"日出"},
+      {"jp":"日の入り","en":"sunset","cn":"日落"},
+      {"jp":"来日","en":"He came to Japan last month.","cn":"上个月来日本了"}
+    ]},
+    {"type":"words","heading":"年","items":[
+      {"jp":"年間","en":"set up a schedule for the year","cn":"制定年度计划"},
+      {"jp":"年月","en":"a long time has passed","cn":"漫长的岁月/岁月流逝"},
+      {"jp":"年中","en":"a place that is hot all year around","cn":"四季炎热的地方"},
+      {"jp":"年度","en":"next year's budget","cn":"下年度的预算"},
+      {"jp":"少年","en":"youth","cn":"青少年"},
+      {"jp":"青年","en":"a tall young man","cn":"高个儿青年"},
+      {"jp":"中年","en":"a middle-aged woman","cn":"中年妇女"},
+      {"jp":"年代","en":"the same generation","cn":"同年代"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.79",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"スキーの道具は庭の（a. 入れ物　b. 物置）に入れてあります。"},
+        {"n":2,"q":"（a. 日時　b. 月日）が流れて、春から夏になりました。"},
+        {"n":3,"q":"同じ（a. 青年　b. 年代）の人と話し合うのは楽しいです。"},
+        {"n":4,"q":"日本の（a. 今日　b. 年中）の経済は、たいへん不安定な状態だ。"},
+        {"n":5,"q":"（a. 年間　b. 年月）スケジュールによると、今月、中間テストがあります。"},
+        {"n":6,"q":"つかまえた虫を入れておく（a. 入れ物　b. 生き物）は、何かありますか。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"海の（　　）について調べる。","opts":["食物","作物","生物","人物"]},
+        {"n":8,"q":"「（　　）お伺いしますが、いつがよろしいでしょうか。」","opts":["先日","後日","今日","来日"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②b ③b ④a ⑤a ⑥a　Ⅱ：⑦3 ⑧2"
+  },
+  "hitokoto": "月日がたつのは早いですね。"
+}
