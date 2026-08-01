@@ -1,0 +1,68 @@
+{
+  "week": 3, "day": 1, "title": "どんな人ですか？", "title_cn": "是怎样的人呢？", "title_en": "What kind of person is he?",
+  "sections": [
+    {"type":"words","heading":"田中さんはどんな人ですか。――［　］人です。","items":[
+      {"jp":"思いやりがある","en":"considerate","cn":"有同情心，能体谅别人的"},
+      {"jp":"マナーがいい","en":"well-mannered","cn":"有礼貌的"},
+      {"jp":"えらいと思う","en":"admirable","cn":"觉得了不起"},
+      {"jp":"センスがいい","en":"tasteful","cn":"有品位，感觉好"},
+      {"jp":"若々しい","en":"youthful","cn":"朝气蓬勃"},
+      {"jp":"要領がいい","en":"handle things very efficiently","cn":"深得要领"},
+      {"jp":"生き生きとした","en":"lively","cn":"生气勃勃的"},
+      {"jp":"おだやかな","en":"mild","cn":"稳重"},
+      {"jp":"ほがらかな","en":"cheerful","cn":"开朗"},
+      {"jp":"おとなしい","en":"quiet","cn":"老实"},
+      {"jp":"さわやかな","en":"be a breath of fresh air","cn":"爽快"},
+      {"jp":"落ち着いている","en":"self-possessed","cn":"沉着"},
+      {"jp":"人なつっこい","en":"friendly","cn":"跟人亲近"},
+      {"jp":"頼もしい","en":"reliable","cn":"靠得住的"},
+      {"jp":"無邪気な","en":"child like","cn":"天真烂漫"},
+      {"jp":"そそっかしい","en":"scatter-brained/careless","cn":"马虎的"},
+      {"jp":"大ざっぱな","en":"rough","cn":"粗枝大叶的"},
+      {"jp":"のんきな","en":"carefree","cn":"悠闲的"},
+      {"jp":"いいかげんな","en":"irresponsible","cn":"不负责任的"},
+      {"jp":"短気な／気が短い","en":"short tempered","cn":"没耐心"},
+      {"jp":"だらしない","en":"sloppy","cn":"邋遢"},
+      {"jp":"気が小さい","en":"timid","cn":"胆小"},
+      {"jp":"不潔な","en":"filthy","cn":"不道德的，肮脏的"},
+      {"jp":"あわれな","en":"miserable","cn":"可怜的"},
+      {"jp":"厚かましい／ずうずうしい","en":"impudent","cn":"厚颜无耻"},
+      {"jp":"くどい","en":"long-winded","cn":"罗嗦"},
+      {"jp":"欲張りな","en":"greedy","cn":"贪婪的"},
+      {"jp":"ひきょうな","en":"mean","cn":"卑鄙的"},
+      {"jp":"強引な","en":"pushy","cn":"强迫的"},
+      {"jp":"ずるい","en":"dishonest","cn":"狡猾","rel":"⊙「ずるい！」 Your cheating! 狡猾！"},
+      {"jp":"乱暴な","en":"rough","cn":"粗鲁的"},
+      {"jp":"生意気な","en":"impertinent","cn":"傲慢的"},
+      {"jp":"ダサい","en":"not cool","cn":"土气"},
+      {"jp":"わがままな","en":"self-centered","cn":"任性的"},
+      {"jp":"プライドが高い","en":"be very proud","cn":"自尊心强"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"上品な／品がある／品がいい","en":"refined","cn":"高雅的","rel":"⇔下品な／品がない vulgar 低俗的"},
+      {"jp":"かっこいい","en":"cool","cn":"帅气的","rel":"⇔かっこ悪い not cool 难看的"},
+      {"jp":"気が強い","en":"aggressive","cn":"倔强","rel":"⇔気が弱い timid 软弱"},
+      {"jp":"器用な","en":"skilful","cn":"手巧的","rel":"⇔不器用な clumsy 笨拙"},
+      {"jp":"まじめな","en":"hardworking","cn":"认真的","rel":"⇔不まじめな not very serious 不认真"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.47",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"母はいつも同じことを言って（a. あつかましい　b. くどい）。"},
+        {"n":2,"q":"子どものくせに（a. 無邪気な　b. 生意気な）ことを言うな。"},
+        {"n":3,"q":"田中さんの奥さんはいつも（a. 器用な　b. 上品な）服を着ている。"},
+        {"n":4,"q":"甘やかされて育った子どもは（a. わがままな　b. あわれな）ことが多い。"},
+        {"n":5,"q":"（a. そそっかしい　b. 気が小さい）彼女は、いつも何か忘れ物をする。"},
+        {"n":6,"q":"セールスマンに、ほしくない化粧品を（a. 下品に　b. 強引に）買わされた。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"この子はとても（　　）、だれにでも話しかけるんですよ。","opts":["さわやかで","ひきょうで","たのもしくて","人なつっこくて"]},
+        {"n":8,"q":"彼女のアイデアはとても（　　）ですね。","opts":["プライドがいい","プライドが高い","センスがいい","センスが高い"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②b ③b ④a ⑤a ⑥b　Ⅱ：⑦4 ⑧3"
+  },
+  "hitokoto": "いいかげんなことは言わないようにしましょう。"
+}

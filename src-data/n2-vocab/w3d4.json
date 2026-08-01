@@ -1,0 +1,60 @@
+{
+  "week": 3, "day": 4, "title": "どんな気持ち・態度ですか？①", "title_cn": "什么样的心情、态度呢？①", "title_en": "How do you feel about it? ①",
+  "sections": [
+    {"type":"words","heading":"こんな結果になったのは［　］。","items":[
+      {"jp":"くやしい","en":"so unfortunate","cn":"懊悔"},
+      {"jp":"つらい","en":"painful","cn":"难受的"},
+      {"jp":"情けない","en":"miserable","cn":"悲惨的"},
+      {"jp":"申し訳ない","en":"shameful","cn":"实在抱歉"},
+      {"jp":"残念だ","en":"it's a pity","cn":"遗憾"},
+      {"jp":"仕方（が）ない／しょうがない","en":"it can't be helped","cn":"没办法","rel":"⊙やむを得ない there is nothing you can do about it 不得不（语气较生硬）"},
+      {"jp":"疑問に思う","en":"I doubt it","cn":"值得怀疑"},
+      {"jp":"不思議だ","en":"it's mysterious / weird","cn":"难以想像"},
+      {"jp":"納得がいかない","en":"be unable to accept","cn":"不能接受","rel":"⊙納得がいく be convinced 能理解"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"あきる","en":"get bored","cn":"厌倦"},
+      {"jp":"あきれる","en":"be amazed","cn":"惊呆"},
+      {"jp":"あきらめる","en":"give up","cn":"放弃"},
+      {"jp":"あわてる","en":"panic","cn":"慌忙"},
+      {"jp":"あせる","en":"hurry","cn":"焦急"},
+      {"jp":"ためらう","en":"hesitate","cn":"踌躇"},
+      {"jp":"あこがれる","en":"long for","cn":"向往，憧憬"},
+      {"jp":"落ち込む","en":"feel depressed","cn":"情绪低落"},
+      {"jp":"恋しい","en":"miss / long for","cn":"想念"},
+      {"jp":"なつかしい","en":"feel homesick / have fond memories","cn":"怀念"},
+      {"jp":"ありがたい","en":"feel grateful","cn":"难得的"},
+      {"jp":"みっともない","en":"shameful / unsuitable","cn":"不成体统"},
+      {"jp":"おしい","en":"So close!","cn":"可惜"},
+      {"jp":"にくい","en":"hate ...","cn":"可憎的、可恨的"},
+      {"jp":"にくらしい","en":"hateful, hateable","cn":"可憎的、可恨的"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"面倒くさい","en":"feel weary of","cn":"麻烦","rel":"⊙面倒な仕事 a troublesome task 麻烦的工作"},
+      {"jp":"夢中になる","en":"be mad about","cn":"热衷","rel":"⇔退屈する be bored 无聊"},
+      {"jp":"悩む","en":"be distressed by","cn":"烦恼","rel":"⊙悩み(N) worry 苦恼"},
+      {"jp":"神に祈る","en":"pray to God","cn":"祈求神明"},
+      {"jp":"神にちかう","en":"swear by God","cn":"对神发誓"},
+      {"jp":"仏をおがむ","en":"worship the Buddha","cn":"求神拜佛"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.53",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"「神に（a. ちかって　b. いのって）、うそはついていません。」"},
+        {"n":2,"q":"大阪まで車で行くか、電車で行くか、（a. ためらう　b. なやむ）。"},
+        {"n":3,"q":"もうすぐ受験だけれど、気持ちが（a. あせって　b. あわてて）勉強できない。"},
+        {"n":4,"q":"こんなに働いているのに給料が減らされるのは、（a. みっともない　b. 納得がいかない）。"},
+        {"n":5,"q":"好きなものでも、毎日食べていると（a. あきる　b. あきれる）。"},
+        {"n":6,"q":"毎日遅刻する彼が会社を辞めさせられたのは、（a. やむを得ない　b. おしい）ことだ。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"交際を断られたのに、いつまでも彼女を追いかける※のは（　　）。","opts":["みっともない","面倒くさい","恋しい","なつかしい"]},
+        {"n":8,"q":"1位になれなくて（　　）。","opts":["くわしい","くやしい","ばからしい","あこがれる"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②a ③a ④b ⑤a ⑥a　Ⅱ：⑦1 ⑧2"
+  },
+  "hitokoto": "疑問があれば、納得がいくまで聞きましょう。"
+}

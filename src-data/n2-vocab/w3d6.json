@@ -1,0 +1,68 @@
+{
+  "week": 3, "day": 6, "title": "体の具合はどうですか？", "title_cn": "身体状况怎样？", "title_en": "How are you feeling?",
+  "sections": [
+    {"type":"words","heading":"絵をみておぼえましょう","items":[
+      {"jp":"中指","en":"middle finger","cn":"中指"},
+      {"jp":"薬指","en":"ring finger","cn":"药指"},
+      {"jp":"人差し指","en":"index finger","cn":"食指"},
+      {"jp":"親指","en":"thumb","cn":"拇指"},
+      {"jp":"小指","en":"little finger","cn":"小指"},
+      {"jp":"手首","en":"wrist","cn":"手腕"},
+      {"jp":"ひじ","en":"elbow","cn":"肘"},
+      {"jp":"ひざ","en":"knee","cn":"膝盖"},
+      {"jp":"裸足","en":"bare feet","cn":"光脚"},
+      {"jp":"かかと","en":"heal","cn":"脚后跟"},
+      {"jp":"つま先","en":"tows","cn":"脚尖"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"医師の診察を受ける","en":"see the doctor","cn":"接受医生的诊察"},
+      {"jp":"早めに医者にかかる","en":"go and see the doctor before it gets worse","cn":"早点去看医生"},
+      {"jp":"健康診断を受ける","en":"have a physical check-up","cn":"接受体检"},
+      {"jp":"血圧が高い","en":"have high blood pressure","cn":"血压高","rel":"⇔血圧が低い have low blood pressure 血压低"},
+      {"jp":"病気の症状","en":"symptoms of a sickness","cn":"病情","rel":"⊙症状が治まる condition improving 病情治愈"},
+      {"jp":"顔色が悪い","en":"looks unwell","cn":"脸色不好","rel":"⊙顔が真っ青だ looks very pale 脸色铁青"},
+      {"jp":"体の具合が悪い","en":"not to feel well","cn":"身体情况不好"},
+      {"jp":"吐き気がする","en":"feel sick","cn":"感觉恶心"},
+      {"jp":"頭がぼうっとする","en":"my head is not clear","cn":"脑子混沌"},
+      {"jp":"熱中症","en":"heat stroke","cn":"中暑"},
+      {"jp":"体に熱がこもる","en":"feel feverish","cn":"全身发热","rel":"⊙家にこもる refuse to go out 闷在家里"},
+      {"jp":"体がだるい","en":"do not feel energetic","cn":"身体无力"},
+      {"jp":"肩がこる","en":"have stiff shoulders","cn":"肩酸","rel":"⊙肩をもむ massage your shoulders 按摩肩膀"},
+      {"jp":"ストレスがたまる","en":"feel stressed out","cn":"压力积累"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"痛みをこらえる／がまんする","en":"endure pain","cn":"忍痛","rel":"⊙悲しみをこらえる bare sadness 忍受痛苦"},
+      {"jp":"痛みに耐える","en":"endure pain","cn":"忍受痛苦","rel":"⊙悲しみに耐える endure sadness 忍受痛苦"},
+      {"jp":"肌が荒れる","en":"have rough skin","cn":"皮肤粗糙","rel":"⊙肌のつやがいい have smooth skin 皮肤有光泽"},
+      {"jp":"体がかゆい","en":"get itchy all over","cn":"身上痒","rel":"⊙（〜を）かく scratch 挠"},
+      {"jp":"湿疹ができる","en":"get a rash","cn":"出湿疹"},
+      {"jp":"アレルギーがある","en":"be allergic to ...","cn":"有过敏反应"},
+      {"jp":"花粉症で鼻がつまる","en":"be stuffed up from hay fever","cn":"因花粉症鼻塞"},
+      {"jp":"虫歯になる","en":"get a cavity","cn":"虫牙","rel":"⊙真っ白な歯 white teeth 洁白的牙齿"},
+      {"jp":"リハビリ（を）する","en":"go for rehabilitation","cn":"康复训练","rel":"⊙リハビリを受ける receive rehabilitation 接受康复训练"},
+      {"jp":"傷口がふさがる","en":"wounds healing","cn":"伤口愈合"},
+      {"jp":"手術の傷あとが痛む","en":"the scar from my operation aches","cn":"刀口痛"},
+      {"jp":"レントゲンを撮る","en":"have an x-ray taken","cn":"拍X光片"},
+      {"jp":"がんで死亡する","en":"die from cancer","cn":"因癌症死亡"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.58",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"肩を（a. こって　b. もんで）あげましょう。"},
+        {"n":2,"q":"蚊にさされたところが（a. かゆい　b. だるい）。"},
+        {"n":3,"q":"階段を降りるとき、（a. ひざ　b. ひじ）が痛む。"},
+        {"n":4,"q":"（a. 熱中症　b. 花粉症）のせいか、目がとてもかゆい。"},
+        {"n":5,"q":"風邪をひいたのか、（a. 鼻がつまる　b. ストレスがたまる）。"},
+        {"n":6,"q":"薬が効いたようで、だんだん痛みが（a. こらえて　b. おさまって）きた。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"医師にどんな（　　）なのか聞かれた。","opts":["症状","診察","診断","健康"]},
+        {"n":8,"q":"手術をしたところの傷口がちゃんと（　　）いる。","opts":["こもって","こらえて","ふさがって","こって"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②a ③a ④b ⑤a ⑥b　Ⅱ：⑦1 ⑧3"
+  },
+  "hitokoto": "具合が悪いときは、医師の診察を受けましょう。"
+}

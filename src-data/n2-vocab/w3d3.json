@@ -1,0 +1,55 @@
+{
+  "week": 3, "day": 3, "title": "どんな動作ですか？", "title_cn": "是什么样的动作呢？", "title_en": "What kind of behaviors are they talking about?",
+  "sections": [
+    {"type":"words","heading":"雑誌をわきに抱えた男が、たばこをくわえて壁にもたれている。その前を通り過ぎようとした女がつまずいてころんだ。その様子を見ていた男を、女はにらんだ。","items":[
+      {"jp":"にらむ","en":"glare at","cn":"瞪"},
+      {"jp":"部屋の中をのぞく","en":"peek in the room","cn":"向房间里窥视"},
+      {"jp":"たばこをくわえる","en":"leave a cigarette in one's mouth","cn":"叼香烟"},
+      {"jp":"りんごをかじる","en":"bite into an apple","cn":"啃苹果","rel":"⊙ガムをかむ chew gum 嚼口香糖"},
+      {"jp":"耳元でささやく","en":"whisper in the ear","cn":"在耳边私语"},
+      {"jp":"うなずく","en":"nod","cn":"点头"},
+      {"jp":"肩にかつぐ","en":"carry ... on one's shoulder","cn":"扛在肩上"},
+      {"jp":"わきに抱える","en":"carry ... under one's arm","cn":"挟在腋下"},
+      {"jp":"かごをぶらさげる","en":"hang a basket","cn":"提着篮子"},
+      {"jp":"ひじをつく","en":"put one's elbows on the table","cn":"胳膊肘支在（桌）上"},
+      {"jp":"触る","en":"touch","cn":"触摸","rel":"⊙「触るな！」Don't touch! 别摸!"},
+      {"jp":"頭をかく","en":"scratch your head","cn":"挠头"},
+      {"jp":"ポケットに手をつっこむ","en":"put one's hand in one's pocket","cn":"把手插进兜里"},
+      {"jp":"パンにハムをはさむ","en":"put ham in a sandwich","cn":"在面包里夹火腿"},
+      {"jp":"のりでくっつける","en":"use glue to stick two things together","cn":"用胶水粘上"},
+      {"jp":"水道の蛇口をひねる","en":"turn on a tap","cn":"打开自来水的水龙头"},
+      {"jp":"ひざを曲げる","en":"bend one's knees","cn":"曲膝"},
+      {"jp":"みぞをまたぐ","en":"step over a ditch","cn":"跨过水沟"},
+      {"jp":"石につまずく","en":"stumble on a rock","cn":"绊到石头上"},
+      {"jp":"雪道ですべる","en":"slip on a snowy road","cn":"在雪地打滑"},
+      {"jp":"道路でしゃがむ","en":"sit down on the road","cn":"蹲在路上"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"体をねじる","en":"twist your body","cn":"扭曲身体"},
+      {"jp":"壁にもたれる","en":"lean against the wall","cn":"靠在墙上"},
+      {"jp":"壁にぶつかる","en":"bump into the wall","cn":"撞到墙上","rel":"⊙壁にボールをぶつける throw a ball against the wall 向墙上投球"},
+      {"jp":"自転車とすれ違う","en":"go by a bicycle","cn":"和自行车擦肩而过"},
+      {"jp":"地面をはう","en":"crawl on the ground","cn":"在地上爬"},
+      {"jp":"おじぎ（を）する","en":"bow","cn":"鞠躬"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.51",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"車のドアで指を（a. はさんだ　b. ふれた）。"},
+        {"n":2,"q":"変な虫が床を（a. はっている　b. はがしている）。"},
+        {"n":3,"q":"この道はせまくて、車と車が（a. すれちがう　b. ぶつかる）のは大変だ。"},
+        {"n":4,"q":"ひざを（a. ついたり　b. 曲げたり）伸ばしたりする。"},
+        {"n":5,"q":"スケートで後ろに（a. すべる　b. はう）練習をした。"},
+        {"n":6,"q":"箱の中に何があるか、（a. のぞいた　b. にらんだ）。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"いらないポスターを（　　）。","opts":["はがす","ねじる","ふさぐ","閉じる"]},
+        {"n":8,"q":"大きな荷物を肩に（　　）。","opts":["つかむ","かつぐ","またぐ","しゃがむ"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②a ③a ④b ⑤a ⑥a　Ⅱ：⑦1 ⑧2"
+  },
+  "hitokoto": "食事中にひじをついてはいけません。"
+}

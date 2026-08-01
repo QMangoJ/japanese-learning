@@ -1,0 +1,49 @@
+{
+  "week": 3, "day": 2, "title": "どんな様子ですか？", "title_cn": "什么样子？", "title_en": "How is ... going?",
+  "sections": [
+    {"type":"words","heading":"","items":[
+      {"jp":"豊かな","en":"wealthy country","cn":"富有的国家","rel":"⇔貧しい poor"},
+      {"jp":"快適な","en":"comfortable life","cn":"舒适的生活"},
+      {"jp":"楽な","en":"easy way","cn":"轻松的方法"},
+      {"jp":"派手な","en":"flashy shirt","cn":"花哨的衬衣","rel":"⇔地味な plain 朴素的"},
+      {"jp":"粗末な","en":"plain food","cn":"粗茶淡饭"},
+      {"jp":"みじめな","en":"miserable life","cn":"凄惨的生活"},
+      {"jp":"やっかいな","en":"difficult problem","cn":"麻烦的问题"},
+      {"jp":"あいまいな","en":"vague reply","cn":"暧昧的答复"},
+      {"jp":"ありふれた","en":"ordinary story","cn":"老生常谈","rel":"⇔珍しい rare 稀罕"},
+      {"jp":"あわただしい","en":"busy day","cn":"慌乱的一天"},
+      {"jp":"さわがしい／そうぞうしい","en":"noisy street","cn":"吵闹的街道"},
+      {"jp":"やかましい","en":"The speaker is very loud. / He has strong views on fashion.","cn":"扩音器的声音太吵。/ 他对服装很挑剔。"},
+      {"jp":"めでたい","en":"joyous day","cn":"可喜可贺的日子"},
+      {"jp":"等しい","en":"be the same length","cn":"长度相等"},
+      {"jp":"みにくい","en":"ugly dispute","cn":"丑陋的争吵"},
+      {"jp":"荒っぽい","en":"rough language","cn":"粗话"},
+      {"jp":"空っぽ","en":"empty wallet","cn":"空空的钱包"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"真っ黒な","en":"fish is burning on the grill","cn":"烤过了，鱼变得漆黑"},
+      {"jp":"真っ青な","en":"face turns pale","cn":"脸色铁青"},
+      {"jp":"真っ赤な","en":"face turns red","cn":"脸色通红"},
+      {"jp":"真っ白な","en":"someone's hair turns grey as they age / be totally lost","cn":"头发全白了 / 脑子里一片空白"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.49",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"子どものころの記憶が（a. 豊か　b. あいまい）になっている。"},
+        {"n":2,"q":"恥ずかしくて顔が（a. 真っ青　b. 真っ赤）になった。"},
+        {"n":3,"q":"私だけ合格できず（a. みじめな　b. みにくい）気持ちだ。"},
+        {"n":4,"q":"冬の12月に桜が咲くなんて（a. あわただしい　b. めずらしい）ことだ。"},
+        {"n":5,"q":"それをパソコンで作成するのは、とても（a. やっかい　b. 荒っぽい）です。"},
+        {"n":6,"q":"兄弟が多いので我が家の朝はとても（a. はでだ　b. そうぞうしい）。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"スピーチであがって、頭の中が（　　）になった。","opts":["真っ白","真っ青","真っ赤","真っ黒"]},
+        {"n":8,"q":"孫が結婚した。（　　）ことだ。お祝いは何がいいだろうか。","opts":["ありふれた","あわただしい","めでたい","豊かな"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②b ③a ④b ⑤a ⑥b　Ⅱ：⑦1 ⑧3"
+  },
+  "hitokoto": "あいまいな返事はやめましょう。"
+}

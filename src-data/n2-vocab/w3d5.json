@@ -1,0 +1,70 @@
+{
+  "week": 3, "day": 5, "title": "どんな気持ち・態度ですか？②", "title_cn": "什么样的心情、态度呢？②", "title_en": "How do you feel about it? ②",
+  "sections": [
+    {"type":"words","heading":"田中さんを［　］。","items":[
+      {"jp":"尊敬する","en":"respect","cn":"尊敬"},
+      {"jp":"えらいと思う","en":"admirable","cn":"觉得了不起"},
+      {"jp":"信用する","en":"trust","cn":"信任"},
+      {"jp":"疑う","en":"doubt","cn":"怀疑"},
+      {"jp":"いじめる","en":"bully","cn":"欺负"},
+      {"jp":"やっつける","en":"beat (attack)","cn":"干掉"},
+      {"jp":"バカにする","en":"look down on","cn":"轻视，看不起"},
+      {"jp":"けなす","en":"criticize","cn":"贬低"},
+      {"jp":"責める","en":"blame","cn":"指责"},
+      {"jp":"おどかす","en":"①surprise ②threaten","cn":"①吓唬 ②威胁"},
+      {"jp":"頼る","en":"depend","cn":"依赖"},
+      {"jp":"頼りにする","en":"depend on","cn":"依靠"},
+      {"jp":"なぐさめる","en":"comfort","cn":"安慰"},
+      {"jp":"許す","en":"forgive","cn":"原谅"},
+      {"jp":"裏切る","en":"deceive","cn":"背叛"},
+      {"jp":"だます","en":"cheat","cn":"欺骗"},
+      {"jp":"傷つける","en":"hurt ...","cn":"伤害"},
+      {"jp":"避ける","en":"avoid","cn":"避开"},
+      {"jp":"放っておく","en":"leave","cn":"丢开，不管","rel":"⊙「（私のことは）ほっといて！」Leave me alone! 不要管（我）!"}
+    ]},
+    {"type":"words","heading":"田中さんに［　］。","items":[
+      {"jp":"仕事を任せる","en":"entrust the job with...","cn":"委任工作"},
+      {"jp":"ほほえむ","en":"give a happy smile","cn":"微微一笑"},
+      {"jp":"従う","en":"obey / follow","cn":"服从"},
+      {"jp":"逆らう","en":"defy","cn":"违反，抗拒"},
+      {"jp":"わびる","en":"apologize","cn":"致歉"},
+      {"jp":"感謝する","en":"be grateful","cn":"感谢"},
+      {"jp":"冗談を言う","en":"joke","cn":"开玩笑"},
+      {"jp":"いやみを言う","en":"make sarcastic remarks","cn":"说挖苦话"},
+      {"jp":"文句を言う","en":"complain about","cn":"发牢骚"},
+      {"jp":"うそをつく","en":"lie","cn":"撒谎","rel":"⊙うそつき(N) a liar 撒谎的人"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"だまる","en":"become quiet","cn":"沉默"},
+      {"jp":"自慢する","en":"brag about","cn":"自夸"},
+      {"jp":"いばる","en":"be arrogant","cn":"逞威风"},
+      {"jp":"ふざける","en":"play with","cn":"戏弄"},
+      {"jp":"まねをする","en":"mimic/copy/imitate","cn":"模仿"},
+      {"jp":"悪口を言う","en":"say bad things about","cn":"说坏话"},
+      {"jp":"友達に恵まれる","en":"have many good friends","cn":"遇上好朋友了"},
+      {"jp":"友達ともめる","en":"have trouble with friends","cn":"和朋友发生纠纷"},
+      {"jp":"いやな態度を取る","en":"have a bad attitude","cn":"态度不好"},
+      {"jp":"態度を改める","en":"change one's attitude","cn":"端正态度"},
+      {"jp":"失敗を人のせいにする","en":"blame others for your own mistakes","cn":"把失败的原因归到别人身上"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.55",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"彼は自分の失敗をみんなに（a. 許した　b. わびた）。"},
+        {"n":2,"q":"「また、がんばればいいよ」と親友に（a. からかわれた　b. なぐさめられた）。"},
+        {"n":3,"q":"「車の運転は、あなたに（a. まかせる　b. まねをする）わ。」"},
+        {"n":4,"q":"生徒を疑うような先生を（a. 尊敬　b. 文句）できません。"},
+        {"n":5,"q":"客を（a. だまして　b. 裏切って）にせ物を買わせた。"},
+        {"n":6,"q":"子「お父さん、変な虫がいるよ。（a. いじめて　b. やっつけて）。」父「こらこら、何も悪いことをしてないのに、かわいそうだよ。」"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"親に（　　）、家を出た。","opts":["いばって","ふざけて","あらためて","さからって"]},
+        {"n":8,"q":"急に大声を出して、友達を（　　）。","opts":["ほうっておいた","おどかした","うたがった","なぐさめた"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②b ③a ④b ⑤a ⑥a　Ⅱ：⑦1 ⑧2"
+  },
+  "hitokoto": "何でも私に任せてください。"
+}
