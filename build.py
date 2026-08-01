@@ -193,6 +193,21 @@ def load_days(folder, weeks, annotate):
         out.append({"n": w, "days": days})
     return out
 
+def complete_week_numbers(folder, max_week=20):
+    """Weeks (not necessarily contiguous) where all 7 day files exist."""
+    return [w for w in range(1, max_week + 1)
+            if all(os.path.exists(os.path.join(folder, f"w{w}d{d}.json")) for d in range(1, 8))]
+
+def load_days_sparse(folder, week_numbers, annotate):
+    out = []
+    for w in week_numbers:
+        days = []
+        for d in range(1, 8):
+            with open(os.path.join(folder, f"w{w}d{d}.json"), encoding="utf-8") as f:
+                days.append(annotate(json.load(f)))
+        out.append({"n": w, "days": days})
+    return out
+
 GMETA = {
     1: ("がんばらなくちゃ！", "必须努力！", "I have to stick at it!"), 2: ("がんばってごらん！", "你努力试试吧！", None),
     3: ("もっとがんばってほしい！", "希望你能更加努力！", None), 4: ("がんばるしかない！", "只能努力！", None),
@@ -233,7 +248,7 @@ def main():
     for w in kweeks:
         d1 = w["days"][0]
         w["title"], w["title_cn"] = d1.get("theme", ""), d1.get("theme_cn", "")
-    v2weeks = load_days(V2SRC, count_weeks(V2SRC), annotate_v)  # N2词汇: auto-detects how many周已录入
+    v2weeks = load_days_sparse(V2SRC, complete_week_numbers(V2SRC), annotate_v)  # N2词汇: 允许跳过缺失的周(第5/6周部分数据暂缺)
     k2weeks = load_days(K2SRC, count_weeks(K2SRC), annotate_k)  # N2汉字: auto-detects how many周已录入
     for w in k2weeks:
         d1 = w["days"][0]
