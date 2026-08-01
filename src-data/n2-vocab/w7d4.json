@@ -1,0 +1,45 @@
+{
+  "week": 7, "day": 4, "title": "言葉の前につく語", "title_cn": "加在单词前的词", "title_en": "Terms which precede other words",
+  "sections": [
+    {"type":"words","heading":"","items":[
+      {"jp":"不〜（〜ではない）","en":"impossible / unpleasant","cn":"不可能 / 不愉快","rel":"不必要（な）unnecessary 没必要 / 不健康（な）unhealthy 不健康"},
+      {"jp":"無〜（〜がない）","en":"indiscriminate / indifferent","cn":"无差别 / 不关心","rel":"無関係（な）unrelated 无关系 / 無意識（な）unconscious 无意识"},
+      {"jp":"非〜（〜ではない）","en":"lack of common sense / closed","cn":"没常识 / 非公开","rel":"非科学的（な）unscientific 非科学的 / 非公式 unofficial 非正式"},
+      {"jp":"未〜（まだ〜していない）","en":"incomplete / unsolved","cn":"未完成 / 未解决"},
+      {"jp":"再〜（もう一度〜する）","en":"a new start / new realization","cn":"再出发 / 再认识","rel":"再生産（する）reproduction 再生产 / 再開発（する）redevelopment 再开发"},
+      {"jp":"超〜（非常に、程度が激しい）","en":"extremely full / a superexpress","cn":"超满员 / 超特快","rel":"超小型 micro/very small 超小型 / 超忙しい"},
+      {"jp":"高〜（高い〜）","en":"high calorie / a high income","cn":"高热量 / 高收入","rel":"⇔低〜 / 高気圧 high pressure 高气压"},
+      {"jp":"名〜（有名な〜）","en":"a famous scene / a famous/super actress","cn":"著名场面 / 知名女演员","rel":"名演奏 a super performance 名演奏"},
+      {"jp":"全〜（〜全体、全ての〜）","en":"the whole world / national","cn":"全世界 / 全日本","rel":"全学生 all students 全部学生 / 全責任 entire responsibility 全部责任"},
+      {"jp":"総〜（全部あわせた〜）","en":"the total number of people","cn":"总人数","rel":"総収入 total income 总收入"},
+      {"jp":"各〜（それぞれの〜）","en":"each class","cn":"各班级","rel":"各家庭 each household 各家庭"},
+      {"jp":"長〜（長く〜）","en":"long-lasting","cn":"耐用、长久","rel":"長生き（する）long-living 长寿"}
+    ]},
+    {"type":"words","heading":"人につく言葉","items":[
+      {"jp":"現〜（今の〜）","en":"current president / current minister","cn":"现任社长 / 现任大臣"},
+      {"jp":"前〜（すぐ前の〜）","en":"ex-president (one before the current one) / ex-minister","cn":"前社长 / 前任大臣"},
+      {"jp":"元〜（もとの〜）","en":"ex-president (past president) / ex-minister (past minister)","cn":"原社长 / 原大臣"},
+      {"jp":"故〜（亡くなった〜）","en":"the late President Tanaka / the late Minister Tanaka","cn":"已故田中社长 / 已故田中大臣"},
+      {"jp":"副〜（第2番目の〜）","en":"vice-president / vice-minister","cn":"副社长 / 副部长官","rel":"⊙副作用 a side effect 副作用"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.117",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"新しいソフトが（a. 総　b. 全）世界で同時発売された。"},
+        {"n":2,"q":"急病の社長のかわりに（a. 副　b. 故）社長が出席した。"},
+        {"n":3,"q":"その事件はいまだに（a. 無　b. 未）解決です。"},
+        {"n":4,"q":"ノックせずにドアを開けるのは（a. 非　b. 不）常識です。"},
+        {"n":5,"q":"朝のラッシュ時、電車はいつも（a. 超　b. 高）満員です。"},
+        {"n":6,"q":"男性が子どもを産むのは（a. 不　b. 無）可能です。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"日本の（　　）人口は約1億2000万人です。","opts":["総","各","超","現"]},
+        {"n":8,"q":"個人情報を知らせたくないので、本名や住所は（　　）公開にしています。","opts":["無","非","未","不"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②a ③a ④b ⑤a ⑥a　Ⅱ：⑦4 ⑧2"
+  },
+  "hitokoto": "合格は不可能ではありません。"
+}

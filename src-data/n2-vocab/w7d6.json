@@ -1,0 +1,38 @@
+{
+  "week": 7, "day": 6, "title": "言葉の後ろにつく語②", "title_cn": "附在单词后的词②", "title_en": "Terms which follow other words ②",
+  "sections": [
+    {"type":"words","heading":"","items":[
+      {"jp":"〜ごと（りんごを丸ごとかじる／りんごを皮ごと食べる）","en":"bite into a whole apple / eat an unpeeled apple","cn":"整个儿啃苹果 / 苹果带皮吃","rel":"ケースごと宝石が盗まれた。The jewellery box and its contents were stolen. 箱子连宝石一起被盗"},
+      {"jp":"〜ごとに（一雨ごとに暖かくなる。）","en":"It gets warmer as it rains.","cn":"每下一次雨，都会变暖和","rel":"ちらしを家ごとに配る put a flyer in each mailbox 挨家挨户发广告 / 失敗するごとに（＝たびに）上達する learn from your mistakes 每次失败，都会实践中学得更好"},
+      {"jp":"〜おき（バスが5分おきに来る）","en":"the bus runs every five minutes","cn":"巴士隔5分钟来一趟","rel":"1行おきに書く write on every other line 隔一行间隔写"},
+      {"jp":"〜ぶり（仕事ぶり／話しぶり）","en":"how he works / how he speaks","cn":"工作状况 / 说话方式","rel":"⊙身ぶり body language 姿态、举止 / 彼と5年ぶりに会った。I saw him after 5 years. 隔了5年后才见到他"},
+      {"jp":"〜がたい（忘れがたい思い出／その要求は認めがたい。）","en":"unforgettable memory / The demand cannot be met","cn":"难以忘怀的记忆 / 很难认可那要求","rel":"信じがたい事件 an unbelievable incident 难以置信的事件（＊硬い表現）"},
+      {"jp":"〜づらい（このペンは書きづらい。）","en":"The pen does not write well","cn":"这笔不好写字","rel":"歩きづらい道 a road which is difficult to walk on 难走的路"},
+      {"jp":"〜づかい（言葉づかいが悪い）","en":"have a foul mouth","cn":"说话粗鲁的","rel":"金づかいが荒い loose with money 花钱大手大脚 / 人づかいが荒い work one's men hard 用人狠"},
+      {"jp":"〜こなす（パソコンを使いこなす）","en":"make full use of the computer","cn":"熟练运用电脑","rel":"洋服を着こなす dress nicely 衣服穿着合体"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"〜つき（顔つき／目つき）","en":"a look / a look in one's eye","cn":"表情 / 眼神","rel":"⊙消しゴム付きの鉛筆 pencil with an eraser 带橡皮的铅笔 / ⊙一泊二食付き room with two meals 住一晚带两顿饭"},
+      {"jp":"〜たて（炊きたてのごはん／焼きたてのパン）","en":"freshly cooked rice / freshly baked bread","cn":"刚做好的饭 / 刚烤好的面包","rel":"ペンキ塗りたて just painted 刚涂上油漆"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.122",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"（a. ゆでたて　b. 炊きたて）のうどんはとてもおいしい。"},
+        {"n":2,"q":"ひき逃げは許し（a. がたい　b. づらい）行為だ。"},
+        {"n":3,"q":"1時間（a. ぶりに　b. ごとに）時計が鳴ります。"},
+        {"n":4,"q":"このベンチは座り（a. がたい　b. づらい）。"},
+        {"n":5,"q":"ピカソの絵は独特の色（a. ぶり　b. づかい）をしている。"},
+        {"n":6,"q":"記録は100年（a. おきに　b. ぶりに）更新された。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"おまけ（　　）のキャラメル。","opts":["ごと","おき","つき","たて"]},
+        {"n":8,"q":"このクイズ番組では、1問正解する（　　）商品がもらえる。","opts":["ぶりに","ごとに","おきに","たてに"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②b ③b ④a ⑤b ⑥b　Ⅱ：⑦3 ⑧2"
+  },
+  "hitokoto": "言葉づかいに注意しましょう。"
+}

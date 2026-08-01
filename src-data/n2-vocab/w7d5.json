@@ -1,0 +1,44 @@
+{
+  "week": 7, "day": 5, "title": "言葉の後ろにつく語①", "title_cn": "附在单词后的词①", "title_en": "Terms which follow other words ①",
+  "sections": [
+    {"type":"words","heading":"お金","items":[
+      {"jp":"〜金（入学金／奨学金）","en":"an admission fee / a scholarship","cn":"入学金 / 奖学金","rel":"売上金 proceeds 销售额"},
+      {"jp":"〜料（授業料／入場料）","en":"a tuition fee / entrance fee","cn":"学费 / 入场费","rel":"運送料 a shipping charge 运费 / 拝観料 an admission fee 参观费"},
+      {"jp":"〜費（宿泊費／生活費）","en":"accommodation fees / living expenses","cn":"住宿费 / 生活费","rel":"交通費 transportation expenses 交通费 / 医療費 medical expenses 医疗费"},
+      {"jp":"〜代（本代／電気代）","en":"book expenses / electricity bill","cn":"书费 / 电费","rel":"修理代 a repair bill 修理费 / バス代 bus fare 巴士车费"},
+      {"jp":"〜賃（借り賃／貸し賃）","en":"rent","cn":"租金","rel":"電車賃 train fare 电车的车费 / 手間賃 pay for labor 工钱"}
+    ]},
+    {"type":"words","heading":"範囲・様子・印象","items":[
+      {"jp":"〜内（時間内に書き終える／予算内に収まる）","en":"finish writing within the time limit / be within the budget","cn":"在时间内写完 / 控制在预算内"},
+      {"jp":"〜外（予想外の結果／時間外労働）","en":"an unexpected result / overtime","cn":"预想外的结果 / 加班"},
+      {"jp":"〜的（代表的な映画／日常的な出来事）","en":"a typical movie / a daily event","cn":"代表性电影 / 日常的事情","rel":"比較的大きい comparatively big 比较大 / 進歩的な考え a progressive idea 进步的想法"},
+      {"jp":"〜風（サラリーマン風の男）","en":"a man who looks like a businessman","cn":"类似上班族的男人","rel":"関西風の味付け Kansai cooking 关西风味的调味 / 西洋風の建物 a western style building 西洋风格的建筑物"},
+      {"jp":"〜感（立体感のある絵）","en":"a painting with a 3D effect","cn":"有立体感的画","rel":"開放感を味わう enjoy the freedom 体味开放感 / 存在感がある人 a man who makes his presence felt 有存在感的人"}
+    ]},
+    {"type":"words","heading":"性質・その他","items":[
+      {"jp":"〜性（安全性を確かめる／可能性を試す）","en":"ensure the safety / explore the possibility","cn":"确认安全性 / 尝试可能性"},
+      {"jp":"〜製（植物性の油／日本製のカメラ）","en":"vegetable oil / a camera made in Japan","cn":"植物性油 / 日本产的相机","rel":"スチール製の机 a steel desk 金属制桌子"},
+      {"jp":"〜化（経営の合理化／機械化）","en":"streamlining of the company / automation","cn":"经营的合理化 / 机械化","rel":"高齢化 aging 老龄化 / ⊙少子化 a declining birth-rate 少子化"},
+      {"jp":"〜目（季節の変わり目／見た目が悪い）","en":"when the season changes / looks bad","cn":"季节的更替期 / 外观差","rel":"ズボンの折り目 a crease in the pants 裤子的折线"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.119",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"その事件は予想（a. 外　b. 内）の結果を迎え、だれもが驚いた。"},
+        {"n":2,"q":"日本は今、少子・高齢（a. 的　b. 化）社会である。"},
+        {"n":3,"q":"8月の電気（a. 費　b. 代）はとても高かった。"},
+        {"n":4,"q":"今月は医者に何度も行ったので、医療（a. 費　b. 金）が高くついた。"},
+        {"n":5,"q":"この寺の拝観（a. 代　b. 料）はいくらですか。"},
+        {"n":6,"q":"ぶつけた車の修理（a. 料　b. 代）の請求書が来ました。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"季節の変わり（　　）に体調をくずすことが多い。","opts":["間","時","期","目"]},
+        {"n":8,"q":"それは日常（　　）に起こる問題です。","opts":["内","的","外","性"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②a ③b ④a ⑤b ⑥b　Ⅱ：⑦4 ⑧2"
+  },
+  "hitokoto": "季節の変わり目には注意してください。"
+}

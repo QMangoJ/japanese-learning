@@ -1,0 +1,61 @@
+{
+  "week": 7, "day": 2, "title": "意味がたくさんある言葉②", "title_cn": "多义词②", "title_en": "Words which have many meanings ②",
+  "sections": [
+    {"type":"words","heading":"意味がたくさんある動詞","items":[
+      {"jp":"迷惑がかかる","en":"inconvenience ...","cn":"添麻烦","rel":"⊙迷惑をかける"},
+      {"jp":"太陽に雲がかかる","en":"the sun goes behind a cloud","cn":"云遮住了太阳"},
+      {"jp":"エンジンがかかる","en":"pick up the pace","cn":"启动引擎","rel":"⊙エンジンをかける"},
+      {"jp":"優勝がかかる","en":"the championship depends on the result of this game","cn":"关系到取胜"},
+      {"jp":"壁に絵をかける","en":"hang a picture on the wall","cn":"把画挂在墙上"},
+      {"jp":"腰をかける","en":"take a seat","cn":"坐下"},
+      {"jp":"橋をかける","en":"build a bridge over","cn":"架桥","rel":"⊙橋がかかる"},
+      {"jp":"犬にブラシをかける","en":"brush the dog","cn":"用刷子刷狗"},
+      {"jp":"植木に水をかける","en":"water the plant","cn":"给盆栽浇水","rel":"⊙水がかかる"},
+      {"jp":"体重をかける","en":"put some weight on","cn":"指借用身体重量做某事"},
+      {"jp":"命をかけて、子どもたちを守る","en":"put everything you have into protecting the kids","cn":"拼上命保护孩子们"},
+      {"jp":"保険をかける","en":"insure ...","cn":"上保险"},
+      {"jp":"（なべを）火にかける","en":"put a pan on the stove","cn":"（把锅）放在火上"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"金メダルを取る","en":"get a gold medal","cn":"得金牌"},
+      {"jp":"記録を取る","en":"keep a record of","cn":"创纪录"},
+      {"jp":"場所を取る","en":"save some space","cn":"占地方"},
+      {"jp":"責任を取る","en":"take responsibility","cn":"承担责任"},
+      {"jp":"下準備に時間を取る","en":"take some time to prepare for ...","cn":"花时间做准备工作"},
+      {"jp":"親の機嫌を取る","en":"try to please the parents","cn":"讨父母欢心"},
+      {"jp":"大事を取って入院する","en":"get hospitalised before the condition worsens","cn":"为谨慎起见而住院"},
+      {"jp":"税金を取られる","en":"have a tax imposed on you","cn":"被收取税金"},
+      {"jp":"ハンドルを取られる","en":"lose control of the car","cn":"方向盘不受自己控制"},
+      {"jp":"疲れが取れる","en":"recover from fatigue","cn":"消除疲劳"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"身長が伸びる","en":"grow taller","cn":"长个头"},
+      {"jp":"売り上げが伸びる","en":"the sales go up","cn":"营业额增多","rel":"⊙売り上げを伸ばす"},
+      {"jp":"パジャマのズボンのゴムが伸びる","en":"the elastic of the pyjama pants goes slack","cn":"睡裤的松紧带没弹性了"},
+      {"jp":"そばが伸びて、まずくなる。","en":"the soba loses its texture and does not taste good","cn":"荞麦面不筋道了，不好吃"},
+      {"jp":"肩まで髪を伸ばす","en":"grow hair down to your shoulders","cn":"把头发留到肩头","rel":"⊙髪が伸びる"},
+      {"jp":"アンテナを伸ばす","en":"extend the antenna","cn":"拉长天线（为了听取信息）"},
+      {"jp":"アイロンをかけてしわを伸ばす","en":"iron out the creases","cn":"用熨斗把皱平了","rel":"⊙しわが伸びる"},
+      {"jp":"子どもの才能を伸ばす","en":"develop kid's talent","cn":"增长孩子的才能"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.113",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"彼女は高価な楽器に保険を（a. かった　b. かけた）。"},
+        {"n":2,"q":"インタビューの記録を（a. かけて　b. 取って）おく。"},
+        {"n":3,"q":"ソファーに腰を（a. つけて　b. かけて）話しましょう。"},
+        {"n":4,"q":"海外旅行に行くときは、保険を（a. かけましょう　b. 取りましょう）。"},
+        {"n":5,"q":"子どもの才能を（a. 当てる　b. 伸ばす）ような教育をしよう。"},
+        {"n":6,"q":"車や家を買うと、消費税とは別の税金を（a. 取られる　b. つけられる）。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"ずっと切らなかったので髪が肩まで（　　）。","opts":["取った","伸びた","伸ばした","かけた"]},
+        {"n":8,"q":"机が場所を（　　）ベッドが置けません。","opts":["取って","かけて","取られて","置かれて"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②b ③b ④a ⑤b ⑥a　Ⅱ：⑦2 ⑧1"
+  },
+  "hitokoto": "下準備には十分な時間を取りましょう。"
+}

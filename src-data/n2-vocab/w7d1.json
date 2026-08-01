@@ -1,0 +1,59 @@
+{
+  "week": 7, "day": 1, "title": "意味がたくさんある言葉①", "title_cn": "多义词①", "title_en": "Words which have many meanings ①",
+  "sections": [
+    {"type":"words","heading":"意味がたくさんある動詞","items":[
+      {"jp":"ひもが切れる","en":"the string breaks","cn":"绳子断了"},
+      {"jp":"電池が切れる","en":"the battery dies","cn":"电池没电"},
+      {"jp":"タバコが切れる","en":"be out of cigarettes","cn":"没烟了"},
+      {"jp":"賞味期限が切れる","en":"past the best before date","cn":"过了食用期（流通期限）"},
+      {"jp":"しびれが切れる（＝足がしびれる）","en":"legs gone to sleep","cn":"腿脚麻木"},
+      {"jp":"電源を切る","en":"switch off","cn":"切断电源","rel":"⊙電源が切れる"},
+      {"jp":"野菜の水気を切る","en":"dry the vegetables","cn":"去除蔬菜的水分"},
+      {"jp":"スタートを切る","en":"start off","cn":"出发"},
+      {"jp":"100メートル競走で10秒を切る","en":"run 100 meters in less than 10 seconds","cn":"100米赛跑突破10秒"},
+      {"jp":"ハンドルを右に切る","en":"turn right","cn":"向右转方向盘"},
+      {"jp":"カードをよく切る","en":"shuffle the cards","cn":"好好洗牌"},
+      {"jp":"キレる〈俗語〉","en":"The number of young people who commit crimes as a result of sudden rage is growing.","cn":"沉不住气而犯罪的年轻人在增多"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"しみがつく","en":"get a stain on ...","cn":"沾上污垢","rel":"⊙しみをつける"},
+      {"jp":"窓ガラスに水滴がつく","en":"there is condensation on the window","cn":"玻璃窗上带着水滴"},
+      {"jp":"利子がつく","en":"yield interest","cn":"带利息"},
+      {"jp":"身につく","en":"master","cn":"学会、身に付ける"},
+      {"jp":"力がつく","en":"gain skills","cn":"掌握能力","rel":"⊙力をつける"},
+      {"jp":"差がつく","en":"pull ahead","cn":"有差距","rel":"⊙差をつける"},
+      {"jp":"見当がつく","en":"guess","cn":"能预测到","rel":"⊙見当をつける"},
+      {"jp":"めどがつく","en":"there is hope for","cn":"有希望","rel":"⊙めどをつける"},
+      {"jp":"決心がつく","en":"make a decision","cn":"下定决心","rel":"⊙決心する"},
+      {"jp":"服ににおいがつく","en":"my clothes pick up an odour","cn":"衣服上有味道"},
+      {"jp":"折り目をつける","en":"put a crease in ...","cn":"折上痕迹","rel":"⊙折り目がつく"},
+      {"jp":"味をつける","en":"flavour ...","cn":"调味","rel":"⊙味がつく"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"ボールが当たる","en":"the ball hit ...","cn":"球击中了","rel":"⊙ボールを当てる"},
+      {"jp":"答えが当たる","en":"get the right answer","cn":"答案正确","rel":"⊙答えを当てる"},
+      {"jp":"宝くじが当たる","en":"win a lottery","cn":"中彩票"},
+      {"jp":"日が当たる","en":"get sun","cn":"晒太阳","rel":"⊙日を当てる"},
+      {"jp":"額に手を当てる","en":"put your hand on your forehead","cn":"把手放在额头"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.111",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"電池が（a. 切れた　b. つかない）から、新しいのに換えよう。"},
+        {"n":2,"q":"これと同じような問題が出ると思ったのに、予想が（a. つかなかった　b. 当たらなかった）。"},
+        {"n":3,"q":"オリンピックまであと一週間（a. を切った　b. ついた）。"},
+        {"n":4,"q":"2位とはずいぶん差を（a. 切って　b. つけて）、優勝した。"},
+        {"n":5,"q":"アイロンでズボンに折り目を（a. つけよう　b. 当てよう）。"},
+        {"n":6,"q":"畳の上に長い間座っていたら、しびれが（a. ついた　b. 切れた）。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"私の身長は170センチ（　　）少し（　　）。","opts":["を／つきます","に／つきます","を／切ります","に／切ります"]},
+        {"n":8,"q":"彼に結婚を申し込まれているが、なかなか決心が（　　）。","opts":["つかない","つけない","きりない","きれない"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②b ③a ④b ⑤a ⑥b　Ⅱ：⑦3 ⑧1"
+  },
+  "hitokoto": "留学する決心がつきましたか。"
+}

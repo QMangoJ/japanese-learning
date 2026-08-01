@@ -1,0 +1,63 @@
+{
+  "week": 7, "day": 3, "title": "意味がたくさんある言葉③", "title_cn": "多义词③", "title_en": "Words which have many meanings ③",
+  "sections": [
+    {"type":"words","heading":"意味がたくさんあるイ形容詞","items":[
+      {"jp":"軽い（⇔重い）けが","en":"a slight injury","cn":"轻伤"},
+      {"jp":"台風の被害は軽かった（⇔大きかった）。","en":"The typhoon damage was minimal.","cn":"台风受灾程度很轻"},
+      {"jp":"軽く（⇔激しく）運動する","en":"do some light exercise","cn":"轻微运动"},
+      {"jp":"軽い（⇔重い）罪","en":"a minor offence","cn":"轻罪"},
+      {"jp":"試験が終わって気持ちが軽く（⇔重く）なった。","en":"I felt happy & cheerful as the exam was over.","cn":"考试结束，心情轻松了"},
+      {"jp":"息子が就職して親の負担が軽く（⇔重く）なった。","en":"His parents' financial burden has become lighter as he has started working.","cn":"儿子就职，父母的负担变轻了"},
+      {"jp":"口が軽い（⇔かたい）","en":"can't keep a secret","cn":"嘴巴不严"},
+      {"jp":"軽い（＝簡単な）気持ちで引き受ける","en":"accept ... without much thinking","cn":"放松的心情接受"},
+      {"jp":"マッサージで体が軽く（⇔重く）なる","en":"feel refreshed after the massage","cn":"通过按摩身体变轻松了"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"暗い夜道を歩く","en":"walk on a dark road at night","cn":"在昏暗的夜路上走路"},
+      {"jp":"暗い（⇔明るい）色のシャツ","en":"a dark coloured shirt","cn":"暗色的衣衫"},
+      {"jp":"暗い（⇔明るい）声で話す","en":"speak with a low sad voice","cn":"用忧郁的声音说话"},
+      {"jp":"将来の見通しは暗い（⇔明るい）。","en":"The outlook for the future is dim.","cn":"前途黯淡，渺茫"},
+      {"jp":"彼女には暗い（⇔明るい）過去がある。","en":"She does not want to talk about her sad past.","cn":"她有阴暗的过去"},
+      {"jp":"最近の学生は政治に暗い（⇔明るい）。","en":"Students these days know very little about politics.","cn":"最近的学生不熟悉政治"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"高い技術","en":"high level technology","cn":"高技术"},
+      {"jp":"芸術への関心が高い（⇔低い）","en":"be very interested in art","cn":"对艺术关心程度高"},
+      {"jp":"理想が高い（⇔低い）","en":"aim high","cn":"理想高"},
+      {"jp":"鼻が高い（＝自慢だ）","en":"be proud of","cn":"鼻高气昂"},
+      {"jp":"プライドが高い","en":"be very proud","cn":"自尊心强"},
+      {"jp":"格式が高いホテル","en":"a high class hotel","cn":"规格高的酒店"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"ベルトがきつい（⇔ゆるい）","en":"the belt is too tight","cn":"腰带紧"},
+      {"jp":"きつい（＝つらい／厳しい）けいこ","en":"very hard training","cn":"严格的训练"},
+      {"jp":"早起きはきつい（＝つらい）。","en":"It is very difficult to get up early in the morning.","cn":"早起太难受"},
+      {"jp":"きつく（＝厳しく）注意する","en":"give someone a severe scolding","cn":"严厉整肃"},
+      {"jp":"この旅行の日程はきつい（⇔余裕がある）。","en":"The trip itinerary is tight.","cn":"这旅行的日程很紧张"},
+      {"jp":"妻はきつい（＝気が強い）性格の女性だ。","en":"My wife has a very strong personality.","cn":"妻子是性格刚强的女性"},
+      {"jp":"びんのふたがきつくて（⇔ゆるくて）開かない。","en":"The lid is too tight to open.","cn":"瓶子盖太紧，打不开"},
+      {"jp":"今日は日差しがきつい（＝強い）。","en":"The sun is beaming today.","cn":"今天的日照太强"},
+      {"jp":"きつい（＝強い／⇔軽い）酒","en":"hard liquor","cn":"烈酒"},
+      {"jp":"目つきがきつい（＝するどい）","en":"a stern look","cn":"眼神严厉"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.115",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"夏の日差しは（a. 暗い　b. きつい）。"},
+        {"n":2,"q":"何度も遅刻しているので、先生に、（a. きつく　b. つらく）しかられた。"},
+        {"n":3,"q":"彼女には、だれにも言えない（a. 暗い　b. きつい）過去がある。"},
+        {"n":4,"q":"この日本酒、（a. 軽い　b. きつい）なあ。たくさんは飲めないよ。"},
+        {"n":5,"q":"息子がいい大学に入って、（a. 鼻　b. 頭）が高い。"},
+        {"n":6,"q":"私は、海外に長く暮らしていたので、日本の経済の問題には（a. 暗い　b. きつい）。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"このホテルはとても格式が（　　）、宿泊費も相当かかる。","opts":["きつく","重く","強く","高く"]},
+        {"n":8,"q":"最近の若者は、政治への関心が（　　）。","opts":["軽い","低い","重い","ひどい"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②a ③a ④b ⑤a ⑥a　Ⅱ：⑦4 ⑧2"
+  },
+  "hitokoto": "親の負担を軽くしましょう。"
+}
