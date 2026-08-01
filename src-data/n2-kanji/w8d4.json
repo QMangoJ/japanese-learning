@@ -1,0 +1,89 @@
+{
+  "week": 8, "day": 4, "theme": "しる", "theme_cn": "知道", "theme_en": "Know",
+  "title": "記事①", "title_cn": "报道①", "title_en": "Articles ①",
+  "dialog": {"lines": ["日A首脳会談……様々な問題を抱えた両国首脳は、双方の意見を尊重し協力し合うことで合意した。", "解雇は不当　AさんはB社を訴える　B社社員Aさんは3週間の病気休暇をとって出社すると解雇されていた。これを法律で禁止されている不当解雇にあたるとし、……", "B社スト決行　〇月×日、B社の従業員50人が、雇用条件の改善を要求してストライキを決行、現在も続いている。"]},
+  "kanji": [
+    {"n":694,"char":"脳","strokes":11,"readings":["ノウ"],"words":[
+      {"jp":"頭脳","reading":"ずのう","en":"a brain, intellect","cn":"头脑"},
+      {"jp":"首脳","reading":"しゅのう","en":"head, brains (of a group of people)","cn":"领导人"}
+    ]},
+    {"n":695,"char":"抱","strokes":8,"readings":["だ-く","いだ-く","かか-える"],"words":[
+      {"jp":"抱く","reading":"だく","en":"embrace, hold","cn":"抱"},
+      {"jp":"抱く","reading":"いだく","en":"embrace, hold","cn":"怀有、抱"},
+      {"jp":"抱える","reading":"かかえる","en":"hold, have (a responsibility/problem)","cn":"抱、夹、承担"}
+    ]},
+    {"n":696,"char":"双","strokes":4,"readings":["ソウ","ふた"],"words":[
+      {"jp":"双方","reading":"そうほう","en":"both","cn":"双方"},
+      {"jp":"双子","reading":"ふたご","en":"twins","cn":"双胞胎"}
+    ]},
+    {"n":697,"char":"尊","strokes":12,"readings":["ソン"],"words":[
+      {"jp":"尊重","reading":"そんちょう","en":"respect, esteem","cn":"尊重"},
+      {"jp":"尊敬","reading":"そんけい","en":"respect, esteem","cn":"尊敬"}
+    ]},
+    {"n":698,"char":"雇","strokes":12,"readings":["コ","やと-う"],"words":[
+      {"jp":"雇用","reading":"こよう","en":"employment (long term), hire","cn":"雇用"},
+      {"jp":"雇う","reading":"やとう","en":"employ, hire","cn":"雇用"},
+      {"jp":"解雇","reading":"かいこ","en":"a dismissal","cn":"解雇"}
+    ]},
+    {"n":699,"char":"条","strokes":7,"readings":["ジョウ"],"words":[
+      {"jp":"条件","reading":"じょうけん","en":"conditions, terms","cn":"条件"},
+      {"jp":"条約","reading":"じょうやく","en":"a treaty","cn":"条约"}
+    ]},
+    {"n":700,"char":"善","strokes":12,"readings":["ゼン"],"words":[
+      {"jp":"改善","reading":"かいぜん","en":"an improvement","cn":"改善"},
+      {"jp":"親善","reading":"しんぜん","en":"friendship, goodwill","cn":"亲善"},
+      {"jp":"善悪","reading":"ぜんあく","en":"good and evil, right and wrong","cn":"善恶"}
+    ]},
+    {"n":701,"char":"律","strokes":9,"readings":["リツ"],"words":[
+      {"jp":"法律","reading":"ほうりつ","en":"law, legislation","cn":"法律"},
+      {"jp":"規律","reading":"きりつ","en":"order, discipline, rule","cn":"纪律"}
+    ]},
+    {"n":702,"char":"勢","strokes":13,"readings":["セイ","いきお-い"],"words":[
+      {"jp":"情勢","reading":"じょうせい","en":"condition, situation","cn":"形势"},
+      {"jp":"姿勢","reading":"しせい","en":"posture, attitude","cn":"姿势"},
+      {"jp":"大勢","reading":"おおぜい","en":"a crowd, a great number of people","cn":"许多人"},
+      {"jp":"勢い","reading":"いきおい","en":"momentum, force, might","cn":"气势、气魄"}
+    ]},
+    {"n":703,"char":"怖","strokes":8,"readings":["フ","こわ-い"],"words":[
+      {"jp":"恐怖","reading":"きょうふ","en":"fear","cn":"恐怖"},
+      {"jp":"怖い","reading":"こわい","en":"scary","cn":"可怕"}
+    ]},
+    {"n":704,"char":"荒","strokes":9,"readings":["あら-い","あ-れる","あ-らす"],"words":[
+      {"jp":"荒い","reading":"あらい","en":"rough, rude, wild","cn":"粗暴"},
+      {"jp":"荒らす","reading":"あらす","en":"devastate, damage","cn":"使…荒废、破坏"},
+      {"jp":"荒れる","reading":"あれる","en":"be stormy, be rough","cn":"荒废、粗糙"}
+    ]},
+    {"n":705,"char":"耕","strokes":10,"readings":["コウ","たがや-す"],"words":[
+      {"jp":"耕地","reading":"こうち","en":"arable land","cn":"耕地"},
+      {"jp":"耕す","reading":"たがやす","en":"farm, till, cultivate","cn":"耕作、耕田耕地"},
+      {"jp":"休耕地","reading":"きゅうこうち","en":"land out of cultivation","cn":"休耕地"}
+    ]},
+    {"n":706,"char":"景","strokes":12,"readings":["ケイ"],"words":[
+      {"jp":"風景","reading":"ふうけい","en":"scenery","cn":"风景"},
+      {"jp":"景気","reading":"けいき","en":"business climate/condition","cn":"景气"},
+      {"jp":"光景","reading":"こうけい","en":"a scene, spectacle","cn":"光景"},
+      {"jp":"景色","reading":"けしき","en":"a scene, landscape","cn":"景色"}
+    ]},
+    {"n":707,"char":"掘","strokes":11,"readings":["ほ-る"],"words":[
+      {"jp":"掘る","reading":"ほる","en":"dig","cn":"挖"},
+      {"jp":"掘り返す","reading":"ほりかえす","en":"dig up (something buried)","cn":"挖出、挖掘"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"国際（a. 親善　b. 改善）を目的とした試合が行われる。"},
+        {"n":2,"q":"多少（a. 条件　b. 尊重）が悪くても、雇ってほしいと思っている。"},
+        {"n":3,"q":"あの双子は兄弟そろって素晴らしい（a. 頭脳　b. 首脳）を持っている。"},
+        {"n":4,"q":"両国はさまざまな問題を（a. 抱いて　b. 抱えて）いる。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"犬が庭の土を（a. 埋めて　b. 掘って）何かを隠した。"},
+        {"n":6,"q":"この馬は気が（a. 怖い　b. 荒い）。"},
+        {"n":7,"q":"優勝したチームは今回とても（a. 勢い　b. 景気）があった。"},
+        {"n":8,"q":"寮では（a. 規律　b. 法律）正しい生活をしている。"}
+      ]}
+    ],
+    "answers": "左：①a ②a ③a ④b／右：①b ②b ③a ④a"
+  }
+}

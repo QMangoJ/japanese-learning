@@ -1,0 +1,83 @@
+{
+  "week": 8, "day": 5, "theme": "しる", "theme_cn": "知道", "theme_en": "Know",
+  "title": "記事②", "title_cn": "报道②", "title_en": "Articles ②",
+  "dialog": {"lines": ["日A関係改善へ第一歩　森下首相来月訪A　森下首相はA国との関係改善を図るため、来月A国を訪問し、〇〇首相と直接会談することを決定した。……対A政策に関して首相に批判的な立場をとっていた村木外務大臣は、「賢明で勇気ある決断に敬意を表したい」と評価した。", "似顔絵でひったくり犯人捕まる　十日午前、山川駅付近の路上で中村しのさん(70)がひったくりにあったが、一緒にいた孫娘のさやかちゃん(5)が犯人の顔をよく覚えており、「毛糸の帽子をかぶっていた」と話した。山川警察署はさやかちゃんの話をもとに似顔絵を作成し、これが犯人捕まりにつながった。速捕された山本勇容疑者(21)は遊ぶ金欲しさにやったと自供している。"]},
+  "kanji": [
+    {"n":708,"char":"批","strokes":7,"readings":["ヒ"],"words":[
+      {"jp":"批判","reading":"ひはん","en":"a criticism, judgment","cn":"批判"},
+      {"jp":"批評","reading":"ひひょう","en":"a criticism, review, commentary","cn":"批评"}
+    ]},
+    {"n":709,"char":"判","strokes":7,"readings":["ハン","バン"],"words":[
+      {"jp":"判断","reading":"はんだん","en":"judgment, decision","cn":"判断"},
+      {"jp":"裁判","reading":"さいばん","en":"trial","cn":"裁判"},
+      {"jp":"評判","reading":"ひょうばん","en":"fame, reputation","cn":"评论、评判"}
+    ]},
+    {"n":710,"char":"臣","strokes":7,"readings":["ジン"],"words":[
+      {"jp":"大臣","reading":"だいじん","en":"a cabinet minister","cn":"大臣、长官"},
+      {"jp":"外務大臣","reading":"がいむだいじん","en":"Minister of Foreign Affairs","cn":"外务大臣"},
+      {"jp":"総理大臣","reading":"そうりだいじん","en":"Prime Minister","cn":"总理大臣"}
+    ]},
+    {"n":711,"char":"賢","strokes":16,"readings":["ケン","かしこ-い"],"words":[
+      {"jp":"賢明(な)","reading":"けんめい","en":"wisdom, prudence","cn":"贤明"},
+      {"jp":"賢い","reading":"かしこい","en":"wise, clever, smart","cn":"聪明的"}
+    ]},
+    {"n":712,"char":"勇","strokes":9,"readings":["ユウ","いさ-む"],"words":[
+      {"jp":"勇気","reading":"ゆうき","en":"courage, bravery","cn":"勇气"},
+      {"jp":"勇ましい","reading":"いさましい","en":"brave, valiant","cn":"勇敢的"}
+    ]},
+    {"n":713,"char":"敬","strokes":12,"readings":["ケイ","うやま-う"],"words":[
+      {"jp":"敬意","reading":"けいい","en":"respect, honor","cn":"敬意"},
+      {"jp":"敬う","reading":"うやまう","en":"show respect, honor","cn":"尊敬"},
+      {"jp":"敬語","reading":"けいご","en":"honorific style of speech","cn":"敬语"}
+    ]},
+    {"n":714,"char":"評","strokes":12,"readings":["ヒョウ"],"words":[
+      {"jp":"評価","reading":"ひょうか","en":"valuation, estimation","cn":"评价"},
+      {"jp":"評論","reading":"ひょうろん","en":"a criticism, critique","cn":"评论(的文章)"}
+    ]},
+    {"n":715,"char":"似","strokes":7,"readings":["に-る"],"words":[
+      {"jp":"似る","reading":"にる","en":"resemble","cn":"像、相似"},
+      {"jp":"似顔絵","reading":"にがおえ","en":"a portrait","cn":"肖像画"},
+      {"jp":"似合う","reading":"にあう","en":"suit, match","cn":"相称、合适"}
+    ]},
+    {"n":716,"char":"犯","strokes":5,"readings":["ハン","おか-す"],"words":[
+      {"jp":"犯人","reading":"はんにん","en":"an offender, criminal","cn":"犯人"},
+      {"jp":"犯す","reading":"おかす","en":"commit, perpetrate","cn":"犯"},
+      {"jp":"犯罪","reading":"はんざい","en":"a crime","cn":"犯罪"}
+    ]},
+    {"n":717,"char":"孫","strokes":10,"readings":["ソン","まご"],"words":[
+      {"jp":"子孫","reading":"しそん","en":"descendants, posterity","cn":"子孙"},
+      {"jp":"孫","reading":"まご","en":"a grandchild","cn":"孙子"}
+    ]},
+    {"n":718,"char":"娘","strokes":10,"readings":["むすめ"],"words":[
+      {"jp":"娘","reading":"むすめ","en":"a daughter","cn":"女儿"},
+      {"jp":"孫娘","reading":"まごむすめ","en":"a granddaughter","cn":"孙女"}
+    ]},
+    {"n":719,"char":"覚","strokes":12,"readings":["カク","おぼ-える","さ-ます","さ-める"],"words":[
+      {"jp":"感覚","reading":"かんかく","en":"a sense, sensation","cn":"感觉"},
+      {"jp":"覚める","reading":"さめる","en":"wake up","cn":"睡醒"},
+      {"jp":"覚える","reading":"おぼえる","en":"remember","cn":"记住、记忆"},
+      {"jp":"目覚まし時計","reading":"めざましどけい","en":"an alarm clock","cn":"闹钟"},
+      {"jp":"覚ます","reading":"さます","en":"awaken","cn":"叫醒"}
+    ]},
+    {"n":720,"char":"帽","strokes":12,"readings":["ボウ"],"words":[
+      {"jp":"帽子","reading":"ぼうし","en":"a hat","cn":"帽子"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"あの店は安くておいしいと（a. 評価　b. 評判）だ。"},
+        {"n":2,"q":"人間だから、（a. 賢い　b. 勇ましい）人でも判断を誤ることがある。"},
+        {"n":3,"q":"（a. 敬語　b. 敬意）を正しく使うのはなかなか難しい。"},
+        {"n":4,"q":"大臣の発言を国民は（a. 批評　b. 批判）的に受けとめた。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"その帽子、あなたによく（a. 似て　b. 似合って）いますよ。"},
+        {"n":6,"q":"朝早く目が（a. 覚めた　b. 覚ました）のに、起きられなかった。"},
+        {"n":7,"q":"あの娘さんは有名な武士の（a. 祖先　b. 子孫）だそうです。"},
+        {"n":8,"q":"（a. 犯人　b. 判人）の顔や服装を覚えていますか。"}
+      ]}
+    ],
+    "answers": "左：①b ②a ③a ④b／右：①b ②a ③b ④a"
+  }
+}

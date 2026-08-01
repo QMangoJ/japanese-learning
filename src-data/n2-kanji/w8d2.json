@@ -1,0 +1,87 @@
+{
+  "week": 8, "day": 2, "theme": "しる", "theme_cn": "知道", "theme_en": "Know",
+  "title": "見出し①", "title_cn": "标题①", "title_en": "Headlines ①",
+  "kanji": [
+    {"n":666,"char":"型","strokes":9,"readings":["ケイ","かた"],"words":[
+      {"jp":"典型的(な)","reading":"てんけいてき","en":"typical, model, ideal","cn":"典型的"},
+      {"jp":"大型","reading":"おおがた","en":"large, jumbo","cn":"大型"},
+      {"jp":"〜型","reading":"がた","en":"model, style, shape","cn":"~型"}
+    ]},
+    {"n":667,"char":"欧","strokes":8,"readings":["オウ"],"words":[
+      {"jp":"欧米","reading":"おうべい","en":"Europe and America, the West","cn":"欧美"},
+      {"jp":"欧州","reading":"おうしゅう","en":"Europe","cn":"欧洲"}
+    ]},
+    {"n":668,"char":"労","strokes":7,"readings":["ロウ"],"words":[
+      {"jp":"苦労","reading":"くろう","en":"troubles, hardships","cn":"辛苦、操心"},
+      {"jp":"ご苦労様","reading":"ごくろうさま","en":"Thank you very much (said by a senior person to someone junior for doing a job)","cn":"您辛苦了"},
+      {"jp":"厚生労働省","reading":"こうせいろうどうしょう","en":"Ministry of Health, Labour and Welfare","cn":"福利劳工部"}
+    ]},
+    {"n":669,"char":"兆","strokes":6,"readings":["チョウ"],"words":[
+      {"jp":"兆","reading":"ちょう","en":"sign, omen; trillion (American), billion (British)","cn":"(数)兆、万亿"}
+    ]},
+    {"n":670,"char":"貿","strokes":12,"readings":["ボウ"],"words":[
+      {"jp":"貿易","reading":"ぼうえき","en":"trade","cn":"贸易"}
+    ]},
+    {"n":671,"char":"易","strokes":8,"readings":["イ","エキ","やさ-しい"],"words":[
+      {"jp":"容易","reading":"ようい","en":"easy, plain, simple","cn":"容易"},
+      {"jp":"貿易","reading":"ぼうえき","en":"trade","cn":"贸易"},
+      {"jp":"安易(な)","reading":"あんい","en":"easy-going","cn":"安逸"},
+      {"jp":"易しい","reading":"やさしい","en":"easy, plain, simple","cn":"容易"}
+    ]},
+    {"n":672,"char":"農","strokes":13,"readings":["ノウ"],"words":[
+      {"jp":"農業","reading":"のうぎょう","en":"agriculture","cn":"农业"},
+      {"jp":"農産物","reading":"のうさんぶつ","en":"agricultural produce","cn":"农产品"},
+      {"jp":"農家","reading":"のうか","en":"a farmer, farm family","cn":"农户"}
+    ]},
+    {"n":673,"char":"命","strokes":8,"readings":["メイ","いのち"],"words":[
+      {"jp":"命じる","reading":"めいじる","en":"order, command","cn":"命令"},
+      {"jp":"生命","reading":"せいめい","en":"life, existence","cn":"生命"},
+      {"jp":"一生懸命","reading":"いっしょうけんめい","en":"very hard, with utmost effort","cn":"拼命"},
+      {"jp":"命","reading":"いのち","en":"life","cn":"生命、命"}
+    ]},
+    {"n":674,"char":"令","strokes":5,"readings":["レイ"],"words":[
+      {"jp":"命令","reading":"めいれい","en":"an order, command","cn":"命令"}
+    ]},
+    {"n":675,"char":"被","strokes":10,"readings":["ヒ"],"words":[
+      {"jp":"被害","reading":"ひがい","en":"damage","cn":"被害"},
+      {"jp":"被害者","reading":"ひがいしゃ","en":"a victim","cn":"受害者"},
+      {"jp":"被告","reading":"ひこく","en":"a defendant","cn":"被告"}
+    ]},
+    {"n":676,"char":"害","strokes":10,"readings":["ガイ"],"words":[
+      {"jp":"害","reading":"がい","en":"injury, harm, damage","cn":"害、损害"},
+      {"jp":"公害","reading":"こうがい","en":"public nuisance, pollution","cn":"公害"},
+      {"jp":"水害","reading":"すいがい","en":"water damage, flood disaster","cn":"水灾"},
+      {"jp":"殺害","reading":"さつがい","en":"a murder","cn":"杀害"}
+    ]},
+    {"n":677,"char":"権","strokes":15,"readings":["ケン"],"words":[
+      {"jp":"権利","reading":"けんり","en":"right, privilege","cn":"权利"},
+      {"jp":"人権","reading":"じんけん","en":"human rights, civil liberties","cn":"人权"},
+      {"jp":"〜権","reading":"けん","en":"authority, right","cn":"~权力、~权"}
+    ]},
+    {"n":678,"char":"億","strokes":15,"readings":["オク"],"words":[
+      {"jp":"億","reading":"おく","en":"a hundred million","cn":"亿"}
+    ]},
+    {"n":679,"char":"星","strokes":9,"readings":["セイ","ほし"],"words":[
+      {"jp":"星座","reading":"せいざ","en":"a constellation","cn":"星座"},
+      {"jp":"星","reading":"ほし","en":"a star","cn":"星"},
+      {"jp":"星印","reading":"ほしじるし","en":"a star, asterisk","cn":"星的符号"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"文部科学省の前年度予算は6（a. 兆　b. 逃）円を超えている。"},
+        {"n":2,"q":"あなたの国と日本は昔から（a. 貿易　b. 容易）をしています。"},
+        {"n":3,"q":"まず、（a. 安い　b. 易しい）問題から解いてみましょう。"},
+        {"n":4,"q":"私のふるさとは（a. 農業　b. 農家）がさかんです。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"大型台風により、各地で（a. 水害　b. 公害）などの被害が出ています。"},
+        {"n":6,"q":"被害者の（a. 人権　b. 苦労）を守ろう。"},
+        {"n":7,"q":"一度しかない人生、（a. 命　b. 令）は大切にしましょう。"},
+        {"n":8,"q":"日本の人口は約1（a. 奥　b. 億）3千万人です。"}
+      ]}
+    ],
+    "answers": "左：①a ②a ③b ④a／右：①a ②a ③a ④b"
+  }
+}

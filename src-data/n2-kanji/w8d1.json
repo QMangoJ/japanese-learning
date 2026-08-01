@@ -1,0 +1,97 @@
+{
+  "week": 8, "day": 1, "theme": "しる", "theme_cn": "知道", "theme_en": "Know",
+  "title": "速報", "title_cn": "快报", "title_en": "News Flash",
+  "dialog": {"lines": ["〇時〇分北九州でやや強い地震がありました。各地の震度は……。この地震による津波の心配はありません。", "××強盗殺人事件で逃走中の〇〇容疑者が逮捕されました。", "〇月〇日より連絡を絶っていた漁船が〇時〇分頃××で発見されました。"]},
+  "kanji": [
+    {"n":652,"char":"州","strokes":6,"readings":["シュウ"],"words":[
+      {"jp":"本州","reading":"ほんしゅう","en":"Honshu (main island of Japan)","cn":"本州"},
+      {"jp":"〜州","reading":"しゅう","en":"a state (e.g. the state of Texas)","cn":"~州"},
+      {"jp":"九州","reading":"きゅうしゅう","en":"Kyushu","cn":"九州"}
+    ]},
+    {"n":653,"char":"波","strokes":8,"readings":["ハ","なみ"],"words":[
+      {"jp":"電波","reading":"でんぱ","en":"an electromagnetic wave","cn":"电波"},
+      {"jp":"波","reading":"なみ","en":"a wave","cn":"波涛"},
+      {"jp":"津波","reading":"つなみ","en":"a tsunami","cn":"海啸"}
+    ]},
+    {"n":654,"char":"盗","strokes":11,"readings":["トウ","ぬす-む"],"words":[
+      {"jp":"強盗","reading":"ごうとう","en":"a robbery","cn":"强盗"},
+      {"jp":"盗む","reading":"ぬすむ","en":"steal","cn":"盗窃、欺瞒"},
+      {"jp":"盗難","reading":"とうなん","en":"a theft","cn":"被盗、失窃"}
+    ]},
+    {"n":655,"char":"逃","strokes":9,"readings":["トウ","に-げる","に-がす","のが-す"],"words":[
+      {"jp":"逃走","reading":"とうそう","en":"an escape, flight","cn":"逃跑"},
+      {"jp":"逃がす","reading":"にがす","en":"release, let go","cn":"放跑、放走"},
+      {"jp":"逃げる","reading":"にげる","en":"escape","cn":"逃走、逃避"},
+      {"jp":"逃す","reading":"のがす","en":"let slip","cn":"错过、放过"}
+    ]},
+    {"n":656,"char":"疑","strokes":14,"readings":["ギ","うたが-う"],"words":[
+      {"jp":"疑問","reading":"ぎもん","en":"question, doubt","cn":"疑问"},
+      {"jp":"疑う","reading":"うたがう","en":"doubt, suspect","cn":"怀疑、疑惑"},
+      {"jp":"容疑","reading":"ようぎ","en":"suspect (criminal suspicion)","cn":"嫌疑"}
+    ]},
+    {"n":657,"char":"捕","strokes":10,"readings":["ホ","つか-まる","つか-まえる","と-る","と-らえる"],"words":[
+      {"jp":"逮捕","reading":"たいほ","en":"arrest, capture","cn":"逮捕"},
+      {"jp":"捕まる","reading":"つかまる","en":"be arrested, be caught","cn":"被捉拿、抓住"},
+      {"jp":"捕まえる","reading":"つかまえる","en":"arrest/catch","cn":"抓住、逮捕"},
+      {"jp":"捕る","reading":"とる","en":"take, catch (fish)","cn":"捕、捉"},
+      {"jp":"捕らえる","reading":"とらえる","en":"seize, grasp, arrest","cn":"捉拿、捕获"}
+    ]},
+    {"n":658,"char":"絶","strokes":12,"readings":["ゼツ","た-える","た-つ"],"words":[
+      {"jp":"絶対(に)","reading":"ぜったい","en":"absolutely, definitely","cn":"绝对、一定"},
+      {"jp":"絶つ","reading":"たつ","en":"sever, cut off, suppress","cn":"断绝、终止"},
+      {"jp":"絶えず","reading":"たえず","en":"constantly","cn":"不断地、连续不断地"}
+    ]},
+    {"n":659,"char":"党","strokes":10,"readings":["トウ"],"words":[
+      {"jp":"政党","reading":"せいとう","en":"a political party","cn":"政党"},
+      {"jp":"与党","reading":"よとう","en":"the ruling party","cn":"执政党"},
+      {"jp":"〜党","reading":"とう","en":"a party (political)","cn":"~党"},
+      {"jp":"野党","reading":"やとう","en":"the opposition party","cn":"在野党"}
+    ]},
+    {"n":660,"char":"補","strokes":12,"readings":["ホ","おぎな-う"],"words":[
+      {"jp":"候補(者)","reading":"こうほ","en":"a candidate","cn":"候补(者)"},
+      {"jp":"補助","reading":"ほじょ","en":"assistance, support","cn":"补助、辅助"},
+      {"jp":"補足","reading":"ほそく","en":"supplement, complement","cn":"补充、补足"},
+      {"jp":"補う","reading":"おぎなう","en":"compensate for, supplement","cn":"补充、补偿"}
+    ]},
+    {"n":661,"char":"童","strokes":12,"readings":["ドウ"],"words":[
+      {"jp":"児童","reading":"じどう","en":"children, juvenile","cn":"儿童"},
+      {"jp":"童話","reading":"どうわ","en":"a fairy tale","cn":"童话"}
+    ]},
+    {"n":662,"char":"爆","strokes":19,"readings":["バク"],"words":[
+      {"jp":"爆発","reading":"ばくはつ","en":"an explosion","cn":"爆炸、爆发"}
+    ]},
+    {"n":663,"char":"暴","strokes":15,"readings":["ボウ","あば-れる"],"words":[
+      {"jp":"暴走","reading":"ぼうそう","en":"running wildly","cn":"狂奔"},
+      {"jp":"乱暴(な)","reading":"らんぼう","en":"rude, violent","cn":"蛮横、粗暴"},
+      {"jp":"暴れる","reading":"あばれる","en":"act violently","cn":"胡闹、乱闹"}
+    ]},
+    {"n":664,"char":"亡","strokes":3,"readings":["ボウ","な-い"],"words":[
+      {"jp":"死亡","reading":"しぼう","en":"death","cn":"死亡"},
+      {"jp":"亡くなる","reading":"なくなる","en":"die","cn":"死去"},
+      {"jp":"亡くす","reading":"なくす","en":"lose someone","cn":"死去、丧失"}
+    ]},
+    {"n":665,"char":"罪","strokes":13,"readings":["ザイ","つみ"],"words":[
+      {"jp":"〜罪","reading":"ざい","en":"crime of...","cn":"~罪"},
+      {"jp":"有罪","reading":"ゆうざい","en":"guilty","cn":"有罪"},
+      {"jp":"無罪","reading":"むざい","en":"innocent","cn":"无罪"},
+      {"jp":"罪","reading":"つみ","en":"a crime","cn":"罪"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"猫がネズミを（a. 捕る　b. 捕まる）。"},
+        {"n":2,"q":"相手は（a. 電話　b. 電波）の届かない所にいるか、電源を切っている。"},
+        {"n":3,"q":"盗みの（a. 疑い　b. 疑問）をかけられる。"},
+        {"n":4,"q":"店長は（a. 絶えず　b. 絶えて）客や店員に気を配らねばならない。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"この健康補助食品はカルシウムを（a. 絶つ　b. 補う）のに最適です。"},
+        {"n":6,"q":"男が酒を飲んで居酒屋で（a. 逃げて　b. 暴れて）います。"},
+        {"n":7,"q":"私には支持（a. 政党　b. 政府）はないが、支持する候補者はいる。"},
+        {"n":8,"q":"昨夜、都心でガス（a. 爆発　b. 暴走）がありました。"}
+      ]}
+    ],
+    "answers": "左：①a ②b ③a ④a／右：①b ②b ③a ④a"
+  }
+}

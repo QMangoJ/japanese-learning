@@ -1,0 +1,85 @@
+{
+  "week": 8, "day": 6, "theme": "しる", "theme_cn": "知道", "theme_en": "Know",
+  "title": "記事③", "title_cn": "报道③", "title_en": "Articles ③",
+  "dialog": {"lines": ["環境大臣に中田氏　環境大臣に〇〇党の中田一郎氏が就任した。中田氏は地球温暖化防止問題について記者の質問に対し、「地球全体で取り組むべき問題であり、わが国も温室効果ガスの削減に努めなければならない」と語った。", "民間出身の長官に期待　社会保険庁長官には民間出身の里村氏が就任した。里村氏は「国民間より里村より子氏が就任した。里村氏は「国民の信頼を回復できるよう改革を進める」と述べた。", "ロボットと宇宙活動　宇宙機構が日本独自の長期ビジョン　宇宙航空研究開発機構(宇宙機構)は、十年後に有人宇宙機のロケットの打ち上げを実現、二十年後には宇宙を行き来できる再利用型宇宙船の開発を目指すと発表した。実現には技術面でも財政面でも課題が多く、各方面の理解と協力を求めていくとしている。……一方、〇〇研究所は、未経験の状況に対して自分で考えて腕や足を動かすというAI(人工知能)技術のうち実験結果を発表、人間型ロボットにまた一歩近づけた。"]},
+  "kanji": [
+    {"n":721,"char":"環","strokes":17,"readings":["カン"],"words":[
+      {"jp":"環境","reading":"かんきょう","en":"environment, circumstance","cn":"环境"},
+      {"jp":"環状線","reading":"かんじょうせん","en":"a belt line, loop line/road","cn":"(铁路、公路)环行线"}
+    ]},
+    {"n":722,"char":"境","strokes":14,"readings":["キョウ","さかい"],"words":[
+      {"jp":"境界","reading":"きょうかい","en":"a boundary","cn":"边界"},
+      {"jp":"境","reading":"さかい","en":"a border, boundary","cn":"分界"},
+      {"jp":"国境","reading":"こっきょう","en":"a national or state border","cn":"国境"},
+      {"jp":"県境","reading":"けんざかい","en":"a prefectural border","cn":"县境"}
+    ]},
+    {"n":723,"char":"減","strokes":12,"readings":["ゲン","へ-る","へ-らす"],"words":[
+      {"jp":"削減","reading":"さくげん","en":"a cut, reduction","cn":"削减"},
+      {"jp":"加減","reading":"かげん","en":"an adjustment, extent","cn":"加和减、情况"},
+      {"jp":"減る","reading":"へる","en":"decrease, reduce","cn":"减少"},
+      {"jp":"増減","reading":"ぞうげん","en":"increase and decrease","cn":"增减"},
+      {"jp":"減らす","reading":"へらす","en":"decrease","cn":"使…减少"}
+    ]},
+    {"n":724,"char":"努","strokes":7,"readings":["ド","つと-める"],"words":[
+      {"jp":"努力","reading":"どりょく","en":"effort","cn":"努力"},
+      {"jp":"努める","reading":"つとめる","en":"try","cn":"努力"}
+    ]},
+    {"n":725,"char":"庁","strokes":5,"readings":["チョウ"],"words":[
+      {"jp":"〜庁","reading":"ちょう","en":"suffix for government office, agency","cn":"~官厅、~厅"},
+      {"jp":"社会保険庁","reading":"しゃかいほけんちょう","en":"Social Insurance Agency","cn":"社会保险厅"},
+      {"jp":"県庁","reading":"けんちょう","en":"a prefectural office","cn":"县政府"}
+    ]},
+    {"n":726,"char":"官","strokes":8,"readings":["カン"],"words":[
+      {"jp":"長官","reading":"ちょうかん","en":"a director, chief","cn":"长官"},
+      {"jp":"警官","reading":"けいかん","en":"a police officer","cn":"警察"}
+    ]},
+    {"n":727,"char":"宙","strokes":8,"readings":["チュウ"],"words":[
+      {"jp":"宇宙","reading":"うちゅう","en":"the universe, outer space","cn":"宇宙"}
+    ]},
+    {"n":728,"char":"独","strokes":9,"readings":["ドク","ひと-り"],"words":[
+      {"jp":"独自","reading":"どくじ","en":"original, peculiar","cn":"独自"},
+      {"jp":"日独","reading":"にちどく","en":"Japan and Germany","cn":"日本和德国"},
+      {"jp":"独身","reading":"どくしん","en":"single, unmarried","cn":"单身"},
+      {"jp":"独り言","reading":"ひとりごと","en":"speaking oneself, a monologue","cn":"自言自语"}
+    ]},
+    {"n":729,"char":"技","strokes":7,"readings":["ギ","わざ"],"words":[
+      {"jp":"技術","reading":"ぎじゅつ","en":"a technique, technology, skill","cn":"技术"},
+      {"jp":"競技","reading":"きょうぎ","en":"a game, match, contest","cn":"运动比赛"},
+      {"jp":"技","reading":"わざ","en":"art, technique","cn":"技术、技艺"},
+      {"jp":"技師","reading":"ぎし","en":"an engineer, technician","cn":"技师"},
+      {"jp":"演技","reading":"えんぎ","en":"acting, performance","cn":"演技"}
+    ]},
+    {"n":730,"char":"政","strokes":9,"readings":["セイ"],"words":[
+      {"jp":"財政","reading":"ざいせい","en":"fiscal and financial affairs","cn":"财政"},
+      {"jp":"政党","reading":"せいとう","en":"a political party","cn":"政党"},
+      {"jp":"政治","reading":"せいじ","en":"politics, government","cn":"政治"},
+      {"jp":"政府","reading":"せいふ","en":"government, administration","cn":"政府"}
+    ]},
+    {"n":731,"char":"況","strokes":8,"readings":["キョウ"],"words":[
+      {"jp":"状況","reading":"じょうきょう","en":"a situation, circumstances","cn":"状况"},
+      {"jp":"不況","reading":"ふきょう","en":"recession, depression","cn":"不景气"}
+    ]},
+    {"n":732,"char":"腕","strokes":12,"readings":["ワン","うで"],"words":[
+      {"jp":"腕力","reading":"わんりょく","en":"physical strength","cn":"腕力"},
+      {"jp":"腕","reading":"うで","en":"arm","cn":"胳膊"},
+      {"jp":"腕前","reading":"うでまえ","en":"ability, skill","cn":"才干"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"この電車は（a. 境界線　b. 環状線）なので乗り越してもまた戻ってきます。"},
+        {"n":2,"q":"ボランティア活動に（a. 国境　b. 環境）はない。"},
+        {"n":3,"q":"これはこの町の人口の（a. 削減　b. 増減）を表したグラフです。"},
+        {"n":4,"q":"あの方は気象庁（a. 警官　b. 長官）です。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"柔道の色々な（a. 技　b. 枝）を習う。"},
+        {"n":6,"q":"（a. 不況　b. 財政）に負けずに景気回復に努めよう！"},
+        {"n":7,"q":"相撲は相撲でも指や（a. 腕　b. 碗）でする相撲もあります。"},
+        {"n":8,"q":"それは日本（a. 独身　b. 独自）の考え方だと思う。"}
+      ]}
+    ],
+    "answers": "左：①b ②a ③b ④b／右：①a ②a ③a ④b"
+  }
+}

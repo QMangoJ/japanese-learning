@@ -1,0 +1,94 @@
+{
+  "week": 8, "day": 3, "theme": "しる", "theme_cn": "知道", "theme_en": "Know",
+  "title": "見出し②", "title_cn": "标题②", "title_en": "Headlines ②",
+  "kanji": [
+    {"n":680,"char":"武","strokes":8,"readings":["ブ"],"words":[
+      {"jp":"武器","reading":"ぶき","en":"weapon, arms","cn":"武器"},
+      {"jp":"武士","reading":"ぶし","en":"a warrior, samurai","cn":"武士"},
+      {"jp":"武力","reading":"ぶりょく","en":"weapon or military power","cn":"武力"}
+    ]},
+    {"n":681,"char":"巨","strokes":5,"readings":["キョ"],"words":[
+      {"jp":"巨大","reading":"きょだい","en":"huge, gigantic","cn":"巨大"},
+      {"jp":"巨額","reading":"きょがく","en":"a great sum","cn":"巨额"}
+    ]},
+    {"n":682,"char":"競","strokes":20,"readings":["キョウ","ケイ","きそ-う"],"words":[
+      {"jp":"競争","reading":"きょうそう","en":"a competition, contest","cn":"竞争"},
+      {"jp":"競う","reading":"きそう","en":"emulate, compete with","cn":"竞争、竞赛"},
+      {"jp":"競馬","reading":"けいば","en":"horse racing","cn":"赛马赌博"}
+    ]},
+    {"n":683,"char":"敗","strokes":11,"readings":["ハイ","やぶ-れる"],"words":[
+      {"jp":"失敗","reading":"しっぱい","en":"a failure, mistake","cn":"失败、失误"},
+      {"jp":"敗れる","reading":"やぶれる","en":"be defeated","cn":"败、输、败于"},
+      {"jp":"連敗","reading":"れんぱい","en":"a series of defeats","cn":"连败"}
+    ]},
+    {"n":684,"char":"逆","strokes":9,"readings":["ギャク","さか-らう"],"words":[
+      {"jp":"逆","reading":"ぎゃく","en":"reverse, opposite","cn":"相反"},
+      {"jp":"逆さ","reading":"さかさ","en":"upside down, inversion","cn":"相反、颠倒"},
+      {"jp":"逆転","reading":"ぎゃくてん","en":"a (sudden) change, reversal","cn":"逆转、翻转"},
+      {"jp":"逆らう","reading":"さからう","en":"oppose, defy","cn":"违背、抗拒"}
+    ]},
+    {"n":685,"char":"勝","strokes":12,"readings":["ショウ","か-つ"],"words":[
+      {"jp":"優勝","reading":"ゆうしょう","en":"a victory, championship","cn":"优胜、优冠"},
+      {"jp":"勝敗","reading":"しょうはい","en":"victory or defeat","cn":"胜败"},
+      {"jp":"勝負","reading":"しょうぶ","en":"a match, contest, game","cn":"胜负、胜败"},
+      {"jp":"勝つ","reading":"かつ","en":"win","cn":"胜、赢"}
+    ]},
+    {"n":686,"char":"投","strokes":7,"readings":["トウ","な-げる"],"words":[
+      {"jp":"投手","reading":"とうしゅ","en":"a (baseball) pitcher","cn":"投手"},
+      {"jp":"投資","reading":"とうし","en":"an investment","cn":"投资"},
+      {"jp":"投書","reading":"とうしょ","en":"a letter to the editor","cn":"投稿"},
+      {"jp":"投げる","reading":"なげる","en":"throw","cn":"投、扔"}
+    ]},
+    {"n":687,"char":"軍","strokes":9,"readings":["グン"],"words":[
+      {"jp":"軍","reading":"ぐん","en":"army, troops","cn":"军、军队"},
+      {"jp":"軍隊","reading":"ぐんたい","en":"army, troops","cn":"军队"},
+      {"jp":"〜軍","reading":"ぐん","en":"suffix for military force","cn":"~军"}
+    ]},
+    {"n":688,"char":"兵","strokes":7,"readings":["ヘイ"],"words":[
+      {"jp":"兵士","reading":"へいし","en":"a soldier","cn":"兵士"},
+      {"jp":"兵隊","reading":"へいたい","en":"a soldier, sailor","cn":"军队、士兵"},
+      {"jp":"〜兵","reading":"へい","en":"suffix for soldier","cn":"~兵"}
+    ]},
+    {"n":689,"char":"捜","strokes":10,"readings":["ソウ","さが-す"],"words":[
+      {"jp":"捜査","reading":"そうさ","en":"a search, investigation","cn":"搜查"},
+      {"jp":"捜す","reading":"さがす","en":"search, seek","cn":"寻找"}
+    ]},
+    {"n":690,"char":"倒","strokes":10,"readings":["トウ","たお-れる","たお-す"],"words":[
+      {"jp":"転倒","reading":"てんとう","en":"falling down, upset, turn over","cn":"跌倒、颠倒"},
+      {"jp":"倒れる","reading":"たおれる","en":"collapse, break down","cn":"倒塌、倒下"},
+      {"jp":"面倒","reading":"めんどう","en":"①trouble, difficulty ②look after, take care of","cn":"①麻烦 ②照顾、照料"},
+      {"jp":"倒す","reading":"たおす","en":"throw down, beat","cn":"倒、弄倒"}
+    ]},
+    {"n":691,"char":"骨","strokes":10,"readings":["コツ","ほね"],"words":[
+      {"jp":"骨折","reading":"こっせつ","en":"a bone fracture","cn":"骨折"},
+      {"jp":"骨","reading":"ほね","en":"a bone","cn":"骨头、骨架"}
+    ]},
+    {"n":692,"char":"針","strokes":10,"readings":["シン","はり"],"words":[
+      {"jp":"方針","reading":"ほうしん","en":"a principle, policy","cn":"方针"},
+      {"jp":"針","reading":"はり","en":"a needle","cn":"针"},
+      {"jp":"針路","reading":"しんろ","en":"a course, direction","cn":"航路、前进方向"},
+      {"jp":"針金","reading":"はりがね","en":"a wire","cn":"铁丝"}
+    ]},
+    {"n":693,"char":"叫","strokes":6,"readings":["さけ-ぶ"],"words":[
+      {"jp":"叫び","reading":"さけび","en":"shout, scream","cn":"呼喊"},
+      {"jp":"叫ぶ","reading":"さけぶ","en":"shout, cry out","cn":"呼喊、喊叫"}
+    ]}
+  ],
+  "exercises": {
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":1,"q":"（a. 巨額　b. 巨大）魚がどこかの海岸で捕れたそうだ。"},
+        {"n":2,"q":"（a. 勝負　b. 競争）がつかず、試合を延長する。"},
+        {"n":3,"q":"新聞に意見を（a. 投書　b. 投資）する。"},
+        {"n":4,"q":"（a. 武士　b. 武力）ではなく、話し合いで解決したい。"}
+      ]},
+      {"type":"choice","instruction":"正しいほうに〇をつけ、文の漢字にひらがなで読みを書きなさい。","items":[
+        {"n":5,"q":"警察は事件の（a. 捜査　b. 針路）を進めている。"},
+        {"n":6,"q":"強風で傘の骨が（a. 折れた　b. 倒れた）。"},
+        {"n":7,"q":"救急車を（a. 叫んで　b. 呼んで）ください。"},
+        {"n":8,"q":"この魚は頭も（a. 針　b. 骨）も全部食べられます。"}
+      ]}
+    ],
+    "answers": "左：①b ②a ③a ④b／右：①a ②a ③b ④b"
+  }
+}
