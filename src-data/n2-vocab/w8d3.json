@@ -1,0 +1,64 @@
+{
+  "week": 8, "day": 3, "title": "よく使われる表現①", "title_cn": "常用的表达方式①", "title_en": "Frequently used expressions ①",
+  "sections": [
+    {"type":"words","heading":"体の名称を使った表現①","items":[
+      {"jp":"彼の日本語は目に見えて上達している。","en":"His Japanese is improving very fast.","cn":"他的日语有显著进步"},
+      {"jp":"環境問題に目を向けよう。","en":"Let's pay more attention to environmental problems.","cn":"让我们关注环境问题吧"},
+      {"jp":"歩き始めの幼児は目が離せない。","en":"You must keep an eye on the toddlers.","cn":"刚开始走路的幼儿，必须时刻盯着"},
+      {"jp":"目に付くところに置く（＝見える）","en":"put ... in a place where people will easily notice it","cn":"放到显眼的地方"},
+      {"jp":"甘いものに目がない","en":"has a sweet tooth","cn":"特别喜欢吃甜的"},
+      {"jp":"目が回るように忙しい","en":"extremely busy","cn":"忙得眼花缭乱"},
+      {"jp":"母の姿が目に浮かぶ","en":"my late mother comes to mind","cn":"妈妈的身影浮现在眼前"},
+      {"jp":"学生のレポートに目を通す","en":"go through the students' papers","cn":"浏览学生的报告"},
+      {"jp":"親の目を盗んで遊びに行く（＝隠れて）","en":"go and have a good time without your parents knowing","cn":"背着父母去玩"},
+      {"jp":"ひどい目にあう","en":"have a terrible experience","cn":"碰到霉运","rel":"⊙大変な目にあう／危険な目にあう have a dangerous experience 遇到危险"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"彼が結婚するといううわさを耳にした。","en":"I have gathered that he is getting married.","cn":"听传言说他要结婚了"},
+      {"jp":"欠点を言われて耳が痛い。","en":"It hurts me when I am reminded of my shortcomings.","cn":"听别人说自己的缺点会感觉刺耳"},
+      {"jp":"祖母は耳が遠い（＝耳がよく聞こえない）。","en":"My grandmother is hard of hearing.","cn":"祖母耳朵背"},
+      {"jp":"ちょっと耳を貸して。（＝聞いて）","en":"Let me tell you this!","cn":"先听我说，借用一下耳朵"},
+      {"jp":"そんなことを知っているとは、耳が早いね。","en":"You are on top of things if you already knew this!","cn":"竟然知道了这事，消息好灵通"},
+      {"jp":"事件のことを聞いて、耳を疑った。","en":"I couldn't believe it when I heard about the crime.","cn":"听说了那个事件，有点怀疑自己的耳朵"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"セールスマンは口がうまいので気をつけよう。","en":"Watch out for salesmen who are very good at flattery.","cn":"销售员能说会道，要小心"},
+      {"jp":"彼は口がかたいから信用できる。","en":"I can trust him to keep a secret.","cn":"他嘴严，信得过"},
+      {"jp":"彼は口が悪いけれど、やさしい。","en":"He has a sharp tongue but is actually kind.","cn":"他虽然说话难听，但心眼好"},
+      {"jp":"これは私の口に合わない。（＝好きな味じゃない）","en":"This is not to my taste.","cn":"这不合我的口味"},
+      {"jp":"口にする（＝食べる／話をする）","en":"eat / talk about","cn":"吃、说话"},
+      {"jp":"そんなことを口に出すべきではない。","en":"You should not talk about such things.","cn":"不应该说这种话"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"ぼくはその店では顔がきく。","en":"I have a lot of influence in the shop.","cn":"我在那家店里有面子"},
+      {"jp":"彼は顔が広いから、聞いてみよう。","en":"He has a lot of contacts so I will ask him if he could help.","cn":"他交际广，问问他吧"},
+      {"jp":"ちょっと顔を貸して。","en":"Can't you come even for a short time?","cn":"替我出头露面吧"},
+      {"jp":"集まりに顔を出す","en":"drop in on the meeting","cn":"出席聚会"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"学生の態度に頭に来た（＝怒っている）。","en":"I got mad at the student's attitude.","cn":"学生的态度让我生气","rel":"＝腹が立った"},
+      {"jp":"頭を下げる（＝お願いする）","en":"apologize","cn":"俯首赔礼"},
+      {"jp":"レポートのことを考えると頭が痛い。","en":"I don't want to think about the paper.","cn":"一想到写报告的事就头疼"},
+      {"jp":"父は頭が固い（＝がんこだ）。","en":"My father is very inflexible.","cn":"爸爸头脑顽固"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.131",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"この料理はちょっと（a. 口がうまくない　b. 口に合いません）。"},
+        {"n":2,"q":"この曲はだれもが一度は（a. 耳にした　b. 耳を疑った）ことがあると思う。"},
+        {"n":3,"q":"今日の飲み会には、ちょっとだけ顔を（a. 貸す　b. 出す）予定です。"},
+        {"n":4,"q":"求人広告に目を（a. つけた　b. 通した）けれど、適当なものがなかった。"},
+        {"n":5,"q":"息子は親の目を盗んで遊んでばかりいる。ああ、頭が（a. 痛い　b. 固い）。"},
+        {"n":6,"q":"彼女は男性を見る（a. 目がない　b. 目にあう）。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"昨日は忙しくて（　　）ような1日だった。","opts":["目が回る","目に付く","耳が痛い","顔がきく"]},
+        {"n":8,"q":"（　　）人にだまされてはだめですよ。","opts":["口がかたい","顔が広い","口がうまい","顔がきく"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②a ③b ④b ⑤b ⑥a　Ⅱ：⑦1 ⑧3"
+  },
+  "hitokoto": "大事なものは目に付くところに置いておきましょう。"
+}

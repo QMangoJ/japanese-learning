@@ -1,0 +1,59 @@
+{
+  "week": 8, "day": 4, "title": "よく使われる表現②", "title_cn": "常用的表达方式②", "title_en": "Frequently used expressions ②",
+  "sections": [
+    {"type":"words","heading":"体の名称を使った表現② ※「が」→「の」でもOK。","items":[
+      {"jp":"問題に手をつける","en":"start working on the problem","cn":"着手处理问题"},
+      {"jp":"手が空いたら、来てください。","en":"Please come when you have free time.","cn":"如果有空，就请来吧"},
+      {"jp":"手がかかる子ども","en":"a child who needs a lot of looking after","cn":"费事的孩子"},
+      {"jp":"手がない（＝働く人がいない／方法がない）","en":"no help / no means","cn":"人手不够/没有办法"},
+      {"jp":"今、手が離せません。","en":"I am too busy right now.","cn":"现在抽不出手"},
+      {"jp":"手がふさがっています。／手を放せません。","en":"I do not have any free time now.","cn":"现在，手头没空"},
+      {"jp":"安く手に入れる","en":"get it cheap","cn":"便宜买到","rel":"⊙（〜が）手に入る"},
+      {"jp":"こんな病気、医者の手にかかればすぐ治る。","en":"You will be fine if you go to the doctor.","cn":"这样的病，只要去看医生，马上能治好"},
+      {"jp":"歯が痛くて勉強が手につかない。","en":"My tooth is hurting so much that I cannot concentrate on my study.","cn":"因为牙痛无法专心学习"},
+      {"jp":"ちょっと手を貸して（＝手伝って）。","en":"Would you lend me a hand?","cn":"稍微帮我一下"},
+      {"jp":"ちょっと手を休めましょう。","en":"Let's have a little break.","cn":"暂时休息一下"},
+      {"jp":"これは少し手を入れれば、まだ使えます。","en":"You could use this for a while longer if you repair it a bit.","cn":"这个只要稍微修理一下，还能用。","rel":"⊙手入れ(N)"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"私は彼とは気が合わない。","en":"I don't get along with him.","cn":"我和他合不来"},
+      {"jp":"明日試験だから気が重い。","en":"I feel depressed because tomorrow is the exam day.","cn":"明天考试，心情沉重"},
+      {"jp":"気が利いた冗談を言う","en":"tell a sophisticated joke","cn":"说机灵的玩笑"},
+      {"jp":"今、甘いものを食べる気がしない。","en":"I don't feel like eating sweets right now.","cn":"现在没心情吃甜的"},
+      {"jp":"気が進まないけれど、やってみよう。","en":"I will try although I don't really want to do it.","cn":"虽然不乐意，做做看吧"},
+      {"jp":"息子のことが気にかかる。","en":"I can't take my mind off my son.","cn":"担心儿子的事"},
+      {"jp":"あいつの態度が気にくわない。（＝気に入らない）","en":"I don't like his attitude.","cn":"不喜欢那家伙的态度"},
+      {"jp":"気を落とさないように。","en":"Don't get too discouraged.","cn":"别灰心丧气"},
+      {"jp":"上司に気をつかう","en":"make a lot of effort to satisfy one's boss","cn":"在上司面前小心翼翼"},
+      {"jp":"こんなことを言いましたが、気を悪くしないでください。","en":"Please don't feel offended by what I said.","cn":"虽然说了这样的话，请不要生气"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"腕がいい大工","en":"a very experienced carpenter","cn":"手艺好的木工"},
+      {"jp":"ゴルフの腕が上がった。","en":"My golfing has improved.","cn":"打高尔夫的水平提高了","rel":"⇔腕が落ちる"},
+      {"jp":"もっとうまくなるように腕をみがこう！","en":"Let's practice more in order to improve!","cn":"让我们多磨练本领来提高水平吧"},
+      {"jp":"京都まで足を伸ばそう。","en":"Let's extend our trip to include Kyoto!","cn":"再多走几步，去趟京都吧"},
+      {"jp":"足がないので、行けない。","en":"I can't go because I have no means.","cn":"没有交通工具，没法去"},
+      {"jp":"実際に足を運んで、品物を確かめる","en":"go and check the item you want to buy","cn":"实际去一趟确认物品"},
+      {"jp":"予算から足が出る","en":"be over budget","cn":"预算出赤字"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.133",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"車を修理に出してしまったので、行きたいけど（a. 手がかかる　b. 足がない）のです。"},
+        {"n":2,"q":"この机は、少し手を（a. 入れれば　b. かせば）、十分に使えます。"},
+        {"n":3,"q":"3時間並んで、やっと（a. 手が空いた　b. 手に入れた）。"},
+        {"n":4,"q":"あの歯医者はとても（a. 腕　b. 手）がいいという評判だ。"},
+        {"n":5,"q":"明日からまた学校だと思うと（a. 気にかかる　b. 気が重い）。"},
+        {"n":6,"q":"せっかくここまで来たんだから、もう少し足を（a. 伸ばして　b. 使って）京都まで行こうよ。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"今度の仕事はあまり（　　）。","opts":["気を使う","気がしない","気が進まない","気が合わない"]},
+        {"n":8,"q":"働くのもいいけど、健康にも（　　）ようにしてください。","opts":["気を使う","手を入れる","手にかかる","気にかかる"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②a ③b ④a ⑤b ⑥a　Ⅱ：⑦3 ⑧1"
+  },
+  "hitokoto": "疲れたら、手を休めましょう。"
+}

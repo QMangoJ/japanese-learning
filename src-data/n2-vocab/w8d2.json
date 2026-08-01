@@ -1,0 +1,54 @@
+{
+  "week": 8, "day": 2, "title": "組み合わせの言葉②", "title_cn": "组合的词语②", "title_en": "Combinations of words ②",
+  "sections": [
+    {"type":"words","heading":"","items":[
+      {"jp":"追いかける","en":"chase a dog","cn":"追赶狗"},
+      {"jp":"追いつく","en":"catch up with a person on a bicycle","cn":"追上自行车"},
+      {"jp":"追い越す","en":"pass the car ahead of us","cn":"超过前面的车","rel":"⊙追い越し(N)"},
+      {"jp":"追い出す","en":"be forced to move out of an apartment","cn":"被从公寓里赶出来"},
+      {"jp":"乗り過ごす","en":"miss the train","cn":"坐过站"},
+      {"jp":"乗り越す","en":"miss the stop","cn":"坐过站"},
+      {"jp":"乗り遅れる","en":"miss the train","cn":"没赶上电车"},
+      {"jp":"割り引く","en":"reduce the price by 30%","cn":"七折","rel":"⊙3割引(N)"},
+      {"jp":"割り込む","en":"cut into the line","cn":"排队加塞","rel":"⊙割り込み乗車"},
+      {"jp":"当てはめる","en":"think of it as if it were your problem","cn":"设身处地想"},
+      {"jp":"当てはまる","en":"fit the requirements","cn":"适应条件"},
+      {"jp":"思い込む","en":"believe it to be true","cn":"深信那是真的","rel":"⊙思い込み(N)"},
+      {"jp":"思いつく","en":"come up with a good idea","cn":"想到一个好主意"},
+      {"jp":"見つめる","en":"look someone in the eye","cn":"注视对方的眼睛"},
+      {"jp":"見かける","en":"see a celebrity","cn":"看到了艺人"},
+      {"jp":"見直す","en":"check your answers","cn":"重看答案","rel":"⊙見直し(N)／⊙書き直す／⊙言い直す／⊙聞き直す"},
+      {"jp":"見習う","en":"learn from more experienced colleagues","cn":"以前辈为榜样"},
+      {"jp":"見慣れる","en":"familiar scenery","cn":"看惯的景色"},
+      {"jp":"見渡す","en":"look over","cn":"眺望景色广泛"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"書き留める","en":"jot down the details of the meeting","cn":"记录下会议内容"},
+      {"jp":"書き込む","en":"write notes in the textbook","cn":"写在教科书上"},
+      {"jp":"仕上がる","en":"laundry is finished","cn":"衣服洗好(晒)了","rel":"⊙仕上がり(N)"},
+      {"jp":"仕上げる","en":"finish a paper","cn":"写完报告","rel":"⊙仕上げ(N)"},
+      {"jp":"呼び出す","en":"call someone and tell him to come","cn":"打电话叫过来"},
+      {"jp":"呼びかける","en":"call ... with a loud voice","cn":"大声招呼"},
+      {"jp":"貸し出す","en":"lend out books","cn":"往外借书","rel":"⊙貸し出し(N)"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.129",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"インターネットの便利さを（a. 見つめた　b. 見直した）。"},
+        {"n":2,"q":"かっこの中に当て（a. はまる　b. はめる）語句を書きなさい。"},
+        {"n":3,"q":"子どもが迷子になったので、放送で呼び（a. かけ　b. 出し）てください。"},
+        {"n":4,"q":"治らないと思い（a. ついて　b. 込んで）いた病気がよくなってきた。"},
+        {"n":5,"q":"この道路は（a. 乗り　b. 追い）越し禁止です。"},
+        {"n":6,"q":"その警察官は逃げる犯人を追い（a. 出した　b. かけた）。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"この仕事を（　　）のに、まだあと1週間はかかるでしょう。","opts":["当てはめる","思いつく","見かける","仕上げる"]},
+        {"n":8,"q":"駅の改札で（　　）の清算をした。","opts":["割り込み","乗り越し","見直し","乗り過ごし"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②b ③b ④a ⑤b ⑥b　Ⅱ：⑦4 ⑧2"
+  },
+  "hitokoto": "期限までにレポートを仕上げましょう。"
+}

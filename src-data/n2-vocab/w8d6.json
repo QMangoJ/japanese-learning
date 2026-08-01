@@ -1,0 +1,49 @@
+{
+  "week": 8, "day": 6, "title": "よく使われる表現④", "title_cn": "常用的表达方式④", "title_en": "Frequently used expressions ④",
+  "sections": [
+    {"type":"words","heading":"","items":[
+      {"jp":"見聞き（する）","en":"tell others what you have experienced","cn":"把所见所闻告诉别人"},
+      {"jp":"行き来（する）","en":"Tanaka-san and I visit each other's homes","cn":"和田中先生家两边彼此来往"},
+      {"jp":"貸し借り（する）","en":"Let's not borrow or lend money!","cn":"不要和别人借（贷）款"},
+      {"jp":"出し入れ（する）","en":"It is bothersome to take the futons in and out.","cn":"拿被子放被子太麻烦"},
+      {"jp":"付け外し（する）","en":"This lapel is detachable.","cn":"这领子是活的（能安撮）"},
+      {"jp":"脱ぎ着（する）","en":"This sweater is easy to put on and take off.","cn":"这毛衣穿脱方便","rel":"⊙読み書き（する）／⊙上げ下げ（する）／⊙売り買い（する）"},
+      {"jp":"行き帰り","en":"drop by a convenience store on the way to or from work","cn":"上下班时顺便去便利店"},
+      {"jp":"好き嫌い","en":"be a very picky eater","cn":"吃东西太挑剔"}
+    ]},
+    {"type":"words","heading":"このまま覚えよう","items":[
+      {"jp":"いつもお世話になっています。","en":"Thank you for your kind support.","cn":"一直承蒙关照，谢谢您平时的照顾","rel":"＊仕事などで、最初のあいさつによく使う。"},
+      {"jp":"少し様子をみましょう。","en":"Let's see how it goes.","cn":"先看看情况吧"},
+      {"jp":"試しにやってみましょう。","en":"Let's give it a try.","cn":"试着做做吧"},
+      {"jp":"そんなつもりはありません。","en":"That's not what I meant.","cn":"没有这个打算"},
+      {"jp":"困ったときはお互い様です。","en":"We help each other at difficult times.","cn":"有困难的时候互相帮助"},
+      {"jp":"申し訳ありませんが、これをコピーしてください。","en":"Would you kindly make a copy of this for me?","cn":"对不起，请给我复印一下这个"},
+      {"jp":"悪いけど、そこの雑誌を取ってくれる？","en":"Would you get me that magazine?","cn":"不好意思，能帮我把那里的杂志拿过来吗","rel":"＊謝っているのではなく、お願いするときに使う。"}
+    ]},
+    {"type":"words","heading":"よく聞く俗語（slang/俗语/속어）＊カタカナで書くことが多い。＊使ってはいけない場合が多いので注意しましょう。","items":[
+      {"jp":"ノリ","en":"someone who never joins in / This song has a good beat.","cn":"理解迟钝、跟不上气氛的人 / 这首曲子节奏感好"},
+      {"jp":"超〜","en":"extremely busy","cn":"超级忙","rel":"＊「超」は「非常に」という意味で「超満員」「超小型」のように使う。「超忙しい」「超おいしい」はくだけすぎた感じがするので、上司や目上の人には使わないようにしよう。"},
+      {"jp":"いまいち","en":"This cake is a bit lacking (not that delicious).","cn":"这蛋糕不算太好吃"},
+      {"jp":"ばらす","en":"leak a secret","cn":"泄露秘密","rel":"⊙（〜が）ばれる"},
+      {"jp":"パクる","en":"steal someone's idea","cn":"（盗用）别人的点子"},
+      {"jp":"ダサい","en":"uncool clothes","cn":"土气的服装"},
+      {"jp":"マジ","en":"a serious talk / working in earnest","cn":"认真的话 / 认真工作","rel":"＊まじめの略語"},
+      {"jp":"ヤバい","en":"a risky job / it'll be bad if you're late","cn":"危险的工作 / 迟到就糟了","rel":"＊元の意味は悪い意味だが、若者の間ではいろいろな意味で使うので注意が必要。"},
+      {"jp":"うざい","en":"a friend who calls every day is annoying","cn":"每天都打电话来的朋友很烦人"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.138",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"駅から会場までを（a. 行き来　b. 行き帰り）するバスが出ている。"},
+        {"n":2,"q":"音量の（a. 出し入れ　b. 上げ下げ）はこのボタンで行います。"},
+        {"n":3,"q":"手術をする前に、とりあえず薬を飲んで（a. 少し様子を見ましょう　b. 試しにやってみよう）。"},
+        {"n":4,"q":"娘が（a. いつもお世話になっています　b. お互い様です）。"},
+        {"n":5,"q":"（a. 残念だけど　b. 悪いけど）、お茶、入れてくれる？"}
+      ]}
+    ],
+    "answers": "①a ②b ③a ④b ⑤b"
+  },
+  "hitokoto": "困ったときはお互い様です。"
+}

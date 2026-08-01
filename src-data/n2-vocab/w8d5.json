@@ -1,0 +1,56 @@
+{
+  "week": 8, "day": 5, "title": "よく使われる表現③", "title_cn": "常用的表达方式③", "title_en": "Frequently used expressions ③",
+  "sections": [
+    {"type":"words","heading":"","items":[
+      {"jp":"子どもが母親のあとをついていく","en":"a child is following his mother","cn":"孩子跟在妈妈的后面"},
+      {"jp":"母親の買い物についていく","en":"go shopping with one's mother","cn":"跟着妈妈去买东西"},
+      {"jp":"彼の考えにはついていけない。","en":"I can't go along with his idea.","cn":"跟不上他的想法"},
+      {"jp":"今日はついている。（⇔ついて（い）ない。）","en":"This is my lucky day.","cn":"今天很走运"},
+      {"jp":"私は、日本酒はダメですが、ビールはいけます。","en":"I can't drink sake, but beer is OK.","cn":"我不能喝日本酒，但能喝啤酒"},
+      {"jp":"この料理はなかなかいける。","en":"This dish is quite good.","cn":"那饭菜相当美味"},
+      {"jp":"つまらないことにこだわる（＊マイナスの意味）","en":"fuss over small details","cn":"拘泥于无聊的事情"},
+      {"jp":"材料にこだわって料理を作る（＊プラスの意味）","en":"choose good ingredients for cooking","cn":"精挑细选材料来做饭","rel":"⊙こだわりがある／ない care about... / not care about... 拘泥/不拘泥"},
+      {"jp":"捨てるのはもったいない。","en":"It's too good to be thrown out.","cn":"扔了话太可惜了"},
+      {"jp":"彼女のような美人は、彼にはもったいない。","en":"A beautiful girl like her is too good for him.","cn":"她和他这样的美女，跟着他可惜了"},
+      {"jp":"ボーナスが5万円でも、ないよりはましだ。","en":"I only got a 50,000 yen bonus but it's better than nothing.","cn":"就算奖金是5万日元，那也比没有强"},
+      {"jp":"そんなことするくらいなら、死んだほうがましだ。","en":"I'd rather die than do that.","cn":"如果要干那种事情，还不如死了好"},
+      {"jp":"まともな生活をする","en":"live a decent life","cn":"过正经的生活"},
+      {"jp":"まともな人間なら、そんなことはしないはずだ。","en":"A decent person would never do that.","cn":"正经的人不会干那种事情"},
+      {"jp":"最近、ろくな仕事がない。","en":"There are no decent jobs these days.","cn":"最近没有什么好工作"},
+      {"jp":"妻はろくに料理を作らない。","en":"My wife hardly cooks.","cn":"妻子不好好做饭"},
+      {"jp":"彼の実力は大したものだ。","en":"He is really something!","cn":"他的实力很不起"},
+      {"jp":"大したものはありませんが、どうぞ召し上がってください。","en":"This isn't much of a meal, but I hope you'll enjoy it.","cn":"没什么好东西，请吃吧"},
+      {"jp":"母の病気は大したことはない。","en":"My mother's illness isn't very serious.","cn":"妈妈的病没什么大不了的"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"彼は来たと思ったら、あっという間に帰っていった。","en":"He came and left before I knew it.","cn":"他刚来，可一眨眼的功夫就回去了"},
+      {"jp":"あれこれ／あれやこれや言っても、もう間に合わない。","en":"There is no point in discussing it at this late date.","cn":"不管说什么，也已经来不及了"},
+      {"jp":"うそをつかれて怒るのは当たり前（＝当然）だ。","en":"You have good reason to be angry as he deceived you.","cn":"别人对自己撒谎，当然会生气也是理所当然"},
+      {"jp":"当たり前のやり方では成功しないだろう。","en":"You won't succeed unless you try exceptionally hard.","cn":"用一般的做法不会成功吧"},
+      {"jp":"彼女は仕事の覚えが悪い。","en":"She is slow to learn her job.","cn":"她工作不得要领"},
+      {"jp":"そんなことを言った覚えはない。","en":"I don't recall saying anything like that.","cn":"我不记得说过那种话"},
+      {"jp":"この部屋にはベッドを置く余裕がない。","en":"There is no room for a bed in this room.","cn":"这房间里没有放床的空间"},
+      {"jp":"新しい車を買う余裕がない。","en":"We can't afford a new car.","cn":"没有闲钱买新车"},
+      {"jp":"待ち合わせには余裕をもって出かけよう。","en":"Try to go to appointments a little early.","cn":"和别人会面要早点出发"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.135",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"赤ちゃんが泣くのは（a. 当たり前　b. まし）です。"},
+        {"n":2,"q":"まだ座席に少し余裕（a. を持っています　b. があります）。"},
+        {"n":3,"q":"使えるパソコンを買い換えるのは（a. もったいない　b. こだわっている）。"},
+        {"n":4,"q":"利用した（a. 余裕　b. 覚え）のない請求書が届いた。"},
+        {"n":5,"q":"慣れないことをすると、（a. まともな　b. ろくな）ことがない。"},
+        {"n":6,"q":"こんな家でもないより（a. まし　b. まとも）だ。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"あの店は、開店したと思ったら（　　）つぶれてしまった。","opts":["あっというまに","まともに","あれやこれや","余裕で"]},
+        {"n":8,"q":"ラッシュなのに座れて、今日は（　　）。","opts":["ついていく","いける","ついている","まともだ"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②b ③a ④b ⑤b ⑥a　Ⅱ：⑦1 ⑧3"
+  },
+  "hitokoto": "合格したら、大したものです。"
+}

@@ -1,0 +1,51 @@
+{
+  "week": 8, "day": 1, "title": "組み合わせの言葉①", "title_cn": "组合的词语①", "title_en": "Combinations of words ①",
+  "sections": [
+    {"type":"words","heading":"","items":[
+      {"jp":"組み合わせる","en":"put two together","cn":"把两个组合","rel":"⊙組み合わせ(N)"},
+      {"jp":"組み立てる","en":"assemble the parts","cn":"组装零部件"},
+      {"jp":"引き受ける","en":"take up the job","cn":"接受工作"},
+      {"jp":"引き止める","en":"keep the guest from leaving","cn":"挽留要回去的人"},
+      {"jp":"引き返す","en":"return to the original place","cn":"退回原来的地方"},
+      {"jp":"受け取る","en":"receive a parcel","cn":"领取行李","rel":"⊙受け取り(N)"},
+      {"jp":"受け持つ","en":"teach an advanced class","cn":"担任高级班","rel":"⊙受け持ち(N)"},
+      {"jp":"打ち合わせる","en":"discuss the plan","cn":"商量企划","rel":"⊙打ち合わせ(N)"},
+      {"jp":"打ち消す","en":"deny a rumour","cn":"否定传闻"},
+      {"jp":"売り切れる","en":"tickets are sold out","cn":"票卖完了","rel":"⊙売り切れ(N)"},
+      {"jp":"売り上げ","en":"make more sales","cn":"增加销售额"},
+      {"jp":"売れ行き","en":"is selling well","cn":"销路好"},
+      {"jp":"売り出す","en":"a new PC model is coming onto the market","cn":"新型电脑被销售","rel":"⊙売り出し(N)"},
+      {"jp":"取り上げる","en":"discuss a new problem at the meeting","cn":"在会议上提出新的问题"},
+      {"jp":"取り入れる","en":"incorporate fashionable colours in ...","cn":"采用流行的颜色"},
+      {"jp":"取り組む","en":"tackle a new project","cn":"致力于新的企划","rel":"⊙取り組み(N)"},
+      {"jp":"取り扱う","en":"operate a machine","cn":"操纵机器","rel":"⊙取り扱い(N)"},
+      {"jp":"取り付ける","en":"install an air-conditioner","cn":"安装空调","rel":"⇔取り外す"},
+      {"jp":"取り除く","en":"remove a obstacles","cn":"去除障碍物"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"振り向く","en":"turn around","cn":"回头看","rel":"⊙振り返る"},
+      {"jp":"持ち上げる","en":"lift a suitcase","cn":"拿起行李箱"},
+      {"jp":"払い戻す","en":"refund the cost of the ticket","cn":"支付票钱"},
+      {"jp":"立て替える","en":"pay for ... train fare","cn":"垫付电车票"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.127",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"最近、音楽CDの（a. 売り出し　b. 売れ行き）がとても悪い。"},
+        {"n":2,"q":"主婦の意見を取り（a. 上げた　b. 入れた）使いやすいキッチン。"},
+        {"n":3,"q":"彼女は私が先生として初めて受け（a. 取った　b. 持った）生徒です。"},
+        {"n":4,"q":"掃除するので、ちょっとイスを（a. 持ち上げて　b. 取り除いて）ください。"},
+        {"n":5,"q":"忘れ物に気づいて会社に引き（a. 止めた　b. 返した）。"},
+        {"n":6,"q":"当店では、その商品は取り（a. 扱って　b. 付けて）おりません。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"今日1日で100万円の（　　）があった。","opts":["売り出し","組み合わせ","売り上げ","売り切れ"]},
+        {"n":8,"q":"映像と音楽を（　　）映画を製作します。","opts":["組み合わせて","打ち合わせて","組み立てて","取り除いて"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②b ③b ④a ⑤b ⑥a　Ⅱ：⑦3 ⑧1"
+  },
+  "hitokoto": "パソコンの取り扱いには注意しましょう。"
+}
