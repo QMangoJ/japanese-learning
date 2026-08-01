@@ -1,0 +1,46 @@
+{
+  "week": 4, "day": 1, "title": "なんとか覚えよう！", "title_cn": "想方设法记住吧！", "title_en": "I'll try to memorize them!",
+  "sections": [
+    {"type":"words","heading":"形が似ている言葉","items":[
+      {"jp":"必ずしも〜とは限らない","en":"Being rich does not necessary mean happy.","cn":"富人不一定幸福"},
+      {"jp":"必ず","en":"We will all eventually die.","cn":"人肯定会死"},
+      {"jp":"いつか","en":"Someday I would like to go to Africa.","cn":"我想什么时候去非洲","rel":"⊙ここにはいつか来たことがある。I have come here once before. 这里曾经来过"},
+      {"jp":"いつまでも","en":"Please take care.","cn":"希望您永远健康"},
+      {"jp":"いつのまにか","en":"Night came before we knew it.","cn":"不知不觉到了晚上"},
+      {"jp":"つい","en":"I lied without meaning to.","cn":"禁不住撒了谎"},
+      {"jp":"ついに","en":"Finally the painting was finished.","cn":"画终于完成了"},
+      {"jp":"どうしても","en":"It is simply not possible for me to go as I have other commitments.","cn":"有事情要办怎么都不能去了","rel":"⊙どうしても成功させたい。I would like to succeed no matter what. 一定要设法使其成功"},
+      {"jp":"どうも","en":"I cannot really explain it well. / I think I am lost. / Please excuse me.","cn":"总是说不好 / 感觉像是迷路了 / 真是失礼了","rel":"⊙昨日はどうも。（軽いあいさつ）It was nice to see you yesterday. 昨天谢谢了"},
+      {"jp":"なんとか／どうにか","en":"I managed to make it to the meeting. / We must somehow resolve the problem.","cn":"总算赶上开会了 / 这个问题要想方设法解决"},
+      {"jp":"なんとなく","en":"This book is sort of interesting.","cn":"这是本好象很有趣的书"},
+      {"jp":"なんとも〜ない","en":"I don't care about it.","cn":"那种事，我没什么想法"},
+      {"jp":"もし（も）","en":"If I had one million yen, ...","cn":"如果有100万日元的话……"},
+      {"jp":"もしかしたら／もしかすると","en":"He could be telling a lie.","cn":"也许他的话是谎话"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"なるべく","en":"Please come early if you can.","cn":"请尽量早来"},
+      {"jp":"なるほど","en":"It certainly is an interesting book.","cn":"确实是有意思的书。","rel":"＊人の話に相づちを打つときにも使うが、目下の人が目上の人に言うとなれなれしくて失礼な感じがするので注意。"},
+      {"jp":"確か","en":"I think he is Hayashi-san's father.","cn":"我觉得那人好象是小林的父亲"},
+      {"jp":"確かに","en":"That guy is definitely Hayashi-san's father.","cn":"那人确实是小林的父亲"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.63",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"お金を貯めて、（a. つい　b. ついに）欲しい車を手に入れた。"},
+        {"n":2,"q":"急げば、（a. なんとか　b. なんとなく）約束の時間に間に合うでしょう。"},
+        {"n":3,"q":"（a. 確か　b. なるほど）彼女は結婚したはずだけど……。"},
+        {"n":4,"q":"彼のあの態度は（a. なるべく　b. どうしても）許せない。"},
+        {"n":5,"q":"ゲームに夢中になっていたら、（a. いつまでも　b. いつのまにか）朝になっていた。"},
+        {"n":6,"q":"（a. どうしても　b. どうも）風邪をひいてしまったらしい。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"（　　）私は、昨日、5時まで会社にいました。間違いありません。","opts":["必ず","必ずしも","確か","確かに"]},
+        {"n":8,"q":"このごみを（　　）しないと、座るところもない。","opts":["なんとも","なんとか","なるべく","なんとなく"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②a ③a ④b ⑤b ⑥b　Ⅱ：⑦4 ⑧2"
+  },
+  "hitokoto": "全部覚えるのは、必ずしも不可能ではありません。"
+}

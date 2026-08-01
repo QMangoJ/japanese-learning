@@ -1,0 +1,51 @@
+{
+  "week": 4, "day": 2, "title": "いずれ覚えられる！", "title_cn": "总会记下来的！", "title_en": "You will eventually remember it!",
+  "sections": [
+    {"type":"words","heading":"時に関係がある言葉","items":[
+      {"jp":"まもなく","en":"The concert will soon begin. / Soon after I came home, a guest arrived.","cn":"音乐会马上就开始了 / (家)刚回到家就来客人了"},
+      {"jp":"近々","en":"I will come to see you sometime soon.","cn":"近期去拜访您"},
+      {"jp":"そのうち","en":"You will understand someday.","cn":"不久就会明白的"},
+      {"jp":"やがて","en":"The summer holiday will soon be over. / It will soon be a year since my father passed away.","cn":"暑假也即将结束了 / 父亲去世快一年了"},
+      {"jp":"ようやく","en":"It's finally getting warmer.","cn":"终于暖和起来了"},
+      {"jp":"いずれ","en":"I figured that it would eventually be like this.","cn":"我就知道迟早会这样的"},
+      {"jp":"たちまち","en":"The tickets were immediately sold out.","cn":"票很快就卖完了"},
+      {"jp":"ただちに","en":"You'd better go right away.","cn":"最好尽快出发"},
+      {"jp":"にわかに","en":"Suddenly the sky became overcast.","cn":"天空突然阴下来","rel":"⊙にわか雨 a sudden shower 骤雨"},
+      {"jp":"絶えず","en":"The water is constantly running.","cn":"水不断流淌"},
+      {"jp":"つねに","en":"keep health in mind","cn":"一直注意健康"},
+      {"jp":"しきりに","en":"the phone keeps ringing / praise repeatedly","cn":"电话铃频繁地响 / 再三表扬"},
+      {"jp":"しょっちゅう","en":"like to drink","cn":"经常喝酒"},
+      {"jp":"（もう）すでに","en":"The painting has already been sold.","cn":"那幅画已经卖掉了"},
+      {"jp":"とっくに","en":"The deadline has already passed.","cn":"期限已经过好久了","rel":"⊙とっくの（＝ずっと）昔 long ago 很久以前了"},
+      {"jp":"前もって","en":"look into ... in advance","cn":"事先做好调查"}
+    ]},
+    {"type":"words","heading":"数字や量が後に来る言葉","items":[
+      {"jp":"ほぼ","en":"approximately (about) 10,000 yen / almost finish reading","cn":"大概1万日元 / 基本上读完了"},
+      {"jp":"お（お）よそ","en":"approximately (roughly) 2 weeks","cn":"大约2周"},
+      {"jp":"ほんの","en":"a tiny bit (very little)","cn":"就一点点"},
+      {"jp":"たった","en":"all by him/herself","cn":"就一个人"},
+      {"jp":"せいぜい","en":"There will be only about 30 attendants.","cn":"出席者最多30名左右"},
+      {"jp":"少なくとも","en":"At least 30 people are coming.","cn":"至少30人来","rel":"⇔多くとも"},
+      {"jp":"せめて","en":"I was hoping to come in no worse than fifth. / If only I could hear his/her voice.","cn":"曾想至少进前5名 / 就算只听听声音也行"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.65",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"申し込みの期限は（a. とっくに　b. そのうち）過ぎてしまった。"},
+        {"n":2,"q":"建物は（a. およそ　b. ほぼ）完成した。"},
+        {"n":3,"q":"長い梅雨が（a. ただちに　b. ようやく）終わった。"},
+        {"n":4,"q":"その子は（a. ほんの　b. たった）一人でこんなに遠くまで来た。"},
+        {"n":5,"q":"「（a. せめて　b. ほぼ）70点は取りたいなあ。」"},
+        {"n":6,"q":"その家からは（a. やがて　b. 絶えず）笑い声が聞こえてくる。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"（　　）本当のことがわかるだろう。","opts":["しきりに","いずれ","たえず","せいぜい"]},
+        {"n":8,"q":"今日の仕事は（　　）終わりました。","opts":["ほんの","やがて","ほぼ","つねに"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②b ③b ④b ⑤a ⑥b　Ⅱ：⑦2 ⑧3"
+  },
+  "hitokoto": "毎日、せめて1時間は勉強しましょう。"
+}

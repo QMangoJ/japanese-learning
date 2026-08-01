@@ -1,0 +1,52 @@
+{
+  "week": 4, "day": 5, "title": "取りあえず覚えよう！", "title_cn": "暂且先记住！", "title_en": "I'll memorize them for the time being!",
+  "sections": [
+    {"type":"words","heading":"形が似ている言葉","items":[
+      {"jp":"いわば","en":"Yesterday's meeting was like a party.","cn":"昨天的会议说起来就像宴会"},
+      {"jp":"いわゆる","en":"Traditional music means so-called classical music.","cn":"古典音乐就是所谓的古典传统音乐"},
+      {"jp":"まさか","en":"We never imagined that such an event would ever happen.","cn":"竟然发生这种事……"},
+      {"jp":"まさに","en":"What you are saying is perfectly right. / The day is just breaking.","cn":"的确如你所说 / 马上就要天亮了"},
+      {"jp":"一度に／いっぺんに","en":"It is impossible to memorize everything at once.","cn":"一下子记住太不可能"},
+      {"jp":"一気に","en":"gulp down a mug of beer","cn":"一口气喝光啤酒"},
+      {"jp":"思い切り","en":"My father gave me a real scolding.","cn":"被爸爸狠狠地批评了"},
+      {"jp":"思い切って","en":"take the plunge and change jobs","cn":"下定决心换工作"},
+      {"jp":"思わず","en":"I cried out with pain.","cn":"痛得不由得叫起来"},
+      {"jp":"思いがけず／思いがけなく","en":"Unexpectedly bumped into my old friend.","cn":"没想到遇到了以前的朋友"},
+      {"jp":"なにしろ","en":"I've been too busy to eat.","cn":"因为忙得吃饭的时间都没有"},
+      {"jp":"なにかと","en":"I will be very busy with this and that next week.","cn":"下周各种事情很忙"},
+      {"jp":"相変わらず","en":"That shop is as busy as ever.","cn":"那家店还是那么多人"},
+      {"jp":"取りあえず","en":"Let's eat firsts. / Let's not worry about it for now.","cn":"先吃点什么吧 / 暂且没有问题了吧"},
+      {"jp":"わざと","en":"intentionally set the clock ahead","cn":"故意把表调快"},
+      {"jp":"わざわざ","en":"I appreciate you coming ...","cn":"您专门过来……"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"いっそう","en":"This one is a lot bigger.","cn":"这个更大"},
+      {"jp":"いっそ","en":"I cannot bear the pain anymore. I'd rather die.","cn":"痛苦得无法忍受，真想干脆死掉"},
+      {"jp":"今に","en":"You will someday regret what you are doing now.","cn":"那样早晚会后悔的"},
+      {"jp":"今にも","en":"It looks like it's going to rain.","cn":"好象马上就要下雨了"},
+      {"jp":"今さら","en":"It is too late for you to renege.","cn":"事到如今你再说无法做到，那可麻烦了"},
+      {"jp":"未だに","en":"The crime has still not been solved.","cn":"那个事件至今仍没有解决"},
+      {"jp":"ただ今","en":"Tanaka-san is not here at the moment.","cn":"田中现在没在位子上"},
+      {"jp":"たった今","en":"He has just left.","cn":"他刚刚回去"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.71",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"（a. 思い切り　b. 思い切って）マンションを買った。"},
+        {"n":2,"q":"（a. 今さら　b. 今にも）やめるわけにはいかない。"},
+        {"n":3,"q":"この店は（a. 相変わらず　b. とりあえず）客の入りが悪い。"},
+        {"n":4,"q":"その子どもは（a. 今にも　b. ただ今）泣き出しそうだ。"},
+        {"n":5,"q":"年賀状は（a. いわば　b. いっそ）、クリスマスカードのようなものです。"},
+        {"n":6,"q":"レポートを（a. 一気に　b. 一度に）書き上げた。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"こんなにうすく皮をむくとは、（　　）プロですね。","opts":["思い切って","まさに","まさか","なにしろ"]},
+        {"n":8,"q":"カレーにチーズを入れたら（　　）おいしくなりました。","opts":["いっそう","いっそ","なにかと","わざと"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②a ③a ④b ⑤b ⑥a　Ⅱ：⑦2 ⑧4"
+  },
+  "hitokoto": "今に、なんでも話せるようになるでしょう。"
+}

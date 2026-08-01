@@ -1,0 +1,50 @@
+{
+  "week": 4, "day": 3, "title": "せっせと覚えよう！", "title_cn": "坚持不懈地记住吧！", "title_en": "I'll memorize them diligently!",
+  "sections": [
+    {"type":"words","heading":"様子を表す言葉","items":[
+      {"jp":"たびたび／しばしば","en":"Sorry for phoning you so many times.","cn":"总给您打电话不好意思"},
+      {"jp":"いよいよ","en":"I will finally depart tomorrow.","cn":"明天终于出发了"},
+      {"jp":"いちいち","en":"complain about everything","cn":"一一挑毛病"},
+      {"jp":"ふわふわ（する）","en":"This towel is very soft. / floating clouds in the sky","cn":"这毛巾软软的 / 轻飘飘的云"},
+      {"jp":"まごまご（する）","en":"be at a loss","cn":"摸不着头脑"},
+      {"jp":"それぞれ／めいめい／ひとりひとり／各々","en":"each person voices his/her opinions","cn":"各自陈述意见"},
+      {"jp":"ぱったり","en":"bump into a friend","cn":"和朋友不期而遇"},
+      {"jp":"こっそり","en":"sneak out","cn":"悄悄地逃跑"},
+      {"jp":"ぴったり","en":"the calculation comes up exactly right / stick tightly","cn":"数目完全一致 / 完全吻合"},
+      {"jp":"ぎっしり","en":"It is packed up with tangerines. / The schedule is tight.","cn":"橘子塞得满满的 / 计划定得满满的"},
+      {"jp":"じっくり","en":"read slowly and carefully","cn":"仔细阅读"},
+      {"jp":"ちらっと／ちらりと","en":"glance at ...","cn":"瞄一眼"},
+      {"jp":"うんざり（する）","en":"get fed up with your parents' lectures","cn":"烦透父母的说教"},
+      {"jp":"びっしょり","en":"I got soaked in a sudden rain.","cn":"突然下雨，浑身湿透了","rel":"＝びしょぬれになった。＝びしょびしょになった。"},
+      {"jp":"しいんと（する）","en":"it falls silent / be quiet","cn":"突然变得鸦雀无声 / 鸦雀无声"},
+      {"jp":"ずらりと／ずらっと","en":"Books are lined up.","cn":"书摆成排"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"さっさと","en":"leave at once","cn":"马上回去"},
+      {"jp":"せっせと","en":"work steadily","cn":"拼命工作"},
+      {"jp":"どっと","en":"customers pour into ... / suddenly feel exhausted","cn":"客人一涌而至 / 突然一股脑涌上来"},
+      {"jp":"すっと（する）","en":"stand up abruptly / feel refreshed","cn":"一下子站起来 / 一下舒服了"},
+      {"jp":"ひとりでに","en":"the door opens by itself","cn":"门自己开了"},
+      {"jp":"いっせいに","en":"stand up at once","cn":"全体起立"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.67",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"家に着いたら（a. どっと　b. すっと）疲れが出た。"},
+        {"n":2,"q":"手と手を（a. しいんと　b. ぴったり）合わせる。"},
+        {"n":3,"q":"妻と子どものために（a. ちらっと　b. せっせと）働く。"},
+        {"n":4,"q":"（a. じっくり　b. ぎっしり）考えて結論を出そう。"},
+        {"n":5,"q":"毎日こんなに暑くて、本当に（a. いちいち　b. うんざり）する。"},
+        {"n":6,"q":"このパソコンは（a. しばしば　b. いよいよ）フリーズする。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"桜が（　　）開花した。","opts":["ひとりでに","めいめい","いっせいに","ずらりと"]},
+        {"n":8,"q":"おなかがすいたので夜中に（　　）お菓子を食べてしまった。","opts":["ばったり","こっそり","ぴったり","ぎっしり"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②b ③b ④a ⑤b ⑥a　Ⅱ：⑦3 ⑧2"
+  },
+  "hitokoto": "宿題はさっさと済ませましょう。"
+}

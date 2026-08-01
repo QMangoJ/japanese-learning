@@ -1,0 +1,53 @@
+{
+  "week": 4, "day": 4, "title": "さらに覚えよう！", "title_cn": "再多记一些吧！", "title_en": "I'll try to memorize more!",
+  "sections": [
+    {"type":"words","heading":"程度を表す副詞","items":[
+      {"jp":"相当／かなり","en":"Tanaka-san is very aggressive.","cn":"田中相当强悍"},
+      {"jp":"大いに","en":"have a long talk with friends / There is a great possibility.","cn":"和朋友畅谈 / 可能性很大"},
+      {"jp":"うんと","en":"become extremely convenient / have a lot of money","cn":"一下子方便了 / 钱有的是"},
+      {"jp":"たっぷり","en":"drink a lot / have an ample time","cn":"多多喝水 / 时间充分有"},
+      {"jp":"あまりにも","en":"a very difficult problem to solve","cn":"太难的问题"},
+      {"jp":"やや","en":"a little bigger rice bowl","cn":"稍大点的茶碗"},
+      {"jp":"多少","en":"I can speak some Italian.","cn":"多少会说些意大利语"},
+      {"jp":"いくぶん／いくらか","en":"The economic situation has improved a little.","cn":"经济有些好转"},
+      {"jp":"わりに／わりと","en":"a relatively easy problem","cn":"相对简单的问题"},
+      {"jp":"わりあい（に）","en":"I unexpectedly arrived early.","cn":"较早点到了"},
+      {"jp":"なお（いっそう）","en":"This one is even cheaper than that.","cn":"这个更便宜"},
+      {"jp":"より（いっそう）","en":"This one is even more difficult.","cn":"这个更难"},
+      {"jp":"むしろ","en":"I would rather have B than A.","cn":"比起A、倒是B更好"},
+      {"jp":"余計（に）","en":"You would get more confused if you did so.","cn":"这样一来，更不明白了"},
+      {"jp":"じょじょに","en":"get better little by little","cn":"逐渐好了"},
+      {"jp":"次第に","en":"the snow gradually melts","cn":"雪逐渐融化"},
+      {"jp":"さらに","en":"become more delicious","cn":"更好吃了"},
+      {"jp":"一段と","en":"It has become a lot colder.","cn":"又冷了许多"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"ぐっと","en":"It has improved a lot.","cn":"好多了"},
+      {"jp":"めっきり","en":"It has become noticeably cool.","cn":"骤然变冷"},
+      {"jp":"主に","en":"This magazine is mainly for junior high school students.","cn":"这个杂志的对象主要是中学生"},
+      {"jp":"くれぐれも","en":"Please send my best regards to your parents.","cn":"请一定代我问候父母"},
+      {"jp":"一応","en":"The construction has more or less finished.","cn":"施工大致完成了"},
+      {"jp":"一般に","en":"Generally women live longer.","cn":"一般来说女性寿命长"},
+      {"jp":"明らかに","en":"it is obviously wrong","cn":"明显不同"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.69",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"彼女からのメールが（a. たっぷり　b. めっきり）減ってしまった。"},
+        {"n":2,"q":"改良されたソフトは前より（a. かなり　b. 次第に）使いやすい。"},
+        {"n":3,"q":"塩を入れたら味が（a. ぐっと　b. 主に）よくなった。"},
+        {"n":4,"q":"痛みはさっきより（a. よけいに　b. いくらか）ましになった。"},
+        {"n":5,"q":"あの政治家の発言は（a. じょじょに　b. あまりにも）無責任だ。"},
+        {"n":6,"q":"国の借金は前年より（a. さらに　b. くれぐれも）増えた。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"ごはんを（　　）食べて早く大きくなってね。","opts":["じょじょに","うんと","ぐっと","おもに"]},
+        {"n":8,"q":"最近の女性は（　　）強くなったと言われている。","opts":["おもに","くれぐれも","たっぷり","いちだんと"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②a ③a ④b ⑤b ⑥a　Ⅱ：⑦2 ⑧4"
+  },
+  "hitokoto": "明らかに日本語がうまくなっていますよ。"
+}

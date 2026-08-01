@@ -1,0 +1,48 @@
+{
+  "week": 4, "day": 6, "title": "いったん覚えたら忘れない！", "title_cn": "一旦记住就不会忘记！", "title_en": "You'll never forget once you learn it!",
+  "sections": [
+    {"type":"words","heading":"決まった言葉があとに来る言葉","items":[
+      {"jp":"別に〜ない","en":"I don't really need anything.","cn":"并没有特别想要的东西"},
+      {"jp":"そう〜ない","en":"This problem is not that difficult.","cn":"这个问题并不是那么难的"},
+      {"jp":"大して〜ない","en":"I passed the exam although I did not study much.","cn":"别怎么学习但是合格了"},
+      {"jp":"一切〜ない","en":"I have nothing to do with the case.","cn":"我和那个事件没有丝毫瓜葛"},
+      {"jp":"とても〜ない","en":"He doesn't at all look 50 years old.","cn":"他怎么看都不像50岁"},
+      {"jp":"おそらく〜だろう","en":"She won't most probably get married.","cn":"她大概不结婚吧"},
+      {"jp":"どうやら〜そうだ／〜ようだ","en":"It looks like it is going to rain.","cn":"好像要下雨了"},
+      {"jp":"果たして〜だろうか","en":"Is his story really true?","cn":"他的话到底是不是真的呀"},
+      {"jp":"どうせ〜だろう","en":"It probably won't work out even if I try it.","cn":"就算做了最终也还是失败吧"},
+      {"jp":"せっかく〜のに","en":"I spent some time memorising them but they were not on the test.","cn":"好不容易记住了，考试却没有出"},
+      {"jp":"せっかく〜から","en":"Let's drop by his house since we are in the area.","cn":"好不容易来到这里，顺便去他家看看吧"},
+      {"jp":"いったん／一度／ひとたび〜したら","en":"Once you make a promise, you should keep it.","cn":"一旦约好了，就应该遵守"},
+      {"jp":"いったん／ひとまず〜","en":"Let's take a break and start again in the afternoon.","cn":"暂且休息一下，下午再开始吧"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"かえって","en":"We took a shortcut but it actually took us more time.","cn":"本想走近道，反而更花时间"},
+      {"jp":"さっそく","en":"I will send the items you ordered right away.","cn":"您订购的东西马上给您送去"},
+      {"jp":"さすが（に）","en":"That is just what we expected from our dedicated teacher.","cn":"不愧是老师，知道得真清楚"},
+      {"jp":"あいにく","en":"Unfortunately I am not available.","cn":"不巧那天没有时间"},
+      {"jp":"あくまで（も）","en":"He insisted that he was right.","cn":"他一直强调自己的正确性"},
+      {"jp":"なんだか／なんとなく／なぜか","en":"I feel sleepy for some reason.","cn":"总觉得困"},
+      {"jp":"なんと／なんて","en":"What a beautiful woman!","cn":"多漂亮的人呀"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.74",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"これで（a. ひとまず　b. ひとたび）安心です。"},
+        {"n":2,"q":"（a. せっかく　b. あいにく）買ったのに、どうして使わないの？"},
+        {"n":3,"q":"比較すると（a. とても　b. そう）差はなかった。"},
+        {"n":4,"q":"今日は（a. なんと　b. なんだか）蒸し暑い。"},
+        {"n":5,"q":"もらったケーキを（a. さっそく　b. ひとたび）食べた。"},
+        {"n":6,"q":"30年後の自動車は（a. おそらく　b. かえって）すべて電動になっているだろう。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"ハイキングへ行くつもりだったが（　　）雨が降ってしまった。","opts":["さっそく","あいにく","なんだか","ひとまず"]},
+        {"n":8,"q":"私のピアノは下手なので（　　）人の前では演奏できません。","opts":["たいして","そう","とても","別に"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②a ③b ④b ⑤a ⑥a　Ⅱ：⑦2 ⑧3"
+  },
+  "hitokoto": "おそらく合格できるでしょう。"
+}
