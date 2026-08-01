@@ -237,6 +237,10 @@ body.hide-cn .vcn,body.hide-cn .ven{visibility:hidden}
 }
 .home-top{position:sticky;top:var(--topbarh,97px);z-index:10;background:var(--bg);padding-bottom:4px}
 .wk-toc{display:none}
+.home-tools{display:flex;gap:8px;margin-bottom:14px}
+.home-tool{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:9px 4px;cursor:pointer;font-size:12.5px;color:var(--ink)}
+.home-tool .ic{font-size:18px}
+.home-tool:hover{border-color:var(--accent);color:var(--accent)}
 .week-card{scroll-margin-top:calc(var(--topbarh,97px) + var(--hometoph,40px))}
 @media (max-width:680px){
   .wk-toc{display:flex;gap:6px;overflow-x:auto;padding:6px 2px 4px;width:100%;max-width:100%;box-sizing:border-box;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
@@ -305,9 +309,6 @@ body.hide-cn .vcn,body.hide-cn .ven{visibility:hidden}
   <button data-nav="cards"><span class="ic">🗂️</span><span class="lbl" data-cn="记忆卡" data-en="Flashcards">记忆卡</span></button>
   <button data-nav="favs"><span class="ic">⭐</span><span class="lbl" data-cn="收藏" data-en="Favorites">收藏</span></button>
   <button data-nav="mistakes"><span class="ic">📝</span><span class="lbl" data-cn="错题本" data-en="Notes">错题本</span></button>
-  <button data-nav="contrast" id="navContrast"><span class="ic">🔀</span><span class="lbl" data-cn="辨析" data-en="Contrast">辨析</span></button>
-  <button data-nav="ref" id="navRef"><span class="ic">📖</span><span class="lbl" data-cn="接续表" data-en="Reference">接续表</span></button>
-  <button data-nav="katsuyou" id="navKatsuyou"><span class="ic">🔄</span><span class="lbl" data-cn="活用" data-en="Conjugation">活用</span></button>
 </nav>
 <script>
 let DATA={}, G={weeks:[]}, V={weeks:[]}, K={weeks:[]}, G2={weeks:[]}, V2={weeks:[]}, K2={weeks:[]}, dataLoaded=false, n2Loaded=false;
@@ -492,7 +493,7 @@ function navTo(hash){ if(location.hash===hash) render(); else location.hash=hash
 window.addEventListener('hashchange', render);
 backBtn.onclick = ()=>{ history.length>1 ? history.back() : navTo('#/'); };
 document.querySelectorAll('nav.bottom button').forEach(b=>{
-  b.onclick = ()=> navTo({home:'#/',search:'#/search',cards:'#/cards',favs:'#/favs',mistakes:'#/mistakes',contrast:'#/contrast',ref:'#/ref',katsuyou:'#/katsuyou'}[b.dataset.nav]);
+  b.onclick = ()=> navTo({home:'#/',search:'#/search',cards:'#/cards',favs:'#/favs',mistakes:'#/mistakes'}[b.dataset.nav]);
 });
 /* delegated clicks (artifact CSP blocks inline onclick=) */
 app.addEventListener('click', e=>{
@@ -603,6 +604,11 @@ function viewHome(){
   let html = `<div class="home-top"><div class="meta" style="margin-bottom:10px">${intro}</div>` +
     (weeks.length>3 ? `<div class="wk-toc">${weeks.map(w=>`<a class="wk-tocitem" data-scroll="wk-${w.n}">第${w.n}周</a>`).join('')}</div>` : '') +
     `</div>`;
+  if(MODULE==='grammar') html += `<div class="home-tools">
+    <div class="home-tool" data-go="#/contrast"><span class="ic">🔀</span><span class="lbl" data-cn="辨析" data-en="Contrast">辨析</span></div>
+    <div class="home-tool" data-go="#/ref"><span class="ic">📖</span><span class="lbl" data-cn="接续表" data-en="Reference">接续表</span></div>
+    <div class="home-tool" data-go="#/katsuyou"><span class="ic">🔄</span><span class="lbl" data-cn="活用" data-en="Conjugation">活用</span></div>
+  </div>`;
   for(const w of weeks){
     const wt = w.title ? ` <span class="jp">${esc(w.title)}</span>` : '';
     const wsubText = LX(w.title_cn, w.title_en);
@@ -1114,7 +1120,7 @@ function viewContrastWeek(){
   return body;
 }
 function viewContrast(){
-  setNav('contrast'); setHeader(LX('语法辨析 · N3','Grammar Contrast · N3'), false);
+  setNav('home'); setHeader(LX('语法辨析 · N3','Grammar Contrast · N3'), true);
   const modeBar = `<div class="fc-filter" style="margin-bottom:12px">
     <button class="${ctMode==='family'?'on':''}" data-ctmode="family">语法家族</button>
     <button class="${ctMode==='week'?'on':''}" data-ctmode="week">每周总结</button>
@@ -1130,7 +1136,7 @@ function refTable(cols, rows){
   </table></div>`;
 }
 function viewRef(){
-  setNav('ref'); setHeader('接続の表示方法', false);
+  setNav('home'); setHeader('接続の表示方法', true);
   const RF=G.reference;
   let html=`<div class="meta" style="margin-bottom:10px">${esc(RF.note)}</div>`;
   html+=`<div class="card"><h3 class="jp" style="margin-top:0">${esc(RF.verb.heading)}</h3>
@@ -1154,7 +1160,7 @@ function ktable(cols, rows){
   </table></div>`;
 }
 function viewKatsuyou(){
-  setNav('katsuyou'); setHeader(LX('活用一覧 · 普通形/丁寧形/尊敬語','Conjugation: Plain/Polite/Honorific'), false);
+  setNav('home'); setHeader(LX('活用一覧 · 普通形/丁寧形/尊敬語','Conjugation: Plain/Polite/Honorific'), true);
   const K2 = G.katsuyou;
   if(!K2){ app.innerHTML='<div class="empty">暂无内容</div>'; return; }
   let html = K2.intro ? `<div class="meta" style="margin-bottom:10px">${esc(K2.intro)}</div>` : '';
