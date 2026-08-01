@@ -1,0 +1,47 @@
+{
+  "week": 6, "day": 6, "title": "似ている言葉③", "title_cn": "相似的词语③", "title_en": "Similar words ③",
+  "sections": [
+    {"type":"words","heading":"発音が同じ／似ている言葉","items":[
+      {"jp":"せめる","en":"blame a colleague for making a mistake / go on the attack","cn":"指责同事的错误 / 进攻对方的队"},
+      {"jp":"のる","en":"listen and give advice / have an article published in a magazine","cn":"参与商量 / 杂志上登载报道"},
+      {"jp":"あたり","en":"around here / 5,000 yen per person","cn":"这一带 / 每人5千元"},
+      {"jp":"いがい","en":"There is no other way. / It was unexpectedly cheap.","cn":"除此之外没有方法 / 这意外地便宜"},
+      {"jp":"ふじん","en":"Mrs. Tanaka / Women's clothing","cn":"田中夫人 / 女装"},
+      {"jp":"じんこう","en":"the population of Tokyo / artificial pearls","cn":"东京的人口 / 人工的珍珠"},
+      {"jp":"みかた","en":"change your views / go for the underdog","cn":"改变事物的看法 / 偏袒弱方"},
+      {"jp":"とくちょう","en":"a distinct voice / the best feature of the new product","cn":"有特点的声音 / 新制品的特长","rel":"＊「特徴」は良い点も悪い点も含むが、「特長」はほかと比べて優れている点を表す。"},
+      {"jp":"あきる","en":"be tired of the work","cn":"工作厌烦"},
+      {"jp":"あきれる","en":"be shocked by a very rude attitude","cn":"被那恶劣的态度惊呆"},
+      {"jp":"あきらめる","en":"give up going to high school/college","cn":"放弃升学"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"ある","en":"someone","cn":"有一个人"},
+      {"jp":"あくる","en":"next/following day","cn":"翌日"},
+      {"jp":"もたれる","en":"lean against the wall","cn":"靠在墙上"},
+      {"jp":"もたらす","en":"cause much damage to ...","cn":"带来大的损害"},
+      {"jp":"くわしい","en":"This dictionary has very detailed explanations.","cn":"这个字典很详细"},
+      {"jp":"くやしい","en":"I'm frustrated from losing.","cn":"输了，好懊恼"},
+      {"jp":"実は","en":"To tell you the truth, I am having a hard time because I have no money.","cn":"说实话，正因没钱而困扰"},
+      {"jp":"実に","en":"a masterpiece","cn":"实在很棒的作品"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.106",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"インターネットは情報社会に大きい変化を（a. もたれた　b. もたらした）。"},
+        {"n":2,"q":"これは、（a. 人口　b. 人工）で作られた湖である。"},
+        {"n":3,"q":"このあたりの駐車料金は（a. あきれる　b. あきる）ほど高い。"},
+        {"n":4,"q":"犯人の名前が新聞に（a. のって　b. せめて）いた。"},
+        {"n":5,"q":"死んだと思った猫は（a. 実は　b. 実に）隣の家で飼われていた。"},
+        {"n":6,"q":"1番違いで宝くじがはずれて、とても（a. くやしい　b. くわしい）。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"事件の犯人は（　　）人物だった。","opts":["意外な","案外な","実は","実に"]},
+        {"n":8,"q":"留学してから、物の（　　）が変わった。","opts":["特徴","特長","見方","当たり"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②b ③a ④a ⑤a ⑥a　Ⅱ：⑦1 ⑧3"
+  },
+  "hitokoto": "あきらめないで、続けましょう。"
+}

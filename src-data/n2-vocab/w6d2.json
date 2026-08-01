@@ -1,0 +1,60 @@
+{
+  "week": 6, "day": 2, "title": "カタカナで書く言葉②", "title_cn": "用片假名写的词语②", "title_en": "Words written in katakana ②",
+  "sections": [
+    {"type":"words","heading":"使い方に注意","items":[
+      {"jp":"アイドル歌手","en":"a popular young singer","cn":"偶像歌手"},
+      {"jp":"テレビタレント","en":"a TV personality","cn":"电视演员"},
+      {"jp":"クレームをつける／言う","en":"complain","cn":"提出索赔"},
+      {"jp":"サービスがいい","en":"provides good service","cn":"服务好","rel":"⊙サービス精神旺盛 Enthusiastic and pleasant 服务精神旺盛"},
+      {"jp":"ホテルのフロント","en":"reception desk","cn":"酒店的服务台"},
+      {"jp":"シングル","en":"a single room","cn":"单人间","rel":"＊ホテルの部屋"},
+      {"jp":"ツイン","en":"a twin room","cn":"双人间","rel":"＊ホテルの部屋"},
+      {"jp":"コース料理","en":"a multiple course meal","cn":"套餐","rel":"⊙フルコース a six-course dinner (西餐中的)全套菜"},
+      {"jp":"バイキング形式の食事","en":"buffet meal","cn":"自助形式的饮食"},
+      {"jp":"ドライな性格","en":"a cold personality","cn":"冷淡的性格"},
+      {"jp":"（車の）ハンドル","en":"steering wheel","cn":"方向盘"},
+      {"jp":"タイヤがパンクする","en":"have a flat tire","cn":"轮胎破裂"},
+      {"jp":"学校のグラウンド","en":"the school yard","cn":"学校的运动场"},
+      {"jp":"コピー機","en":"a photo copying machine","cn":"打印机"},
+      {"jp":"コピー用紙","en":"photo copy paper","cn":"打印纸"},
+      {"jp":"デパートの化粧品コーナー","en":"cosmetic section in a department store","cn":"商场的化妆品专柜"},
+      {"jp":"ガソリンスタンド","en":"a gas station","cn":"加油站"},
+      {"jp":"電気スタンド","en":"a desk lamp","cn":"台灯"},
+      {"jp":"ビジネスマン","en":"a businessman","cn":"商务人员","rel":"＊日本語では会社員のことを意味する"},
+      {"jp":"ポイントカード","en":"point card","cn":"积分卡"},
+      {"jp":"重要なポイント","en":"an important point","cn":"要点"},
+      {"jp":"コメントをする／述べる","en":"voice your opinion","cn":"评论","rel":"⊙ノーコメント no comment 无可奉告"},
+      {"jp":"予算がオーバーする","en":"be over budget","cn":"超出预算"},
+      {"jp":"オーバーに話す","en":"exaggerate","cn":"夸张地说"},
+      {"jp":"日本人とドイツ人のハーフ","en":"a person who is half Japanese and half German","cn":"日本人和德国人的混血儿"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"ユニークな人","en":"a unique person","cn":"独特的人","rel":"＊ちょっと変わった人という意味"},
+      {"jp":"ユニークな考え","en":"a unique opinion","cn":"独特的想法"},
+      {"jp":"彼はこの分野のベテランだ。","en":"He is an expert in this area.","cn":"他是这个领域的专家"},
+      {"jp":"ベテランの女優","en":"a well established actress","cn":"经验丰富的女演员","rel":"＊日本語では経験が豊富な、あるいは技術や知識がある人という意味によく使われる。"},
+      {"jp":"トレーナーを着て運動する","en":"exercise in a sweat shirt","cn":"穿着运动衣运动"},
+      {"jp":"スポーツクラブのトレーナー","en":"a trainer in a sport club","cn":"运动俱乐部的教练"},
+      {"jp":"受け取りのサインをする","en":"sign the receipt","cn":"在收据上签字"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.97",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"父はキャリア30年の（a. ビジネス　b. ベテラン）パイロットです。"},
+        {"n":2,"q":"書類を2部ずつ（a. コピー　b. サービス）しておいてください。"},
+        {"n":3,"q":"彼女は学校中の（a. アイドル　b. タレント）です。"},
+        {"n":4,"q":"タレントの（a. コピー　b. サイン）入りポスターをプレゼントします。"},
+        {"n":5,"q":"その件に関してはノー（a. ポイント　b. コメント）です。"},
+        {"n":6,"q":"とても（a. ユニーク　b. オーバー）なデザインの衣装ですね。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"結婚記念日にホテルでフル（　　）の料理を食べた。","opts":["サービス","コース","コーナー","バイキング"]},
+        {"n":8,"q":"ここに了解の印の（　　）をしてください。","opts":["コピー","サイン","コメント","クレーム"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②a ③a ④b ⑤b ⑥a　Ⅱ：⑦2 ⑧2"
+  },
+  "hitokoto": "予算をオーバーしないようにしましょう。"
+}

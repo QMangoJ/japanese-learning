@@ -1,0 +1,54 @@
+{
+  "week": 6, "day": 4, "title": "似ている言葉①", "title_cn": "相似的词语①", "title_en": "Similar words ①",
+  "sections": [
+    {"type":"words","heading":"意味が似ている言葉","items":[
+      {"jp":"飛ぶ","en":"a bird flies","cn":"鸟飞"},
+      {"jp":"跳ねる","en":"a rabbit jumps","cn":"兔子跳"},
+      {"jp":"転ぶ","en":"fall on the road","cn":"在路上跌倒"},
+      {"jp":"転がる","en":"a ball rolled on to the street","cn":"球在路上滚动","rel":"⊙（〜を）転がす"},
+      {"jp":"ちぎる","en":"tear a piece of bread off to eat","cn":"撕开面包吃"},
+      {"jp":"破る","en":"tear a piece of paper / break a promise / break a record","cn":"把纸撕破 / 失约 / 破纪录","rel":"⊙（〜が）破ける"},
+      {"jp":"ほえる","en":"a dog barking","cn":"狗吠"},
+      {"jp":"うなる","en":"a dog growling","cn":"狗生气地吼叫"},
+      {"jp":"もれる","en":"the thermos is leaking","cn":"水壶漏水"},
+      {"jp":"こぼれる","en":"there is spilt milk","cn":"牛奶洒了"},
+      {"jp":"埋める","en":"fill a hole in","cn":"填坑"},
+      {"jp":"ふさぐ","en":"cover your ears","cn":"堵耳朵"},
+      {"jp":"つるす","en":"hang a curtain","cn":"挂窗帘"},
+      {"jp":"ぶらさげる","en":"hang a camera around your neck","cn":"提着相机","rel":"⊙（〜が）ずれる"},
+      {"jp":"なめる","en":"the cat is licking the plate","cn":"猫舔盘子"},
+      {"jp":"しゃぶる","en":"suck candy","cn":"含糖块"},
+      {"jp":"ずらす","en":"put off the appointment","cn":"将预约错开","rel":"⊙（〜が）ずれる"},
+      {"jp":"どける","en":"move the chair","cn":"挪开椅子","rel":"⊙（〜が）どく"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"枯れる","en":"a tree dies","cn":"树木枯萎"},
+      {"jp":"しぼむ","en":"the flower has wilted","cn":"花枯萎"},
+      {"jp":"傷つく","en":"I was hurt by his words.","cn":"被他的话刺伤了"},
+      {"jp":"傷がつく","en":"I got a scratch on my leather bag.","cn":"皮包上有伤痕"},
+      {"jp":"新たにする","en":"renew your determination","cn":"重新下决心"},
+      {"jp":"改める","en":"deal with your shortcomings","cn":"改正缺点","rel":"⊙改めて、また来ます。I will come again some other time. 改日再来"},
+      {"jp":"先に","en":"the previous meeting","cn":"先前举行的会议"},
+      {"jp":"先ほど","en":"I called you earlier...","cn":"刚才给您打电话了……"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.101",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"（a. 先ほど　b. 先に）田中さんからお電話がありました。"},
+        {"n":2,"q":"天井から雨が（a. こぼれている　b. もれている）。"},
+        {"n":3,"q":"ゴルフ場の芝生が（a. かれて　b. しぼんで）しまった。"},
+        {"n":4,"q":"新車にもう（a. 傷ついて　b. 傷がついて）しまった。"},
+        {"n":5,"q":"くしゃみをするとき、手で口を（a. うめた　b. ふさいだ）。"},
+        {"n":6,"q":"雪のため、試験の開始時間を30分（a. どけた　b. ずらした）。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"池で、魚が（　　）いる。","opts":["ころんで","はねて","とんで","ほえて"]},
+        {"n":8,"q":"ちょっと、じゃまだから（　　）。","opts":["どいて","うなって","つるして","しぼんで"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②b ③a ④b ⑤b ⑥b　Ⅱ：⑦2 ⑧1"
+  },
+  "hitokoto": "約束は破らないようにしましょう。"
+}
