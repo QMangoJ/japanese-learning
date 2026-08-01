@@ -169,7 +169,7 @@ a.plink{color:var(--blue);text-decoration:none}
 del{text-decoration:line-through;color:var(--sub)}
 ruby rt{font-size:.55em;color:var(--sub);letter-spacing:0;user-select:none}
 body.no-ruby rt{display:none}
-.mem-bar{display:flex;gap:8px;margin-bottom:12px}
+.mem-bar{display:flex;gap:8px;margin-bottom:12px;position:sticky;top:var(--topbarh,97px);z-index:15;background:var(--bg);padding:8px 0 4px}
 .mem-bar button{flex:1;border:1px solid var(--line);background:var(--card);color:var(--sub);border-radius:999px;padding:6px 0;font-size:13px;font-weight:700;cursor:pointer}
 .mem-bar button.on{background:var(--accent);border-color:var(--accent);color:#fff}
 body.hide-jp .vjp-text{visibility:hidden}
