@@ -1,0 +1,56 @@
+{
+  "week": 2, "day": 1, "title": "仕事を探しています", "title_cn": "找工作", "title_en": "I am looking for a job",
+  "sections": [
+    {"type":"words","heading":"お仕事は？ ―［　］をしています／［　］です。","items":[
+      {"jp":"老人ホームのホームヘルパー","en":"a helper in the nursing home","cn":"养老院的护理人员"},
+      {"jp":"語学学校の講師","en":"a language school teacher","cn":"语言学校的老师"},
+      {"jp":"会社の事務員","en":"a clerk","cn":"公司的事务人员"},
+      {"jp":"コンピューター関係の仕事","en":"IT related job","cn":"电脑相关的工作"},
+      {"jp":"レストランのオーナー","en":"a restaurant owner","cn":"饭店老板"},
+      {"jp":"ホテルの従業員","en":"a hotel worker","cn":"酒店的工作人员"},
+      {"jp":"フリーター","en":"A general name for people who live on part-time jobs.","cn":"自由职业者：指不在固定的公司就职，靠不停打工维持生活的人。"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"就職する","en":"get a job","cn":"就业"},
+      {"jp":"就職活動","en":"job hunting","cn":"求职活动"},
+      {"jp":"求人情報","en":"job information","cn":"招聘信息"},
+      {"jp":"履歴書を書く","en":"prepare a resume","cn":"写简历"},
+      {"jp":"年齢制限がある","en":"has an age-limit","cn":"有年龄限制"},
+      {"jp":"経験を問わない","en":"no previous experiences required","cn":"不论是否有经验"},
+      {"jp":"やとう／採用する","en":"employ","cn":"雇佣，录用"},
+      {"jp":"人手が不足している","en":"lack of manpower","cn":"人手不够"},
+      {"jp":"正社員を募集する","en":"advertise a permanent position","cn":"招聘正式员工"},
+      {"jp":"派遣社員に登録する","en":"register with man-power","cn":"登记为派遣社员"},
+      {"jp":"会社に問い合わせる","en":"ask the company about ...","cn":"向公司咨询"},
+      {"jp":"気軽にたずねる","en":"feel free to ask questions","cn":"轻松询问"},
+      {"jp":"面接で緊張する","en":"get nervous at a job interview","cn":"在面试中紧张"},
+      {"jp":"面接にふさわしい服装","en":"proper outfit for a job interview","cn":"适合面试的服装"},
+      {"jp":"8時間勤務","en":"an 8 hour day","cn":"8小时工作"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"時給で働く","en":"work for an hourly wage","cn":"小时工"},
+      {"jp":"交通費が支給される","en":"be reimbursed for your transportation costs","cn":"被支付交通费"},
+      {"jp":"お金をかせぐ","en":"make money","cn":"挣钱"},
+      {"jp":"お金をもうける","en":"make a lot of money","cn":"赚钱","rel":"⊙店がもうかる the store makes a lot of profit 店里很赚钱"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.31",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"パソコンの辞書に自分の名前を（a. 採用　b. 登録）した。"},
+        {"n":2,"q":"給料に加えて食事代として一人2,000円（a. 引き落とし　b. 支給）された。"},
+        {"n":3,"q":"ホームヘルパーの数はまだまだ（a. 募集　b. 不足）している。"},
+        {"n":4,"q":"彼は賃貸アパートの（a. フリーター　b. オーナー）をしている。"},
+        {"n":5,"q":"年齢を（a. 問わない　b. 問い合わせない）仕事はないだろうか。"},
+        {"n":6,"q":"結婚式に招待されたけれど、それに（a. 気軽な　b. ふさわしい）服をもっていない。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"田中さんはコンピューター関係の会社に（　　）。","opts":["募集された","勤務された","やとわれた","採用された"]},
+        {"n":8,"q":"リンさんはバイトで月に10万円（　　）いるそうだ。","opts":["かせいで","やとって","もうかって","はぶいて"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②b ③b ④b ⑤a ⑥b　Ⅱ：⑦4 ⑧1"
+  },
+  "hitokoto": "面接にふさわしい服を着ましょう。"
+}

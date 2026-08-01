@@ -1,0 +1,52 @@
+{
+  "week": 2, "day": 5, "title": "パソコンを使っています②", "title_cn": "正在用电脑②", "title_en": "Use a PC ②",
+  "sections": [
+    {"type":"words","heading":"","items":[
+      {"jp":"書類を作成する","en":"prepare a document","cn":"制作文件"},
+      {"jp":"かなを漢字に変換する","en":"convert Kana into Kanji","cn":"把假名转换为汉字","rel":"⊙漢字を確定する select the correct Kanji 确认汉字"},
+      {"jp":"文字を削除する","en":"delete words","cn":"删除文字"},
+      {"jp":"改行する","en":"start a new line","cn":"另起行"},
+      {"jp":"文字のサイズを設定する","en":"set the font size","cn":"设定文字大小"},
+      {"jp":"フォントを変更する","en":"change the font","cn":"更改字体"},
+      {"jp":"カーソルを移動する","en":"move the cursor","cn":"移动光标"},
+      {"jp":"範囲を選択する","en":"select the area","cn":"选择范围"},
+      {"jp":"目的の位置に合わせる","en":"adjust the layout","cn":"对准目标位置"},
+      {"jp":"文字を中央にそろえる","en":"center","cn":"将文字居中"},
+      {"jp":"右に寄せる","en":"align right","cn":"右对齐"},
+      {"jp":"下線／アンダーラインをつける","en":"underline","cn":"加下划线"},
+      {"jp":"記号を入れる","en":"insert symbols","cn":"插入符号"},
+      {"jp":"図を挿入する","en":"insert a picture","cn":"插入图片"},
+      {"jp":"図を拡大する","en":"enlarge a picture","cn":"放大图片","rel":"⇔縮小する shrink 缩小"},
+      {"jp":"内容を修正する","en":"modify the content","cn":"修改内容"},
+      {"jp":"文書を編集する","en":"compile a document","cn":"编辑文件"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"元にもどす","en":"reverse","cn":"撤销","rel":"⊙やり直す do it over 重做"},
+      {"jp":"図形をコピーする","en":"copy an illustration/diagram","cn":"复制图形"},
+      {"jp":"切り取る／カットする","en":"cut","cn":"剪切","rel":"⊙切り取り(N) cutting 剪切"},
+      {"jp":"貼り付ける／ペーストする","en":"paste","cn":"粘贴","rel":"⊙貼り付け(N) pasting 粘贴"},
+      {"jp":"画像を取り込む","en":"import a picture","cn":"载入图像"},
+      {"jp":"文書を保存する","en":"save a document","cn":"保存文件","rel":"⊙上書き保存する revise a document 覆盖保存文件"},
+      {"jp":"ファイルを添付する","en":"attach a file","cn":"添加附件"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.39",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"フォントを（a. 変更　b. 移動）する。"},
+        {"n":2,"q":"文字のサイズは10ポイントに（a. 設定　b. 選択）してください。"},
+        {"n":3,"q":"「これよりさっきのほうがよかったから、（a. 元にもどそう　b. 保存しよう）。」"},
+        {"n":4,"q":"この写真をクリックすると、（a. 図形　b. 拡大）できます。"},
+        {"n":5,"q":"文字を中央に（a. そろえて　b. よって）ください。"},
+        {"n":6,"q":"編集が完了した文書は、忘れずに（a. 保存　b. 拡大）しましょう。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"（　　）を取り込んで、はがきを作成した。","opts":["画像","基本","画面","本体"]},
+        {"n":8,"q":"範囲を選択して（　　）をつけてください。","opts":["カーソル","フォント","ペースト","アンダーライン"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②a ③b ④b ⑤a ⑥a　Ⅱ：⑦1 ⑧4"
+  },
+  "hitokoto": "見やすい書類を作成しましょう。"
+}

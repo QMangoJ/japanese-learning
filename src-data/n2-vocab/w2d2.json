@@ -1,0 +1,52 @@
+{
+  "week": 2, "day": 2, "title": "仕事をしています①", "title_cn": "正在工作①", "title_en": "Has a job ①",
+  "sections": [
+    {"type":"words","heading":"","items":[
+      {"jp":"上司","en":"boss","cn":"上司","rel":"⇔部下 subordinate 部下"},
+      {"jp":"部長","en":"manager","cn":"部长"},
+      {"jp":"課長","en":"chief","cn":"科长"},
+      {"jp":"先輩","en":"senior","cn":"前辈","rel":"⇔後輩 one of your juniors 后辈"},
+      {"jp":"同僚／仕事仲間","en":"colleague","cn":"(单位)同事"},
+      {"jp":"大企業に就職する","en":"get a job in a big company","cn":"在大企业就职"},
+      {"jp":"4月に入社する","en":"start working in April","cn":"四月份进公司","rel":"⊙新入社員 a freshman 新职员"},
+      {"jp":"我が社の女子社員","en":"female staff members in our company","cn":"我们公司的女职员"},
+      {"jp":"先輩に教わる","en":"learn from the more experienced staff","cn":"请教前辈"},
+      {"jp":"先輩を見習う","en":"follow the example of the more experienced staff","cn":"学习前辈"},
+      {"jp":"早退する","en":"go home early","cn":"早退","rel":"⇔遅刻する be late 迟到"},
+      {"jp":"休憩する","en":"take a break","cn":"休息"},
+      {"jp":"休み／休暇を取る","en":"take a holiday","cn":"休假","rel":"⊙有給休暇 paid leave 带薪休假"},
+      {"jp":"席を外す","en":"leave your desk","cn":"离开座位"},
+      {"jp":"やりがいのある仕事","en":"a challenging job","cn":"有意义的工作","rel":"⊙仕事が生きがいだ。I live for my work. 工作是生活的价值。"},
+      {"jp":"休む間（＝ひま）がない","en":"never have time to rest","cn":"没有休息时间"},
+      {"jp":"体がもたない","en":"can't keep this pace up","cn":"身体不支了"},
+      {"jp":"やる気が出ない","en":"have no drive","cn":"没有干劲儿"},
+      {"jp":"具合が悪いふりをする","en":"pretend to feel sick","cn":"假装身体不舒服"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"仕事を怠ける／サボる","en":"neglect one's work","cn":"工作偷懒","rel":"⊙怠け者 a lazy person 懒人／⇔働き者 a hardworking person 勤快人"},
+      {"jp":"仕事でミスをする","en":"makes mistakes at work","cn":"工作中出错"},
+      {"jp":"遅刻の言い訳をする","en":"makes excuses for being late","cn":"辩解迟到原因"},
+      {"jp":"上司にゴマをする","en":"butters up the boss","cn":"拍上司马屁","rel":"⊙おせじを言う flatter someone 恭维、应酬话"},
+      {"jp":"超忙しい〈俗語〉","en":"extremely busy","cn":"超级忙"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.33",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"子どもが私の（a. やりがい　b. 生きがい）です。"},
+        {"n":2,"q":"忙しくて休む（a. 体　b. ひま）がない。"},
+        {"n":3,"q":"休みを（a. 取って　b. はずして）、旅行に行きたい。"},
+        {"n":4,"q":"教わっても（a. 体が持たない　b. やる気がない）となかなか上達しないよ。"},
+        {"n":5,"q":"彼は同じ大学の（a. 部下　b. 後輩）です。"},
+        {"n":6,"q":"また遅刻した。部長に「（a. 言い訳　b. ゴマ）をしてもだめだ。」と言われた。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"申し訳ありません。部長はちょっと（　　）おりますが、すぐ戻ると思います。","opts":["席を外して","早退して","休みを取って","不足して"]},
+        {"n":8,"q":"上司から次々と仕事が与えられ、休む（　　）もない。","opts":["気","時","場","間"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②b ③b ④b ⑤a ⑥b　Ⅱ：⑦4 ⑧1"
+  },
+  "hitokoto": "やりがいのある仕事を見つけましょう。"
+}

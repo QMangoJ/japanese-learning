@@ -1,0 +1,52 @@
+{
+  "week": 2, "day": 6, "title": "パソコンを使っています③", "title_cn": "正在用电脑③", "title_en": "Use a PC ③",
+  "sections": [
+    {"type":"words","heading":"","items":[
+      {"jp":"プリンターで印刷する／プリントする","en":"print (on one's printer)","cn":"用打印机打印"},
+      {"jp":"プリンターの用紙が切れる","en":"the printer is out of paper","cn":"打印机缺纸","rel":"⊙（〜を）切らす"},
+      {"jp":"インク／トナーがなくなる","en":"run out of ink/toner","cn":"打印机油墨用完"},
+      {"jp":"印刷の範囲を指定する","en":"select a range for printing","cn":"指定印刷范围"},
+      {"jp":"印刷の向きを確認する","en":"check the vertical alignment of the print job","cn":"确认印刷的方向"},
+      {"jp":"余白を多くする","en":"set bigger margins","cn":"调大空白部分"},
+      {"jp":"標準サイズの用紙","en":"standard sized paper","cn":"标准尺寸的用纸"},
+      {"jp":"印刷がずれる","en":"the printing on the page is askew","cn":"印歪了","rel":"⊙（〜を）ずらす"},
+      {"jp":"手間がかかる","en":"take a lot of work","cn":"费时间"},
+      {"jp":"手間を省く","en":"save a lot of work","cn":"省时"},
+      {"jp":"表示を切り替える","en":"change the setting","cn":"切换表示"},
+      {"jp":"データが消える","en":"lose data","cn":"数据消失"},
+      {"jp":"消去する","en":"delete data","cn":"消除"},
+      {"jp":"迷惑メール","en":"junk mail","cn":"垃圾邮件"},
+      {"jp":"受信を拒否する","en":"reject messages","cn":"拒绝收信"},
+      {"jp":"個人情報を盗まれる","en":"have personal information stolen","cn":"个人信息被盗"},
+      {"jp":"（コンピューター）ウイルスに感染する","en":"get infected by a computer virus","cn":"感染电脑病毒"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"新しいウイルスに対応する","en":"deal with a new computer virus","cn":"处理新病毒"},
+      {"jp":"チャットを楽しむ","en":"enjoy chatting on line","cn":"喜欢网上聊天"},
+      {"jp":"コミュニケーションを楽しむ","en":"enjoy communicating","cn":"从交流中得到快乐"},
+      {"jp":"掲示板に書き込む","en":"write in online","cn":"写在留言板上"},
+      {"jp":"ネットオークション","en":"net auction","cn":"网上拍卖"},
+      {"jp":"品物を売り買いする","en":"trade goods","cn":"买卖东西"},
+      {"jp":"オンラインゲームをする","en":"play online games","cn":"在线打游戏"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.42",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"ファイルを（a. 閉じて　b. 完了して）パソコンを終了させた。"},
+        {"n":2,"q":"コンピューターウイルスに（a. 感染　b. 接続）したらしく、正しく動かない。"},
+        {"n":3,"q":"1行ずつ入力するのは（a. 手間を省く　b. 手間がかかる）。"},
+        {"n":4,"q":"このソフトは迷惑メールの受信を（a. 消去　b. 拒否）します。"},
+        {"n":5,"q":"古いパソコンを（a. ネットオークション　b. コミュニケーション）で手に入れた。"},
+        {"n":6,"q":"インターネットの（a. 掲示板　b. 余白）に書き込みをした。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"紙が（　　）しまって、印刷が上手にできない。","opts":["かかって","ずれて","きれて","はぶいて"]},
+        {"n":8,"q":"突然停電して、入力中の（　　）が全部消えてしまった。","opts":["データ","チャット","プリンター","ウイルス"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②a ③b ④b ⑤a ⑥a　Ⅱ：⑦2 ⑧1"
+  },
+  "hitokoto": "プリンターの用紙が切れていませんか。"
+}

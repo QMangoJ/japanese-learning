@@ -1,0 +1,56 @@
+{
+  "week": 2, "day": 3, "title": "仕事をしています②", "title_cn": "正在工作②", "title_en": "Has a job ②",
+  "sections": [
+    {"type":"words","heading":"5月24日（金） 今日は会議が長引いて疲れた。自分の意見を述べたが、具体的な案を出すことができなかった。結局、今日の問題について、結論が出ないまま終わった。意見をまとめるのは本当に大変だと思った。4月に入社したばかりの中村君も出席したが、初めての会議で意見を求められて緊張したようだ。でも、資料を配ったり、メモを取ったりして張り切っていた。","items":[
+      {"jp":"会議が長引く","en":"the meeting is prolonged","cn":"会议施延"},
+      {"jp":"会議／ミーティングの準備をする","en":"prepare for the meeting","cn":"准备会议"},
+      {"jp":"意見を述べる","en":"express","cn":"陈述"},
+      {"jp":"意見をまとめる","en":"summarize","cn":"总结"},
+      {"jp":"意見を求める","en":"ask for","cn":"征求"},
+      {"jp":"具体的な案を出す","en":"suggest concrete plans","cn":"提出具体方案","rel":"⇔抽象的（な）abstract 抽象的"},
+      {"jp":"アイデアを出す","en":"suggest ideas","cn":"提出具体想法"},
+      {"jp":"結論が出る","en":"come to a conclusion","cn":"出结论"},
+      {"jp":"資料／プリントを配る","en":"distribute materials, handouts","cn":"分发资料/印刷品"},
+      {"jp":"メモを取る","en":"take notes","cn":"做记录"},
+      {"jp":"張り切る","en":"be full of enthusiasm","cn":"拉紧、干劲十足"},
+      {"jp":"仕事を引き受ける","en":"take a job","cn":"接受工作"},
+      {"jp":"仕事の打ち合わせをする","en":"make business arrangements","cn":"开工作会议","rel":"⊙打ち合わせる(V) have a business meeting 商量"},
+      {"jp":"スケジュールを組む","en":"make up the schedule","cn":"制定计划"},
+      {"jp":"仕事を順調にこなす","en":"work efficiently","cn":"顺利完成工作"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"電話を取り次ぐ","en":"take a (phone) message","cn":"转达电话"},
+      {"jp":"電話を転送する","en":"transfer a call","cn":"转接电话"},
+      {"jp":"電話を保留する","en":"put someone on hold","cn":"保留电话"},
+      {"jp":"残業する","en":"work overtime","cn":"加班"},
+      {"jp":"出張が多い","en":"go on a lot of business trips","cn":"出差多"},
+      {"jp":"出世する","en":"get promoted","cn":"出人头地"},
+      {"jp":"昇進する","en":"get a promotion","cn":"晋级"},
+      {"jp":"本社に転勤になる","en":"be transferred to the head office","cn":"调到总部工作"},
+      {"jp":"転職する","en":"find a job in another company","cn":"跳槽、换工作"},
+      {"jp":"会社を首になる","en":"get fired","cn":"被公司炒鱿鱼"},
+      {"jp":"リストラされる","en":"（＝首になる）","cn":"（＝被解雇）"},
+      {"jp":"退職する","en":"retire","cn":"退职"},
+      {"jp":"失業する","en":"lose your job","cn":"失业"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.35",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"明日の会議で新しい商品の（a. 案　b. メモ）を出さなければならない。"},
+        {"n":2,"q":"明日から2日間、東京へ（a. 転勤　b. 出張）します。"},
+        {"n":3,"q":"来月のスケジュールを（a. 取って　b. 組んで）から、またご連絡します。"},
+        {"n":4,"q":"会議で資料を（a. 述べた　b. 配った）。"},
+        {"n":5,"q":"最後に結論が（a. 述べられた　b. 長引かれた）。"},
+        {"n":6,"q":"「その仕事は私が（a. 引き受けます　b. 打ち合わせます）。」"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"会議で意見を（　　）困った。","opts":["なまけられて","配られて","まとめられて","もとめられて"]},
+        {"n":8,"q":"（　　）が長引いて疲れた。","opts":["ミーティング","アイデア","プリント","メモ"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②b ③a ④b ⑤a ⑥a　Ⅱ：⑦4 ⑧1"
+  },
+  "hitokoto": "わかりやすく自分の意見を述べましょう。"
+}

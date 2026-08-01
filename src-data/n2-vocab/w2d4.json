@@ -1,0 +1,44 @@
+{
+  "week": 2, "day": 4, "title": "パソコンを使っています①", "title_cn": "正在用电脑①", "title_en": "Use a PC ①",
+  "sections": [
+    {"type":"words","heading":"絵をみておぼえましょう","items":[
+      {"jp":"モニター／ディスプレイ","en":"display","cn":"显示器"},
+      {"jp":"プリンター","en":"printer","cn":"打印机"},
+      {"jp":"パソコン本体","en":"PC body","cn":"主机"},
+      {"jp":"（マウス）ポインター／（マウス）カーソル","en":"cursor","cn":"光标"},
+      {"jp":"ウィンドウ","en":"Windows","cn":"窗口"},
+      {"jp":"キーボード","en":"keyboard","cn":"键盘"},
+      {"jp":"マウス","en":"mouse","cn":"鼠标"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"パソコンを操作する","en":"operate the computer","cn":"操作电脑"},
+      {"jp":"基本をマスターする","en":"master the basic operations","cn":"掌握基础"},
+      {"jp":"パソコンを起動する／立ち上げる","en":"start the computer","cn":"启动电脑","rel":"⇔終了する turn off 关闭"},
+      {"jp":"パソコンを再起動する","en":"restart the computer","cn":"重新启动电脑"},
+      {"jp":"次の画面を表示する","en":"display the next page","cn":"显示如下画面"},
+      {"jp":"プロバイダーと契約する","en":"subscribe to a provider","cn":"和供应商签约"},
+      {"jp":"インターネット／ネットに接続する／つなぐ／アクセスする","en":"get connected to the internet","cn":"连接英特网","rel":"⊙（〜が）つながる"},
+      {"jp":"インターネットで検索する","en":"search on the internet","cn":"在英特网上检索"},
+      {"jp":"ホームページで情報を得る","en":"obtain the information on the website","cn":"从主页中获取信息","rel":"＊日本では、会社などのウェブサイト全体のことを「ホームページ」と言う。"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.37",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"インターネットからそのソフトを（a. アクセス　b. ダウンロード）した。"},
+        {"n":2,"q":"フリーズしたので、パソコンを（a. 起動　b. 再起動）した。"},
+        {"n":3,"q":"家でインターネットが使えるように、プロバイダーと（a. 契約　b. 接続）した。"},
+        {"n":4,"q":"パソコンが（a. 起動　b. フリーズ）したのでカーソルが動かない。"},
+        {"n":5,"q":"マウスを（a. クリック　b. カーソル）してファイルを開く。"},
+        {"n":6,"q":"なぜかインターネットに（a. つながらない　b. 立ち上がらない）。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"パソコンを初めて使うので、マウスの（　　）がうまくできません。","opts":["表示","操作","起動","マスター"]},
+        {"n":8,"q":"携帯電話のメールで私の（　　）のアドレスを教えます。","opts":["インターネット","パソコン","システム","アクセス"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①a ②b ③a ④b ⑤a ⑥a　Ⅱ：⑦4 ⑧1"
+  },
+  "hitokoto": "パソコンの基本操作をマスターしましょう。"
+}
