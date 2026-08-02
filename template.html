@@ -375,29 +375,37 @@ function sayBtn(t){ return t?`<button class="sayb" data-say="${escAttr(t)}" aria
 let MISTAKES=[]; try{ MISTAKES=JSON.parse(localStorage.getItem('mistakes')||'[]')||[]; }catch(e){ MISTAKES=[]; }
 let mistakeAddType='q';
 const MISTAKE_TYPES={q:'错题', word:'单词', grammar:'语法'};
-let _mistakeSyncing=false, _mistakePushTimer=null;
+let _mistakeSyncing=false, _mistakePushTimer=null, _mistakesReady=false, _mistakesPendingPush=false;
 function pushMistakesNow(){
   fetch('/api/mistakes', {method:'PUT', headers:{'content-type':'application/json'}, body: JSON.stringify(MISTAKES)}).catch(()=>{});
 }
 function saveMistakes(){
   try{ localStorage.setItem('mistakes', JSON.stringify(MISTAKES)); }catch(e){}
   if(_mistakeSyncing) return; // 刚从服务器拉取时不要把同一份数据立刻推回去
+  if(!_mistakesReady){ _mistakesPendingPush=true; return; } // 首次拉取完成前，本地改动先不推送，避免用旧数据整体覆盖云端
   clearTimeout(_mistakePushTimer);
   _mistakePushTimer = setTimeout(pushMistakesNow, 400);
 }
 async function pullMistakesFromServer(){
   try{
     const res = await fetch('/api/mistakes', {cache:'no-store'});
-    if(!res.ok) return;
-    const data = await res.json();
-    if(Array.isArray(data)){
-      _mistakeSyncing = true;
-      MISTAKES = data;
-      try{ localStorage.setItem('mistakes', JSON.stringify(MISTAKES)); }catch(e){}
-      _mistakeSyncing = false;
-      render();
+    if(res.ok){
+      const data = await res.json();
+      if(Array.isArray(data)){
+        _mistakeSyncing = true;
+        // 合并而非整体覆盖：拉取完成前本地新增的条目（服务器还没有）要保留下来
+        const merged = data.slice();
+        for(const m of MISTAKES){ if(!data.some(d=>d.id===m.id)) merged.push(m); }
+        merged.sort((a,b)=>b.ts-a.ts);
+        MISTAKES = merged;
+        try{ localStorage.setItem('mistakes', JSON.stringify(MISTAKES)); }catch(e){}
+        _mistakeSyncing = false;
+        render();
+      }
     }
   }catch(e){ /* 离线或本地 file:// 打开时静默失败，继续用本地缓存 */ }
+  _mistakesReady = true;
+  if(_mistakesPendingPush){ _mistakesPendingPush=false; saveMistakes(); }
 }
 function addMistake(type, text){
   text=(text||'').trim(); if(!text) return;
@@ -432,29 +440,34 @@ function viewMistakes(){
 }
 let FAV={}; try{ FAV=JSON.parse(localStorage.getItem('favs')||'{}')||{}; }catch(e){ FAV={}; }
 const FAVMETA={};
-let _favSyncing=false, _favPushTimer=null;
+let _favSyncing=false, _favPushTimer=null, _favReady=false, _favPendingPush=false;
 function pushFavsNow(){
   fetch('/api/favorites', {method:'PUT', headers:{'content-type':'application/json'}, body: JSON.stringify(FAV)}).catch(()=>{});
 }
 function saveFav(){
   try{ localStorage.setItem('favs', JSON.stringify(FAV)); }catch(e){}
   if(_favSyncing) return; // 刚从服务器拉取时不要把同一份数据立刻推回去
+  if(!_favReady){ _favPendingPush=true; return; } // 首次拉取完成前，本地改动先不推送，避免用旧数据整体覆盖云端
   clearTimeout(_favPushTimer);
   _favPushTimer = setTimeout(pushFavsNow, 400);
 }
 async function pullFavsFromServer(){
   try{
     const res = await fetch('/api/favorites', {cache:'no-store'});
-    if(!res.ok) return;
-    const data = await res.json();
-    if(data && typeof data==='object' && !Array.isArray(data)){
-      _favSyncing = true;
-      FAV = data;
-      try{ localStorage.setItem('favs', JSON.stringify(FAV)); }catch(e){}
-      _favSyncing = false;
-      render();
+    if(res.ok){
+      const data = await res.json();
+      if(data && typeof data==='object' && !Array.isArray(data)){
+        _favSyncing = true;
+        // 合并而非整体覆盖：拉取完成前本地新增/取消的收藏要保留下来
+        FAV = Object.assign({}, data, FAV);
+        try{ localStorage.setItem('favs', JSON.stringify(FAV)); }catch(e){}
+        _favSyncing = false;
+        render();
+      }
     }
   }catch(e){ /* 离线或本地 file:// 打开时静默失败，继续用本地缓存 */ }
+  _favReady = true;
+  if(_favPendingPush){ _favPendingPush=false; saveFav(); }
 }
 function isFav(id){ return !!FAV[id]; }
 function toggleFav(id){ if(FAV[id]) delete FAV[id]; else if(FAVMETA[id]) FAV[id]=FAVMETA[id]; saveFav(); }
@@ -520,6 +533,13 @@ app.addEventListener('click', e=>{
         const r=qEl.querySelector('.qz-result'); if(r) r.textContent = picked===correct?'✓ 答对了':'✗ 答错了';
         if(r) r.classList.add(picked===correct?'ok':'ng');
         const note=qEl.querySelector('.qz-note'); if(note) note.classList.add('show');
+        if(picked!==correct){
+          const qText=(qEl.querySelector('.jp')||{}).textContent||'';
+          const correctBtn=wrap.querySelector(`[data-optidx="${correct}"]`);
+          const pickedText=(ob.textContent||'').trim();
+          const correctText=(correctBtn?correctBtn.textContent:'')||'';
+          addMistake('q', `${qText.trim()}\n你的答案：${pickedText}\n正确答案：${correctText.trim()}`);
+        }
       }
     }
     return;
