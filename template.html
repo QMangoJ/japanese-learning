@@ -414,7 +414,15 @@ function addMistake(type, text){
   MISTAKES.unshift({id:Date.now()+'-'+Math.random().toString(36).slice(2,7), type, text, ts:Date.now()});
   saveMistakes();
 }
-function deleteMistake(id){ MISTAKES=MISTAKES.filter(m=>m.id!==id); saveMistakes(); }
+// 墓碑式删除：保留一个 {deleted:true} 标记并同步上去，别的设备据此隐藏，
+// 这样删除能跨设备传播，又不会在合并时把它当成“本地独有”复活。
+function deleteMistake(id){
+  const e = MISTAKES.find(m=>m.id===id);
+  if(e){ e.deleted=true; e.ts=e.ts||Date.now(); }
+  else { MISTAKES.push({id, deleted:true, ts:Date.now()}); }
+  saveMistakes();
+}
+function activeMistakes(){ return MISTAKES.filter(m=>!m.deleted); }
 function mistakeDate(ts){
   const d=new Date(ts), p=n=>String(n).padStart(2,'0');
   return `${d.getFullYear()}-${p(d.getMonth()+1)}-${p(d.getDate())}`;
@@ -428,10 +436,11 @@ function mistakeItemHTML(m){
 let mistakeFilter='all';
 function viewMistakes(){
   setNav('mistakes'); setHeader(LX('错题 / 生词本','My Mistakes & Notes'), false);
-  const list = mistakeFilter==='all' ? MISTAKES : MISTAKES.filter(m=>m.type===mistakeFilter);
+  const src = activeMistakes();
+  const list = mistakeFilter==='all' ? src : src.filter(m=>m.type===mistakeFilter);
   const filterBar = `<div class="fc-filter" style="margin-bottom:14px">
-    <button class="${mistakeFilter==='all'?'on':''}" data-mfilter="all">全部（${MISTAKES.length}）</button>
-    ${Object.entries(MISTAKE_TYPES).map(([k,v])=>`<button class="${mistakeFilter===k?'on':''}" data-mfilter="${k}">${v}（${MISTAKES.filter(m=>m.type===k).length}）</button>`).join('')}
+    <button class="${mistakeFilter==='all'?'on':''}" data-mfilter="all">全部（${src.length}）</button>
+    ${Object.entries(MISTAKE_TYPES).map(([k,v])=>`<button class="${mistakeFilter===k?'on':''}" data-mfilter="${k}">${v}（${src.filter(m=>m.type===k).length}）</button>`).join('')}
   </div>`;
   const body = list.length ? list.map(mistakeItemHTML).join('') : '<div class="empty">还没有记录，在上面写一条保存试试。</div>';
   app.innerHTML = `<div class="card mistake-widget" style="margin-bottom:14px">
@@ -1243,6 +1252,52 @@ render();
 bootN3();
 pullFavsFromServer();
 pullMistakesFromServer();
+
+/* 切回页面（可见/获得焦点）时自动重新同步：与云端合并，反映另一台设备的新增，
+   删除通过墓碑标记传播。本地若还有未推送完的改动（防抖计时器未触发）则跳过这轮。 */
+let _resyncingM=false, _resyncingF=false;
+async function resyncMistakes(){
+  if(!_mistakesReady || _mistakePushTimer || _resyncingM) return;
+  _resyncingM=true;
+  try{
+    const res = await fetch('/api/mistakes', {cache:'no-store'});
+    if(res.ok){
+      const data = await res.json();
+      if(Array.isArray(data)){
+        _mistakeSyncing=true;
+        const merged = cleanMistakes(data);
+        for(const m of MISTAKES){ if(!data.some(d=>d.id===m.id)) merged.push(m); }
+        merged.sort((a,b)=>b.ts-a.ts);
+        MISTAKES = merged;
+        try{ localStorage.setItem('mistakes', JSON.stringify(MISTAKES)); }catch(e){}
+        _mistakeSyncing=false;
+        render();
+      }
+    }
+  }catch(e){}
+  _resyncingM=false;
+}
+async function resyncFavs(){
+  if(!_favReady || _favPushTimer || _resyncingF) return;
+  _resyncingF=true;
+  try{
+    const res = await fetch('/api/favorites', {cache:'no-store'});
+    if(res.ok){
+      const data = await res.json();
+      if(data && typeof data==='object' && !Array.isArray(data)){
+        _favSyncing=true;
+        FAV = Object.assign({}, data, FAV);
+        try{ localStorage.setItem('favs', JSON.stringify(FAV)); }catch(e){}
+        _favSyncing=false;
+        render();
+      }
+    }
+  }catch(e){}
+  _resyncingF=false;
+}
+function resyncAll(){ resyncFavs(); resyncMistakes(); }
+document.addEventListener('visibilitychange', ()=>{ if(document.visibilityState==='visible') resyncAll(); });
+window.addEventListener('focus', resyncAll);
 </script>
 </body>
 </html>
