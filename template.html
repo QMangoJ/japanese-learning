@@ -372,7 +372,9 @@ function sayBtn(t){ return t?`<button class="sayb" data-say="${escAttr(t)}" aria
 
 /* ---- 收藏 (生词本) ---- 本地 localStorage 即时可用，同时后台与 /api/favorites (Cloudflare KV) 同步实现跨设备 */
 /* ---------- 错题/生词本 (自己录入的错题、忘记的单词/语法，纯本地存储) ---------- */
-let MISTAKES=[]; try{ MISTAKES=JSON.parse(localStorage.getItem('mistakes')||'[]')||[]; }catch(e){ MISTAKES=[]; }
+// 只保留结构正常的条目（必须有字符串 id），挡掉脏数据：没有 id 的记录既删不掉又会在合并时无限复活
+function cleanMistakes(arr){ return Array.isArray(arr) ? arr.filter(m=>m && typeof m.id==='string' && m.id) : []; }
+let MISTAKES=[]; try{ MISTAKES=cleanMistakes(JSON.parse(localStorage.getItem('mistakes')||'[]')); }catch(e){ MISTAKES=[]; }
 let mistakeAddType='q';
 const MISTAKE_TYPES={q:'错题', word:'单词', grammar:'语法'};
 let _mistakeSyncing=false, _mistakePushTimer=null, _mistakesReady=false, _mistakesPendingPush=false;
@@ -394,7 +396,7 @@ async function pullMistakesFromServer(){
       if(Array.isArray(data)){
         _mistakeSyncing = true;
         // 合并而非整体覆盖：拉取完成前本地新增的条目（服务器还没有）要保留下来
-        const merged = data.slice();
+        const merged = cleanMistakes(data);
         for(const m of MISTAKES){ if(!data.some(d=>d.id===m.id)) merged.push(m); }
         merged.sort((a,b)=>b.ts-a.ts);
         MISTAKES = merged;
