@@ -1,0 +1,23 @@
+# Cloudflare Worker deployment for the Japanese study app.
+# Build step (build.py) produces public/; wrangler deploys it as static assets
+# and bundles src/index.js as the Worker that also handles /api/*.
+name = "japanese-learning"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+
+# Static site (build output). Requests that match a file here are served
+# directly; everything else (e.g. /api/*) invokes the Worker above.
+[assets]
+directory = "public"
+binding = "ASSETS"
+
+# Cross-device sync stores. Both point at the single existing namespace
+# (title: japanese_learning); the two routes use different keys
+# ("favorites" vs "mistakes"), so sharing one namespace is safe.
+[[kv_namespaces]]
+binding = "FAVORITES_KV"
+id = "dd867fe5aa004ac8b4b536f508a3530d"
+
+[[kv_namespaces]]
+binding = "MISTAKES_KV"
+id = "dd867fe5aa004ac8b4b536f508a3530d"
