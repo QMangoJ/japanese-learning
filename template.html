@@ -313,6 +313,7 @@ body.hide-cn .vcn,body.hide-cn .ven{visibility:hidden}
 </nav>
 <script>
 let DATA={}, G={weeks:[]}, V={weeks:[]}, K={weeks:[]}, G2={weeks:[]}, V2={weeks:[]}, K2={weeks:[]}, dataLoaded=false, n2Loaded=false;
+let _lastRenderedHash=null; // only scroll-to-top on an actual navigation, not on a background-sync re-render of the same view
 let MODULE = 'grammar';
 try{ const m=localStorage.getItem('module'); if(['vocab','grammar','n2grammar','kanji','n2vocab','n2kanji'].includes(m)) MODULE=m; }catch(e){}
 let lastVisit={};
@@ -600,7 +601,8 @@ function render(){
   if((MODULE==='n2grammar'||MODULE==='n2vocab'||MODULE==='n2kanji') && !n2Loaded){ setNav('home'); setHeader(modLabel(), false); app.innerHTML='<div class="empty">N2 数据加载中，请稍候…</div>'; return; }
   if(h==='#/search' && !n2Loaded){ setNav('search'); setHeader(LX('搜索（语法 + 词汇）','Search (Grammar + Vocabulary)'), false); app.innerHTML='<div class="empty">词典数据加载中，马上就好…</div>'; return; }
   syncModeBar();
-  window.scrollTo(0,0);
+  if(h!==_lastRenderedHash) window.scrollTo(0,0);
+  _lastRenderedHash = h;
   if(h==='#/'){ saveLastVisit('#/'); viewHome(); }
   else if(h==='#/search') viewSearch();
   else if(h==='#/cards') viewCards();
