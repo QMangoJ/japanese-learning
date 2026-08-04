@@ -206,6 +206,10 @@ body.hide-cn .vcn,body.hide-cn .ven{visibility:hidden}
 .mt-q{background:var(--accent-soft);color:var(--accent)}
 .mt-word{background:var(--blue-soft);color:var(--blue)}
 .mt-grammar{background:var(--green-soft);color:var(--green)}
+.mlvl{display:inline-block;font-size:11px;font-weight:700;padding:1px 7px;border-radius:999px;margin-right:6px;vertical-align:middle;border:none;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.mlvl.ml-new{background:var(--red-soft);color:var(--red)}
+.mlvl.ml-mid{background:var(--amber-soft);color:var(--amber)}
+.mlvl.ml-done{background:var(--green-soft);color:var(--green)}
 .ct-h{font-size:16px;margin:0 0 8px;color:var(--accent)}
 .ct-tip{background:var(--amber-soft);color:var(--amber);border-radius:8px;padding:6px 10px;font-size:13px;margin-bottom:10px;line-height:1.5}
 .ct-row{padding:9px 0;border-top:1px dashed var(--line)}
@@ -375,10 +379,12 @@ function sayBtn(t){ return t?`<button class="sayb" data-say="${escAttr(t)}" aria
 /* ---- 收藏 (生词本) ---- 本地 localStorage 即时可用，同时后台与 /api/favorites (Cloudflare KV) 同步实现跨设备 */
 /* ---------- 错题/生词本 (自己录入的错题、忘记的单词/语法，纯本地存储) ---------- */
 // 只保留结构正常的条目（必须有字符串 id），挡掉脏数据：没有 id 的记录既删不掉又会在合并时无限复活
-function cleanMistakes(arr){ return Array.isArray(arr) ? arr.filter(m=>m && typeof m.id==='string' && m.id) : []; }
+const MISTAKE_TYPES={q:'错题', word:'单词', grammar:'语法'};
+const MISTAKE_LEVELS={new:'不熟', mid:'一般', done:'已掌握'};
+const MISTAKE_LEVEL_ORDER=['new','mid','done'];
+function cleanMistakes(arr){ return Array.isArray(arr) ? arr.filter(m=>m && typeof m.id==='string' && m.id).map(m=> MISTAKE_LEVELS[m.level] ? m : Object.assign({}, m, {level:'new'})) : []; }
 let MISTAKES=[]; try{ MISTAKES=cleanMistakes(JSON.parse(localStorage.getItem('mistakes')||'[]')); }catch(e){ MISTAKES=[]; }
 let mistakeAddType='q';
-const MISTAKE_TYPES={q:'错题', word:'单词', grammar:'语法'};
 let _mistakeSyncing=false, _mistakePushTimer=null, _mistakesReady=false, _mistakesPendingPush=false;
 function pushMistakesNow(){
   fetch('/api/mistakes', {method:'PUT', headers:{'content-type':'application/json'}, body: JSON.stringify(MISTAKES)}).catch(()=>{});
@@ -413,7 +419,7 @@ async function pullMistakesFromServer(){
 }
 function addMistake(type, text){
   text=(text||'').trim(); if(!text) return;
-  MISTAKES.unshift({id:Date.now()+'-'+Math.random().toString(36).slice(2,7), type, text, ts:Date.now()});
+  MISTAKES.unshift({id:Date.now()+'-'+Math.random().toString(36).slice(2,7), type, text, ts:Date.now(), level:'new'});
   saveMistakes();
 }
 // 墓碑式删除：保留一个 {deleted:true} 标记并同步上去，别的设备据此隐藏，
@@ -424,32 +430,46 @@ function deleteMistake(id){
   else { MISTAKES.push({id, deleted:true, ts:Date.now()}); }
   saveMistakes();
 }
+// 点一下熟练度标签，在 不熟→一般→已掌握→不熟 之间循环；不改 ts，避免影响列表排序
+function cycleMistakeLevel(id){
+  const m = MISTAKES.find(x=>x.id===id); if(!m) return;
+  const i = MISTAKE_LEVEL_ORDER.indexOf(m.level);
+  m.level = MISTAKE_LEVEL_ORDER[(i+1) % MISTAKE_LEVEL_ORDER.length];
+  saveMistakes();
+}
 function activeMistakes(){ return MISTAKES.filter(m=>!m.deleted); }
 function mistakeDate(ts){
   const d=new Date(ts), p=n=>String(n).padStart(2,'0');
   return `${d.getFullYear()}-${p(d.getMonth()+1)}-${p(d.getDate())}`;
 }
 function mistakeItemHTML(m){
+  const lvl = m.level||'new';
   return `<div class="mistake-item">
-    <div class="mistake-item-head"><span class="mtag mt-${m.type}">${MISTAKE_TYPES[m.type]||m.type}</span><span class="mistake-date">${mistakeDate(m.ts)}</span><button class="mistake-del" data-mistake-del="${escAttr(m.id)}" aria-label="删除">✕</button></div>
+    <div class="mistake-item-head"><span class="mtag mt-${m.type}">${MISTAKE_TYPES[m.type]||m.type}</span><button class="mlvl ml-${lvl}" data-mlevel-cycle="${escAttr(m.id)}" aria-label="切换熟练度">${MISTAKE_LEVELS[lvl]}</button><span class="mistake-date">${mistakeDate(m.ts)}</span><button class="mistake-del" data-mistake-del="${escAttr(m.id)}" aria-label="删除">✕</button></div>
     <div class="mistake-text">${esc(m.text).replace(/\n/g,'<br>')}</div>
   </div>`;
 }
 let mistakeFilter='all';
+let mistakeLevelFilter='all';
 function viewMistakes(){
   setNav('mistakes'); setHeader(LX('错题 / 生词本','My Mistakes & Notes'), false);
   const src = activeMistakes();
-  const list = mistakeFilter==='all' ? src : src.filter(m=>m.type===mistakeFilter);
-  const filterBar = `<div class="fc-filter" style="margin-bottom:14px">
+  const byType = mistakeFilter==='all' ? src : src.filter(m=>m.type===mistakeFilter);
+  const list = mistakeLevelFilter==='all' ? byType : byType.filter(m=>(m.level||'new')===mistakeLevelFilter);
+  const filterBar = `<div class="fc-filter" style="margin-bottom:8px">
     <button class="${mistakeFilter==='all'?'on':''}" data-mfilter="all">全部（${src.length}）</button>
     ${Object.entries(MISTAKE_TYPES).map(([k,v])=>`<button class="${mistakeFilter===k?'on':''}" data-mfilter="${k}">${v}（${src.filter(m=>m.type===k).length}）</button>`).join('')}
+  </div>`;
+  const levelFilterBar = `<div class="fc-filter" style="margin-bottom:14px">
+    <button class="${mistakeLevelFilter==='all'?'on':''}" data-lfilter="all">熟练度：全部（${byType.length}）</button>
+    ${MISTAKE_LEVEL_ORDER.map(k=>`<button class="${mistakeLevelFilter===k?'on':''}" data-lfilter="${k}">${MISTAKE_LEVELS[k]}（${byType.filter(m=>(m.level||'new')===k).length}）</button>`).join('')}
   </div>`;
   const body = list.length ? list.map(mistakeItemHTML).join('') : '<div class="empty">还没有记录，在上面写一条保存试试。</div>';
   app.innerHTML = `<div class="card mistake-widget" style="margin-bottom:14px">
     <div class="mistake-types" id="mistakeTypes">${Object.entries(MISTAKE_TYPES).map(([k,v])=>`<button class="${k===mistakeAddType?'on':''}" data-mtype="${k}">${v}</button>`).join('')}</div>
     <textarea id="mistakeInput" class="mistake-input" rows="2" placeholder="记一下考试错题、老是记不住的单词或语法点……"></textarea>
     <button class="primary" data-mistake-add>保存</button>
-  </div>${filterBar}${body}`;
+  </div>${filterBar}${levelFilterBar}${body}`;
 }
 let FAV={}; try{ FAV=JSON.parse(localStorage.getItem('favs')||'{}')||{}; }catch(e){ FAV={}; }
 const FAVMETA={};
@@ -567,7 +587,9 @@ app.addEventListener('click', e=>{
   const mty=e.target.closest('[data-mtype]'); if(mty){ mistakeAddType=mty.dataset.mtype; document.querySelectorAll('#mistakeTypes button').forEach(b=>b.classList.toggle('on', b.dataset.mtype===mistakeAddType)); return; }
   if(e.target.closest('[data-mistake-add]')){ const ta=document.getElementById('mistakeInput'); if(ta && ta.value.trim()){ addMistake(mistakeAddType, ta.value); render(); } return; }
   const md=e.target.closest('[data-mistake-del]'); if(md){ deleteMistake(md.dataset.mistakeDel); render(); return; }
+  const mlv=e.target.closest('[data-mlevel-cycle]'); if(mlv){ cycleMistakeLevel(mlv.dataset.mlevelCycle); viewMistakes(); return; }
   const mf=e.target.closest('[data-mfilter]'); if(mf){ mistakeFilter=mf.dataset.mfilter; viewMistakes(); return; }
+  const lf=e.target.closest('[data-lfilter]'); if(lf){ mistakeLevelFilter=lf.dataset.lfilter; viewMistakes(); return; }
   const fclr=e.target.closest('[data-favclear]'); if(fclr){ if(fclr.dataset.armed){ FAV={}; saveFav(); viewFavs(); } else { fclr.dataset.armed='1'; fclr.textContent='再点一次清空'; } return; }
   if(e.target.closest('[data-favflip]')){ favFlip=!favFlip; renderFavFc(); return; }
   if(e.target.closest('[data-favprev]')){ if(favIdx>0){ favIdx--; favFlip=false; renderFavFc(); } return; }
