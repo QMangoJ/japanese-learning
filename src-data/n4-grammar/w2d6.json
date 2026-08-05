@@ -1,0 +1,74 @@
+{
+  "week": 2, "day": 6, "title": "もっと勉強したほうがいいですよ。", "title_cn": "最好再多学习一点。", "title_en": "You'd better study more.",
+  "points": [
+    {
+      "pattern": "Vたほうがいい",
+      "connection": "Vた形＋ほうがいい",
+      "usage_jp": "「〜するほうがよい」という意味を表す。",
+      "usage_cn": "意为“还是做某事为好”。",
+      "usage_en": "Means \"it's better to do ~\" (advice).",
+      "examples": [
+        {"jp": "時間がないから、タクシーで行ったほうがいいでしょう。", "cn": "没时间了，还是坐出租车去比较好吧。", "en": "There's no time, so we'd better go by taxi."},
+        {"jp": "かぜをひいたときは、早く寝たほうがいいですよ。", "cn": "感冒的时候，最好早点睡。", "en": "When you have a cold, you'd better go to bed early."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "Vないほうがいい",
+      "connection": "Vない形＋ほうがいい",
+      "usage_jp": "「〜しないほうがよい」という意味を表す。",
+      "usage_cn": "意为“最好不要做某事”。",
+      "usage_en": "Means \"it's better not to do ~\" (advice).",
+      "examples": [
+        {"jp": "そんなあぶないところには、行かないほうがいいよ。", "cn": "那种危险的地方最好不要去。", "en": "You'd better not go to such a dangerous place."},
+        {"jp": "その川では、およがないほうがいいでしょう。", "cn": "那条河里最好不要游泳。", "en": "You'd better not swim in that river."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "命令形／禁止形",
+      "connection": "動詞の命令形／辞書形＋な",
+      "usage_jp": "①語気が強く、主に男性が使う。②運動会の横断幕や標識、スローガンなどに使う。③他人の言葉を伝えるときに使う。",
+      "usage_cn": "①语气强硬，多为男性使用。②用于运动会横幅、标识或标语等。③用于转达别人的话。",
+      "usage_en": "① Blunt, mostly used by men. ② Used on banners/signs/slogans. ③ Used when reporting someone else's command.",
+      "examples": [
+        {"jp": "時間がないから、早くしろ。", "cn": "没时间了，快点。", "en": "There's no time, hurry up!"},
+        {"jp": "こっちに来い。", "cn": "过来。", "en": "Come here!"},
+        {"jp": "がんばれ！", "cn": "加油！", "en": "Do your best!"},
+        {"jp": "スピードを出すな！", "cn": "禁止超速！", "en": "Don't speed!"},
+        {"jp": "母に、毎日メールをくれと言われています。", "cn": "妈妈叫我每天发邮件。", "en": "My mother told me to email her every day."},
+        {"jp": "医者に、酒を飲むなと言われました。", "cn": "医生叫我不要喝酒。", "en": "The doctor told me not to drink alcohol."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "Vなさい",
+      "connection": "V-ます＋なさい",
+      "usage_jp": "親が子どもに、先生が学生によく使う命令表現。",
+      "usage_cn": "父母对孩子、老师对学生经常使用的命令表达方式。",
+      "usage_en": "A command form typically used by parents to children or teachers to students.",
+      "examples": [
+        {"jp": "肉ばかり食べないで、野菜も食べなさい。", "cn": "不要光吃肉，也要吃蔬菜。", "en": "Don't just eat meat, eat vegetables too."},
+        {"jp": "つぎのことばを漢字で書きなさい。", "cn": "请把下列词语用汉字写出来。", "en": "Write the following words in kanji."},
+        {"jp": "静かにしなさい。", "cn": "安静。", "en": "Be quiet."}
+      ],
+      "notes": []
+    }
+  ],
+  "exercises": {
+    "answers_note": "答えはp.32",
+    "sections": [
+      {"type": "choice", "instruction": "（　）に何を入れますか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 1, "q": "そこはあぶないから、夜は（　）ほうがいいですよ。", "options": ["1 行く", "2 行った", "3 行かない", "4 行かなかった"]},
+        {"n": 2, "q": "田中さんには、今日のことは（　）ほうがいいと思います。", "options": ["1 言えない", "2 言わない", "3 言えないの", "4 言わないの"]},
+        {"n": 3, "q": "母親「いつまでゲームをしているの。早く（　）。」子ども「はーい。」", "options": ["1 寝ろう", "2 寝ますよ", "3 寝なさい", "4 寝るな"]}
+      ]},
+      {"type": "order", "instruction": "＿★＿に入るものはどれですか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 4, "q": "A「もう帰るんですか。」B「はい、父に＿＿　＿＿　★　＿＿と言われているので。」", "options": ["1 には", "2 9時", "3 帰れ", "4 まで"]},
+        {"n": 5, "q": "A「たばこ、やめられましたか。」B「いいえ、妻にも毎日＿＿　＿＿　★　＿＿やめられなくて…。」", "options": ["1 言われている", "2 やめろ", "3 けれど", "4 って"]}
+      ]}
+    ],
+    "answers": "①3 ②2 ③3 ④2→4→★1→3 ⑤2→4→★1→3"
+  },
+  "hitokoto": ""
+}

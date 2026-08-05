@@ -1,0 +1,84 @@
+{
+  "week": 2, "day": 4, "title": "日記を書くようにしましょう。", "title_cn": "养成写日记的习惯吧。", "title_en": "Let's make a habit of writing a diary.",
+  "points": [
+    {
+      "pattern": "Nのため（に）／Vため（に）",
+      "connection": "N＋のため（に）／V辞書形＋ため（に）",
+      "usage_jp": "①目的を表す。②原因を表す。",
+      "usage_cn": "①表示目的。②表示原因。",
+      "usage_en": "① Marks a purpose. ② Marks a cause.",
+      "examples": [
+        {"jp": "明日の会議のために、準備をしています。", "cn": "为了明天的会议在做准备。", "en": "I'm preparing for tomorrow's meeting."},
+        {"jp": "家を買うために、貯金をしています。", "cn": "为了买房子在存钱。", "en": "I'm saving money to buy a house."},
+        {"jp": "台風のため、飛行機がおくれました。", "cn": "因为台风，飞机延误了。", "en": "The flight was delayed because of the typhoon."},
+        {"jp": "電車がおくれたため、会議に間に合いませんでした。", "cn": "因为电车晚点，没能赶上会议。", "en": "Because the train was late, I couldn't make it to the meeting in time."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "Vように",
+      "connection": "V辞書形／ない形＋ように",
+      "usage_jp": "「〜という目的で」という意味を表す。",
+      "usage_cn": "意为“为了”。",
+      "usage_en": "Means \"so that ~\" (marking a goal to be achieved).",
+      "examples": [
+        {"jp": "雪の日は、ちこくしないように、早く家を出ます。", "cn": "下雪天为了不迟到，早点出门。", "en": "On snowy days I leave home early so I won't be late."},
+        {"jp": "習ったことは忘れないように、復習しましょう。", "cn": "为了不忘记学过的内容，来复习吧。", "en": "Let's review so we don't forget what we've learned."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "Vようになる",
+      "connection": "V辞書形／ない形＋ようになる",
+      "usage_jp": "変化を表す。",
+      "usage_cn": "表示变化。",
+      "usage_en": "Marks a change over time (becoming able to / starting to).",
+      "examples": [
+        {"jp": "赤ちゃんは、1さいごろから歩くようになります。", "cn": "婴儿从1岁左右开始会走路。", "en": "Babies start to walk around age one."},
+        {"jp": "父は仕事をやめてから、早く寝るようになりました。", "cn": "父亲辞职后，变得早睡了。", "en": "After my father quit his job, he started going to bed early."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "Vようにする",
+      "connection": "V辞書形／ない形＋ようにする",
+      "usage_jp": "習慣や努力などを表す。",
+      "usage_cn": "表示习惯或努力等。",
+      "usage_en": "Marks a habit or conscious effort.",
+      "examples": [
+        {"jp": "日本語のクラスでは、日本語だけを話すようにしています。", "cn": "在日语课上，尽量只说日语。", "en": "In Japanese class I try to speak only Japanese."},
+        {"jp": "毎食後、歯をみがくようにしています。", "cn": "每次饭后，尽量刷牙。", "en": "I make it a point to brush my teeth after every meal."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "Vように言う",
+      "connection": "V辞書形／ない形＋ように言う",
+      "usage_jp": "「〜するようにと相手に伝える」という意味を表す。",
+      "usage_cn": "意为“告诉某人要……”。",
+      "usage_en": "Means \"tell someone to ~.\"",
+      "examples": [
+        {"jp": "あの人たち、うるさいですね。すみませんが、静かにするように言ってください。", "cn": "那些人真吵啊。不好意思，请告诉他们安静一点。", "en": "Those people are noisy. Sorry, could you tell them to be quiet?"},
+        {"jp": "母から今日は早く帰るように言われました。", "cn": "妈妈叫我今天早点回家。", "en": "My mother told me to come home early today."},
+        {"jp": "妻に、家の中ではたばこを吸わないように言われています。", "cn": "妻子叫我不要在家里抽烟。", "en": "My wife has told me not to smoke inside the house."}
+      ],
+      "notes": []
+    }
+  ],
+  "exercises": {
+    "answers_note": "答えはp.27",
+    "sections": [
+      {"type": "choice", "instruction": "（　）に何を入れますか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 1, "q": "あまいものは食べない（　）しています。", "options": ["1 ために", "2 ように", "3 ままに", "4 ことで"]},
+        {"n": 2, "q": "これは外国人が日本語を勉強する（　）本です。", "options": ["1 ような", "2 ための", "3 ようにする", "4 ためにする"]},
+        {"n": 3, "q": "A「家から駅まで近いですか。」B「ちょっと遠いですが、バスを使わないで（　）います。」", "options": ["1 歩くように行って", "2 歩いて行くようにして", "3 歩くようになって", "4 歩いて行くようになって"]}
+      ]},
+      {"type": "order", "instruction": "＿★＿に入るものはどれですか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 4, "q": "A「日本での生活はどうですか。」B「＿＿　＿＿　★　＿＿なりました。」", "options": ["1 日本語が話せる", "2 楽しく", "3 なってから", "4 ように"]},
+        {"n": 5, "q": "医者に、この薬を1日に3回、＿＿　＿＿　★　＿＿いる。", "options": ["1 飲む", "2 言われて", "3 食事のあとで", "4 ように"]}
+      ]}
+    ],
+    "answers": "①2 ②2 ③2 ④1→4→★3→2 ⑤3→1→★4→2"
+  },
+  "hitokoto": ""
+}

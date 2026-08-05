@@ -1,0 +1,93 @@
+{
+  "week": 3, "day": 2, "title": "このまどから山が見えます。", "title_cn": "从这扇窗户能看见山。", "title_en": "You can see the mountain from this window.",
+  "points": [
+    {
+      "pattern": "動詞の可能形",
+      "connection": "V可能形＝Vることができる",
+      "usage_jp": "能力や可能性を表す。",
+      "usage_cn": "表示能力或可能性，等于「Vることができる」。",
+      "usage_en": "Marks ability or possibility; equivalent to \"can do V.\"",
+      "examples": [
+        {"jp": "私は日本語を話せますが、読むことも書くこともできません。", "cn": "我会说日语，但是不会读也不会写。", "en": "I can speak Japanese, but I can't read or write it."},
+        {"jp": "私はおよげますが、速くおよぐことはできません。", "cn": "我会游泳，但是不能游得快。", "en": "I can swim, but I can't swim fast."},
+        {"jp": "今週の日曜日も来られますか。", "cn": "这周日也能来吗？", "en": "Can you come this Sunday too?"}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "聞こえる",
+      "connection": "自動詞",
+      "usage_jp": "「聞くことができる」を客観的に表す。",
+      "usage_cn": "意为“听得见”（客观）。",
+      "usage_en": "Means \"can be heard\" (objective — sound reaches the ear).",
+      "examples": [
+        {"jp": "となりの家からピアノの音が聞こえます。", "cn": "能听到隔壁传来的钢琴声。", "en": "I can hear piano music from the house next door."},
+        {"jp": "私は左の耳がよく聞こえません。", "cn": "我左耳听不太清楚。", "en": "I can't hear well with my left ear."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "聞ける",
+      "connection": "聞くの可能形",
+      "usage_jp": "「聞くことができる」を主観的に表す。",
+      "usage_cn": "意为“能听”（主观）。",
+      "usage_en": "Means \"can listen to\" (subjective ability/access).",
+      "examples": [
+        {"jp": "このパソコンはラジオも聞けます。", "cn": "这台电脑也能听广播。", "en": "This computer can also play the radio."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "見える",
+      "connection": "自動詞",
+      "usage_jp": "「見ることができる」を客観的に表す。",
+      "usage_cn": "意为“看得见”（客观）。",
+      "usage_en": "Means \"can be seen\" (objective — visible from here).",
+      "examples": [
+        {"jp": "ここから東京駅がよく見えます。", "cn": "从这里能清楚地看到东京站。", "en": "You can see Tokyo Station clearly from here."},
+        {"jp": "めがねがないから、よく見えません。", "cn": "没有眼镜，看不清楚。", "en": "I can't see well because I don't have my glasses."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "見られる",
+      "connection": "見るの可能形",
+      "usage_jp": "「見ることができる」を主観的に表す。",
+      "usage_cn": "意为“能看”（主观）。",
+      "usage_en": "Means \"can see/view\" (subjective ability/access).",
+      "examples": [
+        {"jp": "この美術館では、ピカソの絵が見られます。", "cn": "在这家美术馆能看到毕加索的画。", "en": "You can see Picasso's paintings at this museum."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "〜のが見える／〜のを見る／〜のが聞こえる／〜のを聞く",
+      "connection": "普通形＋の＋が／を＋見える・見る・聞こえる・聞く",
+      "usage_jp": "動作や出来事が見える、聞こえることを表す。",
+      "usage_cn": "表示能看到、听到动作或事件。",
+      "usage_en": "Marks seeing or hearing an ongoing action/event.",
+      "examples": [
+        {"jp": "きのう、トムさんが、きれいな女の人と歩いているのを見ました。", "cn": "昨天看见汤姆和一个漂亮的女人走在一起。", "en": "Yesterday I saw Tom walking with a pretty woman."},
+        {"jp": "となりの部屋でだれかがけんかしているのが聞こえます。", "cn": "能听到隔壁房间有人在吵架。", "en": "I can hear someone arguing in the next room."},
+        {"jp": "田中さんが英語を話しているのを聞いたことがありません。", "cn": "没听过田中说英语。", "en": "I've never heard Tanaka speak English."}
+      ],
+      "notes": [{"type": "！", "text": "この場合の「の」は「こと」に置き換えられない。"}]
+    }
+  ],
+  "exercises": {
+    "answers_note": "答えはp.39",
+    "sections": [
+      {"type": "choice", "instruction": "（　）に何を入れますか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 1, "q": "このカードはだれでも（　）ことができますよ。", "options": ["1 作る", "2 作れる", "3 作られる", "4 作った"]},
+        {"n": 2, "q": "子どもは、大人より高い音が（　）。", "options": ["1 聞きます", "2 聞かれます", "3 聞いています", "4 聞こえます"]},
+        {"n": 3, "q": "A「あれは、富士山ですか。」B「いいえ、ここからは（　）よ。」", "options": ["1 見ません", "2 見えません", "3 見ないです", "4 見ることがないです"]}
+      ]},
+      {"type": "order", "instruction": "＿★＿に入るものはどれですか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 4, "q": "魚が＿＿　＿＿　★　＿＿楽しいです。", "options": ["1 のを", "2 のは", "3 見る", "4 およいでいる"]},
+        {"n": 5, "q": "A「＿＿　＿＿　★　＿＿聞こえますね。」B「ああ、あれはとなりの赤ちゃんですよ。」", "options": ["1 のが", "2 ないている", "3 ネコか", "4 何かが"]}
+      ]}
+    ],
+    "answers": "①1 ②4 ③2 ④4→1→★3→2 ⑤3→4→★2→1"
+  },
+  "hitokoto": ""
+}

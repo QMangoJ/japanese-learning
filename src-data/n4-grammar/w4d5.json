@@ -1,0 +1,76 @@
+{
+  "week": 4, "day": 5, "title": "かぎがかかっています。", "title_cn": "门锁着。", "title_en": "It's locked.",
+  "points": [
+    {
+      "pattern": "他動詞／自動詞",
+      "connection": "＜人が／は＞＋もの＋を＋他動詞　／　＜もの＞＋が＋自動詞",
+      "usage_jp": "他動詞は人の動作を、自動詞はものの変化・結果を表す。",
+      "usage_cn": "他动词表示人的动作，自动词表示物的变化、结果。",
+      "usage_en": "Transitive verbs mark a person's action; intransitive verbs mark a thing's change/result.",
+      "examples": [
+        {"jp": "危ないから、ろうそくを消しますよ。", "cn": "危险，我把蜡烛熄灭了。", "en": "It's dangerous, so I'll put out the candle."},
+        {"jp": "ろうそくの火が消えました。", "cn": "蜡烛的火熄灭了。", "en": "The candle's flame went out."},
+        {"jp": "ドアを閉めてください。", "cn": "请关门。", "en": "Please close the door."},
+        {"jp": "（駅で）ドアが閉まります。ご注意ください。", "cn": "（车站广播）门要关了，请注意。", "en": "(At the station) The doors are closing. Please be careful."},
+        {"jp": "さあ、授業を始めましょう。", "cn": "好了，开始上课吧。", "en": "Alright, let's start class."},
+        {"jp": "毎日9時に授業が始まります。", "cn": "每天9点开始上课。", "en": "Class starts at 9 every day."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "V（自動詞）ている",
+      "connection": "自動詞て形＋いる",
+      "usage_jp": "結果が残っている状態を表す。",
+      "usage_cn": "表示结果存留的状态。",
+      "usage_en": "Marks a resulting state that persists after a change.",
+      "examples": [
+        {"jp": "会議室は、かぎがかかっています。", "cn": "会议室锁着门。", "en": "The meeting room is locked."},
+        {"jp": "弟は今出かけています。", "cn": "弟弟现在出去了。", "en": "My younger brother is out right now."},
+        {"jp": "宿題はまだ終わっていません。", "cn": "作业还没做完。", "en": "I haven't finished my homework yet."}
+      ],
+      "notes": [{"type": "！", "text": "「Vていない」は「まだ終わっていない」という意味を表す。"}]
+    },
+    {
+      "pattern": "V（他動詞）てある",
+      "connection": "他動詞て形＋ある",
+      "usage_jp": "何かの目的のために、意図的にした行為の結果が残っている状態を表す。",
+      "usage_cn": "表示出于某个目的做了某事之后的状态。",
+      "usage_en": "Marks a state resulting from someone's deliberate, purposeful action.",
+      "examples": [
+        {"jp": "テーブルの上に花がかざってあります。", "cn": "桌子上摆着花。", "en": "Flowers are arranged on the table."},
+        {"jp": "おさらは、ぜんぶ洗ってあります。", "cn": "盘子都洗好了。", "en": "All the plates have been washed."},
+        {"jp": "その本には、使い方が書いてありません。", "cn": "那本书上没写使用方法。", "en": "That book doesn't have instructions written in it."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "Vてくる／Vていく",
+      "connection": "Vて形＋くる・いく",
+      "usage_jp": "自分がいる場所や今を起点として、移動・変化・継続・開始などを表す。",
+      "usage_cn": "以自己所处的地方或此刻为起点，表示移动、变化、持续、开始等。",
+      "usage_en": "くる marks a change/movement toward the speaker's place or now; いく marks one moving away/continuing onward.",
+      "examples": [
+        {"jp": "雨が降ってきました。", "cn": "下起雨来了。", "en": "It has started raining."},
+        {"jp": "これからもっと寒くなっていくでしょう。", "cn": "接下来会越来越冷吧。", "en": "It will probably keep getting colder from here."},
+        {"jp": "A「コンビニに行ってくるね。」B「じゃ、パンも買ってきて。」", "cn": "“我去趟便利店。”“那也帮我买个面包回来。”", "en": "\"I'll go to the convenience store and come back.\" \"Then buy some bread too.\""}
+      ],
+      "notes": []
+    }
+  ],
+  "exercises": {
+    "answers_note": "答えはp.61",
+    "sections": [
+      {"type": "choice", "instruction": "（　）に何を入れますか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 1, "q": "ここに車を（　）おいても、だいじょうぶですか。", "options": ["1 とめ", "2 とめて", "3 とまり", "4 とまって"]},
+        {"n": 2, "q": "この間の地しんで家が（　）しまった人がたくさんいます。", "options": ["1 こわして", "2 こわれて", "3 やいて", "4 やかして"]},
+        {"n": 3, "q": "家のかぎを（　）のをわすれてしまいました。", "options": ["1 かかっていく", "2 かかってきた", "3 かけてくる", "4 かけてきた"]}
+      ]},
+      {"type": "order", "instruction": "＿★＿に入るものはどれですか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 4, "q": "A「今日は、いい天気で気持ちがいいですね。」B「そうですね。でもこれから＿＿　＿＿　★　＿＿でしょう。」", "options": ["1 夏になるから", "2 いく", "3 暑くなって", "4 どんどん"]},
+        {"n": 5, "q": "A「ジョンさんのメールアドレス、わかる？」B「＿＿　＿＿　★　＿＿と思うよ。」", "options": ["1 めいしに", "2 書いて", "3 もらった", "4 あった"]}
+      ]}
+    ],
+    "answers": "①2 ②2 ③3 ④1→4→★3→2 ⑤3→1→★2→4"
+  },
+  "hitokoto": ""
+}

@@ -1,0 +1,82 @@
+{
+  "week": 2, "day": 5, "title": "日本語でどう言いますか。", "title_cn": "用日语怎么说？", "title_en": "How do you say it in Japanese?",
+  "points": [
+    {
+      "pattern": "こんなN／そんなN／あんなN／どんなN",
+      "connection": "こ・そ・あ・ど＋んな＋N",
+      "usage_jp": "名詞を修飾する指示詞。",
+      "usage_cn": "修饰名词的指示词。",
+      "usage_en": "Demonstrative forms modifying a noun (this kind of / that kind of / what kind of).",
+      "examples": [
+        {"jp": "A「これ、できる？」B「そんなこと、できないよ。」", "cn": "“这个你会做吗？”“那种事我可做不到。”", "en": "\"Can you do this?\" \"I can't do that kind of thing.\""},
+        {"jp": "あんなバッグがほしいです。", "cn": "我想要那样的包。", "en": "I want a bag like that."},
+        {"jp": "どんな音楽が好きですか。", "cn": "你喜欢什么样的音乐？", "en": "What kind of music do you like?"}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "こんなに／そんなに／あんなに／どんなに",
+      "connection": "こ・そ・あ・ど＋んなに",
+      "usage_jp": "程度を表す指示詞。",
+      "usage_cn": "表示程度的指示词。",
+      "usage_en": "Demonstrative forms marking degree (this much / that much / how much).",
+      "examples": [
+        {"jp": "こんなに勉強しているのに、成績が悪いのはどうしてだろう。", "cn": "明明这么用功，成绩为什么不好呢？", "en": "I'm studying this much, so why are my grades bad?"},
+        {"jp": "A「テスト、全然できませんでした。」B「そんなにむずかしかったんですか。」", "cn": "“考试完全不会做。”“有那么难吗？”", "en": "\"I couldn't do the test at all.\" \"Was it that hard?\""}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "こうV／そうV／ああV／どうV",
+      "connection": "こ・そ・あ・ど＋う＋V",
+      "usage_jp": "動作の方法を表す指示詞。",
+      "usage_cn": "表示动作方式的指示词。",
+      "usage_en": "Demonstrative forms marking manner (like this / like that / how).",
+      "examples": [
+        {"jp": "私もそう思います。", "cn": "我也这么认为。", "en": "I think so too."},
+        {"jp": "A「これは、漢字でどう書きますか。」B「こう書きます。」", "cn": "“这个用汉字怎么写？”“这样写。”", "en": "\"How do you write this in kanji?\" \"You write it like this.\""}
+      ],
+      "notes": [{"type": "れい", "text": "対話の双方が知っている事柄には「あの／あそこ」、片方だけが知っている事柄には「その／そこ」を使う。"}]
+    },
+    {
+      "pattern": "〜というN／〜っていうN",
+      "connection": "普通形＋という・っていう＋N",
+      "usage_jp": "「〜と呼ばれるN」という意味を表す。",
+      "usage_cn": "意为“……的N”。",
+      "usage_en": "Means \"an N called ~.\"",
+      "examples": [
+        {"jp": "兄は、東京の目黒というところに住んでいます。", "cn": "哥哥住在东京一个叫目黑的地方。", "en": "My brother lives in a place in Tokyo called Meguro."},
+        {"jp": "電気代があがるという話は、本当ですか。", "cn": "电费要涨的说法是真的吗？", "en": "Is it true that electricity prices are going up?"},
+        {"jp": "駅前の「あすか」っていうレストランを知っていますか。", "cn": "你知道车站前一家叫「asuka」的餐厅吗？", "en": "Do you know a restaurant near the station called 'Asuka'?"}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "どういうN",
+      "connection": "どういう＋N",
+      "usage_jp": "「どんなN」とほぼ同じ意味を表す。",
+      "usage_cn": "与“どんなN”意思大致相同。",
+      "usage_en": "Roughly the same meaning as どんなN, often used to ask about meaning/content.",
+      "examples": [
+        {"jp": "それはどういう意味ですか。", "cn": "那是什么意思？", "en": "What does that mean?"}
+      ],
+      "notes": [{"type": "！", "text": "「なXの意味ですか」は誤り。"}]
+    }
+  ],
+  "exercises": {
+    "answers_note": "答えはp.29",
+    "sections": [
+      {"type": "choice", "instruction": "（　）に何を入れますか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 1, "q": "これは、日本語で（　）言いますか。", "options": ["1 どれ", "2 なに", "3 なん", "4 どう"]},
+        {"n": 2, "q": "A「もう、あなたと話したくありません。」B「（　）、言わないでください。」", "options": ["1 それのこと", "2 そんなこと", "3 あのこと", "4 あんなこと"]},
+        {"n": 3, "q": "ジョンさん、（　）がんばっていたのに、試験に落ちたそうですよ。", "options": ["1 そう", "2 そんなに", "3 あんなに", "4 ああ"]}
+      ]},
+      {"type": "order", "instruction": "＿★＿に入るものはどれですか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 4, "q": "A「食事、どこへ行きましょうか。」B「駅の＿＿　＿＿　★　＿＿居酒屋はどうですか。」", "options": ["1 近くの", "2 すぐ", "3 っていう", "4 『いろり』"]},
+        {"n": 5, "q": "子ども「ぼく、プールのある家に住みたい。」父親「お父さんが＿＿　＿＿　★　＿＿よ。」", "options": ["1 そんな", "2 どんなに", "3 家は買えない", "4 働いても"]}
+      ]}
+    ],
+    "answers": "①4 ②4 ③3 ④2→1→★4→3 ⑤2→4→★1→3"
+  },
+  "hitokoto": ""
+}

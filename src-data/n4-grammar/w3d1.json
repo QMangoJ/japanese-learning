@@ -1,0 +1,76 @@
+{
+  "week": 3, "day": 1, "title": "漢字を書くのは大変です。", "title_cn": "写汉字很难。", "title_en": "Writing kanji is hard.",
+  "points": [
+    {
+      "pattern": "〜かどうか",
+      "connection": "普通形＋かどうか",
+      "usage_jp": "「〜か〜ないか」という意味を表す。",
+      "usage_cn": "意为“是否”。",
+      "usage_en": "Means \"whether or not ~.\"",
+      "examples": [
+        {"jp": "その話が本当かどうか調べたほうがいいですよ。", "cn": "最好查一下那件事是不是真的。", "en": "You should check whether that story is true."},
+        {"jp": "明日、テストがあるかどうか、リンさんに聞いてみましょう。", "cn": "明天有没有考试，问问小林吧。", "en": "Let's ask Lin whether there's a test tomorrow."},
+        {"jp": "新しい学校で、友だちができるかどうか心配です。", "cn": "担心在新学校能不能交到朋友。", "en": "I'm worried about whether I'll make friends at the new school."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "疑問詞（いつ／どこ／だれなど）〜か",
+      "connection": "疑問詞＋普通形＋か",
+      "usage_jp": "疑問詞を含む文を名詞節にする。",
+      "usage_cn": "把含有疑问词的句子变成名词从句。",
+      "usage_en": "Turns a question-word clause into a noun clause.",
+      "examples": [
+        {"jp": "きのうの夜、どうやって帰ったか覚えていません。", "cn": "不记得昨晚是怎么回家的了。", "en": "I don't remember how I got home last night."},
+        {"jp": "この作文はだれが書いたか名前がないのでわかりません。", "cn": "这篇作文没写名字，不知道是谁写的。", "en": "There's no name on this essay, so I don't know who wrote it."},
+        {"jp": "なぜ会社をやめたか教えてください。", "cn": "请告诉我为什么辞职了。", "en": "Please tell me why you quit the company."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "〜の（代名詞・名詞節化）",
+      "connection": "普通形＋の",
+      "usage_jp": "①人・場所・物・時間などの名詞の代わりに使う。②文を名詞化する。「こと」と言い換えられる。",
+      "usage_cn": "①代替人、地点、物、时间等名词。②用于句子名词化，可与“こと”互换。",
+      "usage_en": "① Substitutes for a noun (person/place/thing/time). ② Nominalizes a clause; interchangeable with こと.",
+      "examples": [
+        {"jp": "あそこでたばこをすっているのが社長です。", "eq": "＝人", "cn": "那边抽烟的是社长。", "en": "The one smoking over there is the president."},
+        {"jp": "あなたがほしいのは何ですか。", "eq": "＝もの", "cn": "你想要的是什么？", "en": "What is it that you want?"},
+        {"jp": "学校が始まるのは、9時からです。", "eq": "＝時間", "cn": "学校是从9点开始的。", "en": "School starts at 9 o'clock."},
+        {"jp": "姉はケーキを作るのが上手です。", "eq": "＝作ること", "cn": "姐姐很擅长做蛋糕。", "en": "My older sister is good at making cakes."},
+        {"jp": "田中さんが中国へ留学したのを知っていますか。", "eq": "＝留学したこと", "cn": "你知道田中去中国留学的事吗？", "en": "Do you know that Tanaka studied abroad in China?"},
+        {"jp": "外国人が多いのにびっくりしました。", "eq": "＝多いこと", "cn": "对外国人很多这件事感到惊讶。", "en": "I was surprised at how many foreigners there were."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "〜のに…（用途）",
+      "connection": "普通形（動詞辞書形）＋のに",
+      "usage_jp": "「〜するために」という意味を表す。",
+      "usage_cn": "意为“为了做某事（〜するために）而……”。",
+      "usage_en": "Means \"for doing ~\" (marking a purpose/use).",
+      "examples": [
+        {"jp": "この洗剤は、セーターを洗うのに使います。", "cn": "这个洗涤剂是用来洗毛衣的。", "en": "This detergent is used for washing sweaters."},
+        {"jp": "子どもをいい学校に入れるのにお金がかかります。", "cn": "让孩子上好学校要花钱。", "en": "It costs money to get children into a good school."},
+        {"jp": "この掃除機は小さいので、階段を掃除するのに便利です。", "cn": "这个吸尘器很小，用来打扫楼梯很方便。", "en": "This vacuum cleaner is small, so it's convenient for cleaning stairs."}
+      ],
+      "notes": []
+    }
+  ],
+  "exercises": {
+    "answers_note": "答えはp.37",
+    "sections": [
+      {"type": "choice", "instruction": "（　）に何を入れますか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 1, "q": "今日は日曜日なので、その店が開いているか（　）わかりません。", "options": ["1 ないか", "2 なにか", "3 どれか", "4 どうか"]},
+        {"n": 2, "q": "お酒もたばこもやめる（　）たいへんです。", "options": ["1 かは", "2 のは", "3 のを", "4 かで"]},
+        {"n": 3, "q": "A「何をさがしていますか。」B「スマホですが、どこに置いた（　）わからなくて…。」", "options": ["1 か", "2 の", "3 は", "4 こと"]}
+      ]},
+      {"type": "order", "instruction": "＿★＿に入るものはどれですか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 4, "q": "A「ギター、上手になりましたね。」B「はい、でもこの＿＿　＿＿　★　＿＿3か月もかかりました。」", "options": ["1 ひける", "2 きょくを", "3 ようになる", "4 のに"]},
+        {"n": 5, "q": "妻「駅前のスーパーでトマト、買ってきて。」夫「え？＿＿　＿＿　★　＿＿の？」", "options": ["1 つぶれちゃった", "2 の", "3 あのスーパー", "4 知らない"]}
+      ]}
+    ],
+    "answers": "①4 ②2 ③1 ④2→1→★3→4 ⑤3→2→★1→4"
+  },
+  "hitokoto": ""
+}

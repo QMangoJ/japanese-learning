@@ -1,0 +1,116 @@
+{
+  "week": 1, "day": 1, "title": "一日に二回、歯をみがきます。", "title_cn": "一天刷两次牙。", "title_en": "I brush my teeth twice a day.",
+  "points": [
+    {
+      "pattern": "〜で／〜に",
+      "connection": "N＋で／N＋に",
+      "usage_jp": "場所や対象を表す助詞の使い分けを表す。",
+      "usage_cn": "表示场所、对象等的助词区分。",
+      "usage_en": "Distinguishes particles marking place/target.",
+      "examples": [
+        {"jp": "兄は日本で働いています。", "cn": "哥哥在日本工作。", "en": "My older brother works in Japan."}
+      ],
+      "notes": [{"type": "！", "text": "「日本に働く」は誤り。"}]
+    },
+    {
+      "pattern": "〜から",
+      "connection": "N＋から",
+      "usage_jp": "原料や出どころを表す。",
+      "usage_cn": "表示原材料、出处。",
+      "usage_en": "Marks the raw material or source something is made from.",
+      "examples": [
+        {"jp": "ぶどうからワインを作ります。", "cn": "用葡萄酿造葡萄酒。", "en": "Wine is made from grapes."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "〜に（頻度）",
+      "connection": "回数＋に＋頻度",
+      "usage_jp": "頻度を表す。",
+      "usage_cn": "表示频率。",
+      "usage_en": "Marks frequency (how often).",
+      "examples": [
+        {"jp": "1日に3回、この薬を飲んでいます。", "cn": "一天三次，吃这个药。", "en": "I take this medicine three times a day."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "〜も",
+      "connection": "N＋も",
+      "usage_jp": "極端な例を表す。",
+      "usage_cn": "表示极端的例子。",
+      "usage_en": "Marks an extreme example.",
+      "examples": [
+        {"jp": "私はひらがなも書けません。", "cn": "我连平假名都不会写。", "en": "I can't even write hiragana."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "〜ずつ",
+      "connection": "数量＋ずつ",
+      "usage_jp": "分配や繰り返しを表す。",
+      "usage_cn": "表示分配或重复。",
+      "usage_en": "Marks equal distribution or repetition.",
+      "examples": [
+        {"jp": "このプリントを1枚ずつ配ってください。", "cn": "请把这份讲义每人发一张。", "en": "Please hand out one copy of this handout to each person."},
+        {"jp": "この本を毎日2ページずつ勉強しましょう。", "cn": "这本书我们每天学两页吧。", "en": "Let's study two pages of this book every day."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "N1はN2ほど〜ない",
+      "connection": "N1は＋N2＋ほど＋ない形",
+      "usage_jp": "「N1はN2より程度が低い」という意味を表す。＝N1よりN2のほうが〜",
+      "usage_cn": "表示“N1没有N2那么……”。＝N1よりN2のほうが〜",
+      "usage_en": "\"N1 is not as ~ as N2\" — equivalent to \"N2 is more ~ than N1.\"",
+      "examples": [
+        {"jp": "日本ではぶた肉は牛肉ほど高くありません。", "eq": "＝ぶた肉より牛肉のほうが高いです", "cn": "在日本，猪肉不像牛肉那么贵。", "en": "In Japan, pork isn't as expensive as beef."},
+        {"jp": "私の国の夏は日本の夏ほど暑くない。", "eq": "＝私の国より日本の夏のほうが暑い", "cn": "我国的夏天不如日本的夏天热。", "en": "Summer in my country isn't as hot as summer in Japan."},
+        {"jp": "今週もいそがしいですが、先週ほどではありません。", "cn": "这周也很忙，但没有上周那么忙。", "en": "This week is busy too, but not as busy as last week."}
+      ],
+      "notes": [{"type": "れい", "text": "「N1もV，N2ほどでは／じゃない」の形でも使える。"}]
+    },
+    {
+      "pattern": "〜は／〜も（強調・対比）",
+      "connection": "助詞＋は／も",
+      "usage_jp": "助詞のあとに「は」「も」を付けて、強調や対比を表す。",
+      "usage_cn": "在助词后加“は”“も”，表示强调或对比。",
+      "usage_en": "Adding は/も after another particle to emphasize or contrast.",
+      "examples": [
+        {"jp": "この子は家ではうるさいですが、外ではおとなしいです。", "cn": "这孩子在家里很吵，但在外面很安静。", "en": "This child is noisy at home, but quiet outside."},
+        {"jp": "たんじょう日に父からも母からもプレゼントをもらいました。", "cn": "生日的时候，从爸爸和妈妈那里都收到了礼物。", "en": "On my birthday I got presents from both my father and my mother."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "名詞修飾（連体修飾節）",
+      "connection": "普通形＋N",
+      "usage_jp": "名詞の説明をその名詞の前に置く。",
+      "usage_cn": "对名词的说明放在该名词的前面。",
+      "usage_en": "A descriptive clause is placed before the noun it modifies.",
+      "examples": [
+        {"jp": "この近くに安くておいしいレストランがありますか。", "cn": "这附近有便宜又好吃的餐厅吗？", "en": "Is there a cheap and good restaurant near here?"},
+        {"jp": "きのうクラスで使う本を買いに行きました。", "cn": "昨天去买了在班上要用的书。", "en": "Yesterday I went to buy the book we use in class."},
+        {"jp": "フランス語が話せる友だちがいます。", "cn": "我有会说法语的朋友。", "en": "I have a friend who can speak French."},
+        {"jp": "あそこの青いセーターを着た背の高い男の人はだれですか。", "cn": "那边穿着蓝色毛衣的高个子男人是谁？", "en": "Who is that tall man over there wearing the blue sweater?"}
+      ],
+      "notes": []
+    }
+  ],
+  "exercises": {
+    "answers_note": "答えはp.5",
+    "sections": [
+      {"type": "choice", "instruction": "（　）に何を入れますか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 1, "q": "日本酒は米（　）作られます。", "options": ["1 から", "2 にから", "3 からで", "4 からも"]},
+        {"n": 2, "q": "スーパーで、りんごとみかんを一つ（　）買いました。", "options": ["1 も", "2 ほど", "3 ずつ", "4 くらい"]},
+        {"n": 3, "q": "わたしは1週間（　）3回、ジムに通っています。", "options": ["1 は", "2 も", "3 で", "4 に"]}
+      ]},
+      {"type": "order", "instruction": "＿★＿に入るものはどれですか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 4, "q": "山田「田中さん、そのバッグ、すてきですね。どこで買いましたか。」田中「＿＿　＿＿　★　＿＿ですが、ハワイに行ったときに、買いました。」", "options": ["1 作られた", "2 もの", "3 で", "4 日本"]},
+        {"n": 5, "q": "A「今日も寒いですね。」B「そうですね。でも、＿＿　＿＿　★　＿＿ですよ。」", "options": ["1 ない", "2 では", "3 ほど", "4 きのう"]}
+      ]}
+    ],
+    "answers": "①1 ②3 ③4 ④4→3→★1→2 ⑤4→3→★2→1"
+  },
+  "hitokoto": ""
+}

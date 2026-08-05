@@ -1,0 +1,61 @@
+{
+  "week": 2, "day": 2, "title": "習ったことを忘れてしまいました。", "title_cn": "把学过的东西忘光了。", "title_en": "I've forgotten what I learned.",
+  "points": [
+    {
+      "pattern": "Vておく",
+      "connection": "Vて形＋おく",
+      "usage_jp": "①前もって準備することを表す。②今の状態を保つことを表す。",
+      "usage_cn": "①表示提前准备。②表示保持目前的状态。",
+      "usage_en": "① Marks doing something in advance. ② Marks keeping the current state as-is.",
+      "examples": [
+        {"jp": "旅行する前に、ガイドブックを読んでおきましょう。", "cn": "旅行前先读一下导游手册吧。", "en": "Let's read the guidebook before the trip."},
+        {"jp": "ドアを開けておいてください。", "cn": "请让门开着。", "en": "Please leave the door open."},
+        {"jp": "机の上は片づけないで、そのままにしておいてください。", "cn": "桌子上不要收拾，就那样放着。", "en": "Please don't tidy the desk — leave it as it is."}
+      ],
+      "notes": [{"type": "れい", "text": "非正式な会話では「Vておく」は「Vとく」になる。例：読んどく／開けとく／しとく"}]
+    },
+    {
+      "pattern": "Vてしまう",
+      "connection": "Vて形＋しまう",
+      "usage_jp": "①ある動作や状態を強調する。②あることが起きて残念だという気持ちを表す。",
+      "usage_cn": "①强调某个动作或状态。②对于变成某种状态表示遗憾。",
+      "usage_en": "① Emphasizes the completeness of an action/state. ② Expresses regret about something that happened.",
+      "examples": [
+        {"jp": "きのう買ったたまごは、使ってしまいました。", "cn": "昨天买的鸡蛋全用完了。", "en": "I used up all the eggs I bought yesterday."},
+        {"jp": "その本だなのまんがは全部読んでしまいました。", "cn": "那个书架上的漫画全看完了。", "en": "I've read all the manga on that bookshelf."},
+        {"jp": "電車の中にかさを忘れてしまいました。", "cn": "把伞忘在电车上了。", "en": "I left my umbrella on the train."},
+        {"jp": "駅まで走りましたが、電車は行ってしまいました。", "cn": "跑到车站，但电车已经开走了。", "en": "I ran to the station, but the train had already left."}
+      ],
+      "notes": [{"type": "れい", "text": "非正式な会話では「V-ちゃう」「V-じゃう」になる。例：使っちゃう／忘れちゃう／行っちゃう／読んじゃう"}]
+    },
+    {
+      "pattern": "Vてみる",
+      "connection": "Vて形＋みる",
+      "usage_jp": "「試しに〜する」という意味を表す。",
+      "usage_cn": "意为“试试”。",
+      "usage_en": "Means \"try doing ~.\"",
+      "examples": [
+        {"jp": "くつを買う前には必ずはいてみましょう。", "cn": "买鞋子之前一定要试穿一下。", "en": "Always try shoes on before buying them."},
+        {"jp": "日本の旅館にとまってみたいです。", "cn": "想试着住一次日本旅馆。", "en": "I'd like to try staying at a Japanese inn."},
+        {"jp": "そのゲーム、やってみたけれど、つまらなかった。", "cn": "那个游戏我试玩了，但是很无聊。", "en": "I tried that game, but it was boring."}
+      ],
+      "notes": []
+    }
+  ],
+  "exercises": {
+    "answers_note": "答えはp.23",
+    "sections": [
+      {"type": "choice", "instruction": "（　）に何を入れますか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 1, "q": "パーティーのためにビールを買って（　）ください。", "options": ["1 おいて", "2 しまって", "3 みて", "4 といて"]},
+        {"n": 2, "q": "れいぞうこに入っていたビールを全部飲んで（　）。", "options": ["1 しまいました", "2 ときました", "3 じゃいました", "4 ちゃいました"]},
+        {"n": 3, "q": "A「駅からどうやって行きますか。」B「あ〜、今、バスが（　）から、タクシーで行きましょう。」", "options": ["1 行ってみた", "2 行っておいた", "3 行っといた", "4 行っちゃった"]}
+      ]},
+      {"type": "order", "instruction": "＿★＿に入るものはどれですか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 4, "q": "山田「もしもし、すみません。車のじこで、1時間くらいおくれますので、＿＿　＿＿　★　＿＿ください。」田中「わかりました。」", "options": ["1 わたしを", "2 待たないで", "3 おいて", "4 はじめて"]},
+        {"n": 5, "q": "A「あそこの新しいレストラン、行きましたか。」B「ええ、＿＿　＿＿　★　＿＿もう行きません。」", "options": ["1 が", "2 おいしくなかった", "3 行ってみました", "4 ので"]}
+      ]}
+    ],
+    "answers": "①1 ②1 ③4 ④1→2→★4→3 ⑤3→1→★2→4"
+  },
+  "hitokoto": ""
+}

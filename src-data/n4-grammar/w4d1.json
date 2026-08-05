@@ -1,0 +1,84 @@
+{
+  "week": 4, "day": 1, "title": "夏休みになったら、国に帰ります。", "title_cn": "放暑假的话，我就回国。", "title_en": "When summer vacation comes, I'll go home.",
+  "points": [
+    {
+      "pattern": "〜たら…",
+      "connection": "Vた形＋ら",
+      "usage_jp": "「もし〜たら…」の形でよく使う。「〜」という条件で「…」が成立することを表す。",
+      "usage_cn": "常用作“もし〜たら…”的形式，表示在“〜”的条件下“…”成立。",
+      "usage_en": "Often used as \"if ~ (then) ~,\" marking a condition.",
+      "examples": [
+        {"jp": "暑かったら、エアコンをつけてください。", "cn": "如果热的话，请开空调。", "en": "If it's hot, please turn on the air conditioner."},
+        {"jp": "もし大きい地震が起きたら、どうしますか。", "cn": "如果发生大地震，你会怎么做？", "en": "What would you do if a big earthquake happened?"}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "〜ば／なら…",
+      "connection": "ば形　＊いい→よければ",
+      "usage_jp": "条件を表す。",
+      "usage_cn": "表示条件。",
+      "usage_en": "Marks a conditional (\"if ~\").",
+      "examples": [
+        {"jp": "安ければ買いますが、高いので買いません。", "cn": "便宜的话就买，但太贵了不买。", "en": "If it's cheap I'll buy it, but it's expensive so I won't."},
+        {"jp": "タクシーで行けば、間に合うでしょう。", "cn": "坐出租车去的话，应该能赶上。", "en": "If we go by taxi, we should make it in time."},
+        {"jp": "明日雨なら試合は中止です。", "cn": "明天如果下雨，比赛就中止。", "en": "If it rains tomorrow, the game is cancelled."},
+        {"jp": "きらいなら、食べなくてもいいですよ。", "cn": "不喜欢的话，不吃也行。", "en": "If you don't like it, you don't have to eat it."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "〜なら…",
+      "connection": "普通形＋なら",
+      "usage_jp": "「…」で話し手の判断や希望を表す。",
+      "usage_cn": "“…”表示说话人的判断或希望。",
+      "usage_en": "The clause after なら expresses the speaker's judgment or wish, given the premise.",
+      "examples": [
+        {"jp": "ここから東京駅に行くなら、地下鉄が便利です。", "cn": "从这里去东京站的话，坐地铁方便。", "en": "If you're going to Tokyo Station from here, the subway is convenient."},
+        {"jp": "あなたが行かないなら、私も行きません。", "cn": "如果你不去的话，我也不去。", "en": "If you're not going, I won't go either."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "〜と…",
+      "connection": "普通形（過去形以外）＋と",
+      "usage_jp": "「〜」といつも同じ状態や結果になることを表す。",
+      "usage_cn": "表示总是发生同样的状态或结果。",
+      "usage_en": "Marks a condition that always leads to the same result.",
+      "examples": [
+        {"jp": "このボタンを押すと、ドアが開きます。", "cn": "按这个按钮，门就会开。", "en": "If you press this button, the door opens."},
+        {"jp": "ここを右に曲がると、銀行があります。", "cn": "在这里往右拐，就有银行。", "en": "If you turn right here, there's a bank."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "〜たら…／〜なら…（時間・状況）",
+      "connection": "Vた形＋ら／普通形＋なら",
+      "usage_jp": "「〜のとき」「〜のあと」「〜の場合」という意味も表せる。",
+      "usage_cn": "还可以表示“〜时”“〜之后”“〜的情况下”。",
+      "usage_en": "Can also mean \"when ~,\" \"after ~,\" or \"in the case of ~.\"",
+      "examples": [
+        {"jp": "お湯がわいたら、めんを入れてください。", "cn": "水开了之后，把面放进去。", "en": "Once the water boils, add the noodles."},
+        {"jp": "コンビニへ行くなら、サンドイッチを買ってきてください。", "cn": "如果要去便利店的话，帮我买个三明治回来。", "en": "If you're going to the convenience store, please buy me a sandwich."},
+        {"jp": "ラーメンなら、駅前のラーメン屋がおいしいですよ。", "cn": "说到拉面的话，车站前的拉面店很好吃哦。", "en": "If it's ramen you want, the ramen shop by the station is good."}
+      ],
+      "notes": []
+    }
+  ],
+  "exercises": {
+    "answers_note": "答えはp.53",
+    "sections": [
+      {"type": "choice", "instruction": "（　）に何を入れますか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 1, "q": "もし（　）、まどを開けてください。", "options": ["1 暑いと", "2 暑いったら", "3 暑ければ", "4 暑かったなら"]},
+        {"n": 2, "q": "中国に（　）、お茶を買ってきてください。", "options": ["1 行くと", "2 行けば", "3 行くなら", "4 行くところ"]},
+        {"n": 3, "q": "A「すみません、このへんにコンビニはありませんか。」B「そのかどを右にまがって少し（　）、右にありますよ。」", "options": ["1 行くと", "2 行くなら", "3 行くところ", "4 行ったと"]}
+      ]},
+      {"type": "order", "instruction": "＿★＿に入るものはどれですか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 4, "q": "A「もうすぐ、試験の結果がわかりますね。」B「はい。もし＿＿　＿＿　★　＿＿です。」", "options": ["1 来年も", "2 つもり", "3 受ける", "4 受からなかったら"]},
+        {"n": 5, "q": "夫「ちょっと、本屋に行ってくるよ。」妻「あ、そう。出かける＿＿　＿＿　★　＿＿？」", "options": ["1 たまごを買ってきて", "2 なら", "3 帰りに", "4 くれない"]}
+      ]}
+    ],
+    "answers": "①3 ②3 ③1 ④4→1→★3→2 ⑤2→3→★1→4"
+  },
+  "hitokoto": ""
+}

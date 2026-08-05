@@ -1,0 +1,84 @@
+{
+  "week": 3, "day": 6, "title": "今日はお酒を飲まないつもりです。", "title_cn": "我今天打算不喝酒。", "title_en": "I don't plan to drink alcohol today.",
+  "points": [
+    {
+      "pattern": "〜と／って言う",
+      "connection": "普通形＋と・って＋言う",
+      "usage_jp": "「って」は話し言葉。",
+      "usage_cn": "“って”是口语用法。",
+      "usage_en": "Reports what was said; って is the colloquial form of と.",
+      "examples": [
+        {"jp": "天気予報で、明日は寒いと言っていました。", "cn": "天气预报说明天会冷。", "en": "The weather forecast said it will be cold tomorrow."},
+        {"jp": "医者に酒は飲むなと言われました。", "cn": "医生叫我别喝酒。", "en": "The doctor told me not to drink alcohol."},
+        {"jp": "父に、今日は早く帰って来いって言われた。", "cn": "爸爸叫我今天早点回来。", "en": "My father told me to come home early today."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "〜と思う",
+      "connection": "普通形＋と思う",
+      "usage_jp": "「〜と考える」という意味を表す。",
+      "usage_cn": "意为“我觉得”。",
+      "usage_en": "Means \"I think ~.\"",
+      "examples": [
+        {"jp": "田中さんはもう帰ったと思います。", "cn": "我觉得田中已经回去了。", "en": "I think Tanaka has already gone home."},
+        {"jp": "試験に受かったと思います。", "cn": "我觉得我考过了。", "en": "I think I passed the exam."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "Vよう",
+      "connection": "V意向形　＊する→しよう　来る→来よう",
+      "usage_jp": "「Vましょう」のくだけた言い方。友だち同士の会話などで使う。",
+      "usage_cn": "“Vましょう”的非正式说法，用于朋友之间的对话等。",
+      "usage_en": "Casual version of \"let's do V,\" used among friends.",
+      "examples": [
+        {"jp": "A「明日の日曜日、映画に行こうよ。」B「いいね、何を見ようか。」", "cn": "“明天周日一起去看电影吧！”“好啊，看什么呢？”", "en": "\"Let's go to a movie this Sunday.\" \"Sounds good, what should we watch?\""},
+        {"jp": "疲れたから、ちょっと休もう。", "cn": "累了，休息一下吧。", "en": "I'm tired, let's take a break."},
+        {"jp": "おなかがすいたね。何か食べよう。", "cn": "肚子饿了，吃点什么吧。", "en": "I'm hungry. Let's eat something."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "Vようと思う",
+      "connection": "V意向形＋と思う",
+      "usage_jp": "計画や意図を表す。",
+      "usage_cn": "表示打算、意图。",
+      "usage_en": "Marks a plan or intention.",
+      "examples": [
+        {"jp": "新しい自転車を買おうと思っています。", "cn": "我打算买辆新自行车。", "en": "I'm thinking of buying a new bicycle."},
+        {"jp": "明日は日曜日なのでゆっくり寝ようと思います。", "cn": "明天是周日，我打算好好睡一觉。", "en": "Tomorrow is Sunday, so I'm planning to sleep in."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "Vつもり",
+      "connection": "V辞書形／ない形＋つもり",
+      "usage_jp": "計画や強い意志を表す。",
+      "usage_cn": "意为“打算，准备”，表示计划或强烈的意愿。",
+      "usage_en": "Marks a plan or strong intention.",
+      "examples": [
+        {"jp": "私は来年日本に留学するつもりです。", "cn": "我打算明年去日本留学。", "en": "I plan to study abroad in Japan next year."},
+        {"jp": "これからデパートに行きますが、見るだけで何も買わないつもりです。", "cn": "现在要去百货商店，但打算只看不买。", "en": "I'm going to the department store now, but I plan to just look and not buy anything."},
+        {"jp": "私は、大学に行くつもりはありません。", "cn": "我不打算上大学。", "en": "I have no intention of going to university."}
+      ],
+      "notes": [{"type": "！", "text": "「行くつもりはありません」は「行かないつもりです」より決意が強い。"}]
+    }
+  ],
+  "exercises": {
+    "answers_note": "答えはp.48",
+    "sections": [
+      {"type": "choice", "instruction": "（　）に何を入れますか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 1, "q": "太ってきたので、ダイエットを（　）と思っています。", "options": ["1 すろう", "2 しろう", "3 するよう", "4 しよう"]},
+        {"n": 2, "q": "天気予報で、あしたは午後から（　）と言っていました。", "options": ["1 はれる", "2 はれよう", "3 はれろう", "4 はれそう"]},
+        {"n": 3, "q": "A「どうする？タクシーで行く？」B「時間があるから、歩いて（　）よ。」", "options": ["1 行こう", "2 行っちゃった", "3 行かないつもり", "4 行っとく"]}
+      ]},
+      {"type": "order", "instruction": "＿★＿に入るものはどれですか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 4, "q": "A「それ、新しいバッグですね。」B「ええ、買わない＿＿　＿＿　★　＿＿しまいました。」", "options": ["1 つもりでした", "2 買って", "3 が", "4 ほしくなって"]},
+        {"n": 5, "q": "A「山田君、よく休みますね。」B「そうですね。＿＿　＿＿　★　＿＿思っていますが。」", "options": ["1 言おうと", "2 休むな", "3 って", "4 もう"]}
+      ]}
+    ],
+    "answers": "①4 ②1 ③1 ④1→3→★4→2 ⑤4→2→★3→1"
+  },
+  "hitokoto": ""
+}

@@ -1,0 +1,93 @@
+{
+  "week": 1, "day": 2, "title": "漢字は少ししか書けません。", "title_cn": "汉字只会写一点点。", "title_en": "I can only write a little kanji.",
+  "points": [
+    {
+      "pattern": "Nでも",
+      "connection": "N＋でも",
+      "usage_jp": "①極端な例を表す。②一つの例をあげて、他にも選択肢があることを表す。",
+      "usage_cn": "①表示极端的例子。②举出一个例子，暗示还有其他选择。",
+      "usage_en": "① Marks an extreme example. ② Suggests one example among other possible options.",
+      "examples": [
+        {"jp": "これは子どもでもできる問題です。", "cn": "这是连小孩都能做的问题。", "en": "This is a problem even a child can solve."},
+        {"jp": "お茶でも飲みましょうか。", "cn": "要不要喝点茶什么的？", "en": "Shall we have some tea or something?"},
+        {"jp": "天気がいいから、散歩でもしませんか。", "cn": "天气这么好，要不要去散散步之类的？", "en": "The weather's nice — want to go for a walk or something?"}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "Nで",
+      "connection": "N＋で",
+      "usage_jp": "手段・方法／範囲／理由／材料を表す。",
+      "usage_cn": "表示手段、方法／范围／理由／材料。",
+      "usage_en": "Marks means/method, scope, reason, or material.",
+      "examples": [
+        {"jp": "電車で行きます。", "cn": "坐电车去。", "en": "I'll go by train."},
+        {"jp": "はさみで切ります。", "cn": "用剪刀剪。", "en": "Cut it with scissors."},
+        {"jp": "富士山は日本でいちばん高い山です。", "cn": "富士山是日本最高的山。", "en": "Mt. Fuji is the tallest mountain in Japan."},
+        {"jp": "このりんごは3個で500円です。", "cn": "这苹果3个500日元。", "en": "These apples are 500 yen for three."},
+        {"jp": "かぜで学校を休みました。", "cn": "因为感冒请假没上学。", "en": "I missed school because of a cold."},
+        {"jp": "父は仕事でアメリカに行っています。", "cn": "父亲因公去了美国。", "en": "My father has gone to America for work."},
+        {"jp": "これは、紙で作ったにんぎょうです。", "cn": "这是用纸做的人偶。", "en": "This is a doll made of paper."}
+      ],
+      "notes": [
+        {"type": "れい", "text": "手段・方法：電車で／はさみで"},
+        {"type": "れい", "text": "範囲：日本で／3個で"},
+        {"type": "れい", "text": "理由：かぜで／仕事で"},
+        {"type": "れい", "text": "材料：紙で"}
+      ]
+    },
+    {
+      "pattern": "Nも（時間・数量）",
+      "connection": "数量＋も",
+      "usage_jp": "①多いことを表す。②否定文で少ない・無いことを表す。",
+      "usage_cn": "①表示多。②在否定句中表示少或无。",
+      "usage_en": "① Marks a large amount. ② In negative sentences, marks a small amount or none at all.",
+      "examples": [
+        {"jp": "学校まで2時間もかかります。", "cn": "到学校要花两个小时之多。", "en": "It takes as much as two hours to get to school."},
+        {"jp": "ビールを3本も飲みました。", "cn": "喝了多达三瓶啤酒。", "en": "I drank as many as three bottles of beer."},
+        {"jp": "パーティーには10人も来ませんでした。", "cn": "聚会来的人还不到10个。", "en": "Not even 10 people came to the party."},
+        {"jp": "私はスカートを1枚も持っていません。", "cn": "我一条裙子都没有。", "en": "I don't have even a single skirt."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "N1とかN2（とか）",
+      "connection": "N1＋とか＋N2＋（とか）",
+      "usage_jp": "「N1やN2など」という意味を表す。",
+      "usage_cn": "意为“N1或N2等”。",
+      "usage_en": "Means \"things like N1 and N2.\"",
+      "examples": [
+        {"jp": "毎日、昼はラーメンとかそばとかを食べます。", "cn": "每天中午吃拉面或荞麦面之类的。", "en": "Every day for lunch I eat things like ramen or soba."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "Nしか〜ない",
+      "connection": "N＋しか＋ない形",
+      "usage_jp": "「ただNだけ」という意味を表す。",
+      "usage_cn": "意为“只有N”。",
+      "usage_en": "Means \"only N.\"",
+      "examples": [
+        {"jp": "ジョンさんは英語しか話せません。", "cn": "约翰只会说英语。", "en": "John can only speak English."},
+        {"jp": "れいぞうこに、たまごが1個しかありません。", "cn": "冰箱里只有一个鸡蛋。", "en": "There's only one egg in the fridge."}
+      ],
+      "notes": []
+    }
+  ],
+  "exercises": {
+    "answers_note": "答えはp.7",
+    "sections": [
+      {"type": "choice", "instruction": "（　）に何を入れますか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 1, "q": "あしたの宿題のレポートがまだ1枚（　）できていません。", "options": ["1 も", "2 ずつ", "3 でも", "4 とか"]},
+        {"n": 2, "q": "山田「これ、おいしいですね。田中さんが作りましたか。」田中「はい、わたし（　）作れるのでかんたんでしたよ。」", "options": ["1 だけ", "2 くらい", "3 しか", "4 でも"]},
+        {"n": 3, "q": "A「あしたは休みですね。何をしますか。」B「そうじ（　）せんたく（　）をするつもりです。」", "options": ["1 も／も", "2 や／や", "3 でも／でも", "4 とか／とか"]}
+      ]},
+      {"type": "order", "instruction": "＿★＿に入るものはどれですか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 4, "q": "子ども「お母さん、今日は、すきやきが食べたい。」母親「お肉はあるけれど、たまご＿＿　＿＿　★　＿＿から、あしたね。」", "options": ["1 しか", "2 が", "3 ない", "4 ひとつ"]},
+        {"n": 5, "q": "今年の夏休みは＿＿　＿＿　★　＿＿しようと思っています。", "options": ["1 でも", "2 旅行", "3 どこか", "4 へ"]}
+      ]}
+    ],
+    "answers": "①1 ②4 ③4 ④2→4→★1→3 ⑤3→4→★2→1"
+  },
+  "hitokoto": ""
+}

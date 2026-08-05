@@ -1,0 +1,60 @@
+{
+  "week": 3, "day": 4, "title": "この漢字の読み方はむずかしいです。", "title_cn": "这个汉字的读法很难。", "title_en": "This kanji's reading is difficult.",
+  "points": [
+    {
+      "pattern": "接続詞：それに／そのうえ・それで／だから・ところが",
+      "connection": "文A。＋接続詞、文B。",
+      "usage_jp": "文と文をつなぐ接続詞。「それに／そのうえ」は追加、「それで／だから」は原因と結果、「ところが」は予想外の結果を表す。",
+      "usage_cn": "连接句子的接续词。“それに／そのうえ”表示而且，“それで／だから”表示原因与结果（所以），“ところが”（＝〜のに）表示出乎意料的结果或事实。",
+      "usage_en": "Sentence connectors: それに／そのうえ add on; それで／だから mark cause→result; ところが marks an unexpected result.",
+      "examples": [
+        {"jp": "山田さんは若くてきれいです。それに、頭もいいです。", "cn": "山田年轻又漂亮，而且脑子也好。", "en": "Yamada is young and pretty. On top of that, she's smart too."},
+        {"jp": "きのうは雨が降っていて寒かったです。そのうえ、風も強かったです。", "cn": "昨天下雨，很冷，而且风还很大。", "en": "It rained yesterday and was cold. On top of that, the wind was strong too."},
+        {"jp": "電車で事故があった。それで、ちこくしてしまった。", "cn": "电车出了事故，所以迟到了。", "en": "There was an accident on the train, so I ended up being late."},
+        {"jp": "パソコンがこわれた。だから、新しいのを買った。", "cn": "电脑坏了，所以买了新的。", "en": "My computer broke, so I bought a new one."},
+        {"jp": "きのうは、試験の日だった。ところが、病気で受けることができなかった。", "eq": "＝〜のに", "cn": "昨天是考试的日子。可是，因为生病没能参加考试。", "en": "Yesterday was exam day. But I got sick and couldn't take it."}
+      ],
+      "notes": [{"type": "れい", "text": "その他の接続詞：そして（接着）／それから（然后）／けれども・けれど（但是）／でも（但是）／しかし（可是）／ところで（表示转移话题）／たとえば（比如）／それでは・では・じゃあ・じゃ（那么）"}]
+    },
+    {
+      "pattern": "形容詞＋さ（＝名詞）",
+      "connection": "i-Aい→さ／na-Aな→さ　＊いい→よさ",
+      "usage_jp": "形容詞を名詞化する。",
+      "usage_cn": "把形容词变成名词。",
+      "usage_en": "Turns an adjective into a noun (marking degree/measure).",
+      "examples": [
+        {"jp": "同じ大きさのダイヤモンドでも、ねだんはいろいろ違います。", "cn": "即使是相同大小的钻石，价格也各不相同。", "en": "Even diamonds of the same size can vary a lot in price."},
+        {"jp": "広さよりも便利さを考えて、今のアパートを選びました。", "cn": "比起宽敞，我更看重便利性，所以选择了现在的公寓。", "en": "I chose my current apartment for its convenience rather than its size."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "V方",
+      "connection": "V-ます＋方",
+      "usage_jp": "「方法」という意味を表す。",
+      "usage_cn": "意为“方法”。",
+      "usage_en": "Means \"the way of doing ~\" / \"how to ~.\"",
+      "examples": [
+        {"jp": "新しいコンピューターの使い方を習いました。", "cn": "学习了新电脑的使用方法。", "en": "I learned how to use the new computer."},
+        {"jp": "このゲームのやり方が、まだわからない。", "cn": "还不知道这个游戏的玩法。", "en": "I still don't know how to play this game."}
+      ],
+      "notes": []
+    }
+  ],
+  "exercises": {
+    "answers_note": "答えはp.43",
+    "sections": [
+      {"type": "choice", "instruction": "（　）に何を入れますか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 1, "q": "ここから東京駅への行き（　）はたくさんあります。", "options": ["1 ほう", "2 こと", "3 みち", "4 かた"]},
+        {"n": 2, "q": "朝ははれていた。（　）、昼から急に雨が降ってきた。", "options": ["1 だから", "2 それで", "3 ところが", "4 そのうえ"]},
+        {"n": 3, "q": "A「この店、いつもこんでいますね。安くておいしいからでしょう。」B「ええ、（　）、量も多いですから、男の人にも人気があります。」", "options": ["1 だから", "2 それで", "3 ところが", "4 そのうえ"]}
+      ]},
+      {"type": "order", "instruction": "＿★＿に入るものはどれですか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 4, "q": "客「これも千円ですか。」店員「はい、大きさは＿＿　＿＿　★　＿＿。」", "options": ["1 ねだんは", "2 が", "3 ちがいます", "4 同じです"]},
+        {"n": 5, "q": "A「スミスさんは今、国に帰っています。」B「そうですか。＿＿　＿＿　★　＿＿返事が来ないんですね。」", "options": ["1 電話しても", "2 メールしても", "3 だから", "4 出ないし"]}
+      ]}
+    ],
+    "answers": "①4 ②3 ③4 ④3→2→★1→4 ⑤3→1→★4→2"
+  },
+  "hitokoto": ""
+}

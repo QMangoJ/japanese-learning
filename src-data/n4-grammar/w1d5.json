@@ -1,0 +1,75 @@
+{
+  "week": 1, "day": 5, "title": "音楽を聞きながら勉強しています。", "title_cn": "边听音乐边学习。", "title_en": "I study while listening to music.",
+  "points": [
+    {
+      "pattern": "〜て…／〜で…（原因・理由）",
+      "connection": "普通形（て形）",
+      "usage_jp": "原因や理由を表す。",
+      "usage_cn": "表示原因或理由。",
+      "usage_en": "Marks a cause or reason.",
+      "examples": [
+        {"jp": "かぜで学校を休みました。", "cn": "因为感冒，没去上学。", "en": "I missed school because of a cold."},
+        {"jp": "このカレーはからくて食べられません。", "cn": "这个咖喱太辣了，吃不了。", "en": "This curry is too spicy to eat."},
+        {"jp": "お金がなくて、買えない。", "cn": "没有钱，买不了。", "en": "I don't have money, so I can't buy it."},
+        {"jp": "ひさしぶりに友だちに会えて、うれしかったです。", "cn": "好久没见的朋友见到了，很高兴。", "en": "I was happy to see my friend again after a long time."}
+      ],
+      "notes": [{"type": "！", "text": "この形は依頼や希望の文には使えない。例：「暑くて、まどを開けてください」✕→「暑いから／暑いので」が正しい。"}]
+    },
+    {
+      "pattern": "〜て…／〜で…（状態・手段）",
+      "connection": "普通形（て形）",
+      "usage_jp": "状態や手段などを表す。",
+      "usage_cn": "表示状态或手段等。",
+      "usage_en": "Marks a state or means/method.",
+      "examples": [
+        {"jp": "いすにすわって話しましょう。", "cn": "坐着聊天吧。", "en": "Let's sit down and talk."},
+        {"jp": "えんぴつを使って書いてください。", "cn": "请用铅笔写。", "en": "Please write using a pencil."},
+        {"jp": "朝ご飯を食べないで、学校へ行きました。", "cn": "没吃早饭就去学校了。", "en": "I went to school without eating breakfast."},
+        {"jp": "辞書を使わないで、日本語の本を読みます。", "cn": "不用字典读日语书。", "en": "I read Japanese books without using a dictionary."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "〜まま…",
+      "connection": "Vた形／Nの＋まま",
+      "usage_jp": "「〜」の状態が変わらないまま「…」することを表す。",
+      "usage_cn": "表示在“〜”状态不变的情况下做“…”。",
+      "usage_en": "Marks doing something while a prior state remains unchanged.",
+      "examples": [
+        {"jp": "父はめがねをかけたまま寝ました。", "cn": "父亲戴着眼镜就睡着了。", "en": "My father fell asleep with his glasses still on."},
+        {"jp": "ぼうしをかぶったまま、部屋に入ってはいけません。", "cn": "不可以戴着帽子进房间。", "en": "You mustn't enter the room while wearing a hat."},
+        {"jp": "うちの子は、パジャマのまま、出かけてしまいました。", "cn": "我家孩子穿着睡衣就出门了。", "en": "My child went out still in pajamas."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "Vながら…",
+      "connection": "V-ます＋ながら",
+      "usage_jp": "「一つの動作をしながら、もう一つの動作をする」という意味を表す。",
+      "usage_cn": "意为“一边……一边……”。",
+      "usage_en": "Means \"while doing ~, also do ~\" (two simultaneous actions).",
+      "examples": [
+        {"jp": "私はいつもご飯を食べながら、テレビを見ています。", "cn": "我总是边吃饭边看电视。", "en": "I always watch TV while eating."},
+        {"jp": "田中さんの息子さんは、働きながら大学に行っています。", "cn": "田中的儿子边工作边上大学。", "en": "Tanaka's son goes to university while working."},
+        {"jp": "お茶を飲みながら話しましょう。", "cn": "边喝茶边聊天吧。", "en": "Let's chat while drinking tea."}
+      ],
+      "notes": []
+    }
+  ],
+  "exercises": {
+    "answers_note": "答えはp.13",
+    "sections": [
+      {"type": "choice", "instruction": "（　）に何を入れますか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 1, "q": "足がいたく（　）、もう歩けません。", "options": ["1 で", "2 て", "3 し", "4 から"]},
+        {"n": 2, "q": "A「あ、メールが来た。」B「ダメだよ。運転（　）、スマホを見るのは。」", "options": ["1 しながら", "2 するながら", "3 したまま", "4 しまま"]},
+        {"n": 3, "q": "A「試験、できた？」B「ううん、きのう寝（　）勉強したのにできなかったよ。」", "options": ["1 なしで", "2 ないまま", "3 なくて", "4 ないで"]}
+      ]},
+      {"type": "order", "instruction": "＿★＿に入るものはどれですか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 4, "q": "A「タクシーで行けば、間に合うでしょうか。」B「このへんは＿＿　＿＿　★　＿＿行きましょう。」", "options": ["1 走って", "2 少ない", "3 タクシーも", "4 から"]},
+        {"n": 5, "q": "Tシャツなどの＿＿　＿＿　★　＿＿入らないでください。", "options": ["1 着た", "2 まま", "3 服を", "4 プールに"]}
+      ]}
+    ],
+    "answers": "①2 ②1 ③4 ④3→2→★4→1 ⑤3→1→★2→4"
+  },
+  "hitokoto": ""
+}

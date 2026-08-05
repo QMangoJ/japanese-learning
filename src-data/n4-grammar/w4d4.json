@@ -1,0 +1,72 @@
+{
+  "week": 4, "day": 4, "title": "会社をやめさせられました。", "title_cn": "我被公司逼着辞职了。", "title_en": "I was forced to quit the company.",
+  "points": [
+    {
+      "pattern": "Vられる（受身形）",
+      "connection": "V受身形　＊する→される",
+      "usage_jp": "受身を表す。事実を客観的に述べるとき、物を主語にすることが多い。",
+      "usage_cn": "表示被动态。刚述一个事实时，常常以物为主语，使用被动态。",
+      "usage_en": "The passive form; often used with a thing as the subject to state a fact objectively.",
+      "examples": [
+        {"jp": "外国人に道を聞かれました。", "cn": "被外国人问路。", "en": "I was asked for directions by a foreigner."},
+        {"jp": "日本では、医者や弁護士は「先生」と呼ばれています。", "cn": "在日本，医生和律师被称为“先生”。", "en": "In Japan, doctors and lawyers are called \"sensei.\""},
+        {"jp": "その歌は、世界中で歌われています。", "cn": "那首歌在世界各地传唱。", "en": "That song is sung all over the world."},
+        {"jp": "入学式は、このホールで行われます。", "cn": "入学典礼在这个大厅举行。", "en": "The entrance ceremony is held in this hall."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "Vさせる（使役形）",
+      "connection": "V使役形　＊する→させる",
+      "usage_jp": "強制や許可を表す。",
+      "usage_cn": "表示强迫或允许别人做某事。",
+      "usage_en": "The causative form; marks making/letting someone do something.",
+      "examples": [
+        {"jp": "社長は、ちこくが多い社員をやめさせました。", "cn": "社长让经常迟到的员工辞职了。", "en": "The president made the employee who was often late quit."},
+        {"jp": "公園で犬を走らせましょう。", "cn": "在公园让狗跑一跑吧。", "en": "Let's let the dog run in the park."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "Vさせられる（使役受身形）",
+      "connection": "V使役受身形　＊する→させられる",
+      "usage_jp": "無理やり何かをさせられることを表す。",
+      "usage_cn": "表示被迫做某事。",
+      "usage_en": "The causative-passive form; marks being forced to do something.",
+      "examples": [
+        {"jp": "子どものころ、毎日母に野菜を食べさせられました。", "cn": "小时候，每天被妈妈逼着吃蔬菜。", "en": "As a child, I was made to eat vegetables by my mother every day."},
+        {"jp": "私は大きい失敗をして、会社をやめさせられました。", "cn": "我犯了大错，被公司辞退了。", "en": "I made a big mistake and was forced to quit the company."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "〜させてください",
+      "connection": "V使役形（させ）＋てください",
+      "usage_jp": "何かをする許可を求めるときに使う。",
+      "usage_cn": "用来获取许做某事的许可。",
+      "usage_en": "Used to ask for permission to do something.",
+      "examples": [
+        {"jp": "お手洗いを使わせてください。", "cn": "请让我用一下洗手间。", "en": "Please let me use the restroom."},
+        {"jp": "私に説明させてください。", "cn": "请让我来说明。", "en": "Please let me explain."},
+        {"jp": "疲れた。ちょっと休ませて。", "cn": "累了，让我休息一下。", "en": "I'm tired. Let me rest a bit."}
+      ],
+      "notes": []
+    }
+  ],
+  "exercises": {
+    "answers_note": "答えはp.59",
+    "sections": [
+      {"type": "choice", "instruction": "（　）に何を入れますか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 1, "q": "おもしろそうなゲームね。わたしにも（　）。", "options": ["1 やられて", "2 やらせて", "3 やらされて", "4 されて"]},
+        {"n": 2, "q": "子どものとき、犬に（　）ことがあります。", "options": ["1 ほえた", "2 ほえさせた", "3 かまれた", "4 かまられた"]},
+        {"n": 3, "q": "A「元気そうなお子さんですね。」B「ええ、でも赤ちゃんのときは病気ばかりして、よく心配（　）。」", "options": ["1 されました", "2 させました", "3 さられました", "4 させられました"]}
+      ]},
+      {"type": "order", "instruction": "＿★＿に入るものはどれですか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 4, "q": "A「このいすは、すわりやすいですね。」B「これは、＿＿　＿＿　★　＿＿ですよ。」", "options": ["1 使われている", "2 ものだ", "3 ヨーロッパの学校で", "4 そう"]},
+        {"n": 5, "q": "A「山田さん、店をやめたんですか。」B「ちこくが＿＿　＿＿　★　＿＿よ。」", "options": ["1 多かった", "2 ので", "3 と聞いています", "4 やめさせられた"]}
+      ]}
+    ],
+    "answers": "①2 ②3 ③4 ④3→1→★2→4 ⑤1→2→★4→3"
+  },
+  "hitokoto": ""
+}

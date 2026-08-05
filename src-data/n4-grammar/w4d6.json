@@ -1,0 +1,82 @@
+{
+  "week": 4, "day": 6, "title": "試験に受からないかなあ。", "title_cn": "考试能考过吗？", "title_en": "I wonder if I'll pass the exam.",
+  "points": [
+    {
+      "pattern": "〜んです／〜のです",
+      "connection": "普通形＋んです・のです",
+      "usage_jp": "状況を尋ねたり、理由を述べたり説明したりするときに使う。会話では「んです」がよく使われる。",
+      "usage_cn": "表示询问情况或阐述、解释理由时。比起“のです”，对话中更经常使用“んです”。",
+      "usage_en": "Used to ask about a situation or give an explanation/reason; んです is more common in speech.",
+      "examples": [
+        {"jp": "A「どうしたんですか。」B「ちょっと、頭がいたいんです。」", "cn": "“怎么了？”“有点头疼。”", "en": "\"What's wrong?\" \"I have a bit of a headache.\""},
+        {"jp": "A「パーティーに行かないの？」B「ちょっと用事があるんだ。」", "cn": "“不去派对吗？”“有点事。”", "en": "\"You're not going to the party?\" \"I've got something to do.\""}
+      ],
+      "notes": [{"type": "！", "text": "くだけた会話では「〜んだ」「〜の？」になる。「〜の」は女性がよく使う。"}]
+    },
+    {
+      "pattern": "〜なあ。",
+      "connection": "普通形＋なあ",
+      "usage_jp": "驚きや感動を表す。",
+      "usage_cn": "表示惊讶或感动。",
+      "usage_en": "Expresses surprise or emotional impression.",
+      "examples": [
+        {"jp": "試験、むずかしかったなあ。", "cn": "考试好难啊。", "en": "Wow, that exam was hard."},
+        {"jp": "よく食べるなあ。", "cn": "真能吃啊。", "en": "Wow, you sure can eat."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "〜ね。",
+      "connection": "普通形／丁寧形＋ね",
+      "usage_jp": "同意や確認を表す。",
+      "usage_cn": "表示同意或确认。",
+      "usage_en": "Expresses agreement or seeking confirmation.",
+      "examples": [
+        {"jp": "いい天気ですね。", "cn": "天气真好啊。", "en": "Nice weather, isn't it?"},
+        {"jp": "もうすぐ試験ですね。", "cn": "马上就要考试了呢。", "en": "The exam is coming up soon, huh."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "〜よ。",
+      "connection": "普通形／丁寧形＋よ",
+      "usage_jp": "強調や注意を表す。",
+      "usage_cn": "表示强调或注意。",
+      "usage_en": "Marks emphasis or drawing attention to something.",
+      "examples": [
+        {"jp": "雨が降っていますよ。", "cn": "在下雨哦。", "en": "It's raining, you know."},
+        {"jp": "漢字のテストは明日ですよ。", "cn": "汉字考试是明天哦。", "en": "The kanji test is tomorrow, just so you know."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "〜かな（あ）。／〜かしら。",
+      "connection": "普通形＋かな（あ）・かしら",
+      "usage_jp": "①不確かな気持ちを表す。②否定形と一緒に使うと、願望を表す。",
+      "usage_cn": "①表示不确定的感觉。②与否定形式一起使用，表示愿望。",
+      "usage_en": "① Expresses uncertainty. ② With a negative form, expresses a wish.",
+      "examples": [
+        {"jp": "ここはどこかな。", "cn": "这是哪里呢。", "en": "I wonder where this is."},
+        {"jp": "明日、雨が降るかしら。", "cn": "明天会下雨吗。", "en": "I wonder if it'll rain tomorrow."},
+        {"jp": "早く夏休みが来ないかなあ。", "cn": "暑假怎么还不快点来呢。", "en": "I wish summer vacation would come soon."}
+      ],
+      "notes": [{"type": "！", "text": "「かしら」は女性語だが、女性は「〜かな（あ）」もよく使う。"}]
+    }
+  ],
+  "exercises": {
+    "answers_note": "答えはp.64",
+    "sections": [
+      {"type": "choice", "instruction": "（　）に何を入れますか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 1, "q": "ジョンさん、どうして学校を休んだ（　）。", "options": ["1 なあ", "2 よなあ", "3 のかしら", "4 なの"]},
+        {"n": 2, "q": "早く誕生日が（　）。", "options": ["1 来るなあ", "2 来たいなあ", "3 来ないなあ", "4 来ないかなあ"]},
+        {"n": 3, "q": "A「きのうのステーキ、おいしかった（　）。」B「どこで食べたの？」", "options": ["1 か", "2 のか", "3 なあ", "4 かなあ"]}
+      ]},
+      {"type": "order", "instruction": "＿★＿に入るものはどれですか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 4, "q": "A「おそかったですね。どうしましたか。」B「朝、＿＿　＿＿　★　＿＿だいじょうぶです。」", "options": ["1 ぐあいが", "2 もう", "3 おなかの", "4 悪かったんですが"]},
+        {"n": 5, "q": "A「あれ？ケーキ、食べないの？」B「うん、＿＿　＿＿　★　＿＿ですよ。」", "options": ["1 今、ダイエット中", "2 けれど", "3 食べたい", "4 なん"]}
+      ]}
+    ],
+    "answers": "①3 ②4 ③3 ④3→1→★4→2 ⑤3→2→★1→4"
+  },
+  "hitokoto": ""
+}

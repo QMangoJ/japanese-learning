@@ -1,0 +1,82 @@
+{
+  "week": 2, "day": 1, "title": "宿題をしなければいけません。", "title_cn": "必须做作业。", "title_en": "I have to do my homework.",
+  "points": [
+    {
+      "pattern": "〜なければならない／〜なくてはいけない／〜ないといけない",
+      "connection": "Vない形（〜なけれ／〜なく／〜ない）＋ばならない・てはいけない・と いけない",
+      "usage_jp": "「必ず〜する」「〜すべきだ」という意味を表す。",
+      "usage_cn": "意为“必须，应该”。",
+      "usage_en": "Means \"must do ~\" / \"should do ~.\"",
+      "examples": [
+        {"jp": "日本では車は左側を走らなければなりません。", "cn": "在日本，车辆必须靠左行驶。", "en": "In Japan, cars must drive on the left side."},
+        {"jp": "今週は日曜日も会社に行かなくてはいけない。", "cn": "这周周日也必须去公司。", "en": "This week I have to go to the office even on Sunday."},
+        {"jp": "食後に、薬を飲まないといけない。", "cn": "饭后必须吃药。", "en": "I have to take medicine after meals."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "〜なきゃ（いけない）／〜なくちゃ（いけない）／〜ないと（いけない）",
+      "connection": "Vない形の縮約形＋（いけない）",
+      "usage_jp": "「必ず〜する」という意味を表す。話し言葉でよく使う。",
+      "usage_cn": "意为“必须，应该”，常用于非正式对话中。",
+      "usage_en": "Casual/spoken contractions meaning \"must do ~.\"",
+      "examples": [
+        {"jp": "洗濯しなきゃ。", "cn": "得洗衣服了。", "en": "I've got to do the laundry."},
+        {"jp": "明日試験だから勉強しなくちゃいけない。", "cn": "明天考试，所以必须得学习。", "en": "I have a test tomorrow, so I have to study."},
+        {"jp": "お客さんが来るから、片づけないと。", "cn": "客人要来了，得收拾一下。", "en": "A guest is coming, so I've got to tidy up."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "〜てもいい",
+      "connection": "Vて形＋もいい",
+      "usage_jp": "許可を表す。",
+      "usage_cn": "意为“可以，也行”。",
+      "usage_en": "Means \"it's okay to ~\" (permission).",
+      "examples": [
+        {"jp": "これ、すてててもいいですか。", "cn": "这个可以扔掉吗？", "en": "Is it okay to throw this away?"}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "〜なくてもいい",
+      "connection": "Vない形（〜なく）＋てもいい",
+      "usage_jp": "「〜する必要がない」という意味を表す。",
+      "usage_cn": "意为“不……也行”。",
+      "usage_en": "Means \"you don't have to ~.\"",
+      "examples": [
+        {"jp": "明日来なくてもいいですか。", "cn": "明天可以不来吗？", "en": "Is it okay if I don't come tomorrow?"},
+        {"jp": "今日じゃなくてもいいです。", "cn": "不是今天也可以。", "en": "It doesn't have to be today."}
+      ],
+      "notes": [{"type": "！", "text": "「来ないでも」は誤り。"}]
+    },
+    {
+      "pattern": "〜てはいけない",
+      "connection": "Vて形＋はいけない",
+      "usage_jp": "禁止を表す。",
+      "usage_cn": "意为“不能，不准”。",
+      "usage_en": "Means \"must not ~\" (prohibition).",
+      "examples": [
+        {"jp": "テストのとき、ペンを使ってはいけません。", "cn": "考试时不能用钢笔。", "en": "You must not use a pen during the test."},
+        {"jp": "その川でおよいではいけません。", "cn": "不能在那条河里游泳。", "en": "You must not swim in that river."}
+      ],
+      "notes": []
+    }
+  ],
+  "exercises": {
+    "answers_note": "答えはp.21",
+    "sections": [
+      {"type": "choice", "instruction": "（　）に何を入れますか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 1, "q": "来週中に授業料を（　）いけない。", "options": ["1 はらえば", "2 はらわなくても", "3 はらっては", "4 はらわないと"]},
+        {"n": 2, "q": "その本だなにあるまんがを（　）いいですか。", "options": ["1 読んでも", "2 読むと", "3 読まないでは", "4 読まないと"]},
+        {"n": 3, "q": "A「あしたは、試験の結果の発表の日ですね。」B「そうですね。（　）いいんですが…。」", "options": ["1 受かっても", "2 受からなければ", "3 受かっていれば", "4 受からないと"]}
+      ]},
+      {"type": "order", "instruction": "＿★＿に入るものはどれですか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 4, "q": "学生「すみません。レポートを家に忘れてきました。あした、持ってきます。」先生「あした＿＿　＿＿　★　＿＿出してください。」", "options": ["1 いいですが", "2 までに", "3 じゃなくても", "4 10日"]},
+        {"n": 5, "q": "A「このはさみ、切れないね。」B「新しい＿＿　＿＿　★　＿＿ね。」", "options": ["1 いけない", "2 と", "3 買わない", "4 のを"]}
+      ]}
+    ],
+    "answers": "①4 ②1 ③3 ④3→1→★4→2 ⑤4→3→★2→1"
+  },
+  "hitokoto": ""
+}

@@ -1,0 +1,85 @@
+{
+  "week": 1, "day": 6, "title": "雪を見たことがありません。", "title_cn": "没见过雪。", "title_en": "I've never seen snow.",
+  "points": [
+    {
+      "pattern": "Vたことがある",
+      "connection": "Vた形＋ことがある",
+      "usage_jp": "過去の経験を表す。",
+      "usage_cn": "表示过去的经历。",
+      "usage_en": "Marks a past experience.",
+      "examples": [
+        {"jp": "私はマラソン大会に出たことがあります。", "cn": "我参加过马拉松比赛。", "en": "I have taken part in a marathon before."},
+        {"jp": "私は一度もミュージカルを見たことがありません。", "cn": "我一次也没看过音乐剧。", "en": "I have never once seen a musical."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "Vる／ないことがある",
+      "connection": "V辞書形／ない形＋ことがある",
+      "usage_jp": "たまに起こることを表す。",
+      "usage_cn": "表示偶尔发生某事。",
+      "usage_en": "Marks something that occasionally happens.",
+      "examples": [
+        {"jp": "うちの犬は夜中にほえることがあって、困ります。", "cn": "我家的狗有时半夜会叫，很困扰。", "en": "My dog sometimes barks in the middle of the night, which is a problem."},
+        {"jp": "私は昼ご飯を食べないことがあります。", "cn": "我有时候不吃午饭。", "en": "Sometimes I don't eat lunch."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "Nにする／Vる・ないことにする",
+      "connection": "N＋にする／V辞書形・ない形＋ことにする",
+      "usage_jp": "自分で何かを決めることを表す。「〜ことにしています」は習慣を表す。",
+      "usage_cn": "表示自己决定某事。“〜ことにしています”表示习惯。",
+      "usage_en": "Marks a decision one makes oneself; the ~ことにしている form marks a habit.",
+      "examples": [
+        {"jp": "私はAランチにします。", "cn": "我要A套餐。", "en": "I'll have the A lunch set."},
+        {"jp": "これから、ダイエットすることにします。", "cn": "从现在起，我决定要减肥。", "en": "I've decided to go on a diet from now on."},
+        {"jp": "毎日、牛乳を飲むことにしています。", "cn": "我习惯每天喝牛奶。", "en": "I make it a rule to drink milk every day."},
+        {"jp": "今年の夏は、国に帰らないことにします。", "cn": "今年夏天，我决定不回国了。", "en": "I've decided not to go back to my country this summer."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "Nになる／Vる・ないことになる",
+      "connection": "N＋になる／V辞書形・ない形＋ことになる",
+      "usage_jp": "何かが決まったことを表す。",
+      "usage_cn": "表示某事被确定。",
+      "usage_en": "Marks that something has been decided (often by circumstance, not by oneself).",
+      "examples": [
+        {"jp": "明日雨なら、ハイキングは中止になります。", "cn": "明天如果下雨，远足就会取消。", "en": "If it rains tomorrow, the hike will be cancelled."},
+        {"jp": "来月、イギリスへ出張することになりました。", "cn": "下个月决定要去英国出差了。", "en": "It's been decided that I'll go on a business trip to the UK next month."},
+        {"jp": "来月、アメリカに出張する予定でしたが、行かないことになりました。", "cn": "本来预定下个月去美国出差，但后来定了不去了。", "en": "I was supposed to go on a business trip to America next month, but it's been decided that I won't."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "i-Aく／na-Aに する／なる",
+      "connection": "い形容詞く／な形容詞に＋する・なる",
+      "usage_jp": "「する」は人の意志で状態を変えることを、「なる」は自然に変化することを表す。",
+      "usage_cn": "“する”表示按人的意愿改变某状态，“なる”表示自然而然的变化。",
+      "usage_en": "する marks a change brought about intentionally; なる marks a change that happens naturally.",
+      "examples": [
+        {"jp": "もらった時計を大切にします。", "cn": "我会好好珍惜收到的手表。", "en": "I'll take good care of the watch I received."},
+        {"jp": "母がなくなって、さびしくなりました。", "cn": "母亲去世了，变得寂寞了。", "en": "After my mother passed away, I became lonely."},
+        {"jp": "大きい道路ができて、この辺も静かじゃなくなりました。", "cn": "大马路建成后，这一带也不再安静了。", "en": "With the big road built, this area isn't quiet anymore either."}
+      ],
+      "notes": []
+    }
+  ],
+  "exercises": {
+    "answers_note": "答えはp.16",
+    "sections": [
+      {"type": "choice", "instruction": "（　）に何を入れますか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 1, "q": "このパソコンはときどきフリーズすること（　）。", "options": ["1 にあります", "2 があります", "3 にします", "4 になります"]},
+        {"n": 2, "q": "わたしは、夜はコーヒーやお茶を飲まないこと（　）。", "options": ["1 になります", "2 はしていません", "3 になっています", "4 にしています"]},
+        {"n": 3, "q": "A「ここのランチ、どれでもおいしいですよ。」B「そうですか。じゃ、わたしはハンバーグランチ（　）します。」", "options": ["1 を", "2 に", "3 で", "4 も"]}
+      ]},
+      {"type": "order", "instruction": "＿★＿に入るものはどれですか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 4, "q": "A「お母さま、お元気ですか。」B「それが、1年くらい前＿＿　＿＿　★　＿＿なくなりました。」", "options": ["1 では", "2 から", "3 元気", "4 あまり"]},
+        {"n": 5, "q": "母親「おべんとう、急いで作るから、待ってて。」子ども「ちこく＿＿　＿＿　★　＿＿。」", "options": ["1 早く", "2 しちゃう", "3 から", "4 して"]}
+      ]}
+    ],
+    "answers": "①2 ②4 ③2 ④2→4→★3→1 ⑤2→3→★1→4"
+  },
+  "hitokoto": ""
+}

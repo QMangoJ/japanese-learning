@@ -1,0 +1,73 @@
+{
+  "week": 4, "day": 2, "title": "明日は天気がよさそうです。", "title_cn": "明天天气看起来不错。", "title_en": "The weather looks like it'll be good tomorrow.",
+  "points": [
+    {
+      "pattern": "〜ようだ／〜みたいだ",
+      "connection": "普通形＋ようだ／みたいだ",
+      "usage_jp": "推測を表す。",
+      "usage_cn": "表示推测。",
+      "usage_en": "Marks an inference based on evidence.",
+      "examples": [
+        {"jp": "道路がぬれているから、雨が降ったようですね。", "cn": "马路湿了，好像下过雨了呢。", "en": "The road is wet, so it seems like it rained."},
+        {"jp": "このパソコン、変です。こわれているみたいです。", "cn": "这台电脑很奇怪，好像坏了。", "en": "This computer is acting strange. It seems to be broken."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "〜そうだ",
+      "connection": "V-ます／い形容詞（い）／な形容詞（語幹）＋そうだ（様態）；普通形＋そうだ（伝聞）",
+      "usage_jp": "①見た様子や状態、予想などを表す。②伝聞を表す。",
+      "usage_cn": "①表示看到之后对样子、状态的感觉以及预想等。②表示传闻。",
+      "usage_en": "① Marks an impression from appearance (\"looks like ~\"). ② Marks hearsay (\"I heard ~\").",
+      "examples": [
+        {"jp": "元気そうな赤ちゃんですね。", "cn": "看起来很健康的婴儿呢。", "en": "That baby looks healthy."},
+        {"jp": "明日は天気がよさそうですよ。", "cn": "明天天气看起来会不错哦。", "en": "The weather looks like it'll be good tomorrow."},
+        {"jp": "留学生はこれからもっと増えそうです。", "cn": "留学生今后好像会更多。", "en": "It looks like there will be more international students from now on."},
+        {"jp": "天気予報によると、午後から雨が降るそうですよ。", "cn": "据天气预报说，下午开始会下雨。", "en": "According to the weather forecast, it's going to rain from the afternoon."},
+        {"jp": "田中さんのお父さんは元気だそうです。", "cn": "听说田中的爸爸很健康。", "en": "I heard Tanaka's father is doing well."}
+      ],
+      "notes": [{"type": "！", "text": "「元気なそう」は誤り（正：元気そう）。「いい」は「よさそう」になる。"}]
+    },
+    {
+      "pattern": "〜でしょう／〜だろう",
+      "connection": "普通形＋でしょう・だろう",
+      "usage_jp": "推測を表す。",
+      "usage_cn": "表示推测。",
+      "usage_en": "Marks a speaker's supposition (\"probably ~\").",
+      "examples": [
+        {"jp": "トムさんはたぶん試験に受かるでしょう。", "eq": "＝受かると思います", "cn": "汤姆大概能通过考试吧。", "en": "Tom will probably pass the exam."},
+        {"jp": "弟はもうすぐ結婚するだろう。", "eq": "＝結婚すると思う", "cn": "弟弟应该快要结婚了吧。", "en": "My younger brother will probably get married soon."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "〜かもしれない",
+      "connection": "普通形＋かもしれない",
+      "usage_jp": "何かの可能性があることを表す。",
+      "usage_cn": "意为“可能”，表示有某种可能性。",
+      "usage_en": "Marks a possibility (\"might ~\").",
+      "examples": [
+        {"jp": "寒いですね。今晩、雪が降るかもしれませんよ。", "cn": "好冷啊。今晚可能会下雪哦。", "en": "It's cold. It might snow tonight."},
+        {"jp": "どうしよう。さいふをどこかに落としたかもしれない。", "cn": "怎么办。钱包可能掉在哪里了。", "en": "What should I do. I might have dropped my wallet somewhere."},
+        {"jp": "仕事で今日は家に帰れないかもしれない。", "cn": "因为工作，今天可能回不了家。", "en": "Because of work, I might not be able to go home today."}
+      ],
+      "notes": []
+    }
+  ],
+  "exercises": {
+    "answers_note": "答えはp.55",
+    "sections": [
+      {"type": "choice", "instruction": "（　）に何を入れますか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 1, "q": "このライオン、まだ赤ちゃん（　）ですね。", "options": ["1 よう", "2 そう", "3 のよう", "4 のそう"]},
+        {"n": 2, "q": "このパソコン、何か変だ。こわれて（　）。", "options": ["1 いるそうだ", "2 かもだ", "3 いようだ", "4 いるかもしれない"]},
+        {"n": 3, "q": "A「リンさん、中国に（　）ね。」B「ええ、1週間ぐらい前に。さびしくなりましたね。」", "options": ["1 帰るみたいです", "2 帰りそうです", "3 帰ったでしょう", "4 帰ったそうです"]}
+      ]},
+      {"type": "order", "instruction": "＿★＿に入るものはどれですか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 4, "q": "ニュースで、ベトナムからの＿＿　＿＿　★　＿＿言っていました。", "options": ["1 これからもっと", "2 だろうと", "3 留学生は", "4 ふえる"]},
+        {"n": 5, "q": "妻「今日、洗濯、どうしようかな。」夫「あしたは天気が悪い＿＿　＿＿　★　＿＿ほうがいいよ。」", "options": ["1 みたい", "2 しておいた", "3 今日", "4 だから"]}
+      ]}
+    ],
+    "answers": "①3 ②4 ③4 ④3→1→★4→2 ⑤1→4→★3→2"
+  },
+  "hitokoto": ""
+}

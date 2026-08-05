@@ -1,0 +1,70 @@
+{
+  "week": 3, "day": 3, "title": "雨でも行きましょう。", "title_cn": "就算下雨也去吧。", "title_en": "Let's go even if it rains.",
+  "points": [
+    {
+      "pattern": "〜ので…",
+      "connection": "普通形（な形容詞・名詞は「な＋ので」）＋ので",
+      "usage_jp": "原因や理由を表す。「から」より丁寧。",
+      "usage_cn": "意为“因为”，表示原因或理由，比“から”更有礼貌。",
+      "usage_en": "Means \"because ~\"; more polite/formal than から.",
+      "examples": [
+        {"jp": "ちょっと暑いので、窓を開けてもいいですか。", "cn": "有点热，可以开窗吗？", "en": "It's a bit hot, so may I open the window?"},
+        {"jp": "私は歌が下手なので、カラオケには行きません。", "cn": "我不擅长唱歌，所以不去KTV。", "en": "I'm not good at singing, so I don't go to karaoke."}
+      ],
+      "notes": [{"type": "！", "text": "「からです」とは言えるが「のでです」とは言えない。例：今は、運転できません。お酒を飲んだからです。（＊飲んだのでです は誤り）"}]
+    },
+    {
+      "pattern": "〜のに…",
+      "connection": "普通形（な形容詞・名詞は「な＋のに」）＋のに",
+      "usage_jp": "結果が予想と違うことを表す。残念な気持ちや不満を表す。",
+      "usage_cn": "意为“却，居然”，结果与预想的不一样，表达遗憾的心情或不满。",
+      "usage_en": "Marks a result that goes against expectation; expresses disappointment or dissatisfaction.",
+      "examples": [
+        {"jp": "冬なのに、あたたかいですね。", "cn": "明明是冬天，却这么暖和呢。", "en": "It's winter, yet it's so warm."},
+        {"jp": "このパソコンは高かったのに、もうこわれてしまった。", "cn": "这台电脑很贵，却已经坏了。", "en": "This computer was expensive, yet it's already broken."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "〜ても／でも…",
+      "connection": "普通形（て形）＋も／な形容詞・名詞は「でも」",
+      "usage_jp": "「〜」に基づいて考えた結果と反対のことを表す。",
+      "usage_cn": "意为“即使……也”，表示与基于“〜”考虑的结果相反。",
+      "usage_en": "Means \"even if ~,\" contrary to what one would expect.",
+      "examples": [
+        {"jp": "パソコンは必要なので、高くても買います。", "cn": "因为需要电脑，即使贵也会买。", "en": "I need a computer, so I'll buy it even if it's expensive."},
+        {"jp": "明日雨でも、動物園に行きます。", "cn": "明天即使下雨，也去动物园。", "en": "Even if it rains tomorrow, I'll go to the zoo."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "疑問詞〜ても／でも…",
+      "connection": "疑問詞＋普通形（て形）＋も",
+      "usage_jp": "「いつも、どんな場合でも」という意味を表す。",
+      "usage_cn": "意为“总是，无论在什么情况下”。",
+      "usage_en": "Means \"no matter ~\" (always true regardless of the circumstance).",
+      "examples": [
+        {"jp": "あのレストランはいつ行ってもこんでいます。", "cn": "那家餐厅无论什么时候去都很挤。", "en": "That restaurant is crowded no matter when you go."},
+        {"jp": "英語を習っているが、どんなに勉強してもうまく話せない。", "cn": "虽然在学英语，但无论怎么学都说不好。", "en": "I'm studying English, but no matter how much I study I can't speak it well."},
+        {"jp": "兄はいくらお酒を飲んでも顔色が変わりません。", "cn": "哥哥无论喝多少酒脸色都不会变。", "en": "No matter how much he drinks, my brother's face never changes color."}
+      ],
+      "notes": []
+    }
+  ],
+  "exercises": {
+    "answers_note": "答えはp.41",
+    "sections": [
+      {"type": "choice", "instruction": "（　）に何を入れますか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 1, "q": "あんなに勉強した（　）、試験に受かりませんでした。", "options": ["1 ので", "2 のに", "3 から", "4 でも"]},
+        {"n": 2, "q": "妹はどんなに（　）太りません。", "options": ["1 食べては", "2 食べたのに", "3 食べても", "4 食べるので"]},
+        {"n": 3, "q": "A「どうして引っこしますか。」B「広くて安いところが見つかった（　）です。」", "options": ["1 から", "2 ので", "3 ところ", "4 ために"]}
+      ]},
+      {"type": "order", "instruction": "＿★＿に入るものはどれですか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 4, "q": "A「あした、3時には行けないと思います。」B「そうですか。＿＿　＿＿　★　＿＿、待っています。」", "options": ["1 なっても", "2 ので", "3 おそく", "4 いい"]},
+        {"n": 5, "q": "A「田中さんに、ちゃんとあやまりましたか。」B「はい、＿＿　＿＿　★　＿＿ので、こまっています。」", "options": ["1 あやまっても", "2 ゆるしてくれない", "3 いくら", "4 でも"]}
+      ]}
+    ],
+    "answers": "①2 ②3 ③1 ④3→1→★4→2 ⑤4→3→★1→2"
+  },
+  "hitokoto": ""
+}

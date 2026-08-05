@@ -1,0 +1,73 @@
+{
+  "week": 3, "day": 5, "title": "手伝ってくださいませんか。", "title_cn": "能帮我一下吗？", "title_en": "Could you help me?",
+  "points": [
+    {
+      "pattern": "Vてくれませんか／Vてもらえませんか／Vてくださいませんか／Vていただけませんか",
+      "connection": "Vて形＋くれませんか・もらえませんか・くださいませんか・いただけませんか",
+      "usage_jp": "「Vてください」の丁寧な言い方。後ろに行くほど丁寧になる。",
+      "usage_cn": "“Vてください”的礼貌说法，越往后越礼貌。",
+      "usage_en": "Increasingly polite ways to say \"please do ~,\" from casual to very formal.",
+      "examples": [
+        {"jp": "ちょっと、手伝ってくれませんか。", "cn": "能帮我一下吗？", "en": "Could you give me a hand?"},
+        {"jp": "静かにしてもらえませんか。", "cn": "能安静一点吗？", "en": "Could you be quiet, please?"},
+        {"jp": "すみませんが、もう一度言っていただけませんか。", "cn": "不好意思，能再说一遍吗？", "en": "Excuse me, could you say that once more?"}
+      ],
+      "notes": [{"type": "！", "text": "「いただきませんか」は誤り。"}]
+    },
+    {
+      "pattern": "Vてほしい／Vてもらいたい／Vていただきたい",
+      "connection": "Vて形＋ほしい・もらいたい・いただきたい",
+      "usage_jp": "相手に何かをしてもらいたいという気持ちを表す。",
+      "usage_cn": "表示想让某人做某事。",
+      "usage_en": "Expresses wanting someone to do something.",
+      "examples": [
+        {"jp": "私のことを忘れないでほしい。", "cn": "希望不要忘记我。", "en": "I want you not to forget me."},
+        {"jp": "息子にいい大学に行ってもらいたいです。", "cn": "希望儿子能上好大学。", "en": "I want my son to get into a good university."},
+        {"jp": "そのことは聞いてほしくない。", "eq": "＝聞かないでほしい", "cn": "希望不要问那件事。", "en": "I don't want you to ask about that."},
+        {"jp": "先生にこの文章をチェックしていただきたいです。", "cn": "希望老师能帮忙检查一下这篇文章。", "en": "I would like the teacher to check this essay."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "〜たらどう／いかがですか",
+      "connection": "Vた形＋らどう・いかがですか",
+      "usage_jp": "提案や勧誘を表す。",
+      "usage_cn": "表示建议或劝诱。",
+      "usage_en": "Marks a suggestion (\"why don't you ~?\").",
+      "examples": [
+        {"jp": "先生に聞いてみたらどうですか。", "cn": "要不要问问老师？", "en": "Why don't you ask the teacher?"},
+        {"jp": "少し休んだらいかがですか。", "cn": "要不要休息一下呢？", "en": "Why don't you rest a bit?"}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "〜が／け（れ）ど、…",
+      "connection": "普通形＋が・けれど・けど",
+      "usage_jp": "話を切り出すときの前置きとして使う。",
+      "usage_cn": "表示开场白。",
+      "usage_en": "Used as a soft lead-in before making a request or statement.",
+      "examples": [
+        {"jp": "もしもし、こちらはA社の田中ですが、リンさんをお願いします。", "cn": "喂，我是A公司的田中，请找一下林先生。", "en": "Hello, this is Tanaka from Company A — could I speak with Mr. Lin?"},
+        {"jp": "ちょっと教えてほしいことがあるんですが…。", "cn": "有点事想请教一下……", "en": "There's something I'd like you to explain to me..."},
+        {"jp": "映画のチケットが2枚あるんだけど、いっしょに行かない？", "cn": "我有两张电影票，要不要一起去？", "en": "I have two movie tickets — want to go together?"}
+      ],
+      "notes": []
+    }
+  ],
+  "exercises": {
+    "answers_note": "答えはp.45",
+    "sections": [
+      {"type": "choice", "instruction": "（　）に何を入れますか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 1, "q": "早く夏休みに（　）。", "options": ["1 来たい", "2 なりたい", "3 来てほしい", "4 なってほしい"]},
+        {"n": 2, "q": "すみません、もう少しゆっくり言って（　）か。", "options": ["1 いただきません", "2 いただけません", "3 もらいません", "4 もらわないでしょう"]},
+        {"n": 3, "q": "A「あしたの日曜日、何もすることがありません。」B「動物園にでも（　）どうですか。一人でも楽しいですよ。」", "options": ["1 行くのが", "2 行くのに", "3 行ったら", "4 行くなら"]}
+      ]},
+      {"type": "order", "instruction": "＿★＿に入るものはどれですか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 4, "q": "A「田中先生って、何さいくらいかな。」B「年は聞かないで＿＿　＿＿　★　＿＿と思うよ。」", "options": ["1 から", "2 わかくない", "3 と言っていた", "4 ほしい"]},
+        {"n": 5, "q": "母親「ケンちゃん、今日、どこへ行きたい？」ケン「＿＿　＿＿　★　＿＿から本屋へ行きたい。」", "options": ["1 買って", "2 がある", "3 ほしい", "4 本"]}
+      ]}
+    ],
+    "answers": "①4 ②2 ③3 ④4→3→★1→2 ⑤1→3→★4→2"
+  },
+  "hitokoto": ""
+}

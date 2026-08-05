@@ -1,0 +1,100 @@
+{
+  "week": 1, "day": 4, "title": "今、勉強しているところです。", "title_cn": "现在正在学习。", "title_en": "I'm just studying right now.",
+  "points": [
+    {
+      "pattern": "Vるところ",
+      "connection": "V辞書形＋ところ",
+      "usage_jp": "動作がまさに始まろうとしていることを表す。",
+      "usage_cn": "表示动作就要开始。",
+      "usage_en": "Marks that an action is just about to begin.",
+      "examples": [
+        {"jp": "今から家を出るところです。", "cn": "现在正要出门。", "en": "I'm just about to leave home now."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "Vているところ",
+      "connection": "Vて形＋いる＋ところ",
+      "usage_jp": "動作が進行中であることを表す。",
+      "usage_cn": "表示动作正在进行。",
+      "usage_en": "Marks that an action is in progress.",
+      "examples": [
+        {"jp": "今、料理を作っているところです。", "cn": "现在正在做饭。", "en": "I'm cooking right now."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "Vたところ",
+      "connection": "Vた形＋ところ",
+      "usage_jp": "動作がちょうど終わったばかりであることを表す。",
+      "usage_cn": "表示动作刚刚结束。",
+      "usage_en": "Marks that an action has just finished.",
+      "examples": [
+        {"jp": "今、お昼ご飯を食べたところです。", "cn": "现在刚吃完午饭。", "en": "I just finished lunch."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "Nの間に／Vているあいだに",
+      "connection": "N＋の間に／Vている＋間に",
+      "usage_jp": "「〜の間、〜の期間に」という意味を表す。",
+      "usage_cn": "意为“……之间，期间”。",
+      "usage_en": "Means \"during ~,\" something happens within that span.",
+      "examples": [
+        {"jp": "夏休みの間にヨーロッパへ旅行をする予定です。", "cn": "打算在暑假期间去欧洲旅行。", "en": "I'm planning to travel to Europe during summer vacation."},
+        {"jp": "映画を見ている間に、寝てしまいました。", "cn": "看电影的时候，睡着了。", "en": "I fell asleep while watching the movie."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "V1るとき（に）、V2",
+      "connection": "V1辞書形＋とき（に）＋V2",
+      "usage_jp": "V1する前にV2することを表す。",
+      "usage_cn": "V1做之前做V2。",
+      "usage_en": "V2 happens before V1 (marks the timing \"when about to V1\").",
+      "examples": [
+        {"jp": "私は、本を読むとき、めがねをかけます。", "cn": "我读书的时候，戴眼镜。", "en": "I put on glasses when I read."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "V1たとき（に）、V2",
+      "connection": "V1た形＋とき（に）＋V2",
+      "usage_jp": "V1したあとでV2することを表す。",
+      "usage_cn": "V1做之后做V2。",
+      "usage_en": "V2 happens after V1 is completed.",
+      "examples": [
+        {"jp": "東京に行ったときに、友だちに会う予定です。", "cn": "去东京的时候，打算见朋友。", "en": "When I go to Tokyo, I plan to meet a friend."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "N中",
+      "connection": "N＋中",
+      "usage_jp": "動作が継続していることを表す。",
+      "usage_cn": "表示动作持续。",
+      "usage_en": "Marks that an action/state is ongoing.",
+      "examples": [
+        {"jp": "社長は今、会議中です。", "eq": "＝会議をしているところ", "cn": "社长现在正在开会。", "en": "The president is in a meeting right now."},
+        {"jp": "食事中はテレビを消しましょう。", "eq": "＝食事している間", "cn": "吃饭的时候把电视关掉吧。", "en": "Let's turn off the TV while eating."}
+      ],
+      "notes": [{"type": "！", "text": "「午前中」「今日中」「今年中」などは期間を表す。「中」の読み方に注意。"}]
+    }
+  ],
+  "exercises": {
+    "answers_note": "答えはp.11",
+    "sections": [
+      {"type": "choice", "instruction": "（　）に何を入れますか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 1, "q": "トイレに行っている（　）に、電車が行ってしまった。", "options": ["1 なか", "2 あいだ", "3 ところ", "4 まで"]},
+        {"n": 2, "q": "A「すみません、おそくなって。ずいぶん待ちましたか。」B「いいえ、わたしも今（　）ところです。」", "options": ["1 来る", "2 来ている", "3 来て", "4 来た"]},
+        {"n": 3, "q": "山田「もしもし、こちら、山田ですが、スミスさん、おねがいします。」田中「すみません。スミスは今、会議（　）です。」", "options": ["1 あいだ", "2 ちゅう", "3 なか", "4 じゅう"]}
+      ]},
+      {"type": "order", "instruction": "＿★＿に入るものはどれですか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 4, "q": "A「ケーキ、食べる？」B「今、＿＿　＿＿　★　＿＿、あとで食べるよ。」", "options": ["1 だから", "2 おなかがいっぱい", "3 ところで", "4 ご飯を食べた"]},
+        {"n": 5, "q": "A「それは、どこで買いましたか。」B「きょねん、＿＿　＿＿　★　＿＿ものです。」", "options": ["1 イタリアに", "2 買った", "3 行った", "4 ときに"]}
+      ]}
+    ],
+    "answers": "①2 ②4 ③2 ④4→3→★2→1 ⑤1→3→★4→2"
+  },
+  "hitokoto": ""
+}

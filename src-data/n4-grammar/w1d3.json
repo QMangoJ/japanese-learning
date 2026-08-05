@@ -1,0 +1,87 @@
+{
+  "week": 1, "day": 3, "title": "9時までに来てください。", "title_cn": "请在9点之前过来。", "title_en": "Please come by 9 o'clock.",
+  "points": [
+    {
+      "pattern": "〜まで",
+      "connection": "N／V辞書形＋まで",
+      "usage_jp": "「〜まで、ずっと」という意味を表す。",
+      "usage_cn": "意为“直到……”。",
+      "usage_en": "Means \"until ~,\" marking a continuous action up to a point.",
+      "examples": [
+        {"jp": "来週の水曜日まで会社を休みます。", "cn": "请假到下周三为止。", "en": "I'll be off work until next Wednesday."},
+        {"jp": "母は夜おそくまで働いています。", "cn": "母亲工作到深夜。", "en": "My mother works until late at night."},
+        {"jp": "仕事が終わるまで、ここで待っていてください。", "cn": "在工作结束之前，请在这里等着。", "en": "Please wait here until the work is finished."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "〜までに",
+      "connection": "N／V辞書形＋までに",
+      "usage_jp": "「〜より前に」という意味を表す。",
+      "usage_cn": "意为“在……之前”。",
+      "usage_en": "Means \"by ~,\" marking a deadline.",
+      "examples": [
+        {"jp": "レポートは15日までに出してください。", "cn": "报告请在15号之前提交。", "en": "Please submit the report by the 15th."},
+        {"jp": "私は30さいになるまでに結婚したいです。", "cn": "我想在30岁之前结婚。", "en": "I want to get married before I turn 30."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "〜たり〜たり",
+      "connection": "Vた形＋り＋Vた形＋り",
+      "usage_jp": "いくつかの行為から一部を挙げる、または繰り返し起こることを表す。",
+      "usage_cn": "用于从若干行为中列举一二，或表示重复发生。",
+      "usage_en": "Lists a few representative actions among others, or shows repeated/alternating occurrences.",
+      "examples": [
+        {"jp": "夏休みは旅行したりテニスをしたりしていました。", "cn": "暑假的时候去旅行啊、打网球什么的。", "en": "During summer vacation I did things like traveling and playing tennis."},
+        {"jp": "休みの日はDVDを見たりしています。", "cn": "休息日看看DVD之类的。", "en": "On days off I do things like watching DVDs."},
+        {"jp": "雨が降ったりやんだりしています。", "cn": "雨时下时停。", "en": "It's raining on and off."},
+        {"jp": "このごろ、暑かったり寒かったりしています。", "cn": "最近忽冷忽热。", "en": "Lately it's been hot one day and cold the next."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "〜し、〜し、〜",
+      "connection": "普通形＋し",
+      "usage_jp": "いくつかの理由を並べる、または似たようなことを重ねて言う。",
+      "usage_cn": "用于陈述多个理由，或用于重复类似的事情。",
+      "usage_en": "Lists several reasons, or piles up similar points.",
+      "examples": [
+        {"jp": "のども かわいたし、おなかもすいたし、少し休みたいです。", "cn": "口也渴了，肚子也饿了，想稍微休息一下。", "en": "I'm thirsty, and hungry too, so I want to rest a bit."},
+        {"jp": "きのうのハイキングは天気もよかったし、楽しかったです。", "cn": "昨天的远足天气也好，也玩得很开心。", "en": "Yesterday's hike had nice weather, and it was fun too."}
+      ],
+      "notes": []
+    },
+    {
+      "pattern": "Nばかり",
+      "connection": "N＋ばかり",
+      "usage_jp": "Nが非常に多いことを表す。",
+      "usage_cn": "表示N非常多。",
+      "usage_en": "Marks that there is a lot of N (too much of it).",
+      "examples": [
+        {"jp": "父はこのごろお酒ばかり飲んでいます。", "cn": "父亲最近老是喝酒。", "en": "My father has been drinking nothing but alcohol lately."},
+        {"jp": "あの人の話は、うそばかりだ。", "cn": "那个人说的全是谎话。", "en": "Everything that person says is nothing but lies."}
+      ],
+      "notes": [
+        {"type": "！", "text": "「お酒だけ」「うそだけ」とは言わない。"},
+        {"type": "れい", "text": "「Nだけ」はNが100％を占めることを表す。"}
+      ]
+    }
+  ],
+  "exercises": {
+    "answers_note": "答えはp.9",
+    "sections": [
+      {"type": "choice", "instruction": "（　）に何を入れますか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 1, "q": "わたしのアパートは駅から遠い（　）、へやもせまいです。", "options": ["1 と", "2 し", "3 から", "4 たり"]},
+        {"n": 2, "q": "A「また太っちゃった…。」B「あまいもの（　）食べているからだよ。」", "options": ["1 ばかり", "2 しか", "3 だけ", "4 まで"]},
+        {"n": 3, "q": "今日は8時（　）うちに帰りたいです。", "options": ["1 まで", "2 までに", "3 から", "4 からで"]}
+      ]},
+      {"type": "order", "instruction": "＿★＿に入るものはどれですか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
+        {"n": 4, "q": "母親「さあ、もう寝なさい。」子ども「この＿＿　＿＿　★　＿＿ちょっとまって。」", "options": ["1 終わる", "2 もう", "3 ゲームが", "4 まで"]},
+        {"n": 5, "q": "A「新しい先生はどうですか。」B「きれい＿＿　＿＿　★　＿＿です。」", "options": ["1 大好き", "2 し", "3 だし", "4 やさしい"]}
+      ]}
+    ],
+    "answers": "①2 ②1 ③2 ④3→1→★4→2 ⑤3→4→★2→1"
+  },
+  "hitokoto": ""
+}
