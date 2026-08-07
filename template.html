@@ -145,6 +145,7 @@ nav.bottom button.on{color:var(--accent);font-weight:700}
 .mtag.v2{background:var(--amber-soft);color:var(--amber)}
 .mtag.k2{background:var(--amber-soft);color:var(--amber)}
 .mtag.g4{background:var(--red-soft);color:var(--red)}
+.mtag.v4{background:var(--blue-soft);color:var(--blue)}
 .hl{background:var(--amber-soft);color:var(--amber);font-weight:700;padding:0 1px;border-radius:3px}
 .fc-wrap{display:flex;flex-direction:column;align-items:center;gap:14px}
 .fc-filter{display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
@@ -318,10 +319,10 @@ body.hide-cn .vcn,body.hide-cn .ven{visibility:hidden}
   <button data-nav="mistakes"><span class="ic">📝</span><span class="lbl" data-cn="错题本" data-en="Notes">错题本</span></button>
 </nav>
 <script>
-let DATA={}, G={weeks:[]}, V={weeks:[]}, K={weeks:[]}, G2={weeks:[]}, V2={weeks:[]}, K2={weeks:[]}, G4={weeks:[]}, dataLoaded=false, n2Loaded=false, n4Loaded=false;
+let DATA={}, G={weeks:[]}, V={weeks:[]}, K={weeks:[]}, G2={weeks:[]}, V2={weeks:[]}, K2={weeks:[]}, G4={weeks:[]}, V4={weeks:[]}, dataLoaded=false, n2Loaded=false, n4Loaded=false;
 let _lastRenderedHash=null; // only scroll-to-top on an actual navigation, not on a background-sync re-render of the same view
 let MODULE = 'grammar';
-try{ const m=localStorage.getItem('module'); if(['vocab','grammar','n2grammar','kanji','n2vocab','n2kanji','n4grammar'].includes(m)) MODULE=m; }catch(e){}
+try{ const m=localStorage.getItem('module'); if(['vocab','grammar','n2grammar','kanji','n2vocab','n2kanji','n4grammar','n4vocab'].includes(m)) MODULE=m; }catch(e){}
 let lastVisit={};
 try{ lastVisit=JSON.parse(localStorage.getItem('lastVisit')||'{}')||{}; }catch(e){ lastVisit={}; }
 function entryHash(mod){ return lastVisit[mod] || '#/'; }
@@ -332,9 +333,9 @@ function saveLastVisit(hash){
 let LANG = 'cn';
 try{ const l=localStorage.getItem('lang'); if(l==='en'||l==='cn') LANG=l; }catch(e){}
 const LX = (cn,en)=> (LANG==='en' && en) ? en : (cn||'');
-const CUR = ()=> ({vocab:V, n2grammar:G2, kanji:K, n2vocab:V2, n2kanji:K2, n4grammar:G4}[MODULE]) || G;
+const CUR = ()=> ({vocab:V, n2grammar:G2, kanji:K, n2vocab:V2, n2kanji:K2, n4grammar:G4, n4vocab:V4}[MODULE]) || G;
 const isGram = ()=> MODULE==='grammar'||MODULE==='n2grammar'||MODULE==='n4grammar';
-const MODLABELS = {grammar:['N3 语法','N3 Grammar'], n2grammar:['N2 语法','N2 Grammar'], vocab:['N3 词汇','N3 Vocabulary'], kanji:['N3 汉字','N3 Kanji'], n2vocab:['N2 词汇','N2 Vocabulary'], n2kanji:['N2 汉字','N2 Kanji'], n4grammar:['N4 语法','N4 Grammar']};
+const MODLABELS = {grammar:['N3 语法','N3 Grammar'], n2grammar:['N2 语法','N2 Grammar'], vocab:['N3 词汇','N3 Vocabulary'], kanji:['N3 汉字','N3 Kanji'], n2vocab:['N2 词汇','N2 Vocabulary'], n2kanji:['N2 汉字','N2 Kanji'], n4grammar:['N4 语法','N4 Grammar'], n4vocab:['N4 词汇','N4 Vocabulary']};
 const modLabel = ()=> LX(...MODLABELS[MODULE]);
 
 const $ = s=>document.querySelector(s);
@@ -511,20 +512,20 @@ function star(id, snap){ FAVMETA[id]=snap; return `<button class="starb" data-fa
 
 /* ---------- module switch ---------- */
 let LEVEL='n3', TYPE='grammar';
-const MOD2LT = {grammar:['n3','grammar'], vocab:['n3','vocab'], kanji:['n3','kanji'], n2grammar:['n2','grammar'], n2vocab:['n2','vocab'], n2kanji:['n2','kanji'], n4grammar:['n4','grammar']};
-const LT2MOD = {'n3:grammar':'grammar', 'n3:vocab':'vocab', 'n3:kanji':'kanji', 'n2:grammar':'n2grammar', 'n2:vocab':'n2vocab', 'n2:kanji':'n2kanji', 'n4:grammar':'n4grammar'};
+const MOD2LT = {grammar:['n3','grammar'], vocab:['n3','vocab'], kanji:['n3','kanji'], n2grammar:['n2','grammar'], n2vocab:['n2','vocab'], n2kanji:['n2','kanji'], n4grammar:['n4','grammar'], n4vocab:['n4','vocab']};
+const LT2MOD = {'n3:grammar':'grammar', 'n3:vocab':'vocab', 'n3:kanji':'kanji', 'n2:grammar':'n2grammar', 'n2:vocab':'n2vocab', 'n2:kanji':'n2kanji', 'n4:grammar':'n4grammar', 'n4:vocab':'n4vocab'};
 function deriveLT(){ const p=MOD2LT[MODULE]||['n3','grammar']; LEVEL=p[0]; TYPE=p[1]; }
 deriveLT();
-// N4 只有语法数据：不管点了哪个 type 按钮，n4 一律落到 n4grammar
-function moduleFrom(lv,ty){ if(lv==='n4') return 'n4grammar'; return LT2MOD[lv+':'+ty] || 'grammar'; }
+// N4 没有汉字分册：点了汉字按钮时落回 n4grammar
+function moduleFrom(lv,ty){ if(lv==='n4' && ty==='kanji') return 'n4grammar'; return LT2MOD[lv+':'+ty] || 'grammar'; }
 function syncModeBar(){
   deriveLT();
   document.querySelectorAll('#levelbar button').forEach(b=>b.classList.toggle('on', b.dataset.lv===LEVEL));
   document.querySelectorAll('#typebar button').forEach(b=>b.classList.toggle('on', b.dataset.ty===TYPE));
   document.querySelectorAll('#langbar button').forEach(b=>b.classList.toggle('on', b.dataset.lang===LANG));
   document.querySelectorAll('.lbl[data-cn]').forEach(el=>{ el.textContent = LX(el.dataset.cn, el.dataset.en); });
-  const typebar=document.getElementById('typebar');
-  if(typebar) typebar.style.display = (LEVEL==='n4') ? 'none' : 'flex'; // N4 没有词汇/汉字分册，隐藏整个 type 切换栏
+  const kanjiBtn=document.querySelector('#typebar button[data-ty="kanji"]');
+  if(kanjiBtn) kanjiBtn.style.display = (LEVEL==='n4') ? 'none' : ''; // N4 没有汉字分册，只隐藏这一个按钮
 }
 function setModule(m){
   MODULE=m; try{ localStorage.setItem('module',m); }catch(e){}
@@ -630,7 +631,7 @@ function render(){
   if(!dataLoaded){ app.innerHTML='<div class="empty">加载中…</div>'; return; }
   const h = location.hash || '#/';
   if((MODULE==='n2grammar'||MODULE==='n2vocab'||MODULE==='n2kanji') && !n2Loaded){ setNav('home'); setHeader(modLabel(), false); app.innerHTML='<div class="empty">N2 数据加载中，请稍候…</div>'; return; }
-  if(MODULE==='n4grammar' && !n4Loaded){ setNav('home'); setHeader(modLabel(), false); app.innerHTML='<div class="empty">N4 数据加载中，请稍候…</div>'; return; }
+  if((MODULE==='n4grammar'||MODULE==='n4vocab') && !n4Loaded){ setNav('home'); setHeader(modLabel(), false); app.innerHTML='<div class="empty">N4 数据加载中，请稍候…</div>'; return; }
   if(h==='#/search' && !n2Loaded){ setNav('search'); setHeader(LX('搜索（语法 + 词汇）','Search (Grammar + Vocabulary)'), false); app.innerHTML='<div class="empty">词典数据加载中，马上就好…</div>'; return; }
   syncModeBar();
   if(h!==_lastRenderedHash) window.scrollTo(0,0);
@@ -658,12 +659,12 @@ function render(){
 function viewHome(){
   setNav('home'); setHeader(modLabel(), false);
   const book = LX(
-    {grammar:'考前对策 N3语法', n2grammar:'考前对策 N2语法', vocab:'考前对策 N3词汇', kanji:'考前对策 N3汉字', n2vocab:'考前对策 N2词汇', n2kanji:'考前对策 N2汉字', n4grammar:'考前对策 N4语法'}[MODULE],
-    {grammar:'JLPT Prep N3 Grammar', n2grammar:'JLPT Prep N2 Grammar', vocab:'JLPT Prep N3 Vocabulary', kanji:'JLPT Prep N3 Kanji', n2vocab:'JLPT Prep N2 Vocabulary', n2kanji:'JLPT Prep N2 Kanji', n4grammar:'JLPT Prep N4 Grammar'}[MODULE]
+    {grammar:'考前对策 N3语法', n2grammar:'考前对策 N2语法', vocab:'考前对策 N3词汇', kanji:'考前对策 N3汉字', n2vocab:'考前对策 N2词汇', n2kanji:'考前对策 N2汉字', n4grammar:'考前对策 N4语法', n4vocab:'考前对策 N4词汇'}[MODULE],
+    {grammar:'JLPT Prep N3 Grammar', n2grammar:'JLPT Prep N2 Grammar', vocab:'JLPT Prep N3 Vocabulary', kanji:'JLPT Prep N3 Kanji', n2vocab:'JLPT Prep N2 Vocabulary', n2kanji:'JLPT Prep N2 Kanji', n4grammar:'JLPT Prep N4 Grammar', n4vocab:'JLPT Prep N4 Vocabulary'}[MODULE]
   );
   const kind = LX(
-    (MODULE==='vocab'||MODULE==='n2vocab')?'词汇':((MODULE==='kanji'||MODULE==='n2kanji')?'汉字':'语法'),
-    (MODULE==='vocab'||MODULE==='n2vocab')?'vocabulary':((MODULE==='kanji'||MODULE==='n2kanji')?'kanji':'grammar')
+    (MODULE==='vocab'||MODULE==='n2vocab'||MODULE==='n4vocab')?'词汇':((MODULE==='kanji'||MODULE==='n2kanji')?'汉字':'语法'),
+    (MODULE==='vocab'||MODULE==='n2vocab'||MODULE==='n4vocab')?'vocabulary':((MODULE==='kanji'||MODULE==='n2kanji')?'kanji':'grammar')
   );
   const weeks = CUR().weeks;
   const intro = LX(`《${book}》 · ${weeks.length} 周 × 7 天 · 点击进入每日${kind}`, `${book} · ${weeks.length} weeks × 7 days · Tap to open each day's ${kind}`);
@@ -833,7 +834,7 @@ function examGrammarHTML(day,w){
 
 /* ---------- vocab day ---------- */
 function viewDayVocab(day,w,d,scrollTok){
-  const mod = MODULE, modLbl = mod==='n2vocab'?'N2 词汇':'词汇';
+  const mod = MODULE, modLbl = mod==='n2vocab'?'N2 词汇':(mod==='n4vocab'?'N4 词汇':'词汇');
   let html = `<div class="crumb">第${w}週 · ${modLbl}</div>`;
   if(d===7){ app.innerHTML = html + examVocabHTML(day,w); return; }
   html += `<h2 class="page jp">${R(day,'title')} <span class="meta">${esc(LX(day.title_cn, day.title_en))}</span></h2>`;
@@ -967,6 +968,7 @@ function buildIndex(){
   })); };
   pushV('vocab', V.weeks);
   pushV('n2vocab', V2.weeks);
+  pushV('n4vocab', V4.weeks);
   const pushK = (mod, weeks)=>{ for(const w of weeks) for(const d of w.days) (d.kanji||[]).forEach((k,ki)=>(k.words||[]).forEach(wd=>{
     searchIndex.push({module:mod, w:w.n,d:d.day, ki, key:wd.jp||'', reading:wd.reading||'',
       extra:(wd.en||'')+' '+(wd.cn||'')+' '+(k.char||''), sub:[wd.cn,wd.en].filter(Boolean).join(' · '), dayTitle:d.title});
@@ -1006,7 +1008,7 @@ function viewSearch(){
     if(!hits.length){ res.innerHTML='<div class="empty">没有找到，换个关键词试试</div>'; return; }
     const mark=s=>{ const t=esc(s); if(!kw) return t; try{ return t.split(esc(kw)).join(`<span class="hl">${esc(kw)}</span>`);}catch(e){return t;} };
     res.innerHTML = hits.map((e,ix)=>{
-      const tag = {grammar:'<span class="mtag g">N3语法</span>', n2grammar:'<span class="mtag g2">N2语法</span>', vocab:'<span class="mtag v">N3词汇</span>', kanji:'<span class="mtag k">N3汉字</span>', n2vocab:'<span class="mtag v2">N2词汇</span>', n2kanji:'<span class="mtag k2">N2汉字</span>', n4grammar:'<span class="mtag g4">N4语法</span>'}[e.module];
+      const tag = {grammar:'<span class="mtag g">N3语法</span>', n2grammar:'<span class="mtag g2">N2语法</span>', vocab:'<span class="mtag v">N3词汇</span>', kanji:'<span class="mtag k">N3汉字</span>', n2vocab:'<span class="mtag v2">N2词汇</span>', n2kanji:'<span class="mtag k2">N2汉字</span>', n4grammar:'<span class="mtag g4">N4语法</span>', n4vocab:'<span class="mtag v4">N4词汇</span>'}[e.module];
       window['__hit'+ix]=e;
       return `<div class="card result" data-hit="${ix}">
         <div class="jp" style="font-size:16.5px;font-weight:700">${tag}${mark(e.key)}</div>
@@ -1024,7 +1026,7 @@ window.openHit = ix=>{
   setModule(e.module);
   let hash=`#/day/${e.w}-${e.d}`;
   if(e.module==='kanji'||e.module==='n2kanji') hash+=`/k${e.ki}`;
-  else if(e.module==='vocab'||e.module==='n2vocab') hash+=`/v${e.si}-${e.ii}`;
+  else if(e.module==='vocab'||e.module==='n2vocab'||e.module==='n4vocab') hash+=`/v${e.si}-${e.ii}`;
   else hash+=`/p${e.i}`;
   navTo(hash);
 };
@@ -1094,8 +1096,8 @@ window.fcShuffle=()=>{ fc.deck=buildDeck(fc.week); fc.idx=0; fc.flipped=false; v
 /* ---------- favorites (收藏 / 生词本) ---------- */
 let favDeck=[], favIdx=0, favFlip=false;
 let favFilter='all';
-const FAV_MOD_ORDER=['grammar','n2grammar','n4grammar','vocab','n2vocab','kanji','n2kanji'];
-const FAV_MOD_LABEL={grammar:'N3语法', n2grammar:'N2语法', n4grammar:'N4语法', vocab:'N3词汇', n2vocab:'N2词汇', kanji:'N3汉字', n2kanji:'N2汉字'};
+const FAV_MOD_ORDER=['grammar','n2grammar','n4grammar','vocab','n2vocab','n4vocab','kanji','n2kanji'];
+const FAV_MOD_LABEL={grammar:'N3语法', n2grammar:'N2语法', n4grammar:'N4语法', vocab:'N3词汇', n2vocab:'N2词汇', n4vocab:'N4词汇', kanji:'N3汉字', n2kanji:'N2汉字'};
 function favGroups(){
   const groups={};
   for(const id of Object.keys(FAV)){ const m=(FAV[id]||{}).module||'other'; (groups[m]=groups[m]||[]).push(id); }
@@ -1105,7 +1107,7 @@ function viewFavs(){
   setNav('favs'); setHeader(LX('我的收藏 · 生词本','My Favorites · Word Book'), false);
   const ids=Object.keys(FAV);
   if(!ids.length){ app.innerHTML='<div class="empty">还没有收藏。<br>在语法点或单词右侧点 ☆ 即可加入生词本。</div>'; return; }
-  const tagMap={grammar:'<span class="mtag g">N3语法</span>', n2grammar:'<span class="mtag g2">N2语法</span>', vocab:'<span class="mtag v">N3词汇</span>', kanji:'<span class="mtag k">N3汉字</span>', n2vocab:'<span class="mtag v2">N2词汇</span>', n2kanji:'<span class="mtag k2">N2汉字</span>', n4grammar:'<span class="mtag g4">N4语法</span>'};
+  const tagMap={grammar:'<span class="mtag g">N3语法</span>', n2grammar:'<span class="mtag g2">N2语法</span>', vocab:'<span class="mtag v">N3词汇</span>', kanji:'<span class="mtag k">N3汉字</span>', n2vocab:'<span class="mtag v2">N2词汇</span>', n2kanji:'<span class="mtag k2">N2汉字</span>', n4grammar:'<span class="mtag g4">N4语法</span>', n4vocab:'<span class="mtag v4">N4词汇</span>'};
   const groups=favGroups();
   const presentMods=FAV_MOD_ORDER.filter(m=>groups[m]&&groups[m].length);
   if(favFilter!=='all' && !(groups[favFilter]&&groups[favFilter].length)) favFilter='all';
@@ -1287,13 +1289,14 @@ async function bootN2(){
 }
 async function bootN4(){
   try{
-    const g4=await fetch('data/'+DATA_FILES['n4grammar']).then(r=>r.json());
-    G4=g4;
-    DATA.n4grammar=G4;
+    const names=['n4grammar','n4vocab'];
+    const [g4,v4]=await Promise.all(names.map(n=>fetch('data/'+DATA_FILES[n]).then(r=>r.json())));
+    G4=g4; V4=v4;
+    DATA.n4grammar=G4; DATA.n4vocab=V4;
     n4Loaded=true;
     searchIndex=null; // N4 数据到位后让搜索索引下次重新构建，纳入N4结果
     const h=location.hash||'#/';
-    if(MODULE==='n4grammar'||h==='#/search') render();
+    if(MODULE==='n4grammar'||MODULE==='n4vocab'||h==='#/search') render();
   }catch(e){ /* N4 加载失败时静默 */ }
 }
 render();
