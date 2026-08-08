@@ -232,20 +232,29 @@ def main():
             for a in wk.get(k) or []:
                 if a.get("note"):
                     a["note_r"] = ruby(a["note"])
-    with open(os.path.join(GSRC, "contrast.json"), encoding="utf-8") as f:
-        contrast = json.load(f)
-    for g in contrast.get("groups", []):
-        for r in g.get("rows", []):
-            r["form_r"] = ruby(r["form"])
-            if r.get("eg"):
-                r["eg_r"] = ruby(r["eg"])
-        # 每个语法家族的辨析练习：题干和选项都注音，答对/答错后的解析不注音（解析是中文）
-        qz = g.get("quiz")
-        if qz:
-            for it in qz.get("items", []):
-                it["q_r"] = ruby(it["q"])
-                if it.get("opts"):
-                    it["opts_r"] = rlist(it["opts"])
+    # 语法家族辨析：每个级别的语法各有一份，内容和跳转链接都指向自己那一级的课程
+    def load_contrast(folder):
+        path = os.path.join(folder, "contrast.json")
+        if not os.path.exists(path):
+            return None
+        with open(path, encoding="utf-8") as f:
+            c = json.load(f)
+        for g in c.get("groups", []):
+            for r in g.get("rows", []):
+                r["form_r"] = ruby(r["form"])
+                if r.get("eg"):
+                    r["eg_r"] = ruby(r["eg"])
+            # 辨析练习：题干和选项都注音，解析是中文所以不注音
+            qz = g.get("quiz")
+            if qz:
+                for it in qz.get("items", []):
+                    it["q_r"] = ruby(it["q"])
+                    if it.get("opts"):
+                        it["opts_r"] = rlist(it["opts"])
+        return c
+
+    contrast = load_contrast(GSRC)
+    n4contrast = load_contrast(N4SRC)
 
     # 接续表 / 活用表 / 数字表达属于日语本身，跟 N3/N2/N4 无关，
     # 所以放在 common/ 下打成一个独立的包，不再挂在 N3 语法里。
@@ -286,7 +295,7 @@ def main():
         "n2grammar": {"weeks": n2weeks},
         "n2vocab": {"weeks": v2weeks},
         "n2kanji": {"weeks": k2weeks},
-        "n4grammar": {"weeks": n4weeks},
+        "n4grammar": {"weeks": n4weeks, "contrast": n4contrast},
         "n4vocab": {"weeks": n4vweeks},
         "n4kanji": {"weeks": k4weeks},
         "common": {"reference": reference, "katsuyou": katsuyou, "numbers": numbers},

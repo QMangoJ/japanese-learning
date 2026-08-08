@@ -708,7 +708,7 @@ function render(){
   else if(h==='#/ref') viewRef();
   else if(h==='#/katsuyou') viewKatsuyou();
   else if(h==='#/numbers') viewNumbers();
-  else if(h==='#/contrast'){ if(MODULE!=='grammar') setModule('grammar'); viewContrast(); }
+  else if(h==='#/contrast'){ const cm=contrastModule(); if(MODULE!==cm) setModule(cm); viewContrast(); }
   else if(h==='#/mistakes') viewMistakes();
   else {
     let m = h.match(/^#\/day\/(\d)-(\d)(?:\/(p\d+|v\d+-\d+|k\d+))?$/);
@@ -743,8 +743,8 @@ function viewHome(){
     <div class="home-tool" data-go="#/numbers"><span class="ic">🔢</span><span class="lbl" data-cn="数字" data-en="Numbers">数字</span></div>
     <div class="home-tool" data-go="#/ref"><span class="ic">📖</span><span class="lbl" data-cn="接续表" data-en="Notation">接续表</span></div>
     <div class="home-tool" data-go="#/katsuyou"><span class="ic">🔄</span><span class="lbl" data-cn="活用" data-en="Conjugation">活用</span></div>` +
-    (MODULE==='grammar' ? `
-    <div class="home-tool scoped" data-go="#/contrast"><span class="ic">🔀</span><span class="lbl" data-cn="N3辨析" data-en="N3 Contrast">N3辨析</span></div>` : '') +
+    (isGram() && hasContrast(MODULE) ? (lv=>`
+    <div class="home-tool scoped" data-go="#/contrast"><span class="ic">🔀</span><span class="lbl" data-cn="${lv}辨析" data-en="${lv} Contrast">${lv}辨析</span></div>`)(LEVEL.toUpperCase()) : '') +
   `</div>`;
   for(const w of weeks){
     const wt = w.title ? ` <span class="jp">${esc(w.title)}</span>` : '';
@@ -1237,8 +1237,16 @@ function ctQuizHTML(g){
   }).join('');
   return `<details class="ct-quiz"><summary>✍️ ${esc(qz.title||'辨析练习')}（${qz.items.length}题）</summary>${qs}</details>`;
 }
+// 辨析属于「某一级的语法」这一层，每级语法各有一份，所以跟着当前语法模块走。
+// 不在语法模块时优先切到同级别的语法；那一级没有辨析数据就退回 N3。
+function hasContrast(mod){ return !!((DATA[mod]||{}).contrast); }
+function contrastModule(){
+  if(isGram() && hasContrast(MODULE)) return MODULE;
+  const same = moduleFrom(LEVEL,'grammar');
+  return hasContrast(same) ? same : 'grammar';
+}
 function viewContrastFamily(){
-  const C = G.contrast || {groups:[]};
+  const C = CUR().contrast || {groups:[]};
   const groups = C.groups||[];
   const toc = groups.map((g,i)=>`<a class="ct-tocitem" data-scroll="ct-g-${i}">${esc(g.title)}</a>`).join('');
   let body = C.intro ? `<div class="meta" style="margin-bottom:10px">${esc(C.intro)}</div>` : '';
@@ -1257,7 +1265,7 @@ function viewContrastFamily(){
   return `<div class="ct-wrap"><nav class="ct-toc"><div class="ct-toc-h">目录</div>${toc}</nav><div class="ct-body">${body}</div></div>`;
 }
 function viewContrastWeek(){
-  const weeks = G.weeks||[];
+  const weeks = CUR().weeks||[];
   if(ctWeek>weeks.length) ctWeek=1;
   const wkBar = weeks.map(w=>`<button class="${ctWeek===w.n?'on':''}" data-ctweek="${w.n}">第${w.n}周</button>`).join('');
   const wk = weeks.find(w=>w.n===ctWeek);
@@ -1280,7 +1288,8 @@ function viewContrastWeek(){
   return body;
 }
 function viewContrast(){
-  setNav('home'); setHeader(LX('语法辨析 · N3','Grammar Contrast · N3'), true);
+  const LV = LEVEL.toUpperCase();
+  setNav('home'); setHeader(LX('语法辨析 · '+LV, 'Grammar Contrast · '+LV), true);
   const modeBar = `<div class="fc-filter" style="margin-bottom:12px">
     <button class="${ctMode==='family'?'on':''}" data-ctmode="family">语法家族</button>
     <button class="${ctMode==='week'?'on':''}" data-ctmode="week">每周总结</button>
