@@ -1,0 +1,63 @@
+{
+  "week": 3, "day": 4, "theme": "発音と書き方に注意しましょう", "theme_cn": "注意发音和写法", "theme_en": "Watch pronunciation and stroke form",
+  "title": "体・薬", "title_cn": "身体 · 药", "title_en": "Body / medicine",
+  "kanji": [
+    {"n":1,"char":"体","strokes":7,"readings":["からだ"],"words":[
+      {"jp":"体","reading":"からだ","en":"body","cn":"身体"}
+    ]},
+    {"n":2,"char":"働","strokes":13,"readings":["はたらーく"],"words":[
+      {"jp":"働く","reading":"はたらく","en":"work","cn":"工作；起作用"}
+    ]},
+    {"n":3,"char":"薬","strokes":16,"readings":["くすり"],"words":[
+      {"jp":"薬","reading":"くすり","en":"medicine, drug","cn":"药，药品"}
+    ]},
+    {"n":4,"char":"奥","strokes":12,"readings":["おく"],"words":[
+      {"jp":"奥さん","reading":"おくさん","en":"wife","cn":"（你的）太太"}
+    ]},
+    {"n":5,"char":"正","strokes":5,"readings":["ショウ","ただーしい"],"words":[
+      {"jp":"正月","reading":"しょうがつ","en":"the New Year","cn":"正月；新年"},
+      {"jp":"正しい","reading":"ただしい","en":"correct, right","cn":"正确"}
+    ]},
+    {"n":6,"char":"急","strokes":9,"readings":["キュウ","いそーぐ"],"words":[
+      {"jp":"特急","reading":"とっきゅう","en":"special express","cn":"特快列车"},
+      {"jp":"急行","reading":"きゅうこう","en":"express","cn":"快车"},
+      {"jp":"急に","reading":"きゅうに","en":"suddenly","cn":"忽然，突然"},
+      {"jp":"急ぐ","reading":"いそぐ","en":"hurry","cn":"急忙，赶快"}
+    ]},
+    {"n":7,"char":"試","strokes":13,"readings":["シ"],"words":[
+      {"jp":"試合","reading":"しあい","en":"match","cn":"比赛"}
+    ]},
+    {"n":8,"char":"験","strokes":18,"readings":["ケン"],"words":[
+      {"jp":"試験","reading":"しけん","en":"test, exam","cn":"试验；考试"},
+      {"jp":"経験する","reading":"けいけんする","en":"experience","cn":"经历，体验"}
+    ]},
+    {"n":9,"char":"考","strokes":6,"readings":["かんがーえる"],"words":[
+      {"jp":"考える","reading":"かんがえる","en":"think","cn":"想；考虑；认为"}
+    ]},
+    {"n":10,"char":"心","strokes":4,"readings":["シン","こころ"],"words":[
+      {"jp":"安心する","reading":"あんしんする","en":"feel relieved","cn":"放心，↔心配する（worry 担心）"},
+      {"jp":"心","reading":"こころ","en":"heart, mind","cn":"内心"}
+    ]},
+    {"n":11,"char":"声","strokes":7,"readings":["こえ"],"words":[
+      {"jp":"声","reading":"こえ","en":"voice","cn":"（人或动物的）声音"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.43",
+    "sections": [
+      {"type":"select","instruction":"＿＿のことばはひらがなでどうかきますか。","items":[
+        {"n":1,"q":"時間がないから、急ごう。","opts":["うそごう","いそごう","うさごう","いさごう"]},
+        {"n":2,"q":"あの人は体が大きくて、心がやさしいです。","opts":["こころ","ところ","ことろ","ととろ"]},
+        {"n":3,"q":"明日、試験ですから、今日は勉強します。","opts":["しけん","じけん","しっけん","じっけん"]},
+        {"n":4,"q":"考えてから、作文を書きます。","opts":["かんげえて","かんがえて","けんげえて","けんがえて"]}
+      ]},
+      {"type":"select","instruction":"＿＿のことばはどうかきますか。","items":[
+        {"n":5,"q":"おくさんはお元気ですか。","opts":["お子さん","お母さん","奥さん","家内さん"]},
+        {"n":6,"q":"日本ではおしょうがつにおもちを食べます。","opts":["正月","新月","小月","生月"]},
+        {"n":7,"q":"あしたバスケットボールのしあいを見に行きます。","opts":["仕合","試合","試会","仕会"]},
+        {"n":8,"q":"母は薬屋ではたらいています。","opts":["動いて","労いて","勤いて","働いて"]}
+      ]}
+    ],
+    "answers": "①2 ②1 ③1 ④2 ⑤3 ⑥1 ⑦2 ⑧4"
+  }
+}

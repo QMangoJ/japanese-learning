@@ -1,0 +1,75 @@
+{
+  "week": 1, "day": 1, "theme": "よみがたくさんあるもの", "theme_cn": "多音字", "theme_en": "Characters with many readings",
+  "title": "通う・通る", "title_cn": "上学/往返 · 通过", "title_en": "Commute / pass through",
+  "kanji": [
+    {"n":1,"char":"通","strokes":10,"readings":["ツウ","とおーる","かよーう"],"words":[
+      {"jp":"交通","reading":"こうつう","en":"transportation, traffic","cn":"交通"},
+      {"jp":"普通","reading":"ふつう","en":"ordinary, normal","cn":"普通"},
+      {"jp":"通る","reading":"とおる","en":"pass","cn":"通过"},
+      {"jp":"通り","reading":"とおり","en":"street","cn":"道路"},
+      {"jp":"通う","reading":"かよう","en":"commute, attend","cn":"上（学、班），往返"}
+    ]},
+    {"n":2,"char":"降","strokes":10,"readings":["ふーる","おーりる"],"words":[
+      {"jp":"降る","reading":"ふる","en":"fall","cn":"下（雨、雪等）"},
+      {"jp":"降りる","reading":"おりる","en":"get off","cn":"下（车等），↔乗る"}
+    ]},
+    {"n":3,"char":"品","strokes":9,"readings":["ヒン","しな"],"words":[
+      {"jp":"食料品","reading":"しょくりょうひん","en":"food, groceries","cn":"食品"},
+      {"jp":"品物","reading":"しなもの","en":"goods","cn":"物品"}
+    ]},
+    {"n":4,"char":"着","strokes":12,"readings":["きーる","つーく"],"words":[
+      {"jp":"着る","reading":"きる","en":"wear","cn":"穿（上装）"},
+      {"jp":"着物","reading":"きもの","en":"kimono","cn":"和服"},
+      {"jp":"着く","reading":"つく","en":"arrive","cn":"到达"}
+    ]},
+    {"n":5,"char":"物","strokes":8,"readings":["ブツ","モツ","もの"],"words":[
+      {"jp":"動物","reading":"どうぶつ","en":"animal","cn":"动物"},
+      {"jp":"荷物","reading":"にもつ","en":"luggage","cn":"行李"},
+      {"jp":"物","reading":"もの","en":"thing, stuff","cn":"物"},
+      {"jp":"食べ物","reading":"たべもの","en":"food","cn":"食物"},
+      {"jp":"建物","reading":"たてもの","en":"building","cn":"建筑物"}
+    ]},
+    {"n":6,"char":"動","strokes":11,"readings":["ドウ","うごーく"],"words":[
+      {"jp":"動物","reading":"どうぶつ","en":"animal","cn":"动物"},
+      {"jp":"動く","reading":"うごく","en":"move","cn":"动，活动，转动"},
+      {"jp":"運動","reading":"うんどう","en":"exercise","cn":"运动"}
+    ]},
+    {"n":7,"char":"建","strokes":9,"readings":["たーてる"],"words":[
+      {"jp":"建てる","reading":"たてる","en":"build","cn":"盖，建造"},
+      {"jp":"建物","reading":"たてもの","en":"building","cn":"建筑物"},
+      {"jp":"二階建て","reading":"にかいだて","en":"two-storied","cn":"两层楼的建筑"}
+    ]},
+    {"n":8,"char":"夜","strokes":8,"readings":["ヤ","よる"],"words":[
+      {"jp":"今夜","reading":"こんや","en":"tonight","cn":"今晚"},
+      {"jp":"夜","reading":"よる","en":"night","cn":"夜晚"}
+    ]},
+    {"n":9,"char":"風","strokes":9,"readings":["フウ","かぜ"],"words":[
+      {"jp":"台風","reading":"たいふう","en":"typhoon","cn":"台风"},
+      {"jp":"風","reading":"かぜ","en":"wind","cn":"风"},
+      {"jp":"風邪","reading":"かぜ","en":"cold","cn":"感冒"}
+    ]},
+    {"n":10,"char":"台","strokes":5,"readings":["ダイ","タイ"],"words":[
+      {"jp":"台所","reading":"だいどころ","en":"kitchen","cn":"厨房"},
+      {"jp":"1台、2台…","reading":"いちだい、にだい","en":"one, two... (PC, TV, car, etc.)","cn":"1台，2台……（电脑、电视、车等）"},
+      {"jp":"台風","reading":"たいふう","en":"typhoon","cn":"台风"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.5",
+    "sections": [
+      {"type":"select","instruction":"＿＿のことばはひらがなでどうかきますか。","items":[
+        {"n":1,"q":"着物を着てみたいです。","opts":["ゆかた","よかた","こもの","きもの"]},
+        {"n":2,"q":"風邪をひきました。","opts":["かぜ","かれ","ふぜ","ふうぜ"]},
+        {"n":3,"q":"会社はあの建物の中にあります。","opts":["たてもの","たべもの","たけもの","けんぶつ"]},
+        {"n":4,"q":"母は台所にいます。","opts":["だいところ","たいしょ","だいどころ","だいしょ"]}
+      ]},
+      {"type":"select","instruction":"＿＿のことばはどうかきますか。","items":[
+        {"n":5,"q":"この店のしなものは高いです。","opts":["食品","飲物","建物","品物"]},
+        {"n":6,"q":"駅についたら電話してください。","opts":["着いたら","来たら","通たら","立いたら"]},
+        {"n":7,"q":"おりる前にお金をはらいます。","opts":["乗る","降りる","乗りる","降る"]},
+        {"n":8,"q":"ここはどうぶつのびょういんです。","opts":["動物","食物","建物","荷物"]}
+      ]}
+    ],
+    "answers": "①4 ②1 ③1 ④3 ⑤4 ⑥1 ⑦2 ⑧1"
+  }
+}

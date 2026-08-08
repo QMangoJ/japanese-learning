@@ -1,0 +1,66 @@
+{
+  "week": 2, "day": 5, "theme": "ことばをつくる漢字", "theme_cn": "组词记字", "theme_en": "Characters that form words",
+  "title": "号・番・全", "title_cn": "号 · 号码 · 全", "title_en": "Number / whole",
+  "kanji": [
+    {"n":1,"char":"以","strokes":5,"readings":["イ"],"words":[
+      {"jp":"以下","reading":"いか","en":"not exceeding","cn":"以下"},
+      {"jp":"以上","reading":"いじょう","en":"not less than","cn":"以上"},
+      {"jp":"以外","reading":"いがい","en":"except","cn":"以外"}
+    ]},
+    {"n":2,"char":"内","strokes":4,"readings":["ナイ","うち"],"words":[
+      {"jp":"以内","reading":"いない","en":"within","cn":"以内"},
+      {"jp":"家内","reading":"かない","en":"my wife","cn":"我的妻子"},
+      {"jp":"室内","reading":"しつない","en":"the inside of a room","cn":"室内，屋里"},
+      {"jp":"内側","reading":"うちがわ","en":"inside","cn":"内侧，↔外側"}
+    ]},
+    {"n":3,"char":"代","strokes":5,"readings":["ダイ","かーわる"],"words":[
+      {"jp":"時代","reading":"じだい","en":"period","cn":"时代"},
+      {"jp":"バス代","reading":"バスだい","en":"bus fare","cn":"公交车的车费"},
+      {"jp":"代わりに","reading":"かわりに","en":"instead of","cn":"替代；补偿"}
+    ]},
+    {"n":4,"char":"号","strokes":5,"readings":["ゴウ"],"words":[
+      {"jp":"番号","reading":"ばんごう","en":"number","cn":"号码，号数"},
+      {"jp":"102号室","reading":"ひゃくにごうしつ","en":"room number 102","cn":"102室"}
+    ]},
+    {"n":5,"char":"番","strokes":12,"readings":["バン"],"words":[
+      {"jp":"交番","reading":"こうばん","en":"police box","cn":"岗亭"},
+      {"jp":"1番、2番…","reading":"いちばん、にばん…","en":"number one, number two...","cn":"1号、2号……；第1、第2……"},
+      {"jp":"3番線","reading":"さんばんせん","en":"line number three","cn":"3号线"}
+    ]},
+    {"n":6,"char":"度","strokes":9,"readings":["ド","タク"],"words":[
+      {"jp":"一度","reading":"いちど","en":"once, one time","cn":"1次；一旦"},
+      {"jp":"今度","reading":"こんど","en":"this time, next time","cn":"这次；下次"},
+      {"jp":"支度する","reading":"したくする","en":"prepare, get ready","cn":"准备"}
+    ]},
+    {"n":7,"char":"全","strokes":6,"readings":["ゼン"],"words":[
+      {"jp":"全部","reading":"ぜんぶ","en":"all","cn":"全部"},
+      {"jp":"安全な","reading":"あんぜんな","en":"safe","cn":"安全的"},
+      {"jp":"全然～ない","reading":"ぜんぜん～ない","en":"it is not ... at all","cn":"完全不……"}
+    ]},
+    {"n":8,"char":"洋","strokes":9,"readings":["ヨウ"],"words":[
+      {"jp":"西洋","reading":"せいよう","en":"the west, western","cn":"西方，↔東洋"}
+    ]},
+    {"n":9,"char":"服","strokes":8,"readings":["フク"],"words":[
+      {"jp":"服","reading":"ふく","en":"clothes","cn":"衣服"},
+      {"jp":"洋服","reading":"ようふく","en":"western clothes","cn":"西服，↔和服（＝着物）"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.29",
+    "sections": [
+      {"type":"select","instruction":"＿＿のことばはひらがなでどうかきますか。","items":[
+        {"n":1,"q":"へやの番号は102です。","opts":["ばんごう","べんごう","ぶんごう","ぼんごう"]},
+        {"n":2,"q":"家内は日本語が全然わかりません。","opts":["やない","かない","しつない","つま"]},
+        {"n":3,"q":"わたしの代わりに家内が行きます。","opts":["こわり","かわり","よわり","だいわり"]},
+        {"n":4,"q":"パーティーにはどんな洋服を着て行きますか。","opts":["よふく","おうふく","わふく","ようふく"]}
+      ]},
+      {"type":"select","instruction":"＿＿のことばはどうかきますか。","items":[
+        {"n":5,"q":"タクシーだいはいくらでしたか。","opts":["円","金","料","代"]},
+        {"n":6,"q":"こんどの電車は3番線にまいります。","opts":["今回","今区","今席","今度"]},
+        {"n":7,"q":"土日いがいは家にいません。","opts":["以上","以内","以外","以下"]},
+        {"n":8,"q":"あんぜんな所へ行きましょう。","opts":["安全","安心","安前","安内"]}
+      ]}
+    ],
+    "answers": "①1 ②2 ③2 ④4 ⑤4 ⑥4 ⑦3 ⑧1"
+  }
+}

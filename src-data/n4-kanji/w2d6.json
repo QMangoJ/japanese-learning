@@ -1,0 +1,61 @@
+{
+  "week": 2, "day": 6, "theme": "グループでおぼえましょう", "theme_cn": "成组记字", "theme_en": "Learn in groups",
+  "title": "赤・白・黄", "title_cn": "红 · 白 · 黄", "title_en": "Red / white / yellow",
+  "kanji": [
+    {"n":1,"char":"妹","strokes":8,"readings":["いもうと"],"words":[
+      {"jp":"妹","reading":"いもうと","en":"younger sister","cn":"（我的）妹妹"}
+    ]},
+    {"n":2,"char":"好","strokes":6,"readings":["すーく"],"words":[
+      {"jp":"好きな","reading":"すきな","en":"like, favorite","cn":"喜欢的；随意的"},
+      {"jp":"大好きな","reading":"だいすきな","en":"precious","cn":"非常喜欢的"}
+    ]},
+    {"n":3,"char":"弟","strokes":7,"readings":["ダイ","おとうと"],"words":[
+      {"jp":"兄弟","reading":"きょうだい","en":"brother, sibling","cn":"兄弟姐妹"},
+      {"jp":"弟","reading":"おとうと","en":"younger brother","cn":"（我的）弟弟"}
+    ]},
+    {"n":4,"char":"赤","strokes":7,"readings":["あか","あかーい"],"words":[
+      {"jp":"赤","reading":"あか","en":"red","cn":"红"},
+      {"jp":"赤ちゃん","reading":"あかちゃん","en":"baby","cn":"婴儿"},
+      {"jp":"赤い","reading":"あかい","en":"red","cn":"红"}
+    ]},
+    {"n":5,"char":"黄","strokes":11,"readings":["き"],"words":[
+      {"jp":"黄色","reading":"きいろ","en":"yellow","cn":"黄"},
+      {"jp":"黄色い","reading":"きいろい","en":"yellow","cn":"黄"}
+    ]},
+    {"n":6,"char":"色","strokes":6,"readings":["いろ"],"words":[
+      {"jp":"色","reading":"いろ","en":"color","cn":"颜色"},
+      {"jp":"茶色","reading":"ちゃいろ","en":"brown","cn":"茶色"}
+    ]},
+    {"n":7,"char":"黒","strokes":11,"readings":["くろ","くろーい"],"words":[
+      {"jp":"黒","reading":"くろ","en":"black","cn":"黑"},
+      {"jp":"黒い","reading":"くろい","en":"black","cn":"黑"}
+    ]},
+    {"n":8,"char":"首","strokes":9,"readings":["くび"],"words":[
+      {"jp":"首","reading":"くび","en":"neck","cn":"脖子"}
+    ]},
+    {"n":9,"char":"顔","strokes":18,"readings":["かお"],"words":[
+      {"jp":"顔","reading":"かお","en":"face","cn":"脸"}
+    ]},
+    {"n":10,"char":"頭","strokes":16,"readings":["あたま"],"words":[
+      {"jp":"頭","reading":"あたま","en":"head","cn":"头，脑袋"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.31",
+    "sections": [
+      {"type":"select","instruction":"＿＿のことばはひらがなでどうかきますか。","items":[
+        {"n":1,"q":"黒いペンで書いてください。","opts":["くろい","ころい","きろい","くるい"]},
+        {"n":2,"q":"兄弟は何人ですか。","opts":["きょだい","きゅだい","きょうだい","きゅうだい"]},
+        {"n":3,"q":"弟が二人います。","opts":["おとと","おとうと","おどうと","おどと"]},
+        {"n":4,"q":"妹さんはお元気ですか。","opts":["いもと","いもうと","いもど","いもうど"]}
+      ]},
+      {"type":"select","instruction":"＿＿のことばはどうかきますか。","items":[
+        {"n":5,"q":"あさからずっとあたまがいたいです。","opts":["頭","顔","題","買"]},
+        {"n":6,"q":"あの動物はくびが長いです。","opts":["耳","目","首","鼻"]},
+        {"n":7,"q":"そのセーターはいろがきれいですね。","opts":["色","巴","免","晩"]},
+        {"n":8,"q":"赤ちゃんはお母さんがだいすきです。","opts":["大妹き","大姉き","大始き","大好き"]}
+      ]}
+    ],
+    "answers": "①1 ②3 ③2 ④2 ⑤1 ⑥3 ⑦1 ⑧4"
+  }
+}

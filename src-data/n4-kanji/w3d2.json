@@ -1,0 +1,62 @@
+{
+  "week": 3, "day": 2, "theme": "同じ部分のある漢字", "theme_cn": "局部相同的汉字", "theme_en": "Characters sharing a component",
+  "title": "持・待・特", "title_cn": "拿 · 等 · 特", "title_en": "Hold / wait / special",
+  "kanji": [
+    {"n":1,"char":"持","strokes":9,"readings":["もーつ"],"words":[
+      {"jp":"持つ","reading":"もつ","en":"have, hold","cn":"拿，持"},
+      {"jp":"気持ち","reading":"きもち","en":"feeling","cn":"感受，心情"},
+      {"jp":"お金持ち","reading":"おかねもち","en":"the rich","cn":"有钱人"}
+    ]},
+    {"n":2,"char":"待","strokes":9,"readings":["タイ","まーつ"],"words":[
+      {"jp":"招待する","reading":"しょうたいする","en":"invite","cn":"邀请，招待"},
+      {"jp":"待つ","reading":"まつ","en":"wait","cn":"等，等待"}
+    ]},
+    {"n":3,"char":"特","strokes":10,"readings":["トク"],"words":[
+      {"jp":"特急","reading":"とっきゅう","en":"special express","cn":"特快列车"},
+      {"jp":"特別な","reading":"とくべつな","en":"special","cn":"特别的"},
+      {"jp":"特に","reading":"とくに","en":"particularly","cn":"特别地"}
+    ]},
+    {"n":4,"char":"林","strokes":8,"readings":["はやし"],"words":[
+      {"jp":"林","reading":"はやし","en":"woods","cn":"树林"}
+    ]},
+    {"n":5,"char":"村","strokes":7,"readings":["むら"],"words":[
+      {"jp":"村","reading":"むら","en":"village","cn":"村，村子"}
+    ]},
+    {"n":6,"char":"森","strokes":12,"readings":["もり"],"words":[
+      {"jp":"森","reading":"もり","en":"forest","cn":"森林"}
+    ]},
+    {"n":7,"char":"曜","strokes":18,"readings":["ヨウ"],"words":[
+      {"jp":"日/月/火/水/木/金/土/何曜日","reading":"にち/げつ/か/すい/もく/きん/ど/なんようび","en":"day of the week","cn":"星期日、星期一……星期几"}
+    ]},
+    {"n":8,"char":"濯","strokes":17,"readings":["タク"],"words":[
+      {"jp":"洗濯する","reading":"せんたくする","en":"do the laundry","cn":"洗，洗衣服"}
+    ]},
+    {"n":9,"char":"質","strokes":15,"readings":["シツ"],"words":[
+      {"jp":"質問する","reading":"しつもんする","en":"ask questions","cn":"质询，提问"}
+    ]},
+    {"n":10,"char":"問","strokes":11,"readings":["モン"],"words":[
+      {"jp":"問題","reading":"もんだい","en":"problem, question","cn":"题，问题"}
+    ]},
+    {"n":11,"char":"題","strokes":18,"readings":["ダイ"],"words":[
+      {"jp":"宿題","reading":"しゅくだい","en":"homework","cn":"作业"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.39",
+    "sections": [
+      {"type":"select","instruction":"＿＿のことばはひらがなでどうかきますか。","items":[
+        {"n":1,"q":"宿題をしてから、テレビを見ます。","opts":["すくだい","しゅくだい","ちゅくだい","しょくだい"]},
+        {"n":2,"q":"休みの日はそうじや洗濯をします。","opts":["せったく","せいたく","せんたく","ぜいたく"]},
+        {"n":3,"q":"今日はいい天気で、気持ちがいいです。","opts":["きまち","きみち","きむち","きもち"]},
+        {"n":4,"q":"すみません。質問してもいいですか。","opts":["ちつもん","しつもん","しっもん","ひつもん"]}
+      ]},
+      {"type":"select","instruction":"＿＿のことばはどうかきますか。","items":[
+        {"n":5,"q":"むらのまつりを見に行きましょう。","opts":["林","村","本","森"]},
+        {"n":6,"q":"今日はなんようびですか。","opts":["同曜日","何濯日","何曜日","同濯日"]},
+        {"n":7,"q":"あの人はおかねもちです。","opts":["お金持ち","お金待ち","お金特ち","お金時ち"]},
+        {"n":8,"q":"とっきゅうはこの駅にとまりません。","opts":["持急","特急","時急","待急"]}
+      ]}
+    ],
+    "answers": "①2 ②3 ③4 ④2 ⑤2 ⑥3 ⑦1 ⑧2"
+  }
+}

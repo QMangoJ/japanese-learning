@@ -1,0 +1,63 @@
+{
+  "week": 1, "day": 4, "theme": "発音に注意しましょう", "theme_cn": "注意发音", "theme_en": "Watch the pronunciation",
+  "title": "旅行・有名", "title_cn": "旅行 · 有名", "title_en": "Travel / famous",
+  "kanji": [
+    {"n":1,"char":"旅","strokes":10,"readings":["リョ"],"words":[
+      {"jp":"旅行","reading":"りょこう","en":"trip","cn":"旅行"},
+      {"jp":"旅館","reading":"りょかん","en":"Japanese-style hotel","cn":"（日式）旅馆"}
+    ]},
+    {"n":2,"char":"館","strokes":16,"readings":["カン"],"words":[
+      {"jp":"美術館","reading":"びじゅつかん","en":"museum","cn":"美术馆"},
+      {"jp":"大使館","reading":"たいしかん","en":"embassy","cn":"大使馆"}
+    ]},
+    {"n":3,"char":"有","strokes":6,"readings":["ユウ"],"words":[
+      {"jp":"有名な","reading":"ゆうめいな","en":"famous","cn":"有名的"}
+    ]},
+    {"n":4,"char":"去","strokes":5,"readings":["キョ"],"words":[
+      {"jp":"去年","reading":"きょねん","en":"last year","cn":"去年"}
+    ]},
+    {"n":5,"char":"主","strokes":5,"readings":["シュ"],"words":[
+      {"jp":"主人","reading":"しゅじん","en":"husband","cn":"丈夫"}
+    ]},
+    {"n":6,"char":"写","strokes":5,"readings":["シャ","うつーす"],"words":[
+      {"jp":"写真","reading":"しゃしん","en":"photo, picture","cn":"照片"},
+      {"jp":"写す","reading":"うつす","en":"copy","cn":"抄；拍照"}
+    ]},
+    {"n":7,"char":"真","strokes":10,"readings":["シン","ま"],"words":[
+      {"jp":"写真","reading":"しゃしん","en":"photo, picture","cn":"照片"},
+      {"jp":"真ん中","reading":"まんなか","en":"middle, center","cn":"正中，中间"}
+    ]},
+    {"n":8,"char":"夕","strokes":3,"readings":["ゆう"],"words":[
+      {"jp":"夕飯","reading":"ゆうはん","en":"supper, dinner","cn":"晚饭"},
+      {"jp":"夕方","reading":"ゆうがた","en":"evening","cn":"傍晚"}
+    ]},
+    {"n":9,"char":"飯","strokes":12,"readings":["ハン"],"words":[
+      {"jp":"ご飯","reading":"ごはん","en":"rice, meal","cn":"米饭；饭，餐"},
+      {"jp":"朝ご飯・昼ご飯・晩ご飯","reading":"あさごはん・ひるごはん・ばんごはん","en":"breakfast/lunch/dinner","cn":"早饭/午饭/晚饭"}
+    ]},
+    {"n":10,"char":"方","strokes":4,"readings":["ホウ","かた"],"words":[
+      {"jp":"両方","reading":"りょうほう","en":"both","cn":"两方；两边"},
+      {"jp":"あの方","reading":"あのかた","en":"that person (polite)","cn":"那位"},
+      {"jp":"～方","reading":"～かた","en":"way to...","cn":"……的做法"},
+      {"jp":"夕方","reading":"ゆうがた","en":"evening","cn":"傍晚"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.11",
+    "sections": [
+      {"type":"select","instruction":"＿＿のことばはひらがなでどうかきますか。","items":[
+        {"n":1,"q":"あの建物は有名です。","opts":["ゆめ","ゆうめ","ゆめい","ゆうめい"]},
+        {"n":2,"q":"夕飯は何にしましょうか。","opts":["ようはん","ゆうはん","やしょく","よるごはん"]},
+        {"n":3,"q":"主人を駅までむかえに行きます。","opts":["しゅにん","しゅじん","しゅうにん","しゅうじん"]},
+        {"n":4,"q":"日本で旅館にとまりました。","opts":["りょかん","りょうかん","ろかん","よかん"]}
+      ]},
+      {"type":"select","instruction":"＿＿のことばはどうかきますか。","items":[
+        {"n":5,"q":"ゆうがたから風が強くなるでしょう。","opts":["夜方","晩方","夕方","明方"]},
+        {"n":6,"q":"じゅぎょうを休んだので、友だちのノートをうつしました。","opts":["写しました","書しました","真しました","進しました"]},
+        {"n":7,"q":"テーブルのまんなかに花がおいてあります。","opts":["万中","門中","間ん中","真ん中"]},
+        {"n":8,"q":"外国をりょこうしたいです。","opts":["流行","旅行","両行","料行"]}
+      ]}
+    ],
+    "answers": "①4 ②2 ③2 ④1 ⑤3 ⑥1 ⑦4 ⑧2"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "week": 1, "day": 3, "theme": "ペアでおぼえましょう", "theme_cn": "成对记字", "theme_en": "Learn in antonym pairs",
+  "title": "長い ↔ 短い", "title_cn": "长 ↔ 短", "title_en": "Long ↔ short",
+  "kanji": [
+    {"n":1,"char":"低","strokes":7,"readings":["ひくーい"],"words":[
+      {"jp":"低い","reading":"ひくい","en":"low","cn":"低；矮"}
+    ]},
+    {"n":2,"char":"短","strokes":12,"readings":["みじかーい"],"words":[
+      {"jp":"短い","reading":"みじかい","en":"short","cn":"短"}
+    ]},
+    {"n":3,"char":"近","strokes":7,"readings":["キン","ちかーい"],"words":[
+      {"jp":"近所","reading":"きんじょ","en":"neighborhood","cn":"附近"},
+      {"jp":"最近","reading":"さいきん","en":"recently","cn":"最近"},
+      {"jp":"近い","reading":"ちかい","en":"close","cn":"近"},
+      {"jp":"近く","reading":"ちかく","en":"closely","cn":"附近"}
+    ]},
+    {"n":4,"char":"遠","strokes":13,"readings":["エン","とおーい"],"words":[
+      {"jp":"遠足","reading":"えんそく","en":"excursion","cn":"郊游"},
+      {"jp":"遠慮する","reading":"えんりょする","en":"hesitate","cn":"客气；谢绝，推辞"},
+      {"jp":"遠い","reading":"とおい","en":"far","cn":"远"}
+    ]},
+    {"n":5,"char":"弱","strokes":10,"readings":["よわーい"],"words":[
+      {"jp":"弱い","reading":"よわい","en":"weak","cn":"弱"}
+    ]},
+    {"n":6,"char":"強","strokes":11,"readings":["キョウ","つよーい"],"words":[
+      {"jp":"勉強する","reading":"べんきょうする","en":"study","cn":"学习"},
+      {"jp":"強い","reading":"つよい","en":"strong","cn":"强"}
+    ]},
+    {"n":7,"char":"暗","strokes":13,"readings":["くらーい"],"words":[
+      {"jp":"暗い","reading":"くらい","en":"dark","cn":"暗，昏暗"}
+    ]},
+    {"n":8,"char":"明","strokes":8,"readings":["メイ","あかーるい","あーける"],"words":[
+      {"jp":"説明","reading":"せつめい","en":"explanation","cn":"说明，解释"},
+      {"jp":"明るい","reading":"あかるい","en":"bright, cheerful","cn":"明亮；明朗"},
+      {"jp":"明けましておめでとうございます","reading":"あけましておめでとうございます","en":"Happy New Year","cn":"新年快乐"},
+      {"jp":"明日","reading":"あした","en":"tomorrow","cn":"明天"}
+    ]},
+    {"n":9,"char":"悪","strokes":11,"readings":["わるーい"],"words":[
+      {"jp":"悪い","reading":"わるい","en":"bad","cn":"坏"}
+    ]},
+    {"n":10,"char":"利","strokes":7,"readings":["リ"],"words":[
+      {"jp":"便利な","reading":"べんりな","en":"convenient","cn":"方便的，↔不便な"},
+      {"jp":"利用する","reading":"りようする","en":"use","cn":"使用"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.9",
+    "sections": [
+      {"type":"select","instruction":"＿＿のことばはひらがなでどうかきますか。","items":[
+        {"n":1,"q":"最近よく雨が降りますね。","opts":["このごろ","ちかごろ","せいきん","さいきん"]},
+        {"n":2,"q":"明日の晩、友だちと会います。","opts":["あした","あさって","きのう","おととい"]},
+        {"n":3,"q":"子どもたちは遠足に行きました。","opts":["うんそく","えんそく","いんそく","とおそく"]},
+        {"n":4,"q":"ここに説明が書いてありますから、読んでください。","opts":["しつめい","えつめい","せつめい","しょうめい"]}
+      ]},
+      {"type":"select","instruction":"＿＿のことばはどうかきますか。","items":[
+        {"n":5,"q":"このズボンは少しみじかいです。","opts":["短い","長い","低い","強い"]},
+        {"n":6,"q":"きんじょにひっこして来ました。どうぞ、よろしく。","opts":["台所","近所","便所","名所"]},
+        {"n":7,"q":"この子はからだがよわいです。","opts":["弱い","悪い","遠い","暗い"]},
+        {"n":8,"q":"ここは駅からとおくて不便です。","opts":["低くて","強くて","遠くて","暗くて"]}
+      ]}
+    ],
+    "answers": "①4 ②1 ③2 ④3 ⑤1 ⑥2 ⑦1 ⑧3"
+  }
+}

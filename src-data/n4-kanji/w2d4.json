@@ -1,0 +1,70 @@
+{
+  "week": 2, "day": 4, "theme": "発音に注意しましょう", "theme_cn": "注意发音", "theme_en": "Watch the pronunciation",
+  "title": "発音・注意", "title_cn": "发音 · 注意", "title_en": "Pronunciation / attention",
+  "kanji": [
+    {"n":1,"char":"研","strokes":9,"readings":["ケン"],"words":[
+      {"jp":"研究する","reading":"けんきゅうする","en":"research","cn":"研究"}
+    ]},
+    {"n":2,"char":"究","strokes":7,"readings":["キュウ"],"words":[
+      {"jp":"研究室","reading":"けんきゅうしつ","en":"laboratory, research room","cn":"研究室"},
+      {"jp":"研究生","reading":"けんきゅうせい","en":"research student","cn":"研究生"},
+      {"jp":"研究者","reading":"けんきゅうしゃ","en":"researcher","cn":"研究者"}
+    ]},
+    {"n":3,"char":"住","strokes":7,"readings":["ジュウ","すーむ"],"words":[
+      {"jp":"住所","reading":"じゅうしょ","en":"address","cn":"地址"},
+      {"jp":"住む","reading":"すむ","en":"live","cn":"居住"}
+    ]},
+    {"n":4,"char":"所","strokes":8,"readings":["ショ","ところ"],"words":[
+      {"jp":"場所","reading":"ばしょ","en":"place","cn":"地方"},
+      {"jp":"所","reading":"ところ","en":"place","cn":"地方"},
+      {"jp":"台所","reading":"だいどころ","en":"kitchen","cn":"厨房"}
+    ]},
+    {"n":5,"char":"注","strokes":8,"readings":["チュウ"],"words":[
+      {"jp":"注意する","reading":"ちゅういする","en":"pay attention","cn":"注意，小心；提醒"},
+      {"jp":"注文する","reading":"ちゅうもんする","en":"order","cn":"订购"}
+    ]},
+    {"n":6,"char":"意","strokes":13,"readings":["イ"],"words":[
+      {"jp":"意味","reading":"いみ","en":"meaning","cn":"意思"},
+      {"jp":"意見","reading":"いけん","en":"opinion","cn":"意见"}
+    ]},
+    {"n":7,"char":"教","strokes":11,"readings":["キョウ","おしーえる"],"words":[
+      {"jp":"教室","reading":"きょうしつ","en":"classroom","cn":"教室"},
+      {"jp":"教育","reading":"きょういく","en":"education","cn":"教育"},
+      {"jp":"教える","reading":"おしえる","en":"teach","cn":"教；告诉"}
+    ]},
+    {"n":8,"char":"発","strokes":9,"readings":["ハツ"],"words":[
+      {"jp":"発音","reading":"はつおん","en":"pronunciation","cn":"发音"},
+      {"jp":"出発する","reading":"しゅっぱつする","en":"leave","cn":"出发"}
+    ]},
+    {"n":9,"char":"音","strokes":9,"readings":["オン","おと"],"words":[
+      {"jp":"音楽","reading":"おんがく","en":"music","cn":"音乐"},
+      {"jp":"音","reading":"おと","en":"sound","cn":"音，（物体的）声音"}
+    ]},
+    {"n":10,"char":"工","strokes":3,"readings":["コウ"],"words":[
+      {"jp":"工業","reading":"こうぎょう","en":"industry","cn":"工业"},
+      {"jp":"工事","reading":"こうじ","en":"construction","cn":"工程"}
+    ]},
+    {"n":11,"char":"業","strokes":13,"readings":["ギョウ"],"words":[
+      {"jp":"授業","reading":"じゅぎょう","en":"class, lesson","cn":"课，上课，讲课"},
+      {"jp":"卒業","reading":"そつぎょう","en":"graduation","cn":"毕业"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.27",
+    "sections": [
+      {"type":"select","instruction":"＿＿のことばはひらがなでどうかきますか。","items":[
+        {"n":1,"q":"明日は日本語の授業があります。","opts":["じぎょう","じゅごう","じゅぎょう","ずごう"]},
+        {"n":2,"q":"8時にここを出発します。","opts":["しゅはつ","しゅばつ","しゅうはつ","しゅっぱつ"]},
+        {"n":3,"q":"あの方は日本語の研究者です。","opts":["けんきゅうしゃ","けんくうしゃ","けんくうちゃ","げんきゅうしゃ"]},
+        {"n":4,"q":"住所を教えてください。","opts":["じゅしょ","ちゅうしょ","じゅうしょ","しゅうしょ"]}
+      ]},
+      {"type":"select","instruction":"＿＿のことばはどうかきますか。","items":[
+        {"n":5,"q":"あの道はこうじをしています。","opts":["行事","工事","火事","家事"]},
+        {"n":6,"q":"ことばのいみをしらべます。","opts":["意味","意見","言味","言見"]},
+        {"n":7,"q":"雨のおとが聞こえます。","opts":["水","下","音","降"]},
+        {"n":8,"q":"コンビニの近くにすんでいます。","opts":["住んで","休んで","飲んで","読んで"]}
+      ]}
+    ],
+    "answers": "①3 ②4 ③1 ④3 ⑤2 ⑥1 ⑦3 ⑧1"
+  }
+}

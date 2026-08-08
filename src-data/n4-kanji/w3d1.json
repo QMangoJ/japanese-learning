@@ -1,0 +1,55 @@
+{
+  "week": 3, "day": 1, "theme": "特別なよみをおぼえましょう", "theme_cn": "特殊读音", "theme_en": "Learn special readings",
+  "title": "部屋・土産", "title_cn": "房间 · 特产", "title_en": "Room / souvenir",
+  "kanji": [
+    {"n":1,"char":"部","strokes":11,"readings":["ブ"],"words":[
+      {"jp":"部長","reading":"ぶちょう","en":"director, manager","cn":"部长"},
+      {"jp":"全部","reading":"ぜんぶ","en":"all, everything","cn":"全部"},
+      {"jp":"学部","reading":"がくぶ","en":"school department","cn":"学院，系"},
+      {"jp":"部屋","reading":"へや","en":"room","cn":"房间"}
+    ]},
+    {"n":2,"char":"屋","strokes":9,"readings":["オク","や"],"words":[
+      {"jp":"屋上","reading":"おくじょう","en":"rooftop","cn":"房顶"},
+      {"jp":"本屋","reading":"ほんや","en":"bookstore","cn":"书店"},
+      {"jp":"花屋","reading":"はなや","en":"flower shop","cn":"花店"}
+    ]},
+    {"n":3,"char":"産","strokes":11,"readings":["サン"],"words":[
+      {"jp":"産業","reading":"さんぎょう","en":"industry","cn":"产业"},
+      {"jp":"お土産","reading":"おみやげ","en":"souvenir","cn":"特产；礼品"}
+    ]},
+    {"n":4,"char":"姉","strokes":8,"readings":["あね"],"words":[
+      {"jp":"姉","reading":"あね","en":"older sister","cn":"（我的）姐姐"},
+      {"jp":"お姉さん","reading":"おねえさん","en":"older sister","cn":"姐姐"}
+    ]},
+    {"n":5,"char":"兄","strokes":5,"readings":["キョウ","あに"],"words":[
+      {"jp":"兄弟","reading":"きょうだい","en":"brother, sibling","cn":"兄弟姐妹"},
+      {"jp":"兄","reading":"あに","en":"older brother","cn":"（我的）哥哥"},
+      {"jp":"お兄さん","reading":"おにいさん","en":"older brother","cn":"哥哥"}
+    ]},
+    {"n":6,"char":"世","strokes":5,"readings":["セ"],"words":[
+      {"jp":"世界","reading":"せかい","en":"world","cn":"世界"},
+      {"jp":"世話をする","reading":"せわをする","en":"take care","cn":"照顾"}
+    ]},
+    {"n":7,"char":"界","strokes":9,"readings":["カイ"],"words":[
+      {"jp":"世界中","reading":"せかいじゅう","en":"around the world","cn":"全世界"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.37",
+    "sections": [
+      {"type":"select","instruction":"＿＿のことばはひらがなでどうかきますか。","items":[
+        {"n":1,"q":"となりのうちのお姉さんは、いつも妹の世話をしています。","opts":["あねえさん","おねえさん","おあねさん","おねいさん"]},
+        {"n":2,"q":"屋上から花火を見ましょう。","opts":["やじょう","てんじょう","おくじょう","やねうえ"]},
+        {"n":3,"q":"兄は世界中を旅行しています。","opts":["しかいちゅう","しかいじゅう","せかいちゅう","せかいじゅう"]},
+        {"n":4,"q":"ここでお土産を買いましょう。","opts":["おみやげ","おみあげ","おにやげ","おどさん"]}
+      ]},
+      {"type":"select","instruction":"＿＿のことばはどうかきますか。","items":[
+        {"n":5,"q":"あの二人はきょうだいです。","opts":["兄弟","弟兄","姉兄","妹弟"]},
+        {"n":6,"q":"この本はもうぜんぶ読みました。","opts":["金部","全部","前部","大部"]},
+        {"n":7,"q":"これからわたしの町のさんぎょうについて話します。","opts":["残業","工業","産業","事業"]},
+        {"n":8,"q":"ほんやでざっしを買いました。","opts":["書店","本店","本屋","書屋"]}
+      ]}
+    ],
+    "answers": "①2 ②3 ③4 ④1 ⑤1 ⑥2 ⑦3 ⑧3"
+  }
+}

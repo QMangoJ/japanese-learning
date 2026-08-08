@@ -1,0 +1,70 @@
+{
+  "week": 1, "day": 6, "theme": "グループでおぼえましょう", "theme_cn": "成组记字", "theme_en": "Learn in groups",
+  "title": "東・西・南・北", "title_cn": "东 · 西 · 南 · 北", "title_en": "East / west / south / north",
+  "kanji": [
+    {"n":1,"char":"朝","strokes":12,"readings":["チョウ"],"words":[
+      {"jp":"朝食","reading":"ちょうしょく","en":"breakfast","cn":"早饭，＝朝ご飯"},
+      {"jp":"今朝","reading":"けさ","en":"this morning","cn":"今天早上"}
+    ]},
+    {"n":2,"char":"昼","strokes":9,"readings":["チュウ","ひる"],"words":[
+      {"jp":"昼食","reading":"ちゅうしょく","en":"lunch","cn":"午饭，＝昼ご飯"},
+      {"jp":"昼","reading":"ひる","en":"daytime, noon","cn":"白天；中午"},
+      {"jp":"昼間","reading":"ひるま","en":"daytime","cn":"白天"}
+    ]},
+    {"n":3,"char":"春","strokes":9,"readings":["はる"],"words":[
+      {"jp":"春","reading":"はる","en":"spring","cn":"春"},
+      {"jp":"春休み","reading":"はるやすみ","en":"spring break","cn":"春假"}
+    ]},
+    {"n":4,"char":"夏","strokes":10,"readings":["なつ"],"words":[
+      {"jp":"夏","reading":"なつ","en":"summer","cn":"夏"},
+      {"jp":"夏休み","reading":"なつやすみ","en":"summer vacation","cn":"暑假"}
+    ]},
+    {"n":5,"char":"秋","strokes":9,"readings":["あき"],"words":[
+      {"jp":"秋","reading":"あき","en":"fall","cn":"秋"}
+    ]},
+    {"n":6,"char":"冬","strokes":5,"readings":["ふゆ"],"words":[
+      {"jp":"冬","reading":"ふゆ","en":"winter","cn":"冬"},
+      {"jp":"冬休み","reading":"ふゆやすみ","en":"winter vacation","cn":"寒假"}
+    ]},
+    {"n":7,"char":"京","strokes":8,"readings":["キョウ"],"words":[
+      {"jp":"京都","reading":"きょうと","en":"Kyoto","cn":"京都"},
+      {"jp":"東京","reading":"とうきょう","en":"Tokyo","cn":"东京"}
+    ]},
+    {"n":8,"char":"都","strokes":11,"readings":["ト","ツ"],"words":[
+      {"jp":"東京都","reading":"とうきょうと","en":"Tokyo Prefecture","cn":"东京都"},
+      {"jp":"都合がいい","reading":"つごうがいい","en":"convenient","cn":"方便；合适"}
+    ]},
+    {"n":9,"char":"府","strokes":8,"readings":["フ"],"words":[
+      {"jp":"都道府県","reading":"とどうふけん","en":"the 47 prefectures of Japan","cn":"都、道、府、县"}
+    ]},
+    {"n":10,"char":"県","strokes":9,"readings":["ケン"],"words":[
+      {"jp":"県","reading":"けん","en":"prefecture","cn":"县（相当于中国的“省”）"},
+      {"jp":"青森県","reading":"あおもりけん","en":"Aomori Prefecture","cn":"青森县"}
+    ]},
+    {"n":11,"char":"市","strokes":5,"readings":["シ"],"words":[
+      {"jp":"市民","reading":"しみん","en":"citizen","cn":"市民；公民"}
+    ]},
+    {"n":12,"char":"町","strokes":7,"readings":["チョウ","まち"],"words":[
+      {"jp":"～町","reading":"～ちょう／まち","en":"... Town (name of a town)","cn":"……町"},
+      {"jp":"町","reading":"まち","en":"town","cn":"市镇；街"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.15",
+    "sections": [
+      {"type":"select","instruction":"＿＿のことばはひらがなでどうかきますか。","items":[
+        {"n":1,"q":"明日はちょっと都合が悪いです。","opts":["とごう","つごう","ぐあい","しあい"]},
+        {"n":2,"q":"昼間は家にいません。","opts":["ちゅうかん","ちょうかん","ひるま","あいま"]},
+        {"n":3,"q":"都道府県はぜんぶで47です。","opts":["とどふけん","とうどふけん","とどうふけん","とうどうふけん"]},
+        {"n":4,"q":"夏休みに旅行します。","opts":["ひるやすみ","はるやすみ","なつやすみ","ふゆやすみ"]}
+      ]},
+      {"type":"select","instruction":"＿＿のことばはどうかきますか。","items":[
+        {"n":5,"q":"はるになったら、お花見をします。","opts":["青","春","夏","明"]},
+        {"n":6,"q":"ふゆは山でスキーをします。","opts":["寒","雪","雨","冬"]},
+        {"n":7,"q":"あきはくだものがおいしいです。","opts":["空","米","天","秋"]},
+        {"n":8,"q":"とうきょうとは人が多いです。","opts":["東京都","東京市","東京町","東京道"]}
+      ]}
+    ],
+    "answers": "①2 ②3 ③3 ④3 ⑤2 ⑥4 ⑦4 ⑧1"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "week": 1, "day": 2, "theme": "かたちがにている漢字", "theme_cn": "形似字", "theme_en": "Characters with similar shapes",
+  "title": "同・何・回", "title_cn": "相同 · 什么 · 次", "title_en": "Same / what / times",
+  "kanji": [
+    {"n":1,"char":"同","strokes":6,"readings":["おなーじ"],"words":[
+      {"jp":"同じ","reading":"おなじ","en":"same","cn":"相同"}
+    ]},
+    {"n":2,"char":"回","strokes":6,"readings":["カイ","まわーる"],"words":[
+      {"jp":"1回、2回…何回","reading":"いっかい、にかい…なんかい","en":"once, twice ... how many times","cn":"一次，两次……几次"},
+      {"jp":"回る","reading":"まわる","en":"turn","cn":"转，旋转"}
+    ]},
+    {"n":3,"char":"晩","strokes":12,"readings":["バン"],"words":[
+      {"jp":"晩","reading":"ばん","en":"night","cn":"晚上"},
+      {"jp":"今晩","reading":"こんばん","en":"tonight","cn":"今晚"},
+      {"jp":"毎晩","reading":"まいばん","en":"every night","cn":"每晚"}
+    ]},
+    {"n":4,"char":"勉","strokes":10,"readings":["ベン"],"words":[
+      {"jp":"勉強する","reading":"べんきょうする","en":"study","cn":"学习"}
+    ]},
+    {"n":5,"char":"進","strokes":11,"readings":["すすーむ","すすーめる"],"words":[
+      {"jp":"進む","reading":"すすむ","en":"advance","cn":"前进，前に進む"},
+      {"jp":"進める","reading":"すすめる","en":"move forward","cn":"使前进，計画を進める"}
+    ]},
+    {"n":6,"char":"集","strokes":12,"readings":["あつーまる","あつーめる"],"words":[
+      {"jp":"集まる","reading":"あつまる","en":"gather","cn":"聚集，駅前に集まる"},
+      {"jp":"集める","reading":"あつめる","en":"collect","cn":"召集；收集，切手を集める"}
+    ]},
+    {"n":7,"char":"文","strokes":4,"readings":["ブン"],"words":[
+      {"jp":"文","reading":"ぶん","en":"sentence, text","cn":"句子；文章"},
+      {"jp":"文章","reading":"ぶんしょう","en":"text, sentences","cn":"文章"}
+    ]},
+    {"n":8,"char":"作","strokes":7,"readings":["サク","つくーる"],"words":[
+      {"jp":"作文","reading":"さくぶん","en":"writing, composition","cn":"作文"},
+      {"jp":"作る","reading":"つくる","en":"make","cn":"做，制造"}
+    ]},
+    {"n":9,"char":"使","strokes":8,"readings":["シ","つかーう"],"words":[
+      {"jp":"大使館","reading":"たいしかん","en":"embassy","cn":"大使馆"},
+      {"jp":"使う","reading":"つかう","en":"use","cn":"使用"}
+    ]},
+    {"n":10,"char":"便","strokes":9,"readings":["ベン","ビン"],"words":[
+      {"jp":"便利な","reading":"べんりな","en":"convenient","cn":"方便的"},
+      {"jp":"郵便局","reading":"ゆうびんきょく","en":"post office","cn":"邮局"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.7",
+    "sections": [
+      {"type":"select","instruction":"＿＿のことばはひらがなでどうかきますか。","items":[
+        {"n":1,"q":"8時に学校の前に集まってください。","opts":["あつまって","かたまって","つかまって","まとまって"]},
+        {"n":2,"q":"スマートフォンは便利です。","opts":["ばんり","べんり","びんり","ぶんり"]},
+        {"n":3,"q":"わたしたちは同じ学校に行っています。","opts":["どうじ","おなじ","とうじ","おらじ"]},
+        {"n":4,"q":"毎晩おそくまでしゅくだいをします。","opts":["めいばん","まいべん","まいばん","めいよ"]}
+      ]},
+      {"type":"select","instruction":"＿＿のことばはどうかきますか。","items":[
+        {"n":5,"q":"このページができたらつぎのページにすすみましょう。","opts":["道みましょう","通みましょう","建みましょう","進みましょう"]},
+        {"n":6,"q":"日本語をおぼえたら、すぐつかいます。","opts":["作います","使います","便います","何います"]},
+        {"n":7,"q":"みじかいぶんを書きます。","opts":["父","文","又","交"]},
+        {"n":8,"q":"日本人のともだちといっしょにすしをつくりました。","opts":["作りました","昨りました","使りました","便りました"]}
+      ]}
+    ],
+    "answers": "①1 ②2 ③2 ④3 ⑤4 ⑥2 ⑦2 ⑧1"
+  }
+}

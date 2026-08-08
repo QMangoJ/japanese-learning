@@ -1,0 +1,65 @@
+{
+  "week": 1, "day": 5, "theme": "人をあらわす漢字", "theme_cn": "表示人的汉字", "theme_en": "Characters that indicate people",
+  "title": "医者・歌手", "title_cn": "医生 · 歌手", "title_en": "Doctor / singer",
+  "kanji": [
+    {"n":1,"char":"医","strokes":7,"readings":["イ"],"words":[
+      {"jp":"医者","reading":"いしゃ","en":"doctor","cn":"医生"},
+      {"jp":"医学","reading":"いがく","en":"medical science","cn":"医学"}
+    ]},
+    {"n":2,"char":"者","strokes":8,"readings":["シャ"],"words":[
+      {"jp":"学者","reading":"がくしゃ","en":"scholar","cn":"学者"},
+      {"jp":"歯医者","reading":"はいしゃ","en":"dentist","cn":"牙医"}
+    ]},
+    {"n":3,"char":"員","strokes":10,"readings":["イン"],"words":[
+      {"jp":"店員","reading":"てんいん","en":"sales clerk","cn":"店员"},
+      {"jp":"駅員","reading":"えきいん","en":"station staff","cn":"车站工作人员"},
+      {"jp":"会社員","reading":"かいしゃいん","en":"company employee","cn":"公司职员"},
+      {"jp":"銀行員","reading":"ぎんこういん","en":"bank clerk","cn":"银行职员"}
+    ]},
+    {"n":4,"char":"民","strokes":5,"readings":["ミン"],"words":[
+      {"jp":"国民","reading":"こくみん","en":"citizen, nation","cn":"国民"},
+      {"jp":"市民","reading":"しみん","en":"citizen","cn":"市民；公民"}
+    ]},
+    {"n":5,"char":"歌","strokes":14,"readings":["カ","うた","うたーう"],"words":[
+      {"jp":"歌手","reading":"かしゅ","en":"singer","cn":"歌手"},
+      {"jp":"歌","reading":"うた","en":"song","cn":"歌"},
+      {"jp":"歌う","reading":"うたう","en":"sing","cn":"唱歌"}
+    ]},
+    {"n":6,"char":"運","strokes":12,"readings":["ウン"],"words":[
+      {"jp":"運転","reading":"うんてん","en":"driving, operation","cn":"驾驶"},
+      {"jp":"運転手","reading":"うんてんしゅ","en":"driver","cn":"司机"},
+      {"jp":"運動","reading":"うんどう","en":"exercise","cn":"运动"}
+    ]},
+    {"n":7,"char":"転","strokes":11,"readings":["テン"],"words":[
+      {"jp":"自転車","reading":"じてんしゃ","en":"bicycle","cn":"自行车"}
+    ]},
+    {"n":8,"char":"説","strokes":14,"readings":["セツ"],"words":[
+      {"jp":"説明する","reading":"せつめいする","en":"explain","cn":"说明"},
+      {"jp":"小説","reading":"しょうせつ","en":"novel","cn":"小说"},
+      {"jp":"小説家","reading":"しょうせつか","en":"novelist","cn":"小说家"}
+    ]},
+    {"n":9,"char":"家","strokes":10,"readings":["カ","いえ"],"words":[
+      {"jp":"家族","reading":"かぞく","en":"family","cn":"家人"},
+      {"jp":"家庭","reading":"かてい","en":"home","cn":"家庭"},
+      {"jp":"家","reading":"いえ","en":"house, home","cn":"家"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.13",
+    "sections": [
+      {"type":"select","instruction":"＿＿のことばはひらがなでどうかきますか。","items":[
+        {"n":1,"q":"勉強はきらいですが、運動はすきです。","opts":["うんてん","うんどう","ゆんどう","うんどん"]},
+        {"n":2,"q":"自転車で駅まで行きます。","opts":["じてんちゃ","じどんちゃ","じどうしゃ","じてんしゃ"]},
+        {"n":3,"q":"あたたかい家庭を作りたいです。","opts":["かてい","かでい","かたい","かだい"]},
+        {"n":4,"q":"市民プールでおよぎます。","opts":["しにん","しみん","ちにん","ちみん"]}
+      ]},
+      {"type":"select","instruction":"＿＿のことばはどうかきますか。","items":[
+        {"n":5,"q":"みんなでカラオケに行って、うたいました。","opts":["歌いました","飲いました","回いました","音いました"]},
+        {"n":6,"q":"お金があったら、いえを建てたいです。","opts":["店","校","家","門"]},
+        {"n":7,"q":"これはかぞくの写真です。","opts":["家旅","家族","親族","親旅"]},
+        {"n":8,"q":"あのてんいんさんは明るくていい人です。","opts":["店民","店者","店人","店員"]}
+      ]}
+    ],
+    "answers": "①2 ②4 ③1 ④2 ⑤1 ⑥3 ⑦2 ⑧4"
+  }
+}

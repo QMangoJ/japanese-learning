@@ -1,0 +1,68 @@
+{
+  "week": 2, "day": 2, "theme": "かたちがにている漢字", "theme_cn": "形似字", "theme_en": "Characters with similar shapes",
+  "title": "大・犬・太", "title_cn": "大 · 狗 · 胖", "title_en": "Big / dog / fat",
+  "kanji": [
+    {"n":1,"char":"犬","strokes":4,"readings":["いぬ"],"words":[
+      {"jp":"犬","reading":"いぬ","en":"dog","cn":"狗"}
+    ]},
+    {"n":2,"char":"太","strokes":4,"readings":["ふとーい","ふとーる"],"words":[
+      {"jp":"太い","reading":"ふとい","en":"fat, chubby","cn":"胖；粗"},
+      {"jp":"太る","reading":"ふとる","en":"get fat","cn":"胖"}
+    ]},
+    {"n":3,"char":"区","strokes":4,"readings":["ク"],"words":[
+      {"jp":"区","reading":"く","en":"ward","cn":"区"}
+    ]},
+    {"n":4,"char":"思","strokes":9,"readings":["おもーう"],"words":[
+      {"jp":"思う","reading":"おもう","en":"think","cn":"想；认为；推测"},
+      {"jp":"思い出す","reading":"おもいだす","en":"remember, recall","cn":"想起"}
+    ]},
+    {"n":5,"char":"知","strokes":8,"readings":["しーる"],"words":[
+      {"jp":"知る","reading":"しる","en":"know","cn":"知道，了解"},
+      {"jp":"知らせる","reading":"しらせる","en":"inform, notice","cn":"通知，告诉"}
+    ]},
+    {"n":6,"char":"和","strokes":8,"readings":["ワ"],"words":[
+      {"jp":"和室","reading":"わしつ","en":"Japanese-style room","cn":"日式房间"},
+      {"jp":"和菓子","reading":"わがし","en":"Japanese sweets","cn":"日式点心"},
+      {"jp":"平和","reading":"へいわ","en":"peace, harmony","cn":"和平"}
+    ]},
+    {"n":7,"char":"族","strokes":11,"readings":["ゾク"],"words":[
+      {"jp":"家族","reading":"かぞく","en":"family","cn":"家人"},
+      {"jp":"水族館","reading":"すいぞくかん","en":"aquarium","cn":"水族馆"}
+    ]},
+    {"n":8,"char":"青","strokes":8,"readings":["あお","あおーい"],"words":[
+      {"jp":"青","reading":"あお","en":"blue","cn":"青，蓝，绿"},
+      {"jp":"青い","reading":"あおい","en":"blue","cn":"青，蓝，绿"}
+    ]},
+    {"n":9,"char":"光","strokes":6,"readings":["ひかり","ひかーる"],"words":[
+      {"jp":"光","reading":"ひかり","en":"light","cn":"光，光亮；希望"},
+      {"jp":"光る","reading":"ひかる","en":"shine","cn":"发光"}
+    ]},
+    {"n":10,"char":"池","strokes":6,"readings":["チ","いけ"],"words":[
+      {"jp":"電池","reading":"でんち","en":"battery","cn":"电池"},
+      {"jp":"池","reading":"いけ","en":"pond","cn":"池，池塘"}
+    ]},
+    {"n":11,"char":"別","strokes":7,"readings":["ベツ","わかーれる"],"words":[
+      {"jp":"別の","reading":"べつの","en":"another, separate","cn":"别的，另外的"},
+      {"jp":"特別な","reading":"とくべつな","en":"special","cn":"特别的"},
+      {"jp":"別れる","reading":"わかれる","en":"separate","cn":"分开"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.23",
+    "sections": [
+      {"type":"select","instruction":"＿＿のことばはひらがなでどうかきますか。","items":[
+        {"n":1,"q":"家族で旅行をします。","opts":["こじょく","かぞく","こぞく","かじょく"]},
+        {"n":2,"q":"ノートじゃなくて、別のかみに書いてください。","opts":["べつ","れつ","めつ","べち"]},
+        {"n":3,"q":"あの太い木は何の木ですか。","opts":["ふとい","ふたい","ふどい","ふだい"]},
+        {"n":4,"q":"和室でお茶を飲みませんか。","opts":["こしつ","ちゃしつ","わしつ","へや"]}
+      ]},
+      {"type":"select","instruction":"＿＿のことばはどうかきますか。","items":[
+        {"n":5,"q":"しらない人から電話がありました。","opts":["別らない","利らない","知らない","和らない"]},
+        {"n":6,"q":"くやくしょへ行って来ます。","opts":["区","市","田","医"]},
+        {"n":7,"q":"あそこのあおいひかりが見えますか。","opts":["春い光","青い光","春い米","青い米"]},
+        {"n":8,"q":"国へ帰ったら、日本語を使う仕事をしようとおもいます。","opts":["重います","意います","悪います","思います"]}
+      ]}
+    ],
+    "answers": "①2 ②1 ③1 ④3 ⑤3 ⑥1 ⑦2 ⑧4"
+  }
+}

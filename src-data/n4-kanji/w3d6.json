@@ -1,0 +1,54 @@
+{
+  "week": 3, "day": 6, "theme": "グループでおぼえましょう", "theme_cn": "成组记字", "theme_en": "Learn in groups",
+  "title": "海・山・空・川", "title_cn": "海 · 山 · 天空 · 河", "title_en": "Sea / mountain / sky / river",
+  "kanji": [
+    {"n":1,"char":"鳥","strokes":11,"readings":["とり"],"words":[
+      {"jp":"鳥","reading":"とり","en":"bird","cn":"鸟"},
+      {"jp":"小鳥","reading":"ことり","en":"small bird","cn":"小鸟"}
+    ]},
+    {"n":2,"char":"銀","strokes":14,"readings":["ギン"],"words":[
+      {"jp":"銀行","reading":"ぎんこう","en":"bank","cn":"银行"}
+    ]},
+    {"n":3,"char":"堂","strokes":11,"readings":["ドウ"],"words":[
+      {"jp":"食堂","reading":"しょくどう","en":"cafeteria","cn":"食堂"},
+      {"jp":"講堂","reading":"こうどう","en":"auditorium","cn":"礼堂"}
+    ]},
+    {"n":4,"char":"院","strokes":10,"readings":["イン"],"words":[
+      {"jp":"病院","reading":"びょういん","en":"hospital","cn":"医院"},
+      {"jp":"入院する","reading":"にゅういんする","en":"be hospitalized","cn":"住院"},
+      {"jp":"大学院","reading":"だいがくいん","en":"graduate school","cn":"研究生院"}
+    ]},
+    {"n":5,"char":"歩","strokes":8,"readings":["ホ","あるーく"],"words":[
+      {"jp":"散歩する","reading":"さんぽする","en":"take a walk","cn":"散步"},
+      {"jp":"歩く","reading":"あるく","en":"walk","cn":"走"}
+    ]},
+    {"n":6,"char":"走","strokes":7,"readings":["はしーる"],"words":[
+      {"jp":"走る","reading":"はしる","en":"run","cn":"跑"}
+    ]},
+    {"n":7,"char":"海","strokes":9,"readings":["カイ","うみ"],"words":[
+      {"jp":"海岸","reading":"かいがん","en":"beach, shore","cn":"海岸，海边"},
+      {"jp":"海","reading":"うみ","en":"the ocean","cn":"海"}
+    ]},
+    {"n":8,"char":"帰","strokes":10,"readings":["かえーる"],"words":[
+      {"jp":"帰る","reading":"かえる","en":"go back","cn":"回来，回去"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.47",
+    "sections": [
+      {"type":"select","instruction":"＿＿のことばはひらがなでどうかきますか。","items":[
+        {"n":1,"q":"母は病院で働いています。","opts":["びよういん","びようにん","びょうにん","びょういん"]},
+        {"n":2,"q":"毎日、会社の食堂で昼ご飯を食べます。","opts":["しゅくどう","しょくどう","しょどう","たべどう"]},
+        {"n":3,"q":"海岸を散歩しましょう。","opts":["さんぽ","さんぶ","さんぷ","さんぼ"]},
+        {"n":4,"q":"海と山とどちらが好きですか。","opts":["うに","うめ","うみ","かい"]}
+      ]},
+      {"type":"select","instruction":"＿＿のことばはどうかきますか。","items":[
+        {"n":5,"q":"はしってもバスには間に合わないでしょう。","opts":["走って","歩って","足って","急って"]},
+        {"n":6,"q":"冬休みに国へかえります。","opts":["去ります","行ります","来ります","帰ります"]},
+        {"n":7,"q":"その木にことりがたくさん集まります。","opts":["子鳥","小鳥","白鳥","赤鳥"]},
+        {"n":8,"q":"ぎんこうでお金を送ります。","opts":["鉄行","銀工","銀行","鉄工"]}
+      ]}
+    ],
+    "answers": "①4 ②2 ③1 ④3 ⑤1 ⑥4 ⑦2 ⑧3"
+  }
+}

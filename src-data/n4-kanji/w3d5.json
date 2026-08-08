@@ -1,0 +1,67 @@
+{
+  "week": 3, "day": 5, "theme": "漢字の組み合わせをおぼえましょう", "theme_cn": "汉字组词", "theme_en": "Learn kanji combinations",
+  "title": "親切・切手", "title_cn": "亲切 · 邮票", "title_en": "Kind / stamp",
+  "kanji": [
+    {"n":1,"char":"合","strokes":6,"readings":["ゴウ","あーう"],"words":[
+      {"jp":"合格する","reading":"ごうかくする","en":"pass","cn":"及格，考上"},
+      {"jp":"都合がいい","reading":"つごうがいい","en":"convenient","cn":"方便，合适"},
+      {"jp":"合う","reading":"あう","en":"meet, combine","cn":"合；适合；一致"},
+      {"jp":"間に合う","reading":"まにあう","en":"be in time","cn":"赶得及"}
+    ]},
+    {"n":2,"char":"漢","strokes":13,"readings":["カン"],"words":[
+      {"jp":"漢字","reading":"かんじ","en":"kanji, Chinese character","cn":"汉字"}
+    ]},
+    {"n":3,"char":"字","strokes":6,"readings":["ジ"],"words":[
+      {"jp":"字","reading":"じ","en":"letter, character","cn":"字"},
+      {"jp":"文字","reading":"もじ","en":"letter, character","cn":"文字"}
+    ]},
+    {"n":4,"char":"親","strokes":16,"readings":["シン"],"words":[
+      {"jp":"親切な","reading":"しんせつな","en":"kind, gentle","cn":"热情的"},
+      {"jp":"両親","reading":"りょうしん","en":"parents","cn":"（我的）父母"}
+    ]},
+    {"n":5,"char":"切","strokes":4,"readings":["セツ","きーる","きーれる"],"words":[
+      {"jp":"大切な","reading":"たいせつな","en":"precious, important","cn":"宝贵的，重要的"},
+      {"jp":"切る","reading":"きる","en":"cut","cn":"切；中断"},
+      {"jp":"切れる","reading":"きれる","en":"can cut","cn":"能切；断开"},
+      {"jp":"切手","reading":"きって","en":"stamp","cn":"邮票"},
+      {"jp":"切符","reading":"きっぷ","en":"ticket","cn":"票"}
+    ]},
+    {"n":6,"char":"楽","strokes":13,"readings":["ガク","たのーしい","たのーしむ"],"words":[
+      {"jp":"音楽","reading":"おんがく","en":"music","cn":"音乐"},
+      {"jp":"楽しい","reading":"たのしい","en":"fun","cn":"快乐，开心"},
+      {"jp":"楽しむ","reading":"たのしむ","en":"enjoy","cn":"享受，欣赏；期待"}
+    ]},
+    {"n":7,"char":"自","strokes":6,"readings":["ジ"],"words":[
+      {"jp":"自分","reading":"じぶん","en":"self","cn":"自己"},
+      {"jp":"自動","reading":"じどう","en":"automatic","cn":"自动"},
+      {"jp":"自由","reading":"じゆう","en":"freedom","cn":"自由"}
+    ]},
+    {"n":8,"char":"場","strokes":12,"readings":["ジョウ","ば"],"words":[
+      {"jp":"工場","reading":"こうじょう","en":"factory","cn":"工厂"},
+      {"jp":"駐車場","reading":"ちゅうしゃじょう","en":"parking lot","cn":"停车场"},
+      {"jp":"場所","reading":"ばしょ","en":"place","cn":"地方"}
+    ]},
+    {"n":9,"char":"室","strokes":9,"readings":["シツ"],"words":[
+      {"jp":"教室","reading":"きょうしつ","en":"classroom","cn":"教室"},
+      {"jp":"会議室","reading":"かいぎしつ","en":"conference room","cn":"会议室"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.45",
+    "sections": [
+      {"type":"select","instruction":"＿＿のことばはひらがなでどうかきますか。","items":[
+        {"n":1,"q":"N4の試験に合格しました。","opts":["ごかく","ごうかく","こうがく","あいがく"]},
+        {"n":2,"q":"文字が小さいですから、もう少し大きくしてください。","opts":["もじ","まじ","ぶじ","ぶんじ"]},
+        {"n":3,"q":"パーティーの時間と場所をきめましょう。","opts":["ぼしょ","じょうしょ","ばしょ","じゅうしょ"]},
+        {"n":4,"q":"あの人はわたしの大切なともだちです。","opts":["だいじ","でいじ","だいせつ","たいせつ"]}
+      ]},
+      {"type":"select","instruction":"＿＿のことばはどうかきますか。","items":[
+        {"n":5,"q":"今日はとてもたのしかったです。","opts":["楽しかった","薬しかった","新しかった","正しかった"]},
+        {"n":6,"q":"手紙にきってをはってください。","opts":["着物","切手","切符","来手"]},
+        {"n":7,"q":"何時に家を出たら、じゅぎょうにまにあうんですか。","opts":["真に会う","間に会う","真に合う","間に合う"]},
+        {"n":8,"q":"お昼ご飯はじぶんで作ります。","opts":["自分","自由","自動","自力"]}
+      ]}
+    ],
+    "answers": "①2 ②1 ③3 ④4 ⑤1 ⑥2 ⑦4 ⑧1"
+  }
+}

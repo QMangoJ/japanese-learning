@@ -1,0 +1,62 @@
+{
+  "week": 2, "day": 3, "theme": "ペアでおぼえましょう", "theme_cn": "成对记字", "theme_en": "Learn in antonym pairs",
+  "title": "起きる ↔ 寝る", "title_cn": "起床 ↔ 睡觉", "title_en": "Get up ↔ go to bed",
+  "kanji": [
+    {"n":1,"char":"寒","strokes":12,"readings":["さむーい"],"words":[
+      {"jp":"寒い","reading":"さむい","en":"cold","cn":"冷"}
+    ]},
+    {"n":2,"char":"暑","strokes":12,"readings":["あつーい"],"words":[
+      {"jp":"暑い","reading":"あつい","en":"hot","cn":"热；烫"},
+      {"jp":"蒸し暑い","reading":"むしあつい","en":"hot and humid","cn":"闷热"}
+    ]},
+    {"n":3,"char":"重","strokes":9,"readings":["おもーい"],"words":[
+      {"jp":"重い","reading":"おもい","en":"heavy, serious","cn":"重"}
+    ]},
+    {"n":4,"char":"軽","strokes":12,"readings":["かるーい"],"words":[
+      {"jp":"軽い","reading":"かるい","en":"light, not serious","cn":"轻"}
+    ]},
+    {"n":5,"char":"広","strokes":5,"readings":["ひろーい"],"words":[
+      {"jp":"広い","reading":"ひろい","en":"spacious, wide","cn":"广，宽敞；宽；广泛，↔せまい"}
+    ]},
+    {"n":6,"char":"元","strokes":4,"readings":["ゲン"],"words":[
+      {"jp":"元気な","reading":"げんきな","en":"fine, healthy","cn":"精力充沛的；身体健康的"}
+    ]},
+    {"n":7,"char":"病","strokes":10,"readings":["ビョウ"],"words":[
+      {"jp":"病院","reading":"びょういん","en":"hospital","cn":"医院"},
+      {"jp":"病気","reading":"びょうき","en":"sick, illness, disease","cn":"病，疾病"}
+    ]},
+    {"n":8,"char":"起","strokes":10,"readings":["おーきる","おーこす"],"words":[
+      {"jp":"起きる","reading":"おきる","en":"get up","cn":"起，起来；起床；发生"},
+      {"jp":"起こす","reading":"おこす","en":"wake up, stand something up","cn":"扶起；叫醒；发起；引起"}
+    ]},
+    {"n":9,"char":"寝","strokes":13,"readings":["ねーる"],"words":[
+      {"jp":"寝る","reading":"ねる","en":"go to bed, sleep","cn":"睡；躺"},
+      {"jp":"寝坊","reading":"ねぼう","en":"oversleep","cn":"睡懒觉（的人）"}
+    ]},
+    {"n":10,"char":"始","strokes":8,"readings":["はじーまる","はじーめる"],"words":[
+      {"jp":"始まる","reading":"はじまる","en":"begin, start","cn":"开始；起源"},
+      {"jp":"始める","reading":"はじめる","en":"start","cn":"开始"}
+    ]},
+    {"n":11,"char":"終","strokes":11,"readings":["おーわる"],"words":[
+      {"jp":"終わる","reading":"おわる","en":"finish, end","cn":"完毕，结束"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.25",
+    "sections": [
+      {"type":"select","instruction":"＿＿のことばはひらがなでどうかきますか。","items":[
+        {"n":1,"q":"病気で、学校を休みました。","opts":["びょき","びゅうき","びょうき","びょおき"]},
+        {"n":2,"q":"このノートパソコンは軽いですね。","opts":["かるい","うすい","くらい","あかるい"]},
+        {"n":3,"q":"もっと広いアパートにひっこします。","opts":["せまい","ひるい","すまい","ひろい"]},
+        {"n":4,"q":"明日は早いから、もう寝ます。","opts":["ねます","ねむます","にます","ねみます"]}
+      ]},
+      {"type":"select","instruction":"＿＿のことばはどうかきますか。","items":[
+        {"n":5,"q":"さあ、勉強をはじめよう。","opts":["始めよう","妹めよう","味めよう","明めよう"]},
+        {"n":6,"q":"あついから、エアコンをつけてください。","opts":["暑い","強い","重い","寒い"]},
+        {"n":7,"q":"会社は何時におわりますか。","opts":["通ります","降ります","押わります","終わります"]},
+        {"n":8,"q":"家族はみんなげんきです。","opts":["強気","元気","有気","短気"]}
+      ]}
+    ],
+    "answers": "①3 ②1 ③4 ④1 ⑤1 ⑥1 ⑦4 ⑧2"
+  }
+}

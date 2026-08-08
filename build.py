@@ -18,6 +18,7 @@ V2SRC = os.path.join(SRC, "n2-vocab")
 K2SRC = os.path.join(SRC, "n2-kanji")
 N4SRC = os.path.join(SRC, "n4-grammar")
 N4VSRC = os.path.join(SRC, "n4-vocab")
+K4SRC = os.path.join(SRC, "n4-kanji")
 TEMPLATE = os.path.join(HERE, "template.html")
 OUT_DIR = os.path.join(HERE, "public")
 OUT = os.path.join(OUT_DIR, "index.html")
@@ -257,6 +258,10 @@ def main():
         w["title"], w["title_cn"] = d1.get("theme", ""), d1.get("theme_cn", "")
     n4weeks = load_days(N4SRC, count_weeks(N4SRC), annotate_g)  # N4语法: auto-detects how many weeks are extracted so far
     n4vweeks = load_days_sparse(N4VSRC, complete_week_numbers(N4VSRC), annotate_v)  # N4词汇: 从第4周开始编号，非从1开始
+    k4weeks = load_days(K4SRC, count_weeks(K4SRC), annotate_k)  # N4汉字: auto-detects how many weeks are extracted so far
+    for w in k4weeks:
+        d1 = w["days"][0]
+        w["title"], w["title_cn"] = d1.get("theme", ""), d1.get("theme_cn", "")
 
     data = {
         "grammar": {"weeks": gweeks, "besatsu": besatsu, "reference": reference, "contrast": contrast, "katsuyou": katsuyou},
@@ -267,6 +272,7 @@ def main():
         "n2kanji": {"weeks": k2weeks},
         "n4grammar": {"weeks": n4weeks},
         "n4vocab": {"weeks": n4vweeks},
+        "n4kanji": {"weeks": k4weeks},
     }
 
     with open(TEMPLATE, encoding="utf-8") as f:

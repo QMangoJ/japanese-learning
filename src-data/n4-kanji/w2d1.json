@@ -1,0 +1,63 @@
+{
+  "week": 2, "day": 1, "theme": "ことばでよみをおぼえましょう", "theme_cn": "背单词记发音", "theme_en": "Learn readings through words",
+  "title": "映画・計画", "title_cn": "电影 · 计划", "title_en": "Movie / plan",
+  "kanji": [
+    {"n":1,"char":"画","strokes":8,"readings":["ガ","カク"],"words":[
+      {"jp":"映画","reading":"えいが","en":"movie","cn":"电影"},
+      {"jp":"漫画","reading":"まんが","en":"cartoon, comic book","cn":"漫画"},
+      {"jp":"計画","reading":"けいかく","en":"plan","cn":"计划，规划"}
+    ]},
+    {"n":2,"char":"映","strokes":9,"readings":["エイ"],"words":[
+      {"jp":"映画","reading":"えいが","en":"movie","cn":"电影"},
+      {"jp":"映画館","reading":"えいがかん","en":"movie theater","cn":"电影院"}
+    ]},
+    {"n":3,"char":"計","strokes":9,"readings":["ケイ"],"words":[
+      {"jp":"時計","reading":"とけい","en":"clock, watch","cn":"钟，表"},
+      {"jp":"計画","reading":"けいかく","en":"plan","cn":"计划，规划"}
+    ]},
+    {"n":4,"char":"図","strokes":7,"readings":["ズ","ト"],"words":[
+      {"jp":"地図","reading":"ちず","en":"map","cn":"地图"},
+      {"jp":"図書館","reading":"としょかん","en":"library","cn":"图书馆"}
+    ]},
+    {"n":5,"char":"事","strokes":8,"readings":["ジ","こと"],"words":[
+      {"jp":"食事","reading":"しょくじ","en":"meal","cn":"饭，餐；吃饭"},
+      {"jp":"用事","reading":"ようじ","en":"errand, things to do","cn":"事，事情"},
+      {"jp":"仕事","reading":"しごと","en":"job, work","cn":"工作"}
+    ]},
+    {"n":6,"char":"仕","strokes":5,"readings":["シ"],"words":[
+      {"jp":"仕事","reading":"しごと","en":"job, work","cn":"工作"},
+      {"jp":"仕方","reading":"しかた","en":"way of doing","cn":"做法；办法"}
+    ]},
+    {"n":7,"char":"用","strokes":5,"readings":["ヨウ"],"words":[
+      {"jp":"用事","reading":"ようじ","en":"errand, things to do","cn":"事，事情"},
+      {"jp":"用意","reading":"ようい","en":"preparation","cn":"准备"},
+      {"jp":"利用する","reading":"りようする","en":"use","cn":"利用"}
+    ]},
+    {"n":8,"char":"地","strokes":6,"readings":["チ","ジ"],"words":[
+      {"jp":"地図","reading":"ちず","en":"map","cn":"地图"},
+      {"jp":"地理","reading":"ちり","en":"geography","cn":"地理"},
+      {"jp":"地震","reading":"じしん","en":"earthquake","cn":"地震"}
+    ]},
+    {"n":9,"char":"鉄","strokes":13,"readings":["テツ"],"words":[
+      {"jp":"地下鉄","reading":"ちかてつ","en":"subway","cn":"地铁"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.21",
+    "sections": [
+      {"type":"select","instruction":"＿＿のことばはひらがなでどうかきますか。","items":[
+        {"n":1,"q":"夏休みは図書館に通います。","opts":["としょかん","とうしょかん","どしょかん","どうしょうかん"]},
+        {"n":2,"q":"用事がありますから、明日は来られません。","opts":["よじ","ようし","ようじ","よごと"]},
+        {"n":3,"q":"あの時計はちょっとおくれていますね。","opts":["とけ","とけい","とけえ","とかい"]},
+        {"n":4,"q":"母は食事の用意をしています。","opts":["しくじ","しゃくじ","しゅくじ","しょくじ"]}
+      ]},
+      {"type":"select","instruction":"＿＿のことばはどうかきますか。","items":[
+        {"n":5,"q":"いつも地下鉄をりようしています。","opts":["利用して","理由して","料用して","使用して"]},
+        {"n":6,"q":"ねつがありますから、しごとを休みます。","opts":["士事","工事","仕事","使事"]},
+        {"n":7,"q":"インターネットでえいがを見ます。","opts":["絵画","映画","漫画","洋画"]},
+        {"n":8,"q":"ちずを見ないと、道がわかりません。","opts":["池医","池図","地医","地図"]}
+      ]}
+    ],
+    "answers": "①1 ②3 ③2 ④4 ⑤1 ⑥3 ⑦2 ⑧4"
+  }
+}

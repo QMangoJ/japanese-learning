@@ -1,0 +1,55 @@
+{
+  "week": 3, "day": 3, "theme": "ペアでおぼえましょう", "theme_cn": "成对记字", "theme_en": "Learn in antonym pairs",
+  "title": "習う ↔ 教える", "title_cn": "学 ↔ 教", "title_en": "Learn ↔ teach",
+  "kanji": [
+    {"n":1,"char":"売","strokes":7,"readings":["うーる"],"words":[
+      {"jp":"売る","reading":"うる","en":"sell","cn":"卖，↔買う"},
+      {"jp":"売り場","reading":"うりば","en":"sales floor","cn":"出售处，柜台"}
+    ]},
+    {"n":2,"char":"借","strokes":10,"readings":["かーりる"],"words":[
+      {"jp":"借りる","reading":"かりる","en":"borrow, rent","cn":"借；租借"}
+    ]},
+    {"n":3,"char":"貸","strokes":12,"readings":["かーす"],"words":[
+      {"jp":"貸す","reading":"かす","en":"lend","cn":"借给；租给，↔借りる"}
+    ]},
+    {"n":4,"char":"習","strokes":11,"readings":["シュウ","ならーう"],"words":[
+      {"jp":"練習する","reading":"れんしゅうする","en":"practice","cn":"练习"},
+      {"jp":"予習する","reading":"よしゅうする","en":"prepare for a lesson","cn":"预习"},
+      {"jp":"復習する","reading":"ふくしゅうする","en":"review","cn":"复习"},
+      {"jp":"習慣","reading":"しゅうかん","en":"habit","cn":"习惯"},
+      {"jp":"習う","reading":"ならう","en":"learn","cn":"学习，↔教える"}
+    ]},
+    {"n":5,"char":"座","strokes":10,"readings":["すわーる"],"words":[
+      {"jp":"座る","reading":"すわる","en":"sit","cn":"坐，↔立つ"}
+    ]},
+    {"n":6,"char":"乗","strokes":9,"readings":["のーる"],"words":[
+      {"jp":"乗る","reading":"のる","en":"ride, get on, get in","cn":"乘坐，骑，上，↔降りる"},
+      {"jp":"乗り物","reading":"のりもの","en":"vehicle","cn":"交通工具"},
+      {"jp":"乗り換える","reading":"のりかえる","en":"transfer, change","cn":"换乘"}
+    ]},
+    {"n":7,"char":"死","strokes":6,"readings":["しーぬ"],"words":[
+      {"jp":"死ぬ","reading":"しぬ","en":"die","cn":"死，↔生きる／生まれる"}
+    ]},
+    {"n":8,"char":"不","strokes":4,"readings":["フ"],"words":[
+      {"jp":"不便な","reading":"ふべんな","en":"inconvenient","cn":"不方便的，↔便利な"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.41",
+    "sections": [
+      {"type":"select","instruction":"＿＿のことばはひらがなでどうかきますか。","items":[
+        {"n":1,"q":"どうぞ、好きなところに座ってください。","opts":["さわって","しわって","すわって","そわって"]},
+        {"n":2,"q":"今、生け花を習っています。","opts":["ならって","にらって","ぬらって","のらって"]},
+        {"n":3,"q":"そんな洋服はどこで売っていますか。","opts":["かって","うって","ぬって","もって"]},
+        {"n":4,"q":"習ったら、よく練習しましょう。","opts":["ねんしゅう","れんしゅう","よしゅう","ふくしゅう"]}
+      ]},
+      {"type":"select","instruction":"＿＿のことばはどうかきますか。","items":[
+        {"n":5,"q":"特急にのって行きましょう。","opts":["降って","乗って","寝って","通って"]},
+        {"n":6,"q":"この本は図書館でかりました。","opts":["借りました","買りました","貸りました","帰りました"]},
+        {"n":7,"q":"かっていた犬がしんでしまいました。","opts":["住んで","進んで","知んで","死んで"]},
+        {"n":8,"q":"ペンをかしてくれませんか。","opts":["借して","回して","貸して","書して"]}
+      ]}
+    ],
+    "answers": "①3 ②1 ③2 ④2 ⑤2 ⑥1 ⑦4 ⑧3"
+  }
+}
