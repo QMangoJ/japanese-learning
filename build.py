@@ -19,6 +19,7 @@ K2SRC = os.path.join(SRC, "n2-kanji")
 N4SRC = os.path.join(SRC, "n4-grammar")
 N4VSRC = os.path.join(SRC, "n4-vocab")
 K4SRC = os.path.join(SRC, "n4-kanji")
+NUMSRC = os.path.join(SRC, "numbers")
 TEMPLATE = os.path.join(HERE, "template.html")
 OUT_DIR = os.path.join(HERE, "public")
 OUT = os.path.join(OUT_DIR, "index.html")
@@ -241,9 +242,24 @@ def main():
             r["form_r"] = ruby(r["form"])
             if r.get("eg"):
                 r["eg_r"] = ruby(r["eg"])
+        # 每个语法家族的辨析练习：题干和选项都注音，答对/答错后的解析不注音（解析是中文）
+        qz = g.get("quiz")
+        if qz:
+            for it in qz.get("items", []):
+                it["q_r"] = ruby(it["q"])
+                if it.get("opts"):
+                    it["opts_r"] = rlist(it["opts"])
 
     with open(os.path.join(GSRC, "katsuyou.json"), encoding="utf-8") as f:
         katsuyou = json.load(f)
+
+    with open(os.path.join(NUMSRC, "numbers.json"), encoding="utf-8") as f:
+        numbers = json.load(f)
+    # 只给量词的例词注音：表格本身就是「汉字→读法」的对照，注音会把答案提前剧透
+    for sec in numbers.get("sections", []):
+        for c in sec.get("counters", []):
+            if c.get("eg"):
+                c["eg_r"] = ruby(c["eg"])
 
     vweeks = load_days(VSRC, 6, annotate_v)
     n2weeks = load_days(N2SRC, 8, annotate_g)
@@ -273,6 +289,7 @@ def main():
         "n4grammar": {"weeks": n4weeks},
         "n4vocab": {"weeks": n4vweeks},
         "n4kanji": {"weeks": k4weeks},
+        "numbers": numbers,
     }
 
     with open(TEMPLATE, encoding="utf-8") as f:

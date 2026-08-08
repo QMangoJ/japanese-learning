@@ -213,6 +213,37 @@ body.hide-cn .vcn,body.hide-cn .ven{visibility:hidden}
 .mlvl.ml-new{background:var(--red-soft);color:var(--red)}
 .mlvl.ml-mid{background:var(--amber-soft);color:var(--amber)}
 .mlvl.ml-done{background:var(--green-soft);color:var(--green)}
+/* ---- 数字表达速查 ---- */
+.num-nav{display:flex;gap:6px;overflow-x:auto;padding:2px 0 10px;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
+.num-nav a{flex:0 0 auto;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:5px 14px;font-size:13px;color:var(--ink);cursor:pointer;white-space:nowrap}
+.num-nav a:hover{border-color:var(--accent);color:var(--accent)}
+.num-sec-h{font-size:15px;font-weight:700;color:var(--accent);margin:20px 0 8px;display:flex;align-items:baseline;gap:8px;scroll-margin-top:calc(var(--topbarh,97px) + 8px)}
+.num-sec-h small{font-weight:400;color:var(--sub);font-size:13px}
+.num-lead{font-size:13px;color:var(--sub);margin-bottom:10px;line-height:1.6}
+.num-cap{font-size:14px;font-weight:700;margin:0 0 8px}
+.num-x{color:var(--amber);font-weight:700}
+.num-note{font-size:13px;color:var(--sub);background:var(--amber-soft);border-radius:8px;padding:7px 10px;margin-top:8px;line-height:1.6}
+.num-rule h4{margin:0 0 7px;font-size:14.5px}
+.num-rule .eg{font-size:14px;background:var(--bg);border-radius:8px;padding:7px 10px;line-height:1.7}
+.cnt-head{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:3px}
+.cnt-suffix{font-size:19px;font-weight:700}
+.cnt-read{font-size:13px;color:var(--sub)}
+.cnt-q{margin-left:auto;font-size:12.5px;background:var(--blue-soft);color:var(--blue);border-radius:999px;padding:2px 10px;white-space:nowrap}
+.cnt-use{font-size:13.5px}
+.cnt-eg{font-size:13.5px;color:var(--sub);margin-bottom:9px}
+.cnt-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(62px,1fr));gap:5px}
+.cnt-cell{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:5px 3px;text-align:center}
+.cnt-cell .n{display:block;font-size:11px;color:var(--sub)}
+.cnt-cell .r{display:block;font-size:13px;font-weight:600;word-break:break-all}
+.cnt-cell.irr{background:var(--amber-soft);border-color:var(--amber)}
+.cnt-cell.irr .r{color:var(--amber)}
+/* ---- 语法家族辨析练习 ---- 用原生 details 折叠，默认收起，免得把参考表压得太长 */
+.ct-quiz{margin-top:12px;border-top:2px dashed var(--line);padding-top:8px}
+.ct-quiz>summary{font-size:13.5px;font-weight:700;color:var(--blue);cursor:pointer;list-style:none;padding:4px 0;-webkit-tap-highlight-color:transparent}
+.ct-quiz>summary::-webkit-details-marker{display:none}
+.ct-quiz>summary::before{content:'▸ '}
+.ct-quiz[open]>summary::before{content:'▾ '}
+.ct-quiz[open]>summary{margin-bottom:4px}
 .ct-h{font-size:16px;margin:0 0 8px;color:var(--accent)}
 .ct-tip{background:var(--amber-soft);color:var(--amber);border-radius:8px;padding:6px 10px;font-size:13px;margin-bottom:10px;line-height:1.5}
 .ct-row{padding:9px 0;border-top:1px dashed var(--line)}
@@ -641,6 +672,7 @@ function render(){
   else if(h==='#/ref'){ if(MODULE!=='grammar') setModule('grammar'); viewRef(); }
   else if(h==='#/contrast'){ if(MODULE!=='grammar') setModule('grammar'); viewContrast(); }
   else if(h==='#/katsuyou'){ if(MODULE!=='grammar') setModule('grammar'); viewKatsuyou(); }
+  else if(h==='#/numbers') viewNumbers(); // 数字表达跟级别无关，不切模块
   else if(h==='#/mistakes') viewMistakes();
   else {
     let m = h.match(/^#\/day\/(\d)-(\d)(?:\/(p\d+|v\d+-\d+|k\d+))?$/);
@@ -669,11 +701,14 @@ function viewHome(){
   let html = `<div class="home-top"><div class="meta" style="margin-bottom:10px">${intro}</div>` +
     (weeks.length>3 ? `<div class="wk-toc">${weeks.map(w=>`<a class="wk-tocitem" data-scroll="wk-${w.n}">第${w.n}周</a>`).join('')}</div>` : '') +
     `</div>`;
-  if(MODULE==='grammar') html += `<div class="home-tools">
+  // 数字表达跟级别/类型无关，所有模块的首页都放；辨析/接续表/活用仍然是 N3 语法专属
+  html += `<div class="home-tools">
+    <div class="home-tool" data-go="#/numbers"><span class="ic">🔢</span><span class="lbl" data-cn="数字" data-en="Numbers">数字</span></div>` +
+    (MODULE==='grammar' ? `
     <div class="home-tool" data-go="#/contrast"><span class="ic">🔀</span><span class="lbl" data-cn="辨析" data-en="Contrast">辨析</span></div>
     <div class="home-tool" data-go="#/ref"><span class="ic">📖</span><span class="lbl" data-cn="接续表" data-en="Reference">接续表</span></div>
-    <div class="home-tool" data-go="#/katsuyou"><span class="ic">🔄</span><span class="lbl" data-cn="活用" data-en="Conjugation">活用</span></div>
-  </div>`;
+    <div class="home-tool" data-go="#/katsuyou"><span class="ic">🔄</span><span class="lbl" data-cn="活用" data-en="Conjugation">活用</span></div>` : '') +
+  `</div>`;
   for(const w of weeks){
     const wt = w.title ? ` <span class="jp">${esc(w.title)}</span>` : '';
     const wsubText = LX(w.title_cn, w.title_en);
@@ -1146,6 +1181,25 @@ function renderFavFc(){
 
 /* ---------- contrast (语法辨析, N3 grammar only) ---------- */
 let ctMode='family', ctWeek=1;
+// 每个语法家族末尾的辨析练习：选项就是这一族的成员，逼着你在易混形式之间做选择。
+// 复用 examGrammarHTML 那套 .q/.qz/.qz-result/.qz-note 结构，所以判对错、显示解析、
+// 答错自动记进错题本这些行为全都是现成的，不需要新的事件处理。
+function ctQuizHTML(g){
+  const qz = g.quiz;
+  if(!qz || !(qz.items||[]).length) return '';
+  const ansMap = parseCircledAnswers(qz.answers);
+  const qs = qz.items.map(it=>{
+    const correct = ansMap[it.n];
+    let h = `<div class="q"><span class="n">${it.n}</span><span class="jp">${R(it,'q')}</span>`;
+    h += quizOptsHTML(it, correct!=null?correct:null);
+    if(correct!=null){
+      h += `<div class="qz-result"></div>`;
+      if(it.note) h += `<div class="qz-note">${esc(it.note)}</div>`;
+    }
+    return h + `</div>`;
+  }).join('');
+  return `<details class="ct-quiz"><summary>✍️ ${esc(qz.title||'辨析练习')}（${qz.items.length}题）</summary>${qs}</details>`;
+}
 function viewContrastFamily(){
   const C = G.contrast || {groups:[]};
   const groups = C.groups||[];
@@ -1160,6 +1214,7 @@ function viewContrastFamily(){
         + (r.eg_cn?`<div class="ct-egcn">译：${esc(r.eg_cn)}</div>`:'')
         + `<div class="ct-mean">${esc(r.mean)}</div></div>`;
     }
+    body += ctQuizHTML(g);
     body += `</div>`;
   });
   return `<div class="ct-wrap"><nav class="ct-toc"><div class="ct-toc-h">目录</div>${toc}</nav><div class="ct-body">${body}</div></div>`;
@@ -1194,6 +1249,54 @@ function viewContrast(){
     <button class="${ctMode==='week'?'on':''}" data-ctmode="week">每周总结</button>
   </div>`;
   app.innerHTML = modeBar + (ctMode==='week' ? viewContrastWeek() : viewContrastFamily());
+}
+
+/* ---------- numbers reference (global, level-agnostic) ---------- */
+// 数据里用「★」标出不规则读法，渲染时高亮出来——这是整个页面的重点
+function markStar(s){ return esc(s||'').replace(/★/g,'<span class="num-x">★</span>'); }
+function numTableHTML(t){
+  return `<div class="card">
+    ${t.caption?`<div class="num-cap jp">${markStar(t.caption)}</div>`:''}
+    <div class="table-scroll"><table class="ref">
+      ${t.cols?`<tr>${t.cols.map(c=>`<th class="jp">${markStar(c)}</th>`).join('')}</tr>`:''}
+      ${(t.rows||[]).map(r=>`<tr>${r.map(c=>`<td class="jp">${markStar(c)}</td>`).join('')}</tr>`).join('')}
+    </table></div>
+    ${t.note?`<div class="num-note">${markStar(t.note)}</div>`:''}
+  </div>`;
+}
+function numCounterHTML(c){
+  const irr = c.irr||[];
+  const cells = (c.forms||[]).map((f,i)=>{
+    const n=i+1;
+    return `<div class="cnt-cell${irr.includes(n)?' irr':''}"><span class="n">${n}</span><span class="r jp">${esc(f)}</span></div>`;
+  }).join('');
+  return `<div class="card">
+    <div class="cnt-head"><span class="cnt-suffix jp">${esc(c.suffix)}</span><span class="cnt-read jp">${esc(c.reading)}</span>${c.q?`<span class="cnt-q jp">何〜 ${esc(c.q)}</span>`:''}</div>
+    ${c.use?`<div class="cnt-use">${esc(c.use)}</div>`:''}
+    ${c.eg?`<div class="cnt-eg jp">例：${c.eg_r||esc(c.eg)}${sayBtn(c.eg)}</div>`:''}
+    <div class="cnt-grid">${cells}</div>
+    ${c.note?`<div class="num-note">${markStar(c.note)}</div>`:''}
+  </div>`;
+}
+function viewNumbers(){
+  setNav('home'); setHeader(LX('数字表达','Number Expressions'), true);
+  const N = DATA.numbers;
+  if(!N){ app.innerHTML='<div class="empty">数字数据加载中，请稍候…</div>'; return; }
+  const secs = N.sections||[];
+  let html = `<div class="num-nav">${secs.map(s=>`<a data-scroll="num-${s.id}">${esc(s.title)}</a>`).join('')}</div>`;
+  if(N.intro) html += `<div class="num-lead">${esc(N.intro)}</div>`;
+  for(const s of secs){
+    html += `<div class="num-sec-h" id="num-${esc(s.id)}">${esc(s.title)}${s.title_jp?`<small class="jp">${esc(s.title_jp)}</small>`:''}</div>`;
+    if(s.lead) html += `<div class="num-lead">${esc(s.lead)}</div>`;
+    if(s.type==='rules'){
+      for(const g of s.groups||[]) html += `<div class="card num-rule"><h4>${markStar(g.h)}</h4>${g.eg?`<div class="eg jp">${markStar(g.eg)}</div>`:''}${g.note?`<div class="num-note">${markStar(g.note)}</div>`:''}</div>`;
+    } else if(s.type==='counters'){
+      for(const c of s.counters||[]) html += numCounterHTML(c);
+    } else {
+      for(const t of s.tables||[]) html += numTableHTML(t);
+    }
+  }
+  app.innerHTML = html;
 }
 
 /* ---------- reference (grammar only) ---------- */
@@ -1264,10 +1367,11 @@ function viewKatsuyou(){
 const DATA_FILES = __DATA_FILES__;
 async function bootN3(){
   try{
-    const names=['grammar','vocab','kanji'];
-    const [g,v,k]=await Promise.all(names.map(n=>fetch('data/'+DATA_FILES[n]).then(r=>r.json())));
+    // numbers 只有 24KB，跟 N3 一起加载，保证「数字表达」随时点开就有
+    const names=['grammar','vocab','kanji','numbers'];
+    const [g,v,k,num]=await Promise.all(names.map(n=>fetch('data/'+DATA_FILES[n]).then(r=>r.json())));
     G=g; V=v; K=k;
-    DATA.grammar=G; DATA.vocab=V; DATA.kanji=K;
+    DATA.grammar=G; DATA.vocab=V; DATA.kanji=K; DATA.numbers=num;
     dataLoaded=true;
   }catch(e){ app.innerHTML='<div class="empty">数据加载失败，请检查网络后刷新重试。</div>'; return; }
   render();
