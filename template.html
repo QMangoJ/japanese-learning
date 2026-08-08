@@ -214,10 +214,12 @@ body.hide-cn .vcn,body.hide-cn .ven{visibility:hidden}
 .mlvl.ml-mid{background:var(--amber-soft);color:var(--amber)}
 .mlvl.ml-done{background:var(--green-soft);color:var(--green)}
 /* ---- 数字表达速查 ---- */
-.num-nav{display:flex;gap:6px;overflow-x:auto;padding:2px 0 10px;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
+.num-nav{display:flex;gap:6px;overflow-x:auto;padding:8px 0;position:sticky;top:var(--topbarh,97px);z-index:15;background:var(--bg);-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
 .num-nav a{flex:0 0 auto;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:5px 14px;font-size:13px;color:var(--ink);cursor:pointer;white-space:nowrap}
 .num-nav a:hover{border-color:var(--accent);color:var(--accent)}
-.num-sec-h{font-size:15px;font-weight:700;color:var(--accent);margin:20px 0 8px;display:flex;align-items:baseline;gap:8px;scroll-margin-top:calc(var(--topbarh,97px) + 8px)}
+.num-nav a.on{background:var(--accent);border-color:var(--accent);color:#fff}
+/* 锚点要同时让开顶栏和这条吸顶的目录条 */
+.num-sec-h{font-size:15px;font-weight:700;color:var(--accent);margin:20px 0 8px;display:flex;align-items:baseline;gap:8px;scroll-margin-top:calc(var(--topbarh,97px) + var(--numnavh,44px) + 8px)}
 .num-sec-h small{font-weight:400;color:var(--sub);font-size:13px}
 .num-lead{font-size:13px;color:var(--sub);margin-bottom:10px;line-height:1.6}
 .num-cap{font-size:14px;font-weight:700;margin:0 0 8px}
@@ -654,8 +656,38 @@ function updateStickyVars(){
   if(tb) document.documentElement.style.setProperty('--topbarh', tb.offsetHeight+'px');
   const ht = document.querySelector('.home-top');
   document.documentElement.style.setProperty('--hometoph', (ht?ht.offsetHeight:0)+'px');
+  const nn = document.querySelector('.num-nav');
+  if(nn) document.documentElement.style.setProperty('--numnavh', nn.offsetHeight+'px');
 }
 window.addEventListener('resize', updateStickyVars);
+
+/* 数字页吸顶目录：跟着滚动高亮当前小节，并把高亮的胶囊拉回可视范围。
+   render() 每次都会重建 DOM，所以这里用一个常驻监听器＋存在性判断，不需要销毁逻辑。 */
+function updateNumNavActive(){
+  const nav = document.querySelector('.num-nav');
+  if(!nav) return;
+  const heads = document.querySelectorAll('.num-sec-h');
+  if(!heads.length) return;
+  const line = nav.getBoundingClientRect().bottom + 4;
+  let activeId = heads[0].id;
+  heads.forEach(h=>{ if(h.getBoundingClientRect().top <= line) activeId = h.id; });
+  let onEl = null;
+  nav.querySelectorAll('a').forEach(a=>{
+    const on = a.dataset.scroll === activeId;
+    a.classList.toggle('on', on);
+    if(on) onEl = a;
+  });
+  if(onEl){ // 只在胶囊确实跑出视野时才横向滚动，避免和手动滑动打架
+    const nr = nav.getBoundingClientRect(), ar = onEl.getBoundingClientRect();
+    if(ar.left < nr.left || ar.right > nr.right) nav.scrollLeft += ar.left - nr.left - 12;
+  }
+}
+let _numNavTick = false;
+window.addEventListener('scroll', ()=>{
+  if(_numNavTick) return;
+  _numNavTick = true;
+  requestAnimationFrame(()=>{ _numNavTick = false; updateNumNavActive(); });
+}, {passive:true});
 function render(){
   if(!dataLoaded){ app.innerHTML='<div class="empty">加载中…</div>'; return; }
   const h = location.hash || '#/';
@@ -1297,6 +1329,8 @@ function viewNumbers(){
     }
   }
   app.innerHTML = html;
+  updateStickyVars();      // 先量出目录条高度，锚点的 scroll-margin 才是准的
+  updateNumNavActive();    // 首屏就把第一个小节点亮，不用等用户滚动
 }
 
 /* ---------- reference (grammar only) ---------- */
