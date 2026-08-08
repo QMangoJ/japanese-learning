@@ -282,6 +282,8 @@ body.hide-cn .vcn,body.hide-cn .ven{visibility:hidden}
 .home-tool{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:9px 4px;cursor:pointer;font-size:12.5px;color:var(--ink)}
 .home-tool .ic{font-size:18px}
 .home-tool:hover{border-color:var(--accent);color:var(--accent)}
+/* 级别专属的工具用虚线框跟通用参考区分开 */
+.home-tool.scoped{border-style:dashed}
 .week-card{scroll-margin-top:calc(var(--topbarh,97px) + var(--hometoph,40px))}
 @media (max-width:680px){
   .wk-toc{display:flex;gap:6px;overflow-x:auto;padding:6px 2px 4px;width:100%;max-width:100%;box-sizing:border-box;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
@@ -701,10 +703,12 @@ function render(){
   else if(h==='#/search') viewSearch();
   else if(h==='#/cards') viewCards();
   else if(h==='#/favs') viewFavs();
-  else if(h==='#/ref'){ if(MODULE!=='grammar') setModule('grammar'); viewRef(); }
+  // 接续表 / 活用表 / 数字表达讲的是日语本身，任何模块下都能直接看，不改当前模块。
+  // 辨析不同：它的内容就是 N3 语法的家族对照，跳转链接也指向 N3 语法的某天，所以仍要切过去。
+  else if(h==='#/ref') viewRef();
+  else if(h==='#/katsuyou') viewKatsuyou();
+  else if(h==='#/numbers') viewNumbers();
   else if(h==='#/contrast'){ if(MODULE!=='grammar') setModule('grammar'); viewContrast(); }
-  else if(h==='#/katsuyou'){ if(MODULE!=='grammar') setModule('grammar'); viewKatsuyou(); }
-  else if(h==='#/numbers') viewNumbers(); // 数字表达跟级别无关，不切模块
   else if(h==='#/mistakes') viewMistakes();
   else {
     let m = h.match(/^#\/day\/(\d)-(\d)(?:\/(p\d+|v\d+-\d+|k\d+))?$/);
@@ -733,13 +737,14 @@ function viewHome(){
   let html = `<div class="home-top"><div class="meta" style="margin-bottom:10px">${intro}</div>` +
     (weeks.length>3 ? `<div class="wk-toc">${weeks.map(w=>`<a class="wk-tocitem" data-scroll="wk-${w.n}">第${w.n}周</a>`).join('')}</div>` : '') +
     `</div>`;
-  // 数字表达跟级别/类型无关，所有模块的首页都放；辨析/接续表/活用仍然是 N3 语法专属
+  // 数字 / 接续表 / 活用 讲的是日语本身，不分级别，所以九个模块的首页都放；
+  // 辨析的内容是 N3 语法的家族对照，属于 N3 语法这一层，只在那里出现并标明级别。
   html += `<div class="home-tools">
-    <div class="home-tool" data-go="#/numbers"><span class="ic">🔢</span><span class="lbl" data-cn="数字" data-en="Numbers">数字</span></div>` +
+    <div class="home-tool" data-go="#/numbers"><span class="ic">🔢</span><span class="lbl" data-cn="数字" data-en="Numbers">数字</span></div>
+    <div class="home-tool" data-go="#/ref"><span class="ic">📖</span><span class="lbl" data-cn="接续表" data-en="Notation">接续表</span></div>
+    <div class="home-tool" data-go="#/katsuyou"><span class="ic">🔄</span><span class="lbl" data-cn="活用" data-en="Conjugation">活用</span></div>` +
     (MODULE==='grammar' ? `
-    <div class="home-tool" data-go="#/contrast"><span class="ic">🔀</span><span class="lbl" data-cn="辨析" data-en="Contrast">辨析</span></div>
-    <div class="home-tool" data-go="#/ref"><span class="ic">📖</span><span class="lbl" data-cn="接续表" data-en="Reference">接续表</span></div>
-    <div class="home-tool" data-go="#/katsuyou"><span class="ic">🔄</span><span class="lbl" data-cn="活用" data-en="Conjugation">活用</span></div>` : '') +
+    <div class="home-tool scoped" data-go="#/contrast"><span class="ic">🔀</span><span class="lbl" data-cn="N3辨析" data-en="N3 Contrast">N3辨析</span></div>` : '') +
   `</div>`;
   for(const w of weeks){
     const wt = w.title ? ` <span class="jp">${esc(w.title)}</span>` : '';
@@ -1312,8 +1317,8 @@ function numCounterHTML(c){
 }
 function viewNumbers(){
   setNav('home'); setHeader(LX('数字表达','Number Expressions'), true);
-  const N = DATA.numbers;
-  if(!N){ app.innerHTML='<div class="empty">数字数据加载中，请稍候…</div>'; return; }
+  const N = (DATA.common||{}).numbers;
+  if(!N){ app.innerHTML='<div class="empty">通用参考数据加载中，请稍候…</div>'; return; }
   const secs = N.sections||[];
   let html = `<div class="num-nav">${secs.map(s=>`<a data-scroll="num-${s.id}">${esc(s.title)}</a>`).join('')}</div>`;
   if(N.intro) html += `<div class="num-lead">${esc(N.intro)}</div>`;
@@ -1341,8 +1346,9 @@ function refTable(cols, rows){
   </table></div>`;
 }
 function viewRef(){
-  setNav('home'); setHeader('接続の表示方法', true);
-  const RF=G.reference;
+  setNav('home'); setHeader(LX('接续表示法 · 接続の表示方法','Connection Notation'), true);
+  const RF=(DATA.common||{}).reference;
+  if(!RF){ app.innerHTML='<div class="empty">通用参考数据加载中，请稍候…</div>'; return; }
   let html=`<div class="meta" style="margin-bottom:10px">${esc(RF.note)}</div>`;
   html+=`<div class="card"><h3 class="jp" style="margin-top:0">${esc(RF.verb.heading)}</h3>
     ${RF.verb.groups.map(g=>`<div class="meta jp">${esc(g)}</div>`).join('')}
@@ -1366,17 +1372,17 @@ function ktable(cols, rows){
 }
 function viewKatsuyou(){
   setNav('home'); setHeader(LX('活用一覧 · 普通形/丁寧形/尊敬語','Conjugation: Plain/Polite/Honorific'), true);
-  const K2 = G.katsuyou;
-  if(!K2){ app.innerHTML='<div class="empty">暂无内容</div>'; return; }
-  let html = K2.intro ? `<div class="meta" style="margin-bottom:10px">${esc(K2.intro)}</div>` : '';
-  (K2.sections||[]).forEach(s=>{
+  const KY = (DATA.common||{}).katsuyou;   // 变量名避开全局的 K2（N2汉字），别再互相遮蔽
+  if(!KY){ app.innerHTML='<div class="empty">通用参考数据加载中，请稍候…</div>'; return; }
+  let html = KY.intro ? `<div class="meta" style="margin-bottom:10px">${esc(KY.intro)}</div>` : '';
+  (KY.sections||[]).forEach(s=>{
     html += `<div class="card"><h3 class="jp" style="margin-top:0">${esc(s.kind)} <span class="meta">${esc(s.kindEn)}</span></h3>`;
     html += `<div class="meta jp" style="margin-bottom:6px">例：${esc(s.word)}</div>`;
     html += ktable(s.cols, s.rows);
     if(s.note) html += `<div class="note"><span class="jp">${esc(s.note)}</span></div>`;
     html += `</div>`;
   });
-  const V3 = K2.verb;
+  const V3 = KY.verb;
   if(V3){
     html += `<div class="card"><h3 class="jp" style="margin-top:0">${esc(V3.kind)} <span class="meta">${esc(V3.kindEn)}</span></h3>`;
     html += `<div class="meta jp" style="margin-bottom:6px">例：${esc(V3.word)}</div>`;
@@ -1394,18 +1400,18 @@ function viewKatsuyou(){
     }
     html += `</div>`;
   }
-  if(K2.footer) html += `<div class="meta" style="margin-top:10px">${esc(K2.footer)}</div>`;
+  if(KY.footer) html += `<div class="meta" style="margin-top:10px">${esc(KY.footer)}</div>`;
   app.innerHTML = html;
 }
 
 const DATA_FILES = __DATA_FILES__;
 async function bootN3(){
   try{
-    // numbers 只有 24KB，跟 N3 一起加载，保证「数字表达」随时点开就有
-    const names=['grammar','vocab','kanji','numbers'];
-    const [g,v,k,num]=await Promise.all(names.map(n=>fetch('data/'+DATA_FILES[n]).then(r=>r.json())));
+    // common（接续表/活用表/数字表达）跟级别无关但每个模块都可能点开，体积也小，跟 N3 一起加载
+    const names=['grammar','vocab','kanji','common'];
+    const [g,v,k,com]=await Promise.all(names.map(n=>fetch('data/'+DATA_FILES[n]).then(r=>r.json())));
     G=g; V=v; K=k;
-    DATA.grammar=G; DATA.vocab=V; DATA.kanji=K; DATA.numbers=num;
+    DATA.grammar=G; DATA.vocab=V; DATA.kanji=K; DATA.common=com;
     dataLoaded=true;
   }catch(e){ app.innerHTML='<div class="empty">数据加载失败，请检查网络后刷新重试。</div>'; return; }
   render();

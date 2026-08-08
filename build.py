@@ -19,7 +19,7 @@ K2SRC = os.path.join(SRC, "n2-kanji")
 N4SRC = os.path.join(SRC, "n4-grammar")
 N4VSRC = os.path.join(SRC, "n4-vocab")
 K4SRC = os.path.join(SRC, "n4-kanji")
-NUMSRC = os.path.join(SRC, "numbers")
+COMSRC = os.path.join(SRC, "common")  # 跟级别无关的通用参考：接续表 / 活用表 / 数字表达
 TEMPLATE = os.path.join(HERE, "template.html")
 OUT_DIR = os.path.join(HERE, "public")
 OUT = os.path.join(OUT_DIR, "index.html")
@@ -232,9 +232,6 @@ def main():
             for a in wk.get(k) or []:
                 if a.get("note"):
                     a["note_r"] = ruby(a["note"])
-    with open(os.path.join(GSRC, "reference.json"), encoding="utf-8") as f:
-        reference = json.load(f)
-
     with open(os.path.join(GSRC, "contrast.json"), encoding="utf-8") as f:
         contrast = json.load(f)
     for g in contrast.get("groups", []):
@@ -250,10 +247,13 @@ def main():
                 if it.get("opts"):
                     it["opts_r"] = rlist(it["opts"])
 
-    with open(os.path.join(GSRC, "katsuyou.json"), encoding="utf-8") as f:
+    # 接续表 / 活用表 / 数字表达属于日语本身，跟 N3/N2/N4 无关，
+    # 所以放在 common/ 下打成一个独立的包，不再挂在 N3 语法里。
+    with open(os.path.join(COMSRC, "reference.json"), encoding="utf-8") as f:
+        reference = json.load(f)
+    with open(os.path.join(COMSRC, "katsuyou.json"), encoding="utf-8") as f:
         katsuyou = json.load(f)
-
-    with open(os.path.join(NUMSRC, "numbers.json"), encoding="utf-8") as f:
+    with open(os.path.join(COMSRC, "numbers.json"), encoding="utf-8") as f:
         numbers = json.load(f)
     # 只给量词的例词注音：表格本身就是「汉字→读法」的对照，注音会把答案提前剧透
     for sec in numbers.get("sections", []):
@@ -280,7 +280,7 @@ def main():
         w["title"], w["title_cn"] = d1.get("theme", ""), d1.get("theme_cn", "")
 
     data = {
-        "grammar": {"weeks": gweeks, "besatsu": besatsu, "reference": reference, "contrast": contrast, "katsuyou": katsuyou},
+        "grammar": {"weeks": gweeks, "besatsu": besatsu, "contrast": contrast},
         "kanji": {"weeks": kweeks},
         "vocab": {"weeks": vweeks},
         "n2grammar": {"weeks": n2weeks},
@@ -289,7 +289,7 @@ def main():
         "n4grammar": {"weeks": n4weeks},
         "n4vocab": {"weeks": n4vweeks},
         "n4kanji": {"weeks": k4weeks},
-        "numbers": numbers,
+        "common": {"reference": reference, "katsuyou": katsuyou, "numbers": numbers},
     }
 
     with open(TEMPLATE, encoding="utf-8") as f:
