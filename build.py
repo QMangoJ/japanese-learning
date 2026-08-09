@@ -202,14 +202,25 @@ def complete_week_numbers(folder, max_week=20):
     return [w for w in range(1, max_week + 1)
             if all(os.path.exists(os.path.join(folder, f"w{w}d{d}.json")) for d in range(1, 8))]
 
+def available_week_numbers(folder, max_week=20):
+    """Weeks holding at least one day file."""
+    return [w for w in range(1, max_week + 1)
+            if any(os.path.exists(os.path.join(folder, f"w{w}d{d}.json")) for d in range(1, 8))]
+
 def load_days_sparse(folder, week_numbers, annotate):
+    """Missing days are skipped rather than dropping the whole week: a week that
+    is short a day still has the other six worth reading."""
     out = []
     for w in week_numbers:
         days = []
         for d in range(1, 8):
-            with open(os.path.join(folder, f"w{w}d{d}.json"), encoding="utf-8") as f:
+            path = os.path.join(folder, f"w{w}d{d}.json")
+            if not os.path.exists(path):
+                continue
+            with open(path, encoding="utf-8") as f:
                 days.append(annotate(json.load(f)))
-        out.append({"n": w, "days": days})
+        if days:
+            out.append({"n": w, "days": days})
     return out
 
 GMETA = {
@@ -276,7 +287,7 @@ def main():
     for w in kweeks:
         d1 = w["days"][0]
         w["title"], w["title_cn"] = d1.get("theme", ""), d1.get("theme_cn", "")
-    v2weeks = load_days_sparse(V2SRC, complete_week_numbers(V2SRC), annotate_v)  # N2词汇: 允许跳过缺失的周(第5/6周部分数据暂缺)
+    v2weeks = load_days_sparse(V2SRC, available_week_numbers(V2SRC), annotate_v)  # N2词汇: 第5周缺d7、第6周缺d1/d3/d5，其余照常出
     k2weeks = load_days(K2SRC, count_weeks(K2SRC), annotate_k)  # N2汉字: auto-detects how many周已录入
     for w in k2weeks:
         d1 = w["days"][0]

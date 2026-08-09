@@ -885,7 +885,9 @@ function viewHome(){
     (MODULE==='vocab'||MODULE==='n2vocab'||MODULE==='n4vocab')?'vocabulary':((MODULE==='kanji'||MODULE==='n2kanji'||MODULE==='n4kanji')?'kanji':'grammar')
   );
   const weeks = CUR().weeks;
-  const intro = LX(`《${book}》 · ${weeks.length} 周 × 7 天 · 点击进入每日${kind}`, `${book} · ${weeks.length} weeks × 7 days · Tap to open each day's ${kind}`);
+  // 不写死「× 7 天」：N2 词汇有两周是缺天的，写死会跟周里实际列出的天数对不上
+  const totalDays = weeks.reduce((n,w)=>n+w.days.length, 0);
+  const intro = LX(`《${book}》 · ${weeks.length} 周 · 共 ${totalDays} 天 · 点击进入每日${kind}`, `${book} · ${weeks.length} weeks · ${totalDays} days · Tap to open each day's ${kind}`);
   let html = `<div class="home-top"><div class="meta" style="margin-bottom:10px">${intro}</div>` +
     (weeks.length>3 ? `<div class="wk-toc">${weeks.map(w=>`<a class="wk-tocitem" data-wkjump="${w.n}">第${w.n}周</a>`).join('')}</div>` : '') +
     `</div>`;
