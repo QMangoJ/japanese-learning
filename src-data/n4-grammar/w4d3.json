@@ -1,92 +1,194 @@
 {
-  "week": 4, "day": 3, "title": "この本は使いやすいです。", "title_cn": "这本书很好用。", "title_en": "This book is easy to use.",
-  "points": [
+ "week": 4,
+ "day": 3,
+ "title": "この本は使いやすいです。",
+ "title_cn": "这本书很好用。",
+ "title_en": "This book is easy to use.",
+ "points": [
+  {
+   "pattern": "〜すぎる",
+   "connection": "V-ます＋すぎる；い形容詞（い）＋すぎる；な形容詞（語幹）＋すぎる",
+   "usage_jp": "程度がひどく、適当でないことを表す。",
+   "usage_cn": "表示超过某种程度，不合适。",
+   "usage_en": "Marks excess — too much of something, to an inappropriate degree.",
+   "examples": [
     {
-      "pattern": "〜すぎる",
-      "connection": "V-ます＋すぎる／い形容詞（い）＋すぎる／な形容詞（語幹）＋すぎる",
-      "usage_jp": "程度がひどく、適当でないことを表す。",
-      "usage_cn": "表示超过某种程度，不合适。",
-      "usage_en": "Marks excess — too much of something, to an inappropriate degree.",
-      "examples": [
-        {"jp": "きのう、お酒を飲みすぎて、頭がいたい。", "cn": "昨天喝多了酒，头疼。", "en": "I drank too much yesterday and now my head hurts."},
-        {"jp": "漢字は多すぎて覚えられません。", "cn": "汉字太多了记不住。", "en": "There are too many kanji, I can't memorize them."}
-      ],
-      "notes": []
+     "jp": "きのう、お酒を飲みすぎて、頭がいたい。",
+     "cn": "昨天喝多了酒，头疼。",
+     "en": "I drank too much yesterday and now my head hurts."
     },
     {
-      "pattern": "Vやすい",
-      "connection": "V-ます＋やすい",
-      "usage_jp": "①「かんたんに〜できる」という意味を表す。②「すぐに〜してしまう」という意味を表す。",
-      "usage_cn": "①意为“容易做（かんたんに〜できる）”。②意为“一下子就……（すぐに〜してしまう）”。",
-      "usage_en": "① Means \"easy to do ~.\" ② Means \"prone to ~ / quick to ~.\"",
-      "examples": [
-        {"jp": "田中先生の説明はわかりやすいです。", "cn": "田中老师的讲解很容易懂。", "en": "Mr. Tanaka's explanations are easy to understand."},
-        {"jp": "このくつはじょうぶではきやすい。", "cn": "这双鞋结实又好穿。", "en": "These shoes are sturdy and easy to wear."},
-        {"jp": "そのワイングラスはうすくて割れやすいから、気をつけて。", "cn": "那个酒杯很薄，容易碎，小心点。", "en": "That wine glass is thin and breaks easily, so be careful."}
-      ],
-      "notes": []
-    },
-    {
-      "pattern": "Vにくい",
-      "connection": "V-ます＋にくい",
-      "usage_jp": "①「かんたんに〜できない」という意味を表す。②「なかなか〜しない」という意味を表す。",
-      "usage_cn": "①意为“不容易做（かんたんに〜できない）”。②意为“怎么都不做（なかなか〜しない）”。",
-      "usage_en": "① Means \"hard to do ~.\" ② Means \"resistant to ~ / doesn't easily ~.\"",
-      "examples": [
-        {"jp": "この地図は、小さくてわかりにくいです。", "cn": "这张地图太小，不容易看懂。", "en": "This map is small and hard to read."},
-        {"jp": "カタカナが多いと、読みにくい。", "cn": "片假名多的话，不容易读。", "en": "If there's a lot of katakana, it's hard to read."},
-        {"jp": "この紙はじょうぶでやぶれにくい。", "cn": "这张纸很结实，不容易破。", "en": "This paper is sturdy and doesn't tear easily."}
-      ],
-      "notes": []
-    },
-    {
-      "pattern": "V出す",
-      "connection": "V-ます＋出す",
-      "usage_jp": "「動作が始まる」という意味を表す。",
-      "usage_cn": "意为“某动作开始”。",
-      "usage_en": "Means \"start to ~\" (a sudden onset).",
-      "examples": [
-        {"jp": "赤ちゃんが急に泣き出した。", "eq": "＝泣き始めた", "cn": "婴儿突然哭了起来。", "en": "The baby suddenly started crying."}
-      ],
-      "notes": []
-    },
-    {
-      "pattern": "V終わる",
-      "connection": "V-ます＋終わる　↔V始める",
-      "usage_jp": "「動作が終わる」という意味を表す。",
-      "usage_cn": "意为“某动作结束”。",
-      "usage_en": "Means \"finish ~ing.\"",
-      "examples": [
-        {"jp": "ご飯を食べ終わるまで、待っていてください。", "cn": "请等我吃完饭。", "en": "Please wait until I finish eating."}
-      ],
-      "notes": []
-    },
-    {
-      "pattern": "V続ける",
-      "connection": "V-ます＋続ける",
-      "usage_jp": "「動作が続く」という意味を表す。",
-      "usage_cn": "意为“某动作持续”。",
-      "usage_en": "Means \"continue ~ing.\"",
-      "examples": [
-        {"jp": "1週間、この薬を飲み続けてください。", "cn": "请连续服用这个药一周。", "en": "Please keep taking this medicine for a week."}
-      ],
-      "notes": []
+     "jp": "漢字は多すぎて覚えられません。",
+     "cn": "汉字太多了记不住。",
+     "en": "There are too many kanji, I can't memorize them."
     }
-  ],
-  "exercises": {
-    "answers_note": "答えはp.57",
-    "sections": [
-      {"type": "choice", "instruction": "（　）に何を入れますか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
-        {"n": 1, "q": "きのう、歩き（　）、足がいたいです。", "options": ["1 すぎて", "2 つづいて", "3 だして", "4 はじめて"]},
-        {"n": 2, "q": "安いパソコンはこわれ（　）って聞きましたが、だいじょうぶでしょうか。", "options": ["1 すぎる", "2 だす", "3 やすい", "4 にくい"]},
-        {"n": 3, "q": "A「このカニ、おいしいですね。」B「そうですか。食べ（　）し、わたしはあんまり好きじゃありません。」", "options": ["1 やすい", "2 にくい", "3 はじめる", "4 おわらない"]}
-      ]},
-      {"type": "order", "instruction": "＿★＿に入るものはどれですか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
-        {"n": 4, "q": "医者「足はどうですか。まだいたいですか。」患者「そうですね、＿＿　＿＿　★　＿＿けれど、今はだいじょうぶです。」", "options": ["1 ずっと", "2 いたくなる", "3 歩きつづける", "4 と"]},
-        {"n": 5, "q": "歌を＿＿　＿＿　★　＿＿が楽しくなりました。", "options": ["1 毎日", "2 はじめて", "3 から", "4 習い"]}
-      ]}
-    ],
-    "answers": "①1 ②3 ③2 ④3→4→★1→2 ⑤4→2→★3→1"
+   ],
+   "notes": []
   },
-  "hitokoto": ""
+  {
+   "pattern": "Vやすい",
+   "connection": "V-ます＋やすい",
+   "usage_jp": "①「かんたんに〜できる」という意味を表す。②「すぐに〜してしまう」という意味を表す。",
+   "usage_cn": "①意为“容易做（かんたんに〜できる）”。②意为“一下子就……（すぐに〜してしまう）”。",
+   "usage_en": "① Means \"easy to do ~.\" ② Means \"prone to ~ / quick to ~.\"",
+   "examples": [
+    {
+     "jp": "田中先生の説明はわかりやすいです。",
+     "cn": "田中老师的讲解很容易懂。",
+     "en": "Mr. Tanaka's explanations are easy to understand."
+    },
+    {
+     "jp": "このくつはじょうぶではきやすい。",
+     "cn": "这双鞋结实又好穿。",
+     "en": "These shoes are sturdy and easy to wear."
+    },
+    {
+     "jp": "そのワイングラスはうすくて割れやすいから、気をつけて。",
+     "cn": "那个酒杯很薄，容易碎，小心点。",
+     "en": "That wine glass is thin and breaks easily, so be careful."
+    }
+   ],
+   "notes": []
+  },
+  {
+   "pattern": "Vにくい",
+   "connection": "V-ます＋にくい",
+   "usage_jp": "①「かんたんに〜できない」という意味を表す。②「なかなか〜しない」という意味を表す。",
+   "usage_cn": "①意为“不容易做（かんたんに〜できない）”。②意为“怎么都不做（なかなか〜しない）”。",
+   "usage_en": "① Means \"hard to do ~.\" ② Means \"resistant to ~ / doesn't easily ~.\"",
+   "examples": [
+    {
+     "jp": "この地図は、小さくてわかりにくいです。",
+     "cn": "这张地图太小，不容易看懂。",
+     "en": "This map is small and hard to read."
+    },
+    {
+     "jp": "カタカナが多いと、読みにくい。",
+     "cn": "片假名多的话，不容易读。",
+     "en": "If there's a lot of katakana, it's hard to read."
+    },
+    {
+     "jp": "この紙はじょうぶでやぶれにくい。",
+     "cn": "这张纸很结实，不容易破。",
+     "en": "This paper is sturdy and doesn't tear easily."
+    }
+   ],
+   "notes": []
+  },
+  {
+   "pattern": "V出す",
+   "connection": "V-ます＋出す",
+   "usage_jp": "「動作が始まる」という意味を表す。",
+   "usage_cn": "意为“某动作开始”。",
+   "usage_en": "Means \"start to ~\" (a sudden onset).",
+   "examples": [
+    {
+     "jp": "赤ちゃんが急に泣き出した。",
+     "eq": "＝泣き始めた",
+     "cn": "婴儿突然哭了起来。",
+     "en": "The baby suddenly started crying."
+    }
+   ],
+   "notes": []
+  },
+  {
+   "pattern": "V終わる",
+   "connection": "V-ます＋終わる　↔V始める",
+   "usage_jp": "「動作が終わる」という意味を表す。",
+   "usage_cn": "意为“某动作结束”。",
+   "usage_en": "Means \"finish ~ing.\"",
+   "examples": [
+    {
+     "jp": "ご飯を食べ終わるまで、待っていてください。",
+     "cn": "请等我吃完饭。",
+     "en": "Please wait until I finish eating."
+    }
+   ],
+   "notes": []
+  },
+  {
+   "pattern": "V続ける",
+   "connection": "V-ます＋続ける",
+   "usage_jp": "「動作が続く」という意味を表す。",
+   "usage_cn": "意为“某动作持续”。",
+   "usage_en": "Means \"continue ~ing.\"",
+   "examples": [
+    {
+     "jp": "1週間、この薬を飲み続けてください。",
+     "cn": "请连续服用这个药一周。",
+     "en": "Please keep taking this medicine for a week."
+    }
+   ],
+   "notes": []
+  }
+ ],
+ "exercises": {
+  "answers_note": "答えはp.57",
+  "sections": [
+   {
+    "type": "choice",
+    "instruction": "（　）に何を入れますか。1・2・3・4からいちばんいいものを一つえらんでください。",
+    "items": [
+     {
+      "n": 1,
+      "q": "きのう、歩き（　）、足がいたいです。",
+      "options": [
+       "1 すぎて",
+       "2 つづいて",
+       "3 だして",
+       "4 はじめて"
+      ]
+     },
+     {
+      "n": 2,
+      "q": "安いパソコンはこわれ（　）って聞きましたが、だいじょうぶでしょうか。",
+      "options": [
+       "1 すぎる",
+       "2 だす",
+       "3 やすい",
+       "4 にくい"
+      ]
+     },
+     {
+      "n": 3,
+      "q": "A「このカニ、おいしいですね。」B「そうですか。食べ（　）し、わたしはあんまり好きじゃありません。」",
+      "options": [
+       "1 やすい",
+       "2 にくい",
+       "3 はじめる",
+       "4 おわらない"
+      ]
+     }
+    ]
+   },
+   {
+    "type": "order",
+    "instruction": "＿★＿に入るものはどれですか。1・2・3・4からいちばんいいものを一つえらんでください。",
+    "items": [
+     {
+      "n": 4,
+      "q": "医者「足はどうですか。まだいたいですか。」患者「そうですね、＿＿　＿＿　★　＿＿けれど、今はだいじょうぶです。」",
+      "options": [
+       "1 ずっと",
+       "2 いたくなる",
+       "3 歩きつづける",
+       "4 と"
+      ]
+     },
+     {
+      "n": 5,
+      "q": "歌を＿＿　＿＿　★　＿＿が楽しくなりました。",
+      "options": [
+       "1 毎日",
+       "2 はじめて",
+       "3 から",
+       "4 習い"
+      ]
+     }
+    ]
+   }
+  ],
+  "answers": "①1 ②3 ③2 ④3→4→★1→2 ⑤4→2→★3→1"
+ },
+ "hitokoto": ""
 }

@@ -103,11 +103,15 @@ main{max-width:760px;margin:0 auto;padding:14px}
 .conn-label{font-size:11px;font-weight:700;letter-spacing:.08em;opacity:.75;display:block;margin-bottom:4px}
 /* 一条接続里「／」是并列的候选、「＋」是前后接的连接点。原来全挤在一行文字里，
    换行还会断在分隔符上，根本看不出谁跟谁是一组，所以把候选各自框起来。 */
-/* 一个候选一行就够了，不用加框——悬挂缩进让折行的部分明显还属于上一条 */
-.conn-line{padding-left:14px;text-indent:-14px;line-height:1.55}
-.conn-line.tail{padding-left:32px;text-indent:-18px}
-.conn-grp+.conn-grp{margin-top:6px}
-.conn-plus{font-weight:800;margin-right:3px}
+/* 照书上的二维排版：固定部分横着走，可替换的部分竖着列在方括号里 */
+.conn-row{display:flex;flex-wrap:wrap;align-items:center;gap:4px;line-height:1.5}
+.conn-grp+.conn-grp{margin-top:7px}
+.conn-br{position:relative;display:inline-flex;flex-direction:column;gap:2px;padding:3px 11px;margin:1px 0;max-width:100%}
+.conn-br::before,.conn-br::after{content:'';position:absolute;top:0;bottom:0;width:6px;
+  border-top:1.5px solid currentColor;border-bottom:1.5px solid currentColor}
+.conn-br::before{left:0;border-left:1.5px solid currentColor}
+.conn-br::after{right:0;border-right:1.5px solid currentColor}
+.conn-note{margin-top:4px;font-size:11.5px;opacity:.75}
 .usage{font-size:14.5px;margin:4px 0}
 .usage .cn{color:var(--accent);font-weight:600}
 .ex{border-left:3px solid var(--line);padding:2px 0 2px 10px;margin:8px 0}
@@ -1077,22 +1081,33 @@ function scrollHighlight(id){
    注意 ASCII 的 "/"（V/A/na/N 这种）不是分隔符，只有全角「／」是，所以只切全角。
    「＋」正好一个时才当连接点拆前后两半；出现多个说明它属于各个候选内部（如
    Aくて＋仕方がない／naで＋しょうがない），那就只按「／」切，别拆坏。 */
-function connLines(seg, isTail){
-  return seg.split('／').map(s=>s.trim()).filter(Boolean).map((s,i)=>{
-    // 后接有多个候选时，除第一行外用一个隐形的「＋」占位，让它们跟第一行对齐，
-    // 不然第二行会顶到最左边，看着像是又回到了前接
-    const mark = isTail ? `<span class="conn-plus"${i?' style="visibility:hidden"':''}>＋</span>` : '';
-    return `<div class="conn-line${isTail?' tail':''}">${mark}${fmt(s)}</div>`;
+/* 括号内的「／」是说明文字的一部分（如「注意：Nだ／naだ→だを取る」），不能当分隔符切开 */
+function splitTop(str, sep){
+  const out=[]; let depth=0, cur='';
+  for(const ch of str){
+    if('（(「〈〔'.indexOf(ch)>=0) depth++;
+    else if('）)」〉〕'.indexOf(ch)>=0) depth--;
+    if(ch===sep && depth===0){ out.push(cur); cur=''; }
+    else cur += ch;
+  }
+  out.push(cur); return out;
+}
+/* 一个「槽」＝两个「＋」之间的部分。槽里只有一项就是固定部分，
+   有多项就竖着列进方括号里——跟书上的排版一致。 */
+function connSlotsHTML(row){
+  return splitTop(row,'＋').map(s=>s.trim()).filter(Boolean).map(seg=>{
+    const alts = splitTop(seg,'／').map(x=>x.trim()).filter(Boolean);
+    if(alts.length<2) return `<span class="conn-fix jp">${fmt(seg)}</span>`;
+    return `<span class="conn-br">${alts.map(a=>`<span class="conn-alt jp">${fmt(a)}</span>`).join('')}</span>`;
   }).join('');
 }
 function connHTML(str){
   return String(str||'').split(/[；　]/).map(s=>s.trim()).filter(Boolean).map(g=>{
-    const parts = g.split('＋');
-    // 后接另起一行并带上「＋」，否则接在候选后面会被当成又一个候选
-    const body = parts.length===2
-      ? connLines(parts[0], false) + connLines(parts[1], true)
-      : connLines(g, false);
-    return `<div class="conn-grp">${body}</div>`;
+    // 「（注意：…）」是补充说明，不属于接続本身，抽出来放在下面一行
+    const m = g.match(/^([\s\S]*?)(（注意：[^）]*）)\s*$/);
+    const row = m ? m[1].trim() : g, note = m ? m[2] : '';
+    return `<div class="conn-grp"><div class="conn-row">${connSlotsHTML(row)}</div>` +
+      (note ? `<div class="conn-note jp">${fmt(note)}</div>` : '') + `</div>`;
   }).join('');
 }
 function connBlockHTML(p){
