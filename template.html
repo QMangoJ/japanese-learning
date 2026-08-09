@@ -25,24 +25,50 @@ html{margin:0;padding:0;max-width:100%;overflow-x:hidden}
 body{margin:0;padding:0;max-width:100%;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans","Hiragino Kaku Gothic ProN","Microsoft YaHei","Noto Sans CJK SC",sans-serif;font-size:16px;line-height:1.65;padding-bottom:calc(64px + env(safe-area-inset-bottom));overflow-wrap:break-word}
 .jp{font-family:-apple-system,"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic","Noto Sans CJK JP","PingFang SC",sans-serif}
 .topbar{position:sticky;top:0;z-index:20}
-header.top{background:var(--card);border-bottom:1px solid var(--line);padding:10px 14px;display:flex;align-items:center;gap:10px;box-shadow:var(--shadow)}
-header.top .back{border:none;background:none;color:var(--blue);font-size:15px;padding:4px 6px;cursor:pointer;flex:none}
+header.top{background:var(--card);border-bottom:1px solid var(--line);padding:8px 12px;display:flex;align-items:center;gap:7px;box-shadow:var(--shadow)}
+header.top .back{border:none;background:none;color:var(--blue);font-size:15px;padding:4px 2px;cursor:pointer;flex:none}
 header.top h1{font-size:16px;margin:0;font-weight:700;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* 级别收成标题栏里的一个胶囊：换级别是低频操作，点开弹层选；
+   类型（语法/单词/汉字）是高频操作，保持常驻一排、点一下就切。 */
+.lvchip{flex:none;display:flex;align-items:center;gap:4px;border:1px solid var(--blue);background:var(--blue-soft);color:var(--blue);border-radius:999px;padding:5px 12px;font-size:14px;font-weight:800;letter-spacing:.5px;cursor:pointer;min-height:32px}
+.lvchip .cv{font-size:10px;opacity:.7}
 .modewrap{background:var(--card);border-bottom:1px solid var(--line)}
-.levelbar{display:flex;gap:8px;justify-content:center;padding:8px 14px 5px}
-.levelbar button{border:1px solid var(--line);background:var(--bg);color:var(--sub);border-radius:999px;padding:5px 26px;font-size:14px;font-weight:800;letter-spacing:.5px;cursor:pointer;min-width:84px}
-.levelbar button.on{background:var(--blue);border-color:var(--blue);color:#fff}
-.typebar{display:flex;gap:6px;justify-content:center;padding:0 14px 8px}
+.typebar{display:flex;gap:6px;justify-content:center;padding:8px 14px}
 .typebar button{flex:1;max-width:170px;border:1px solid var(--line);background:var(--bg);color:var(--sub);border-radius:999px;padding:6px 0;font-size:14px;font-weight:700;cursor:pointer}
 .langbar{display:flex;gap:4px;flex:none}
 .langbar button{border:1px solid var(--line);background:var(--bg);color:var(--sub);border-radius:999px;padding:4px 10px;font-size:12px;font-weight:700;cursor:pointer}
 .langbar button.on{background:var(--accent);border-color:var(--accent);color:#fff}
 .typebar button.on{background:var(--accent);border-color:var(--accent);color:#fff}
+/* 通用底部弹层：级别选择和「通用知识」共用这一套 */
+.sheet-mask{position:fixed;inset:0;z-index:40;background:rgba(0,0,0,.42)}
+.sheet{position:fixed;left:0;right:0;bottom:0;z-index:41;background:var(--card);border-top:1px solid var(--line);
+  border-radius:16px 16px 0 0;box-shadow:0 -6px 24px rgba(0,0,0,.18);
+  padding:8px 14px calc(14px + env(safe-area-inset-bottom));max-height:76vh;overflow-y:auto}
+.sheet-grip{width:36px;height:4px;border-radius:3px;background:var(--line);margin:2px auto 10px}
+.sheet-h{display:flex;align-items:baseline;gap:8px;font-size:14px;font-weight:700;margin-bottom:10px}
+.sheet-h .sub{font-size:12px;font-weight:400;color:var(--sub)}
+.sheet-row{display:flex;gap:8px;margin-bottom:8px}
+.sheet-item{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:12px 6px;cursor:pointer;color:var(--ink);font-size:13.5px;min-height:60px;justify-content:center}
+.sheet-item .ic{font-size:20px;line-height:1}
+.sheet-item .sub{font-size:11px;color:var(--sub)}
+.sheet-item.on{border-color:var(--blue);background:var(--blue-soft);color:var(--blue);font-weight:700}
+.sheet-item.scoped{border-style:dashed}
 main{max-width:760px;margin:0 auto;padding:14px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:14px 16px;margin-bottom:12px}
-.week-card{cursor:pointer}
+.week-card{cursor:pointer;padding:0}
+/* 周做成手风琴：默认只展开上次看的那一周，其余收起，一屏能看全 */
+.wk-head{display:flex;align-items:center;gap:10px;padding:12px 16px;cursor:pointer}
+.wk-t{flex:1;min-width:0}
+.wk-head h2{margin:0;font-size:17px;line-height:1.35}
+.wk-head .sub{color:var(--sub);font-size:12.5px;line-height:1.4}
+.wk-head .cnt{font-size:12px;color:var(--sub);flex:none;white-space:nowrap}
+.wk-head .cv{flex:none;font-size:12px;color:var(--sub);width:12px;text-align:center}
+.wk-body{padding:0 16px 14px}
 .week-card h2{margin:0 0 2px;font-size:18px}
 .week-card .sub{color:var(--sub);font-size:13px}
+/* 天的行里预览当天内容，不用点进去就知道这天讲什么 */
+.day-prev{display:flex;flex-wrap:wrap;gap:4px;margin-top:5px}
+.day-prev .dp{font-size:11.5px;color:var(--sub);border:1px solid var(--line);border-radius:999px;padding:1px 7px;white-space:nowrap;max-width:100%;overflow:hidden;text-overflow:ellipsis}
 .day-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:8px;margin-top:10px}
 .day-item{border:1px solid var(--line);border-radius:10px;padding:8px 10px;cursor:pointer;background:var(--bg)}
 .day-item:active{transform:scale(.98)}
@@ -164,7 +190,8 @@ table.ref{border-collapse:collapse;width:100%;font-size:13px;margin:8px 0}
 table.ref th,table.ref td{border:1px solid var(--line);padding:5px 7px;text-align:left;vertical-align:top}
 table.ref th{background:var(--bg)}
 .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
-.toggle-all{border:1px solid var(--line);background:var(--card);color:var(--sub);border-radius:8px;padding:4px 12px;font-size:13px;cursor:pointer;margin-left:auto}
+.toggle-all{flex:none;border:1px solid var(--line);background:var(--card);color:var(--sub);border-radius:999px;width:32px;height:32px;padding:0;font-size:15px;line-height:1;cursor:pointer}
+.toggle-all.on{background:var(--accent);border-color:var(--accent);color:#fff}
 h2.page{font-size:19px;margin:4px 0 12px}
 .empty{color:var(--sub);text-align:center;padding:40px 0}
 .crumb{color:var(--sub);font-size:13px;margin-bottom:8px}
@@ -172,7 +199,7 @@ a.plink{color:var(--blue);text-decoration:none}
 del{text-decoration:line-through;color:var(--sub)}
 ruby rt{font-size:.55em;color:var(--sub);letter-spacing:0;user-select:none}
 body.no-ruby rt{visibility:hidden}
-.mem-bar{display:flex;gap:8px;margin-bottom:12px;position:sticky;top:var(--topbarh,97px);z-index:15;background:var(--bg);padding:8px 0 4px}
+.mem-bar{display:flex;gap:8px;margin-bottom:12px;position:sticky;top:var(--topbarh,88px);z-index:15;background:var(--bg);padding:8px 0 4px}
 .mem-bar button{flex:1;border:1px solid var(--line);background:var(--card);color:var(--sub);border-radius:999px;padding:6px 0;font-size:13px;font-weight:700;cursor:pointer}
 .mem-bar button.on{background:var(--accent);border-color:var(--accent);color:#fff}
 body.hide-jp .vjp-text{visibility:hidden}
@@ -214,12 +241,12 @@ body.hide-cn .vcn,body.hide-cn .ven{visibility:hidden}
 .mlvl.ml-mid{background:var(--amber-soft);color:var(--amber)}
 .mlvl.ml-done{background:var(--green-soft);color:var(--green)}
 /* ---- 数字表达速查 ---- */
-.num-nav{display:flex;gap:6px;overflow-x:auto;padding:8px 0;position:sticky;top:var(--topbarh,97px);z-index:15;background:var(--bg);-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
+.num-nav{display:flex;gap:6px;overflow-x:auto;padding:8px 0;position:sticky;top:var(--topbarh,88px);z-index:15;background:var(--bg);-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
 .num-nav a{flex:0 0 auto;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:5px 14px;font-size:13px;color:var(--ink);cursor:pointer;white-space:nowrap}
 .num-nav a:hover{border-color:var(--accent);color:var(--accent)}
 .num-nav a.on{background:var(--accent);border-color:var(--accent);color:#fff}
 /* 锚点要同时让开顶栏和这条吸顶的目录条 */
-.num-sec-h{font-size:15px;font-weight:700;color:var(--accent);margin:20px 0 8px;display:flex;align-items:baseline;gap:8px;scroll-margin-top:calc(var(--topbarh,97px) + var(--numnavh,44px) + 8px)}
+.num-sec-h{font-size:15px;font-weight:700;color:var(--accent);margin:20px 0 8px;display:flex;align-items:baseline;gap:8px;scroll-margin-top:calc(var(--topbarh,88px) + var(--numnavh,44px) + 8px)}
 .num-sec-h small{font-weight:400;color:var(--sub);font-size:13px}
 .num-lead{font-size:13px;color:var(--sub);margin-bottom:10px;line-height:1.6}
 .num-cap{font-size:14px;font-weight:700;margin:0 0 8px}
@@ -267,16 +294,16 @@ body.hide-cn .vcn,body.hide-cn .ven{visibility:hidden}
 .ct-tocitem{display:block;padding:6px 8px;font-size:13px;color:var(--ink);cursor:pointer;border-radius:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .ct-tocitem:hover{background:var(--bg);color:var(--accent)}
 .ct-body{flex:1;min-width:0}
-.ct-card{scroll-margin-top:150px}
+.ct-card{scroll-margin-top:110px}
 @media (max-width:680px){
   .ct-wrap{flex-direction:column;gap:8px;align-items:stretch}
-  .ct-toc{top:148px;flex:none;width:100%;max-width:100%;box-sizing:border-box;max-height:none;display:flex;gap:6px;overflow-x:auto;overflow-y:hidden;z-index:10;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
+  .ct-toc{top:107px;flex:none;width:100%;max-width:100%;box-sizing:border-box;max-height:none;display:flex;gap:6px;overflow-x:auto;overflow-y:hidden;z-index:10;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
   .ct-toc-h{display:none}
   .ct-tocitem{flex:0 0 auto;background:var(--bg);border:1px solid var(--line)}
   .ct-body{min-width:0;max-width:100%}
-  .ct-card{scroll-margin-top:190px}
+  .ct-card{scroll-margin-top:150px}
 }
-.home-top{position:sticky;top:var(--topbarh,97px);z-index:10;background:var(--bg);padding-bottom:4px}
+.home-top{position:sticky;top:var(--topbarh,88px);z-index:10;background:var(--bg);padding-bottom:4px}
 .wk-toc{display:none}
 .home-tools{display:flex;gap:8px;margin-bottom:14px}
 .home-tool{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:9px 4px;cursor:pointer;font-size:12.5px;color:var(--ink)}
@@ -284,7 +311,7 @@ body.hide-cn .vcn,body.hide-cn .ven{visibility:hidden}
 .home-tool:hover{border-color:var(--accent);color:var(--accent)}
 /* 级别专属的工具用虚线框跟通用参考区分开 */
 .home-tool.scoped{border-style:dashed}
-.week-card{scroll-margin-top:calc(var(--topbarh,97px) + var(--hometoph,40px))}
+.week-card{scroll-margin-top:calc(var(--topbarh,88px) + var(--hometoph,40px))}
 @media (max-width:680px){
   .wk-toc{display:flex;gap:6px;overflow-x:auto;padding:6px 2px 4px;width:100%;max-width:100%;box-sizing:border-box;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
   .wk-tocitem{flex:0 0 auto;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:13px;color:var(--ink);cursor:pointer;white-space:nowrap}
@@ -325,20 +352,16 @@ body.hide-cn .vcn,body.hide-cn .ven{visibility:hidden}
 <body>
 <div class="topbar" id="topbar">
 <header class="top">
-  <button class="back" id="backBtn" style="visibility:hidden">‹ 返回</button>
+  <button class="back" id="backBtn" style="display:none">‹ 返回</button>
+  <button class="lvchip" id="lvChip" aria-haspopup="dialog">N3 <span class="cv">▾</span></button>
   <h1 id="title">日本語上手</h1>
   <div class="langbar" id="langbar">
-    <button data-lang="cn">中文</button>
+    <button data-lang="cn">中</button>
     <button data-lang="en">EN</button>
   </div>
   <button class="toggle-all" id="topAction" style="display:none"></button>
 </header>
 <div class="modewrap">
-  <div class="levelbar" id="levelbar">
-    <button data-lv="n3">N3</button>
-    <button data-lv="n2">N2</button>
-    <button data-lv="n4">N4</button>
-  </div>
   <div class="typebar" id="typebar">
     <button data-ty="grammar">📘 <span class="lbl" data-cn="语法" data-en="Grammar">语法</span></button>
     <button data-ty="vocab">📗 <span class="lbl" data-cn="词汇" data-en="Vocabulary">词汇</span></button>
@@ -348,12 +371,14 @@ body.hide-cn .vcn,body.hide-cn .ven{visibility:hidden}
 </div>
 <main id="app"></main>
 <nav class="bottom">
-  <button data-nav="home"><span class="ic">📚</span><span class="lbl" data-cn="周目录" data-en="Weeks">周目录</span></button>
+  <button data-nav="home"><span class="ic">📚</span><span class="lbl" data-cn="知识库" data-en="Library">知识库</span></button>
   <button data-nav="search"><span class="ic">🔍</span><span class="lbl" data-cn="搜索" data-en="Search">搜索</span></button>
-  <button data-nav="cards"><span class="ic">🗂️</span><span class="lbl" data-cn="记忆卡" data-en="Flashcards">记忆卡</span></button>
-  <button data-nav="favs"><span class="ic">⭐</span><span class="lbl" data-cn="收藏" data-en="Favorites">收藏</span></button>
   <button data-nav="mistakes"><span class="ic">📝</span><span class="lbl" data-cn="错题本" data-en="Notes">错题本</span></button>
+  <button data-nav="common"><span class="ic">📐</span><span class="lbl" data-cn="通用" data-en="General">通用</span></button>
+  <button data-nav="favs"><span class="ic">⭐</span><span class="lbl" data-cn="收藏" data-en="Favorites">收藏</span></button>
 </nav>
+<div class="sheet-mask" id="sheetMask" hidden></div>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" hidden></div>
 <script>
 let DATA={}, G={weeks:[]}, V={weeks:[]}, K={weeks:[]}, G2={weeks:[]}, V2={weeks:[]}, K2={weeks:[]}, G4={weeks:[]}, V4={weeks:[]}, K4={weeks:[]}, dataLoaded=false, n2Loaded=false, n4Loaded=false;
 let _lastRenderedHash=null; // only scroll-to-top on an actual navigation, not on a background-sync re-render of the same view
@@ -361,9 +386,14 @@ let MODULE = 'grammar';
 try{ const m=localStorage.getItem('module'); if(['vocab','grammar','n2grammar','kanji','n2vocab','n2kanji','n4grammar','n4vocab','n4kanji'].includes(m)) MODULE=m; }catch(e){}
 let lastVisit={};
 try{ lastVisit=JSON.parse(localStorage.getItem('lastVisit')||'{}')||{}; }catch(e){ lastVisit={}; }
+let lastDay={};
+try{ lastDay=JSON.parse(localStorage.getItem('lastDay')||'{}')||{}; }catch(e){ lastDay={}; }
 function entryHash(mod){ return lastVisit[mod] || '#/'; }
 function saveLastVisit(hash){
   lastVisit[MODULE] = hash;
+  // 首页手风琴要知道「上次看的是哪一周」，而 lastVisit 回首页时会被覆盖成 '#/'，
+  // 所以单独留一份只记天的，跨会话也保住展开位置。
+  if(hash.startsWith('#/day/')) { lastDay[MODULE] = hash; try{ localStorage.setItem('lastDay', JSON.stringify(lastDay)); }catch(e){} }
   try{ localStorage.setItem('lastVisit', JSON.stringify(lastVisit)); }catch(e){}
 }
 let LANG = 'cn';
@@ -375,18 +405,24 @@ const MODLABELS = {grammar:['N3 语法','N3 Grammar'], n2grammar:['N2 语法','N
 const modLabel = ()=> LX(...MODLABELS[MODULE]);
 
 const $ = s=>document.querySelector(s);
-const app=$('#app'), titleEl=$('#title'), backBtn=$('#backBtn'), topAction=$('#topAction');
+const app=$('#app'), titleEl=$('#title'), backBtn=$('#backBtn'), topAction=$('#topAction'), lvChip=$('#lvChip');
 const esc = s=>String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 const fmt = s=>esc(s).replace(/~([^~]+)~/g,'<del>$1</del>');
 const R = (o,f)=>(o&&o[f+'_r'])||esc(o?o[f]:'');
 try{ if(localStorage.getItem('noruby')==='1') document.body.classList.add('no-ruby'); }catch(e){}
 try{ if(localStorage.getItem('hidejp')==='1') document.body.classList.add('hide-jp'); }catch(e){}
 try{ if(localStorage.getItem('hidecn')==='1') document.body.classList.add('hide-cn'); }catch(e){}
-function rubyBtnText(){ return document.body.classList.contains('no-ruby')?'注音：关':'注音：开'; }
+function syncRubyBtn(){
+  const off = document.body.classList.contains('no-ruby');
+  topAction.textContent = 'ふ';
+  topAction.classList.toggle('on', !off);
+  topAction.title = off ? '注音：关' : '注音：开';
+  topAction.setAttribute('aria-label', topAction.title);
+}
 topAction.onclick = ()=>{
   document.body.classList.toggle('no-ruby');
   try{ localStorage.setItem('noruby', document.body.classList.contains('no-ruby')?'1':'0'); }catch(e){}
-  topAction.textContent = rubyBtnText();
+  syncRubyBtn();
   syncMemBar();
 };
 function memBarHTML(){
@@ -555,7 +591,7 @@ deriveLT();
 function moduleFrom(lv,ty){ return LT2MOD[lv+':'+ty] || 'grammar'; }
 function syncModeBar(){
   deriveLT();
-  document.querySelectorAll('#levelbar button').forEach(b=>b.classList.toggle('on', b.dataset.lv===LEVEL));
+  lvChip.firstChild.nodeValue = LEVEL.toUpperCase()+' ';
   document.querySelectorAll('#typebar button').forEach(b=>b.classList.toggle('on', b.dataset.ty===TYPE));
   document.querySelectorAll('#langbar button').forEach(b=>b.classList.toggle('on', b.dataset.lang===LANG));
   document.querySelectorAll('.lbl[data-cn]').forEach(el=>{ el.textContent = LX(el.dataset.cn, el.dataset.en); });
@@ -564,9 +600,44 @@ function setModule(m){
   MODULE=m; try{ localStorage.setItem('module',m); }catch(e){}
   fc.deck=[]; fc.week=0; syncModeBar();
 }
-document.querySelectorAll('#levelbar button').forEach(b=>{
-  b.onclick=()=>{ const lv=b.dataset.lv; const mod=moduleFrom(lv, TYPE); setModule(mod); navTo(entryHash(mod)); };
+
+/* ---------- 底部弹层（级别选择 / 通用知识共用） ---------- */
+const sheetEl=$('#sheet'), sheetMask=$('#sheetMask');
+function openSheet(html){ sheetEl.innerHTML=`<div class="sheet-grip"></div>`+html; sheetEl.hidden=false; sheetMask.hidden=false; }
+function closeSheet(){ sheetEl.hidden=true; sheetMask.hidden=true; sheetEl.innerHTML=''; }
+sheetMask.onclick = closeSheet;
+document.addEventListener('keydown', e=>{ if(e.key==='Escape' && !sheetEl.hidden) closeSheet(); });
+const LEVEL_LIST=[['n4','N4','基础'],['n3','N3','进阶'],['n2','N2','高阶']];
+function openLevelSheet(){
+  openSheet(`<div class="sheet-h">选择级别<span class="sub">当前 · ${modLabel()}</span></div>
+    <div class="sheet-row">` + LEVEL_LIST.map(([lv,name,sub])=>
+      `<button class="sheet-item ${lv===LEVEL?'on':''}" data-golevel="${lv}"><span class="ic">${name}</span><span class="sub">${sub}</span></button>`
+    ).join('') + `</div>`);
+}
+// 接续表 / 活用 / 数字讲的是日语本身，不属于任何级别，所以放在这个全局弹层里，
+// 每个页面都够得着；辨析是某个级别的语法家族对照，只在有数据时才出现，并标级别。
+function openCommonSheet(){
+  const ct = isGram() && hasContrast(MODULE);
+  openSheet(`<div class="sheet-h">通用知识<span class="sub">不分级别</span></div>
+    <div class="sheet-row">
+      <button class="sheet-item" data-go="#/ref"><span class="ic">📖</span>接续表</button>
+      <button class="sheet-item" data-go="#/katsuyou"><span class="ic">🔄</span>活用</button>
+      <button class="sheet-item" data-go="#/numbers"><span class="ic">🔢</span>数字</button>
+    </div>` + (ct ? `<div class="sheet-h">本级别<span class="sub">${LEVEL.toUpperCase()} 语法</span></div>
+    <div class="sheet-row">
+      <button class="sheet-item scoped" data-go="#/contrast"><span class="ic">🔀</span>${LEVEL.toUpperCase()}辨析</button>
+      <span class="sheet-item" style="visibility:hidden"></span>
+      <span class="sheet-item" style="visibility:hidden"></span>
+    </div>` : ''));
+}
+lvChip.onclick = openLevelSheet;
+sheetEl.addEventListener('click', e=>{
+  const lv=e.target.closest('[data-golevel]');
+  if(lv){ closeSheet(); const mod=moduleFrom(lv.dataset.golevel, TYPE); setModule(mod); navTo(entryHash(mod)); return; }
+  const go=e.target.closest('[data-go]');
+  if(go){ closeSheet(); navTo(go.dataset.go); return; }
 });
+
 document.querySelectorAll('#typebar button').forEach(b=>{
   b.onclick=()=>{ const mod=moduleFrom(LEVEL, b.dataset.ty); setModule(mod); navTo(entryHash(mod)); };
 });
@@ -579,13 +650,16 @@ function navTo(hash){ if(location.hash===hash) render(); else location.hash=hash
 window.addEventListener('hashchange', render);
 backBtn.onclick = ()=>{ history.length>1 ? history.back() : navTo('#/'); };
 document.querySelectorAll('nav.bottom button').forEach(b=>{
-  b.onclick = ()=> navTo({home:'#/',search:'#/search',cards:'#/cards',favs:'#/favs',mistakes:'#/mistakes'}[b.dataset.nav]);
+  // 「通用」不是一个页面，是个弹层入口，所以不走 navTo
+  b.onclick = ()=>{ const n=b.dataset.nav;
+    if(n==='common'){ openCommonSheet(); return; }
+    closeSheet(); navTo({home:'#/',search:'#/search',favs:'#/favs',mistakes:'#/mistakes'}[n]); };
 });
 /* delegated clicks (artifact CSP blocks inline onclick=) */
 app.addEventListener('click', e=>{
   const mt=e.target.closest('[data-memtoggle]'); if(mt){
     const kind=mt.dataset.memtoggle;
-    if(kind==='ruby'){ document.body.classList.toggle('no-ruby'); try{localStorage.setItem('noruby', document.body.classList.contains('no-ruby')?'1':'0');}catch(e){} topAction.textContent=rubyBtnText(); }
+    if(kind==='ruby'){ document.body.classList.toggle('no-ruby'); try{localStorage.setItem('noruby', document.body.classList.contains('no-ruby')?'1':'0');}catch(e){} syncRubyBtn(); }
     else if(kind==='jp'){ document.body.classList.toggle('hide-jp'); try{localStorage.setItem('hidejp', document.body.classList.contains('hide-jp')?'1':'0');}catch(e){} }
     else if(kind==='cn'){ document.body.classList.toggle('hide-cn'); try{localStorage.setItem('hidecn', document.body.classList.contains('hide-cn')?'1':'0');}catch(e){} }
     syncMemBar();
@@ -615,6 +689,13 @@ app.addEventListener('click', e=>{
         }
       }
     }
+    return;
+  }
+  const wt=e.target.closest('[data-wktoggle]'); if(wt){ toggleWeek(+wt.dataset.wktoggle); viewHome(); updateStickyVars(); return; }
+  // 顶部周条：收起的周点了要先展开再滚过去，否则等于什么都没发生
+  const wj=e.target.closest('[data-wkjump]'); if(wj){
+    const n=+wj.dataset.wkjump; openWeekSet().add(n); viewHome(); updateStickyVars();
+    const el=document.getElementById('wk-'+n); if(el) el.scrollIntoView({behavior:'auto',block:'start'});
     return;
   }
   const sc=e.target.closest('[data-scroll]'); if(sc){ const el=document.getElementById(sc.dataset.scroll); if(el) el.scrollIntoView({behavior:sc.classList.contains('wk-tocitem')?'auto':'smooth',block:'start'}); return; }
@@ -650,8 +731,8 @@ app.addEventListener('input', e=>{
 function setNav(name){ document.querySelectorAll('nav.bottom button').forEach(b=>b.classList.toggle('on', b.dataset.nav===name)); }
 function setHeader(t, showBack){
   titleEl.textContent = t;
-  backBtn.style.visibility = showBack?'visible':'hidden';
-  topAction.style.display='inline-block'; topAction.textContent = rubyBtnText();
+  backBtn.style.display = showBack?'':'none';
+  topAction.style.display='inline-block'; syncRubyBtn();
 }
 function updateStickyVars(){
   const tb = document.getElementById('topbar');
@@ -735,31 +816,66 @@ function viewHome(){
   const weeks = CUR().weeks;
   const intro = LX(`《${book}》 · ${weeks.length} 周 × 7 天 · 点击进入每日${kind}`, `${book} · ${weeks.length} weeks × 7 days · Tap to open each day's ${kind}`);
   let html = `<div class="home-top"><div class="meta" style="margin-bottom:10px">${intro}</div>` +
-    (weeks.length>3 ? `<div class="wk-toc">${weeks.map(w=>`<a class="wk-tocitem" data-scroll="wk-${w.n}">第${w.n}周</a>`).join('')}</div>` : '') +
+    (weeks.length>3 ? `<div class="wk-toc">${weeks.map(w=>`<a class="wk-tocitem" data-wkjump="${w.n}">第${w.n}周</a>`).join('')}</div>` : '') +
     `</div>`;
   // 数字 / 接续表 / 活用 讲的是日语本身，不分级别，所以九个模块的首页都放；
   // 辨析的内容是 N3 语法的家族对照，属于 N3 语法这一层，只在那里出现并标明级别。
+  // 接续表 / 活用 / 数字已经搬到底部「通用」弹层了（它们不分级别，任何页面都够得着）；
+  // 这里只留跟当前模块绑定的两个入口。
   html += `<div class="home-tools">
-    <div class="home-tool" data-go="#/numbers"><span class="ic">🔢</span><span class="lbl" data-cn="数字" data-en="Numbers">数字</span></div>
-    <div class="home-tool" data-go="#/ref"><span class="ic">📖</span><span class="lbl" data-cn="接续表" data-en="Notation">接续表</span></div>
-    <div class="home-tool" data-go="#/katsuyou"><span class="ic">🔄</span><span class="lbl" data-cn="活用" data-en="Conjugation">活用</span></div>` +
+    <div class="home-tool" data-go="#/cards"><span class="ic">🗂️</span><span class="lbl" data-cn="记忆卡" data-en="Flashcards">记忆卡</span></div>` +
     (isGram() && hasContrast(MODULE) ? (lv=>`
     <div class="home-tool scoped" data-go="#/contrast"><span class="ic">🔀</span><span class="lbl" data-cn="${lv}辨析" data-en="${lv} Contrast">${lv}辨析</span></div>`)(LEVEL.toUpperCase()) : '') +
   `</div>`;
+  const open = openWeekSet();
   for(const w of weeks){
     const wt = w.title ? ` <span class="jp">${esc(w.title)}</span>` : '';
     const wsubText = LX(w.title_cn, w.title_en);
     const wsub = wsubText ? `<div class="sub">${esc(wsubText)}</div>` : '';
-    html += `<div class="card week-card" id="wk-${w.n}"><h2>第${w.n}週${wt}</h2>${wsub}<div class="day-list">` +
-      w.days.map(d=>{
-        const isExam = d.day===7;
-        return `<div class="day-item" data-go="#/day/${w.n}-${d.day}">
-          <div class="d">${d.day}日目${isExam?' · 实战':''}</div>
-          <div class="t jp">${R(d,'title')}</div>
-          <div class="tc">${esc(LX(d.title_cn, d.title_en))}</div></div>`;
-      }).join('') + `</div></div>`;
+    const isOpen = open.has(w.n);
+    html += `<div class="card week-card" id="wk-${w.n}">
+      <div class="wk-head" data-wktoggle="${w.n}" role="button" aria-expanded="${isOpen}">
+        <div class="wk-t"><h2>第${w.n}週${wt}</h2>${wsub}</div>
+        <span class="cnt">${w.days.length}天</span><span class="cv">${isOpen?'▾':'▸'}</span>
+      </div>`;
+    if(isOpen){
+      html += `<div class="wk-body"><div class="day-list">` +
+        w.days.map(d=>{
+          const isExam = d.day===7;
+          return `<div class="day-item" data-go="#/day/${w.n}-${d.day}">
+            <div class="d">${d.day}日目${isExam?' · 实战':''}</div>
+            <div class="t jp">${R(d,'title')}</div>
+            <div class="tc">${esc(LX(d.title_cn, d.title_en))}</div>${dayPreviewHTML(d)}</div>`;
+        }).join('') + `</div></div>`;
+    }
+    html += `</div>`;
   }
   app.innerHTML = html;
+}
+/* 周手风琴的展开状态：按模块各记各的，默认展开上次看的那一周。
+   render() 会整页重画，所以状态必须存在模块级变量里，不能只存在 DOM 上。 */
+const openWeeks = {};
+function openWeekSet(){
+  if(!openWeeks[MODULE]){
+    const m = (lastDay[MODULE]||'').match(/^#\/day\/(\d+)-/);
+    const first = (CUR().weeks[0]||{}).n || 1;
+    openWeeks[MODULE] = new Set([m ? +m[1] : first]);
+  }
+  return openWeeks[MODULE];
+}
+function toggleWeek(n){
+  const s = openWeekSet();
+  if(s.has(n)) s.delete(n); else s.add(n);
+}
+// 一眼看出这天讲什么：语法日给语法点，汉字日给汉字，词汇日给头几个词
+function dayPreviewHTML(d){
+  let items = [];
+  if(Array.isArray(d.points)) items = d.points.map(p=>p.pattern);
+  else if(Array.isArray(d.kanji)) items = d.kanji.map(k=>k.char);
+  else if(Array.isArray(d.sections)) items = d.sections.reduce((a,s)=>a.concat((s.items||[]).map(i=>i.jp)), []);
+  items = items.filter(Boolean).slice(0, 6);
+  if(!items.length) return '';
+  return `<div class="day-prev">` + items.map(t=>`<span class="dp jp">${esc(t)}</span>`).join('') + `</div>`;
 }
 
 /* ---------- shared helpers ---------- */
@@ -1117,7 +1233,7 @@ function buildDeck(week){
   return deck;
 }
 function viewCards(){
-  setNav('cards'); setHeader(LX('记忆卡','Flashcards')+' · '+modLabel(), false);
+  setNav('home'); setHeader(LX('记忆卡','Flashcards')+' · '+modLabel(), false);
   if(!fc.deck.length){ fc.deck=buildDeck(fc.week); fc.idx=0; fc.flipped=false; }
   const nWeeks=CUR().weeks.length;
   const filt=[0].concat(Array.from({length:nWeeks},(_,i)=>i+1)).map(n=>`<button class="${fc.week===n?'on':''}" data-fcweek="${n}">${n===0?'全部':'第'+n+'週'}</button>`).join('');
@@ -1175,7 +1291,7 @@ function favGroups(){
   return groups;
 }
 function viewFavs(){
-  setNav('favs'); setHeader(LX('我的收藏 · 生词本','My Favorites · Word Book'), false);
+  setNav('favs'); setHeader(LX('收藏 · 生词本','Favorites · Word Book'), false);
   const ids=Object.keys(FAV);
   if(!ids.length){ app.innerHTML='<div class="empty">还没有收藏。<br>在语法点或单词右侧点 ☆ 即可加入生词本。</div>'; return; }
   const tagMap={grammar:'<span class="mtag g">N3语法</span>', n2grammar:'<span class="mtag g2">N2语法</span>', vocab:'<span class="mtag v">N3词汇</span>', kanji:'<span class="mtag k">N3汉字</span>', n2vocab:'<span class="mtag v2">N2词汇</span>', n2kanji:'<span class="mtag k2">N2汉字</span>', n4grammar:'<span class="mtag g4">N4语法</span>', n4vocab:'<span class="mtag v4">N4词汇</span>', n4kanji:'<span class="mtag k4">N4汉字</span>'};
@@ -1325,7 +1441,7 @@ function numCounterHTML(c){
   </div>`;
 }
 function viewNumbers(){
-  setNav('home'); setHeader(LX('数字表达','Number Expressions'), true);
+  setNav('common'); setHeader(LX('数字表达','Number Expressions'), true);
   const N = (DATA.common||{}).numbers;
   if(!N){ app.innerHTML='<div class="empty">通用参考数据加载中，请稍候…</div>'; return; }
   const secs = N.sections||[];
@@ -1355,7 +1471,7 @@ function refTable(cols, rows){
   </table></div>`;
 }
 function viewRef(){
-  setNav('home'); setHeader(LX('接续表示法 · 接続の表示方法','Connection Notation'), true);
+  setNav('common'); setHeader(LX('接续表示法 · 接続の表示方法','Connection Notation'), true);
   const RF=(DATA.common||{}).reference;
   if(!RF){ app.innerHTML='<div class="empty">通用参考数据加载中，请稍候…</div>'; return; }
   let html=`<div class="meta" style="margin-bottom:10px">${esc(RF.note)}</div>`;
@@ -1380,7 +1496,7 @@ function ktable(cols, rows){
   </table></div>`;
 }
 function viewKatsuyou(){
-  setNav('home'); setHeader(LX('活用一覧 · 普通形/丁寧形/尊敬語','Conjugation: Plain/Polite/Honorific'), true);
+  setNav('common'); setHeader(LX('活用一覧 · 普通形/丁寧形/尊敬語','Conjugation: Plain/Polite/Honorific'), true);
   const KY = (DATA.common||{}).katsuyou;   // 变量名避开全局的 K2（N2汉字），别再互相遮蔽
   if(!KY){ app.innerHTML='<div class="empty">通用参考数据加载中，请稍候…</div>'; return; }
   let html = KY.intro ? `<div class="meta" style="margin-bottom:10px">${esc(KY.intro)}</div>` : '';
