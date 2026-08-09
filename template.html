@@ -153,7 +153,21 @@ main{max-width:760px;margin:0 auto;padding:14px}
 .an-why .w{color:var(--sub);min-width:0}
 .an-point{margin-top:7px;background:var(--blue-soft);color:var(--blue);border-radius:6px;padding:6px 9px;font-size:13px}
 .an-words{margin-top:7px;display:flex;flex-direction:column;gap:1px;font-size:12.5px}
-.an-words .h{font-size:11px;color:var(--sub);font-weight:700;letter-spacing:.06em}
+.an-h,.an-words .h{font-size:11px;color:var(--sub);font-weight:700;letter-spacing:.06em;margin-top:8px}
+/* 逐节拆解：说明比生词的释义长得多，挤成一栏会碎成一堆两三字的行，
+   所以改成词一行、说明另起一行铺满宽度 */
+.an-parse .an-word{display:block;padding:4px 0;border-top:1px solid var(--line)}
+.an-parse .j{font-weight:700}
+.an-parse .k{color:var(--sub);font-size:11.5px;margin-left:6px}
+.an-parse .m{display:block;color:var(--sub);margin-top:1px}
+/* 层层叠加：每一步左边一条竖线，末行是叠加后的结果 */
+.an-build{margin:4px 0 0;padding:0;list-style:none}
+.an-build li{border-left:2px solid var(--line);padding:3px 0 5px 9px;margin-left:2px}
+.an-build li:last-child{border-left-color:var(--green)}
+.an-build .a{font-weight:700}
+.an-build .m{color:var(--sub);margin-left:6px;font-size:12px}
+.an-build .r{margin-top:2px;color:var(--blue)}
+.an-build li:last-child .r{color:var(--green);font-weight:700}
 .an-word{display:flex;gap:7px;align-items:baseline;padding:2px 0}
 .an-word .j{flex:0 0 27%;overflow-wrap:break-word}
 .an-word .k{flex:0 0 32%;color:var(--sub);font-size:11.5px;overflow-wrap:break-word}
@@ -1109,6 +1123,13 @@ function examNoteHTML(a, it){
   if(why.length) h += `<ol class="an-why">` + why.map((t,i)=>
     `<li class="${(i+1)===a.ans?'ok':''}"><span class="o jp">${opts[i]||''}</span><span class="w">${esc(t)}</span></li>`).join('') + `</ol>`;
   if(a.point) h += `<div class="an-point">要点：${esc(a.point)}</div>`;
+  // 逐节拆解：把句子切成一个个成分，说清每一节在句子里干什么
+  if((a.parse||[]).length) h += `<div class="an-h">逐节拆解</div><div class="an-words an-parse">` + a.parse.map(v=>
+    `<div class="an-word"><span class="j jp">${esc(v.t)}</span>${(v.k&&v.k!=='—')?`<span class="k jp">${esc(v.k)}</span>`:''}<span class="m">${esc(v.r)}</span></div>`).join('') + `</div>`;
+  // 层层叠加：从最里层的动词开始，一层层接上去，看清整个句型是怎么长出来的
+  if((a.build||[]).length) h += `<div class="an-h">怎么一层层搭起来的</div><ol class="an-build">` + a.build.map((s,i)=>
+    `<li><span class="a jp">${i?'＋':''}${esc(s.add)}</span><span class="m">${esc(s.mean)}</span>` +
+    (s.res===s.add ? '' : `<div class="r jp">${esc(s.res)}</div>`) + `</li>`).join('') + `</ol>`;
   if(words.length) h += `<div class="an-words"><div class="h">生词</div>` + words.map(v=>
     `<div class="an-word"><span class="j jp">${esc(v.jp)}</span><span class="k jp">${esc(v.kana)}</span><span class="m">${esc(v.cn)}</span></div>`).join('') + `</div>`;
   return h + `</details>`;
