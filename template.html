@@ -735,28 +735,7 @@ app.addEventListener('click', e=>{
   }
   const ob=e.target.closest('.opt-btn'); if(ob){
     const wrap=ob.closest('.qz');
-    if(wrap && !wrap.classList.contains('answered')){
-      const correct=+wrap.dataset.qcorrect, picked=+ob.dataset.optidx;
-      wrap.classList.add('answered');
-      wrap.querySelectorAll('.opt-btn').forEach(b=>{
-        const idx=+b.dataset.optidx;
-        if(idx===correct) b.classList.add('correct');
-        else if(idx===picked) b.classList.add('wrong');
-      });
-      const qEl=wrap.closest('.q');
-      if(qEl){
-        const r=qEl.querySelector('.qz-result'); if(r) r.textContent = picked===correct?'✓ 答对了':'✗ 答错了';
-        if(r) r.classList.add(picked===correct?'ok':'ng');
-        const note=qEl.querySelector('.qz-note'); if(note) note.classList.add('show');
-        if(picked!==correct){
-          const qText=(qEl.querySelector('.jp')||{}).textContent||'';
-          const correctBtn=wrap.querySelector(`[data-optidx="${correct}"]`);
-          const pickedText=(ob.textContent||'').trim();
-          const correctText=(correctBtn?correctBtn.textContent:'')||'';
-          addMistake('q', `${qText.trim()}\n你的答案：${pickedText}\n正确答案：${correctText.trim()}`);
-        }
-      }
-    }
+    if(wrap && !wrap.classList.contains('answered')) gradeQz(wrap, +ob.dataset.optidx, true);
     return;
   }
   const wt=e.target.closest('[data-wktoggle]'); if(wt){ toggleWeek(+wt.dataset.wktoggle); viewHome(); updateStickyVars(); return; }
@@ -796,6 +775,41 @@ app.addEventListener('click', e=>{
 app.addEventListener('input', e=>{
   if(e.target.id==='mistakeInput') mistakeDraft=e.target.value;
 });
+/* 判分与还原共用。log=false 用于 render() 后重放已答过的题——
+   那时错题早就记过了，再记一次会在错题本里出现重复。 */
+function gradeQz(wrap, picked, log){
+  const correct=+wrap.dataset.qcorrect;
+  wrap.classList.add('answered');
+  wrap.querySelectorAll('.opt-btn').forEach(b=>{
+    const idx=+b.dataset.optidx;
+    if(idx===correct) b.classList.add('correct');
+    else if(idx===picked) b.classList.add('wrong');
+  });
+  const qEl=wrap.closest('.q'); if(!qEl) return;
+  const r=qEl.querySelector('.qz-result');
+  if(r){ r.textContent = picked===correct?'✓ 答对了':'✗ 答错了'; r.classList.add(picked===correct?'ok':'ng'); }
+  const note=qEl.querySelector('.qz-note'); if(note) note.classList.add('show');
+  if(log && picked!==correct){
+    const qText=(qEl.querySelector('.jp')||{}).textContent||'';
+    const pickedBtn=wrap.querySelector(`[data-optidx="${picked}"]`);
+    const correctBtn=wrap.querySelector(`[data-optidx="${correct}"]`);
+    addMistake('q', `${qText.trim()}\n你的答案：${((pickedBtn?pickedBtn.textContent:'')||'').trim()}\n正确答案：${((correctBtn?correctBtn.textContent:'')||'').trim()}`);
+  }
+}
+/* 答题状态同样只存在 DOM 里。按页面上第几道题来对应，
+   数量对不上就说明画的不是同一份内容，宁可不还原也不能张冠李戴。 */
+function snapshotQz(){
+  return Array.from(app.querySelectorAll('.qz[data-qcorrect]')).map(w=>{
+    if(!w.classList.contains('answered')) return null;
+    const wrong=w.querySelector('.opt-btn.wrong');
+    return wrong ? +wrong.dataset.optidx : +w.dataset.qcorrect;
+  });
+}
+function restoreQz(snap){
+  const ws=app.querySelectorAll('.qz[data-qcorrect]');
+  if(!snap || ws.length!==snap.length) return;
+  ws.forEach((w,i)=>{ if(snap[i]!=null) gradeQz(w, snap[i], false); });
+}
 function setNav(name){ document.querySelectorAll('nav.bottom button').forEach(b=>b.classList.toggle('on', b.dataset.nav===name)); }
 /* 桌面侧栏：把底栏五个 tab、级别、类型、通用弹层里的东西摊平成一列常驻目录。
    内容跟手机端一一对应，只是不用再点开弹层，所以走同一套 setModule / navTo。 */
@@ -893,7 +907,11 @@ function render(){
   if((MODULE==='n4grammar'||MODULE==='n4vocab'||MODULE==='n4kanji') && !n4Loaded){ setNav('home'); setHeader(modLabel(), false); app.innerHTML='<div class="empty">N4 数据加载中，请稍候…</div>'; return; }
   if(h==='#/search' && !n2Loaded){ setNav('search'); setHeader(LX('搜索（语法 + 词汇）','Search (Grammar + Vocabulary)'), false); app.innerHTML='<div class="empty">词典数据加载中，马上就好…</div>'; return; }
   syncModeBar();
-  if(h!==_lastRenderedHash) window.scrollTo(0,0);
+  const sameView = (h===_lastRenderedHash);
+  if(!sameView) window.scrollTo(0,0);
+  // <details> 的展开状态只存在 DOM 里，重画同一个页面时要自己收好再放回去
+  const openSnap = sameView ? Array.from(app.querySelectorAll('details')).map(d=>d.open) : null;
+  const qzSnap   = sameView ? snapshotQz() : null;
   _lastRenderedHash = h;
   if(h==='#/'){ saveLastVisit('#/'); viewHome(); }
   else if(h==='#/search') viewSearch();
@@ -914,6 +932,12 @@ function render(){
     }
     else viewHome();
   }
+  if(openSnap){
+    const ds = app.querySelectorAll('details');
+    // 数量对不上说明画的不是同一份内容，硬套会张冠李戴，宁可不还原
+    if(ds.length===openSnap.length) ds.forEach((d,i)=>{ d.open = openSnap[i]; });
+  }
+  restoreQz(qzSnap);
   updateStickyVars();
 }
 
@@ -1742,6 +1766,13 @@ pullMistakesFromServer();
 /* 切回页面（可见/获得焦点）时自动重新同步：与云端合并，反映另一台设备的新增，
    删除通过墓碑标记传播。本地若还有未推送完的改动（防抖计时器未触发）则跳过这轮。 */
 let _resyncingM=false, _resyncingF=false;
+/* 切回标签页就会 resync 一次，而绝大多数时候拉回来的跟本地一模一样。
+   以前不管变没变都 render()，整页重建，正在做的实战题、展开的详细解析、
+   输入到一半的错题草稿全没了。所以先比对内容，真变了才重画。 */
+function mistakesSig(arr){
+  return JSON.stringify(arr.map(m=>[m.id,m.type,m.text,m.level,m.ts]).sort((a,b)=>a[0]<b[0]?-1:1));
+}
+function favsSig(o){ return JSON.stringify(Object.keys(o).sort().map(k=>[k,o[k]])); }
 async function resyncMistakes(){
   if(!_mistakesReady || _mistakePushTimer || _resyncingM) return;
   _resyncingM=true;
@@ -1750,6 +1781,7 @@ async function resyncMistakes(){
     if(res.ok){
       const data = await res.json();
       if(Array.isArray(data)){
+        const before = mistakesSig(MISTAKES);
         _mistakeSyncing=true;
         const merged = cleanMistakes(data);
         for(const m of MISTAKES){ if(!data.some(d=>d.id===m.id)) merged.push(m); }
@@ -1757,7 +1789,7 @@ async function resyncMistakes(){
         MISTAKES = merged;
         try{ localStorage.setItem('mistakes', JSON.stringify(MISTAKES)); }catch(e){}
         _mistakeSyncing=false;
-        render();
+        if(mistakesSig(MISTAKES)!==before) render();
       }
     }
   }catch(e){}
@@ -1771,11 +1803,12 @@ async function resyncFavs(){
     if(res.ok){
       const data = await res.json();
       if(data && typeof data==='object' && !Array.isArray(data)){
+        const before = favsSig(FAV);
         _favSyncing=true;
         FAV = Object.assign({}, data, FAV);
         try{ localStorage.setItem('favs', JSON.stringify(FAV)); }catch(e){}
         _favSyncing=false;
-        render();
+        if(favsSig(FAV)!==before) render();
       }
     }
   }catch(e){}
