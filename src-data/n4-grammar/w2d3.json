@@ -1,85 +1,208 @@
 {
-  "week": 2, "day": 3, "title": "教えてくれてありがとう。", "title_cn": "谢谢你教我。", "title_en": "Thanks for teaching me.",
-  "points": [
+ "week": 2,
+ "day": 3,
+ "title": "教えてくれてありがとう。",
+ "title_cn": "谢谢你教我。",
+ "title_en": "Thanks for teaching me.",
+ "points": [
+  {
+   "pattern": "Nをあげる／くれる／もらう",
+   "connection": "N＋を＋あげる・くれる・もらう",
+   "usage_jp": "物の授受を表す動詞。",
+   "usage_cn": "表示物品授受的动词。",
+   "usage_en": "Verbs marking the giving/receiving of things.",
+   "examples": [
     {
-      "pattern": "Nをあげる／くれる／もらう",
-      "connection": "N＋を＋あげる・くれる・もらう",
-      "usage_jp": "物の授受を表す動詞。",
-      "usage_cn": "表示物品授受的动词。",
-      "usage_en": "Verbs marking the giving/receiving of things.",
-      "examples": [
-        {"jp": "私は田中さんにセーターをあげました。", "cn": "我送给了田中一件毛衣。", "en": "I gave Tanaka a sweater."},
-        {"jp": "田中さんが（私に）セーターをくれました。", "cn": "田中给了我一件毛衣。", "en": "Tanaka gave me a sweater."},
-        {"jp": "私は田中さんにセーターをもらいました。", "cn": "我从田中那里收到了一件毛衣。", "en": "I received a sweater from Tanaka."},
-        {"jp": "田中さんからセーターをもらいました。", "cn": "从田中那里收到了毛衣。", "en": "I got a sweater from Tanaka."},
-        {"jp": "学校でIDカードをもらいました。", "cn": "在学校领到了身份证。", "en": "I received an ID card at school."}
-      ],
-      "notes": [{"type": "！", "text": "「くれる」は基本的に「私に／私の家族に」の場合に使う。「もらう」は「Nから」「機関＋で」も使える。"}]
+     "jp": "私は田中さんにセーターをあげました。",
+     "cn": "我送给了田中一件毛衣。",
+     "en": "I gave Tanaka a sweater."
     },
     {
-      "pattern": "Vてあげる",
-      "connection": "Vて形＋あげる",
-      "usage_jp": "相手のために何かをすることを表す。",
-      "usage_cn": "表示为对方做某事。",
-      "usage_en": "Marks doing something for someone else's benefit.",
-      "examples": [
-        {"jp": "私は友だちの引っこしを手伝ってあげました。", "cn": "我帮朋友搬家了。", "en": "I helped my friend move."},
-        {"jp": "英語を教えてあげましょうか。", "cn": "要不要我教你英语？", "en": "Shall I teach you English?"}
-      ],
-      "notes": [{"type": "れい", "text": "花や動物、自分の子どもなどには「Nをやる／Vてやる」を使う。例：花に水をやる／犬にえさをやる／子どもに勉強を教えてやる"}]
+     "jp": "田中さんが（私に）セーターをくれました。",
+     "cn": "田中给了我一件毛衣。",
+     "en": "Tanaka gave me a sweater."
     },
     {
-      "pattern": "Vてくれる",
-      "connection": "Vて形＋くれる",
-      "usage_jp": "他人が私（や私の家族）に何かをしてくれることを表す。",
-      "usage_cn": "表示别人为我或我的家人做某事。",
-      "usage_en": "Marks someone doing something for me (or my family).",
-      "examples": [
-        {"jp": "田中さんは私に地図をかいてくれました。", "cn": "田中给我画了地图。", "en": "Tanaka drew a map for me."},
-        {"jp": "このマフラーは、友だちがあんでくれました。", "cn": "这条围巾是朋友给我织的。", "en": "This scarf was knitted for me by a friend."},
-        {"jp": "手伝ってくれて、ありがとう。", "cn": "谢谢你帮我。", "en": "Thanks for helping me."}
-      ],
-      "notes": []
+     "jp": "私は田中さんにセーターをもらいました。",
+     "cn": "我从田中那里收到了一件毛衣。",
+     "en": "I received a sweater from Tanaka."
     },
     {
-      "pattern": "Vてもらう",
-      "connection": "Vて形＋もらう",
-      "usage_jp": "他人が私に何かをしてくれることを、感謝の気持ちを込めて表す。",
-      "usage_cn": "表示别人为我做某事，含有感谢的意思。",
-      "usage_en": "Marks having someone do something for me, with a sense of gratitude.",
-      "examples": [
-        {"jp": "私は田中さんに地図をかいてもらいました。", "cn": "我请田中给我画了地图。", "en": "I had Tanaka draw a map for me."},
-        {"jp": "友だちに東京駅まで連れて行ってもらいました。", "cn": "我请朋友带我去了东京站。", "en": "I had a friend take me to Tokyo Station."}
-      ],
-      "notes": []
+     "jp": "田中さんからセーターをもらいました。",
+     "cn": "从田中那里收到了毛衣。",
+     "en": "I got a sweater from Tanaka."
     },
     {
-      "pattern": "さしあげる／くださる／いただく（敬語）",
-      "connection": "N＋を＋さしあげる・くださる・いただく／Vて形＋さしあげる・くださる・いただく",
-      "usage_jp": "相手が家族ではなく、目上の人や上司の場合に使う敬語表現。",
-      "usage_cn": "若对方不是我的家人，而是上司或长辈，则使用敬语。",
-      "usage_en": "Honorific versions of あげる／くれる／もらう, used for superiors or elders outside the family.",
-      "examples": [
-        {"jp": "先生が本をくださいました。", "cn": "老师给了我书。", "en": "My teacher gave me a book."},
-        {"jp": "先生に地図をかいていただきました。", "cn": "请老师给我画了地图。", "en": "I had my teacher draw a map for me."}
-      ],
-      "notes": []
+     "jp": "学校でIDカードをもらいました。",
+     "cn": "在学校领到了身份证。",
+     "en": "I received an ID card at school."
     }
-  ],
-  "exercises": {
-    "answers_note": "答えはp.25",
-    "sections": [
-      {"type": "choice", "instruction": "（　）に何を入れますか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
-        {"n": 1, "q": "ぼくが小学生のとき、姉がよく宿題を手伝って（　）。", "options": ["1 あげました", "2 もらいました", "3 くれました", "4 やりました"]},
-        {"n": 2, "q": "小さいころ、わたしは父によくあそんで（　）。", "options": ["1 あげました", "2 もらいました", "3 くれました", "4 くださいました"]},
-        {"n": 3, "q": "A「来週の日曜日、映画に行かない？」B「さそって（　）ありがとう。でも、その日は、別の約束があって…。」", "options": ["1 おいて", "2 あげて", "3 くれて", "4 みて"]}
-      ]},
-      {"type": "order", "instruction": "＿★＿に入るものはどれですか。1・2・3・4からいちばんいいものを一つえらんでください。", "items": [
-        {"n": 4, "q": "中村先生は＿＿　＿＿　★　＿＿ので、人気があります。", "options": ["1 教えて", "2 ていねいに", "3 やさしいし", "4 くださる"]},
-        {"n": 5, "q": "A「いっしょに行ってあげましょうか。」B「田中さんに地図を＿＿　＿＿　★　＿＿だいじょうぶです。」", "options": ["1 いただきました", "2 かいて", "3 から", "4 ひとりで"]}
-      ]}
-    ],
-    "answers": "①3 ②2 ③3 ④3→2→★1→4 ⑤2→1→★3→4"
+   ],
+   "notes": [
+    {
+     "type": "！",
+     "text": "「くれる」は基本的に「私に／私の家族に」の場合に使う。「もらう」は「Nから」「機関＋で」も使える。"
+    }
+   ]
   },
-  "hitokoto": ""
+  {
+   "pattern": "Vてあげる",
+   "connection": "Vて形＋あげる",
+   "usage_jp": "相手のために何かをすることを表す。",
+   "usage_cn": "表示为对方做某事。",
+   "usage_en": "Marks doing something for someone else's benefit.",
+   "examples": [
+    {
+     "jp": "私は友だちの引っこしを手伝ってあげました。",
+     "cn": "我帮朋友搬家了。",
+     "en": "I helped my friend move."
+    },
+    {
+     "jp": "英語を教えてあげましょうか。",
+     "cn": "要不要我教你英语？",
+     "en": "Shall I teach you English?"
+    }
+   ],
+   "notes": [
+    {
+     "type": "れい",
+     "text": "花や動物、自分の子どもなどには「Nをやる／Vてやる」を使う。例：花に水をやる／犬にえさをやる／子どもに勉強を教えてやる"
+    }
+   ]
+  },
+  {
+   "pattern": "Vてくれる",
+   "connection": "Vて形＋くれる",
+   "usage_jp": "他人が私（や私の家族）に何かをしてくれることを表す。",
+   "usage_cn": "表示别人为我或我的家人做某事。",
+   "usage_en": "Marks someone doing something for me (or my family).",
+   "examples": [
+    {
+     "jp": "田中さんは私に地図をかいてくれました。",
+     "cn": "田中给我画了地图。",
+     "en": "Tanaka drew a map for me."
+    },
+    {
+     "jp": "このマフラーは、友だちがあんでくれました。",
+     "cn": "这条围巾是朋友给我织的。",
+     "en": "This scarf was knitted for me by a friend."
+    },
+    {
+     "jp": "手伝ってくれて、ありがとう。",
+     "cn": "谢谢你帮我。",
+     "en": "Thanks for helping me."
+    }
+   ],
+   "notes": []
+  },
+  {
+   "pattern": "Vてもらう",
+   "connection": "Vて形＋もらう",
+   "usage_jp": "他人が私に何かをしてくれることを、感謝の気持ちを込めて表す。",
+   "usage_cn": "表示别人为我做某事，含有感谢的意思。",
+   "usage_en": "Marks having someone do something for me, with a sense of gratitude.",
+   "examples": [
+    {
+     "jp": "私は田中さんに地図をかいてもらいました。",
+     "cn": "我请田中给我画了地图。",
+     "en": "I had Tanaka draw a map for me."
+    },
+    {
+     "jp": "友だちに東京駅まで連れて行ってもらいました。",
+     "cn": "我请朋友带我去了东京站。",
+     "en": "I had a friend take me to Tokyo Station."
+    }
+   ],
+   "notes": []
+  },
+  {
+   "pattern": "さしあげる／くださる／いただく（敬語）",
+   "connection": "N＋を＋さしあげる・くださる・いただく；Vて形＋さしあげる・くださる・いただく",
+   "usage_jp": "相手が家族ではなく、目上の人や上司の場合に使う敬語表現。",
+   "usage_cn": "若对方不是我的家人，而是上司或长辈，则使用敬语。",
+   "usage_en": "Honorific versions of あげる／くれる／もらう, used for superiors or elders outside the family.",
+   "examples": [
+    {
+     "jp": "先生が本をくださいました。",
+     "cn": "老师给了我书。",
+     "en": "My teacher gave me a book."
+    },
+    {
+     "jp": "先生に地図をかいていただきました。",
+     "cn": "请老师给我画了地图。",
+     "en": "I had my teacher draw a map for me."
+    }
+   ],
+   "notes": []
+  }
+ ],
+ "exercises": {
+  "answers_note": "答えはp.25",
+  "sections": [
+   {
+    "type": "choice",
+    "instruction": "（　）に何を入れますか。1・2・3・4からいちばんいいものを一つえらんでください。",
+    "items": [
+     {
+      "n": 1,
+      "q": "ぼくが小学生のとき、姉がよく宿題を手伝って（　）。",
+      "options": [
+       "1 あげました",
+       "2 もらいました",
+       "3 くれました",
+       "4 やりました"
+      ]
+     },
+     {
+      "n": 2,
+      "q": "小さいころ、わたしは父によくあそんで（　）。",
+      "options": [
+       "1 あげました",
+       "2 もらいました",
+       "3 くれました",
+       "4 くださいました"
+      ]
+     },
+     {
+      "n": 3,
+      "q": "A「来週の日曜日、映画に行かない？」B「さそって（　）ありがとう。でも、その日は、別の約束があって…。」",
+      "options": [
+       "1 おいて",
+       "2 あげて",
+       "3 くれて",
+       "4 みて"
+      ]
+     }
+    ]
+   },
+   {
+    "type": "order",
+    "instruction": "＿★＿に入るものはどれですか。1・2・3・4からいちばんいいものを一つえらんでください。",
+    "items": [
+     {
+      "n": 4,
+      "q": "中村先生は＿＿　＿＿　★　＿＿ので、人気があります。",
+      "options": [
+       "1 教えて",
+       "2 ていねいに",
+       "3 やさしいし",
+       "4 くださる"
+      ]
+     },
+     {
+      "n": 5,
+      "q": "A「いっしょに行ってあげましょうか。」B「田中さんに地図を＿＿　＿＿　★　＿＿だいじょうぶです。」",
+      "options": [
+       "1 いただきました",
+       "2 かいて",
+       "3 から",
+       "4 ひとりで"
+      ]
+     }
+    ]
+   }
+  ],
+  "answers": "①3 ②2 ③3 ④3→2→★1→4 ⑤2→1→★3→4"
+ },
+ "hitokoto": ""
 }
