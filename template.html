@@ -103,12 +103,11 @@ main{max-width:760px;margin:0 auto;padding:14px}
 .conn-label{font-size:11px;font-weight:700;letter-spacing:.08em;opacity:.75;display:block;margin-bottom:4px}
 /* 一条接続里「／」是并列的候选、「＋」是前后接的连接点。原来全挤在一行文字里，
    换行还会断在分隔符上，根本看不出谁跟谁是一组，所以把候选各自框起来。 */
-.conn-row{display:flex;flex-wrap:wrap;align-items:center;gap:5px}
-.conn-row+.conn-row{margin-top:4px}
-.conn-grp+.conn-grp{margin-top:7px;padding-top:7px;border-top:1px dashed var(--line)}
-/* flex:0 0 auto 让短候选保持整块不被压缩，max-width 兜住个别超长的候选，让它在框内换行而不是被截断 */
-.conn-alt{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:1px 7px;flex:0 0 auto;max-width:100%}
-.conn-plus{font-weight:800;flex:none;width:18px;text-align:center;opacity:.8}
+/* 一个候选一行就够了，不用加框——悬挂缩进让折行的部分明显还属于上一条 */
+.conn-line{padding-left:14px;text-indent:-14px;line-height:1.55}
+.conn-line.tail{padding-left:32px;text-indent:-18px}
+.conn-grp+.conn-grp{margin-top:6px}
+.conn-plus{font-weight:800;margin-right:3px}
 .usage{font-size:14.5px;margin:4px 0}
 .usage .cn{color:var(--accent);font-weight:600}
 .ex{border-left:3px solid var(--line);padding:2px 0 2px 10px;margin:8px 0}
@@ -1015,18 +1014,21 @@ function scrollHighlight(id){
    注意 ASCII 的 "/"（V/A/na/N 这种）不是分隔符，只有全角「／」是，所以只切全角。
    「＋」正好一个时才当连接点拆前后两半；出现多个说明它属于各个候选内部（如
    Aくて＋仕方がない／naで＋しょうがない），那就只按「／」切，别拆坏。 */
-function connChips(seg){
-  return seg.split('／').map(s=>s.trim()).filter(Boolean)
-    .map(s=>`<span class="conn-alt">${fmt(s)}</span>`).join('');
+function connLines(seg, isTail){
+  return seg.split('／').map(s=>s.trim()).filter(Boolean).map((s,i)=>{
+    // 后接有多个候选时，除第一行外用一个隐形的「＋」占位，让它们跟第一行对齐，
+    // 不然第二行会顶到最左边，看着像是又回到了前接
+    const mark = isTail ? `<span class="conn-plus"${i?' style="visibility:hidden"':''}>＋</span>` : '';
+    return `<div class="conn-line${isTail?' tail':''}">${mark}${fmt(s)}</div>`;
+  }).join('');
 }
 function connHTML(str){
   return String(str||'').split(/[；　]/).map(s=>s.trim()).filter(Boolean).map(g=>{
     const parts = g.split('＋');
-    // 后接单独一行：跟在一排候选后面时，它会被误读成又一个候选
+    // 后接另起一行并带上「＋」，否则接在候选后面会被当成又一个候选
     const body = parts.length===2
-      ? `<div class="conn-row">${connChips(parts[0])}</div>
-         <div class="conn-row"><span class="conn-plus">＋</span>${connChips(parts[1])}</div>`
-      : `<div class="conn-row">${connChips(g)}</div>`;
+      ? connLines(parts[0], false) + connLines(parts[1], true)
+      : connLines(g, false);
     return `<div class="conn-grp">${body}</div>`;
   }).join('');
 }
