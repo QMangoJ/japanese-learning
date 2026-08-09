@@ -139,6 +139,9 @@ main{max-width:760px;margin:0 auto;padding:14px}
 /* 逐题解析：默认只露一行译文，逐项讲解/要点/生单词收在折叠里，
    不然 25 道题全展开，页面会长到没法用 */
 .an-trans{margin-top:3px;color:var(--sub);font-size:13px}
+.an-link{margin-top:6px;display:inline-block;border:1px solid var(--blue);color:var(--blue);
+  border-radius:999px;padding:3px 11px;font-size:12.5px;font-weight:700;cursor:pointer;max-width:100%}
+.an-link:active{transform:scale(.98)}
 .an-more{margin-top:6px}
 .an-more summary{cursor:pointer;font-size:12.5px;font-weight:700;color:var(--blue);list-style:none;padding:2px 0}
 .an-more summary::-webkit-details-marker{display:none}
@@ -1141,6 +1144,16 @@ function examNoteHTML(a, it){
   const opts = it.opts_r || (it.opts||[]).map(esc);
   let h = a.note ? `<div class="jp">${R(a,'note')}</div>` : '';
   if(a.trans) h += `<div class="an-trans">${esc(a.trans)}</div>`;
+  // 跳到这道题考的那个语法点。标题从课程数据现取，改了课程这里跟着变，不会对不上。
+  if(a.link){
+    const m = String(a.link).match(/^#\/day\/(\d+)-(\d+)\/p(\d+)$/);
+    let label = '看语法点';
+    if(m){
+      const dy = findDay(+m[1], +m[2]), p = dy && (dy.points||[])[+m[3]];
+      if(p) label = `第${m[1]}週${m[2]}日目 · <span class="jp">${R(p,'pattern')}</span>`;
+    }
+    h += `<div class="an-link" data-go="${escAttr(a.link)}">📘 ${label} ›</div>`;
+  }
   const why = a.why||[], words = a.words||[];
   if(!why.length && !a.point && !words.length) return h;
   h += `<details class="an-more"><summary>详细解析</summary>`;
