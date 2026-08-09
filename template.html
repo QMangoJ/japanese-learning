@@ -718,8 +718,11 @@ sheetEl.addEventListener('click', e=>{
   if(go){ closeSheet(); navTo(go.dataset.go); return; }
 });
 
+// 点语法/词汇/汉字一律回该模块的周目录：正在看某一天时想退回目录，
+// 之前会跳回「上次看的那天」＝你正待着的那页，等于点了没反应。
+// 换级别仍然回到上次看的那天（entryHash），那是跨级别时想接着看的场景。
 document.querySelectorAll('#typebar button').forEach(b=>{
-  b.onclick=()=>{ const mod=moduleFrom(LEVEL, b.dataset.ty); setModule(mod); navTo(entryHash(mod)); };
+  b.onclick=()=>{ setModule(moduleFrom(LEVEL, b.dataset.ty)); navTo('#/'); };
 });
 document.querySelectorAll('#langbar button').forEach(b=>{
   b.onclick=()=>{ LANG=b.dataset.lang; try{localStorage.setItem('lang',LANG);}catch(e){} syncModeBar(); render(); };
@@ -865,7 +868,7 @@ sideEl.addEventListener('click', e=>{
   const lv=e.target.closest('[data-golevel]');
   if(lv){ const mod=moduleFrom(lv.dataset.golevel, TYPE); setModule(mod); navTo(entryHash(mod)); return; }
   const ty=e.target.closest('[data-gotype]');
-  if(ty){ const mod=moduleFrom(LEVEL, ty.dataset.gotype); setModule(mod); navTo(entryHash(mod)); return; }
+  if(ty){ setModule(moduleFrom(LEVEL, ty.dataset.gotype)); navTo('#/'); return; }
   const go=e.target.closest('[data-go]');
   if(go){ closeSheet(); navTo(go.dataset.go); return; }
 });
