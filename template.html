@@ -305,12 +305,6 @@ body.hide-cn .vcn,body.hide-cn .ven{visibility:hidden}
 }
 .home-top{position:sticky;top:var(--topbarh,88px);z-index:10;background:var(--bg);padding-bottom:4px}
 .wk-toc{display:none}
-.home-tools{display:flex;gap:8px;margin-bottom:14px}
-.home-tool{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:9px 4px;cursor:pointer;font-size:12.5px;color:var(--ink)}
-.home-tool .ic{font-size:18px}
-.home-tool:hover{border-color:var(--accent);color:var(--accent)}
-/* 级别专属的工具用虚线框跟通用参考区分开 */
-.home-tool.scoped{border-style:dashed}
 .week-card{scroll-margin-top:calc(var(--topbarh,88px) + var(--hometoph,40px))}
 @media (max-width:680px){
   .wk-toc{display:flex;gap:6px;overflow-x:auto;padding:6px 2px 4px;width:100%;max-width:100%;box-sizing:border-box;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
@@ -623,12 +617,13 @@ function openCommonSheet(){
       <button class="sheet-item" data-go="#/ref"><span class="ic">📖</span>接续表</button>
       <button class="sheet-item" data-go="#/katsuyou"><span class="ic">🔄</span>活用</button>
       <button class="sheet-item" data-go="#/numbers"><span class="ic">🔢</span>数字</button>
-    </div>` + (ct ? `<div class="sheet-h">本级别<span class="sub">${LEVEL.toUpperCase()} 语法</span></div>
+    </div>
+    <div class="sheet-h">本模块<span class="sub">${modLabel()}</span></div>
     <div class="sheet-row">
-      <button class="sheet-item scoped" data-go="#/contrast"><span class="ic">🔀</span>${LEVEL.toUpperCase()}辨析</button>
-      <span class="sheet-item" style="visibility:hidden"></span>
-      <span class="sheet-item" style="visibility:hidden"></span>
-    </div>` : ''));
+      <button class="sheet-item scoped" data-go="#/cards"><span class="ic">🗂️</span>记忆卡</button>` +
+      (ct ? `<button class="sheet-item scoped" data-go="#/contrast"><span class="ic">🔀</span>${LEVEL.toUpperCase()}辨析</button>` : '') +
+      `<span class="sheet-item" style="visibility:hidden"></span>${ct?'':'<span class="sheet-item" style="visibility:hidden"></span>'}
+    </div>`);
 }
 lvChip.onclick = openLevelSheet;
 sheetEl.addEventListener('click', e=>{
@@ -820,13 +815,7 @@ function viewHome(){
     `</div>`;
   // 数字 / 接续表 / 活用 讲的是日语本身，不分级别，所以九个模块的首页都放；
   // 辨析的内容是 N3 语法的家族对照，属于 N3 语法这一层，只在那里出现并标明级别。
-  // 接续表 / 活用 / 数字已经搬到底部「通用」弹层了（它们不分级别，任何页面都够得着）；
-  // 这里只留跟当前模块绑定的两个入口。
-  html += `<div class="home-tools">
-    <div class="home-tool" data-go="#/cards"><span class="ic">🗂️</span><span class="lbl" data-cn="记忆卡" data-en="Flashcards">记忆卡</span></div>` +
-    (isGram() && hasContrast(MODULE) ? (lv=>`
-    <div class="home-tool scoped" data-go="#/contrast"><span class="ic">🔀</span><span class="lbl" data-cn="${lv}辨析" data-en="${lv} Contrast">${lv}辨析</span></div>`)(LEVEL.toUpperCase()) : '') +
-  `</div>`;
+  // 工具入口全部收进底部「通用」弹层了，首页只剩内容本身。
   const open = openWeekSet();
   for(const w of weeks){
     const wt = w.title ? ` <span class="jp">${esc(w.title)}</span>` : '';
@@ -1233,7 +1222,7 @@ function buildDeck(week){
   return deck;
 }
 function viewCards(){
-  setNav('home'); setHeader(LX('记忆卡','Flashcards')+' · '+modLabel(), false);
+  setNav('common'); setHeader(LX('记忆卡','Flashcards')+' · '+modLabel(), false);
   if(!fc.deck.length){ fc.deck=buildDeck(fc.week); fc.idx=0; fc.flipped=false; }
   const nWeeks=CUR().weeks.length;
   const filt=[0].concat(Array.from({length:nWeeks},(_,i)=>i+1)).map(n=>`<button class="${fc.week===n?'on':''}" data-fcweek="${n}">${n===0?'全部':'第'+n+'週'}</button>`).join('');
@@ -1405,7 +1394,7 @@ function viewContrastWeek(){
 }
 function viewContrast(){
   const LV = LEVEL.toUpperCase();
-  setNav('home'); setHeader(LX('语法辨析 · '+LV, 'Grammar Contrast · '+LV), true);
+  setNav('common'); setHeader(LX('语法辨析 · '+LV, 'Grammar Contrast · '+LV), true);
   const modeBar = `<div class="fc-filter" style="margin-bottom:12px">
     <button class="${ctMode==='family'?'on':''}" data-ctmode="family">语法家族</button>
     <button class="${ctMode==='week'?'on':''}" data-ctmode="week">每周总结</button>
