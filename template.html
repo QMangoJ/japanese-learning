@@ -1129,6 +1129,8 @@ function viewDayVocab(day,w,d,scrollTok){
 function examVocabHTML(day,w){
   const ansMap = parseCircledAnswers(day.answers);
   let html = `<h2 class="page jp">実戦問題 <span class="meta">实战问题 · ${esc(day.time_limit||'')} · ${esc(day.scoring||'')}</span></h2>`;
+  // 有的实战日在书源里是残缺的，缺了哪部分要说清楚，别让人以为这天本来就只有几道题
+  if(day.note) html += `<div class="card"><div class="note">${esc(day.note)}</div></div>`;
   for(const [key,label] of [['mondai1','問題1'],['mondai2','問題2'],['mondai3','問題3'],['mondai4','問題4']]){
     const m=day[key]; if(!m) continue;
     html += `<div class="sec-title">${label}</div><div class="card"><div class="meta jp">${R(m,'instruction')}</div>`;
@@ -1186,6 +1188,8 @@ function viewDayKanji(day,w,d,scrollTok){
 function examKanjiHTML(day,w){
   const ansMap = parseCircledAnswers(day.answers);
   let html = `<h2 class="page jp">実戦問題 <span class="meta">实战问题 · ${esc(day.time_limit||'')} · ${esc(day.scoring||'')}</span></h2>`;
+  // 有的实战日在书源里是残缺的，缺了哪部分要说清楚，别让人以为这天本来就只有几道题
+  if(day.note) html += `<div class="card"><div class="note">${esc(day.note)}</div></div>`;
   for(const [key,label] of [['mondai1','問題1'],['mondai2','問題2'],['mondai3','問題3'],['mondai4','問題4']]){
     const m=day[key]; if(!m) continue;
     html += `<div class="sec-title">${label}</div><div class="card"><div class="meta jp">${R(m,'instruction')}</div>`;
