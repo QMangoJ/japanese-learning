@@ -99,7 +99,16 @@ main{max-width:760px;margin:0 auto;padding:14px}
 .point h3{margin:0;font-size:17.5px;background:linear-gradient(transparent 62%,var(--accent-soft) 62%);display:inline;padding:0 2px;text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:2px}
 .ex .jp u,.dialog u{text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:2px;font-weight:600}
 .point .reading{color:var(--sub);font-size:12.5px;margin:2px 0 6px}
-.conn{background:var(--blue-soft);color:var(--blue);border-radius:8px;padding:6px 10px;font-size:13.5px;margin:6px 0;display:inline-block}
+.conn{background:var(--blue-soft);color:var(--blue);border-radius:8px;padding:7px 10px;font-size:13.5px;margin:6px 0}
+.conn-label{font-size:11px;font-weight:700;letter-spacing:.08em;opacity:.75;display:block;margin-bottom:4px}
+/* 一条接続里「／」是并列的候选、「＋」是前后接的连接点。原来全挤在一行文字里，
+   换行还会断在分隔符上，根本看不出谁跟谁是一组，所以把候选各自框起来。 */
+.conn-row{display:flex;flex-wrap:wrap;align-items:center;gap:5px}
+.conn-row+.conn-row{margin-top:4px}
+.conn-grp+.conn-grp{margin-top:7px;padding-top:7px;border-top:1px dashed var(--line)}
+/* flex:0 0 auto 让短候选保持整块不被压缩，max-width 兜住个别超长的候选，让它在框内换行而不是被截断 */
+.conn-alt{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:1px 7px;flex:0 0 auto;max-width:100%}
+.conn-plus{font-weight:800;flex:none;width:18px;text-align:center;opacity:.8}
 .usage{font-size:14.5px;margin:4px 0}
 .usage .cn{color:var(--accent);font-weight:600}
 .ex{border-left:3px solid var(--line);padding:2px 0 2px 10px;margin:8px 0}
@@ -1001,15 +1010,39 @@ function scrollHighlight(id){
 }
 
 /* ---------- grammar day ---------- */
+/* 接続的排版。书里用三层分隔符，之前全当普通文字渲染，挤成一段还会在分隔符处换行：
+     「；」「　」「❶❷」 顶层分组      「／」 并列候选      「＋」 前接与后接的连接点
+   注意 ASCII 的 "/"（V/A/na/N 这种）不是分隔符，只有全角「／」是，所以只切全角。
+   「＋」正好一个时才当连接点拆前后两半；出现多个说明它属于各个候选内部（如
+   Aくて＋仕方がない／naで＋しょうがない），那就只按「／」切，别拆坏。 */
+function connChips(seg){
+  return seg.split('／').map(s=>s.trim()).filter(Boolean)
+    .map(s=>`<span class="conn-alt">${fmt(s)}</span>`).join('');
+}
+function connHTML(str){
+  return String(str||'').split(/[；　]/).map(s=>s.trim()).filter(Boolean).map(g=>{
+    const parts = g.split('＋');
+    // 后接单独一行：跟在一排候选后面时，它会被误读成又一个候选
+    const body = parts.length===2
+      ? `<div class="conn-row">${connChips(parts[0])}</div>
+         <div class="conn-row"><span class="conn-plus">＋</span>${connChips(parts[1])}</div>`
+      : `<div class="conn-row">${connChips(g)}</div>`;
+    return `<div class="conn-grp">${body}</div>`;
+  }).join('');
+}
+function connBlockHTML(p){
+  if(!p.connection) return '';
+  const hint = /~[^~]+~/.test(p.connection) ? `<span class="conn-hint">（划线部分去掉）</span>` : '';
+  return `<div class="conn jp"><span class="conn-label">接続${hint}</span>${connHTML(p.connection)}</div>`;
+}
 function pointHTML(p, wid, i){
-  const connHtml = p.connection?fmt(p.connection):'';
   const pid = MODULE+'#'+wid+'#'+i, pw=wid.split('-')[0], pd=wid.split('-')[1];
   const psnap = {module:MODULE, hash:'#/day/'+wid+'/p'+i, w:pw, d:pd, jp:p.pattern, cn:p.usage_cn||''};
   const puse = LX(p.usage_cn, p.usage_en);
   let h = `<div class="point" id="pt-${wid}-${i}">
     <h3 class="jp">${R(p,'pattern')}</h3>${star(pid,psnap)}${sayBtn(p.pattern)}
     ${p.reading?`<div class="reading jp">${esc(p.reading)}</div>`:''}
-    ${connHtml?`<div><span class="conn jp">接続：${connHtml}</span>${connHtml.includes('<del>')?`<span class="conn-hint">（划线部分去掉）</span>`:''}</div>`:''}
+    ${connBlockHTML(p)}
     ${p.usage_jp?`<div class="usage jp">${R(p,'usage_jp')}</div>`:''}
     ${puse?`<div class="usage"><span class="cn">${esc(puse)}</span></div>`:''}`;
   for(const ex of (p.examples||[])){ const exTx=LX(ex.cn, ex.en); h += `<div class="ex"><div class="jp">${R(ex,'jp')}${sayBtn(ex.jp)}</div>${ex.eq?`<div class="eq jp">（${R(ex,'eq')}）</div>`:''}${exTx?`<div class="cn">${esc(exTx)}</div>`:''}</div>`; }
@@ -1316,7 +1349,7 @@ function viewCards(){
     else{ const p=cur.p; cardHTML=`<div class="fcard" data-fcflip="1"><div class="backside">
       <div class="jp" style="font-weight:700;font-size:18px">${R(p,'pattern')}</div>
       ${p.reading?`<div class="reading jp meta">${esc(p.reading)}</div>`:''}
-      ${p.connection?`<div class="conn jp">接続：${fmt(p.connection)}</div>`:''}
+      ${connBlockHTML(p)}
       ${p.usage_jp?`<div class="usage jp">${R(p,'usage_jp')}</div>`:''}
       ${p.usage_cn?`<div class="usage"><span class="cn">${esc(p.usage_cn)}</span></div>`:''}
       ${(p.examples&&p.examples[0])?`<div class="ex"><div class="jp">${R(p.examples[0],'jp')}</div>${p.examples[0].cn?`<div class="cn">${esc(p.examples[0].cn)}</div>`:''}</div>`:''}
