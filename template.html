@@ -109,11 +109,12 @@ main{max-width:760px;margin:0 auto;padding:14px}
 /* 书上的括号：竖线正好贴着首行和末行，上下各一道短横勾。
    后面还有内容时才补右括号；竖列排在最末尾的就只画左括号。 */
 .conn-br{position:relative;display:inline-flex;flex-direction:column;gap:2px;
-  padding:1px 0 1px 9px;margin:1px 1px;max-width:100%}
-.conn-br::before{content:'';position:absolute;left:0;top:0;bottom:0;width:5px;
+  padding:1px 0;margin:1px 3px 1px 0;max-width:100%}
+.conn-br.brl{padding-left:9px}
+.conn-br.brl::before{content:'';position:absolute;left:0;top:0;bottom:0;width:5px;
   border-left:1.5px solid currentColor;border-top:1.5px solid currentColor;border-bottom:1.5px solid currentColor}
-.conn-br.closed{padding-right:9px}
-.conn-br.closed::after{content:'';position:absolute;right:0;top:0;bottom:0;width:5px;
+.conn-br.brr{padding-right:9px}
+.conn-br.brr::after{content:'';position:absolute;right:0;top:0;bottom:0;width:5px;
   border-right:1.5px solid currentColor;border-top:1.5px solid currentColor;border-bottom:1.5px solid currentColor}
 .conn-note{margin-top:4px;font-size:11.5px;opacity:.75}
 .usage{font-size:14.5px;margin:4px 0}
@@ -1107,12 +1108,14 @@ function connRowHTML(row){
     const alts = splitTop(slots[0],'／').map(x=>x.trim()).filter(Boolean);
     return alts.map(a=>`<div class="conn-row"><span class="conn-fix jp">${fmt(a)}</span></div>`).join('');
   }
+  const altsOf = seg => splitTop(seg,'／').map(x=>x.trim()).filter(Boolean);
   return `<div class="conn-row">` + slots.map((seg,i)=>{
-    const alts = splitTop(seg,'／').map(x=>x.trim()).filter(Boolean);
+    const alts = altsOf(seg);
     if(alts.length<2) return `<span class="conn-fix jp">${fmt(seg)}</span>`;
-    // 后面还有槽才收口，跟书上一致
-    const closed = i < slots.length-1 ? ' closed' : '';
-    return `<span class="conn-br${closed}">${alts.map(a=>`<span class="conn-alt jp">${fmt(a)}</span>`).join('')}</span>`;
+    // 括号是用来把竖列跟旁边的内容隔开的：行首没有左括号；右边紧跟着又一个竖列时
+    // 也不收口，因为那个竖列自己会画左括号，两道挨在一起书上是不画的。
+    const cls = (i>0 ? ' brl' : '') + ((i<slots.length-1 && altsOf(slots[i+1]).length<2) ? ' brr' : '');
+    return `<span class="conn-br${cls}">${alts.map(a=>`<span class="conn-alt jp">${fmt(a)}</span>`).join('')}</span>`;
   }).join('') + `</div>`;
 }
 function connHTML(str){
