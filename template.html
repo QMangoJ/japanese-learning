@@ -71,16 +71,29 @@ header.top h1{font-size:16px;margin:0;font-weight:700;flex:1;white-space:nowrap;
 .side-item.on{background:var(--blue-soft);color:var(--blue);font-weight:700}
 .side-item.on .ct{color:var(--blue)}
 .side-foot{margin-top:auto;display:flex;flex-direction:column;gap:2px;padding-top:12px;border-top:1px solid var(--line)}
-/* 一天读完顺手翻页；缺一侧时留一个等宽空位，另一侧不会跑到中间去 */
-.daynav{display:flex;gap:8px;margin:20px 0 4px}
-.daynav-cell{flex:1 1 0;min-width:0;display:flex;flex-direction:column;gap:1px;
-  background:var(--card);border:1px solid var(--line);border-radius:12px;padding:9px 12px;cursor:pointer;color:var(--ink)}
-.daynav-cell.empty{background:none;border-color:transparent;cursor:default}
-.daynav-cell:active{transform:scale(.99)}
-.daynav-cell .k{font-size:11.5px;color:var(--accent);font-weight:700}
-.daynav-cell .t{font-size:13px}
-.daynav-cell .j{font-size:12.5px;color:var(--sub);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.daynav-cell.next{text-align:right}
+/* 翻页钮悬浮在两侧：不占正文高度，滚到哪儿都能翻。
+   手机没有边距，只放一个半透明圆钮；桌面正文两侧有留白，展开成带日期的胶囊。 */
+/* 手机上贴在底栏正上方的两个角：竖直居中会盖住正文首字，而这里正好是拇指位 */
+.daynav-fab{position:fixed;bottom:calc(64px + env(safe-area-inset-bottom));z-index:22;
+  display:flex;align-items:center;gap:7px;justify-content:center;
+  min-width:44px;min-height:44px;padding:0 11px;
+  background:var(--card);border:1px solid var(--line);border-radius:999px;box-shadow:var(--shadow);
+  color:var(--accent);font-size:21px;font-weight:800;line-height:1;cursor:pointer;opacity:.88;
+  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.daynav-fab:hover,.daynav-fab:active{opacity:1;border-color:var(--accent)}
+.daynav-fab.prev{left:calc(10px + env(safe-area-inset-left))}
+.daynav-fab.next{right:calc(10px + env(safe-area-inset-right))}
+.daynav-fab .lb{display:none;font-size:13px;font-weight:600;color:var(--ink);white-space:nowrap}
+.daynav-fab .sub{display:none;font-size:11.5px;font-weight:400;color:var(--sub);white-space:nowrap;max-width:150px;overflow:hidden;text-overflow:ellipsis}
+/* 桌面正文两侧有留白，放回竖直居中并展开成带日期的胶囊 */
+@media (min-width:900px){
+  .daynav-fab{bottom:auto;top:50%;transform:translateY(-50%);padding:11px 15px;opacity:.95;gap:9px}
+  .daynav-fab .lb,.daynav-fab .sub{display:block}
+  .daynav-fab .txt{display:flex;flex-direction:column;gap:1px;align-items:flex-start}
+  .daynav-fab.next .txt{align-items:flex-end}
+  .daynav-fab.prev{left:calc(224px + 12px)}
+  .daynav-fab.next{right:12px}
+}
 main{max-width:760px;margin:0 auto;padding:14px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:14px 16px;margin-bottom:12px}
 .week-card{cursor:pointer;padding:0}
@@ -1099,21 +1112,36 @@ function dayChain(){
   for(const wk of CUR().weeks) for(const dy of wk.days) out.push([wk.n, dy.day, dy]);
   return out;
 }
-function dayNavHTML(w,d){
+function dayNeighbors(w,d){
   const chain=dayChain();
   const i=chain.findIndex(x=>x[0]===w && x[1]===d);
-  if(i<0) return '';
-  const cell=(t,dir)=>{
-    if(!t) return `<span class="daynav-cell empty"></span>`;
+  if(i<0) return {};
+  return { prev: i>0?chain[i-1]:null, next: i<chain.length-1?chain[i+1]:null };
+}
+function dayNavHTML(w,d){
+  const {prev,next} = dayNeighbors(w,d);
+  const fab=(t,dir)=>{
+    if(!t) return '';
     const [cw,cd,day]=t;
     const label=LX(`第${cw}週 ${cd}日目`, `Week ${cw} Day ${cd}`);
-    return `<a class="daynav-cell ${dir}" data-go="#/day/${cw}-${cd}">
-      <span class="k">${dir==='prev'?'‹ '+LX('上一日','Prev'):LX('下一日','Next')+' ›'}</span>
-      <span class="t">${esc(label)}</span>
-      <span class="j jp">${R(day,'title')}</span></a>`;
+    const ar=dir==='prev'?'‹':'›';
+    const txt=`<span class="txt"><span class="lb">${esc(label)}</span><span class="sub jp">${esc(day.title||'')}</span></span>`;
+    return `<a class="daynav-fab ${dir}" data-go="#/day/${cw}-${cd}" title="${escAttr(label)}" aria-label="${escAttr(label)}">` +
+      (dir==='prev' ? `<span class="ar">${ar}</span>${txt}` : `${txt}<span class="ar">${ar}</span>`) + `</a>`;
   };
-  return `<nav class="daynav">${cell(i>0?chain[i-1]:null,'prev')}${cell(i<chain.length-1?chain[i+1]:null,'next')}</nav>`;
+  return fab(prev,'prev')+fab(next,'next');
 }
+// 桌面上顺手支持左右方向键翻页；在输入框里打字时不抢按键
+document.addEventListener('keydown', e=>{
+  if(e.key!=='ArrowLeft' && e.key!=='ArrowRight') return;
+  if(e.metaKey||e.ctrlKey||e.altKey) return;
+  const t=e.target, tag=t&&t.tagName;
+  if(tag==='INPUT'||tag==='TEXTAREA'||(t&&t.isContentEditable)) return;
+  const m=(location.hash||'').match(/^#\/day\/(\d+)-(\d+)/);
+  if(!m) return;
+  const n=dayNeighbors(+m[1],+m[2])[e.key==='ArrowLeft'?'prev':'next'];
+  if(n){ e.preventDefault(); navTo(`#/day/${n[0]}-${n[1]}`); }
+});
 function scrollHighlight(id){
   const el=document.getElementById(id);
   if(el){ el.scrollIntoView({block:'center'}); el.style.background='var(--amber-soft)'; setTimeout(()=>{el.style.background='';},1600); }
