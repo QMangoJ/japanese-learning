@@ -1096,24 +1096,28 @@ function splitTop(str, sep){
   }
   out.push(cur); return out;
 }
-/* 一个「槽」＝两个「＋」之间的部分。槽里只有一项就是固定部分，
-   有多项就竖着列进方括号里——跟书上的排版一致。 */
-function connSlotsHTML(row){
+/* 一个「槽」＝两个「＋」之间的部分。括号的作用是把竖列的候选跟外面的固定部分
+   对齐，所以整行只有一个槽（没有固定部分）时书上不画括号，直接一行一个列出来。 */
+function connRowHTML(row){
   const slots = splitTop(row,'＋').map(s=>s.trim()).filter(Boolean);
-  return slots.map((seg,i)=>{
+  if(slots.length===1){
+    const alts = splitTop(slots[0],'／').map(x=>x.trim()).filter(Boolean);
+    return alts.map(a=>`<div class="conn-row"><span class="conn-fix jp">${fmt(a)}</span></div>`).join('');
+  }
+  return `<div class="conn-row">` + slots.map((seg,i)=>{
     const alts = splitTop(seg,'／').map(x=>x.trim()).filter(Boolean);
     if(alts.length<2) return `<span class="conn-fix jp">${fmt(seg)}</span>`;
     // 后面还有槽才收口，跟书上一致
     const closed = i < slots.length-1 ? ' closed' : '';
     return `<span class="conn-br${closed}">${alts.map(a=>`<span class="conn-alt jp">${fmt(a)}</span>`).join('')}</span>`;
-  }).join('');
+  }).join('') + `</div>`;
 }
 function connHTML(str){
   return String(str||'').split(/[；　]/).map(s=>s.trim()).filter(Boolean).map(g=>{
     // 「（注意：…）」是补充说明，不属于接続本身，抽出来放在下面一行
     const m = g.match(/^([\s\S]*?)(（注意：[^）]*）)\s*$/);
     const row = m ? m[1].trim() : g, note = m ? m[2] : '';
-    return `<div class="conn-grp"><div class="conn-row">${connSlotsHTML(row)}</div>` +
+    return `<div class="conn-grp">${connRowHTML(row)}` +
       (note ? `<div class="conn-note jp">${fmt(note)}</div>` : '') + `</div>`;
   }).join('');
 }
