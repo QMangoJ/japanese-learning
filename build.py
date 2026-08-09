@@ -147,6 +147,9 @@ def annotate_k(day):
             it["q_r"] = ruby_ul(it["q"], it.get("ul"))
             if it.get("opts"):
                 it["opts_r"] = rlist(it["opts"])
+    for e in day.get("kaisetsu") or []:
+        if e.get("note"):
+            e["note_r"] = ruby(e["note"])
     return day
 
 def annotate_v(day):
@@ -178,6 +181,9 @@ def annotate_v(day):
                 it["q_r"] = ruby(it["q"])
             if it.get("opts"):
                 it["opts_r"] = rlist(it["opts"])
+    for e in day.get("kaisetsu") or []:
+        if e.get("note"):
+            e["note_r"] = ruby(e["note"])
     return day
 
 def count_weeks(folder):

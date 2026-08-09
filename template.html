@@ -918,12 +918,15 @@ function render(){
   if((MODULE==='n4grammar'||MODULE==='n4vocab'||MODULE==='n4kanji') && !n4Loaded){ setNav('home'); setHeader(modLabel(), false); app.innerHTML='<div class="empty">N4 数据加载中，请稍候…</div>'; return; }
   if(h==='#/search' && !n2Loaded){ setNav('search'); setHeader(LX('搜索（语法 + 词汇）','Search (Grammar + Vocabulary)'), false); app.innerHTML='<div class="empty">词典数据加载中，马上就好…</div>'; return; }
   syncModeBar();
-  const sameView = (h===_lastRenderedHash);
+  // 必须带上模块：切模块时 hash 可能不变（两个模块的入口都停在同一天），
+  // 只比 hash 会把上一个模块的答题状态还原到新模块的题上
+  const viewKey = MODULE + '|' + h;
+  const sameView = (viewKey===_lastRenderedHash);
   if(!sameView) window.scrollTo(0,0);
   // <details> 的展开状态只存在 DOM 里，重画同一个页面时要自己收好再放回去
   const openSnap = sameView ? Array.from(app.querySelectorAll('details')).map(d=>d.open) : null;
   const qzSnap   = sameView ? snapshotQz() : null;
-  _lastRenderedHash = h;
+  _lastRenderedHash = viewKey;
   if(h==='#/'){ saveLastVisit('#/'); viewHome(); }
   else if(h==='#/search') viewSearch();
   else if(h==='#/cards') viewCards();
@@ -1166,20 +1169,29 @@ function viewDayGrammar(day,w,d,scrollP){
 }
 /* 别册里一道题可能带：一句 note、译文、四个选项各自的讲解、要点、生单词。
    答对答错都要能复盘，所以整块跟原来的 note 一样，答完题才显示。 */
+/* 出处链接的标题从课程数据现取，改了课程这里跟着变，不会出现"链接写着A、点进去是B"。
+   三种模块的锚点各不相同：语法 pN、词汇 vSI-II、汉字 kKI。 */
+function srcLabel(link){
+  const m = String(link||'').match(/^#\/day\/(\d+)-(\d+)\/(.+)$/);
+  if(!m) return '看出处';
+  const w=+m[1], d=+m[2], tok=m[3], dy=findDay(w,d);
+  let name='', mm;
+  if(dy){
+    if((mm=tok.match(/^p(\d+)$/))){ const p=(dy.points||[])[+mm[1]]; if(p) name=R(p,'pattern'); }
+    else if((mm=tok.match(/^v(\d+)-(\d+)$/))){
+      const sec=(dy.sections||[])[+mm[1]], it=sec&&(sec.items||[])[+mm[2]];
+      // 词条可能整条是一段对话，太长就截断，否则这个胶囊会撑满一屏
+      if(it) name = (it.jp||'').length>14 ? esc(it.jp.slice(0,14))+'…' : (it.jp_r||esc(it.jp));
+    }
+    else if((mm=tok.match(/^k(\d+)$/))){ const k=(dy.kanji||[])[+mm[1]]; if(k) name=esc(k.char); }
+  }
+  return `第${w}週${d}日目` + (name ? ` · <span class="jp">${name}</span>` : '');
+}
 function examNoteHTML(a, it){
   const opts = it.opts_r || (it.opts||[]).map(esc);
   let h = a.note ? `<div class="jp">${R(a,'note')}</div>` : '';
   if(a.trans) h += `<div class="an-trans">${esc(a.trans)}</div>`;
-  // 跳到这道题考的那个语法点。标题从课程数据现取，改了课程这里跟着变，不会对不上。
-  if(a.link){
-    const m = String(a.link).match(/^#\/day\/(\d+)-(\d+)\/p(\d+)$/);
-    let label = '看语法点';
-    if(m){
-      const dy = findDay(+m[1], +m[2]), p = dy && (dy.points||[])[+m[3]];
-      if(p) label = `第${m[1]}週${m[2]}日目 · <span class="jp">${R(p,'pattern')}</span>`;
-    }
-    h += `<div class="an-link" data-go="${escAttr(a.link)}">📘 ${label} ›</div>`;
-  }
+  if(a.link) h += `<div class="an-link" data-go="${escAttr(a.link)}">📘 ${srcLabel(a.link)} ›</div>`;
   const why = a.why||[], words = a.words||[];
   if(!why.length && !a.point && !words.length) return h;
   h += `<details class="an-more"><summary>详细解析</summary>`;
@@ -1287,6 +1299,7 @@ function viewDayVocab(day,w,d,scrollTok){
 }
 function examVocabHTML(day,w){
   const ansMap = parseCircledAnswers(day.answers);
+  const kai = {}; for(const e of (day.kaisetsu||[])) kai[e.n]=e;
   let html = `<h2 class="page jp">実戦問題 <span class="meta">实战问题 · ${esc(day.time_limit||'')} · ${esc(day.scoring||'')}</span></h2>`;
   // 有的实战日在书源里是残缺的，缺了哪部分要说清楚，别让人以为这天本来就只有几道题
   if(day.note) html += `<div class="card"><div class="note">${esc(day.note)}</div></div>`;
@@ -1297,7 +1310,11 @@ function examVocabHTML(day,w){
       const correct=ansMap[it.n];
       let h=`<div class="q"><span class="n">${it.n}</span><span class="jp">${R(it,'q')}</span>`;
       h += it.opts ? quizOptsHTML(it, correct!=null?correct:null) : '';
-      if(it.opts && correct!=null) h += `<div class="qz-result"></div>`;
+      if(it.opts && correct!=null){
+        h += `<div class="qz-result"></div>`;
+        const nh = examNoteHTML(Object.assign({ans:correct}, kai[it.n]||{}), it);
+        if(nh) h += `<div class="qz-note">${nh}</div>`;
+      }
       return h+`</div>`;
     }).join('') + `</div>`;
   }
@@ -1346,6 +1363,7 @@ function viewDayKanji(day,w,d,scrollTok){
 }
 function examKanjiHTML(day,w){
   const ansMap = parseCircledAnswers(day.answers);
+  const kai = {}; for(const e of (day.kaisetsu||[])) kai[e.n]=e;
   let html = `<h2 class="page jp">実戦問題 <span class="meta">实战问题 · ${esc(day.time_limit||'')} · ${esc(day.scoring||'')}</span></h2>`;
   // 有的实战日在书源里是残缺的，缺了哪部分要说清楚，别让人以为这天本来就只有几道题
   if(day.note) html += `<div class="card"><div class="note">${esc(day.note)}</div></div>`;
@@ -1356,7 +1374,11 @@ function examKanjiHTML(day,w){
       const correct=ansMap[it.n];
       let h=`<div class="q"><span class="n">${it.n}</span><span class="jp">${R(it,'q')}</span>`;
       h += it.opts ? quizOptsHTML(it, correct!=null?correct:null) : optsRow(it);
-      if(it.opts && correct!=null) h += `<div class="qz-result"></div>`;
+      if(it.opts && correct!=null){
+        h += `<div class="qz-result"></div>`;
+        const nh = examNoteHTML(Object.assign({ans:correct}, kai[it.n]||{}), it);
+        if(nh) h += `<div class="qz-note">${nh}</div>`;
+      }
       return h+`</div>`;
     }).join('') + `</div>`;
   }
