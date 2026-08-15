@@ -9,7 +9,8 @@
       "一人っきりのお正月：さびしいなあ…",
       "二人っきりのお正月：楽しい！"
     ],
-    "cn": "“好寂寞呀。”“真是开心！”"
+    "cn": "“好寂寞呀。”“真是开心！”",
+    "en": "New Year’s Day all alone: “I’m so lonely....” New Year’s Day with just the two of us: “What fun!”"
   },
   "points": [
     {
@@ -22,20 +23,24 @@
         {
           "jp": "友達がかいてくれた地図のとおりに来たが、道に迷った。",
           "eq": "=地図と同じように",
-          "cn": "按照朋友给我画的地图来的，却迷路了。"
+          "cn": "按照朋友给我画的地图来的，却迷路了。",
+          "en": "I got lost even though I followed the map my friend drew for me."
         },
         {
           "jp": "雪が降ってきた。予報どおりだ。",
           "eq": "=予報と事実が同じだ",
-          "cn": "下雪了。和天气预报说的一样。"
+          "cn": "下雪了。和天气预报说的一样。",
+          "en": "It started to snow. It was just as the forecast said."
         },
         {
           "jp": "先生が言ったとおり、試験は難しかった。",
           "eq": "=言ったことと事実が同じで",
-          "cn": "正如老师所说的，考试很难。"
+          "cn": "正如老师所说的，考试很难。",
+          "en": "The test was difficult, just as the teacher said."
         }
       ],
-      "notes": []
+      "notes": [],
+      "usage_en": "To mean 'in the same way as ~.'"
     },
     {
       "pattern": "テレビをつけたまま",
@@ -47,12 +52,14 @@
         {
           "jp": "昨夜は、テレビをつけたまま寝てしまった。",
           "eq": "=ついている状態で",
-          "cn": "昨天晚上开着电视睡着了。"
+          "cn": "昨天晚上开着电视睡着了。",
+          "en": "I fell asleep with the TV on."
         },
         {
           "jp": "この野菜は、生のままで食べてもおいしいですよ。",
           "eq": "=生の状態で",
-          "cn": "这种蔬菜，直接生着吃也好吃。"
+          "cn": "这种蔬菜，直接生着吃也好吃。",
+          "en": "This vegetable tastes good even when eaten raw."
         }
       ],
       "notes": [
@@ -60,7 +67,8 @@
           "type": "ダメ",
           "text": "Vるまま"
         }
-      ]
+      ],
+      "usage_en": "To show that a state remains unchanged."
     },
     {
       "pattern": "開けっぱなし",
@@ -72,12 +80,14 @@
         {
           "jp": "窓を開けっぱなしで出てきた。",
           "eq": "=窓が開いている状態で／窓を開けたままで",
-          "cn": "开着窗户就出去了。"
+          "cn": "开着窗户就出去了。",
+          "en": "I left the window open when I came out."
         },
         {
           "jp": "水を出しっぱなしにしないでください。",
           "eq": "=出したままの状態に",
-          "cn": "不要一直开着水龙头。"
+          "cn": "不要一直开着水龙头。",
+          "en": "Please don’t leave the water running."
         }
       ],
       "notes": [
@@ -85,7 +95,8 @@
           "type": "tag",
           "text": "会話でよく使われる表現"
         }
-      ]
+      ],
+      "usage_en": "To mean 'left in the state of ~.'"
     },
     {
       "pattern": "二人きり",
@@ -97,12 +108,14 @@
         {
           "jp": "二人（っ）きりで話をしたいです。",
           "eq": "=二人だけで",
-          "cn": "想两人单独谈谈。"
+          "cn": "想两人单独谈谈。",
+          "en": "I’d like to have a private talk with just the two of us."
         },
         {
           "jp": "彼に会ったのは1回（っ）きりです。",
           "eq": "=1回だけ",
-          "cn": "只和他见过一次。"
+          "cn": "只和他见过一次。",
+          "en": "I’ve met him only once."
         }
       ],
       "notes": [
@@ -110,7 +123,8 @@
           "type": "れい",
           "text": "一人（っ）きり／一度（っ）きり"
         }
-      ]
+      ],
+      "usage_en": "A noun plus a word indicating a small number; it means 'only ~.'"
     }
   ],
   "exercises": {

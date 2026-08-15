@@ -10,7 +10,8 @@
       "炊きたてのごはんはおいしいね。",
       "こら、食べかけで立ち上がっちゃいけないよ。"
     ],
-    "cn": "“饭做好了。”“刚做好的饭真好吃呀。”“喂，不能吃到一半就站起来。”"
+    "cn": "“饭做好了。”“刚做好的饭真好吃呀。”“喂，不能吃到一半就站起来。”",
+    "en": "“The rice has just finished cooking.” “Freshly cooked rice tastes really good, doesn’t it?” “Hey, you shouldn’t get up before you’re finished eating.”"
   },
   "points": [
     {
@@ -23,12 +24,14 @@
         {
           "jp": "やっとレポートを書き上げた。",
           "eq": "=全部書いた",
-          "cn": "好容易把报告写完了。"
+          "cn": "好容易把报告写完了。",
+          "en": "I finally finished my paper."
         },
         {
           "jp": "ケーキが焼き上がりましたよ。",
           "eq": "=焼き終わりました",
-          "cn": "蛋糕烤好了。"
+          "cn": "蛋糕烤好了。",
+          "en": "The cake is just out of the oven."
         }
       ],
       "notes": [
@@ -36,7 +39,8 @@
           "type": "れい",
           "text": "書き上げる／編み上げる／作り上げる／調べ上げる／育て上げる"
         }
-      ]
+      ],
+      "usage_en": "To mean that the work has been completed in full."
     },
     {
       "pattern": "食べ切れない",
@@ -48,12 +52,14 @@
         {
           "jp": "ご飯の量が多くて、食べ切れないよ。",
           "eq": "=全部食べられない",
-          "cn": "饭菜的量太大，吃不完。"
+          "cn": "饭菜的量太大，吃不完。",
+          "en": "I can’t finish the rice because there is so much."
         },
         {
           "jp": "長い小説を、2日間で読み切った。",
           "eq": "=全部読んだ",
-          "cn": "2天时间把一部长篇小说读完了。"
+          "cn": "2天时间把一部长篇小说读完了。",
+          "en": "I finished reading a long novel in two days."
         }
       ],
       "notes": [
@@ -65,7 +71,8 @@
           "type": "れい",
           "text": "飲み切る／読み切る／走り切る／泳ぎ切る／売り切れる"
         }
-      ]
+      ],
+      "usage_en": "To show that something has all been used or finished, with nothing left."
     },
     {
       "pattern": "読みかけの本",
@@ -77,12 +84,14 @@
         {
           "jp": "この本はまだ読みかけだ。",
           "eq": "=読んでいる途中だ",
-          "cn": "这本书还在读。"
+          "cn": "这本书还在读。",
+          "en": "I haven’t finished the book."
         },
         {
           "jp": "おふろに入りかけたときに電話が鳴った。",
           "eq": "=入ろうとしたときに",
-          "cn": "刚要洗澡时电话响了。"
+          "cn": "刚要洗澡时电话响了。",
+          "en": "The phone rang when I was about to get in the bath."
         }
       ],
       "notes": [
@@ -90,7 +99,8 @@
           "type": "れい",
           "text": "食べかける／帰りかける／落ちかける／失敗しかける"
         }
-      ]
+      ],
+      "usage_en": "To mean 'in the middle of doing ~ / just about to do ~.'"
     },
     {
       "pattern": "焼きたてのパン",
@@ -102,12 +112,14 @@
         {
           "jp": "焼きたてのパンはおいしい。",
           "eq": "=焼いてすぐあとの／焼いたばかりの",
-          "cn": "刚烤好的面包很好吃。"
+          "cn": "刚烤好的面包很好吃。",
+          "en": "Freshly baked bread is really good."
         },
         {
           "jp": "あのスーパーは、とりたての新鮮な野菜を売っている。",
           "eq": "=とってすぐあとの／とったばかりの",
-          "cn": "那家超市卖刚采摘的新鲜蔬菜。"
+          "cn": "那家超市卖刚采摘的新鲜蔬菜。",
+          "en": "That grocery store sells very fresh, just-picked vegetables."
         }
       ],
       "notes": [
@@ -119,7 +131,8 @@
           "type": "ダメ",
           "text": "～たてる、読みたて・寝たて・食べたて"
         }
-      ]
+      ],
+      "usage_en": "To mean 'freshly done / just after doing ~.'"
     }
   ],
   "exercises": {
