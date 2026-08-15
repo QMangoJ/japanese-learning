@@ -1,54 +1,227 @@
 {
-  "week": 1, "day": 2, "title": "料理をしましょう①", "title_cn": "我们来做饭吧①", "title_en": "Let's Do Some Cooking ①",
-  "dialog": {"lines": ["肉じゃが〈料理の名前〉を作りましょう①", "夕食のおかずに、ぜひ！"], "cn": "我们来做土豆炖牛肉（菜名）吧①——晚饭的菜就做它！"},
-  "intro": {"heading": "《材料》4人分", "lines": ["牛肉 200グラム／ジャガイモ 3個／玉ネギ 2個", "－調味料－ 水 2カップ／酒 50cc／しょうゆ 50cc／砂糖 大さじ3杯／サラダ油 少々", "＊牛肉は3センチ幅に、玉ネギとジャガイモは皮をむいて、大きめに切っておきましょう。"]},
+  "week": 1,
+  "day": 2,
+  "title": "料理をしましょう①",
+  "title_cn": "我们来做饭吧①",
+  "title_en": "Let's Do Some Cooking ①",
+  "dialog": {
+    "lines": [
+      "肉じゃが〈料理の名前〉を作りましょう①",
+      "夕食のおかずに、ぜひ！"
+    ],
+    "cn": "我们来做土豆炖牛肉（菜名）吧①——晚饭的菜就做它！"
+  },
+  "intro": {
+    "heading": "《材料》4人分",
+    "lines": [
+      "牛肉 200グラム／ジャガイモ 3個／玉ネギ 2個",
+      "－調味料－ 水 2カップ／酒 50cc／しょうゆ 50cc／砂糖 大さじ3杯／サラダ油 少々",
+      "＊牛肉は3センチ幅に、玉ネギとジャガイモは皮をむいて、大きめに切っておきましょう。"
+    ]
+  },
   "sections": [
-    {"type": "words", "heading": "絵をみておぼえましょう", "items": [
-      {"jp": "大さじ", "en": "table spoon", "cn": "大匙"},
-      {"jp": "小さじ", "en": "tea spoon", "cn": "小匙"},
-      {"jp": "1カップ＝200cc", "en": "", "cn": ""},
-      {"jp": "1リットル＝1000cc", "en": "", "cn": ""},
-      {"jp": "包丁", "en": "kitchen knife", "cn": "菜刀"},
-      {"jp": "まな板", "en": "cutting board", "cn": "切菜板"},
-      {"jp": "はかり", "en": "scale", "cn": "秤"},
-      {"jp": "100グラム〔g〕", "en": "", "cn": ""}
-    ]},
-    {"type": "phrases", "heading": "もっとおぼえましょう", "items": [
-      {"jp": "夕食のおかず", "en": "dish for an evening meal", "cn": "晚饭的菜"},
-      {"jp": "栄養のバランスを考える", "en": "think about the nutritional balance", "cn": "考虑营养的搭配"},
-      {"jp": "カロリーが高い食品", "en": "high calorie food", "cn": "热量高的食物"},
-      {"jp": "はかりで量る", "en": "weigh on a scale", "cn": "过秤"},
-      {"jp": "塩を少々入れる", "en": "salt slightly", "cn": "放入少许食盐"},
-      {"jp": "調味料", "en": "seasoning", "cn": "调味料"},
-      {"jp": "酒", "en": "rice wine", "cn": "酒"},
-      {"jp": "酢", "en": "vinegar", "cn": "醋"},
-      {"jp": "サラダ油", "en": "salad oil", "cn": "色拉油"},
-      {"jp": "天ぷら油", "en": "tempura oil", "cn": "油炸用油"},
-      {"jp": "皮をむく", "en": "peel…", "cn": "剥皮"},
-      {"jp": "材料を刻む", "en": "chop the ingredients", "cn": "将材料切细"},
-      {"jp": "大きめに切る", "en": "cut in big pieces", "cn": "切大一些"},
-      {"jp": "3センチ〔cm〕幅に切る", "en": "cut into 3 centimeter pieces", "cn": "切成3厘米宽"},
-      {"jp": "みそ汁がぬるくなる", "en": "the miso soup is lukewarm", "cn": "酱汤有点凉了"},
-      {"jp": "ラップをかぶせる／かける", "en": "cover …with plastic wrap", "cn": "盖上保鲜膜"},
-      {"jp": "ラップでくるむ", "en": "wrap … with plastic wrap", "cn": "用保鲜膜包上"},
-      {"jp": "（アルミ）ホイル", "en": "aluminium foil", "cn": "锡纸"}
-    ]}
+    {
+      "type": "words",
+      "heading": "絵をみておぼえましょう",
+      "items": [
+        {
+          "jp": "大さじ",
+          "en": "table spoon",
+          "cn": "大匙"
+        },
+        {
+          "jp": "小さじ",
+          "en": "tea spoon",
+          "cn": "小匙"
+        },
+        {
+          "jp": "1カップ＝200cc",
+          "en": "1 cup = 200 cc",
+          "cn": ""
+        },
+        {
+          "jp": "1リットル＝1000cc",
+          "en": "1 liter = 1,000 cc",
+          "cn": ""
+        },
+        {
+          "jp": "包丁",
+          "en": "kitchen knife",
+          "cn": "菜刀"
+        },
+        {
+          "jp": "まな板",
+          "en": "cutting board",
+          "cn": "切菜板"
+        },
+        {
+          "jp": "はかり",
+          "en": "scale",
+          "cn": "秤"
+        },
+        {
+          "jp": "100グラム〔g〕",
+          "en": "100 grams",
+          "cn": ""
+        }
+      ]
+    },
+    {
+      "type": "phrases",
+      "heading": "もっとおぼえましょう",
+      "items": [
+        {
+          "jp": "夕食のおかず",
+          "en": "dish for an evening meal",
+          "cn": "晚饭的菜"
+        },
+        {
+          "jp": "栄養のバランスを考える",
+          "en": "think about the nutritional balance",
+          "cn": "考虑营养的搭配"
+        },
+        {
+          "jp": "カロリーが高い食品",
+          "en": "high calorie food",
+          "cn": "热量高的食物"
+        },
+        {
+          "jp": "はかりで量る",
+          "en": "weigh on a scale",
+          "cn": "过秤"
+        },
+        {
+          "jp": "塩を少々入れる",
+          "en": "salt slightly",
+          "cn": "放入少许食盐"
+        },
+        {
+          "jp": "調味料",
+          "en": "seasoning",
+          "cn": "调味料"
+        },
+        {
+          "jp": "酒",
+          "en": "rice wine",
+          "cn": "酒"
+        },
+        {
+          "jp": "酢",
+          "en": "vinegar",
+          "cn": "醋"
+        },
+        {
+          "jp": "サラダ油",
+          "en": "salad oil",
+          "cn": "色拉油"
+        },
+        {
+          "jp": "天ぷら油",
+          "en": "tempura oil",
+          "cn": "油炸用油"
+        },
+        {
+          "jp": "皮をむく",
+          "en": "peel…",
+          "cn": "剥皮"
+        },
+        {
+          "jp": "材料を刻む",
+          "en": "chop the ingredients",
+          "cn": "将材料切细"
+        },
+        {
+          "jp": "大きめに切る",
+          "en": "cut in big pieces",
+          "cn": "切大一些"
+        },
+        {
+          "jp": "3センチ〔cm〕幅に切る",
+          "en": "cut into 3 centimeter pieces",
+          "cn": "切成3厘米宽"
+        },
+        {
+          "jp": "みそ汁がぬるくなる",
+          "en": "the miso soup is lukewarm",
+          "cn": "酱汤有点凉了"
+        },
+        {
+          "jp": "ラップをかぶせる／かける",
+          "en": "cover …with plastic wrap",
+          "cn": "盖上保鲜膜"
+        },
+        {
+          "jp": "ラップでくるむ",
+          "en": "wrap … with plastic wrap",
+          "cn": "用保鲜膜包上"
+        },
+        {
+          "jp": "（アルミ）ホイル",
+          "en": "aluminium foil",
+          "cn": "锡纸"
+        }
+      ]
+    }
   ],
   "exercises": {
     "answers_note": "答えはp.17",
     "sections": [
-      {"type": "choice", "instruction": "正しいほうに〇をつけなさい。", "items": [
-        {"n": 1, "q": "（a. 1カップ　b. 1リットル）入りのビールを買う。"},
-        {"n": 2, "q": "材料を（a. はかり　b. ラップ）で量りましょう。"},
-        {"n": 3, "q": "栄養の（a. バランス　b. カロリー）を考えましょう。"},
-        {"n": 4, "q": "材料を（a. 1グラム　b. 1センチ）幅に切っておきましょう。"},
-        {"n": 5, "q": "包丁で材料の（a. おかず　b. 玉ネギ）を刻む。"},
-        {"n": 6, "q": "次に、塩を（a. 少々　b. 細かく）入れてください。"}
-      ]},
-      {"type": "select", "instruction": "（　）にはどれが入りますか。一つ選びなさい。", "items": [
-        {"n": 7, "q": "皮は入れないほうがいいので、きれいに（　　）おきましょう。", "opts": ["むいて", "切って", "かぶせて", "きざんで"]},
-        {"n": 8, "q": "肉をラップで（　　）冷蔵庫にしまいましょう。", "opts": ["冷やして", "ひねって", "くるんで", "量って"]}
-      ]}
+      {
+        "type": "choice",
+        "instruction": "正しいほうに〇をつけなさい。",
+        "items": [
+          {
+            "n": 1,
+            "q": "（a. 1カップ　b. 1リットル）入りのビールを買う。"
+          },
+          {
+            "n": 2,
+            "q": "材料を（a. はかり　b. ラップ）で量りましょう。"
+          },
+          {
+            "n": 3,
+            "q": "栄養の（a. バランス　b. カロリー）を考えましょう。"
+          },
+          {
+            "n": 4,
+            "q": "材料を（a. 1グラム　b. 1センチ）幅に切っておきましょう。"
+          },
+          {
+            "n": 5,
+            "q": "包丁で材料の（a. おかず　b. 玉ネギ）を刻む。"
+          },
+          {
+            "n": 6,
+            "q": "次に、塩を（a. 少々　b. 細かく）入れてください。"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "instruction": "（　）にはどれが入りますか。一つ選びなさい。",
+        "items": [
+          {
+            "n": 7,
+            "q": "皮は入れないほうがいいので、きれいに（　　）おきましょう。",
+            "opts": [
+              "むいて",
+              "切って",
+              "かぶせて",
+              "きざんで"
+            ]
+          },
+          {
+            "n": 8,
+            "q": "肉をラップで（　　）冷蔵庫にしまいましょう。",
+            "opts": [
+              "冷やして",
+              "ひねって",
+              "くるんで",
+              "量って"
+            ]
+          }
+        ]
+      }
     ],
     "answers": "Ⅰ：①b ②a ③a ④b ⑤b ⑥a　Ⅱ：⑦1 ⑧3"
   },

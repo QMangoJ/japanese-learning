@@ -1,57 +1,239 @@
 {
-  "week": 5, "day": 4, "title": "体の調子はどうですか？", "title_cn": "身体情况怎么样？", "title_en": "How Are You Feeling?",
-  "dialog": {"lines": ["どうしましたか？（医師・看護師）", "目がかゆくてつらいんです。鼻もつまるし、花粉症じゃないかと思うんですが……。（患者）"], "cn": "“怎么了？”（医生·护士）“眼睛痒得难受。鼻子也堵，我想是不是花粉症……”（患者）"},
+  "week": 5,
+  "day": 4,
+  "title": "体の調子はどうですか？",
+  "title_cn": "身体情况怎么样？",
+  "title_en": "How Are You Feeling?",
+  "dialog": {
+    "lines": [
+      "どうしましたか？（医師・看護師）",
+      "目がかゆくてつらいんです。鼻もつまるし、花粉症じゃないかと思うんですが……。（患者）"
+    ],
+    "cn": "“怎么了？”（医生·护士）“眼睛痒得难受。鼻子也堵，我想是不是花粉症……”（患者）"
+  },
   "sections": [
-    {"type": "phrases", "heading": "□にいれてよみましょう：どうしましたか？——＿＿んです。", "items": [
-      {"jp": "体の調子（=具合）が悪い", "en": "not feel well", "cn": "身体不好"},
-      {"jp": "めまいがする", "en": "feel dizzy", "cn": "头晕"},
-      {"jp": "頭痛がする", "en": "have a headache", "cn": "头痛"},
-      {"jp": "胃が痛い", "en": "have a stomachache", "cn": "胃痛"},
-      {"jp": "腰が痛い", "en": "have a back pain", "cn": "腰痛"},
-      {"jp": "息が苦しい", "en": "feel suffocated", "cn": "呼吸困难", "rel": "→ 苦しむ（V）（be in pain 难受）"},
-      {"jp": "鼻がつまる", "en": "be stuffed up", "cn": "鼻塞", "rel": "→ 鼻をかむ（blow one's nose 擤鼻涕）"},
-      {"jp": "吐き気がする／気分が悪い／気持ち（が）悪い", "en": "feel sick", "cn": "感觉恶心", "rel": "→ 吐く（vomit 呕吐）"},
-      {"jp": "目がかゆい", "en": "have an itchy eye", "cn": "眼睛痒", "rel": "→ 目をこする／かく（rub one's eye 揉眼睛）"},
-      {"jp": "風邪を引いてつらい", "en": "feel terrible because of one's cold", "cn": "感冒难受"},
-      {"jp": "アレルギーがある", "en": "be allergic to...", "cn": "有过敏反应"}
-    ]},
-    {"type": "dialog_list", "heading": "もっとおぼえましょう", "items": [
-      {"jp": "患者「お世話になりました。」 看護師「お大事に。」", "cn": "患者“承蒙您照顾了。” 护士“祝您早日康复。”"}
-    ]},
-    {"type": "phrases", "heading": "もっとおぼえましょう", "items": [
-      {"jp": "専門の医師にみてもらう", "en": "see a specialist (doctor)", "cn": "看专家门诊"},
-      {"jp": "医師の診察を受ける", "en": "see the doctor", "cn": "接受医生的诊察"},
-      {"jp": "歯医者にかかる", "en": "go to see a dentist", "cn": "去找牙医"},
-      {"jp": "インフルエンザにかかる", "en": "get a flu", "cn": "患流感"},
-      {"jp": "病気の症状", "en": "symptoms of a sickness", "cn": "病情"},
-      {"jp": "注射をしてもらう", "en": "get a shot", "cn": "接受注射"},
-      {"jp": "手術を受ける", "en": "have an operation", "cn": "接受手术"},
-      {"jp": "痛みをがまんする", "en": "endure pain", "cn": "忍痛"},
-      {"jp": "花粉症になる", "en": "suffer from a hay fever", "cn": "患花粉症"},
-      {"jp": "うがいをする", "en": "gurgle", "cn": "漱口"},
-      {"jp": "けがを治す", "en": "take care of an injury", "cn": "疗伤"},
-      {"jp": "手の傷", "en": "a cut/wound on the hand", "cn": "手上的伤"},
-      {"jp": "やけどをする", "en": "get burned", "cn": "烧伤"},
-      {"jp": "大したことがない", "en": "not a big deal", "cn": "没什么大不了的"},
-      {"jp": "ましになる", "en": "still bad but better", "cn": "更好"},
-      {"jp": "（お）見舞いに行く", "en": "visit a sick person", "cn": "看望病人"}
-    ]}
+    {
+      "type": "phrases",
+      "heading": "□にいれてよみましょう：どうしましたか？——＿＿んです。",
+      "items": [
+        {
+          "jp": "体の調子（=具合）が悪い",
+          "en": "not feel well",
+          "cn": "身体不好"
+        },
+        {
+          "jp": "めまいがする",
+          "en": "feel dizzy",
+          "cn": "头晕"
+        },
+        {
+          "jp": "頭痛がする",
+          "en": "have a headache",
+          "cn": "头痛"
+        },
+        {
+          "jp": "胃が痛い",
+          "en": "have a stomachache",
+          "cn": "胃痛"
+        },
+        {
+          "jp": "腰が痛い",
+          "en": "have a back pain",
+          "cn": "腰痛"
+        },
+        {
+          "jp": "息が苦しい",
+          "en": "feel suffocated",
+          "cn": "呼吸困难",
+          "rel": "→ 苦しむ（V）（be in pain 难受）"
+        },
+        {
+          "jp": "鼻がつまる",
+          "en": "be stuffed up",
+          "cn": "鼻塞",
+          "rel": "→ 鼻をかむ（blow one's nose 擤鼻涕）"
+        },
+        {
+          "jp": "吐き気がする／気分が悪い／気持ち（が）悪い",
+          "en": "feel sick",
+          "cn": "感觉恶心",
+          "rel": "→ 吐く（vomit 呕吐）"
+        },
+        {
+          "jp": "目がかゆい",
+          "en": "have an itchy eye",
+          "cn": "眼睛痒",
+          "rel": "→ 目をこする／かく（rub one's eye 揉眼睛）"
+        },
+        {
+          "jp": "風邪を引いてつらい",
+          "en": "feel terrible because of one's cold",
+          "cn": "感冒难受"
+        },
+        {
+          "jp": "アレルギーがある",
+          "en": "be allergic to...",
+          "cn": "有过敏反应"
+        }
+      ]
+    },
+    {
+      "type": "dialog_list",
+      "heading": "もっとおぼえましょう",
+      "items": [
+        {
+          "jp": "患者「お世話になりました。」 看護師「お大事に。」",
+          "cn": "患者“承蒙您照顾了。” 护士“祝您早日康复。”",
+          "en": "Patient: “Thank you for taking care of me.” Nurse: “Please take care.”"
+        }
+      ]
+    },
+    {
+      "type": "phrases",
+      "heading": "もっとおぼえましょう",
+      "items": [
+        {
+          "jp": "専門の医師にみてもらう",
+          "en": "see a specialist (doctor)",
+          "cn": "看专家门诊"
+        },
+        {
+          "jp": "医師の診察を受ける",
+          "en": "see the doctor",
+          "cn": "接受医生的诊察"
+        },
+        {
+          "jp": "歯医者にかかる",
+          "en": "go to see a dentist",
+          "cn": "去找牙医"
+        },
+        {
+          "jp": "インフルエンザにかかる",
+          "en": "get a flu",
+          "cn": "患流感"
+        },
+        {
+          "jp": "病気の症状",
+          "en": "symptoms of a sickness",
+          "cn": "病情"
+        },
+        {
+          "jp": "注射をしてもらう",
+          "en": "get a shot",
+          "cn": "接受注射"
+        },
+        {
+          "jp": "手術を受ける",
+          "en": "have an operation",
+          "cn": "接受手术"
+        },
+        {
+          "jp": "痛みをがまんする",
+          "en": "endure pain",
+          "cn": "忍痛"
+        },
+        {
+          "jp": "花粉症になる",
+          "en": "suffer from a hay fever",
+          "cn": "患花粉症"
+        },
+        {
+          "jp": "うがいをする",
+          "en": "gurgle",
+          "cn": "漱口"
+        },
+        {
+          "jp": "けがを治す",
+          "en": "take care of an injury",
+          "cn": "疗伤"
+        },
+        {
+          "jp": "手の傷",
+          "en": "a cut/wound on the hand",
+          "cn": "手上的伤"
+        },
+        {
+          "jp": "やけどをする",
+          "en": "get burned",
+          "cn": "烧伤"
+        },
+        {
+          "jp": "大したことがない",
+          "en": "not a big deal",
+          "cn": "没什么大不了的"
+        },
+        {
+          "jp": "ましになる",
+          "en": "still bad but better",
+          "cn": "更好"
+        },
+        {
+          "jp": "（お）見舞いに行く",
+          "en": "visit a sick person",
+          "cn": "看望病人"
+        }
+      ]
+    }
   ],
   "exercises": {
     "answers_note": "答えはp.85",
     "sections": [
-      {"type": "choice", "instruction": "正しいほうに〇をつけなさい。", "items": [
-        {"n": 1, "q": "アレルギーで体が（a. かゆい　b. かく）。"},
-        {"n": 2, "q": "インフルエンザに（a. かかって　b. つまって）病院に入院した。"},
-        {"n": 3, "q": "医師に（a. 受ける　b. みてもらう）。"},
-        {"n": 4, "q": "のどが痛いのは風邪の（a. 症状　b. 調子）の一つです。"},
-        {"n": 5, "q": "夜、よく眠れなくて、とても（a. つらい　b. がまんする）。"},
-        {"n": 6, "q": "「（a. お大事に　b. お大切に）。早くよくなってくださいね。」"}
-      ]},
-      {"type": "select", "instruction": "（　）にはどれが入りますか。一つ選びなさい。", "items": [
-        {"n": 7, "q": "鼻が（　　）、うまく歌えない。", "opts": ["かいていて", "苦しんでいて", "つまっていて", "かんでいて"]},
-        {"n": 8, "q": "風邪をひいたが、（　　）がなくてよかった。", "opts": ["大したこと", "ましなこと", "大事なこと", "かかること"]}
-      ]}
+      {
+        "type": "choice",
+        "instruction": "正しいほうに〇をつけなさい。",
+        "items": [
+          {
+            "n": 1,
+            "q": "アレルギーで体が（a. かゆい　b. かく）。"
+          },
+          {
+            "n": 2,
+            "q": "インフルエンザに（a. かかって　b. つまって）病院に入院した。"
+          },
+          {
+            "n": 3,
+            "q": "医師に（a. 受ける　b. みてもらう）。"
+          },
+          {
+            "n": 4,
+            "q": "のどが痛いのは風邪の（a. 症状　b. 調子）の一つです。"
+          },
+          {
+            "n": 5,
+            "q": "夜、よく眠れなくて、とても（a. つらい　b. がまんする）。"
+          },
+          {
+            "n": 6,
+            "q": "「（a. お大事に　b. お大切に）。早くよくなってくださいね。」"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "instruction": "（　）にはどれが入りますか。一つ選びなさい。",
+        "items": [
+          {
+            "n": 7,
+            "q": "鼻が（　　）、うまく歌えない。",
+            "opts": [
+              "かいていて",
+              "苦しんでいて",
+              "つまっていて",
+              "かんでいて"
+            ]
+          },
+          {
+            "n": 8,
+            "q": "風邪をひいたが、（　　）がなくてよかった。",
+            "opts": [
+              "大したこと",
+              "ましなこと",
+              "大事なこと",
+              "かかること"
+            ]
+          }
+        ]
+      }
     ],
     "answers": "Ⅰ：①a ②a ③b ④a ⑤a ⑥a　Ⅱ：⑦3 ⑧1"
   },
