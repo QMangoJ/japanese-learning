@@ -9,7 +9,8 @@
       "いくら安くても、買いたくない。",
       "みんな、何も買わずに帰ってしまう。なぜだろう？"
     ],
-    "cn": "“就算再便宜，也不想买。”“大家什么都不买就回去了。为什么呢？”"
+    "cn": "“就算再便宜，也不想买。”“大家什么都不买就回去了。为什么呢？”",
+    "en": "“I don’t care how cheap it is. I am not buying it.” “Everyone leaves without buying anything. Why?”"
   },
   "points": [
     {
@@ -22,20 +23,24 @@
         {
           "jp": "調べてもわからなかったので、先生に聞いた。",
           "eq": "=調べたけれども",
-          "cn": "调查了也不明白，所以就问老师了。"
+          "cn": "调查了也不明白，所以就问老师了。",
+          "en": "I couldn’t understand it even after looking it up, so I asked the teacher."
         },
         {
           "jp": "必要なので、高くても買います。",
           "eq": "=高い場合も",
-          "cn": "因为需要，就算是贵也要买。"
+          "cn": "因为需要，就算是贵也要买。",
+          "en": "I need it, so I’ll buy it even if it’s expensive."
         },
         {
           "jp": "「すみません。黒は売り切れました。」「黒じゃなくてもかまいませんよ。」",
           "eq": "=黒じゃない場合も",
-          "cn": "“对不起，黑色的卖没了。”“不是黑的也没关系。”"
+          "cn": "“对不起，黑色的卖没了。”“不是黑的也没关系。”",
+          "en": "“Sorry. The black ones are all gone.” “I don’t mind if it is not black.”"
         }
       ],
-      "notes": []
+      "notes": [],
+      "usage_en": "To mean 'although ~' or 'even when ~.'"
     },
     {
       "pattern": "どんなに練習しても",
@@ -47,17 +52,20 @@
         {
           "jp": "ギターを習い始めたが、どんなに練習しても全然うまくならない。",
           "eq": "=何回も練習したけれど",
-          "cn": "开始学吉他了，但不论怎么练习，一点儿都没长进。"
+          "cn": "开始学吉他了，但不论怎么练习，一点儿都没长进。",
+          "en": "I’ve started taking guitar lessons, but I’m not getting any better no matter how much I practice."
         },
         {
           "jp": "私は、いくらお酒を飲んでも顔色が変わらない。",
           "eq": "=お酒をたくさん飲んだ場合も",
-          "cn": "我不论喝多少酒，脸色都不会变。"
+          "cn": "我不论喝多少酒，脸色都不会变。",
+          "en": "My face doesn’t go red no matter how much I drink."
         },
         {
           "jp": "私はどんなに暑くても寝るときはクーラーを消して寝ます。",
           "eq": "=とても暑いときも",
-          "cn": "我睡觉的时候不论多热，都会把空调关掉再睡。"
+          "cn": "我睡觉的时候不论多热，都会把空调关掉再睡。",
+          "en": "No matter how hot it is when I go to bed, I turn off the air-conditioner."
         }
       ],
       "notes": [
@@ -65,7 +73,8 @@
           "type": "れい",
           "text": "どんなにお酒が好きでも／いくら社長でも／だれが～ても／どんな～ても／どう~ても／いつ～ても／何を～ても"
         }
-      ]
+      ],
+      "usage_en": "To mean 'although one does ~ many times / a great deal' or 'even when one does ~ many times / a great deal.'"
     },
     {
       "pattern": "辞書を使わずに",
@@ -77,12 +86,14 @@
         {
           "jp": "辞書を使わずに書いたので、自信がありません。",
           "eq": "=使わないで",
-          "cn": "因为写时没用词典，所以没有自信。"
+          "cn": "因为写时没用词典，所以没有自信。",
+          "en": "I do not have much confidence since I wrote it without using a dictionary."
         },
         {
           "jp": "昨夜、歯をみがかずに寝てしまった。",
           "eq": "=みがかないで",
-          "cn": "昨晚没刷牙就睡了。"
+          "cn": "昨晚没刷牙就睡了。",
+          "en": "I went to bed without brushing my teeth last night."
         }
       ],
       "notes": [
@@ -90,7 +101,8 @@
           "type": "ダメ",
           "text": "しずに（正：せずに）"
         }
-      ]
+      ],
+      "usage_en": "To mean 'without doing ~.'"
     }
   ],
   "exercises": {

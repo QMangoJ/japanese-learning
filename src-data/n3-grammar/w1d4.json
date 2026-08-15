@@ -1,6 +1,17 @@
 {
-  "week": 1, "day": 4, "title": "できるようになった！", "title_cn": "会做了！", "title_en": "I am getting better!",
-  "dialog": {"lines": ["うまくできるようになった！", "手を切らないように気を付けて！"], "cn": "“我能做得很好了！”“注意不要切着手！”", "en": "“I am getting better!” “Be careful not to cut your fingers!”"},
+  "week": 1,
+  "day": 4,
+  "title": "できるようになった！",
+  "title_cn": "会做了！",
+  "title_en": "I am getting better!",
+  "dialog": {
+    "lines": [
+      "うまくできるようになった！",
+      "手を切らないように気を付けて！"
+    ],
+    "cn": "“我能做得很好了！”“注意不要切着手！”",
+    "en": "“I am getting better!” “Be careful not to cut your fingers!”"
+  },
   "points": [
     {
       "pattern": "忘れ物をしないようにしましょう",
@@ -10,8 +21,18 @@
       "usage_cn": "表示习惯或努力。",
       "usage_en": "To show habits and intention (effort).",
       "examples": [
-        {"jp": "忘れ物をしないようにしましょう。", "eq": "=忘れ物をしない努力をしましょう", "cn": "注意不要忘东西。", "en": "Try not to leave things behind."},
-        {"jp": "毎食後、歯をみがくようにしています。", "eq": "=歯をみがく努力をしています", "cn": "坚持每次吃完饭后刷牙。", "en": "I try to brush my teeth after meals."}
+        {
+          "jp": "忘れ物をしないようにしましょう。",
+          "eq": "=忘れ物をしない努力をしましょう",
+          "cn": "注意不要忘东西。",
+          "en": "Try not to leave things behind."
+        },
+        {
+          "jp": "毎食後、歯をみがくようにしています。",
+          "eq": "=歯をみがく努力をしています",
+          "cn": "坚持每次吃完饭后刷牙。",
+          "en": "I try to brush my teeth after meals."
+        }
       ],
       "notes": []
     },
@@ -21,14 +42,30 @@
       "connection": "Vる／Vない／Vれる＋ように",
       "usage_jp": "「その状態にすることが目的で」という意味。",
       "usage_cn": "意思是“目的就是达到这种状态”。",
-      "usage_en": "To mean \"to aim for\".",
+      "usage_en": "To mean 'with the aim of bringing about that state.'",
       "examples": [
-        {"jp": "みんなに聞こえるようにもっと大きな声で話してください。", "eq": "=聞こえないと困るから", "cn": "为了让大家都能听见，请用更大的声音说。", "en": "Please speak louder so everyone can hear you."},
-        {"jp": "忘れないように、手帳に書いておこう。", "eq": "=忘れると困るから", "cn": "为了不忘，记在记事本上。", "en": "I will write it down in my datebook so that I won't forget."}
+        {
+          "jp": "みんなに聞こえるようにもっと大きな声で話してください。",
+          "eq": "=聞こえないと困るから",
+          "cn": "为了让大家都能听见，请用更大的声音说。",
+          "en": "Please speak louder so everyone can hear you."
+        },
+        {
+          "jp": "忘れないように、手帳に書いておこう。",
+          "eq": "=忘れると困るから",
+          "cn": "为了不忘，记在记事本上。",
+          "en": "I will write it down in my datebook so that I won't forget."
+        }
       ],
       "notes": [
-        {"type": "ダメ", "text": "家を買うように貯金をしている。→ 家を買うために貯金をしている。（=買うことが目的で）为了买房子而存钱。"},
-        {"type": "ダメ", "text": "働くように学校をやめた。→ 働くために学校をやめた。（=働くことが目的で）为了工作退学了。"}
+        {
+          "type": "ダメ",
+          "text": "家を買うように貯金をしている。→ 家を買うために貯金をしている。（=買うことが目的で）为了买房子而存钱。"
+        },
+        {
+          "type": "ダメ",
+          "text": "働くように学校をやめた。→ 働くために学校をやめた。（=働くことが目的で）为了工作退学了。"
+        }
       ]
     },
     {
@@ -38,26 +75,78 @@
       "usage_jp": "その状態になったことを表す。",
       "usage_cn": "表示变成了某种状态。",
       "examples": [
-        {"jp": "「このDVDプレーヤー、こわれているんだよね。」「いや、直してもらったから、使えるようになったよ。」", "eq": "=使える状態になった", "cn": "“这台DVD播放器坏了吧。”“不，已经让人修了，可以用。”", "en": "\"This DVD player is broken, isn't it?\" \"No. I had it repaired so you can use it.\""},
-        {"jp": "ここの電気は人が通るとつくようになっています。", "eq": "=つく状態になっている", "cn": "这里的电灯，只要有人通过就会亮。", "en": "This light goes on whenever someone passes by."}
+        {
+          "jp": "「このDVDプレーヤー、こわれているんだよね。」「いや、直してもらったから、使えるようになったよ。」",
+          "eq": "=使える状態になった",
+          "cn": "“这台DVD播放器坏了吧。”“不，已经让人修了，可以用。”",
+          "en": "\"This DVD player is broken, isn't it?\" \"No. I had it repaired so you can use it.\""
+        },
+        {
+          "jp": "ここの電気は人が通るとつくようになっています。",
+          "eq": "=つく状態になっている",
+          "cn": "这里的电灯，只要有人通过就会亮。",
+          "en": "This light goes on whenever someone passes by."
+        }
       ],
-      "notes": []
+      "notes": [],
+      "usage_en": "To show that a new state has come about."
     }
   ],
   "exercises": {
     "answers_note": "答えはp.23（第5日末尾）",
     "sections": [
-      {"type": "choice", "instruction": "正しいほうに〇をつけなさい。", "items": [
-        {"n": 1, "q": "風が入らない（a. ために　b. ように）窓を閉めておきましょう。"},
-        {"n": 2, "q": "健康のために野菜を食べるように（a. して　b. なって）います。"},
-        {"n": 3, "q": "大学に合格できる（a. ように　b. ために）一生懸命勉強しています。"},
-        {"n": 4, "q": "日本人みたいに日本語が（a. 話す　b. 話せる）ようになりたい。"},
-        {"n": 5, "q": "このインターホンは留守にだれが来たか（a. わかる　b. わかれる）ようになっている。"}
-      ]},
-      {"type": "order", "instruction": "下の語を並べ替えて正しい文を作りなさい。＿＿に数字を書きなさい。", "items": [
-        {"n": 6, "q": "インフルエンザに ＿＿ ＿＿ ＿＿ ＿＿ ようにしています。", "options": ["1 する", "2 ように", "3 うがいや手洗いを", "4 ならない"]},
-        {"n": 7, "q": "たいていの電気製品は1年以内なら ＿＿ ＿＿ ＿＿ ＿＿ なっている。", "options": ["1 もらえる", "2 こわれても", "3 ように", "4 ただで直して"]}
-      ]}
+      {
+        "type": "choice",
+        "instruction": "正しいほうに〇をつけなさい。",
+        "items": [
+          {
+            "n": 1,
+            "q": "風が入らない（a. ために　b. ように）窓を閉めておきましょう。"
+          },
+          {
+            "n": 2,
+            "q": "健康のために野菜を食べるように（a. して　b. なって）います。"
+          },
+          {
+            "n": 3,
+            "q": "大学に合格できる（a. ように　b. ために）一生懸命勉強しています。"
+          },
+          {
+            "n": 4,
+            "q": "日本人みたいに日本語が（a. 話す　b. 話せる）ようになりたい。"
+          },
+          {
+            "n": 5,
+            "q": "このインターホンは留守にだれが来たか（a. わかる　b. わかれる）ようになっている。"
+          }
+        ]
+      },
+      {
+        "type": "order",
+        "instruction": "下の語を並べ替えて正しい文を作りなさい。＿＿に数字を書きなさい。",
+        "items": [
+          {
+            "n": 6,
+            "q": "インフルエンザに ＿＿ ＿＿ ＿＿ ＿＿ ようにしています。",
+            "options": [
+              "1 する",
+              "2 ように",
+              "3 うがいや手洗いを",
+              "4 ならない"
+            ]
+          },
+          {
+            "n": 7,
+            "q": "たいていの電気製品は1年以内なら ＿＿ ＿＿ ＿＿ ＿＿ なっている。",
+            "options": [
+              "1 もらえる",
+              "2 こわれても",
+              "3 ように",
+              "4 ただで直して"
+            ]
+          }
+        ]
+      }
     ],
     "answers": "Ⅰ：①b ②a ③a ④b ⑤a　Ⅱ：⑥4→2→3→1　⑦2→4→1→3"
   }

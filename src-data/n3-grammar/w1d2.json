@@ -19,7 +19,7 @@
       "connection": "Vないと／Vなくちゃ〔会話〕",
       "usage_jp": "「Vないといけない」「Vなければならない」を省略した言い方。",
       "usage_cn": "“Vなければならない（必须V）”的省略说法。",
-      "usage_en": "A shortened form of [Vなければならない (must+verb)].",
+      "usage_en": "A shortened form of Vないといけない / Vなければならない (must + verb).",
       "examples": [
         {
           "jp": "明日は早く出かけるから、もう寝ないと。",
@@ -82,7 +82,8 @@
           "type": "tag",
           "text": "会話でよく使われる表現"
         }
-      ]
+      ],
+      "usage_en": "A conversational form of Vてしまう."
     },
     {
       "pattern": "書いとく",
@@ -119,7 +120,8 @@
           "type": "tag",
           "text": "会話でよく使われる表現"
         }
-      ]
+      ],
+      "usage_en": "A conversational form of Vておく."
     }
   ],
   "exercises": {

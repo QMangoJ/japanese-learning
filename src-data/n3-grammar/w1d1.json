@@ -1,6 +1,17 @@
 {
-  "week": 1, "day": 1, "title": "ぼくにもやらせて", "title_cn": "也让我做吧", "title_en": "Let me do it",
-  "dialog": {"lines": ["ぼくにもやらせて。", "けがをされると困るからダメよ。"], "cn": "“也让我做吧。”“你要是受伤就麻烦了，不行。”", "en": "“Let me do it.” “No. I'm afraid you'll hurt yourself.”"},
+  "week": 1,
+  "day": 1,
+  "title": "ぼくにもやらせて",
+  "title_cn": "也让我做吧",
+  "title_en": "Let me do it",
+  "dialog": {
+    "lines": [
+      "ぼくにもやらせて。",
+      "けがをされると困るからダメよ。"
+    ],
+    "cn": "“也让我做吧。”“你要是受伤就麻烦了，不行。”",
+    "en": "“Let me do it.” “No. I'm afraid you'll hurt yourself.”"
+  },
   "points": [
     {
       "pattern": "書かれている",
@@ -10,10 +21,30 @@
       "usage_cn": "不表明主语、陈述事实的时候，经常用被动形。",
       "usage_en": "When you mention a fact without a subject, the passive form is often used.",
       "examples": [
-        {"jp": "この本には、くわしい説明は書かれていません。", "eq": "=〈筆者が〉書いていない", "cn": "这本书上没有写详细说明。", "en": "There is no detailed explanation in this book."},
-        {"jp": "入学式は、このホールで行われます。", "eq": "=〈学校が〉行う", "cn": "入学典礼将在这个大厅举行。", "en": "The entrance ceremony will take place in this hall."},
-        {"jp": "これは、世界でいちばん大きいダイヤモンドだと言われています。", "eq": "=〈だれかが〉言っている", "cn": "据说这是世界上最大的钻石。", "en": "This is believed to be the biggest diamond in the world."},
-        {"jp": "昔は、その考えが正しいと思われていた。", "eq": "=〈昔の人は〉思っていた", "cn": "在以前，那种想法被认为是正确的。", "en": "Such an idea used to be considered correct."}
+        {
+          "jp": "この本には、くわしい説明は書かれていません。",
+          "eq": "=〈筆者が〉書いていない",
+          "cn": "这本书上没有写详细说明。",
+          "en": "There is no detailed explanation in this book."
+        },
+        {
+          "jp": "入学式は、このホールで行われます。",
+          "eq": "=〈学校が〉行う",
+          "cn": "入学典礼将在这个大厅举行。",
+          "en": "The entrance ceremony will take place in this hall."
+        },
+        {
+          "jp": "これは、世界でいちばん大きいダイヤモンドだと言われています。",
+          "eq": "=〈だれかが〉言っている",
+          "cn": "据说这是世界上最大的钻石。",
+          "en": "This is believed to be the biggest diamond in the world."
+        },
+        {
+          "jp": "昔は、その考えが正しいと思われていた。",
+          "eq": "=〈昔の人は〉思っていた",
+          "cn": "在以前，那种想法被认为是正确的。",
+          "en": "Such an idea used to be considered correct."
+        }
       ],
       "notes": []
     },
@@ -25,11 +56,31 @@
       "usage_cn": "表示因为这件事情而陷入了困境（受害被动）。",
       "usage_en": "Showing a difficult situation as a result of something.",
       "examples": [
-        {"jp": "友達の赤ちゃんを抱っこしたら、泣かれてしまった。", "eq": "", "cn": "抱了抱朋友的孩子，结果哭了。", "en": "When I held my friend's baby, it cried."},
-        {"jp": "雨に降られて、服がぬれてしまった。", "eq": "", "cn": "被雨淋了，衣服湿了。", "en": "My clothes got soaked in the rain."},
-        {"jp": "父に死なれて、大学を続けられなくなりました。", "eq": "", "cn": "父亲死后无法继续上大学了。", "en": "I couldn't continue my university education after my father died."}
+        {
+          "jp": "友達の赤ちゃんを抱っこしたら、泣かれてしまった。",
+          "eq": "",
+          "cn": "抱了抱朋友的孩子，结果哭了。",
+          "en": "When I held my friend's baby, it cried."
+        },
+        {
+          "jp": "雨に降られて、服がぬれてしまった。",
+          "eq": "",
+          "cn": "被雨淋了，衣服湿了。",
+          "en": "My clothes got soaked in the rain."
+        },
+        {
+          "jp": "父に死なれて、大学を続けられなくなりました。",
+          "eq": "",
+          "cn": "父亲死后无法继续上大学了。",
+          "en": "I couldn't continue my university education after my father died."
+        }
       ],
-      "notes": [{"type": "れい", "text": "Vれてしまった"}]
+      "notes": [
+        {
+          "type": "れい",
+          "text": "Vれてしまった"
+        }
+      ]
     },
     {
       "pattern": "早く帰らせてください",
@@ -37,11 +88,26 @@
       "connection": "V（さ）せて＋ください／もらえますか／もらえませんか",
       "usage_jp": "自分の行動について、相手から許可を得る表現。",
       "usage_cn": "关于自己的行动，想得到对方许可的表达方式。",
-      "usage_en": "Expression used when asking for forgiveness from the other person.",
+      "usage_en": "Expression used when asking for permission from the other person.",
       "examples": [
-        {"jp": "ちょっと気分が悪いので、早く帰らせてください。", "eq": "", "cn": "有点不舒服，请让我早点回去。", "en": "Since I am not feeling very well, could I go home early?"},
-        {"jp": "あなたの会社のお話を聞かせてください。", "eq": "", "cn": "请给我讲讲你公司的事情。", "en": "Please tell me about your company."},
-        {"jp": "手を洗わせてください。", "eq": "", "cn": "请让我去洗手。", "en": "Could I wash my hands?"}
+        {
+          "jp": "ちょっと気分が悪いので、早く帰らせてください。",
+          "eq": "",
+          "cn": "有点不舒服，请让我早点回去。",
+          "en": "Since I am not feeling very well, could I go home early?"
+        },
+        {
+          "jp": "あなたの会社のお話を聞かせてください。",
+          "eq": "",
+          "cn": "请给我讲讲你公司的事情。",
+          "en": "Please tell me about your company."
+        },
+        {
+          "jp": "手を洗わせてください。",
+          "eq": "",
+          "cn": "请让我去洗手。",
+          "en": "Could I wash my hands?"
+        }
       ],
       "notes": []
     }
@@ -49,17 +115,58 @@
   "exercises": {
     "answers_note": "答えはp.17（第2日末尾）",
     "sections": [
-      {"type": "choice", "instruction": "正しいほうに〇をつけなさい。", "items": [
-        {"n": 1, "q": "英語は世界中で（a. 話されて　b. 話られて）います。"},
-        {"n": 2, "q": "この建物は三百年前に（a. 建たれ　b. 建てられ）ました。"},
-        {"n": 3, "q": "急に社員に（a. 辞まれた　b. 辞められた）。"},
-        {"n": 4, "q": "その話はもうちょっと（a. 考えさせて　b. 考えらせて）。"},
-        {"n": 5, "q": "今日は熱があるので（a. 休ませて　b. 休まれて）ください。"}
-      ]},
-      {"type": "order", "instruction": "下の語を並べ替えて正しい文を作りなさい。＿＿に数字を書きなさい。", "items": [
-        {"n": 6, "q": "オリンピック ＿＿ ＿＿ ＿＿ ＿＿ 開かれます。", "options": ["1 一度", "2 に", "3 は", "4 4年"]},
-        {"n": 7, "q": "日本の ＿＿ ＿＿ ＿＿ ＿＿ もらえませんか。", "options": ["1 について", "2 させて", "3 印象", "4 インタビュー"]}
-      ]}
+      {
+        "type": "choice",
+        "instruction": "正しいほうに〇をつけなさい。",
+        "items": [
+          {
+            "n": 1,
+            "q": "英語は世界中で（a. 話されて　b. 話られて）います。"
+          },
+          {
+            "n": 2,
+            "q": "この建物は三百年前に（a. 建たれ　b. 建てられ）ました。"
+          },
+          {
+            "n": 3,
+            "q": "急に社員に（a. 辞まれた　b. 辞められた）。"
+          },
+          {
+            "n": 4,
+            "q": "その話はもうちょっと（a. 考えさせて　b. 考えらせて）。"
+          },
+          {
+            "n": 5,
+            "q": "今日は熱があるので（a. 休ませて　b. 休まれて）ください。"
+          }
+        ]
+      },
+      {
+        "type": "order",
+        "instruction": "下の語を並べ替えて正しい文を作りなさい。＿＿に数字を書きなさい。",
+        "items": [
+          {
+            "n": 6,
+            "q": "オリンピック ＿＿ ＿＿ ＿＿ ＿＿ 開かれます。",
+            "options": [
+              "1 一度",
+              "2 に",
+              "3 は",
+              "4 4年"
+            ]
+          },
+          {
+            "n": 7,
+            "q": "日本の ＿＿ ＿＿ ＿＿ ＿＿ もらえませんか。",
+            "options": [
+              "1 について",
+              "2 させて",
+              "3 印象",
+              "4 インタビュー"
+            ]
+          }
+        ]
+      }
     ],
     "answers": "Ⅰ：①a ②b ③b ④a ⑤a　Ⅱ：⑥3→4→2→1　⑦3→1→4→2"
   }
