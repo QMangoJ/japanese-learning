@@ -18,7 +18,7 @@
       "reading": "わすれものをしないようにしましょう",
       "connection": "Vる／Vない＋ようにする",
       "usage_jp": "習慣、心がけ（努力）を表す。",
-      "usage_cn": "表示习惯或努力。",
+      "usage_cn": "表示主观上将某种行为作为习惯，或努力做到某种状态",
       "usage_en": "To show habits and intention (effort).",
       "examples": [
         {
@@ -41,7 +41,7 @@
       "reading": "きこえるようにはなす",
       "connection": "Vる／Vない／Vれる＋ように",
       "usage_jp": "「その状態にすることが目的で」という意味。",
-      "usage_cn": "意思是“目的就是达到这种状态”。",
+      "usage_cn": "表示“为了…”，以达成前项所述状态为目的",
       "usage_en": "To mean 'with the aim of bringing about that state.'",
       "examples": [
         {
@@ -73,7 +73,7 @@
       "reading": "つかえるようになった",
       "connection": "Vるようになる",
       "usage_jp": "その状態になったことを表す。",
-      "usage_cn": "表示变成了某种状态。",
+      "usage_cn": "表示状态的变化（变得能够…或变成某种状态）",
       "examples": [
         {
           "jp": "「このDVDプレーヤー、こわれているんだよね。」「いや、直してもらったから、使えるようになったよ。」",

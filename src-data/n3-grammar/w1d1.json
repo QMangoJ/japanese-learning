@@ -18,7 +18,7 @@
       "reading": "かかれている",
       "connection": "Vれる〈受身形〉",
       "usage_jp": "主語を表さないで事実を述べるとき、よく受身形を使う。",
-      "usage_cn": "不表明主语、陈述事实的时候，经常用被动形。",
+      "usage_cn": "不表明主语、陈述客观事实时，常用被动形",
       "usage_en": "When you mention a fact without a subject, the passive form is often used.",
       "examples": [
         {
@@ -53,7 +53,7 @@
       "reading": "あかちゃんになかれた",
       "connection": "（Nに）Vれる",
       "usage_jp": "そのことによって、困る状態になったことを表す。",
-      "usage_cn": "表示因为这件事情而陷入了困境（受害被动）。",
+      "usage_cn": "表示因别人的行为而陷入困境（受害被动）",
       "usage_en": "Showing a difficult situation as a result of something.",
       "examples": [
         {
@@ -87,7 +87,7 @@
       "reading": "はやくかえらせてください",
       "connection": "V（さ）せて＋ください／もらえますか／もらえませんか",
       "usage_jp": "自分の行動について、相手から許可を得る表現。",
-      "usage_cn": "关于自己的行动，想得到对方许可的表达方式。",
+      "usage_cn": "请求对方允许自己做某事",
       "usage_en": "Expression used when asking for permission from the other person.",
       "examples": [
         {
