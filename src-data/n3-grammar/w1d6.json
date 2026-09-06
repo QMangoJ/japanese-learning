@@ -17,7 +17,7 @@
       "reading": "やめようとおもう",
       "connection": "Vようと思う",
       "usage_jp": "意志や予定を表す。",
-      "usage_cn": "表示意志或计划。",
+      "usage_cn": "表示自己的意志、打算或计划",
       "usage_en": "To show one's will or plan.",
       "examples": [
         {
@@ -40,7 +40,7 @@
       "reading": "でんしゃにのろうとしたときに",
       "connection": "Vようとする",
       "usage_jp": "動作を始めようとするその瞬間を表す。",
-      "usage_cn": "表示正要开始某动作的瞬间。",
+      "usage_cn": "表示正打算做某事，或者动作刚刚要开始",
       "examples": [
         {
           "jp": "電車に乗ろうとしたときに、ドアが閉まって乗れなかった。",
@@ -69,7 +69,7 @@
       "reading": "たべようとしない",
       "connection": "Vようとしない",
       "usage_jp": "動作や行動をする意志が感じられないことを表す。",
-      "usage_cn": "表明无法感觉到想要行动的意志。",
+      "usage_cn": "感觉不到对方做某事的意愿，“根本不想做”",
       "usage_en": "To show that no intention to take the action can be perceived.",
       "examples": [
         {
