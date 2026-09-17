@@ -1,0 +1,55 @@
+{
+  "week": 6, "day": 1, "title": "カタカナで書く言葉①", "title_cn": "用片假名写的词语①", "title_en": "Words written in katakana ①",
+  "sections": [
+    {"type":"words","heading":"よく使われるカタカナ語","items":[
+      {"jp":"医者のアポをとる","en":"make an appointment with a doctor","cn":"跟医生预约","rel":"＊アポイント／アポイントメントの省略"},
+      {"jp":"アマの選手","en":"an amateur player","cn":"业余选手","rel":"＊アマチュアの省略　⇔プロ"},
+      {"jp":"アマチュア写真家","en":"an amateur photographer","cn":"业余摄影家"},
+      {"jp":"本のイラストを描く","en":"draw illustrations for a book","cn":"给书配插图"},
+      {"jp":"インフレが進む","en":"inflation progresses","cn":"通货膨胀加剧","rel":"＊インフレーションの省略　⇔デフレ"},
+      {"jp":"エコな生活","en":"an eco-friendly lifestyle","cn":"环保的生活","rel":"＊エコロジーの省略"},
+      {"jp":"大学のゼミに参加する","en":"attend a university seminar","cn":"参加大学研讨课","rel":"＊ゼミナールの省略"},
+      {"jp":"ストレスがたまっている","en":"be under a lot of stress","cn":"压力积得很重"},
+      {"jp":"デジカメで写真を撮る","en":"take photos with a digital camera","cn":"用数码相机拍照","rel":"＊デジタルカメラの省略"},
+      {"jp":"テロ事件","en":"a terrorist incident","cn":"恐怖事件","rel":"＊テロリズムの省略"},
+      {"jp":"バーゲンで買う","en":"buy something on sale","cn":"在减价时买"},
+      {"jp":"ファミレスで食事をする","en":"eat at a family restaurant","cn":"在家庭餐厅吃饭","rel":"＊ファミリーレストランの省略"},
+      {"jp":"プロの選手","en":"a professional player","cn":"职业选手","rel":"⇔アマ"},
+      {"jp":"電車のホームで待つ","en":"wait on the train platform","cn":"在站台等电车","rel":"＊プラットフォームの省略"},
+      {"jp":"野菜をボイルする","en":"boil vegetables","cn":"把蔬菜煮一下"},
+      {"jp":"マスコミ関係の仕事","en":"a job in the mass media","cn":"大众传媒相关的工作","rel":"＊マス・コミュニケーションの省略"},
+      {"jp":"ミスをする","en":"make a mistake","cn":"出差错"},
+      {"jp":"朝のラッシュ","en":"the morning rush","cn":"早上的高峰拥堵","rel":"⊙ラッシュアワー rush hour 高峰时间"},
+      {"jp":"レジで支払う","en":"pay at the register","cn":"在收银台付款","rel":"＊レジスターの省略"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"卵にアレルギーがある","en":"have an egg allergy","cn":"对鸡蛋过敏"},
+      {"jp":"パソコンがウイルスに感染する","en":"a computer is infected with a virus","cn":"电脑感染病毒"},
+      {"jp":"エネルギーを節約する","en":"save energy","cn":"节约能源"},
+      {"jp":"サプリメントを飲む","en":"take a supplement","cn":"吃保健品","rel":"＊サプリとも言う"},
+      {"jp":"会議のテーマを決める","en":"decide the theme of the meeting","cn":"决定会议的主题"},
+      {"jp":"ビニール袋","en":"a plastic bag","cn":"塑料袋"},
+      {"jp":"ビタミンを取る","en":"take vitamins","cn":"补充维生素"},
+      {"jp":"インフルエンザのワクチンを注射する","en":"get a flu vaccination","cn":"注射流感疫苗"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.93",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"明日の会議の（a. アマ　b. アポ）をとっておきました。"},
+        {"n":2,"q":"私は卵に（a. ビタミン　b. アレルギー）がある。"},
+        {"n":3,"q":"朝の（a. ラッシュ　b. バーゲン）を避けて家を出た。"},
+        {"n":4,"q":"スーパーの（a. ゼミ　b. レジ）でお金を払った。"},
+        {"n":5,"q":"インフルエンザの（a. テーマ　b. ワクチン）を注射してもらった。"},
+        {"n":6,"q":"パソコンが（a. ストレス　b. ウイルス）に感染してしまった。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"兄は（　　）関係の会社に勤めています。","opts":["マスコミ","バーゲン","ホーム","ファミレス"]},
+        {"n":8,"q":"会議の（　　）を決めましょう。","opts":["レジ","テーマ","プロ","ミス"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②b ③a ④b ⑤b ⑥b　Ⅱ：⑦1 ⑧2"
+  },
+  "hitokoto": "ストレスをためないようにしましょう。"
+}
