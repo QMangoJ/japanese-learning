@@ -1,0 +1,57 @@
+{
+  "week": 6, "day": 3, "title": "カタカナで書く言葉③", "title_cn": "用片假名写的词语③", "title_en": "Words written in katakana ③",
+  "sections": [
+    {"type":"words","heading":"和製英語","items":[
+      {"jp":"今日はオフだ","en":"I'm off today","cn":"今天休息"},
+      {"jp":"建物の前にガードマンが立っている","en":"a security guard is standing in front of the building","cn":"大楼前站着保安"},
+      {"jp":"公園でキャッチボールをする","en":"play catch in the park","cn":"在公园里投接球"},
+      {"jp":"鍵をキーホルダーにつける","en":"put a key on a keychain","cn":"把钥匙挂在钥匙扣上"},
+      {"jp":"コインランドリーで洗濯をする","en":"do laundry at a coin laundry","cn":"在投币洗衣店洗衣服"},
+      {"jp":"ピアノのコンクールに出場する","en":"enter a piano contest","cn":"参加钢琴比赛"},
+      {"jp":"写真のコンテスト","en":"a photography contest","cn":"摄影比赛"},
+      {"jp":"ランチのコンボ","en":"a lunch combo","cn":"午餐套餐组合"},
+      {"jp":"合コンに参加する","en":"go to a mixer","cn":"参加联谊会","rel":"＊合同コンパの省略"},
+      {"jp":"ゴールデンウィークに旅行する","en":"travel during Golden Week","cn":"黄金周去旅行"},
+      {"jp":"ジェットコースターに乗る","en":"ride a roller coaster","cn":"坐过山车"},
+      {"jp":"サインペンで書く","en":"write with a felt-tip pen","cn":"用记号笔写"},
+      {"jp":"バスのシルバーシート","en":"a priority seat on the bus","cn":"公交车上的老弱病残专座"},
+      {"jp":"パトカーが走る","en":"a police car drives by","cn":"警车驶过"},
+      {"jp":"ホッチキスでとめる","en":"staple together","cn":"用订书机订上"},
+      {"jp":"フリーサイズの服","en":"one-size-fits-all clothes","cn":"均码的衣服"},
+      {"jp":"フリーダイヤルに電話する","en":"call a toll-free number","cn":"打免费电话"},
+      {"jp":"マイホームを買う","en":"buy one's own house","cn":"买自己的房子"},
+      {"jp":"リサイクルショップで買う","en":"buy at a secondhand shop","cn":"在二手店买"},
+      {"jp":"ワンパターンな話","en":"a repetitive, one-track story","cn":"千篇一律的话"},
+      {"jp":"交差点でUターンする","en":"make a U-turn at the intersection","cn":"在十字路口掉头","rel":"⊙田舎にUターンする return to one's hometown 回老家定居"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"イメージが違う","en":"have a different image/impression","cn":"印象不一样"},
+      {"jp":"セロテープでとめる","en":"stick it with cellophane tape","cn":"用透明胶带粘住"},
+      {"jp":"スマートな体型","en":"a slim figure","cn":"苗条的身材","rel":"⊙スマートなやり方 a smart/clever way 巧妙的做法"},
+      {"jp":"タイプが違う","en":"not one's type","cn":"不是那一类型","rel":"⊙パソコンをタイプする type on a computer 用电脑打字"},
+      {"jp":"会議のテンポが速い","en":"the meeting proceeds at a fast pace","cn":"会议节奏很快"},
+      {"jp":"ハンサムな男性","en":"a handsome man","cn":"英俊的男性"},
+      {"jp":"バランスを取る","en":"keep a balance","cn":"保持平衡","rel":"⊙バランスがいい well-balanced 均衡"},
+      {"jp":"音楽のリズムに合わせる","en":"keep time with the rhythm of the music","cn":"跟上音乐的节奏"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.97",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"駅前に（a. サインペン　b. ガードマン）が立っている。"},
+        {"n":2,"q":"ゴールデン（a. コースター　b. ウィーク）に北海道へ行った。"},
+        {"n":3,"q":"この服は（a. ワンパターン　b. フリーサイズ）なので誰でも着られる。"},
+        {"n":4,"q":"仕事と私生活の（a. テンポ　b. バランス）を取ることが大切だ。"},
+        {"n":5,"q":"彼はとても（a. ハンサム　b. スマート）な顔をしている。"},
+        {"n":6,"q":"料金無料の（a. キーホルダー　b. フリーダイヤル）に電話した。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"彼女は私の（　　）ではない。","opts":["オフ","リズム","タイプ","イメージ"]},
+        {"n":8,"q":"会議の進行の（　　）が速すぎる。","opts":["テンポ","バランス","コンクール","オフ"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②b ③b ④b ⑤a ⑥b　Ⅱ：⑦3 ⑧1"
+  },
+  "hitokoto": "仕事と生活のバランスをとりましょう。"
+}

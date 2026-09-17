@@ -1,0 +1,54 @@
+{
+  "week": 6, "day": 5, "title": "似ている言葉②", "title_cn": "相似的词语②", "title_en": "Similar words ②",
+  "sections": [
+    {"type":"words","heading":"意味が似ている言葉","items":[
+      {"jp":"あらゆる手段を試す","en":"try every possible means","cn":"尝试一切手段"},
+      {"jp":"すべての荷物","en":"all of the luggage","cn":"所有的行李"},
+      {"jp":"以前、ここに住んでいた","en":"I used to live here","cn":"以前住在这里"},
+      {"jp":"かつてこの辺りは海だった","en":"this area was once the sea","cn":"这一带曾经是海"},
+      {"jp":"勝手に部屋に入る","en":"enter the room without permission","cn":"擅自进房间"},
+      {"jp":"無理に飲ませる","en":"force someone to drink","cn":"强迫人喝"},
+      {"jp":"無理やり開けた","en":"forced it open","cn":"硬打开了"},
+      {"jp":"無断で欠席する","en":"be absent without leave","cn":"擅自缺席"},
+      {"jp":"真っ先に手を挙げる","en":"raise your hand first","cn":"最先举手"},
+      {"jp":"第一に健康が大切だ","en":"health is the most important thing","cn":"第一重要的是健康"},
+      {"jp":"ただ見ているだけ","en":"just watching","cn":"只是看着"},
+      {"jp":"単に興味がある","en":"simply interested","cn":"仅仅是有兴趣"},
+      {"jp":"単なる風邪","en":"just a cold","cn":"只不过是感冒"},
+      {"jp":"必死に走る","en":"run desperately","cn":"拼命跑"},
+      {"jp":"先生のまねをする","en":"imitate the teacher","cn":"模仿老师"},
+      {"jp":"知らないふりをする","en":"pretend not to know","cn":"假装不知道"},
+      {"jp":"高級なホテル","en":"a luxury hotel","cn":"高级酒店"},
+      {"jp":"高度な技術","en":"advanced technology","cn":"高度的技术"},
+      {"jp":"高等学校","en":"a high school","cn":"高中"},
+      {"jp":"上等なワイン","en":"fine wine","cn":"上等的葡萄酒"}
+    ]},
+    {"type":"words","heading":"","items":[
+      {"jp":"案外簡単だった","en":"it was easier than expected","cn":"没想到那么简单"},
+      {"jp":"意外な結果","en":"an unexpected result","cn":"意外的结果"},
+      {"jp":"応募者が続々と来る","en":"applicants keep coming in","cn":"报名者陆续到来"},
+      {"jp":"問題が次々と起こる","en":"problems happen one after another","cn":"问题接连发生"},
+      {"jp":"余計に心配する","en":"worry extra / unnecessarily","cn":"多余地担心"},
+      {"jp":"余分に買う","en":"buy extra","cn":"多买一些"}
+    ]}
+  ],
+  "exercises": {
+    "answers_note": "答えはp.101",
+    "sections": [
+      {"type":"choice","instruction":"正しいほうに〇をつけなさい。","items":[
+        {"n":1,"q":"（a. あらゆる　b. すべての）荷物を車に積んだ。"},
+        {"n":2,"q":"大丈夫、この症状は（a. 単なる　b. ただ）風邪です。"},
+        {"n":3,"q":"人の物を（a. 第一に　b. 勝手に）使わないでください。"},
+        {"n":4,"q":"応募者が（a. 余計に　b. 続々と）やってきた。"},
+        {"n":5,"q":"知っているのに、知らない（a. まね　b. ふり）をした。"},
+        {"n":6,"q":"（a. 高級な　b. 高度な）ホテルに泊まった。"}
+      ]},
+      {"type":"select","instruction":"（　）にはどれが入りますか。一つ選びなさい。","items":[
+        {"n":7,"q":"（　　）健康が大切だ。","opts":["真っ先に","第一に","無断で","案外"]},
+        {"n":8,"q":"子どものころ、よく父の（　　）をして遊んだ。","opts":["まね","ふり","すべて","かつて"]}
+      ]}
+    ],
+    "answers": "Ⅰ：①b ②a ③b ④b ⑤b ⑥a　Ⅱ：⑦2 ⑧1"
+  },
+  "hitokoto": "勝手に人の物を使わないようにしましょう。"
+}

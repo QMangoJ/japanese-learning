@@ -293,7 +293,7 @@ def main():
     for w in kweeks:
         d1 = w["days"][0]
         w["title"], w["title_cn"] = d1.get("theme", ""), d1.get("theme_cn", "")
-    v2weeks = load_days_sparse(V2SRC, available_week_numbers(V2SRC), annotate_v)  # N2词汇: 第5周缺d7、第6周缺d1/d3/d5，其余照常出
+    v2weeks = load_days_sparse(V2SRC, available_week_numbers(V2SRC), annotate_v)  # N2词汇: 缺天跳过，其余照常出
     k2weeks = load_days(K2SRC, count_weeks(K2SRC), annotate_k)  # N2汉字: auto-detects how many周已录入
     for w in k2weeks:
         d1 = w["days"][0]
